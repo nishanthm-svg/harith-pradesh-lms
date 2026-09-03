@@ -1096,6 +1096,589 @@ export const MODULES = [
           ],
         },
       },
+      // ==================================================================
+      // LESSON 6 — CASE STUDY (module capstone)
+      // ==================================================================
+      {
+        id: "m1-l6",
+        title: L("Real Story: Ramesh and Sita's Dairy Journey", "सच्ची कहानी: रमेश और सीता की डेयरी यात्रा"),
+        estMinutes: 12,
+        hook: [
+          {
+            type: "hero",
+            heading: L("Real Story: Ramesh & Sita", "सच्ची कहानी: रमेश और सीता"),
+            text: L(
+              "Everything you've learned so far comes to life in this real story of one family. Let's follow their journey step by step.",
+              "अब तक आपने जो कुछ सीखा है, वह इस एक परिवार की सच्ची कहानी में जीवंत हो उठता है। आइए उनकी यात्रा को चरण दर चरण देखें।"
+            ),
+          },
+        ],
+        topics: [
+          {
+            id: "t-city-struggle",
+            title: L("Life in the City", "शहर में ज़िंदगी"),
+            teach: [
+              {
+                type: "text",
+                heading: L("Meet Ramesh and Sita", "रमेश और सीता से मिलिए"),
+                html: L(
+                  "Ramesh and Sita lived in a small village called Rampur in Uttar Pradesh. About five years ago, they moved to a big city looking for better work. Ramesh worked as a daily-wage labourer on construction sites. Sita worked cleaning houses. They lived in one small rented room with their 2-year-old son, Chintu.",
+                  "रमेश और सीता उत्तर प्रदेश के रामपुर नाम के एक छोटे गाँव में रहते थे। लगभग पाँच साल पहले, बेहतर काम की तलाश में वे एक बड़े शहर में चले गए। रमेश निर्माण स्थलों पर दिहाड़ी मज़दूर के रूप में काम करता था। सीता घरों की सफाई का काम करती थी। वे अपने 2 साल के बेटे चिंटू के साथ एक छोटे किराए के कमरे में रहते थे।"
+                ),
+              },
+              {
+                type: "poll",
+                heading: L("What Do You Think?", "आपको क्या लगता है?"),
+                questions: [
+                  {
+                    q: L(
+                      "Do you think Ramesh and Sita found it easy to save money in the city?",
+                      "क्या आपको लगता है कि रमेश और सीता के लिए शहर में पैसे बचाना आसान था?"
+                    ),
+                    options: [L("Yes, easily", "हाँ, आसानी से"), L("No, it was hard", "नहीं, मुश्किल था")],
+                    answer: 1,
+                    reveal: L("Let's find out exactly why, in the numbers below.", "नीचे दिए आँकड़ों में देखते हैं कि ऐसा ठीक क्यों था।"),
+                  },
+                ],
+              },
+              {
+                type: "stat-grid",
+                items: [
+                  {
+                    label: L("Their income", "उनकी आय"),
+                    text: L(
+                      "Together they earned about ₹18,000 to ₹22,000 a month — but only on days they found work.",
+                      "मिलाकर वे महीने में लगभग ₹18,000 से ₹22,000 कमाते थे — लेकिन सिर्फ उन दिनों में जब उन्हें काम मिलता था।"
+                    ),
+                  },
+                  {
+                    label: L("Their expenses", "उनके खर्च"),
+                    text: L(
+                      "Most of that money went to room rent, electricity, travel and doctor visits — leaving almost nothing to save.",
+                      "उस पैसे का ज़्यादातर हिस्सा कमरे के किराए, बिजली, यात्रा और डॉक्टर के पास जाने में चला जाता था — बचाने के लिए लगभग कुछ नहीं बचता था।"
+                    ),
+                  },
+                  {
+                    label: L("Their struggle", "उनका संघर्ष"),
+                    text: L(
+                      "Little Chintu often fell sick because of the crowded, polluted place they lived in.",
+                      "जिस भीड़भाड़ और प्रदूषण वाली जगह में वे रहते थे, उसकी वजह से छोटा चिंटू अक्सर बीमार पड़ जाता था।"
+                    ),
+                  },
+                ],
+              },
+              {
+                type: "callout",
+                style: "warning",
+                heading: L("A Hard Truth", "एक कठोर सच्चाई"),
+                text: L(
+                  "Even though Ramesh and Sita worked hard every single day, they could not save money or improve their life. This is a common story for many families who leave their villages for city work.",
+                  "रमेश और सीता हर दिन कड़ी मेहनत करते थे, फिर भी वे न तो पैसे बचा पाते थे और न अपनी ज़िंदगी बेहतर बना पाते थे। शहर में काम के लिए अपने गाँव छोड़ने वाले कई परिवारों की यह एक आम कहानी है।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L("Why couldn't Ramesh and Sita save money in the city?", "रमेश और सीता शहर में पैसे क्यों नहीं बचा पाए?"),
+                options: [
+                  L("They didn't want to save", "वे बचाना नहीं चाहते थे"),
+                  L("Most of their income went to rent, bills and daily costs", "उनकी ज़्यादातर आय किराए, बिलों और रोज़ के खर्च में चली जाती थी"),
+                  L("They earned too much money", "वे बहुत ज़्यादा पैसे कमाते थे"),
+                  L("They didn't work hard", "उन्होंने मेहनत नहीं की"),
+                ],
+                answer: 1,
+                explain: L(
+                  "Rent, bills, travel and healthcare costs used up almost all of their income, leaving little to save.",
+                  "किराए, बिलों, यात्रा और स्वास्थ्य के खर्च ने उनकी लगभग सारी आय खत्म कर दी, बचाने के लिए बहुत कम बचा।"
+                ),
+              },
+              {
+                type: "truefalse",
+                q: L(
+                  "Ramesh and Sita were financially comfortable and stress-free in the city.",
+                  "रमेश और सीता शहर में आर्थिक रूप से सुखी और तनाव-मुक्त थे।"
+                ),
+                answer: false,
+                explain: L(
+                  "They were always under money stress, and their son was often sick.",
+                  "वे हमेशा पैसों के तनाव में रहते थे, और उनका बेटा अक्सर बीमार रहता था।"
+                ),
+              },
+            ],
+          },
+          {
+            id: "t-coming-home",
+            title: L("A New Chance Back Home", "घर वापसी में एक नया मौका"),
+            teach: [
+              {
+                type: "text",
+                heading: L("A Visit That Changed Everything", "एक मुलाक़ात जिसने सब कुछ बदल दिया"),
+                html: L(
+                  "In 2026, Ramesh and Sita went back to Rampur for a family wedding. They noticed something new — their village now had a Milk Pooling Point (MPP), run by a Milk Producer Organisation (MPO).",
+                  "2026 में, रमेश और सीता एक पारिवारिक शादी के लिए रामपुर वापस गए। उन्होंने कुछ नया देखा — उनके गाँव में अब एक मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन (MPO) द्वारा चलाया जाने वाला मिल्क पूलिंग पॉइंट (MPP) था।"
+                ),
+              },
+              {
+                type: "glossary",
+                term: L("MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                meaning: L(
+                  "A place in the village where farmers bring their milk every day. It is checked for quality and farmers get paid a fair price, on time.",
+                  "गाँव में वह जगह जहाँ किसान हर दिन अपना दूध लाते हैं। इसकी गुणवत्ता जाँची जाती है और किसानों को समय पर न्यायपूर्ण कीमत मिलती है।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("What the MPP Offered", "MPP ने क्या दिया"),
+                html: L(
+                  "The MPP collected milk twice a day. It tested milk quality fairly, in front of the farmer. And most importantly — it paid farmers on time, every time. Several farmers told Ramesh that dairy had become their most reliable source of income.",
+                  "MPP दिन में दो बार दूध इकट्ठा करता था। यह किसान के सामने ही निष्पक्ष रूप से दूध की गुणवत्ता जाँचता था। और सबसे ज़रूरी बात — यह किसानों को हर बार समय पर पैसे देता था। कई किसानों ने रमेश को बताया कि डेयरी उनकी सबसे भरोसेमंद आय का ज़रिया बन गई है।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("Getting Expert Advice", "विशेषज्ञ की सलाह लेना"),
+                html: L(
+                  "Ramesh and Sita owned 1.5 acres of land. Before jumping in, they visited the local Krishi Vigyan Kendra (KVK) — a government farm-advice centre — and met dairy expert Dr. Anil Sharma.",
+                  "रमेश और सीता के पास 1.5 एकड़ ज़मीन थी। इसमें उतरने से पहले, वे स्थानीय कृषि विज्ञान केंद्र (KVK) — एक सरकारी कृषि सलाह केंद्र — गए और डेयरी विशेषज्ञ डॉ. अनिल शर्मा से मिले।"
+                ),
+              },
+              {
+                type: "glossary",
+                term: L("KVK (Krishi Vigyan Kendra)", "KVK (कृषि विज्ञान केंद्र)"),
+                meaning: L(
+                  "A government centre in most districts where farmers can get free expert advice on farming and animal care.",
+                  "ज़्यादातर ज़िलों में एक सरकारी केंद्र, जहाँ किसान खेती और पशु देखभाल पर मुफ्त विशेषज्ञ सलाह ले सकते हैं।"
+                ),
+              },
+              {
+                type: "stat-grid",
+                items: [
+                  {
+                    label: L("Treat it as a business", "इसे एक व्यापार की तरह देखें"),
+                    text: L(
+                      "Dr. Sharma's first advice: don't treat dairy as just a household chore — treat it like a real business, with planning.",
+                      "डॉ. शर्मा की पहली सलाह: डेयरी को सिर्फ घर के काम की तरह न देखें — इसे योजना के साथ एक असली व्यापार की तरह चलाएँ।"
+                    ),
+                  },
+                  {
+                    label: L("Choose the right animal", "सही पशु चुनें"),
+                    text: L(
+                      "He suggested local breeds like Gir or Sahiwal cows — they handle local weather well and resist disease better.",
+                      "उन्होंने गिर या साहीवाल जैसी स्थानीय नस्लों की गायें सुझाईं — ये स्थानीय मौसम को अच्छी तरह झेलती हैं और बीमारियों से बेहतर बचती हैं।"
+                    ),
+                  },
+                  {
+                    label: L("Balanced feed = more milk", "संतुलित आहार = ज़्यादा दूध"),
+                    text: L(
+                      "He explained that giving animals a mix of feed, green fodder, dry fodder, minerals and calcium every day is the single biggest key to good milk production.",
+                      "उन्होंने समझाया कि पशुओं को हर दिन दाना, हरा चारा, सूखा चारा, खनिज और कैल्शियम का मिश्रण देना अच्छे दूध उत्पादन की सबसे बड़ी कुंजी है।"
+                    ),
+                  },
+                ],
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L("What is an MPP?", "MPP क्या है?"),
+                options: [
+                  L("A bank", "एक बैंक"),
+                  L(
+                    "A place in the village where farmers sell milk daily at a fair price",
+                    "गाँव में वह जगह जहाँ किसान रोज़ न्यायपूर्ण कीमत पर दूध बेचते हैं"
+                  ),
+                  L("A type of cow", "एक प्रकार की गाय"),
+                  L("A government tax", "एक सरकारी कर"),
+                ],
+                answer: 1,
+                explain: L(
+                  "An MPP (Milk Pooling Point) is where farmers bring milk daily and get paid fairly and on time.",
+                  "MPP (मिल्क पूलिंग पॉइंट) वह जगह है जहाँ किसान रोज़ दूध लाते हैं और न्यायपूर्ण, समय पर भुगतान पाते हैं।"
+                ),
+              },
+              {
+                type: "mcq",
+                q: L(
+                  "According to Dr. Sharma, what is the biggest key to more milk production?",
+                  "डॉ. शर्मा के अनुसार, ज़्यादा दूध उत्पादन की सबसे बड़ी कुंजी क्या है?"
+                ),
+                options: [
+                  L("Buying the most expensive cow", "सबसे महंगी गाय खरीदना"),
+                  L("Balanced, regular feed", "संतुलित, नियमित आहार"),
+                  L("Never visiting the vet", "पशु चिकित्सक के पास कभी न जाना"),
+                  L("Keeping animals hungry", "पशुओं को भूखा रखना"),
+                ],
+                answer: 1,
+                explain: L(
+                  "A balanced diet — feed, fodder, minerals and calcium — is the biggest key to good milk production.",
+                  "संतुलित आहार — दाना, चारा, खनिज और कैल्शियम — अच्छे दूध उत्पादन की सबसे बड़ी कुंजी है।"
+                ),
+              },
+            ],
+          },
+          {
+            id: "t-money-story",
+            title: L("The Money Story — Year 1", "पैसों की कहानी — वर्ष 1"),
+            teach: [
+              {
+                type: "text",
+                heading: L("Starting the Business", "व्यापार शुरू करना"),
+                html: L(
+                  "Ramesh and Sita had saved ₹1,50,000 from their years of city work. They decided to use it to start their dairy business.",
+                  "रमेश और सीता ने अपने शहर के काम के सालों से ₹1,50,000 बचाए थे। उन्होंने इसे अपना डेयरी व्यापार शुरू करने में लगाने का फैसला किया।"
+                ),
+              },
+              {
+                type: "ledger",
+                heading: L("What It Cost to Start (Capital Expenditure)", "शुरू करने में कितना खर्च आया (पूंजीगत व्यय)"),
+                rows: [
+                  { label: L("One milking cow", "एक दुधारू गाय"), amount: "₹60,000" },
+                  { label: L("Shed for the animal", "पशु के लिए शेड"), amount: "₹40,000" },
+                  { label: L("Buckets, cans & equipment", "बाल्टी, केन और उपकरण"), amount: "₹20,000" },
+                  { label: L("Starting working capital", "शुरुआती कार्यशील पूंजी"), amount: "₹20,000" },
+                ],
+                total: { label: L("Total needed", "कुल ज़रूरत"), amount: "₹1,40,000" },
+              },
+              {
+                type: "callout",
+                style: "tip",
+                heading: L("The Plan", "योजना"),
+                text: L(
+                  "They had ₹1,50,000 saved and needed ₹1,40,000 — leaving ₹10,000 spare. They decided to buy just ONE cow first, and buy a second cow later using the money the first cow earns.",
+                  "उनके पास ₹1,50,000 की बचत थी और ₹1,40,000 चाहिए थे — ₹10,000 बचा रह गए। उन्होंने पहले सिर्फ एक गाय खरीदने का फैसला किया, और पहली गाय की कमाई से बाद में दूसरी गाय खरीदने का।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("Let's Do the Maths Together", "आइए साथ में गणित करें"),
+                html: L(
+                  "Their cow gave 11 litres of milk a day. The MPP paid ₹42 for every litre. For the first 180 days: 11 litres × 180 days = 1,980 litres. Then, 1,980 litres × ₹42 = ₹83,160 earned!",
+                  "उनकी गाय एक दिन में 11 लीटर दूध देती थी। MPP हर लीटर के ₹42 देता था। पहले 180 दिनों के लिए: 11 लीटर × 180 दिन = 1,980 लीटर। फिर, 1,980 लीटर × ₹42 = ₹83,160 की कमाई!"
+                ),
+              },
+              {
+                type: "example",
+                heading: L("Try It Yourself", "खुद कोशिश कीजिए"),
+                text: L(
+                  "If the same cow gives milk for another 120 days at the same rate (11 litres/day), that's 11 × 120 = 1,320 litres, worth 1,320 × ₹42 = ₹55,440 more. Adding it up: ₹83,160 + ₹55,440 = ₹1,38,600 from ONE cow in a year!",
+                  "अगर वही गाय उसी दर (11 लीटर/दिन) से 120 दिन और दूध दे, तो यह 11 × 120 = 1,320 लीटर होता है, जिसकी कीमत 1,320 × ₹42 = ₹55,440 ज़्यादा है। जोड़ने पर: ₹83,160 + ₹55,440 = ₹1,38,600 — सिर्फ एक गाय से एक साल में!"
+                ),
+              },
+              {
+                type: "ledger",
+                heading: L("Year 1: Full Result", "वर्ष 1: पूरा नतीजा"),
+                rows: [
+                  { label: L("Total income from milk sales", "दूध बिक्री से कुल आय"), amount: "₹2,21,760" },
+                  { label: L("Total yearly running costs (feed, health, etc.)", "कुल वार्षिक चालू खर्च (आहार, स्वास्थ्य आदि)"), amount: "₹96,000" },
+                ],
+                total: { label: L("Net profit (savings)", "शुद्ध लाभ (बचत)"), amount: "₹1,25,760" },
+              },
+              {
+                type: "callout",
+                style: "info",
+                heading: L("That's More Than Half!", "यह आधे से भी ज़्यादा है!"),
+                text: L(
+                  "Ramesh and Sita kept more than 56 out of every 100 rupees they earned as pure profit — because they did the daily care themselves and grew some of their own green fodder on their land.",
+                  "रमेश और सीता ने अपनी कमाई के हर 100 रुपयों में से 56 से ज़्यादा को शुद्ध लाभ के रूप में रखा — क्योंकि वे रोज़ की देखभाल खुद करते थे और अपनी ज़मीन पर कुछ हरा चारा खुद उगाते थे।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L(
+                  "If a cow gives 10 litres of milk a day for 10 days, and each litre sells for ₹42, how much money is that in total?",
+                  "अगर एक गाय 10 दिनों तक रोज़ 10 लीटर दूध देती है, और हर लीटर ₹42 में बिकता है, तो कुल कितना पैसा हुआ?"
+                ),
+                options: ["₹420", "₹4,200", "₹42,000", "₹840"].map((s) => L(s, s)),
+                answer: 1,
+                explain: L("10 litres × 10 days = 100 litres. 100 litres × ₹42 = ₹4,200.", "10 लीटर × 10 दिन = 100 लीटर। 100 लीटर × ₹42 = ₹4,200।"),
+              },
+              {
+                type: "mcq",
+                q: L(
+                  "In Year 1, what share of Ramesh and Sita's milk income was kept as net profit?",
+                  "वर्ष 1 में, रमेश और सीता की दूध आय का कितना हिस्सा शुद्ध लाभ के रूप में रखा गया?"
+                ),
+                options: [L("About 10%", "लगभग 10%"), L("About 25%", "लगभग 25%"), L("More than 56%", "56% से ज़्यादा"), L("100%", "100%")],
+                answer: 2,
+                explain: L(
+                  "They kept more than 56% of their income as profit — ₹1,25,760 out of ₹2,21,760.",
+                  "उन्होंने अपनी आय का 56% से ज़्यादा लाभ के रूप में रखा — ₹2,21,760 में से ₹1,25,760।"
+                ),
+              },
+            ],
+          },
+          {
+            id: "t-expansion",
+            title: L("A Big Decision — Should They Grow?", "एक बड़ा फैसला — क्या उन्हें बढ़ना चाहिए?"),
+            teach: [
+              {
+                type: "text",
+                heading: L("Year 2: Thinking Bigger", "वर्ष 2: बड़ा सोचना"),
+                html: L(
+                  "After a successful first year, Ramesh and Sita considered buying 2 more cows — growing from 2 to 4 animals. Since they already had the shed and equipment, they would only need to spend on 2 new cows and some extra working capital: about ₹1,40,000 in total, paid fully from their Year 1 savings — no loan needed.",
+                  "पहले सफल साल के बाद, रमेश और सीता ने 2 और गायें खरीदने पर विचार किया — 2 से 4 पशुओं तक बढ़ना। चूँकि उनके पास पहले से शेड और उपकरण थे, इसलिए उन्हें सिर्फ 2 नई गायों और कुछ अतिरिक्त कार्यशील पूंजी पर खर्च करना था: कुल मिलाकर लगभग ₹1,40,000, जो पूरी तरह उनके वर्ष 1 की बचत से चुकाया गया — किसी ऋण की ज़रूरत नहीं पड़ी।"
+                ),
+              },
+              {
+                type: "ledger",
+                heading: L("Year 2: The Projected Numbers", "वर्ष 2: अनुमानित आँकड़े"),
+                rows: [
+                  { label: L("Projected income (4 cows)", "अनुमानित आय (4 गायें)"), amount: "₹5,54,400" },
+                  { label: L("Projected yearly running costs", "अनुमानित वार्षिक चालू खर्च"), amount: "₹2,25,000" },
+                ],
+                total: { label: L("Projected net profit", "अनुमानित शुद्ध लाभ"), amount: "₹3,29,400" },
+              },
+              {
+                type: "callout",
+                style: "tip",
+                heading: L("That's About ₹27,450 Every Month", "यह लगभग हर महीने ₹27,450 है"),
+                text: L(
+                  "If things go as planned, this is more than the total combined income Ramesh and Sita earned doing daily-wage work in the city — and this time, they are their own boss, living at home with their family.",
+                  "अगर सब योजना के अनुसार हुआ, तो यह रमेश और सीता की शहर में दिहाड़ी मज़दूरी से मिलने वाली कुल मिली-जुली आय से भी ज़्यादा है — और इस बार, वे खुद अपने मालिक हैं, अपने परिवार के साथ घर पर रह रहे हैं।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("But Is It Risk-Free?", "लेकिन क्या यह जोखिम-मुक्त है?"),
+                html: L(
+                  "Before deciding, Ramesh and Sita thought about what could go wrong: What if the milk price drops? What if feed becomes more costly? What if an animal falls sick? More animals also means more daily work and care.",
+                  "फैसला करने से पहले, रमेश और सीता ने सोचा कि क्या गलत हो सकता है: अगर दूध की कीमत गिर जाए तो? अगर आहार महंगा हो जाए तो? अगर कोई पशु बीमार पड़ जाए तो? ज़्यादा पशुओं का मतलब है ज़्यादा रोज़ का काम और देखभाल भी।"
+                ),
+              },
+              {
+                type: "callout",
+                style: "warning",
+                heading: L("Growing a Business Always Has Risk", "व्यापार बढ़ाने में हमेशा जोखिम होता है"),
+                text: L(
+                  "More cows can mean more profit — but only if feed costs stay reasonable, milk prices hold steady, and all animals stay healthy. A good farmer plans for these risks instead of ignoring them.",
+                  "ज़्यादा गायों का मतलब ज़्यादा मुनाफ़ा हो सकता है — लेकिन तभी जब आहार की कीमत उचित रहे, दूध की कीमतें स्थिर रहें, और सभी पशु स्वस्थ रहें। एक अच्छा किसान इन जोखिमों को नज़रअंदाज़ करने के बजाय इनके लिए योजना बनाता है।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L(
+                  "What is a real risk Ramesh and Sita should think about before adding 2 more cows?",
+                  "2 और गायें जोड़ने से पहले रमेश और सीता को किस असली जोखिम के बारे में सोचना चाहिए?"
+                ),
+                options: [
+                  L("Milk price and feed costs could change unfavourably", "दूध की कीमत और आहार खर्च प्रतिकूल रूप से बदल सकते हैं"),
+                  L("There are absolutely no risks at all", "कोई भी जोखिम बिल्कुल नहीं है"),
+                  L("Cows never get sick", "गायें कभी बीमार नहीं पड़तीं"),
+                  L("More cows always cost less to keep", "ज़्यादा गायें पालने में हमेशा कम खर्च आता है"),
+                ],
+                answer: 0,
+                explain: L(
+                  "Milk prices could fall or feed costs could rise — real risks that could reduce the expected profit.",
+                  "दूध की कीमतें गिर सकती हैं या आहार की कीमतें बढ़ सकती हैं — यह असली जोखिम हैं जो अनुमानित मुनाफ़े को कम कर सकते हैं।"
+                ),
+              },
+              {
+                type: "truefalse",
+                q: L(
+                  "Because Year 1 went well, expanding in Year 2 is completely guaranteed to succeed with no risk.",
+                  "क्योंकि वर्ष 1 अच्छा गया, इसलिए वर्ष 2 में विस्तार बिना किसी जोखिम के पूरी तरह सफल होने की गारंटी है।"
+                ),
+                answer: false,
+                explain: L(
+                  "Even a successful business has risks — prices, costs and animal health can all change. Good planning matters.",
+                  "सफल व्यापार में भी जोखिम होते हैं — कीमतें, खर्च और पशुओं का स्वास्थ्य सब बदल सकते हैं। अच्छी योजना ज़रूरी है।"
+                ),
+              },
+            ],
+          },
+        ],
+        finalQuiz: {
+          passScore: 70,
+          isFinal: true,
+          questions: [
+            {
+              topicId: "t-city-struggle",
+              type: "mcq",
+              q: L(
+                "What was the biggest problem with Ramesh and Sita's life in the city?",
+                "शहर में रमेश और सीता की ज़िंदगी की सबसे बड़ी समस्या क्या थी?"
+              ),
+              options: [
+                L("They earned too much money", "वे बहुत ज़्यादा पैसे कमाते थे"),
+                L("Little to no savings despite hard work every day", "हर दिन कड़ी मेहनत के बावजूद बचत न के बराबर"),
+                L("They had too much free time", "उनके पास बहुत ज़्यादा खाली समय था"),
+                L("They didn't like their son", "उन्हें अपना बेटा पसंद नहीं था"),
+              ],
+              answer: 1,
+              explain: L(
+                "Despite working every day, they could barely save anything after rent, bills and other costs.",
+                "हर दिन काम करने के बावजूद, किराए, बिलों और अन्य खर्चों के बाद वे शायद ही कुछ बचा पाते थे।"
+              ),
+            },
+            {
+              topicId: "t-coming-home",
+              type: "mcq",
+              q: L("What made the MPP valuable to village farmers?", "MPP गाँव के किसानों के लिए किस वजह से मूल्यवान था?"),
+              options: [
+                L("It gave loans only", "यह सिर्फ ऋण देता था"),
+                L("It offered fair testing and reliable, on-time payment for milk", "यह दूध की निष्पक्ष जाँच और भरोसेमंद, समय पर भुगतान देता था"),
+                L("It sold cows", "यह गायें बेचता था"),
+                L("It replaced the KVK", "इसने KVK की जगह ले ली"),
+              ],
+              answer: 1,
+              explain: L(
+                "The MPP tested milk fairly and paid farmers reliably and on time — a dependable market.",
+                "MPP दूध की निष्पक्ष जाँच करता था और किसानों को भरोसे के साथ, समय पर भुगतान करता था — एक भरोसेमंद बाज़ार।"
+              ),
+            },
+            {
+              topicId: "t-money-story",
+              type: "mcq",
+              q: L(
+                "In Year 1, what was Ramesh and Sita's net profit from their dairy business?",
+                "वर्ष 1 में, रमेश और सीता का उनके डेयरी व्यापार से शुद्ध लाभ कितना था?"
+              ),
+              options: ["₹10,000", "₹96,000", "₹1,25,760", "₹2,21,760"].map((s) => L(s, s)),
+              answer: 2,
+              explain: L("Net profit = ₹2,21,760 income − ₹96,000 costs = ₹1,25,760.", "शुद्ध लाभ = ₹2,21,760 आय − ₹96,000 खर्च = ₹1,25,760।"),
+            },
+            {
+              topicId: "t-expansion",
+              type: "mcq",
+              q: L(
+                "Before expanding to 4 cows, what should Ramesh and Sita carefully plan for?",
+                "4 गायों तक विस्तार करने से पहले, रमेश और सीता को किस चीज़ के लिए सावधानी से योजना बनानी चाहिए?"
+              ),
+              options: [
+                L("Nothing, expansion has no downside", "कुछ नहीं, विस्तार में कोई नुकसान नहीं है"),
+                L("Possible changes in milk price and feed cost", "दूध की कीमत और आहार खर्च में संभावित बदलाव"),
+                L("Selling their existing cow", "अपनी मौजूदा गाय को बेचना"),
+                L("Moving back to the city", "वापस शहर जाना"),
+              ],
+              answer: 1,
+              explain: L(
+                "Smart expansion means planning for risks like changing milk prices and feed costs.",
+                "समझदारी भरे विस्तार का मतलब है दूध की कीमतों और आहार खर्च में बदलाव जैसे जोखिमों के लिए योजना बनाना।"
+              ),
+            },
+          ],
+        },
+      },
     ],
   },
+  {
+    id: "m2",
+    number: 2,
+    title: L("Rationale of MPO", "MPO का औचित्य"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m3",
+    number: 3,
+    title: L("Core Design Principle", "मूल डिज़ाइन सिद्धांत"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m4",
+    number: 4,
+    title: L("Interaction with Farmers (One to One)", "किसानों के साथ बातचीत (एक-से-एक)"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m5",
+    number: 5,
+    title: L("Designing a Need-Based Communication Content", "ज़रूरत-आधारित संचार सामग्री तैयार करना"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m6",
+    number: 6,
+    title: L("Interaction with Sahayak (One to One)", "सहायक के साथ बातचीत (एक-से-एक)"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m7",
+    number: 7,
+    title: L("Village Level Meeting for Small Groups", "छोटे समूहों के लिए गाँव स्तरीय बैठक"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m8",
+    number: 8,
+    title: L("Formation of MPP & Milk Routes", "MPP और दूध मार्गों का निर्माण"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m9",
+    number: 9,
+    title: L("Member Enrolment and Data Collection", "सदस्य नामांकन और डेटा संग्रह"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m10",
+    number: 10,
+    title: L("Milk Rates, Its Parameters and Methodologies", "दूध की दरें, इसके मानदंड और तरीके"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m11",
+    number: 11,
+    title: L("CDA — Its Constituents and Calculation", "CDA — इसके घटक और गणना"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
+  {
+    id: "m12",
+    number: 12,
+    title: L("Cost Associated with Milk Handling", "दूध संभालने से जुड़ी लागत"),
+    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
+    icon: "milk",
+    available: false,
+    lessons: [],
+  },
 ];
+
+export function getModule(moduleId) {
+  return MODULES.find((m) => m.id === moduleId);
+}
+
+export function getLesson(moduleId, lessonId) {
+  const mod = getModule(moduleId);
+  if (!mod || !mod.lessons) return null;
+  return mod.lessons.find((l) => l.id === lessonId);
+}
+
+export function getLessonIndex(moduleId, lessonId) {
+  const mod = getModule(moduleId);
+  if (!mod || !mod.lessons) return -1;
+  return mod.lessons.findIndex((l) => l.id === lessonId);
+}
