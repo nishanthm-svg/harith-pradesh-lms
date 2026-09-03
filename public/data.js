@@ -628,6 +628,474 @@ export const MODULES = [
           ],
         },
       },
+      // ==================================================================
+      // LESSON 4
+      // ==================================================================
+      {
+        id: "m1-l4",
+        title: L("The White Revolution — India's Dairy Story", "श्वेत क्रांति — भारत की डेयरी कहानी"),
+        estMinutes: 9,
+        hook: [
+          {
+            type: "hero",
+            heading: L("The White Revolution", "श्वेत क्रांति"),
+            text: L(
+              "How did India go from not having enough milk to being the world's biggest milk maker? It's a story about ordinary farmers.",
+              "भारत, दूध की कमी से दुनिया का सबसे बड़ा दूध बनाने वाला देश कैसे बना? यह साधारण किसानों की कहानी है।"
+            ),
+          },
+        ],
+        topics: [
+          {
+            id: "t-problem",
+            title: L("The Problem: Farmers Were Cheated", "समस्या: किसानों को ठगा जाता था"),
+            teach: [
+              {
+                type: "text",
+                heading: L("Before 1946", "1946 से पहले"),
+                html: L(
+                  "Long ago, in Kaira district in Gujarat, farmers sold their milk to a private trader. The trader paid very little and decided the price all by himself. Farmers had no other place to sell milk, so they had no choice but to accept it.",
+                  "बहुत साल पहले, गुजरात के कैरा ज़िले में किसान अपना दूध एक निजी व्यापारी को बेचते थे। व्यापारी बहुत कम पैसे देता था और कीमत खुद ही तय करता था। किसानों के पास दूध बेचने की और कोई जगह नहीं थी, इसलिए उन्हें यह मानना ही पड़ता था।"
+                ),
+              },
+              {
+                type: "callout",
+                style: "warning",
+                heading: L("The Unfair Deal", "अन्यायपूर्ण सौदा"),
+                text: L(
+                  "The trader made a big profit, but the farmers who did all the hard work stayed poor. This is called exploitation — when someone with power takes unfair advantage of people who have no other choice.",
+                  "व्यापारी ने बड़ा मुनाफ़ा कमाया, लेकिन कड़ी मेहनत करने वाले किसान गरीब ही रह गए। इसे शोषण कहते हैं — जब ताकत रखने वाला कोई व्यक्ति उन लोगों का नाजायज़ फायदा उठाए जिनके पास और कोई विकल्प न हो।"
+                ),
+              },
+              {
+                type: "poll",
+                heading: L("What Do You Think?", "आपको क्या लगता है?"),
+                questions: [
+                  {
+                    q: L(
+                      "If only one trader buys your milk and he alone sets the price, is that fair to farmers?",
+                      "अगर सिर्फ एक ही व्यापारी आपका दूध खरीदे और सिर्फ वही कीमत तय करे, तो क्या यह किसानों के लिए न्यायपूर्ण है?"
+                    ),
+                    options: [L("Yes, that's fair", "हाँ, यह न्यायपूर्ण है"), L("No, that's not fair", "नहीं, यह न्यायपूर्ण नहीं है")],
+                    answer: 1,
+                    reveal: L(
+                      "Right — when farmers have no other buyer to go to, the trader can pay whatever he wants. That's not a fair deal.",
+                      "सही — जब किसानों के पास जाने के लिए कोई और खरीदार नहीं होता, तो व्यापारी जो चाहे दे सकता है। यह एक न्यायपूर्ण सौदा नहीं है।"
+                    ),
+                  },
+                ],
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L(
+                  "Before 1946, why did farmers in Kaira accept a low price for their milk?",
+                  "1946 से पहले, कैरा के किसानों ने अपने दूध की कम कीमत क्यों मान ली?"
+                ),
+                options: [
+                  L("The trader paid a fair price", "व्यापारी न्यायपूर्ण कीमत देता था"),
+                  L("They had no other place to sell milk", "उनके पास दूध बेचने की और कोई जगह नहीं थी"),
+                  L("They didn't need money", "उन्हें पैसों की ज़रूरत नहीं थी"),
+                  L("Milk was not valuable then", "तब दूध की कोई कीमत नहीं थी"),
+                ],
+                answer: 1,
+                explain: L(
+                  "With only one trader to sell to, farmers had no choice but to accept the low price he offered.",
+                  "बेचने के लिए सिर्फ एक व्यापारी होने से, किसानों के पास उसकी दी गई कम कीमत मानने के अलावा कोई चारा नहीं था।"
+                ),
+              },
+              {
+                type: "truefalse",
+                q: L(
+                  "Before 1946, farmers in Kaira were getting a fair price for their milk.",
+                  "1946 से पहले, कैरा के किसानों को उनके दूध की न्यायपूर्ण कीमत मिलती थी।"
+                ),
+                answer: false,
+                explain: L(
+                  "A single private trader controlled the price and paid farmers very little.",
+                  "एक अकेला निजी व्यापारी कीमत तय करता था और किसानों को बहुत कम पैसे देता था।"
+                ),
+              },
+            ],
+          },
+          {
+            id: "t-amul",
+            title: L("1946: Farmers Build Their Own Dairy", "1946: किसानों ने अपनी खुद की डेयरी बनाई"),
+            teach: [
+              {
+                type: "text",
+                heading: L("A New Idea: Owning It Together", "एक नया विचार: मिलकर मालिक बनना"),
+                html: L(
+                  "In 1946, the farmers of Kaira stopped selling to the unfair trader. With support from leaders like Sardar Patel, they formed their own dairy — owned by the farmers themselves. This dairy became AMUL.",
+                  "1946 में, कैरा के किसानों ने उस अन्यायी व्यापारी को दूध बेचना बंद कर दिया। सरदार पटेल जैसे नेताओं के समर्थन से, उन्होंने अपनी खुद की डेयरी बनाई — जिसके मालिक किसान खुद थे। यही डेयरी अमूल बनी।"
+                ),
+              },
+              {
+                type: "glossary",
+                term: L("Cooperative", "सहकारी समिति"),
+                meaning: L(
+                  "A business owned and run TOGETHER by the people who use it — here, by the farmers themselves. No single trader controls the price.",
+                  "एक ऐसा व्यापार जिसे उपयोग करने वाले लोग — यहाँ किसान खुद — मिलकर चलाते और उसके मालिक होते हैं। कोई एक व्यापारी कीमत तय नहीं करता।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("How It Was Different", "यह कैसे अलग था"),
+                html: L(
+                  "In a cooperative, there is no middleman taking a big cut. Farmers bring their milk, it gets tested and sold, and the profit goes back to the farmers who own it. Today, Amul is owned by 3.6 million farmer families.",
+                  "एक सहकारी समिति में कोई बिचौलिया बड़ा हिस्सा नहीं लेता। किसान अपना दूध लाते हैं, उसकी जाँच होती है और बेचा जाता है, और मुनाफ़ा उन्हीं किसानों को वापस मिलता है जो उसके मालिक हैं। आज, अमूल 36 लाख किसान परिवारों के स्वामित्व में है।"
+                ),
+              },
+              {
+                type: "example",
+                heading: L("Think About It", "इस पर सोचिए"),
+                text: L(
+                  "Imagine 100 farmers each owning a small part of one big dairy business, instead of 100 farmers each depending on one trader's mood. That is the power of a cooperative.",
+                  "ज़रा सोचिए — 100 किसान एक व्यापारी की मर्जी पर निर्भर रहने के बजाय, एक बड़े डेयरी व्यापार के छोटे-छोटे हिस्से के मालिक हों। यही एक सहकारी समिति की ताकत है।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L("What is a 'cooperative'?", "'सहकारी समिति' क्या होती है?"),
+                options: [
+                  L("A business owned by one rich trader", "एक अमीर व्यापारी के स्वामित्व वाला व्यापार"),
+                  L("A business owned together by the farmers who use it", "उपयोग करने वाले किसानों के मिले-जुले स्वामित्व वाला व्यापार"),
+                  L("A government office", "एक सरकारी दफ्तर"),
+                  L("A bank loan", "एक बैंक ऋण"),
+                ],
+                answer: 1,
+                explain: L(
+                  "A cooperative is owned and run together by its members — the farmers themselves.",
+                  "एक सहकारी समिति का स्वामित्व और संचालन उसके सदस्य — यानी किसान खुद — मिलकर करते हैं।"
+                ),
+              },
+              {
+                type: "mcq",
+                q: L("In which year was Amul formed?", "अमूल की स्थापना किस साल हुई थी?"),
+                options: [L("1946", "1946"), L("1965", "1965"), L("1991", "1991"), L("1998", "1998")],
+                answer: 0,
+                explain: L("Amul was formed in 1946 by the farmers of Kaira district.", "अमूल की स्थापना 1946 में कैरा ज़िले के किसानों ने की थी।"),
+              },
+            ],
+          },
+          {
+            id: "t-operation-flood",
+            title: L("Spreading the Idea Across India", "इस विचार को पूरे भारत में फैलाना"),
+            teach: [
+              {
+                type: "text",
+                heading: L("One Success Becomes a Movement", "एक सफलता एक आंदोलन बन गई"),
+                html: L(
+                  "Amul worked so well that the government wanted every state to have the same kind of farmer-owned dairy. In 1965, NDDB (National Dairy Development Board) was formed to make this happen, led by Dr. Verghese Kurien.",
+                  "अमूल इतनी अच्छी तरह काम करने लगी कि सरकार चाहती थी हर राज्य में इसी तरह की किसान-स्वामित्व वाली डेयरी हो। इसे संभव बनाने के लिए 1965 में डॉ. वर्गीस कुरियन के नेतृत्व में NDDB (राष्ट्रीय डेयरी विकास बोर्ड) बनाया गया।"
+                ),
+              },
+              {
+                type: "timeline",
+                heading: L("India's Dairy Journey", "भारत की डेयरी यात्रा"),
+                items: [
+                  { year: "1946", text: L("Formation of Amul.", "अमूल की स्थापना।") },
+                  { year: "1965", text: L("Establishment of NDDB, led by Dr. V. Kurien.", "डॉ. वी. कुरियन के नेतृत्व में NDDB की स्थापना।") },
+                  { year: "1970–80", text: L("Operation Flood Phase I begins.", "ऑपरेशन फ्लड चरण I शुरू।") },
+                  { year: "1974", text: L("Formation of Mother Dairy in Delhi.", "दिल्ली में मदर डेयरी की स्थापना।") },
+                  { year: "1981–85", text: L("Operation Flood Phase II.", "ऑपरेशन फ्लड चरण II।") },
+                  { year: "1985–96", text: L("Operation Flood Phase III.", "ऑपरेशन फ्लड चरण III।") },
+                  {
+                    year: "1991",
+                    text: L(
+                      "Private and multi-national dairy companies allowed to enter India.",
+                      "निजी और बहुराष्ट्रीय डेयरी कंपनियों को भारत में आने की अनुमति दी गई।"
+                    ),
+                  },
+                  {
+                    year: "1998",
+                    text: L("India becomes the world's largest milk producer.", "भारत दुनिया का सबसे बड़ा दूध उत्पादक देश बना।"),
+                  },
+                  {
+                    year: "1999",
+                    text: L(
+                      "Dr. Alagh recommends setting up Producer Companies.",
+                      "डॉ. अलघ ने उत्पादक कंपनियाँ बनाने की सिफारिश की।"
+                    ),
+                  },
+                  {
+                    year: "2002–03",
+                    text: L(
+                      "Companies Act amended to include Producer Companies.",
+                      "उत्पादक कंपनियों को शामिल करने के लिए कंपनी अधिनियम में संशोधन।"
+                    ),
+                  },
+                  { year: "2009", text: L("NDDB Dairy Services is formed.", "NDDB डेयरी सेवाओं की स्थापना।") },
+                  { year: "2011–19", text: L("National Dairy Plan (NDP-1).", "राष्ट्रीय डेयरी योजना (NDP-1)।") },
+                  {
+                    year: "2014",
+                    text: L("National Programme for Dairy Development (NPDD).", "राष्ट्रीय डेयरी विकास कार्यक्रम (NPDD)।"),
+                  },
+                  { year: "2021", text: L("NPDD is restructured.", "NPDD का पुनर्गठन किया गया।") },
+                ],
+                result: L("India: Milk Surplus Nation", "भारत: दूध अधिशेष वाला देश"),
+              },
+              {
+                type: "callout",
+                style: "tip",
+                heading: L("From Deficit to Surplus", "कमी से अधिशेष तक"),
+                text: L(
+                  "Deficit means not having enough — India used to import milk powder from other countries. Surplus means having more than enough. By 1998, India made more milk than any other country in the world.",
+                  "कमी का मतलब है पर्याप्त न होना — भारत पहले दूसरे देशों से दूध पाउडर आयात करता था। अधिशेष का मतलब है ज़रूरत से ज़्यादा होना। 1998 तक, भारत दुनिया के किसी भी और देश से ज़्यादा दूध बनाने लगा था।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L("What does NDDB stand for?", "NDDB का पूरा नाम क्या है?"),
+                options: [
+                  L("National Dairy Development Board", "राष्ट्रीय डेयरी विकास बोर्ड"),
+                  L("New Delhi Dairy Board", "न्यू दिल्ली डेयरी बोर्ड"),
+                  L("National Development Bank", "राष्ट्रीय विकास बैंक"),
+                  L("North Dairy District Board", "नॉर्थ डेयरी डिस्ट्रिक्ट बोर्ड"),
+                ],
+                answer: 0,
+                explain: L("NDDB = National Dairy Development Board, formed in 1965.", "NDDB = राष्ट्रीय डेयरी विकास बोर्ड, जिसकी स्थापना 1965 में हुई।"),
+              },
+              {
+                type: "mcq",
+                q: L(
+                  "In which year did India become the world's largest milk producer?",
+                  "भारत किस साल दुनिया का सबसे बड़ा दूध उत्पादक देश बना?"
+                ),
+                options: [L("1965", "1965"), L("1985", "1985"), L("1998", "1998"), L("2014", "2014")],
+                answer: 2,
+                explain: L("India reached the top spot in 1998.", "भारत 1998 में शीर्ष स्थान पर पहुँचा।"),
+              },
+            ],
+          },
+        ],
+        finalQuiz: {
+          passScore: 70,
+          questions: [
+            {
+              topicId: "t-problem",
+              type: "truefalse",
+              q: L(
+                "Before Amul, one private trader alone decided the price farmers got for milk.",
+                "अमूल से पहले, एक अकेला निजी व्यापारी ही तय करता था कि किसानों को दूध की कितनी कीमत मिलेगी।"
+              ),
+              answer: true,
+              explain: L(
+                "Yes — a single trader controlled the price, which was unfair to farmers.",
+                "हाँ — एक अकेला व्यापारी कीमत तय करता था, जो किसानों के लिए अन्यायपूर्ण था।"
+              ),
+            },
+            {
+              topicId: "t-amul",
+              type: "mcq",
+              q: L("The biggest benefit of a cooperative like Amul is that:", "अमूल जैसी सहकारी समिति का सबसे बड़ा फायदा यह है कि:"),
+              options: [
+                L("A trader still controls the price", "एक व्यापारी अभी भी कीमत तय करता है"),
+                L("Farmers own the business and share the profit", "किसान व्यापार के मालिक होते हैं और मुनाफ़ा बाँटते हैं"),
+                L("Only the government profits", "सिर्फ सरकार को फायदा होता है"),
+                L("Milk becomes free", "दूध मुफ्त हो जाता है"),
+              ],
+              answer: 1,
+              explain: L(
+                "In a cooperative, the farmers themselves are the owners and share the profit.",
+                "एक सहकारी समिति में, किसान खुद मालिक होते हैं और मुनाफ़ा बाँटते हैं।"
+              ),
+            },
+            {
+              topicId: "t-operation-flood",
+              type: "mcq",
+              q: L(
+                "Who led NDDB and is known as the 'Father of the White Revolution'?",
+                "NDDB का नेतृत्व किसने किया और उन्हें 'श्वेत क्रांति के जनक' के रूप में जाना जाता है?"
+              ),
+              options: [
+                L("Sardar Patel", "सरदार पटेल"),
+                L("Dr. Verghese Kurien", "डॉ. वर्गीस कुरियन"),
+                L("Dr. Y.K. Alagh", "डॉ. वाई.के. अलघ"),
+                L("Mahatma Gandhi", "महात्मा गांधी"),
+              ],
+              answer: 1,
+              explain: L(
+                "Dr. Verghese Kurien led NDDB and is called the Father of the White Revolution.",
+                "डॉ. वर्गीस कुरियन ने NDDB का नेतृत्व किया और उन्हें श्वेत क्रांति का जनक कहा जाता है।"
+              ),
+            },
+          ],
+        },
+      },
+      // ==================================================================
+      // LESSON 5
+      // ==================================================================
+      {
+        id: "m1-l5",
+        title: L("NDDB and How a Cooperative Works", "NDDB और एक सहकारी समिति कैसे काम करती है"),
+        estMinutes: 7,
+        hook: [
+          {
+            type: "hero",
+            heading: L("How the Cooperative Family Works", "सहकारी परिवार कैसे काम करता है"),
+            text: L(
+              "You've heard about NDDB and Amul. Now let's see exactly how a cooperative is organised, from your village up to the whole state.",
+              "आपने NDDB और अमूल के बारे में सुना है। अब देखते हैं कि आपके गाँव से लेकर पूरे राज्य तक एक सहकारी समिति ठीक कैसे संगठित होती है।"
+            ),
+          },
+        ],
+        topics: [
+          {
+            id: "t-nddb",
+            title: L("What is NDDB?", "NDDB क्या है?"),
+            teach: [
+              {
+                type: "text",
+                heading: L("NDDB — The Organisation Behind the Movement", "NDDB — इस आंदोलन के पीछे की संस्था"),
+                html: L(
+                  "NDDB (National Dairy Development Board) was started in 1965 to help farmers all over India build cooperatives like Amul. It is based in Anand, Gujarat — the same town where Amul began.",
+                  "NDDB (राष्ट्रीय डेयरी विकास बोर्ड) की शुरुआत 1965 में पूरे भारत के किसानों को अमूल जैसी सहकारी समितियाँ बनाने में मदद करने के लिए हुई थी। इसका मुख्यालय गुजरात के आणंद में है — वही शहर जहाँ अमूल की शुरुआत हुई थी।"
+                ),
+              },
+              {
+                type: "text",
+                heading: L("Dr. Verghese Kurien", "डॉ. वर्गीस कुरियन"),
+                html: L(
+                  "Dr. Kurien led NDDB for many years. People call him the <b>'Milkman of India'</b> because of everything he did to help farmers earn a fair, steady income from milk.",
+                  "डॉ. कुरियन ने कई सालों तक NDDB का नेतृत्व किया। किसानों को दूध से न्यायपूर्ण, स्थिर आय दिलाने के लिए उन्होंने जो कुछ किया, उसी वजह से लोग उन्हें <b>'भारत के मिल्कमैन'</b> कहते हैं।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L("Where is NDDB based?", "NDDB का मुख्यालय कहाँ है?"),
+                options: [L("New Delhi", "नई दिल्ली"), L("Mumbai", "मुंबई"), L("Anand, Gujarat", "आणंद, गुजरात"), L("Chennai", "चेन्नई")],
+                answer: 2,
+                explain: L("NDDB is headquartered in Anand, Gujarat.", "NDDB का मुख्यालय गुजरात के आणंद में है।"),
+              },
+              {
+                type: "mcq",
+                q: L("Dr. Verghese Kurien is known as:", "डॉ. वर्गीस कुरियन को इस नाम से जाना जाता है:"),
+                options: [
+                  L("The Milkman of India", "भारत के मिल्कमैन"),
+                  L("The first Prime Minister", "पहले प्रधानमंत्री"),
+                  L("A private milk trader", "एक निजी दूध व्यापारी"),
+                  L("A bank manager", "एक बैंक मैनेजर"),
+                ],
+                answer: 0,
+                explain: L("Dr. Kurien is known as the 'Milkman of India'.", "डॉ. कुरियन को 'भारत के मिल्कमैन' के रूप में जाना जाता है।"),
+              },
+            ],
+          },
+          {
+            id: "t-structure",
+            title: L("The Three Steps of a Cooperative", "एक सहकारी समिति के तीन चरण"),
+            teach: [
+              {
+                type: "text",
+                heading: L("From Your Village to the Whole State", "आपके गाँव से पूरे राज्य तक"),
+                html: L(
+                  "A dairy cooperative works in 3 simple steps — like 3 floors of a building.",
+                  "एक डेयरी सहकारी समिति 3 आसान चरणों में काम करती है — किसी इमारत की 3 मंज़िलों की तरह।"
+                ),
+              },
+              {
+                type: "stat-grid",
+                items: [
+                  {
+                    label: L("1. Village Society", "1. ग्राम समिति"),
+                    text: L(
+                      "Farmers in one village bring their milk here every day. The ground floor — closest to the farmer.",
+                      "एक गाँव के किसान हर दिन अपना दूध यहाँ लाते हैं। यह ज़मीनी मंज़िल है — किसान के सबसे करीब।"
+                    ),
+                  },
+                  {
+                    label: L("2. District Union", "2. ज़िला संघ"),
+                    text: L(
+                      "Many Village Societies in a district join together here. Milk from many villages is collected and processed.",
+                      "एक ज़िले की कई ग्राम समितियाँ यहाँ आकर जुड़ती हैं। कई गाँवों का दूध यहाँ इकट्ठा होकर प्रोसेस किया जाता है।"
+                    ),
+                  },
+                  {
+                    label: L("3. State Federation", "3. राज्य महासंघ"),
+                    text: L(
+                      "All the District Unions in a state join together here, and sell milk and milk products (like Amul does) to customers everywhere.",
+                      "एक राज्य के सभी ज़िला संघ यहाँ आकर जुड़ते हैं, और दूध व दूध उत्पाद (जैसे अमूल करता है) हर जगह के ग्राहकों को बेचते हैं।"
+                    ),
+                  },
+                ],
+              },
+              {
+                type: "callout",
+                style: "info",
+                heading: L("Why This Matters to You", "यह आपके लिए क्यों ज़रूरी है"),
+                text: L(
+                  "This is the same three-step model behind the MPPs (Milk Pooling Points) you will help form and run in later training. You are joining a system that has worked for over 75 years.",
+                  "यही तीन-चरण मॉडल MPP (मिल्क पूलिंग पॉइंट) के पीछे भी है, जिन्हें बनाने और चलाने में आप आगे की ट्रेनिंग में मदद करेंगे। आप एक ऐसी व्यवस्था से जुड़ रहे हैं जो 75 सालों से ज़्यादा समय से काम कर रही है।"
+                ),
+              },
+            ],
+            check: [
+              {
+                type: "mcq",
+                q: L(
+                  "What is the first, ground-floor step of a dairy cooperative?",
+                  "एक डेयरी सहकारी समिति का पहला, ज़मीनी मंज़िल वाला चरण क्या है?"
+                ),
+                options: [L("State Federation", "राज्य महासंघ"), L("District Union", "ज़िला संघ"), L("Village Society", "ग्राम समिति"), L("NDDB", "NDDB")],
+                answer: 2,
+                explain: L("The Village Society is the first step, closest to the farmer.", "ग्राम समिति पहला चरण है, जो किसान के सबसे करीब है।"),
+              },
+              {
+                type: "mcq",
+                q: L(
+                  "Which comes right after the Village Society in the cooperative structure?",
+                  "सहकारी समिति की संरचना में ग्राम समिति के ठीक बाद क्या आता है?"
+                ),
+                options: [
+                  L("State Federation", "राज्य महासंघ"),
+                  L("District Union", "ज़िला संघ"),
+                  L("NDDB office", "NDDB कार्यालय"),
+                  L("Nothing, it ends there", "कुछ नहीं, यहीं खत्म हो जाता है"),
+                ],
+                answer: 1,
+                explain: L("District Union comes next, joining many village societies.", "इसके बाद ज़िला संघ आता है, जो कई ग्राम समितियों को जोड़ता है।"),
+              },
+            ],
+          },
+        ],
+        finalQuiz: {
+          passScore: 70,
+          questions: [
+            {
+              topicId: "t-nddb",
+              type: "mcq",
+              q: L("NDDB was formed in which year?", "NDDB की स्थापना किस साल हुई थी?"),
+              options: [L("1946", "1946"), L("1965", "1965"), L("1991", "1991"), L("2009", "2009")],
+              answer: 1,
+              explain: L("NDDB was formed in 1965.", "NDDB की स्थापना 1965 में हुई थी।"),
+            },
+            {
+              topicId: "t-structure",
+              type: "mcq",
+              q: L(
+                "Which comes right after the Village Society in the cooperative structure?",
+                "सहकारी समिति की संरचना में ग्राम समिति के ठीक बाद क्या आता है?"
+              ),
+              options: [
+                L("State Federation", "राज्य महासंघ"),
+                L("District Union", "ज़िला संघ"),
+                L("NDDB office", "NDDB कार्यालय"),
+                L("Nothing, it ends there", "कुछ नहीं, यहीं खत्म हो जाता है"),
+              ],
+              answer: 1,
+              explain: L("District Union comes next, joining many village societies.", "इसके बाद ज़िला संघ आता है, जो कई ग्राम समितियों को जोड़ता है।"),
+            },
+          ],
+        },
+      },
     ],
   },
 ];
