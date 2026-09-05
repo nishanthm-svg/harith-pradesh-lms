@@ -86,14 +86,14 @@ const UI = {
   tryAgainHeading: L("🔄 Try Again", "🔄 फिर से कोशिश करें"),
   reviewNextTopic: L("Review Next Topic →", "अगला विषय देखें →"),
   finishLesson: L("Finish Lesson →", "पाठ पूरा करें →"),
-  reviewRetry: L("Read It Again & Retry", "फिर से पड़ें और कोशिश करें"),
+  reviewRetry: L("Read It Again & Retry", "फिर से पढ़ें और कोशिश करें"),
   checkPassGotIt: L("🎉 Got it — that's cleared up now!", "🎉 समझ गए — अब यह साफ़ है!"),
   checkFailTitle: L("Still not quite — one more look.", "अभी भी ठीक नहीं — एक बार और देखें।"),
   checkFailSub: L(
     "Scroll up and re-read this topic, then try once more.",
-    "ऊपर जाकर इस विषय को फिर से पड़ें, फिर एक बार और कोशिश करें।"
+    "ऊपर जाकर इस विषय को फिर से पढ़ें, फिर एक बार और कोशिश करें।"
   ),
-  completePassTitle: L("Great work!", "बहुत बढ़िया!"),
+  completePassTitle: L("Great work!", "बहुत बढ़िया!"),
   completeReviewedTitle: L("All caught up!", "सब कुछ समझ गए!"),
   completePassText: L(
     "You've learned and passed every topic in this lesson.",
@@ -101,17 +101,17 @@ const UI = {
   ),
   completeReviewedText: L(
     "You reviewed a few things and now know this lesson well.",
-    "आपने कुछ चीजें फिर से देखीं और अब यह पाठ अच्छी तरह समझते हैं।"
+    "आपने कुछ चीज़ें फिर से देखीं और अब यह पाठ अच्छी तरह समझते हैं।"
   ),
   viewCertificate: L("View Certificate", "प्रमाण पत्र देखें"),
-  continueNextLesson: L("Continue to Next Lesson →", "अगले पाठ पर जाएं →"),
-  backToModule: L("Back to Module", "मॉड्यूल पर वापस जाएं"),
+  continueNextLesson: L("Continue to Next Lesson →", "अगले पाठ पर जाएँ →"),
+  backToModule: L("Back to Module", "मॉड्यूल पर वापस जाएँ"),
   moduleCompleteTitle: L("Module {n} Complete!", "मॉड्यूल {n} पूरा हुआ!"),
   moduleCompleteText: L(
     'You\'ve finished "{title}". Great job working through every lesson and quiz on your own.',
     '"{title}" आपने पूरा कर लिया। हर पाठ और क्विज़ खुद पूरा करने के लिए बधाई।'
   ),
-  backToDashboard: L("Back to Dashboard", "डैशबोर्ड पर वापस जाएं"),
+  backToDashboard: L("Back to Dashboard", "डैशबोर्ड पर वापस जाएँ"),
   reviewModule: L("Review Module", "मॉड्यूल फिर से देखें"),
   nextModuleComingSoon: L('Module {n}: "{title}" is coming soon.', 'मॉड्यूल {n}: "{title}" जल्द आ रहा है।'),
   tapToReveal: L("👆 Tap to see what this means", "👆 अर्थ देखने के लिए टैप करें"),
@@ -121,7 +121,7 @@ const UI = {
     "Select the language you'd like to learn in. You can change this anytime.",
     "वह भाषा चुनें जिसमें आप सीखना चाहते हैं। आप इसे कभी भी बदल सकते हैं।"
   ),
-  langContinue: L("Continue →", "आगे बढ़ें →"),
+  langContinue: L("Continue →", "आगे बढ़ें →"),
   changeLanguage: L("Language", "भाषा"),
   trueLabel: L("True", "सही"),
   falseLabel: L("False", "गलत"),
@@ -140,10 +140,10 @@ const UI = {
     "From dairy basics to milk pricing, MPP routes, and cost management.",
     "डेयरी की मूल बातों से लेकर दूध की कीमत, एमपीपी मार्ग और लागत प्रबंधन तक।"
   ),
-  landingFeature2Title: L("English & Hindi", "अंग्रेज़ी और हिन्दी"),
+  landingFeature2Title: L("English & Hindi", "अंग्रेज़ी और हिन्दी"),
   landingFeature2Text: L(
     "Learn in English or Hindi — whichever you're comfortable with.",
-    "अंग्रेज़ी या हिन्दी में सीखें — जो भी आपके लिए आसान हो।"
+    "अंग्रेज़ी या हिन्दी में सीखें — जो भी आपके लिए आसान हो।"
   ),
   landingFeature3Title: L("Tracked Progress", "प्रगति की निगरानी"),
   landingFeature3Text: L(
@@ -153,8 +153,8 @@ const UI = {
 
   // Login / auth
   loginTitle: L("Sign In", "साइन इन करें"),
-  loginSubtitle: L("Enter your login ID and password to continue.", "जारी रखने के लिए अपनी लॉगिन आईडी और पासवर्ड डालें।"),
-  loginIdLabel: L("Login ID", "लॉगिन आईडी"),
+  loginSubtitle: L("Enter your email and password to continue.", "जारी रखने के लिए अपना ईमेल और पासवर्ड डालें।"),
+  loginIdLabel: L("Email Address", "ईमेल पता"),
   passwordLabel: L("Password", "पासवर्ड"),
   loginButton: L("Sign In", "साइन इन करें"),
   loginSigningIn: L("Signing in…", "साइन इन हो रहा है…"),
@@ -162,10 +162,10 @@ const UI = {
   logoutButton: L("Log out", "लॉग आउट"),
   adminNavLink: L("Admin", "एडमिन"),
 
-  changePasswordTitle: L("Set a New Password", "नया पासवर्ड बनाएं"),
+  changePasswordTitle: L("Set a New Password", "नया पासवर्ड बनाएँ"),
   changePasswordSubtitle: L(
     "For your security, please set your own password before continuing.",
-    "सुरक्षा के लिए, आगे बढ़ने से पहले कृपया अपना पासवर्ड बनाएं।"
+    "सुरक्षा के लिए, आगे बढ़ने से पहले कृपया अपना पासवर्ड बनाएँ।"
   ),
   currentPasswordLabel: L("Current password", "मौजूदा पासवर्ड"),
   newPasswordLabel: L("New password", "नया पासवर्ड"),
@@ -180,7 +180,7 @@ const UI = {
     "हर कर्मचारी की प्रगति देखें, और कर्मचारी खातों का प्रबंधन करें।"
   ),
   adminEmployeesHeading: L("Employees", "कर्मचारी"),
-  adminAddEmployeeButton: L("+ Add Employee", "+ कर्मचारी जोड़ें"),
+  adminAddEmployeeButton: L("+ Add Employee", "+ कर्मचारी जोड़ें"),
   adminExportCsvButton: L("⬇ Export CSV", "⬇ सीएसवी डाउनलोड करें"),
   adminSearchPlaceholder: L("Search by name or login ID…", "नाम या लॉगिन आईडी से खोजें…"),
   adminTableName: L("Name", "नाम"),
@@ -191,18 +191,18 @@ const UI = {
   adminTableStatus: L("Status", "स्थिति"),
   adminStatusActive: L("Active", "सक्रिय"),
   adminStatusInactive: L("Inactive", "निष्क्रिय"),
-  adminNoEmployees: L("No employees yet. Add your first one to get started.", "अभी कोई कर्मचारी नहीं है। शुरू करने के लिए पहला कर्मचारी जोड़ें।"),
+  adminNoEmployees: L("No employees yet. Add your first one to get started.", "अभी कोई कर्मचारी नहीं है। शुरू करने के लिए पहला कर्मचारी जोड़ें।"),
   adminNeverActive: L("Never", "कभी नहीं"),
 
-  adminNewEmployeeTitle: L("Add Employee", "कर्मचारी जोड़ें"),
+  adminNewEmployeeTitle: L("Add Employee", "कर्मचारी जोड़ें"),
   adminDisplayNameLabel: L("Full name", "पूरा नाम"),
-  adminLoginIdHint: L("Letters, numbers, dots, dashes or underscores only.", "केवल अक्षर, संख्याएँ, बिंदु, डैश या अंडरस्कोर।"),
+  adminLoginIdHint: L("Must be a real email address the employee can access.", "यह एक असली ईमेल पता होना चाहिए जिसे कर्मचारी खोल सके।"),
   adminTempPasswordLabel: L("Temporary password", "अस्थायी पासवर्ड"),
   adminTempPasswordHint: L(
     "The employee will be asked to set their own password on first login.",
     "कर्मचारी को पहली बार लॉगिन करने पर अपना पासवर्ड बनाने के लिए कहा जाएगा।"
   ),
-  adminCreateButton: L("Create Account", "खाता बनाएं"),
+  adminCreateButton: L("Create Account", "खाता बनाएँ"),
   adminCreating: L("Creating…", "बनाया जा रहा है…"),
   adminCancelButton: L("Cancel", "रद्द करें"),
 
@@ -212,9 +212,11 @@ const UI = {
   adminReactivateButton: L("Reactivate", "पुनः सक्रिय करें"),
   adminResetPasswordPromptTitle: L("Reset Password", "पासवर्ड रीसेट करें"),
   adminResetPasswordPromptSub: L(
-    "Set a new temporary password. The employee will need to change it on next login.",
-    "नया अस्थायी पासवर्ड बनाएं। कर्मचारी को अगली बार लॉगिन करते समय इसे बदलना होगा।"
+    "We'll email the employee a link to set a new password themselves.",
+    "हम कर्मचारी को एक ईमेल भेजेंगे जिससे वे खुद नया पासवर्ड बना सकें।"
   ),
+  adminSendResetEmailButton: L("Send Reset Email", "रीसेट ईमेल भेजें"),
+  adminResetEmailSentNote: L("Reset email sent to {email}.", "{email} पर रीसेट ईमेल भेज दिया गया है।"),
   adminModuleLabel: L("Module {n}", "मॉड्यूल {n}"),
   adminLessonsCompleteLabel: L("{completed}/{total} lessons", "{completed}/{total} पाठ"),
   adminOverallLabel: L("Overall completion", "कुल पूर्णता"),
