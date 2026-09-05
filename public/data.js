@@ -4304,129 +4304,192 @@ export const MODULES = [
     "id": "m5",
     "number": 5,
     "title": L("Designing a Need-Based Communication Content", "ज़रूरत-आधारित संचार सामग्री तैयार करना"),
-    "subtitle": "Learn the CRI method for building training content that answers real problems in the field — not generic lessons nobody asked for.",
+    "subtitle": L(
+      "Learn the CRI method for building training content that answers real problems in the field — not generic lessons nobody asked for.",
+      "CRI तरीका सीखिए, जो ज़मीनी स्तर की असली समस्याओं का जवाब देने वाली प्रशिक्षण सामग्री बनाता है — ऐसे सामान्य पाठ नहीं जो किसी ने माँगे ही न हों।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m5-l1",
-        "title": "What Is CRI, and Why 'Need-Based' Matters",
+        "title": L("What Is CRI, and Why 'Need-Based' Matters", "CRI क्या है, और 'ज़रूरत-आधारित' क्यों मायने रखता है"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Why Generic Training Doesn't Work",
-            "text": "Imagine sitting through a training on animal vaccination when your real problem is farmers leaving your MPP. That training would feel like a waste of time. This lesson shows you a better way — CRI."
+            "heading": L("Why Generic Training Doesn't Work", "सामान्य प्रशिक्षण क्यों काम नहीं करता"),
+            "text": L(
+              "Imagine sitting through a training on animal vaccination when your real problem is farmers leaving your MPP. That training would feel like a waste of time. This lesson shows you a better way — CRI.",
+              "ज़रा सोचिए कि आप पशु टीकाकरण पर एक प्रशिक्षण में बैठे हैं जबकि आपकी असली समस्या है किसानों का आपका MPP छोड़ना। वह प्रशिक्षण समय की बर्बादी जैसा लगेगा। यह पाठ आपको एक बेहतर तरीका दिखाता है — CRI।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-generic-vs-needbased",
-            "title": "The Problem With Generic Content",
+            "title": L("The Problem With Generic Content", "सामान्य सामग्री की समस्या"),
             "teach": [
               {
                 "type": "text",
-                "heading": "One Size Does Not Fit All Villages",
-                "html": "Every village and every MPP has different problems. One village may be losing members. Another may have farmers whose milk fat is dropping. A third may need help with animal nutrition. If you teach the same generic content everywhere, it may not solve anyone's real problem."
+                "heading": L("One Size Does Not Fit All Villages", "एक ही तरीका सभी गाँवों के लिए काम नहीं करता"),
+                "html": L(
+                  "Every village and every MPP has different problems. One village may be losing members. Another may have farmers whose milk fat is dropping. A third may need help with animal nutrition. If you teach the same generic content everywhere, it may not solve anyone's real problem.",
+                  "हर गाँव और हर MPP की समस्याएँ अलग होती हैं। एक गाँव सदस्य खो रहा हो सकता है। किसी दूसरे में किसानों के दूध का फैट गिर रहा हो सकता है। तीसरे को पशु आहार में मदद चाहिए हो सकती है। अगर आप हर जगह एक जैसी सामान्य सामग्री पढ़ाएँ, तो शायद यह किसी की भी असली समस्या हल न करे।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Did You Know?",
-                "text": "Training designed around a clear, planned approach and teaching-learning psychology is far more effective for adult learners than a generic lecture. Adults learn best when the content answers a real problem they are facing right now."
+                "heading": L("Did You Know?", "क्या आप जानते हैं?"),
+                "text": L(
+                  "Training designed around a clear, planned approach and teaching-learning psychology is far more effective for adult learners than a generic lecture. Adults learn best when the content answers a real problem they are facing right now.",
+                  "एक स्पष्ट, योजनाबद्ध तरीके और शिक्षण-अधिगम मनोविज्ञान के आधार पर बना प्रशिक्षण, वयस्क शिक्षार्थियों के लिए एक सामान्य व्याख्यान से कहीं ज़्यादा असरदार होता है। वयस्क तब सबसे अच्छा सीखते हैं जब सामग्री उस असली समस्या का जवाब देती है जिसका वे अभी सामना कर रहे हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "CRI",
-                "meaning": "Short for Criterion-Referenced Instruction — a method for designing training content that is built around exactly what learners need to be able to do, instead of around generic topics."
+                "term": L("CRI", "CRI"),
+                "meaning": L(
+                  "Short for Criterion-Referenced Instruction — a method for designing training content that is built around exactly what learners need to be able to do, instead of around generic topics.",
+                  "Criterion-Referenced Instruction का संक्षिप्त रूप — प्रशिक्षण सामग्री डिज़ाइन करने का एक तरीका जो ठीक उसी पर आधारित है जो शिक्षार्थियों को करने में सक्षम होना चाहिए, न कि सामान्य विषयों पर।"
+                )
               },
               {
                 "type": "text",
-                "heading": "What CRI Helps You Do",
-                "html": "CRI helps trainers design need-based, field-relevant programs. It also helps build the capability to actually change behaviour — not just deliver information, but check that people really do things differently afterward."
+                "heading": L("What CRI Helps You Do", "CRI आपको क्या करने में मदद करता है"),
+                "html": L(
+                  "CRI helps trainers design need-based, field-relevant programs. It also helps build the capability to actually change behaviour — not just deliver information, but check that people really do things differently afterward.",
+                  "CRI प्रशिक्षकों को ज़रूरत-आधारित, ज़मीनी स्तर से जुड़े कार्यक्रम डिज़ाइन करने में मदद करता है। यह असल में व्यवहार बदलने की क्षमता बनाने में भी मदद करता है — सिर्फ जानकारी देना नहीं, बल्कि यह जाँचना कि लोग बाद में सचमुच अलग तरीके से काम करते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why might the same generic training content fail in different villages?",
+                "q": L(
+                  "Why might the same generic training content fail in different villages?",
+                  "एक ही सामान्य प्रशिक्षण सामग्री अलग-अलग गाँवों में क्यों असफल हो सकती है?"
+                ),
                 "options": [
-                  "Because every village has the exact same problems",
-                  "Because different villages have different real problems, so one-size-fits-all content may not help",
-                  "Because generic content is always more effective",
-                  "Because farmers dislike all training equally"
+                  L("Because every village has the exact same problems", "क्योंकि हर गाँव की समस्याएँ बिल्कुल एक जैसी होती हैं"),
+                  L(
+                    "Because different villages have different real problems, so one-size-fits-all content may not help",
+                    "क्योंकि अलग-अलग गाँवों की असली समस्याएँ अलग होती हैं, इसलिए एक-जैसी सामग्री मदद न करे"
+                  ),
+                  L("Because generic content is always more effective", "क्योंकि सामान्य सामग्री हमेशा ज़्यादा असरदार होती है"),
+                  L("Because farmers dislike all training equally", "क्योंकि किसान हर प्रशिक्षण को बराबर नापसंद करते हैं")
                 ],
                 "answer": 1,
-                "explain": "Villages face different problems, so content built for one specific problem often does not solve another."
+                "explain": L(
+                  "Villages face different problems, so content built for one specific problem often does not solve another.",
+                  "गाँवों की समस्याएँ अलग-अलग होती हैं, इसलिए एक खास समस्या के लिए बनी सामग्री अक्सर दूसरी समस्या हल नहीं करती।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "CRI stands for a method that designs training around what learners actually need to be able to do.",
+                "q": L(
+                  "CRI stands for a method that designs training around what learners actually need to be able to do.",
+                  "CRI एक ऐसे तरीके के लिए है जो प्रशिक्षण को इस आधार पर डिज़ाइन करता है कि शिक्षार्थियों को असल में क्या करने में सक्षम होना चाहिए।"
+                ),
                 "answer": true,
-                "explain": "CRI (Criterion-Referenced Instruction) is built around real learner needs, not generic topics."
+                "explain": L(
+                  "CRI (Criterion-Referenced Instruction) is built around real learner needs, not generic topics.",
+                  "CRI (Criterion-Referenced Instruction) असली शिक्षार्थी ज़रूरतों पर आधारित है, सामान्य विषयों पर नहीं।"
+                )
               }
             ]
           },
           {
             "id": "t-cri-four-steps",
-            "title": "The Four Steps of CRI",
+            "title": L("The Four Steps of CRI", "CRI के चार चरण"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Four Steps, Always in Order",
-                "html": "CRI has four steps, always followed in the same order. Each step checks that the training really matches what learners need — not just what a trainer assumes they need."
+                "heading": L("Four Steps, Always in Order", "चार चरण, हमेशा एक क्रम में"),
+                "html": L(
+                  "CRI has four steps, always followed in the same order. Each step checks that the training really matches what learners need — not just what a trainer assumes they need.",
+                  "CRI के चार चरण हैं, जिन्हें हमेशा एक ही क्रम में अपनाया जाता है। हर चरण यह जाँचता है कि प्रशिक्षण वाकई शिक्षार्थियों की ज़रूरत से मेल खाता है — सिर्फ वह नहीं जो प्रशिक्षक मान लेता है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "1. Behavioural Objectives",
-                    "text": "Decide exactly what learners should be able to DO after the training — an action you can see and measure, not just 'understand' something."
+                    "label": L("1. Behavioural Objectives", "1. व्यवहारिक उद्देश्य"),
+                    "text": L(
+                      "Decide exactly what learners should be able to DO after the training — an action you can see and measure, not just 'understand' something.",
+                      "ठीक-ठीक तय करें कि प्रशिक्षण के बाद शिक्षार्थियों को क्या करने में सक्षम होना चाहिए — एक ऐसा काम जिसे आप देख और माप सकें, सिर्फ कुछ 'समझना' नहीं।"
+                    )
                   },
                   {
-                    "label": "2. Pre-Evaluation",
-                    "text": "Check what learners already know and can do, before you teach anything. This stops you from teaching things they already know."
+                    "label": L("2. Pre-Evaluation", "2. पूर्व-मूल्यांकन"),
+                    "text": L(
+                      "Check what learners already know and can do, before you teach anything. This stops you from teaching things they already know.",
+                      "कुछ भी सिखाने से पहले जाँचें कि शिक्षार्थी पहले से क्या जानते और कर सकते हैं। इससे आप वह नहीं सिखाते जो वे पहले से जानते हैं।"
+                    )
                   },
                   {
-                    "label": "3. Teaching",
-                    "text": "Deliver the content itself, using teaching-learning principles that help adults learn faster — covered in the next lesson."
+                    "label": L("3. Teaching", "3. शिक्षण"),
+                    "text": L(
+                      "Deliver the content itself, using teaching-learning principles that help adults learn faster — covered in the next lesson.",
+                      "उन शिक्षण-अधिगम सिद्धांतों का उपयोग करके सामग्री पढ़ाएँ जो वयस्कों को तेज़ी से सीखने में मदद करते हैं — अगले पाठ में बताया गया है।"
+                    )
                   },
                   {
-                    "label": "4. Post-Evaluation",
-                    "text": "Check what learners actually learned after the training, to see if it worked and to find any gaps that still need attention."
+                    "label": L("4. Post-Evaluation", "4. पश्च-मूल्यांकन"),
+                    "text": L(
+                      "Check what learners actually learned after the training, to see if it worked and to find any gaps that still need attention.",
+                      "जाँचें कि प्रशिक्षण के बाद शिक्षार्थियों ने असल में क्या सीखा, यह देखने के लिए कि यह काम कर गया या नहीं, और अभी भी ध्यान देने लायक कोई कमी है या नहीं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "CRI in Action",
-                "text": "Suppose many farmers in a village are leaving the MPP. Behavioural Objective: Sahayak should be able to explain 3 reasons farmers stay with an MPP. Pre-Evaluation: ask Sahayaks what they currently tell farmers. Teaching: run a short session filling the gaps. Post-Evaluation: check a week later if fewer farmers are leaving."
+                "heading": L("CRI in Action", "CRI असल में कैसे काम करता है"),
+                "text": L(
+                  "Suppose many farmers in a village are leaving the MPP. Behavioural Objective: Sahayak should be able to explain 3 reasons farmers stay with an MPP. Pre-Evaluation: ask Sahayaks what they currently tell farmers. Teaching: run a short session filling the gaps. Post-Evaluation: check a week later if fewer farmers are leaving.",
+                  "मान लीजिए कि एक गाँव के कई किसान MPP छोड़ रहे हैं। व्यवहारिक उद्देश्य: सहायक को 3 कारण बताने में सक्षम होना चाहिए कि किसान MPP के साथ क्यों बने रहते हैं। पूर्व-मूल्यांकन: सहायकों से पूछें कि वे अभी किसानों को क्या बताते हैं। शिक्षण: कमियों को भरने के लिए एक छोटा सत्र चलाएँ। पश्च-मूल्यांकन: एक हफ्ते बाद जाँचें कि कम किसान छोड़ रहे हैं या नहीं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Remember",
-                "text": "Behavioural Objectives and Evaluation are like bookends — they make sure training is not just delivered, but actually works."
+                "heading": L("Remember", "याद रखें"),
+                "text": L(
+                  "Behavioural Objectives and Evaluation are like bookends — they make sure training is not just delivered, but actually works.",
+                  "व्यवहारिक उद्देश्य और मूल्यांकन बुकएंड्स की तरह हैं — वे सुनिश्चित करते हैं कि प्रशिक्षण सिर्फ दिया न जाए, बल्कि असल में काम भी करे।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a 'Behavioural Objective' in CRI?",
+                "q": L("What is a 'Behavioural Objective' in CRI?", "CRI में 'व्यवहारिक उद्देश्य' क्या है?"),
                 "options": [
-                  "A vague hope that learners feel inspired",
-                  "A clear, measurable action learners should be able to DO after training",
-                  "The name of the trainer's manager",
-                  "A test given only at the very end of the year"
+                  L("A vague hope that learners feel inspired", "एक अस्पष्ट उम्मीद कि शिक्षार्थी प्रेरित महसूस करें"),
+                  L(
+                    "A clear, measurable action learners should be able to DO after training",
+                    "एक स्पष्ट, मापने योग्य काम जो शिक्षार्थी प्रशिक्षण के बाद कर सकें"
+                  ),
+                  L("The name of the trainer's manager", "प्रशिक्षक के मैनेजर का नाम"),
+                  L("A test given only at the very end of the year", "साल के बिल्कुल अंत में दिया जाने वाला एक टेस्ट")
                 ],
                 "answer": 1,
-                "explain": "A Behavioural Objective is a specific, observable action — something you can actually see the learner do."
+                "explain": L(
+                  "A Behavioural Objective is a specific, observable action — something you can actually see the learner do.",
+                  "एक व्यवहारिक उद्देश्य एक स्पष्ट, देखने योग्य काम है — कुछ ऐसा जो आप शिक्षार्थी को करते हुए वाकई देख सकें।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Pre-Evaluation happens after the teaching is complete.",
+                "q": L("Pre-Evaluation happens after the teaching is complete.", "पूर्व-मूल्यांकन शिक्षण पूरा होने के बाद होता है।"),
                 "answer": false,
-                "explain": "Pre-Evaluation happens BEFORE teaching — it checks what learners already know so training doesn't repeat it."
+                "explain": L(
+                  "Pre-Evaluation happens BEFORE teaching — it checks what learners already know so training doesn't repeat it.",
+                  "पूर्व-मूल्यांकन शिक्षण से पहले होता है — यह जाँचता है कि शिक्षार्थी पहले से क्या जानते हैं ताकि प्रशिक्षण उसे न दोहराए।"
+                )
               }
             ]
           }
@@ -4437,81 +4500,132 @@ export const MODULES = [
             {
               "topicId": "t-generic-vs-needbased",
               "type": "mcq",
-              "q": "What makes CRI different from a generic training lecture?",
+              "q": L("What makes CRI different from a generic training lecture?", "CRI को एक सामान्य प्रशिक्षण व्याख्यान से अलग क्या बनाता है?"),
               "options": [
-                "CRI is always longer than a lecture",
-                "CRI is built around what learners actually need, checked before and after",
-                "CRI uses only videos, never live teaching",
-                "CRI is only for new employees"
+                L("CRI is always longer than a lecture", "CRI हमेशा व्याख्यान से लंबा होता है"),
+                L(
+                  "CRI is built around what learners actually need, checked before and after",
+                  "CRI इस पर बना है कि शिक्षार्थियों को असल में क्या चाहिए, जिसे पहले और बाद में जाँचा जाता है"
+                ),
+                L("CRI uses only videos, never live teaching", "CRI सिर्फ वीडियो उपयोग करता है, कभी लाइव शिक्षण नहीं"),
+                L("CRI is only for new employees", "CRI सिर्फ नए कर्मचारियों के लिए है")
               ],
               "answer": 1,
-              "explain": "CRI matches content to real, checked learner needs — unlike a one-size-fits-all lecture."
+              "explain": L(
+                "CRI matches content to real, checked learner needs — unlike a one-size-fits-all lecture.",
+                "CRI सामग्री को असली, जाँची गई शिक्षार्थी ज़रूरतों से मिलाता है — एक-जैसे व्याख्यान के विपरीत।"
+              )
             },
             {
               "topicId": "t-generic-vs-needbased",
               "type": "truefalse",
-              "q": "Adults generally learn best from content that connects to a real problem they are facing right now.",
+              "q": L(
+                "Adults generally learn best from content that connects to a real problem they are facing right now.",
+                "वयस्क आमतौर पर उस सामग्री से सबसे अच्छा सीखते हैं जो उनकी अभी की असली समस्या से जुड़ी हो।"
+              ),
               "answer": true,
-              "explain": "Adult learners respond best to training that clearly answers a problem relevant to their own situation."
+              "explain": L(
+                "Adult learners respond best to training that clearly answers a problem relevant to their own situation.",
+                "वयस्क शिक्षार्थी उस प्रशिक्षण पर सबसे अच्छी प्रतिक्रिया देते हैं जो उनकी अपनी स्थिति से जुड़ी समस्या का स्पष्ट जवाब दे।"
+              )
             },
             {
               "topicId": "t-cri-four-steps",
               "type": "mcq",
-              "q": "Put these CRI steps in the correct order: Teaching, Post-Evaluation, Behavioural Objectives, Pre-Evaluation.",
+              "q": L(
+                "Put these CRI steps in the correct order: Teaching, Post-Evaluation, Behavioural Objectives, Pre-Evaluation.",
+                "इन CRI चरणों को सही क्रम में लगाएँ: शिक्षण, पश्च-मूल्यांकन, व्यवहारिक उद्देश्य, पूर्व-मूल्यांकन।"
+              ),
               "options": [
-                "Behavioural Objectives, Pre-Evaluation, Teaching, Post-Evaluation",
-                "Post-Evaluation, Teaching, Pre-Evaluation, Behavioural Objectives",
-                "Teaching, Behavioural Objectives, Post-Evaluation, Pre-Evaluation",
-                "Pre-Evaluation, Post-Evaluation, Teaching, Behavioural Objectives"
+                L(
+                  "Behavioural Objectives, Pre-Evaluation, Teaching, Post-Evaluation",
+                  "व्यवहारिक उद्देश्य, पूर्व-मूल्यांकन, शिक्षण, पश्च-मूल्यांकन"
+                ),
+                L(
+                  "Post-Evaluation, Teaching, Pre-Evaluation, Behavioural Objectives",
+                  "पश्च-मूल्यांकन, शिक्षण, पूर्व-मूल्यांकन, व्यवहारिक उद्देश्य"
+                ),
+                L(
+                  "Teaching, Behavioural Objectives, Post-Evaluation, Pre-Evaluation",
+                  "शिक्षण, व्यवहारिक उद्देश्य, पश्च-मूल्यांकन, पूर्व-मूल्यांकन"
+                ),
+                L(
+                  "Pre-Evaluation, Post-Evaluation, Teaching, Behavioural Objectives",
+                  "पूर्व-मूल्यांकन, पश्च-मूल्यांकन, शिक्षण, व्यवहारिक उद्देश्य"
+                )
               ],
               "answer": 0,
-              "explain": "CRI always follows this order: decide the objective, check existing knowledge, teach, then check what was learned."
+              "explain": L(
+                "CRI always follows this order: decide the objective, check existing knowledge, teach, then check what was learned.",
+                "CRI हमेशा इसी क्रम का पालन करता है: उद्देश्य तय करें, मौजूदा ज्ञान जाँचें, सिखाएँ, फिर जाँचें कि क्या सीखा गया।"
+              )
             },
             {
               "topicId": "t-cri-four-steps",
               "type": "truefalse",
-              "q": "Post-Evaluation helps find gaps that still need attention after training.",
+              "q": L(
+                "Post-Evaluation helps find gaps that still need attention after training.",
+                "पश्च-मूल्यांकन प्रशिक्षण के बाद ध्यान देने लायक कमियों को खोजने में मदद करता है।"
+              ),
               "answer": true,
-              "explain": "Post-Evaluation checks whether the training actually worked, and reveals any remaining gaps."
+              "explain": L(
+                "Post-Evaluation checks whether the training actually worked, and reveals any remaining gaps.",
+                "पश्च-मूल्यांकन जाँचता है कि प्रशिक्षण वाकई काम कर गया या नहीं, और बची हुई किसी भी कमी को उजागर करता है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m5-l2",
-        "title": "Designing and Delivering a Real Session",
+        "title": L("Designing and Delivering a Real Session", "एक असली सत्र डिज़ाइन करना और देना"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "From Village Problem to Training Content",
-            "text": "Now let's turn what you've learned into practice — picking a real topic and building a short session that Sahayaks or farmers actually need."
+            "heading": L("From Village Problem to Training Content", "गाँव की समस्या से प्रशिक्षण सामग्री तक"),
+            "text": L(
+              "Now let's turn what you've learned into practice — picking a real topic and building a short session that Sahayaks or farmers actually need.",
+              "अब आइए जो आपने सीखा उसे अभ्यास में बदलें — एक असली विषय चुनें और एक छोटा सत्र बनाएँ जिसकी सहायकों या किसानों को असल में ज़रूरत है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-teaching-principles",
-            "title": "Five Principles That Help Adults Learn",
+            "title": L("Five Principles That Help Adults Learn", "पाँच सिद्धांत जो वयस्कों को सीखने में मदद करते हैं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Teaching the CRI Way",
-                "html": "Inside the 'Teaching' step of CRI, five principles make learning stick — especially for adult learners who are busy and practical-minded."
+                "heading": L("Teaching the CRI Way", "CRI तरीके से पढ़ाना"),
+                "html": L(
+                  "Inside the 'Teaching' step of CRI, five principles make learning stick — especially for adult learners who are busy and practical-minded.",
+                  "CRI के 'शिक्षण' चरण के भीतर, पाँच सिद्धांत सीखने को टिकाऊ बनाते हैं — खासकर व्यस्त और व्यावहारिक सोच वाले वयस्क शिक्षार्थियों के लिए।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Perceived Purpose",
-                    "text": "Learners must know WHY this matters to them before you begin — make the goal clear upfront."
+                    "label": L("Perceived Purpose", "महसूस किया गया उद्देश्य"),
+                    "text": L(
+                      "Learners must know WHY this matters to them before you begin — make the goal clear upfront.",
+                      "शुरू करने से पहले शिक्षार्थियों को यह जानना ज़रूरी है कि यह उनके लिए क्यों मायने रखता है — लक्ष्य शुरू में ही साफ़ करें।"
+                    )
                   },
                   {
-                    "label": "Individual Differentiation",
-                    "text": "Different learners already know different things. Address their different needs, instead of teaching everyone the exact same way."
+                    "label": L("Individual Differentiation", "व्यक्तिगत भिन्नता"),
+                    "text": L(
+                      "Different learners already know different things. Address their different needs, instead of teaching everyone the exact same way.",
+                      "अलग-अलग शिक्षार्थी पहले से अलग-अलग चीज़ें जानते हैं। सबको बिल्कुल एक जैसे तरीके से पढ़ाने के बजाय उनकी अलग-अलग ज़रूरतों को संबोधित करें।"
+                    )
                   },
                   {
-                    "label": "Graduated Sequence",
-                    "text": "Teach simple ideas first, moving to more complex ideas only after the basics are clear."
+                    "label": L("Graduated Sequence", "क्रमिक अनुक्रम"),
+                    "text": L(
+                      "Teach simple ideas first, moving to more complex ideas only after the basics are clear.",
+                      "पहले सरल विचार पढ़ाएँ, और जटिल विचारों की ओर तभी बढ़ें जब बुनियादी बातें साफ़ हो जाएँ।"
+                    )
                   }
                 ]
               },
@@ -4519,113 +4633,173 @@ export const MODULES = [
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Appropriate Practice",
-                    "text": "Let learners actually try the skill themselves — hands-on practice, not just listening."
+                    "label": L("Appropriate Practice", "उचित अभ्यास"),
+                    "text": L(
+                      "Let learners actually try the skill themselves — hands-on practice, not just listening.",
+                      "शिक्षार्थियों को खुद कौशल आज़माने दें — हाथों-हाथ अभ्यास, सिर्फ सुनना नहीं।"
+                    )
                   },
                   {
-                    "label": "Knowledge of Results",
-                    "text": "Tell learners quickly whether they got it right or wrong, so they can correct themselves while it's fresh."
+                    "label": L("Knowledge of Results", "नतीजों की जानकारी"),
+                    "text": L(
+                      "Tell learners quickly whether they got it right or wrong, so they can correct themselves while it's fresh.",
+                      "शिक्षार्थियों को जल्दी बताएँ कि उन्होंने सही किया या गलत, ताकि वे ताज़ा रहते हुए खुद को सुधार सकें।"
+                    )
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "Putting It Together",
-                "text": "Teaching Sahayaks how to explain milk pricing: start with why it matters (a common farmer complaint), teach the simple fat/SNF idea before the payment formula, let them practice explaining it to each other, then correct any mistakes on the spot."
+                "heading": L("Putting It Together", "इसे साथ में जोड़ना"),
+                "text": L(
+                  "Teaching Sahayaks how to explain milk pricing: start with why it matters (a common farmer complaint), teach the simple fat/SNF idea before the payment formula, let them practice explaining it to each other, then correct any mistakes on the spot.",
+                  "सहायकों को दूध की कीमत समझाना सिखाना: यह क्यों मायने रखता है (एक आम किसान शिकायत) से शुरू करें, भुगतान फॉर्मूले से पहले सरल फैट/SNF विचार सिखाएँ, उन्हें एक-दूसरे को समझाने का अभ्यास करने दें, फिर मौके पर ही किसी गलती को ठीक करें।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does 'Graduated Sequence' mean in teaching?",
+                "q": L("What does 'Graduated Sequence' mean in teaching?", "शिक्षण में 'क्रमिक अनुक्रम' का क्या मतलब है?"),
                 "options": [
-                  "Teaching only to learners who have graduated school",
-                  "Teaching simple ideas first, then moving to more complex ones",
-                  "Giving a certificate at the end",
-                  "Repeating the same idea many times without changing it"
+                  L("Teaching only to learners who have graduated school", "सिर्फ स्कूल से स्नातक शिक्षार्थियों को पढ़ाना"),
+                  L("Teaching simple ideas first, then moving to more complex ones", "पहले सरल विचार पढ़ाना, फिर जटिल विचारों की ओर बढ़ना"),
+                  L("Giving a certificate at the end", "अंत में एक प्रमाणपत्र देना"),
+                  L("Repeating the same idea many times without changing it", "एक ही विचार को बिना बदले कई बार दोहराना")
                 ],
                 "answer": 1,
-                "explain": "Graduated Sequence means building understanding step by step, from simple to complex."
+                "explain": L(
+                  "Graduated Sequence means building understanding step by step, from simple to complex.",
+                  "क्रमिक अनुक्रम का मतलब है समझ को चरण-दर-चरण बनाना, सरल से जटिल की ओर।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "'Knowledge of Results' means telling learners quickly whether they got something right or wrong.",
+                "q": L(
+                  "'Knowledge of Results' means telling learners quickly whether they got something right or wrong.",
+                  "'नतीजों की जानकारी' का मतलब है शिक्षार्थियों को जल्दी बताना कि उन्होंने कुछ सही किया या गलत।"
+                ),
                 "answer": true,
-                "explain": "Fast feedback helps learners correct mistakes while the lesson is still fresh in their minds."
+                "explain": L(
+                  "Fast feedback helps learners correct mistakes while the lesson is still fresh in their minds.",
+                  "तेज़ प्रतिक्रिया शिक्षार्थियों को गलतियाँ सुधारने में मदद करती है जब पाठ अभी भी उनके दिमाग में ताज़ा हो।"
+                )
               }
             ]
           },
           {
             "id": "t-picking-topics",
-            "title": "Choosing the Right Topic From Real Data",
+            "title": L("Choosing the Right Topic From Real Data", "असली डेटा से सही विषय चुनना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Let the Problem Choose the Topic",
-                "html": "The best training topics come from real problems happening in the field — not guesses. Look at what MPPs are actually struggling with."
+                "heading": L("Let the Problem Choose the Topic", "समस्या को विषय चुनने दें"),
+                "html": L(
+                  "The best training topics come from real problems happening in the field — not guesses. Look at what MPPs are actually struggling with.",
+                  "सबसे अच्छे प्रशिक्षण विषय ज़मीनी स्तर पर हो रही असली समस्याओं से आते हैं — अंदाज़ों से नहीं। देखें कि MPP को असल में किस चीज़ से जूझना पड़ रहा है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Falling membership",
-                    "text": "Fewer farmers are staying members of the MPP — training could cover how to listen to farmers' concerns and rebuild trust."
+                    "label": L("Falling membership", "गिरती सदस्यता"),
+                    "text": L(
+                      "Fewer farmers are staying members of the MPP — training could cover how to listen to farmers' concerns and rebuild trust.",
+                      "कम किसान MPP के सदस्य बने रह रहे हैं — प्रशिक्षण में किसानों की चिंताएँ सुनने और भरोसा फिर से बनाने का तरीका शामिल हो सकता है।"
+                    )
                   },
                   {
-                    "label": "Low milk production",
-                    "text": "Farmers' animals are giving less milk than expected — training could cover animal feeding and care basics."
+                    "label": L("Low milk production", "कम दूध उत्पादन"),
+                    "text": L(
+                      "Farmers' animals are giving less milk than expected — training could cover animal feeding and care basics.",
+                      "किसानों के पशु उम्मीद से कम दूध दे रहे हैं — प्रशिक्षण में पशु आहार और देखभाल की बुनियादी बातें शामिल हो सकती हैं।"
+                    )
                   },
                   {
-                    "label": "Animal nutrition problems",
-                    "text": "Farmers may be feeding animals incorrectly — training could cover simple, low-cost nutrition improvements."
+                    "label": L("Animal nutrition problems", "पशु पोषण की समस्याएँ"),
+                    "text": L(
+                      "Farmers may be feeding animals incorrectly — training could cover simple, low-cost nutrition improvements.",
+                      "किसान शायद पशुओं को गलत तरीके से खिला रहे हों — प्रशिक्षण में सरल, कम लागत वाले पोषण सुधार शामिल हो सकते हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Group Activity",
-                "text": "In your training group, you may be asked to pick a real topic like these, prepare a short 15-minute session on it, and then deliver it to the group. This practice is exactly how CRI content gets built in real life."
+                "heading": L("Group Activity", "समूह गतिविधि"),
+                "text": L(
+                  "In your training group, you may be asked to pick a real topic like these, prepare a short 15-minute session on it, and then deliver it to the group. This practice is exactly how CRI content gets built in real life.",
+                  "अपने प्रशिक्षण समूह में, आपसे इन जैसा कोई असली विषय चुनने, उस पर एक छोटा 15-मिनट का सत्र तैयार करने, और फिर समूह को देने के लिए कहा जा सकता है। यह अभ्यास ठीक वैसे ही है जैसे असली ज़िंदगी में CRI सामग्री बनाई जाती है।"
+                )
               },
               {
                 "type": "poll",
-                "heading": "What Would You Choose?",
+                "heading": L("What Would You Choose?", "आप क्या चुनेंगे?"),
                 "questions": [
                   {
-                    "q": "Your MPP has seen 6 farmers stop supplying milk this month. Which is the better first training topic?",
+                    "q": L(
+                      "Your MPP has seen 6 farmers stop supplying milk this month. Which is the better first training topic?",
+                      "आपके MPP में इस महीने 6 किसानों ने दूध देना बंद कर दिया है। पहला प्रशिक्षण विषय कौन-सा बेहतर है?"
+                    ),
                     "options": [
-                      "A generic session on the history of dairy in India",
-                      "A short session on why farmers leave, and how to listen and respond to their concerns"
+                      L("A generic session on the history of dairy in India", "भारत में डेयरी के इतिहास पर एक सामान्य सत्र"),
+                      L(
+                        "A short session on why farmers leave, and how to listen and respond to their concerns",
+                        "किसान क्यों छोड़ते हैं, और उनकी चिंताएँ कैसे सुनें व उनका जवाब दें, इस पर एक छोटा सत्र"
+                      )
                     ],
                     "answer": 1,
-                    "reveal": "Training should follow the real problem on the ground — here, it's farmers leaving, so the content should target that directly."
+                    "reveal": L(
+                      "Training should follow the real problem on the ground — here, it's farmers leaving, so the content should target that directly.",
+                      "प्रशिक्षण को ज़मीनी असली समस्या का अनुसरण करना चाहिए — यहाँ, यह किसानों का छोड़ना है, इसलिए सामग्री को सीधे उसी पर लक्षित होना चाहिए।"
+                    )
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "A Simple Session Outline",
-                "text": "Behavioural Objective: Sahayak can list 3 reasons for farmer drop-off and respond to each. Pre-Evaluation: ask Sahayaks what they think the reasons are. Teaching: share real reasons from farmer conversations. Practice: role-play a talk with a farmer thinking of leaving. Post-Evaluation: ask Sahayaks to explain the 3 reasons back."
+                "heading": L("A Simple Session Outline", "एक सरल सत्र रूपरेखा"),
+                "text": L(
+                  "Behavioural Objective: Sahayak can list 3 reasons for farmer drop-off and respond to each. Pre-Evaluation: ask Sahayaks what they think the reasons are. Teaching: share real reasons from farmer conversations. Practice: role-play a talk with a farmer thinking of leaving. Post-Evaluation: ask Sahayaks to explain the 3 reasons back.",
+                  "व्यवहारिक उद्देश्य: सहायक किसानों के छोड़ने के 3 कारण बता सके और हर एक का जवाब दे सके। पूर्व-मूल्यांकन: सहायकों से पूछें कि उन्हें क्या कारण लगते हैं। शिक्षण: किसान बातचीत से असली कारण साझा करें। अभ्यास: छोड़ने की सोच रहे किसान के साथ एक रोल-प्ले बातचीत करें। पश्च-मूल्यांकन: सहायकों से वे 3 कारण वापस समझाने को कहें।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Where should a good training topic come from?",
+                "q": L("Where should a good training topic come from?", "एक अच्छा प्रशिक्षण विषय कहाँ से आना चाहिए?"),
                 "options": [
-                  "Whatever topic the trainer personally finds most interesting",
-                  "Real problems actually happening in the field, like falling membership or low milk production",
-                  "A random topic chosen without any data",
-                  "The longest topic available"
+                  L(
+                    "Whatever topic the trainer personally finds most interesting",
+                    "जो भी विषय प्रशिक्षक को व्यक्तिगत रूप से सबसे दिलचस्प लगे"
+                  ),
+                  L(
+                    "Real problems actually happening in the field, like falling membership or low milk production",
+                    "ज़मीनी स्तर पर असल में हो रही समस्याएँ, जैसे गिरती सदस्यता या कम दूध उत्पादन"
+                  ),
+                  L("A random topic chosen without any data", "बिना किसी डेटा के चुना गया एक बेतरतीब विषय"),
+                  L("The longest topic available", "उपलब्ध सबसे लंबा विषय")
                 ],
                 "answer": 1,
-                "explain": "CRI-based training topics come from real field problems, not guesses or personal preference."
+                "explain": L(
+                  "CRI-based training topics come from real field problems, not guesses or personal preference.",
+                  "CRI-आधारित प्रशिक्षण विषय असली ज़मीनी समस्याओं से आते हैं, अंदाज़ों या व्यक्तिगत पसंद से नहीं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A 15-minute group activity to design and deliver a short session is a realistic way to practice the CRI method.",
+                "q": L(
+                  "A 15-minute group activity to design and deliver a short session is a realistic way to practice the CRI method.",
+                  "एक छोटा सत्र डिज़ाइन करने और देने के लिए 15-मिनट की समूह गतिविधि CRI तरीके का अभ्यास करने का एक व्यावहारिक तरीका है।"
+                ),
                 "answer": true,
-                "explain": "Practicing on a small, real topic is exactly how the CRI method is used to build effective training in the field."
+                "explain": L(
+                  "Practicing on a small, real topic is exactly how the CRI method is used to build effective training in the field.",
+                  "एक छोटे, असली विषय पर अभ्यास करना ठीक वैसे ही है जैसे CRI तरीके का उपयोग ज़मीनी स्तर पर असरदार प्रशिक्षण बनाने के लिए किया जाता है।"
+                )
               }
             ]
           }
@@ -4637,42 +4811,69 @@ export const MODULES = [
             {
               "topicId": "t-teaching-principles",
               "type": "mcq",
-              "q": "Why is 'Perceived Purpose' important at the start of a teaching session?",
+              "q": L(
+                "Why is 'Perceived Purpose' important at the start of a teaching session?",
+                "एक शिक्षण सत्र की शुरुआत में 'महसूस किया गया उद्देश्य' क्यों ज़रूरी है?"
+              ),
               "options": [
-                "It is not important, learners will pay attention anyway",
-                "Learners need to know why the content matters to them before they will engage",
-                "It replaces the need for any practice",
-                "It is only useful for children, not adults"
+                L("It is not important, learners will pay attention anyway", "यह ज़रूरी नहीं है, शिक्षार्थी वैसे भी ध्यान देंगे"),
+                L(
+                  "Learners need to know why the content matters to them before they will engage",
+                  "जुड़ने से पहले शिक्षार्थियों को जानना ज़रूरी है कि सामग्री उनके लिए क्यों मायने रखती है"
+                ),
+                L("It replaces the need for any practice", "यह किसी भी अभ्यास की ज़रूरत को खत्म कर देता है"),
+                L("It is only useful for children, not adults", "यह सिर्फ बच्चों के लिए उपयोगी है, वयस्कों के लिए नहीं")
               ],
               "answer": 1,
-              "explain": "Adult learners engage better when they understand upfront why the content matters to them."
+              "explain": L(
+                "Adult learners engage better when they understand upfront why the content matters to them.",
+                "वयस्क शिक्षार्थी बेहतर जुड़ते हैं जब वे पहले ही समझ लें कि सामग्री उनके लिए क्यों मायने रखती है।"
+              )
             },
             {
               "topicId": "t-teaching-principles",
               "type": "truefalse",
-              "q": "Appropriate Practice means learners only listen and never try the skill themselves.",
+              "q": L(
+                "Appropriate Practice means learners only listen and never try the skill themselves.",
+                "उचित अभ्यास का मतलब है शिक्षार्थी सिर्फ सुनें और कभी खुद कौशल न आज़माएँ।"
+              ),
               "answer": false,
-              "explain": "Appropriate Practice means letting learners actually try the skill hands-on, not just listen."
+              "explain": L(
+                "Appropriate Practice means letting learners actually try the skill hands-on, not just listen.",
+                "उचित अभ्यास का मतलब है शिक्षार्थियों को हाथों-हाथ कौशल आज़माने देना, सिर्फ सुनना नहीं।"
+              )
             },
             {
               "topicId": "t-picking-topics",
               "type": "mcq",
-              "q": "A village is struggling with low milk production. What kind of training content fits this problem best?",
+              "q": L(
+                "A village is struggling with low milk production. What kind of training content fits this problem best?",
+                "एक गाँव कम दूध उत्पादन से जूझ रहा है। इस समस्या के लिए कौन-सी प्रशिक्षण सामग्री सबसे उपयुक्त है?"
+              ),
               "options": [
-                "A session on village meeting etiquette",
-                "A session on animal feeding and care basics",
-                "A session on the history of milk cooperatives",
-                "No training is needed for this problem"
+                L("A session on village meeting etiquette", "गाँव बैठक शिष्टाचार पर एक सत्र"),
+                L("A session on animal feeding and care basics", "पशु आहार और देखभाल की बुनियादी बातों पर एक सत्र"),
+                L("A session on the history of milk cooperatives", "दूध सहकारी समितियों के इतिहास पर एक सत्र"),
+                L("No training is needed for this problem", "इस समस्या के लिए किसी प्रशिक्षण की ज़रूरत नहीं है")
               ],
               "answer": 1,
-              "explain": "Content should match the real problem — here, low milk production points to feeding and animal care training."
+              "explain": L(
+                "Content should match the real problem — here, low milk production points to feeding and animal care training.",
+                "सामग्री को असली समस्या से मेल खाना चाहिए — यहाँ, कम दूध उत्पादन आहार और पशु देखभाल प्रशिक्षण की ओर इशारा करता है।"
+              )
             },
             {
               "topicId": "t-picking-topics",
               "type": "truefalse",
-              "q": "Real field data, like membership numbers or milk production trends, can help decide what training content to design.",
+              "q": L(
+                "Real field data, like membership numbers or milk production trends, can help decide what training content to design.",
+                "असली ज़मीनी डेटा, जैसे सदस्यता संख्या या दूध उत्पादन रुझान, यह तय करने में मदद कर सकता है कि क्या प्रशिक्षण सामग्री डिज़ाइन करनी है।"
+              ),
               "answer": true,
-              "explain": "Real field data points trainers toward the actual problems that need solving, making content more relevant."
+              "explain": L(
+                "Real field data points trainers toward the actual problems that need solving, making content more relevant.",
+                "असली ज़मीनी डेटा प्रशिक्षकों को उन असली समस्याओं की ओर इशारा करता है जिन्हें हल करना है, जिससे सामग्री ज़्यादा प्रासंगिक बनती है।"
+              )
             }
           ]
         }
