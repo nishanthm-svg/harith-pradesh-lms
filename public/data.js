@@ -3747,118 +3747,178 @@ export const MODULES = [
     "id": "m4",
     "number": 4,
     "title": L("Interaction with Farmers (One to One)", "किसानों के साथ बातचीत (एक-से-एक)"),
-    "subtitle": "Learn how to talk to farmers one-on-one — with patience, respect and honesty. See real example conversations of what to say, and what to avoid.",
+    "subtitle": L(
+      "Learn how to talk to farmers one-on-one — with patience, respect and honesty. See real example conversations of what to say, and what to avoid.",
+      "किसानों से एक-से-एक बात करना सीखिए — धैर्य, सम्मान और ईमानदारी के साथ। क्या कहें और क्या न कहें, इसके असली उदाहरण बातचीत देखिए।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m4-l1",
-        "title": "Listening First, Talking Second",
+        "title": L("Listening First, Talking Second", "पहले सुनना, फिर बोलना"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Listening First, Talking Second",
-            "text": "Every farmer you meet has their own worries, questions and experience. Before you say anything, learn how to truly listen. This lesson shows you how, with real example conversations."
+            "heading": L("Listening First, Talking Second", "पहले सुनना, फिर बोलना"),
+            "text": L(
+              "Every farmer you meet has their own worries, questions and experience. Before you say anything, learn how to truly listen. This lesson shows you how, with real example conversations.",
+              "हर किसान जिससे आप मिलते हैं, उसकी अपनी चिंताएँ, सवाल और अनुभव होते हैं। कुछ भी कहने से पहले, सच में सुनना सीखिए। यह पाठ आपको असली उदाहरण बातचीत के साथ यह दिखाता है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-why-listening",
-            "title": "Why Listening Comes First",
+            "title": L("Why Listening Comes First", "सुनना पहले क्यों आता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Your Most Important Tool Is Your Ears",
-                "html": "As a Sahayak, you meet farmers almost every day — at the MPP, on their farm, or on the road. The most important skill you bring to any conversation is not talking. It is <b>listening</b>."
+                "heading": L("Your Most Important Tool Is Your Ears", "आपका सबसे ज़रूरी औज़ार आपके कान हैं"),
+                "html": L(
+                  "As a Sahayak, you meet farmers almost every day — at the MPP, on their farm, or on the road. The most important skill you bring to any conversation is not talking. It is <b>listening</b>.",
+                  "एक सहायक के तौर पर, आप लगभग हर दिन किसानों से मिलते हैं — MPP पर, उनके खेत पर, या रास्ते में। किसी भी बातचीत में आपका सबसे ज़रूरी कौशल बोलना नहीं है। यह <b>सुनना</b> है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "What Good Listening Looks Like",
-                "html": "Good listening means giving the farmer your full attention, letting them finish speaking, and trying to understand their problem before you reply. It does not mean quietly waiting for your turn to talk."
+                "heading": L("What Good Listening Looks Like", "अच्छा सुनना कैसा दिखता है"),
+                "html": L(
+                  "Good listening means giving the farmer your full attention, letting them finish speaking, and trying to understand their problem before you reply. It does not mean quietly waiting for your turn to talk.",
+                  "अच्छे सुनने का मतलब है किसान को अपना पूरा ध्यान देना, उन्हें बोलना पूरा करने देना, और जवाब देने से पहले उनकी समस्या समझने की कोशिश करना। इसका मतलब चुपचाप अपनी बारी का इंतज़ार करना नहीं है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MPP (Milk Pooling Point)",
-                "meaning": "A place in the village where farmers bring their milk every day. It is checked for quality and farmers get paid a fair price, on time."
+                "term": L("MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                "meaning": L(
+                  "A place in the village where farmers bring their milk every day. It is checked for quality and farmers get paid a fair price, on time.",
+                  "गाँव की वह जगह जहाँ किसान हर दिन अपना दूध लाते हैं। इसकी गुणवत्ता जाँची जाती है और किसानों को समय पर न्यायपूर्ण कीमत मिलती है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Do",
-                "text": "Listen patiently. Let the farmer finish speaking. Try to understand their concern or experience before you reply — even if you think you already know the answer."
+                "heading": L("Do", "करें"),
+                "text": L(
+                  "Listen patiently. Let the farmer finish speaking. Try to understand their concern or experience before you reply — even if you think you already know the answer.",
+                  "धैर्य से सुनें। किसान को बोलना पूरा करने दें। जवाब देने से पहले उनकी चिंता या अनुभव समझने की कोशिश करें — भले ही आपको लगे कि आप जवाब पहले से जानते हैं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Don't",
-                "text": "Do not interrupt or dismiss what a farmer is saying, even if you are in a hurry or think their concern is small. Cutting a farmer off tells them their opinion doesn't matter."
+                "heading": L("Don't", "न करें"),
+                "text": L(
+                  "Do not interrupt or dismiss what a farmer is saying, even if you are in a hurry or think their concern is small. Cutting a farmer off tells them their opinion doesn't matter.",
+                  "किसान की बात को न टोकें और न ही उसे नज़रअंदाज़ करें, भले ही आप जल्दी में हों या उनकी चिंता छोटी लगे। किसान की बात काटने से उन्हें लगता है कि उनकी राय मायने नहीं रखती।"
+                )
               },
               {
                 "type": "example",
-                "heading": "A Good Conversation",
-                "text": "Farmer: Sahayak, my cow's milk has dropped since last week. I don't understand why. Sahayak: That must be worrying for you. Tell me — has anything changed in her feed or her routine recently? Notice the Sahayak did not jump to an answer. They listened, and then asked a question."
+                "heading": L("A Good Conversation", "एक अच्छी बातचीत"),
+                "text": L(
+                  "Farmer: Sahayak, my cow's milk has dropped since last week. I don't understand why. Sahayak: That must be worrying for you. Tell me — has anything changed in her feed or her routine recently? Notice the Sahayak did not jump to an answer. They listened, and then asked a question.",
+                  "किसान: सहायक जी, पिछले हफ्ते से मेरी गाय का दूध कम हो गया है। मुझे समझ नहीं आ रहा क्यों। सहायक: यह आपके लिए चिंता की बात होगी। बताइए — क्या हाल ही में उसके आहार या दिनचर्या में कुछ बदला है? ध्यान दें कि सहायक ने सीधे जवाब नहीं दिया। उन्होंने पहले सुना, फिर सवाल पूछा।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "A farmer is explaining a problem with their cow. What should you do first?",
+                "q": L(
+                  "A farmer is explaining a problem with their cow. What should you do first?",
+                  "एक किसान अपनी गाय की समस्या बता रहा है। आपको पहले क्या करना चाहिए?"
+                ),
                 "options": [
-                  "Interrupt with the first solution that comes to mind",
-                  "Let them finish, and try to understand the problem fully",
-                  "Change the subject to something easier",
-                  "Tell them their traditional practices are wrong"
+                  L("Interrupt with the first solution that comes to mind", "दिमाग में आया पहला समाधान बीच में बता दें"),
+                  L("Let them finish, and try to understand the problem fully", "उन्हें पूरा बोलने दें, और समस्या को पूरी तरह समझने की कोशिश करें"),
+                  L("Change the subject to something easier", "किसी आसान विषय पर बात बदल दें"),
+                  L("Tell them their traditional practices are wrong", "उन्हें बताएँ कि उनकी पारंपरिक प्रथाएँ गलत हैं")
                 ],
                 "answer": 1,
-                "explain": "Good listening means letting the farmer finish and understanding their concern before you respond."
+                "explain": L(
+                  "Good listening means letting the farmer finish and understanding their concern before you respond.",
+                  "अच्छे सुनने का मतलब है किसान को पूरा बोलने देना और जवाब देने से पहले उनकी चिंता को समझना।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is fine to cut off a farmer mid-sentence if you already think you know the answer.",
+                "q": L(
+                  "It is fine to cut off a farmer mid-sentence if you already think you know the answer.",
+                  "अगर आपको लगता है कि आप जवाब पहले से जानते हैं, तो किसान की बात बीच में काटना ठीक है।"
+                ),
                 "answer": false,
-                "explain": "Interrupting a farmer tells them their opinion doesn't matter, even if you think you know the answer already."
+                "explain": L(
+                  "Interrupting a farmer tells them their opinion doesn't matter, even if you think you know the answer already.",
+                  "किसान की बात टोकने से उन्हें लगता है कि उनकी राय मायने नहीं रखती, भले ही आपको लगे कि आप जवाब पहले से जानते हैं।"
+                )
               }
             ]
           },
           {
             "id": "t-simple-language",
-            "title": "Speak Simply, Speak Local",
+            "title": L("Speak Simply, Speak Local", "सरल बोलें, स्थानीय भाषा में बोलें"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Use Words Farmers Already Know",
-                "html": "Use simple, everyday words and the local language farmers are comfortable with. Avoid technical jargon — words like 'SNF' or 'compliance threshold' mean nothing to a farmer who has never studied these terms."
+                "heading": L("Use Words Farmers Already Know", "उन शब्दों का उपयोग करें जो किसान पहले से जानते हैं"),
+                "html": L(
+                  "Use simple, everyday words and the local language farmers are comfortable with. Avoid technical jargon — words like 'SNF' or 'compliance threshold' mean nothing to a farmer who has never studied these terms.",
+                  "सरल, रोज़मर्रा के शब्द और वह स्थानीय भाषा उपयोग करें जिसमें किसान सहज हों। तकनीकी शब्दजाल से बचें — 'SNF' या 'compliance threshold' जैसे शब्दों का उस किसान के लिए कोई मतलब नहीं है जिसने ये शब्द कभी नहीं पढ़े।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Do",
-                "text": "Use simple and local language for better communication. Respect the farmer's own knowledge and practices — they have often been raising animals for many years, longer than you may have worked in dairy."
+                "heading": L("Do", "करें"),
+                "text": L(
+                  "Use simple and local language for better communication. Respect the farmer's own knowledge and practices — they have often been raising animals for many years, longer than you may have worked in dairy.",
+                  "बेहतर संचार के लिए सरल और स्थानीय भाषा उपयोग करें। किसान के अपने ज्ञान और प्रथाओं का सम्मान करें — वे अक्सर सालों से पशु पाल रहे होते हैं, आपके डेयरी में काम करने से भी ज़्यादा समय से।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Don't",
-                "text": "Avoid technical jargon that may confuse farmers. Avoid criticising traditional practices directly — even when a practice needs to change, criticising it bluntly makes a farmer defensive instead of open to change."
+                "heading": L("Don't", "न करें"),
+                "text": L(
+                  "Avoid technical jargon that may confuse farmers. Avoid criticising traditional practices directly — even when a practice needs to change, criticising it bluntly makes a farmer defensive instead of open to change.",
+                  "उस तकनीकी शब्दजाल से बचें जो किसानों को उलझन में डाल सकता है। पारंपरिक प्रथाओं की सीधी आलोचना करने से बचें — भले ही किसी प्रथा को बदलना ज़रूरी हो, बेबाक आलोचना किसान को बदलाव के लिए खुला रहने के बजाय बचाव की मुद्रा में ले आती है।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Same Message, Two Ways",
-                "text": "Confusing: Your SNF is below the compliance threshold, so payment is adjusted. Simple: Today your milk had a little less of the solid content we test for, so the price is a bit lower. Let's check together why that may have happened."
+                "heading": L("Same Message, Two Ways", "एक ही बात, दो तरीके"),
+                "text": L(
+                  "Confusing: Your SNF is below the compliance threshold, so payment is adjusted. Simple: Today your milk had a little less of the solid content we test for, so the price is a bit lower. Let's check together why that may have happened.",
+                  "उलझाने वाला: आपका SNF अनुपालन सीमा से नीचे है, इसलिए भुगतान समायोजित किया गया है। सरल: आज आपके दूध में हमारे जाँचे जाने वाले ठोस तत्व थोड़े कम थे, इसलिए कीमत थोड़ी कम है। आइए साथ मिलकर देखें कि ऐसा क्यों हुआ होगा।"
+                )
               },
               {
                 "type": "poll",
-                "heading": "What Would You Say?",
+                "heading": L("What Would You Say?", "आप क्या कहेंगे?"),
                 "questions": [
                   {
-                    "q": "A farmer asks why his milk payment was lower today. Which reply is better?",
+                    "q": L(
+                      "A farmer asks why his milk payment was lower today. Which reply is better?",
+                      "एक किसान पूछता है कि आज उसका दूध भुगतान कम क्यों था। कौन-सा जवाब बेहतर है?"
+                    ),
                     "options": [
-                      "Your SNF value fell below the compliance threshold.",
-                      "Today your milk had a little less of the good solids we test for, so the rate was a bit lower. Let's look at why, together."
+                      L(
+                        "Your SNF value fell below the compliance threshold.",
+                        "आपका SNF मूल्य अनुपालन सीमा से नीचे गिर गया।"
+                      ),
+                      L(
+                        "Today your milk had a little less of the good solids we test for, so the rate was a bit lower. Let's look at why, together.",
+                        "आज आपके दूध में हमारे जाँचे जाने वाले अच्छे ठोस तत्व थोड़े कम थे, इसलिए दर थोड़ी कम थी। आइए साथ मिलकर देखें क्यों।"
+                      )
                     ],
                     "answer": 1,
-                    "reveal": "The second reply uses simple words and invites the farmer to solve the problem with you — that builds trust."
+                    "reveal": L(
+                      "The second reply uses simple words and invites the farmer to solve the problem with you — that builds trust.",
+                      "दूसरा जवाब सरल शब्दों का उपयोग करता है और किसान को आपके साथ मिलकर समस्या हल करने के लिए बुलाता है — इससे भरोसा बनता है।"
+                    )
                   }
                 ]
               }
@@ -3866,21 +3926,36 @@ export const MODULES = [
             "check": [
               {
                 "type": "mcq",
-                "q": "Why should you avoid technical jargon when talking to farmers?",
+                "q": L(
+                  "Why should you avoid technical jargon when talking to farmers?",
+                  "किसानों से बात करते समय आपको तकनीकी शब्दजाल से क्यों बचना चाहिए?"
+                ),
                 "options": [
-                  "Jargon makes you sound less experienced",
-                  "It may confuse farmers who have never studied those terms",
-                  "Farmers already know all the technical terms",
-                  "It is against the rules to use any English words"
+                  L("Jargon makes you sound less experienced", "शब्दजाल से आप कम अनुभवी लगते हैं"),
+                  L(
+                    "It may confuse farmers who have never studied those terms",
+                    "यह उन किसानों को उलझन में डाल सकता है जिन्होंने ये शब्द कभी नहीं पढ़े"
+                  ),
+                  L("Farmers already know all the technical terms", "किसान सभी तकनीकी शब्द पहले से जानते हैं"),
+                  L("It is against the rules to use any English words", "किसी भी अंग्रेज़ी शब्द का उपयोग करना नियमों के खिलाफ है")
                 ],
                 "answer": 1,
-                "explain": "Jargon can confuse farmers and get in the way of clear communication — plain, local language works better."
+                "explain": L(
+                  "Jargon can confuse farmers and get in the way of clear communication — plain, local language works better.",
+                  "शब्दजाल किसानों को उलझन में डाल सकता है और स्पष्ट संचार में बाधा बन सकता है — सरल, स्थानीय भाषा बेहतर काम करती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "If a farmer's traditional practice needs to change, the best approach is to criticise it directly and bluntly.",
+                "q": L(
+                  "If a farmer's traditional practice needs to change, the best approach is to criticise it directly and bluntly.",
+                  "अगर किसान की पारंपरिक प्रथा को बदलना ज़रूरी है, तो सबसे अच्छा तरीका है उसकी सीधी और बेबाक आलोचना करना।"
+                ),
                 "answer": false,
-                "explain": "Bluntly criticising a traditional practice makes a farmer defensive. It is better to discuss it respectfully and explain reasons."
+                "explain": L(
+                  "Bluntly criticising a traditional practice makes a farmer defensive. It is better to discuss it respectfully and explain reasons.",
+                  "पारंपरिक प्रथा की बेबाक आलोचना किसान को बचाव की मुद्रा में ला देती है। इसे सम्मानपूर्वक चर्चा करके और कारण समझाकर करना बेहतर है।"
+                )
               }
             ]
           }
@@ -3891,148 +3966,229 @@ export const MODULES = [
             {
               "topicId": "t-why-listening",
               "type": "mcq",
-              "q": "What does good listening mean in a conversation with a farmer?",
+              "q": L(
+                "What does good listening mean in a conversation with a farmer?",
+                "किसान के साथ बातचीत में अच्छे सुनने का क्या मतलब है?"
+              ),
               "options": [
-                "Nodding without really paying attention",
-                "Giving full attention, letting them finish, and understanding before replying",
-                "Waiting silently just so you can speak next",
-                "Writing down only the parts you find interesting"
+                L("Nodding without really paying attention", "बिना ध्यान दिए सिर्फ सिर हिलाना"),
+                L(
+                  "Giving full attention, letting them finish, and understanding before replying",
+                  "पूरा ध्यान देना, उन्हें पूरा बोलने देना, और जवाब देने से पहले समझना"
+                ),
+                L("Waiting silently just so you can speak next", "सिर्फ अपनी बारी के लिए चुपचाप इंतज़ार करना"),
+                L("Writing down only the parts you find interesting", "सिर्फ दिलचस्प लगने वाले हिस्से लिखना")
               ],
               "answer": 1,
-              "explain": "Good listening means real attention and understanding, not just waiting for your turn to talk."
+              "explain": L(
+                "Good listening means real attention and understanding, not just waiting for your turn to talk.",
+                "अच्छे सुनने का मतलब है असली ध्यान और समझ, सिर्फ बोलने की बारी का इंतज़ार करना नहीं।"
+              )
             },
             {
               "topicId": "t-why-listening",
               "type": "truefalse",
-              "q": "You should never interrupt a farmer, even if you are busy.",
+              "q": L("You should never interrupt a farmer, even if you are busy.", "आपको किसान की बात कभी नहीं टोकनी चाहिए, भले ही आप व्यस्त हों।"),
               "answer": true,
-              "explain": "Even when busy, interrupting or dismissing a farmer's concern damages trust."
+              "explain": L(
+                "Even when busy, interrupting or dismissing a farmer's concern damages trust.",
+                "व्यस्त होने पर भी, किसान की चिंता को टोकना या नज़रअंदाज़ करना भरोसे को नुकसान पहुँचाता है।"
+              )
             },
             {
               "topicId": "t-simple-language",
               "type": "mcq",
-              "q": "Which of these is the best way to explain a lower milk payment to a farmer?",
+              "q": L(
+                "Which of these is the best way to explain a lower milk payment to a farmer?",
+                "किसान को कम दूध भुगतान समझाने का सबसे अच्छा तरीका इनमें से कौन-सा है?"
+              ),
               "options": [
-                "Use only technical terms so it sounds official",
-                "Say nothing and hope they don't ask",
-                "Explain simply, in local language, and offer to check the reason together",
-                "Tell them it's none of their business"
+                L("Use only technical terms so it sounds official", "सिर्फ तकनीकी शब्द उपयोग करें ताकि यह आधिकारिक लगे"),
+                L("Say nothing and hope they don't ask", "कुछ न कहें और उम्मीद करें कि वे नहीं पूछेंगे"),
+                L(
+                  "Explain simply, in local language, and offer to check the reason together",
+                  "सरल तरीके से, स्थानीय भाषा में समझाएँ, और साथ मिलकर कारण जाँचने की पेशकश करें"
+                ),
+                L("Tell them it's none of their business", "उन्हें बताएँ कि यह उनका मामला नहीं है")
               ],
               "answer": 2,
-              "explain": "Simple, honest, local-language explanations that involve the farmer build trust."
+              "explain": L(
+                "Simple, honest, local-language explanations that involve the farmer build trust.",
+                "सरल, ईमानदार, स्थानीय भाषा में स्पष्टीकरण जो किसान को शामिल करते हैं, भरोसा बनाते हैं।"
+              )
             },
             {
               "topicId": "t-simple-language",
               "type": "truefalse",
-              "q": "Respecting a farmer's traditional knowledge and practices is part of good communication.",
+              "q": L(
+                "Respecting a farmer's traditional knowledge and practices is part of good communication.",
+                "किसान के पारंपरिक ज्ञान और प्रथाओं का सम्मान करना अच्छे संचार का हिस्सा है।"
+              ),
               "answer": true,
-              "explain": "Farmers often have years of experience. Respecting that experience is part of building trust."
+              "explain": L(
+                "Farmers often have years of experience. Respecting that experience is part of building trust.",
+                "किसानों के पास अक्सर सालों का अनुभव होता है। उस अनुभव का सम्मान करना भरोसा बनाने का हिस्सा है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m4-l2",
-        "title": "Honest Conversations and Follow-Up",
+        "title": L("Honest Conversations and Follow-Up", "ईमानदार बातचीत और अनुवर्तन"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Honest Conversations and Follow-Up",
-            "text": "Some conversations are harder — a new MPP starting in the village, a question about milk price, or a complaint. Let's learn how to handle these with honesty and care."
+            "heading": L("Honest Conversations and Follow-Up", "ईमानदार बातचीत और अनुवर्तन"),
+            "text": L(
+              "Some conversations are harder — a new MPP starting in the village, a question about milk price, or a complaint. Let's learn how to handle these with honesty and care.",
+              "कुछ बातचीत मुश्किल होती हैं — गाँव में नया MPP शुरू होना, दूध की कीमत के बारे में सवाल, या कोई शिकायत। आइए सीखें कि इन्हें ईमानदारी और देखभाल से कैसे संभालें।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-new-mpp-concerns",
-            "title": "Talking About a New MPP and Milk Price",
+            "title": L("Talking About a New MPP and Milk Price", "नए MPP और दूध की कीमत के बारे में बात करना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Why Farmers Worry About Something New",
-                "html": "When a new MPP or MPO starts in a village, farmers may worry: Will I get paid on time? Will the testing be fair? Is this better or worse than where I sell now? These worries are natural — change is always a little scary, especially with something as important as daily income."
+                "heading": L("Why Farmers Worry About Something New", "किसान नई चीज़ों को लेकर क्यों चिंतित होते हैं"),
+                "html": L(
+                  "When a new MPP or MPO starts in a village, farmers may worry: Will I get paid on time? Will the testing be fair? Is this better or worse than where I sell now? These worries are natural — change is always a little scary, especially with something as important as daily income.",
+                  "जब गाँव में नया MPP या MPO शुरू होता है, तो किसान चिंतित हो सकते हैं: क्या मुझे समय पर भुगतान मिलेगा? क्या जाँच न्यायपूर्ण होगी? क्या यह उससे बेहतर है जहाँ मैं अभी बेचता हूँ, या बदतर? ये चिंताएँ स्वाभाविक हैं — बदलाव हमेशा थोड़ा डरावना होता है, खासकर रोज़ की आय जैसी ज़रूरी चीज़ के साथ।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MPO (Milk Producer Organisation)",
-                "meaning": "A farmer-owned group that runs the MPP in a village, tests milk fairly, and pays farmers a fair price on time."
+                "term": L("MPO (Milk Producer Organisation)", "MPO (मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन)"),
+                "meaning": L(
+                  "A farmer-owned group that runs the MPP in a village, tests milk fairly, and pays farmers a fair price on time.",
+                  "किसान-स्वामित्व वाला समूह जो गाँव में MPP चलाता है, दूध की न्यायपूर्ण जाँच करता है, और किसानों को समय पर न्यायपूर्ण कीमत देता है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Be Honest About Milk Pricing",
-                "text": "If a farmer asks how the price is decided, explain it simply and honestly — for example, that the price depends on the fat and SNF (solid content) tested in their milk that day. Never guess or make up a number. If you don't know, say so and find out."
+                "heading": L("Be Honest About Milk Pricing", "दूध की कीमत के बारे में ईमानदार रहें"),
+                "text": L(
+                  "If a farmer asks how the price is decided, explain it simply and honestly — for example, that the price depends on the fat and SNF (solid content) tested in their milk that day. Never guess or make up a number. If you don't know, say so and find out.",
+                  "अगर कोई किसान पूछे कि कीमत कैसे तय होती है, तो इसे सरल और ईमानदारी से समझाएँ — जैसे कि कीमत उस दिन उनके दूध में जाँचे गए फैट और SNF (ठोस तत्व) पर निर्भर करती है। कभी अंदाज़ा न लगाएँ या नंबर न बनाएँ। अगर आपको नहीं पता, तो यह कह दें और पता लगाएँ।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Handling a Price Question Honestly",
-                "text": "Farmer: Why does my neighbour get a higher rate than me for the same amount of milk? Sahayak: It's not the amount that decides the rate — it's the fat and SNF content. Let's check both your test slips together so you can see the difference. The Sahayak did not get defensive. They showed the farmer real proof."
+                "heading": L("Handling a Price Question Honestly", "कीमत के सवाल को ईमानदारी से संभालना"),
+                "text": L(
+                  "Farmer: Why does my neighbour get a higher rate than me for the same amount of milk? Sahayak: It's not the amount that decides the rate — it's the fat and SNF content. Let's check both your test slips together so you can see the difference. The Sahayak did not get defensive. They showed the farmer real proof.",
+                  "किसान: मेरे पड़ोसी को उतने ही दूध पर मुझसे ज़्यादा दर क्यों मिलती है? सहायक: दर मात्रा से नहीं, फैट और SNF सामग्री से तय होती है। आइए हम दोनों के टेस्ट स्लिप साथ में देखें ताकि आपको अंतर दिख सके। सहायक ने बचाव की मुद्रा नहीं ली। उन्होंने किसान को असली सबूत दिखाया।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Don't Make Promises You Can't Keep",
-                "text": "Do not make unrealistic promises, like guaranteeing a certain price or payment date you are not sure about. A broken promise damages trust far more than an honest 'I'm not sure, let me find out.'"
+                "heading": L("Don't Make Promises You Can't Keep", "ऐसे वादे न करें जो निभा न सकें"),
+                "text": L(
+                  "Do not make unrealistic promises, like guaranteeing a certain price or payment date you are not sure about. A broken promise damages trust far more than an honest 'I'm not sure, let me find out.'",
+                  "ऐसे अवास्तविक वादे न करें, जैसे किसी ऐसी कीमत या भुगतान तारीख की गारंटी देना जिसके बारे में आप निश्चित नहीं हैं। टूटा हुआ वादा एक ईमानदार 'मुझे यकीन नहीं है, मुझे पता लगाने दीजिए' से कहीं ज़्यादा भरोसे को नुकसान पहुँचाता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "A farmer asks why a new MPP pays differently from the old buyer. What should you do?",
+                "q": L(
+                  "A farmer asks why a new MPP pays differently from the old buyer. What should you do?",
+                  "एक किसान पूछता है कि नया MPP पुराने खरीदार से अलग भुगतान क्यों करता है। आपको क्या करना चाहिए?"
+                ),
                 "options": [
-                  "Avoid the question so you don't have to explain",
-                  "Explain honestly how the price is decided, using simple language",
-                  "Make up a reassuring answer even if you're not fully sure",
-                  "Tell them to stop asking questions"
+                  L("Avoid the question so you don't have to explain", "सवाल टाल दें ताकि समझाना न पड़े"),
+                  L(
+                    "Explain honestly how the price is decided, using simple language",
+                    "सरल भाषा का उपयोग करते हुए ईमानदारी से समझाएँ कि कीमत कैसे तय होती है"
+                  ),
+                  L("Make up a reassuring answer even if you're not fully sure", "भले ही आप पूरी तरह निश्चित न हों, एक तसल्ली देने वाला जवाब बना दें"),
+                  L("Tell them to stop asking questions", "उन्हें सवाल पूछना बंद करने को कहें")
                 ],
                 "answer": 1,
-                "explain": "Honesty, even about a topic like pricing, is the best way to build a farmer's trust in a new MPP."
+                "explain": L(
+                  "Honesty, even about a topic like pricing, is the best way to build a farmer's trust in a new MPP.",
+                  "कीमत जैसे विषय के बारे में भी ईमानदारी, एक नए MPP में किसान का भरोसा बनाने का सबसे अच्छा तरीका है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is fine to promise a farmer a specific payment date, even if you are not sure it will happen.",
+                "q": L(
+                  "It is fine to promise a farmer a specific payment date, even if you are not sure it will happen.",
+                  "किसान को किसी खास भुगतान तारीख का वादा करना ठीक है, भले ही आप निश्चित न हों कि यह होगा।"
+                ),
                 "answer": false,
-                "explain": "Unrealistic promises that later break damage trust much more than being honest about uncertainty."
+                "explain": L(
+                  "Unrealistic promises that later break damage trust much more than being honest about uncertainty.",
+                  "अवास्तविक वादे जो बाद में टूट जाते हैं, अनिश्चितता के बारे में ईमानदार रहने से कहीं ज़्यादा भरोसे को नुकसान पहुँचाते हैं।"
+                )
               }
             ]
           },
           {
             "id": "t-followup",
-            "title": "Ending Well and Following Up",
+            "title": L("Ending Well and Following Up", "अच्छे से खत्म करना और अनुवर्तन करना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Don't Rush the Conversation",
-                "html": "Do not rush an interaction or appear disinterested, even when you are busy. A farmer can tell when you are only half-listening, and it makes them trust you less the next time."
+                "heading": L("Don't Rush the Conversation", "बातचीत में जल्दबाज़ी न करें"),
+                "html": L(
+                  "Do not rush an interaction or appear disinterested, even when you are busy. A farmer can tell when you are only half-listening, and it makes them trust you less the next time.",
+                  "व्यस्त होने पर भी बातचीत में जल्दबाज़ी न दिखाएँ या अनिच्छुक न लगें। किसान समझ जाता है जब आप आधा-अधूरा सुन रहे होते हैं, और इससे अगली बार वे आप पर कम भरोसा करते हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Involve the Farmer in the Solution",
-                "html": "Avoid imposing a solution without discussion. Instead, encourage participation — ask the farmer what they think, and use open-ended questions like 'What do you think is causing this?' rather than only yes-or-no questions."
+                "heading": L("Involve the Farmer in the Solution", "समाधान में किसान को शामिल करें"),
+                "html": L(
+                  "Avoid imposing a solution without discussion. Instead, encourage participation — ask the farmer what they think, and use open-ended questions like 'What do you think is causing this?' rather than only yes-or-no questions.",
+                  "बिना चर्चा के समाधान थोपने से बचें। इसके बजाय, भागीदारी को प्रोत्साहित करें — किसान से पूछें कि वे क्या सोचते हैं, और सिर्फ हाँ-नहीं वाले सवालों के बजाय 'आपको क्या लगता है इसका कारण क्या है?' जैसे खुले सवाल पूछें।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Always Follow Up",
-                "text": "If you promise to check something or come back with an answer, do it — and tell the farmer that you did. A simple follow-up, like 'I checked, and here's what I found,' shows the farmer you kept your word."
+                "heading": L("Always Follow Up", "हमेशा अनुवर्तन करें"),
+                "text": L(
+                  "If you promise to check something or come back with an answer, do it — and tell the farmer that you did. A simple follow-up, like 'I checked, and here's what I found,' shows the farmer you kept your word.",
+                  "अगर आप कुछ जाँचने या जवाब लेकर वापस आने का वादा करते हैं, तो करें — और किसान को बताएँ कि आपने किया। 'मैंने जाँच की, और यह पाया' जैसा एक सरल अनुवर्तन किसान को दिखाता है कि आपने अपना वादा निभाया।"
+                )
               },
               {
                 "type": "example",
-                "heading": "A Good Follow-Up",
-                "text": "Sahayak, a week later: Bhai, you asked me last week why your fat percentage looked low. I checked with the lab — your feed batch that week had less protein. Try switching back and let's test again next week. This builds trust because the Sahayak remembered and followed through."
+                "heading": L("A Good Follow-Up", "एक अच्छा अनुवर्तन"),
+                "text": L(
+                  "Sahayak, a week later: Bhai, you asked me last week why your fat percentage looked low. I checked with the lab — your feed batch that week had less protein. Try switching back and let's test again next week. This builds trust because the Sahayak remembered and followed through.",
+                  "सहायक, एक हफ्ते बाद: भाई, आपने पिछले हफ्ते पूछा था कि आपका फैट प्रतिशत कम क्यों लग रहा था। मैंने लैब से जाँच की — उस हफ्ते के आपके आहार बैच में प्रोटीन कम था। पुराने आहार पर वापस जाकर देखिए और अगले हफ्ते फिर जाँच करते हैं। इससे भरोसा बनता है क्योंकि सहायक को याद रहा और उन्होंने काम पूरा किया।"
+                )
               },
               {
                 "type": "poll",
-                "heading": "What Should the Sahayak Say Here?",
+                "heading": L("What Should the Sahayak Say Here?", "यहाँ सहायक को क्या कहना चाहिए?"),
                 "questions": [
                   {
-                    "q": "A farmer's concern from last week hasn't been fully resolved. You still don't have a complete answer. What should you say?",
+                    "q": L(
+                      "A farmer's concern from last week hasn't been fully resolved. You still don't have a complete answer. What should you say?",
+                      "पिछले हफ्ते की किसान की चिंता पूरी तरह हल नहीं हुई है। आपके पास अभी भी पूरा जवाब नहीं है। आपको क्या कहना चाहिए?"
+                    ),
                     "options": [
-                      "Avoid the farmer until you have a full answer",
-                      "Tell the farmer you're still checking, and give a realistic idea of when you'll know more"
+                      L("Avoid the farmer until you have a full answer", "जब तक पूरा जवाब न मिले, किसान से बचें"),
+                      L(
+                        "Tell the farmer you're still checking, and give a realistic idea of when you'll know more",
+                        "किसान को बताएँ कि आप अभी भी जाँच कर रहे हैं, और यह भी बताएँ कि आपको कब तक और जानकारी मिलेगी"
+                      )
                     ],
                     "answer": 1,
-                    "reveal": "Being honest about not having the full answer yet — while showing you haven't forgotten — keeps trust intact."
+                    "reveal": L(
+                      "Being honest about not having the full answer yet — while showing you haven't forgotten — keeps trust intact.",
+                      "अभी पूरा जवाब न होने के बारे में ईमानदार रहना — साथ ही यह दिखाना कि आप भूले नहीं हैं — भरोसे को बरकरार रखता है।"
+                    )
                   }
                 ]
               }
@@ -4040,21 +4196,33 @@ export const MODULES = [
             "check": [
               {
                 "type": "mcq",
-                "q": "What is the best way to make a farmer feel involved in solving their own problem?",
+                "q": L(
+                  "What is the best way to make a farmer feel involved in solving their own problem?",
+                  "किसान को अपनी समस्या हल करने में शामिल महसूस कराने का सबसे अच्छा तरीका क्या है?"
+                ),
                 "options": [
-                  "Give them a solution without asking anything",
-                  "Ask open-ended questions like 'What do you think is causing this?'",
-                  "Tell them the answer is too technical for them to understand",
-                  "Ask only yes-or-no questions"
+                  L("Give them a solution without asking anything", "बिना कुछ पूछे उन्हें समाधान दे दें"),
+                  L("Ask open-ended questions like 'What do you think is causing this?'", "'आपको क्या लगता है इसका कारण क्या है?' जैसे खुले सवाल पूछें"),
+                  L("Tell them the answer is too technical for them to understand", "उन्हें बताएँ कि जवाब उनके समझने के लिए बहुत तकनीकी है"),
+                  L("Ask only yes-or-no questions", "सिर्फ हाँ-नहीं वाले सवाल पूछें")
                 ],
                 "answer": 1,
-                "explain": "Open-ended questions invite the farmer to think and participate, instead of just receiving an order."
+                "explain": L(
+                  "Open-ended questions invite the farmer to think and participate, instead of just receiving an order.",
+                  "खुले सवाल किसान को सोचने और भाग लेने के लिए बुलाते हैं, सिर्फ आदेश पाने के बजाय।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "If you promised to check something for a farmer, it's fine to forget about it once you're busy with other work.",
+                "q": L(
+                  "If you promised to check something for a farmer, it's fine to forget about it once you're busy with other work.",
+                  "अगर आपने किसान के लिए कुछ जाँचने का वादा किया, तो दूसरे काम में व्यस्त होने पर उसे भूल जाना ठीक है।"
+                ),
                 "answer": false,
-                "explain": "Following up on a promise, even a small one, shows the farmer you keep your word and builds long-term trust."
+                "explain": L(
+                  "Following up on a promise, even a small one, shows the farmer you keep your word and builds long-term trust.",
+                  "एक छोटे वादे का भी अनुवर्तन करना किसान को दिखाता है कि आप अपना वचन निभाते हैं और इससे दीर्घकालिक भरोसा बनता है।"
+                )
               }
             ]
           }
@@ -4066,42 +4234,66 @@ export const MODULES = [
             {
               "topicId": "t-new-mpp-concerns",
               "type": "mcq",
-              "q": "What is the best response when a farmer questions how milk pricing works at a new MPP?",
+              "q": L(
+                "What is the best response when a farmer questions how milk pricing works at a new MPP?",
+                "जब कोई किसान पूछे कि नए MPP में दूध की कीमत कैसे तय होती है, तो सबसे अच्छा जवाब क्या है?"
+              ),
               "options": [
-                "Change the topic to avoid confrontation",
-                "Explain simply and honestly, and show proof like test slips if needed",
-                "Say it's decided randomly",
-                "Tell them to ask someone else"
+                L("Change the topic to avoid confrontation", "टकराव से बचने के लिए विषय बदल दें"),
+                L(
+                  "Explain simply and honestly, and show proof like test slips if needed",
+                  "सरल और ईमानदारी से समझाएँ, और ज़रूरत पड़ने पर टेस्ट स्लिप जैसा सबूत दिखाएँ"
+                ),
+                L("Say it's decided randomly", "कह दें कि यह मनमाने ढंग से तय होता है"),
+                L("Tell them to ask someone else", "उन्हें किसी और से पूछने को कहें")
               ],
               "answer": 1,
-              "explain": "Honest, simple explanations — backed by real proof — build a farmer's confidence in a new MPP."
+              "explain": L(
+                "Honest, simple explanations — backed by real proof — build a farmer's confidence in a new MPP.",
+                "ईमानदार, सरल स्पष्टीकरण — असली सबूत के साथ — नए MPP में किसान का भरोसा बनाते हैं।"
+              )
             },
             {
               "topicId": "t-new-mpp-concerns",
               "type": "truefalse",
-              "q": "Farmers naturally feel some worry when a new MPP or MPO starts in their village.",
+              "q": L(
+                "Farmers naturally feel some worry when a new MPP or MPO starts in their village.",
+                "जब गाँव में नया MPP या MPO शुरू होता है, तो किसान स्वाभाविक रूप से थोड़ी चिंता महसूस करते हैं।"
+              ),
               "answer": true,
-              "explain": "Change is naturally a little unsettling, especially for something as important as daily income — this worry is normal."
+              "explain": L(
+                "Change is naturally a little unsettling, especially for something as important as daily income — this worry is normal.",
+                "बदलाव स्वाभाविक रूप से थोड़ा असहज करने वाला होता है, खासकर रोज़ की आय जैसी ज़रूरी चीज़ के लिए — यह चिंता सामान्य है।"
+              )
             },
             {
               "topicId": "t-followup",
               "type": "mcq",
-              "q": "Why is following up on a promise to a farmer important?",
+              "q": L("Why is following up on a promise to a farmer important?", "किसान से किए गए वादे का अनुवर्तन करना क्यों ज़रूरी है?"),
               "options": [
-                "It is not important — farmers forget quickly",
-                "It shows the farmer you kept your word and builds trust",
-                "It is only needed for big problems",
-                "It wastes time better spent elsewhere"
+                L("It is not important — farmers forget quickly", "यह ज़रूरी नहीं है — किसान जल्दी भूल जाते हैं"),
+                L("It shows the farmer you kept your word and builds trust", "यह किसान को दिखाता है कि आपने अपना वचन निभाया, और भरोसा बनाता है"),
+                L("It is only needed for big problems", "यह सिर्फ बड़ी समस्याओं के लिए ज़रूरी है"),
+                L("It wastes time better spent elsewhere", "यह समय बर्बाद करता है जो कहीं और बेहतर लगाया जा सकता है")
               ],
               "answer": 1,
-              "explain": "Following up, even on small promises, builds long-term trust between the Sahayak and the farmer."
+              "explain": L(
+                "Following up, even on small promises, builds long-term trust between the Sahayak and the farmer.",
+                "छोटे वादों पर भी अनुवर्तन करना सहायक और किसान के बीच दीर्घकालिक भरोसा बनाता है।"
+              )
             },
             {
               "topicId": "t-followup",
               "type": "truefalse",
-              "q": "Rushing through a conversation because you are busy has no effect on how much a farmer trusts you.",
+              "q": L(
+                "Rushing through a conversation because you are busy has no effect on how much a farmer trusts you.",
+                "व्यस्त होने की वजह से बातचीत में जल्दबाज़ी करने का किसान के भरोसे पर कोई असर नहीं पड़ता।"
+              ),
               "answer": false,
-              "explain": "Farmers can tell when you are rushing or only half-listening, which reduces their trust in you."
+              "explain": L(
+                "Farmers can tell when you are rushing or only half-listening, which reduces their trust in you.",
+                "किसान समझ जाते हैं जब आप जल्दबाज़ी कर रहे हों या आधा-अधूरा सुन रहे हों, जिससे उनका आप पर भरोसा कम हो जाता है।"
+              )
             }
           ]
         }
