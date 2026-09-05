@@ -4884,106 +4884,157 @@ export const MODULES = [
     "id": "m6",
     "number": 6,
     "title": L("Interaction with Sahayak (One to One)", "सहायक के साथ बातचीत (एक-से-एक)"),
-    "subtitle": "Learn how to mentor and support a fellow Sahayak one-on-one — through listening, honest feedback and encouragement.",
+    "subtitle": L(
+      "Learn how to mentor and support a fellow Sahayak one-on-one — through listening, honest feedback and encouragement.",
+      "एक साथी सहायक को एक-से-एक तरीके से मार्गदर्शन और सहयोग देना सीखिए — सुनने, ईमानदार प्रतिक्रिया और प्रोत्साहन के ज़रिए।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m6-l1",
-        "title": "Understanding Before Advising",
+        "title": L("Understanding Before Advising", "सलाह देने से पहले समझना"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Understanding Before Advising",
-            "text": "Sometimes you may be the one guiding another Sahayak — maybe someone new, or someone struggling at their MPP. This lesson shows you how to start that conversation the right way."
+            "heading": L("Understanding Before Advising", "सलाह देने से पहले समझना"),
+            "text": L(
+              "Sometimes you may be the one guiding another Sahayak — maybe someone new, or someone struggling at their MPP. This lesson shows you how to start that conversation the right way.",
+              "कभी-कभी आप ही किसी दूसरे सहायक का मार्गदर्शन कर रहे हो सकते हैं — शायद कोई नया, या कोई जो अपने MPP में जूझ रहा हो। यह पाठ आपको दिखाता है कि उस बातचीत को सही तरीके से कैसे शुरू करें।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-sahayak-challenges",
-            "title": "Walking in Another Sahayak's Shoes",
+            "title": L("Walking in Another Sahayak's Shoes", "दूसरे सहायक की जगह खुद को रखना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Every Sahayak's Day Is Different",
-                "html": "A Sahayak's daily work is not easy — testing milk, weighing it correctly, recording data, handling cash, and managing farmers who are sometimes upset. Before you offer advice to another Sahayak, take time to understand what their day actually looks like."
+                "heading": L("Every Sahayak's Day Is Different", "हर सहायक का दिन अलग होता है"),
+                "html": L(
+                  "A Sahayak's daily work is not easy — testing milk, weighing it correctly, recording data, handling cash, and managing farmers who are sometimes upset. Before you offer advice to another Sahayak, take time to understand what their day actually looks like.",
+                  "एक सहायक का रोज़ का काम आसान नहीं है — दूध जाँचना, उसे सही से तौलना, डेटा दर्ज करना, नकदी संभालना, और कभी-कभी नाराज़ किसानों को संभालना। किसी दूसरे सहायक को सलाह देने से पहले, यह समझने के लिए समय लें कि उनका दिन असल में कैसा दिखता है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Why This Conversation Matters",
-                "html": "When you sit down with a Sahayak one-on-one — maybe a new Sahayak still learning the job, or one who is struggling — your goal is not to judge them. It is to understand their challenges and help them do better."
+                "heading": L("Why This Conversation Matters", "यह बातचीत क्यों ज़रूरी है"),
+                "html": L(
+                  "When you sit down with a Sahayak one-on-one — maybe a new Sahayak still learning the job, or one who is struggling — your goal is not to judge them. It is to understand their challenges and help them do better.",
+                  "जब आप किसी सहायक के साथ एक-से-एक बैठते हैं — शायद कोई नया सहायक जो अभी काम सीख रहा है, या कोई जो जूझ रहा है — आपका लक्ष्य उन्हें आँकना नहीं है। यह उनकी चुनौतियों को समझना और उन्हें बेहतर करने में मदद करना है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Start by Asking, Not Telling",
-                "text": "Before giving any advice, ask the Sahayak to describe their day, their difficulties, and what they think is going wrong. You will often learn things you did not expect."
+                "heading": L("Start by Asking, Not Telling", "बताने से नहीं, पूछने से शुरू करें"),
+                "text": L(
+                  "Before giving any advice, ask the Sahayak to describe their day, their difficulties, and what they think is going wrong. You will often learn things you did not expect.",
+                  "कोई भी सलाह देने से पहले, सहायक से उनका दिन, उनकी मुश्किलें, और उन्हें क्या गलत लगता है, बताने को कहें। आप अक्सर ऐसी बातें सीखेंगे जिनकी आपने उम्मीद नहीं की थी।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Starting the Right Way",
-                "text": "Senior Sahayak: Before we talk about the low collection numbers, tell me — how has this month been for you at the MPP? New Sahayak: Honestly, it's been hard. Two farmers stopped coming and I don't fully understand why. Notice the senior Sahayak asked an open question first, instead of starting with the problem."
+                "heading": L("Starting the Right Way", "सही तरीके से शुरुआत करना"),
+                "text": L(
+                  "Senior Sahayak: Before we talk about the low collection numbers, tell me — how has this month been for you at the MPP? New Sahayak: Honestly, it's been hard. Two farmers stopped coming and I don't fully understand why. Notice the senior Sahayak asked an open question first, instead of starting with the problem.",
+                  "वरिष्ठ सहायक: कम संग्रह संख्या पर बात करने से पहले, बताओ — इस महीने MPP पर आपके लिए कैसा रहा? नया सहायक: सच कहूँ तो मुश्किल रहा। दो किसानों ने आना बंद कर दिया और मुझे पूरी तरह समझ नहीं आ रहा क्यों। ध्यान दें कि वरिष्ठ सहायक ने समस्या से शुरू करने के बजाय पहले एक खुला सवाल पूछा।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Before giving advice to a struggling Sahayak, what should you do first?",
+                "q": L(
+                  "Before giving advice to a struggling Sahayak, what should you do first?",
+                  "जूझ रहे सहायक को सलाह देने से पहले, आपको पहले क्या करना चाहिए?"
+                ),
                 "options": [
-                  "Tell them everything they are doing wrong",
-                  "Ask them to describe their day and difficulties, and listen",
-                  "Compare them unfavourably to other Sahayaks",
-                  "Wait for someone else to talk to them instead"
+                  L("Tell them everything they are doing wrong", "उन्हें बताएँ कि वे सब कुछ गलत कर रहे हैं"),
+                  L("Ask them to describe their day and difficulties, and listen", "उनसे उनका दिन और मुश्किलें बताने को कहें, और सुनें"),
+                  L("Compare them unfavourably to other Sahayaks", "उनकी तुलना दूसरे सहायकों से नकारात्मक ढंग से करें"),
+                  L("Wait for someone else to talk to them instead", "किसी और के उनसे बात करने का इंतज़ार करें")
                 ],
                 "answer": 1,
-                "explain": "Understanding a Sahayak's real challenges first helps you give advice that actually fits their situation."
+                "explain": L(
+                  "Understanding a Sahayak's real challenges first helps you give advice that actually fits their situation.",
+                  "पहले सहायक की असली चुनौतियों को समझना आपको ऐसी सलाह देने में मदद करता है जो उनकी स्थिति के अनुकूल हो।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "The goal of a one-on-one conversation with a struggling Sahayak is to judge their performance, not to understand them.",
+                "q": L(
+                  "The goal of a one-on-one conversation with a struggling Sahayak is to judge their performance, not to understand them.",
+                  "जूझ रहे सहायक के साथ एक-से-एक बातचीत का लक्ष्य उनके प्रदर्शन को आँकना है, उन्हें समझना नहीं।"
+                ),
                 "answer": false,
-                "explain": "The goal is to understand their challenges and help them improve — not to judge them."
+                "explain": L(
+                  "The goal is to understand their challenges and help them improve — not to judge them.",
+                  "लक्ष्य है उनकी चुनौतियों को समझना और उन्हें सुधरने में मदद करना — उन्हें आँकना नहीं।"
+                )
               }
             ]
           },
           {
             "id": "t-active-listening-sahayak",
-            "title": "Listening Without Jumping to Solutions",
+            "title": L("Listening Without Jumping to Solutions", "बिना समाधान पर कूदे सुनना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Resist the Urge to Fix It Immediately",
-                "html": "When someone tells you a problem, it's tempting to jump straight to a solution. But if you do this too fast, the Sahayak may feel unheard — and you might end up solving the wrong problem."
+                "heading": L("Resist the Urge to Fix It Immediately", "तुरंत ठीक करने की इच्छा पर काबू रखें"),
+                "html": L(
+                  "When someone tells you a problem, it's tempting to jump straight to a solution. But if you do this too fast, the Sahayak may feel unheard — and you might end up solving the wrong problem.",
+                  "जब कोई आपको समस्या बताता है, तो सीधे समाधान पर कूदना आकर्षक लगता है। लेकिन अगर आप ऐसा बहुत जल्दी करते हैं, तो सहायक को लग सकता है कि उन्हें सुना नहीं गया — और हो सकता है आप गलत समस्या हल कर बैठें।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "A Common Mistake",
-                "text": "Cutting off a Sahayak mid-sentence to give advice, or assuming you already know their problem before they finish explaining, can make them stop being honest with you in future conversations."
+                "heading": L("A Common Mistake", "एक आम गलती"),
+                "text": L(
+                  "Cutting off a Sahayak mid-sentence to give advice, or assuming you already know their problem before they finish explaining, can make them stop being honest with you in future conversations.",
+                  "सलाह देने के लिए सहायक की बात बीच में काटना, या यह मान लेना कि आप उनकी समस्या पहले से जानते हैं इससे पहले कि वे समझा पूरा करें, भविष्य की बातचीत में उन्हें आपसे ईमानदार होना बंद करा सकता है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Ask Open-Ended Questions",
-                "html": "Instead of yes-or-no questions, ask things like 'What do you think caused this?' or 'What have you already tried?' These questions help the Sahayak think it through — and often they find their own answer."
+                "heading": L("Ask Open-Ended Questions", "खुले सवाल पूछें"),
+                "html": L(
+                  "Instead of yes-or-no questions, ask things like 'What do you think caused this?' or 'What have you already tried?' These questions help the Sahayak think it through — and often they find their own answer.",
+                  "हाँ-नहीं वाले सवालों के बजाय, 'आपको क्या लगता है इसका कारण क्या है?' या 'आपने अब तक क्या आज़माया है?' जैसे सवाल पूछें। ये सवाल सहायक को सोचने में मदद करते हैं — और अक्सर वे खुद अपना जवाब पा लेते हैं।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Good vs. Rushed Listening",
-                "text": "Rushed: You probably didn't test the milk properly, that's why farmers complained. Better: Walk me through what happened when the farmer complained. What did you do first?"
+                "heading": L("Good vs. Rushed Listening", "अच्छा बनाम जल्दबाज़ी वाला सुनना"),
+                "text": L(
+                  "Rushed: You probably didn't test the milk properly, that's why farmers complained. Better: Walk me through what happened when the farmer complained. What did you do first?",
+                  "जल्दबाज़ी वाला: शायद आपने दूध ठीक से नहीं जाँचा, इसलिए किसानों ने शिकायत की। बेहतर: मुझे बताइए कि जब किसान ने शिकायत की तो क्या हुआ। आपने पहले क्या किया?"
+                )
               },
               {
                 "type": "poll",
-                "heading": "What Should You Say Here?",
+                "heading": L("What Should You Say Here?", "यहाँ आपको क्या कहना चाहिए?"),
                 "questions": [
                   {
-                    "q": "A Sahayak tells you collections have dropped this month. What's the better first response?",
+                    "q": L(
+                      "A Sahayak tells you collections have dropped this month. What's the better first response?",
+                      "एक सहायक आपको बताता है कि इस महीने संग्रह गिर गया है। पहली बेहतर प्रतिक्रिया क्या है?"
+                    ),
                     "options": [
-                      "You must be doing something wrong at collection time.",
-                      "Tell me more — when did you first notice the drop, and have you spoken to any farmers about it?"
+                      L("You must be doing something wrong at collection time.", "आप ज़रूर संग्रह के समय कुछ गलत कर रहे हैं।"),
+                      L(
+                        "Tell me more — when did you first notice the drop, and have you spoken to any farmers about it?",
+                        "मुझे और बताइए — आपने गिरावट पहली बार कब देखी, और क्या आपने किसी किसान से इस बारे में बात की?"
+                      )
                     ],
                     "answer": 1,
-                    "reveal": "Asking first, before assuming, gets you the real reason and keeps the Sahayak comfortable being honest with you."
+                    "reveal": L(
+                      "Asking first, before assuming, gets you the real reason and keeps the Sahayak comfortable being honest with you.",
+                      "मान लेने से पहले पूछना आपको असली कारण दिलाता है और सहायक को आपके साथ ईमानदार रहने में सहज रखता है।"
+                    )
                   }
                 ]
               }
@@ -4991,21 +5042,33 @@ export const MODULES = [
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a risk of jumping straight to a solution before fully listening?",
+                "q": L(
+                  "What is a risk of jumping straight to a solution before fully listening?",
+                  "पूरी तरह सुनने से पहले सीधे समाधान पर कूदने का एक जोखिम क्या है?"
+                ),
                 "options": [
-                  "There is no risk, faster is always better",
-                  "You might end up solving the wrong problem",
-                  "The Sahayak will always agree with you anyway",
-                  "It saves so much time that it is always worth it"
+                  L("There is no risk, faster is always better", "कोई जोखिम नहीं, तेज़ हमेशा बेहतर होता है"),
+                  L("You might end up solving the wrong problem", "आप गलत समस्या हल कर सकते हैं"),
+                  L("The Sahayak will always agree with you anyway", "सहायक वैसे भी हमेशा आपसे सहमत होगा"),
+                  L("It saves so much time that it is always worth it", "यह इतना समय बचाता है कि यह हमेशा फ़ायदेमंद है")
                 ],
                 "answer": 1,
-                "explain": "Without fully understanding the real problem, you risk offering a solution that doesn't actually fix it."
+                "explain": L(
+                  "Without fully understanding the real problem, you risk offering a solution that doesn't actually fix it.",
+                  "असली समस्या को पूरी तरह समझे बिना, आप एक ऐसा समाधान दे सकते हैं जो असल में उसे ठीक नहीं करता।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Open-ended questions like 'What do you think caused this?' can help a Sahayak think through their own problem.",
+                "q": L(
+                  "Open-ended questions like 'What do you think caused this?' can help a Sahayak think through their own problem.",
+                  "'आपको क्या लगता है इसका कारण क्या है?' जैसे खुले सवाल एक सहायक को अपनी समस्या पर सोचने में मदद कर सकते हैं।"
+                ),
                 "answer": true,
-                "explain": "Open-ended questions encourage the Sahayak to reflect and often arrive at their own useful answer."
+                "explain": L(
+                  "Open-ended questions encourage the Sahayak to reflect and often arrive at their own useful answer.",
+                  "खुले सवाल सहायक को सोचने के लिए प्रोत्साहित करते हैं और अक्सर वे खुद एक उपयोगी जवाब तक पहुँच जाते हैं।"
+                )
               }
             ]
           }
@@ -5016,142 +5079,217 @@ export const MODULES = [
             {
               "topicId": "t-sahayak-challenges",
               "type": "mcq",
-              "q": "Why is it important to understand a Sahayak's day-to-day challenges before advising them?",
+              "q": L(
+                "Why is it important to understand a Sahayak's day-to-day challenges before advising them?",
+                "सलाह देने से पहले सहायक की रोज़मर्रा की चुनौतियों को समझना क्यों ज़रूरी है?"
+              ),
               "options": [
-                "It isn't important — advice works the same regardless",
-                "It helps you give advice that actually fits their real situation",
-                "It is only a formality with no real value",
-                "It wastes time that could be spent giving instructions"
+                L("It isn't important — advice works the same regardless", "यह ज़रूरी नहीं है — सलाह वैसे भी एक जैसी काम करती है"),
+                L("It helps you give advice that actually fits their real situation", "यह आपको ऐसी सलाह देने में मदद करता है जो उनकी असली स्थिति के अनुकूल हो"),
+                L("It is only a formality with no real value", "यह सिर्फ एक औपचारिकता है जिसका कोई असली मूल्य नहीं"),
+                L("It wastes time that could be spent giving instructions", "यह समय बर्बाद करता है जो निर्देश देने में लगाया जा सकता था")
               ],
               "answer": 1,
-              "explain": "Understanding the real, on-ground challenges helps you offer advice that is actually useful and relevant."
+              "explain": L(
+                "Understanding the real, on-ground challenges helps you offer advice that is actually useful and relevant.",
+                "असली, ज़मीनी चुनौतियों को समझना आपको ऐसी सलाह देने में मदद करता है जो असल में उपयोगी और प्रासंगिक हो।"
+              )
             },
             {
               "topicId": "t-sahayak-challenges",
               "type": "truefalse",
-              "q": "Starting a mentoring conversation with an open question, like asking how their month has been, is a good approach.",
+              "q": L(
+                "Starting a mentoring conversation with an open question, like asking how their month has been, is a good approach.",
+                "एक मार्गदर्शन बातचीत को एक खुले सवाल से शुरू करना, जैसे पूछना कि उनका महीना कैसा रहा, एक अच्छा तरीका है।"
+              ),
               "answer": true,
-              "explain": "Open questions invite honesty and help you understand the real situation before discussing problems."
+              "explain": L(
+                "Open questions invite honesty and help you understand the real situation before discussing problems.",
+                "खुले सवाल ईमानदारी को बुलाते हैं और समस्याओं पर चर्चा करने से पहले असली स्थिति समझने में मदद करते हैं।"
+              )
             },
             {
               "topicId": "t-active-listening-sahayak",
               "type": "mcq",
-              "q": "A Sahayak is explaining a problem, but you think you already know the cause. What should you do?",
+              "q": L(
+                "A Sahayak is explaining a problem, but you think you already know the cause. What should you do?",
+                "एक सहायक समस्या समझा रहा है, लेकिन आपको लगता है कि आप कारण पहले से जानते हैं। आपको क्या करना चाहिए?"
+              ),
               "options": [
-                "Interrupt and explain the cause immediately",
-                "Let them finish and ask follow-up questions before concluding anything",
-                "Change the subject",
-                "Assume you're right and move on without checking"
+                L("Interrupt and explain the cause immediately", "टोकें और तुरंत कारण समझाएँ"),
+                L(
+                  "Let them finish and ask follow-up questions before concluding anything",
+                  "उन्हें पूरा बोलने दें और किसी निष्कर्ष से पहले अनुवर्ती सवाल पूछें"
+                ),
+                L("Change the subject", "विषय बदल दें"),
+                L("Assume you're right and move on without checking", "मान लें कि आप सही हैं और बिना जाँचे आगे बढ़ें")
               ],
               "answer": 1,
-              "explain": "Letting the Sahayak finish and asking follow-up questions helps you confirm the real cause instead of guessing."
+              "explain": L(
+                "Letting the Sahayak finish and asking follow-up questions helps you confirm the real cause instead of guessing.",
+                "सहायक को पूरा बोलने देना और अनुवर्ती सवाल पूछना आपको अंदाज़ा लगाने के बजाय असली कारण की पुष्टि करने में मदद करता है।"
+              )
             },
             {
               "topicId": "t-active-listening-sahayak",
               "type": "truefalse",
-              "q": "Assuming you already know a Sahayak's problem before they finish explaining can damage their trust in you.",
+              "q": L(
+                "Assuming you already know a Sahayak's problem before they finish explaining can damage their trust in you.",
+                "सहायक की समस्या को उनके पूरा समझाने से पहले ही मान लेना, आप पर उनके भरोसे को नुकसान पहुँचा सकता है।"
+              ),
               "answer": true,
-              "explain": "Jumping to conclusions can make a Sahayak feel unheard, and less likely to be open with you in future."
+              "explain": L(
+                "Jumping to conclusions can make a Sahayak feel unheard, and less likely to be open with you in future.",
+                "निष्कर्ष पर कूदना सहायक को अनसुना महसूस करा सकता है, और भविष्य में उनके आपसे खुले रहने की संभावना कम कर सकता है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m6-l2",
-        "title": "Feedback That Builds Confidence",
+        "title": L("Feedback That Builds Confidence", "प्रतिक्रिया जो आत्मविश्वास बनाती है"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Feedback That Builds Confidence",
-            "text": "Good feedback helps a Sahayak grow. Bad feedback makes them defensive or discouraged. Let's learn how to give feedback that actually helps."
+            "heading": L("Feedback That Builds Confidence", "प्रतिक्रिया जो आत्मविश्वास बनाती है"),
+            "text": L(
+              "Good feedback helps a Sahayak grow. Bad feedback makes them defensive or discouraged. Let's learn how to give feedback that actually helps.",
+              "अच्छी प्रतिक्रिया एक सहायक को आगे बढ़ने में मदद करती है। बुरी प्रतिक्रिया उन्हें बचावी या हतोत्साहित बना देती है। आइए सीखें कि ऐसी प्रतिक्रिया कैसे दें जो असल में मदद करे।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-constructive-feedback",
-            "title": "Giving Feedback the Right Way",
+            "title": L("Giving Feedback the Right Way", "प्रतिक्रिया सही तरीके से देना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Be Specific, Not General",
-                "html": "Instead of saying 'Your record-keeping is bad,' point to something specific: 'I noticed three days last week where the evening collection wasn't logged. Let's look at why.' Specific feedback is much easier to act on."
+                "heading": L("Be Specific, Not General", "विशेष रहें, सामान्य नहीं"),
+                "html": L(
+                  "Instead of saying 'Your record-keeping is bad,' point to something specific: 'I noticed three days last week where the evening collection wasn't logged. Let's look at why.' Specific feedback is much easier to act on.",
+                  "'आपकी रिकॉर्ड-कीपिंग खराब है' कहने के बजाय, किसी खास बात की ओर इशारा करें: 'मैंने देखा पिछले हफ्ते तीन दिन शाम का संग्रह दर्ज नहीं हुआ। आइए देखें क्यों।' विशेष प्रतिक्रिया पर काम करना कहीं आसान होता है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Give Feedback in Private",
-                "html": "Always give corrective feedback one-on-one, in private — never in front of farmers or other Sahayaks. Public criticism embarrasses people and makes them defensive instead of open to improving."
+                "heading": L("Give Feedback in Private", "प्रतिक्रिया निजी तौर पर दें"),
+                "html": L(
+                  "Always give corrective feedback one-on-one, in private — never in front of farmers or other Sahayaks. Public criticism embarrasses people and makes them defensive instead of open to improving.",
+                  "सुधारात्मक प्रतिक्रिया हमेशा एक-से-एक, निजी तौर पर दें — कभी किसानों या दूसरे सहायकों के सामने नहीं। सार्वजनिक आलोचना लोगों को शर्मिंदा करती है और उन्हें सुधरने के लिए खुले रहने के बजाय बचावी बना देती है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Balance Praise With Improvement",
-                "text": "Mention what the Sahayak is doing well, not only what needs to change. This is not about softening bad news — it is about giving an honest, complete picture so the Sahayak knows what to keep doing too."
+                "heading": L("Balance Praise With Improvement", "प्रशंसा और सुधार में संतुलन रखें"),
+                "text": L(
+                  "Mention what the Sahayak is doing well, not only what needs to change. This is not about softening bad news — it is about giving an honest, complete picture so the Sahayak knows what to keep doing too.",
+                  "यह बताएँ कि सहायक क्या अच्छा कर रहा है, सिर्फ यह नहीं कि क्या बदलना है। यह बुरी खबर को नरम करने की बात नहीं है — यह एक ईमानदार, पूरी तस्वीर देने की बात है ताकि सहायक यह भी जान सके कि क्या करते रहना है।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Two Ways to Give the Same Feedback",
-                "text": "Harsh: You keep making mistakes with the fat testing, this needs to stop. Constructive: Your farmer relationships are strong — I can see that from how they talk to you. I did notice a couple of fat-testing readings that looked off last week. Can we go over the testing steps together?"
+                "heading": L("Two Ways to Give the Same Feedback", "एक ही प्रतिक्रिया देने के दो तरीके"),
+                "text": L(
+                  "Harsh: You keep making mistakes with the fat testing, this needs to stop. Constructive: Your farmer relationships are strong — I can see that from how they talk to you. I did notice a couple of fat-testing readings that looked off last week. Can we go over the testing steps together?",
+                  "कठोर: आप फैट जाँच में लगातार गलतियाँ करते हैं, यह रुकना चाहिए। रचनात्मक: आपके किसान संबंध मज़बूत हैं — यह मुझे उनके आपसे बात करने के तरीके से दिखता है। मैंने पिछले हफ्ते कुछ फैट-जाँच रीडिंग गलत देखीं। क्या हम साथ में जाँच के चरणों को दोबारा देख सकते हैं?"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which is an example of specific, useful feedback?",
+                "q": L("Which is an example of specific, useful feedback?", "विशेष, उपयोगी प्रतिक्रिया का उदाहरण कौन-सा है?"),
                 "options": [
-                  "'Your work is bad.'",
-                  "'I noticed three days last week where the evening collection wasn't logged. Let's look at why.'",
-                  "'You never do anything right.'",
-                  "'Just try harder next time.'"
+                  L("'Your work is bad.'", "'आपका काम खराब है।'"),
+                  L(
+                    "'I noticed three days last week where the evening collection wasn't logged. Let's look at why.'",
+                    "'मैंने देखा पिछले हफ्ते तीन दिन शाम का संग्रह दर्ज नहीं हुआ। आइए देखें क्यों।'"
+                  ),
+                  L("'You never do anything right.'", "'आप कभी कुछ सही नहीं करते।'"),
+                  L("'Just try harder next time.'", "'अगली बार बस ज़्यादा कोशिश करें।'")
                 ],
                 "answer": 1,
-                "explain": "Specific feedback points to an exact situation, which makes it much easier for the Sahayak to act on."
+                "explain": L(
+                  "Specific feedback points to an exact situation, which makes it much easier for the Sahayak to act on.",
+                  "विशेष प्रतिक्रिया एक सटीक स्थिति की ओर इशारा करती है, जिससे सहायक के लिए उस पर काम करना कहीं आसान हो जाता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is fine to correct a Sahayak's mistake in front of farmers if it saves time.",
+                "q": L(
+                  "It is fine to correct a Sahayak's mistake in front of farmers if it saves time.",
+                  "अगर समय बचता है, तो किसानों के सामने सहायक की गलती सुधारना ठीक है।"
+                ),
                 "answer": false,
-                "explain": "Corrective feedback should always be given in private — public criticism embarrasses and discourages people."
+                "explain": L(
+                  "Corrective feedback should always be given in private — public criticism embarrasses and discourages people.",
+                  "सुधारात्मक प्रतिक्रिया हमेशा निजी तौर पर दी जानी चाहिए — सार्वजनिक आलोचना लोगों को शर्मिंदा और हतोत्साहित करती है।"
+                )
               }
             ]
           },
           {
             "id": "t-building-confidence",
-            "title": "Encouraging Growth and Following Up",
+            "title": L("Encouraging Growth and Following Up", "विकास को प्रोत्साहित करना और अनुवर्तन करना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Small Wins Build Confidence",
-                "html": "When a Sahayak improves, even a little, notice it and say so. A new Sahayak who used to make mistakes but is now testing milk correctly deserves to hear that you noticed the improvement."
+                "heading": L("Small Wins Build Confidence", "छोटी जीतें आत्मविश्वास बनाती हैं"),
+                "html": L(
+                  "When a Sahayak improves, even a little, notice it and say so. A new Sahayak who used to make mistakes but is now testing milk correctly deserves to hear that you noticed the improvement.",
+                  "जब एक सहायक सुधरे, थोड़ा भी, इसे नोटिस करें और कहें। एक नया सहायक जो पहले गलतियाँ करता था लेकिन अब सही तरीके से दूध जाँच रहा है, यह सुनने का हकदार है कि आपने सुधार देखा।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Set Small, Achievable Goals",
-                "html": "Instead of asking a struggling Sahayak to fix everything at once, agree on one or two small, clear goals to work on before your next conversation. This feels achievable, not overwhelming."
+                "heading": L("Set Small, Achievable Goals", "छोटे, हासिल किए जा सकने वाले लक्ष्य तय करें"),
+                "html": L(
+                  "Instead of asking a struggling Sahayak to fix everything at once, agree on one or two small, clear goals to work on before your next conversation. This feels achievable, not overwhelming.",
+                  "जूझ रहे सहायक से एक साथ सब कुछ ठीक करने को कहने के बजाय, अगली बातचीत से पहले काम करने के लिए एक या दो छोटे, स्पष्ट लक्ष्यों पर सहमत हों। यह हासिल किए जाने योग्य लगता है, भारी नहीं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Don't Disappear After the Conversation",
-                "text": "A one-time conversation is not enough. If you don't follow up, the Sahayak may feel like the conversation didn't matter, or that you have already given up on them."
+                "heading": L("Don't Disappear After the Conversation", "बातचीत के बाद गायब न हो जाएँ"),
+                "text": L(
+                  "A one-time conversation is not enough. If you don't follow up, the Sahayak may feel like the conversation didn't matter, or that you have already given up on them.",
+                  "एक बार की बातचीत काफ़ी नहीं है। अगर आप अनुवर्तन नहीं करते, तो सहायक को लग सकता है कि बातचीत मायने नहीं रखती थी, या कि आपने उन्हें पहले ही छोड़ दिया है।"
+                )
               },
               {
                 "type": "example",
-                "heading": "A Good Follow-Up Conversation",
-                "text": "Senior Sahayak, at the next visit: Last time we talked about logging every collection. I checked — you've logged every single one this week. That's a real improvement. New Sahayak: Thank you, that means a lot. It's easier now that I have a system for it. This follow-up shows the senior Sahayak kept track and recognised the effort."
+                "heading": L("A Good Follow-Up Conversation", "एक अच्छी अनुवर्तन बातचीत"),
+                "text": L(
+                  "Senior Sahayak, at the next visit: Last time we talked about logging every collection. I checked — you've logged every single one this week. That's a real improvement. New Sahayak: Thank you, that means a lot. It's easier now that I have a system for it. This follow-up shows the senior Sahayak kept track and recognised the effort.",
+                  "वरिष्ठ सहायक, अगली मुलाकात में: पिछली बार हमने हर संग्रह दर्ज करने पर बात की थी। मैंने जाँचा — आपने इस हफ्ते हर एक दर्ज किया। यह एक असली सुधार है। नया सहायक: धन्यवाद, इसका बहुत मतलब है। अब आसान है क्योंकि मेरे पास इसके लिए एक व्यवस्था है। यह अनुवर्तन दिखाता है कि वरिष्ठ सहायक ने ट्रैक रखा और मेहनत को पहचाना।"
+                )
               },
               {
                 "type": "poll",
-                "heading": "What Should You Say Here?",
+                "heading": L("What Should You Say Here?", "यहाँ आपको क्या कहना चाहिए?"),
                 "questions": [
                   {
-                    "q": "A Sahayak you're mentoring has improved on one goal but is still struggling with another. What's the better approach?",
+                    "q": L(
+                      "A Sahayak you're mentoring has improved on one goal but is still struggling with another. What's the better approach?",
+                      "जिस सहायक का आप मार्गदर्शन कर रहे हैं, वह एक लक्ष्य पर सुधरा है लेकिन दूसरे में अभी भी जूझ रहा है। बेहतर तरीका क्या है?"
+                    ),
                     "options": [
-                      "Only point out what's still going wrong",
-                      "Recognise the improvement first, then gently work on the next goal together"
+                      L("Only point out what's still going wrong", "सिर्फ यह बताएँ कि अभी भी क्या गलत हो रहा है"),
+                      L(
+                        "Recognise the improvement first, then gently work on the next goal together",
+                        "पहले सुधार को पहचानें, फिर धीरे से अगले लक्ष्य पर साथ में काम करें"
+                      )
                     ],
                     "answer": 1,
-                    "reveal": "Recognising progress keeps the Sahayak motivated and open to continuing to improve."
+                    "reveal": L(
+                      "Recognising progress keeps the Sahayak motivated and open to continuing to improve.",
+                      "प्रगति को पहचानना सहायक को प्रेरित और सुधार जारी रखने के लिए खुला रखता है।"
+                    )
                   }
                 ]
               }
@@ -5159,21 +5297,36 @@ export const MODULES = [
             "check": [
               {
                 "type": "mcq",
-                "q": "What is the benefit of setting one or two small, achievable goals instead of asking a Sahayak to fix everything at once?",
+                "q": L(
+                  "What is the benefit of setting one or two small, achievable goals instead of asking a Sahayak to fix everything at once?",
+                  "सहायक से एक साथ सब कुछ ठीक करने को कहने के बजाय एक या दो छोटे, हासिल किए जाने योग्य लक्ष्य तय करने का क्या फ़ायदा है?"
+                ),
                 "options": [
-                  "It makes the goals easier to ignore",
-                  "It feels achievable rather than overwhelming, so the Sahayak is more likely to succeed",
-                  "It has no real benefit",
-                  "It slows down all improvement permanently"
+                  L("It makes the goals easier to ignore", "इससे लक्ष्यों को नज़रअंदाज़ करना आसान हो जाता है"),
+                  L(
+                    "It feels achievable rather than overwhelming, so the Sahayak is more likely to succeed",
+                    "यह भारी लगने के बजाय हासिल किए जाने योग्य लगता है, इसलिए सहायक के सफल होने की संभावना ज़्यादा है"
+                  ),
+                  L("It has no real benefit", "इसका कोई असली फ़ायदा नहीं है"),
+                  L("It slows down all improvement permanently", "यह सभी सुधार को हमेशा के लिए धीमा कर देता है")
                 ],
                 "answer": 1,
-                "explain": "Small, clear goals feel achievable, which helps a struggling Sahayak build momentum and confidence."
+                "explain": L(
+                  "Small, clear goals feel achievable, which helps a struggling Sahayak build momentum and confidence.",
+                  "छोटे, स्पष्ट लक्ष्य हासिल किए जाने योग्य लगते हैं, जो जूझ रहे सहायक को गति और आत्मविश्वास बनाने में मदद करते हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Once you've had one feedback conversation with a Sahayak, there is no need to follow up later.",
+                "q": L(
+                  "Once you've had one feedback conversation with a Sahayak, there is no need to follow up later.",
+                  "एक बार सहायक के साथ प्रतिक्रिया बातचीत हो जाने के बाद, बाद में अनुवर्तन की कोई ज़रूरत नहीं है।"
+                ),
                 "answer": false,
-                "explain": "Following up shows the Sahayak that the conversation mattered and that you are still invested in their progress."
+                "explain": L(
+                  "Following up shows the Sahayak that the conversation mattered and that you are still invested in their progress.",
+                  "अनुवर्तन सहायक को दिखाता है कि बातचीत मायने रखती थी और आप अभी भी उनकी प्रगति में रुचि रखते हैं।"
+                )
               }
             ]
           }
@@ -5185,42 +5338,69 @@ export const MODULES = [
             {
               "topicId": "t-constructive-feedback",
               "type": "mcq",
-              "q": "Why should corrective feedback be given in private, one-on-one?",
+              "q": L("Why should corrective feedback be given in private, one-on-one?", "सुधारात्मक प्रतिक्रिया निजी तौर पर, एक-से-एक क्यों दी जानी चाहिए?"),
               "options": [
-                "Because it takes too long to do in public",
-                "Because public criticism embarrasses people and makes them defensive",
-                "Because private conversations don't need to be honest",
-                "Because it is required only by written rules, not for any real reason"
+                L("Because it takes too long to do in public", "क्योंकि सार्वजनिक रूप से करने में बहुत समय लगता है"),
+                L(
+                  "Because public criticism embarrasses people and makes them defensive",
+                  "क्योंकि सार्वजनिक आलोचना लोगों को शर्मिंदा करती है और उन्हें बचावी बना देती है"
+                ),
+                L("Because private conversations don't need to be honest", "क्योंकि निजी बातचीत को ईमानदार होने की ज़रूरत नहीं है"),
+                L(
+                  "Because it is required only by written rules, not for any real reason",
+                  "क्योंकि यह सिर्फ लिखित नियमों की वजह से ज़रूरी है, किसी असली कारण से नहीं"
+                )
               ],
               "answer": 1,
-              "explain": "Private feedback avoids embarrassment and keeps the Sahayak open to hearing and acting on it."
+              "explain": L(
+                "Private feedback avoids embarrassment and keeps the Sahayak open to hearing and acting on it.",
+                "निजी प्रतिक्रिया शर्मिंदगी से बचाती है और सहायक को इसे सुनने और उस पर काम करने के लिए खुला रखती है।"
+              )
             },
             {
               "topicId": "t-constructive-feedback",
               "type": "truefalse",
-              "q": "Good feedback should mention what a Sahayak is doing well, not only what needs to change.",
+              "q": L(
+                "Good feedback should mention what a Sahayak is doing well, not only what needs to change.",
+                "अच्छी प्रतिक्रिया में यह बताना चाहिए कि एक सहायक क्या अच्छा कर रहा है, सिर्फ यह नहीं कि क्या बदलना है।"
+              ),
               "answer": true,
-              "explain": "Balanced feedback gives an honest, complete picture, so the Sahayak knows what to keep doing as well as what to improve."
+              "explain": L(
+                "Balanced feedback gives an honest, complete picture, so the Sahayak knows what to keep doing as well as what to improve.",
+                "संतुलित प्रतिक्रिया एक ईमानदार, पूरी तस्वीर देती है, ताकि सहायक जान सके कि क्या करते रहना है और क्या सुधारना है।"
+              )
             },
             {
               "topicId": "t-building-confidence",
               "type": "mcq",
-              "q": "A Sahayak has shown a small improvement since your last conversation. What should you do?",
+              "q": L(
+                "A Sahayak has shown a small improvement since your last conversation. What should you do?",
+                "आपकी पिछली बातचीत के बाद से एक सहायक ने थोड़ा सुधार दिखाया है। आपको क्या करना चाहिए?"
+              ),
               "options": [
-                "Say nothing since the improvement is small",
-                "Notice and acknowledge the improvement before discussing anything else",
-                "Focus only on what's still wrong",
-                "Wait for a bigger improvement before saying anything"
+                L("Say nothing since the improvement is small", "कुछ न कहें क्योंकि सुधार छोटा है"),
+                L("Notice and acknowledge the improvement before discussing anything else", "कुछ और चर्चा करने से पहले सुधार को नोटिस करें और स्वीकार करें"),
+                L("Focus only on what's still wrong", "सिर्फ इस पर ध्यान दें कि अभी भी क्या गलत है"),
+                L("Wait for a bigger improvement before saying anything", "कुछ कहने से पहले बड़े सुधार का इंतज़ार करें")
               ],
               "answer": 1,
-              "explain": "Acknowledging even small improvements builds confidence and keeps the Sahayak motivated to keep improving."
+              "explain": L(
+                "Acknowledging even small improvements builds confidence and keeps the Sahayak motivated to keep improving.",
+                "छोटे सुधार को भी स्वीकार करना आत्मविश्वास बनाता है और सहायक को सुधरते रहने के लिए प्रेरित रखता है।"
+              )
             },
             {
               "topicId": "t-building-confidence",
               "type": "truefalse",
-              "q": "Following up after a mentoring conversation shows the Sahayak that you are still invested in their progress.",
+              "q": L(
+                "Following up after a mentoring conversation shows the Sahayak that you are still invested in their progress.",
+                "मार्गदर्शन बातचीत के बाद अनुवर्तन करना सहायक को दिखाता है कि आप अभी भी उनकी प्रगति में रुचि रखते हैं।"
+              ),
               "answer": true,
-              "explain": "Following up proves the earlier conversation mattered and that support continues beyond a single talk."
+              "explain": L(
+                "Following up proves the earlier conversation mattered and that support continues beyond a single talk.",
+                "अनुवर्तन साबित करता है कि पिछली बातचीत मायने रखती थी और सहयोग एक बार की बातचीत से आगे भी जारी रहता है।"
+              )
             }
           ]
         }
