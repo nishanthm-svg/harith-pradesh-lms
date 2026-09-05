@@ -8481,154 +8481,153 @@ export const MODULES = [
     ]
   },
   {
-
     "id": "m12",
     "number": 12,
     "title": L("Cost Associated with Milk Handling", "दूध संभालने से जुड़ी लागत"),
-    "subtitle": "See where every rupee goes as milk travels from farmer to dairy — and learn how a real dairy company is working to bring transport costs down.",
+    "subtitle": L("See where every rupee goes as milk travels from farmer to dairy — and learn how a real dairy company is working to bring transport costs down.", "देखें कि जब दूध किसान से डेयरी तक जाता है तो हर रुपया कहां जाता है — और जानें कि एक असली डेयरी कंपनी परिवहन लागत को कम करने के लिए कैसे काम कर रही है।"),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m12-l1",
-        "title": "What Does It Cost to Get Milk From Farmer to Dairy?",
+        "title": L("What Does It Cost to Get Milk From Farmer to Dairy?", "किसान से डेयरी तक दूध पहुंचाने की लागत क्या है?"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Where Does the Money Go?",
-            "text": "Milk does not travel from a farmer's bucket to the dairy plant by magic. Every step — collecting, chilling, and transporting — costs money. Let's find out where that money goes, and why it matters to everyone."
+            "heading": L("Where Does the Money Go?", "पैसा कहां जाता है?"),
+            "text": L("Milk does not travel from a farmer's bucket to the dairy plant by magic. Every step — collecting, chilling, and transporting — costs money. Let's find out where that money goes, and why it matters to everyone.", "दूध किसान की बाल्टी से डेयरी प्लांट तक जादू से नहीं जाता। हर कदम — संग्रह, ठंडा करना, और परिवहन — पैसे खर्च करता है। आइए जानें कि वह पैसा कहां जाता है, और यह सबके लिए क्यों मायने रखता है।")
           }
         ],
         "topics": [
           {
             "id": "t-milk-journey-costs",
-            "title": "The Journey — And What It Costs at Each Step",
+            "title": L("The Journey — And What It Costs at Each Step", "यात्रा — और हर कदम पर इसकी लागत"),
             "teach": [
               {
                 "type": "text",
-                "heading": "From Bucket to Plant",
-                "html": "Milk travels through several steps before it reaches the dairy plant: the farmer milks the animal, brings it to the MPP, the Sahayak dispatches it, it is chilled at a BMC or MCC, and then it is transported to the plant. Each of these steps costs money to run."
+                "heading": L("From Bucket to Plant", "बाल्टी से प्लांट तक"),
+                "html": L("Milk travels through several steps before it reaches the dairy plant: the farmer milks the animal, brings it to the MPP, the Sahayak dispatches it, it is chilled at a BMC or MCC, and then it is transported to the plant. Each of these steps costs money to run.", "डेयरी प्लांट तक पहुंचने से पहले दूध कई चरणों से गुज़रता है: किसान पशु का दूध निकालता है, उसे MPP तक लाता है, सहायक उसे भेजता है, इसे BMC या MCC पर ठंडा किया जाता है, और फिर इसे प्लांट तक ले जाया जाता है। इनमें से हर चरण को चलाने में पैसा खर्च होता है।")
               },
               {
                 "type": "glossary",
-                "term": "BMC (Bulk Milk Cooler)",
-                "meaning": "A machine that quickly cools milk after it arrives from the villages, to keep it fresh until it reaches the dairy plant."
+                "term": L("BMC (Bulk Milk Cooler)", "BMC (बल्क मिल्क कूलर)"),
+                "meaning": L("A machine that quickly cools milk after it arrives from the villages, to keep it fresh until it reaches the dairy plant.", "एक मशीन जो गांवों से पहुंचने के बाद दूध को जल्दी ठंडा करती है, ताकि डेयरी प्लांट तक पहुंचने तक यह ताज़ा रहे।")
               },
               {
                 "type": "glossary",
-                "term": "Inward Transportation",
-                "meaning": "The cost of moving milk from the MPPs to the chilling centre, and from there to the dairy plant. This includes fuel, the vehicle, and the driver."
+                "term": L("Inward Transportation", "इनवर्ड ट्रांसपोर्टेशन"),
+                "meaning": L("The cost of moving milk from the MPPs to the chilling centre, and from there to the dairy plant. This includes fuel, the vehicle, and the driver.", "MPP से चिलिंग सेंटर तक, और वहां से डेयरी प्लांट तक दूध ले जाने की लागत। इसमें ईंधन, वाहन, और ड्राइवर शामिल हैं।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Sahayak Commission",
-                    "text": "The Sahayak is paid a small amount for every litre of milk they help collect and dispatch correctly."
+                    "label": L("Sahayak Commission", "सहायक कमीशन"),
+                    "text": L("The Sahayak is paid a small amount for every litre of milk they help collect and dispatch correctly.", "सहायक को हर उस लीटर दूध के लिए एक छोटी राशि दी जाती है जिसे वह सही ढंग से इकट्ठा करने और भेजने में मदद करता है।")
                   },
                   {
-                    "label": "Transportation",
-                    "text": "Fuel, vehicle costs and driver wages to move milk from MPPs to the chilling centre and onward to the plant."
+                    "label": L("Transportation", "परिवहन"),
+                    "text": L("Fuel, vehicle costs and driver wages to move milk from MPPs to the chilling centre and onward to the plant.", "MPP से चिलिंग सेंटर और फिर प्लांट तक दूध ले जाने के लिए ईंधन, वाहन की लागत और ड्राइवर की मज़दूरी।")
                   },
                   {
-                    "label": "Chilling & Infrastructure",
-                    "text": "Rent, electricity and equipment costs to keep the chilling centre running and milk cold."
+                    "label": L("Chilling & Infrastructure", "चिलिंग और आधारभूत संरचना"),
+                    "text": L("Rent, electricity and equipment costs to keep the chilling centre running and milk cold.", "चिलिंग सेंटर को चलाने और दूध को ठंडा रखने के लिए किराया, बिजली और उपकरण की लागत।")
                   },
                   {
-                    "label": "Cleaning & Maintenance",
-                    "text": "Regular cleaning (like Cleaning-in-Place, or CIP) and repair of equipment, so milk stays safe and machines keep working."
+                    "label": L("Cleaning & Maintenance", "सफाई और रखरखाव"),
+                    "text": L("Regular cleaning (like Cleaning-in-Place, or CIP) and repair of equipment, so milk stays safe and machines keep working.", "नियमित सफाई (जैसे क्लीनिंग-इन-प्लेस, या CIP) और उपकरणों की मरम्मत, ताकि दूध सुरक्षित रहे और मशीनें काम करती रहें।")
                   }
                 ]
               },
               {
                 "type": "glossary",
-                "term": "CIP (Cleaning-in-Place)",
-                "meaning": "A standard cleaning process for milk cans, tanks and pipes, done regularly to keep milk safe and free of contamination."
+                "term": L("CIP (Cleaning-in-Place)", "CIP (क्लीनिंग-इन-प्लेस)"),
+                "meaning": L("A standard cleaning process for milk cans, tanks and pipes, done regularly to keep milk safe and free of contamination.", "दूध की कैन, टैंक और पाइपों के लिए एक मानक सफाई प्रक्रिया, जो दूध को सुरक्षित और मिलावट-मुक्त रखने के लिए नियमित रूप से की जाती है।")
               },
               {
                 "type": "text",
-                "heading": "Transportation and Chilling Are the Biggest Costs",
-                "html": "Across most dairies, transportation and chilling together form the largest share of the total cost of handling milk. That is why this module looks closely at these two areas."
+                "heading": L("Transportation and Chilling Are the Biggest Costs", "परिवहन और चिलिंग सबसे बड़ी लागत हैं"),
+                "html": L("Across most dairies, transportation and chilling together form the largest share of the total cost of handling milk. That is why this module looks closely at these two areas.", "अधिकांश डेयरियों में, परिवहन और चिलिंग मिलकर दूध संभालने की कुल लागत का सबसे बड़ा हिस्सा बनते हैं। इसीलिए यह मॉड्यूल इन दो क्षेत्रों को बारीकी से देखता है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which two costs together usually form the largest share of milk handling cost?",
+                "q": L("Which two costs together usually form the largest share of milk handling cost?", "कौन-सी दो लागतें मिलकर आमतौर पर दूध संभालने की लागत का सबसे बड़ा हिस्सा बनती हैं?"),
                 "options": [
-                  "Transportation and chilling",
-                  "Stationery and paint",
-                  "Advertising and printing",
-                  "Office furniture and internet"
+                  L("Transportation and chilling", "परिवहन और चिलिंग"),
+                  L("Stationery and paint", "स्टेशनरी और पेंट"),
+                  L("Advertising and printing", "विज्ञापन और छपाई"),
+                  L("Office furniture and internet", "ऑफिस फर्नीचर और इंटरनेट")
                 ],
                 "answer": 0,
-                "explain": "Transportation and chilling together make up the largest share of the cost of handling milk from farmer to dairy."
+                "explain": L("Transportation and chilling together make up the largest share of the cost of handling milk from farmer to dairy.", "परिवहन और चिलिंग मिलकर किसान से डेयरी तक दूध संभालने की लागत का सबसे बड़ा हिस्सा बनते हैं।")
               },
               {
                 "type": "truefalse",
-                "q": "CIP (Cleaning-in-Place) is a one-time activity done only when a chilling centre is first built.",
+                "q": L("CIP (Cleaning-in-Place) is a one-time activity done only when a chilling centre is first built.", "CIP (क्लीनिंग-इन-प्लेस) एक बार की गतिविधि है जो केवल तब की जाती है जब चिलिंग सेंटर पहली बार बनाया जाता है।"),
                 "answer": false,
-                "explain": "CIP is a regular cleaning process, done again and again, to keep milk safe and equipment working well."
+                "explain": L("CIP is a regular cleaning process, done again and again, to keep milk safe and equipment working well.", "CIP एक नियमित सफाई प्रक्रिया है, जो दूध को सुरक्षित और उपकरणों को अच्छी तरह काम करते रखने के लिए बार-बार की जाती है।")
               }
             ]
           },
           {
             "id": "t-why-it-matters",
-            "title": "Why Controlling These Costs Matters for Everyone",
+            "title": L("Why Controlling These Costs Matters for Everyone", "इन लागतों को नियंत्रित करना सबके लिए क्यों मायने रखता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "One Shared Pot of Money",
-                "html": "Think of all the money that comes in when milk is sold to the dairy plant. Handling costs — Sahayak commission, transport, chilling, cleaning, maintenance — are taken out of that same pot before farmers are paid and before the union or company keeps its margin."
+                "heading": L("One Shared Pot of Money", "पैसे का एक साझा भंडार"),
+                "html": L("Think of all the money that comes in when milk is sold to the dairy plant. Handling costs — Sahayak commission, transport, chilling, cleaning, maintenance — are taken out of that same pot before farmers are paid and before the union or company keeps its margin.", "सोचिए उस सारे पैसे के बारे में जो डेयरी प्लांट को दूध बेचे जाने पर आता है। संभाल की लागतें — सहायक कमीशन, परिवहन, चिलिंग, सफाई, रखरखाव — किसानों को भुगतान करने से पहले और संघ या कंपनी अपना मार्जिन रखने से पहले उसी भंडार से निकाली जाती हैं।")
               },
               {
                 "type": "example",
-                "heading": "A Simple Way to See It",
-                "text": "If handling costs are high, less money is left over to pay farmers a good price or to invest in growing the business. If handling costs are kept efficient, more money is left over — for better farmer prices, better infrastructure, and a stronger, more sustainable dairy."
+                "heading": L("A Simple Way to See It", "इसे देखने का एक सरल तरीका"),
+                "text": L("If handling costs are high, less money is left over to pay farmers a good price or to invest in growing the business. If handling costs are kept efficient, more money is left over — for better farmer prices, better infrastructure, and a stronger, more sustainable dairy.", "अगर संभाल की लागत ज़्यादा है, तो किसानों को अच्छी कीमत देने या व्यवसाय बढ़ाने में निवेश करने के लिए कम पैसा बचता है। अगर संभाल की लागत कुशल रखी जाती है, तो ज़्यादा पैसा बचता है — बेहतर किसान कीमतों, बेहतर आधारभूत संरचना, और एक मज़बूत, अधिक टिकाऊ डेयरी के लिए।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Every Litre Counts",
-                "text": "Higher milk volumes reduce the cost per litre, because fixed costs — like rent for a chilling centre — get spread across more litres. That is one reason why increasing how much milk each MPP collects is so valuable."
+                "heading": L("Every Litre Counts", "हर लीटर मायने रखता है"),
+                "text": L("Higher milk volumes reduce the cost per litre, because fixed costs — like rent for a chilling centre — get spread across more litres. That is one reason why increasing how much milk each MPP collects is so valuable.", "ज़्यादा दूध की मात्रा प्रति लीटर लागत को घटाती है, क्योंकि स्थिर लागतें — जैसे चिलिंग सेंटर का किराया — ज़्यादा लीटर में बंट जाती हैं। यही एक कारण है कि हर MPP कितना दूध इकट्ठा करता है, इसे बढ़ाना इतना मूल्यवान है।")
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Hidden Losses Add Up",
-                "text": "Spillage, pilferage and quality problems don't just lose milk — they quietly inflate the real cost of handling every litre that does arrive safely. Careful handling protects both quantity and cost."
+                "heading": L("Hidden Losses Add Up", "छिपे हुए नुकसान जुड़ते जाते हैं"),
+                "text": L("Spillage, pilferage and quality problems don't just lose milk — they quietly inflate the real cost of handling every litre that does arrive safely. Careful handling protects both quantity and cost.", "गिरना, चोरी और गुणवत्ता की समस्याएं केवल दूध नहीं खोतीं — वे चुपचाप उस हर लीटर की असली लागत बढ़ा देती हैं जो सुरक्षित पहुंचता है। सावधानीपूर्वक संभाल मात्रा और लागत दोनों की रक्षा करती है।")
               },
               {
                 "type": "text",
-                "heading": "Every Sahayak Has a Role",
-                "html": "As a Sahayak, the way you handle milk — careful collection, on-time dispatch, clean cans — directly affects handling costs. Small daily habits, multiplied across thousands of litres, make a real difference to what is left over for everyone."
+                "heading": L("Every Sahayak Has a Role", "हर सहायक की एक भूमिका है"),
+                "html": L("As a Sahayak, the way you handle milk — careful collection, on-time dispatch, clean cans — directly affects handling costs. Small daily habits, multiplied across thousands of litres, make a real difference to what is left over for everyone.", "एक सहायक के रूप में, आप दूध को जिस तरह संभालते हैं — सावधानीपूर्वक संग्रह, समय पर भेजना, साफ कैन — सीधे संभाल की लागत को प्रभावित करता है। छोटी दैनिक आदतें, हज़ारों लीटर में गुणा होकर, सबके लिए बचने वाली राशि में असली अंतर लाती हैं।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does controlling milk handling costs matter for farmers?",
+                "q": L("Why does controlling milk handling costs matter for farmers?", "दूध संभालने की लागत को नियंत्रित करना किसानों के लिए क्यों मायने रखता है?"),
                 "options": [
-                  "Lower handling costs leave more money available to pay farmers a fair price",
-                  "It has no connection to farmer income",
-                  "It only matters for the dairy plant's office staff",
-                  "It only affects the price of animal feed"
+                  L("Lower handling costs leave more money available to pay farmers a fair price", "कम संभाल लागत किसानों को उचित कीमत देने के लिए ज़्यादा पैसा उपलब्ध छोड़ती है"),
+                  L("It has no connection to farmer income", "इसका किसान की आय से कोई संबंध नहीं है"),
+                  L("It only matters for the dairy plant's office staff", "यह केवल डेयरी प्लांट के कार्यालय कर्मचारियों के लिए मायने रखता है"),
+                  L("It only affects the price of animal feed", "यह केवल पशु चारे की कीमत को प्रभावित करता है")
                 ],
                 "answer": 0,
-                "explain": "Handling costs come out of the same pot of money earned from milk sales — keeping them low leaves more for farmer payments."
+                "explain": L("Handling costs come out of the same pot of money earned from milk sales — keeping them low leaves more for farmer payments.", "संभाल की लागतें दूध बिक्री से कमाए गए उसी पैसे के भंडार से निकलती हैं — इन्हें कम रखने से किसान भुगतान के लिए ज़्यादा बचता है।")
               },
               {
                 "type": "mcq",
-                "q": "Why do higher milk volumes usually lower the cost per litre?",
+                "q": L("Why do higher milk volumes usually lower the cost per litre?", "ज़्यादा दूध की मात्रा आमतौर पर प्रति लीटर लागत को क्यों घटाती है?"),
                 "options": [
-                  "Fixed costs like rent get spread across more litres",
-                  "Vehicles use less fuel when carrying more weight",
-                  "Farmers charge less for more milk",
-                  "Chilling machines work faster with more milk"
+                  L("Fixed costs like rent get spread across more litres", "किराए जैसी स्थिर लागतें ज़्यादा लीटर में बंट जाती हैं"),
+                  L("Vehicles use less fuel when carrying more weight", "ज़्यादा वज़न ले जाने पर वाहन कम ईंधन इस्तेमाल करते हैं"),
+                  L("Farmers charge less for more milk", "किसान ज़्यादा दूध के लिए कम कीमत लेते हैं"),
+                  L("Chilling machines work faster with more milk", "ज़्यादा दूध होने पर चिलिंग मशीनें तेज़ काम करती हैं")
                 ],
                 "answer": 0,
-                "explain": "Fixed costs stay roughly the same no matter the volume, so more litres means each litre carries a smaller share of that fixed cost."
+                "explain": L("Fixed costs stay roughly the same no matter the volume, so more litres means each litre carries a smaller share of that fixed cost.", "स्थिर लागतें मात्रा चाहे जो भी हो, लगभग समान रहती हैं, इसलिए ज़्यादा लीटर का मतलब है कि हर लीटर उस स्थिर लागत का एक छोटा हिस्सा उठाता है।")
               }
             ]
           }
@@ -8639,168 +8638,168 @@ export const MODULES = [
             {
               "topicId": "t-milk-journey-costs",
               "type": "mcq",
-              "q": "What does 'Inward Transportation' cost cover?",
+              "q": L("What does 'Inward Transportation' cost cover?", "'इनवर्ड ट्रांसपोर्टेशन' लागत क्या कवर करती है?"),
               "options": [
-                "Moving milk from the MPPs to the chilling centre and onward to the plant",
-                "The price farmers are paid for milk",
-                "The cost of building new farmer houses",
-                "The Sahayak's mobile phone bill"
+                L("Moving milk from the MPPs to the chilling centre and onward to the plant", "MPP से चिलिंग सेंटर और फिर प्लांट तक दूध ले जाना"),
+                L("The price farmers are paid for milk", "किसानों को दूध के लिए दी जाने वाली कीमत"),
+                L("The cost of building new farmer houses", "नए किसान घर बनाने की लागत"),
+                L("The Sahayak's mobile phone bill", "सहायक का मोबाइल फोन बिल")
               ],
               "answer": 0,
-              "explain": "Inward transportation covers the fuel, vehicle and driver costs of moving milk from MPPs to the chilling centre and then to the plant."
+              "explain": L("Inward transportation covers the fuel, vehicle and driver costs of moving milk from MPPs to the chilling centre and then to the plant.", "इनवर्ड ट्रांसपोर्टेशन में MPP से चिलिंग सेंटर और फिर प्लांट तक दूध ले जाने के ईंधन, वाहन और ड्राइवर की लागत शामिल है।")
             },
             {
               "topicId": "t-why-it-matters",
               "type": "mcq",
-              "q": "What happens to the money left over when handling costs are kept low and efficient?",
+              "q": L("What happens to the money left over when handling costs are kept low and efficient?", "जब संभाल की लागत कम और कुशल रखी जाती है तो बचे हुए पैसे का क्या होता है?"),
               "options": [
-                "More money is available for farmer prices and business investment",
-                "It disappears completely",
-                "It can only be used for advertising",
-                "It has no effect on anyone"
+                L("More money is available for farmer prices and business investment", "किसान कीमतों और व्यवसाय निवेश के लिए ज़्यादा पैसा उपलब्ध होता है"),
+                L("It disappears completely", "यह पूरी तरह गायब हो जाता है"),
+                L("It can only be used for advertising", "इसका उपयोग केवल विज्ञापन के लिए किया जा सकता है"),
+                L("It has no effect on anyone", "इसका किसी पर कोई प्रभाव नहीं पड़ता")
               ],
               "answer": 0,
-              "explain": "Efficient handling costs leave more of the money earned from milk sales available for fair farmer prices and growth."
+              "explain": L("Efficient handling costs leave more of the money earned from milk sales available for fair farmer prices and growth.", "कुशल संभाल लागत दूध बिक्री से कमाए गए पैसे का ज़्यादा हिस्सा उचित किसान कीमतों और विकास के लिए उपलब्ध छोड़ती है।")
             }
           ]
         }
       },
       {
         "id": "m12-l2",
-        "title": "What Drives These Costs Up or Down",
+        "title": L("What Drives These Costs Up or Down", "इन लागतों का घटना-बढ़ना किस पर निर्भर करता है"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "What Makes Costs Rise or Fall?",
-            "text": "Some milk handling costs change with how much milk you handle. Others stay almost the same no matter what. Understanding the difference helps everyone make better decisions."
+            "heading": L("What Makes Costs Rise or Fall?", "लागत बढ़ने या घटने का कारण क्या है?"),
+            "text": L("Some milk handling costs change with how much milk you handle. Others stay almost the same no matter what. Understanding the difference helps everyone make better decisions.", "कुछ दूध संभाल लागतें इस बात पर निर्भर करती हैं कि आप कितना दूध संभालते हैं। अन्य लगभग एक जैसी रहती हैं चाहे कुछ भी हो। इस अंतर को समझने से सबको बेहतर निर्णय लेने में मदद मिलती है।")
           }
         ],
         "topics": [
           {
             "id": "t-fixed-variable-costs",
-            "title": "Fixed Costs, Variable Costs, and Volume",
+            "title": L("Fixed Costs, Variable Costs, and Volume", "स्थिर लागत, परिवर्तनशील लागत, और मात्रा"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Two Kinds of Cost",
-                "html": "Some costs change directly with how much milk is handled — these are called <b>variable costs</b>. Others stay mostly the same, whether you handle a little milk or a lot — these are called <b>fixed costs</b>."
+                "heading": L("Two Kinds of Cost", "दो तरह की लागत"),
+                "html": L("Some costs change directly with how much milk is handled — these are called <b>variable costs</b>. Others stay mostly the same, whether you handle a little milk or a lot — these are called <b>fixed costs</b>.", "कुछ लागतें सीधे इस बात पर बदलती हैं कि कितना दूध संभाला जा रहा है — इन्हें <b>परिवर्तनशील लागत</b> कहते हैं। अन्य लगभग एक जैसी रहती हैं, चाहे आप थोड़ा दूध संभालें या बहुत — इन्हें <b>स्थिर लागत</b> कहते हैं।")
               },
               {
                 "type": "glossary",
-                "term": "Variable Cost",
-                "meaning": "A cost that goes up or down depending on how much milk is handled — like fuel for a delivery van, which increases if the van makes more trips."
+                "term": L("Variable Cost", "परिवर्तनशील लागत"),
+                "meaning": L("A cost that goes up or down depending on how much milk is handled — like fuel for a delivery van, which increases if the van makes more trips.", "एक ऐसी लागत जो इस बात पर निर्भर करती है कि कितना दूध संभाला जा रहा है — जैसे डिलीवरी वैन के लिए ईंधन, जो बढ़ता है अगर वैन ज़्यादा चक्कर लगाए।")
               },
               {
                 "type": "glossary",
-                "term": "Fixed Cost",
-                "meaning": "A cost that stays roughly the same no matter how much milk is handled — like the monthly rent for a chilling centre building."
+                "term": L("Fixed Cost", "स्थिर लागत"),
+                "meaning": L("A cost that stays roughly the same no matter how much milk is handled — like the monthly rent for a chilling centre building.", "एक ऐसी लागत जो लगभग समान रहती है चाहे कितना भी दूध संभाला जाए — जैसे चिलिंग सेंटर की इमारत का मासिक किराया।")
               },
               {
                 "type": "text",
-                "heading": "MCC Costs vs BMC Costs",
-                "html": "At an MCC (Milk Chilling Centre), costs tend to be more variable — they move closely with the quantity of milk handled per litre. At a BMC (Bulk Milk Cooler), costs tend to be largely fixed — the equipment and building cost about the same to run whether it is half full or completely full. This is why volume matters so much for BMC efficiency."
+                "heading": L("MCC Costs vs BMC Costs", "MCC लागत बनाम BMC लागत"),
+                "html": L("At an MCC (Milk Chilling Centre), costs tend to be more variable — they move closely with the quantity of milk handled per litre. At a BMC (Bulk Milk Cooler), costs tend to be largely fixed — the equipment and building cost about the same to run whether it is half full or completely full. This is why volume matters so much for BMC efficiency.", "MCC (मिल्क चिलिंग सेंटर) में, लागतें ज़्यादा परिवर्तनशील होती हैं — वे प्रति लीटर संभाले गए दूध की मात्रा के साथ निकटता से बदलती हैं। BMC (बल्क मिल्क कूलर) में, लागतें ज़्यादातर स्थिर होती हैं — उपकरण और इमारत को चलाने में लगभग समान लागत आती है चाहे यह आधा भरा हो या पूरी तरह भरा। इसीलिए BMC की कुशलता के लिए मात्रा इतनी मायने रखती है।")
               },
               {
                 "type": "example",
-                "heading": "Seeing It With Numbers",
-                "text": "Imagine a BMC costs ₹35,000 a month to run, no matter how much milk passes through it. If it handles 50,000 litres that month, the fixed cost works out to ₹0.70 per litre. If it handles only 25,000 litres, the same ₹35,000 now works out to ₹1.40 per litre — double the cost, just because less milk passed through."
+                "heading": L("Seeing It With Numbers", "इसे संख्याओं से देखना"),
+                "text": L("Imagine a BMC costs ₹35,000 a month to run, no matter how much milk passes through it. If it handles 50,000 litres that month, the fixed cost works out to ₹0.70 per litre. If it handles only 25,000 litres, the same ₹35,000 now works out to ₹1.40 per litre — double the cost, just because less milk passed through.", "कल्पना करें कि एक BMC को चलाने में हर महीने ₹35,000 खर्च होते हैं, चाहे उससे कितना भी दूध गुज़रे। अगर उस महीने वह 50,000 लीटर संभालता है, तो स्थिर लागत ₹0.70 प्रति लीटर निकलती है। अगर वह केवल 25,000 लीटर संभालता है, तो वही ₹35,000 अब ₹1.40 प्रति लीटर निकलता है — दोगुनी लागत, केवल इसलिए क्योंकि कम दूध गुज़रा।")
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "The Big Idea",
-                "text": "Higher milk volumes at a BMC or MCC mean the same fixed costs get divided among more litres — so the cost per litre drops. This is why growing procurement at each MPP is just as important as opening new MPPs."
+                "heading": L("The Big Idea", "बड़ा विचार"),
+                "text": L("Higher milk volumes at a BMC or MCC mean the same fixed costs get divided among more litres — so the cost per litre drops. This is why growing procurement at each MPP is just as important as opening new MPPs.", "BMC या MCC में ज़्यादा दूध की मात्रा का मतलब है कि वही स्थिर लागतें ज़्यादा लीटर में बंट जाती हैं — इसलिए प्रति लीटर लागत घट जाती है। इसीलिए हर MPP पर खरीद बढ़ाना उतना ही महत्वपूर्ण है जितना नए MPP खोलना।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a fixed cost?",
+                "q": L("What is a fixed cost?", "स्थिर लागत क्या है?"),
                 "options": [
-                  "A cost that stays roughly the same, no matter how much milk is handled",
-                  "A cost that only happens once a year",
-                  "A cost that farmers pay directly",
-                  "A cost that only applies to transport"
+                  L("A cost that stays roughly the same, no matter how much milk is handled", "एक ऐसी लागत जो लगभग समान रहती है, चाहे कितना भी दूध संभाला जाए"),
+                  L("A cost that only happens once a year", "एक ऐसी लागत जो साल में केवल एक बार होती है"),
+                  L("A cost that farmers pay directly", "एक ऐसी लागत जो किसान सीधे भुगतान करते हैं"),
+                  L("A cost that only applies to transport", "एक ऐसी लागत जो केवल परिवहन पर लागू होती है")
                 ],
                 "answer": 0,
-                "explain": "A fixed cost — like a chilling centre's rent — stays roughly the same whether milk volumes are high or low."
+                "explain": L("A fixed cost — like a chilling centre's rent — stays roughly the same whether milk volumes are high or low.", "एक स्थिर लागत — जैसे चिलिंग सेंटर का किराया — लगभग समान रहती है चाहे दूध की मात्रा ज़्यादा हो या कम।")
               },
               {
                 "type": "truefalse",
-                "q": "If a BMC handles less milk in a month, its fixed cost per litre usually goes down.",
+                "q": L("If a BMC handles less milk in a month, its fixed cost per litre usually goes down.", "अगर एक BMC किसी महीने में कम दूध संभालता है, तो उसकी प्रति लीटर स्थिर लागत आमतौर पर घट जाती है।"),
                 "answer": false,
-                "explain": "If less milk passes through, the same fixed cost is spread over fewer litres, so the cost per litre actually goes UP."
+                "explain": L("If less milk passes through, the same fixed cost is spread over fewer litres, so the cost per litre actually goes UP.", "अगर कम दूध गुज़रता है, तो वही स्थिर लागत कम लीटर में बंटती है, इसलिए प्रति लीटर लागत असल में बढ़ जाती है।")
               }
             ]
           },
           {
             "id": "t-controlling-costs",
-            "title": "Hidden Costs and How to Control Them",
+            "title": L("Hidden Costs and How to Control Them", "छिपी हुई लागतें और उन्हें कैसे नियंत्रित करें"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Routing Matters",
-                "html": "Inefficient routing — like a vehicle travelling a long, winding path to visit MPPs in a poor order — directly increases the cost per litre. Planning routes well is one of the simplest ways to control transport cost."
+                "heading": L("Routing Matters", "रूट का मायने रखना"),
+                "html": L("Inefficient routing — like a vehicle travelling a long, winding path to visit MPPs in a poor order — directly increases the cost per litre. Planning routes well is one of the simplest ways to control transport cost.", "अकुशल रूट — जैसे एक वाहन का MPP को खराब क्रम में देखने के लिए लंबा, घुमावदार रास्ता तय करना — सीधे प्रति लीटर लागत बढ़ाता है। रूट की अच्छी योजना बनाना परिवहन लागत को नियंत्रित करने के सबसे सरल तरीकों में से एक है।")
               },
               {
                 "type": "text",
-                "heading": "Right Vehicle, Right Capacity",
-                "html": "Using a vehicle that matches the amount of milk on a route — not too big, not too small — gives the lowest possible cost per litre for inward transportation. A large tanker on a route that only collects a few hundred litres wastes fuel and money."
+                "heading": L("Right Vehicle, Right Capacity", "सही वाहन, सही क्षमता"),
+                "html": L("Using a vehicle that matches the amount of milk on a route — not too big, not too small — gives the lowest possible cost per litre for inward transportation. A large tanker on a route that only collects a few hundred litres wastes fuel and money.", "एक रूट पर दूध की मात्रा से मेल खाने वाले वाहन का उपयोग करना — न बहुत बड़ा, न बहुत छोटा — इनवर्ड ट्रांसपोर्टेशन के लिए सबसे कम संभव प्रति लीटर लागत देता है। एक ऐसे रूट पर बड़ा टैंकर जो केवल कुछ सौ लीटर इकट्ठा करता है, ईंधन और पैसा बर्बाद करता है।")
               },
               {
                 "type": "glossary",
-                "term": "Capacity Utilisation",
-                "meaning": "How much of a vehicle's or machine's full capacity is actually being used. A tanker that could carry 3,000 litres but only carries 900 litres has poor capacity utilisation."
+                "term": L("Capacity Utilisation", "क्षमता उपयोग"),
+                "meaning": L("How much of a vehicle's or machine's full capacity is actually being used. A tanker that could carry 3,000 litres but only carries 900 litres has poor capacity utilisation.", "किसी वाहन या मशीन की पूरी क्षमता का असल में कितना उपयोग हो रहा है। एक टैंकर जो 3,000 लीटर ले जा सकता है लेकिन केवल 900 लीटर ले जाता है, उसका क्षमता उपयोग खराब है।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Right Vehicle Sizing",
-                    "text": "Matching vehicle capacity to the actual milk volume on a route keeps transport cost per litre as low as possible."
+                    "label": L("Right Vehicle Sizing", "सही वाहन आकार"),
+                    "text": L("Matching vehicle capacity to the actual milk volume on a route keeps transport cost per litre as low as possible.", "वाहन की क्षमता को रूट पर असली दूध की मात्रा से मिलाना प्रति लीटर परिवहन लागत को यथासंभव कम रखता है।")
                   },
                   {
-                    "label": "Energy Optimisation",
-                    "text": "Using electricity and fuel efficiently at chilling centres is key to keeping chilling costs down."
+                    "label": L("Energy Optimisation", "ऊर्जा अनुकूलन"),
+                    "text": L("Using electricity and fuel efficiently at chilling centres is key to keeping chilling costs down.", "चिलिंग सेंटर पर बिजली और ईंधन का कुशलता से उपयोग करना चिलिंग लागत को कम रखने की कुंजी है।")
                   },
                   {
-                    "label": "Capacity Utilisation",
-                    "text": "Filling vehicles and equipment closer to their full capacity drives down the overall cost per litre."
+                    "label": L("Capacity Utilisation", "क्षमता उपयोग"),
+                    "text": L("Filling vehicles and equipment closer to their full capacity drives down the overall cost per litre.", "वाहनों और उपकरणों को उनकी पूरी क्षमता के करीब भरना कुल प्रति लीटर लागत को कम करता है।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Hidden Losses Inflate Cost",
-                "text": "Spillage, pilferage and quality problems don't show up as a separate 'cost' line — but they quietly increase the real cost of every litre that does arrive safely, because the same fixed costs are now spread over less usable milk."
+                "heading": L("Hidden Losses Inflate Cost", "छिपे हुए नुकसान लागत बढ़ाते हैं"),
+                "text": L("Spillage, pilferage and quality problems don't show up as a separate 'cost' line — but they quietly increase the real cost of every litre that does arrive safely, because the same fixed costs are now spread over less usable milk.", "गिरना, चोरी और गुणवत्ता की समस्याएं एक अलग 'लागत' पंक्ति के रूप में नहीं दिखतीं — लेकिन वे चुपचाप हर उस लीटर की असली लागत बढ़ा देती हैं जो सुरक्षित पहुंचता है, क्योंकि वही स्थिर लागतें अब कम उपयोगी दूध में बंटती हैं।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does 'right vehicle + right capacity' achieve?",
+                "q": L("What does 'right vehicle + right capacity' achieve?", "'सही वाहन + सही क्षमता' क्या हासिल करता है?"),
                 "options": [
-                  "The lowest possible inward transportation cost per litre",
-                  "The fastest possible speed on the highway",
-                  "The smallest fuel tank size",
-                  "The shortest driver shift"
+                  L("The lowest possible inward transportation cost per litre", "सबसे कम संभव प्रति लीटर इनवर्ड ट्रांसपोर्टेशन लागत"),
+                  L("The fastest possible speed on the highway", "हाईवे पर सबसे तेज़ संभव गति"),
+                  L("The smallest fuel tank size", "सबसे छोटा ईंधन टैंक आकार"),
+                  L("The shortest driver shift", "सबसे छोटी ड्राइवर शिफ्ट")
                 ],
                 "answer": 0,
-                "explain": "Matching vehicle size to the actual milk volume on a route gives the lowest possible transportation cost per litre."
+                "explain": L("Matching vehicle size to the actual milk volume on a route gives the lowest possible transportation cost per litre.", "रूट पर असली दूध की मात्रा से वाहन के आकार को मिलाना सबसे कम संभव प्रति लीटर परिवहन लागत देता है।")
               },
               {
                 "type": "mcq",
-                "q": "What is capacity utilisation?",
+                "q": L("What is capacity utilisation?", "क्षमता उपयोग क्या है?"),
                 "options": [
-                  "How much of a vehicle's or machine's full capacity is actually being used",
-                  "The number of MPPs on a route",
-                  "The price of diesel per litre",
-                  "The number of Sahayaks on a route"
+                  L("How much of a vehicle's or machine's full capacity is actually being used", "किसी वाहन या मशीन की पूरी क्षमता का असल में कितना उपयोग हो रहा है"),
+                  L("The number of MPPs on a route", "एक रूट पर MPP की संख्या"),
+                  L("The price of diesel per litre", "प्रति लीटर डीजल की कीमत"),
+                  L("The number of Sahayaks on a route", "एक रूट पर सहायकों की संख्या")
                 ],
                 "answer": 0,
-                "explain": "Capacity utilisation measures how fully a vehicle or machine's capacity is actually being used."
+                "explain": L("Capacity utilisation measures how fully a vehicle or machine's capacity is actually being used.", "क्षमता उपयोग मापता है कि किसी वाहन या मशीन की क्षमता का असल में कितनी पूरी तरह उपयोग हो रहा है।")
               }
             ]
           }
@@ -8811,89 +8810,89 @@ export const MODULES = [
             {
               "topicId": "t-fixed-variable-costs",
               "type": "mcq",
-              "q": "Why do BMC costs tend to be largely fixed?",
+              "q": L("Why do BMC costs tend to be largely fixed?", "BMC लागतें ज़्यादातर स्थिर क्यों होती हैं?"),
               "options": [
-                "The equipment and building cost about the same whether it is half full or completely full",
-                "BMCs never cost any money to run",
-                "BMC costs change every single day",
-                "BMCs only cost money in summer"
+                L("The equipment and building cost about the same whether it is half full or completely full", "उपकरण और इमारत की लागत लगभग समान होती है चाहे यह आधा भरा हो या पूरी तरह भरा"),
+                L("BMCs never cost any money to run", "BMC को चलाने में कभी कोई पैसा खर्च नहीं होता"),
+                L("BMC costs change every single day", "BMC लागत हर दिन बदलती है"),
+                L("BMCs only cost money in summer", "BMC केवल गर्मियों में पैसा खर्च करता है")
               ],
               "answer": 0,
-              "explain": "BMC running costs stay roughly the same regardless of how much milk passes through, which is why higher volume lowers the cost per litre."
+              "explain": L("BMC running costs stay roughly the same regardless of how much milk passes through, which is why higher volume lowers the cost per litre.", "BMC चलाने की लागत लगभग समान रहती है चाहे कितना भी दूध गुज़रे, इसीलिए ज़्यादा मात्रा प्रति लीटर लागत को घटाती है।")
             },
             {
               "topicId": "t-controlling-costs",
               "type": "mcq",
-              "q": "What is one simple way to control inward transportation cost?",
+              "q": L("What is one simple way to control inward transportation cost?", "इनवर्ड ट्रांसपोर्टेशन लागत को नियंत्रित करने का एक सरल तरीका क्या है?"),
               "options": [
-                "Plan efficient routes and match vehicle size to actual milk volume",
-                "Always use the biggest tanker available on every route",
-                "Skip vehicle maintenance to save money",
-                "Remove milk quality checks to save time"
+                L("Plan efficient routes and match vehicle size to actual milk volume", "कुशल रूट की योजना बनाएं और वाहन के आकार को असली दूध की मात्रा से मिलाएं"),
+                L("Always use the biggest tanker available on every route", "हर रूट पर हमेशा सबसे बड़ा उपलब्ध टैंकर इस्तेमाल करें"),
+                L("Skip vehicle maintenance to save money", "पैसे बचाने के लिए वाहन रखरखाव छोड़ें"),
+                L("Remove milk quality checks to save time", "समय बचाने के लिए दूध गुणवत्ता जांच हटाएं")
               ],
               "answer": 0,
-              "explain": "Efficient routing and right-sized vehicles keep transportation cost per litre as low as possible."
+              "explain": L("Efficient routing and right-sized vehicles keep transportation cost per litre as low as possible.", "कुशल रूटिंग और सही आकार के वाहन प्रति लीटर परिवहन लागत को यथासंभव कम रखते हैं।")
             }
           ]
         }
       },
       {
         "id": "m12-l3",
-        "title": "The Shakti MPC Story: Solving the Transport Cost Puzzle",
+        "title": L("The Shakti MPC Story: Solving the Transport Cost Puzzle", "शक्ति MPC की कहानी: परिवहन लागत की पहेली सुलझाना"),
         "estMinutes": 14,
         "hook": [
           {
             "type": "hero",
-            "heading": "A Real Dairy's Cost Puzzle",
-            "text": "This is the story of a real Milk Producer Company working through a real transport cost problem. Everything you've learned in this course comes together here. Let's dig in."
+            "heading": L("A Real Dairy's Cost Puzzle", "एक असली डेयरी की लागत पहेली"),
+            "text": L("This is the story of a real Milk Producer Company working through a real transport cost problem. Everything you've learned in this course comes together here. Let's dig in.", "यह एक असली मिल्क प्रोड्यूसर कंपनी की कहानी है जो एक असली परिवहन लागत समस्या से जूझ रही है। इस कोर्स में आपने जो कुछ भी सीखा है वह यहां एक साथ आता है। आइए गहराई में जाएं।")
           }
         ],
         "topics": [
           {
             "id": "t-meet-shakti",
-            "title": "Meet Shakti MPC",
+            "title": L("Meet Shakti MPC", "शक्ति MPC से मिलें"),
             "teach": [
               {
                 "type": "text",
-                "heading": "A Growing Company",
-                "html": "Shakti Milk Producer Company Limited (Shakti MPC) started in 2021 to give rural milk producers a reliable market and fair prices. It began with support from an outside grant, which paid for MPPs, BMCs, testing equipment and vehicles while the company was still growing."
+                "heading": L("A Growing Company", "एक बढ़ती हुई कंपनी"),
+                "html": L("Shakti Milk Producer Company Limited (Shakti MPC) started in 2021 to give rural milk producers a reliable market and fair prices. It began with support from an outside grant, which paid for MPPs, BMCs, testing equipment and vehicles while the company was still growing.", "शक्ति मिल्क प्रोड्यूसर कंपनी लिमिटेड (शक्ति MPC) की शुरुआत 2021 में ग्रामीण दूध उत्पादकों को एक भरोसेमंद बाज़ार और उचित कीमतें देने के लिए हुई। इसकी शुरुआत एक बाहरी अनुदान के सहयोग से हुई, जिसने कंपनी के बढ़ने के दौरान MPP, BMC, जांच उपकरण और वाहनों के लिए भुगतान किया।")
               },
               {
                 "type": "glossary",
-                "term": "Grant Support",
-                "meaning": "Money given to help a company get started, which does not need to be paid back like a loan. Grant support often reduces or ends as the company grows and needs to stand on its own."
+                "term": L("Grant Support", "अनुदान सहयोग"),
+                "meaning": L("Money given to help a company get started, which does not need to be paid back like a loan. Grant support often reduces or ends as the company grows and needs to stand on its own.", "किसी कंपनी को शुरू करने में मदद के लिए दिया गया पैसा, जिसे ऋण की तरह वापस चुकाने की ज़रूरत नहीं होती। जैसे-जैसे कंपनी बढ़ती है और उसे अपने दम पर खड़ा होना पड़ता है, अनुदान सहयोग अक्सर घटता या समाप्त हो जाता है।")
               },
               {
                 "type": "text",
-                "heading": "Standing on Its Own",
-                "html": "As the grant support ended, Shakti MPC had to cover its own running costs from what it earns handling milk — its procurement margins and its own efficiency. Today, the company runs one of the largest milk procurement networks in its region."
+                "heading": L("Standing on Its Own", "अपने दम पर खड़ा होना"),
+                "html": L("As the grant support ended, Shakti MPC had to cover its own running costs from what it earns handling milk — its procurement margins and its own efficiency. Today, the company runs one of the largest milk procurement networks in its region.", "जैसे ही अनुदान सहयोग समाप्त हुआ, शक्ति MPC को दूध संभालने से होने वाली अपनी कमाई से — अपने खरीद मार्जिन और अपनी दक्षता से — अपनी खुद की चलाने की लागत को कवर करना पड़ा। आज, कंपनी अपने क्षेत्र के सबसे बड़े दूध खरीद नेटवर्क में से एक चलाती है।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "800 MPPs",
-                    "text": "Shakti MPC collects milk from about 800 village-level Milk Pooling Points."
+                    "label": L("800 MPPs", "800 MPP"),
+                    "text": L("Shakti MPC collects milk from about 800 village-level Milk Pooling Points.", "शक्ति MPC लगभग 800 गांव-स्तरीय मिल्क पूलिंग पॉइंट्स से दूध इकट्ठा करती है।")
                   },
                   {
-                    "label": "1,200+ Villages",
-                    "text": "These MPPs are spread across more than 1,200 villages."
+                    "label": L("1,200+ Villages", "1,200+ गांव"),
+                    "text": L("These MPPs are spread across more than 1,200 villages.", "ये MPP 1,200 से ज़्यादा गांवों में फैले हुए हैं।")
                   },
                   {
-                    "label": "85,000 Members",
-                    "text": "Nearly 85,000 farmer families are members of the company."
+                    "label": L("85,000 Members", "85,000 सदस्य"),
+                    "text": L("Nearly 85,000 farmer families are members of the company.", "लगभग 85,000 किसान परिवार कंपनी के सदस्य हैं।")
                   },
                   {
-                    "label": "84,000 to 1.15 Lakh Litres a Day",
-                    "text": "Daily milk collection ranges from about 84,000 litres in the lean season to more than 1,15,000 litres at peak season."
+                    "label": L("84,000 to 1.15 Lakh Litres a Day", "84,000 से 1.15 लाख लीटर प्रतिदिन"),
+                    "text": L("Daily milk collection ranges from about 84,000 litres in the lean season to more than 1,15,000 litres at peak season.", "दैनिक दूध संग्रह मंदी के मौसम में लगभग 84,000 लीटर से लेकर शिखर मौसम में 1,15,000 लीटर से अधिक तक होता है।")
                   }
                 ]
               },
               {
                 "type": "barchart",
-                "heading": "Five Years of Growth (Average Daily Procurement)",
-                "source": "Shakti MPC internal records",
-                "unit": "litres per day",
+                "heading": L("Five Years of Growth (Average Daily Procurement)", "पांच वर्षों की वृद्धि (औसत दैनिक खरीद)"),
+                "source": L("Shakti MPC internal records", "शक्ति MPC आंतरिक रिकॉर्ड"),
+                "unit": L("litres per day", "लीटर प्रति दिन"),
                 "data": [
                   {
                     "label": "FY 2021-22",
@@ -8919,94 +8918,94 @@ export const MODULES = [
               },
               {
                 "type": "example",
-                "heading": "Fast Growth, New Problems",
-                "text": "In just five years, Shakti MPC nearly quadrupled its daily milk collection. But fast growth brought a new challenge: rising costs, especially for transportation — even as the amount of milk collected kept growing."
+                "heading": L("Fast Growth, New Problems", "तेज़ वृद्धि, नई समस्याएं"),
+                "text": L("In just five years, Shakti MPC nearly quadrupled its daily milk collection. But fast growth brought a new challenge: rising costs, especially for transportation — even as the amount of milk collected kept growing.", "केवल पांच वर्षों में, शक्ति MPC ने अपने दैनिक दूध संग्रह को लगभग चौगुना कर दिया। लेकिन तेज़ वृद्धि एक नई चुनौती लेकर आई: बढ़ती लागतें, खासकर परिवहन के लिए — भले ही इकट्ठा किए गए दूध की मात्रा बढ़ती रही।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "About how many MPPs does Shakti MPC currently operate?",
+                "q": L("About how many MPPs does Shakti MPC currently operate?", "शक्ति MPC वर्तमान में लगभग कितने MPP संचालित करती है?"),
                 "options": [
-                  "About 800",
-                  "About 80",
-                  "About 8,000",
-                  "About 8"
+                  L("About 800", "लगभग 800"),
+                  L("About 80", "लगभग 80"),
+                  L("About 8,000", "लगभग 8,000"),
+                  L("About 8", "लगभग 8")
                 ],
                 "answer": 0,
-                "explain": "Shakti MPC procures milk from approximately 800 Milk Pooling Points."
+                "explain": L("Shakti MPC procures milk from approximately 800 Milk Pooling Points.", "शक्ति MPC लगभग 800 मिल्क पूलिंग पॉइंट्स से दूध खरीदती है।")
               },
               {
                 "type": "truefalse",
-                "q": "Shakti MPC's daily milk procurement grew steadily over five years, from about 22,500 litres to about 84,000 litres.",
+                "q": L("Shakti MPC's daily milk procurement grew steadily over five years, from about 22,500 litres to about 84,000 litres.", "शक्ति MPC की दैनिक दूध खरीद पांच वर्षों में लगातार बढ़ी, लगभग 22,500 लीटर से लगभग 84,000 लीटर तक।"),
                 "answer": true,
-                "explain": "Average daily procurement grew from 22,500 litres in FY 2021-22 to 84,000 litres in FY 2025-26."
+                "explain": L("Average daily procurement grew from 22,500 litres in FY 2021-22 to 84,000 litres in FY 2025-26.", "औसत दैनिक खरीद FY 2021-22 में 22,500 लीटर से बढ़कर FY 2025-26 में 84,000 लीटर हो गई।")
               }
             ]
           },
           {
             "id": "t-where-money-goes",
-            "title": "Where the Money Goes — Real Cost Numbers",
+            "title": L("Where the Money Goes — Real Cost Numbers", "पैसा कहां जाता है — असली लागत संख्याएं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "A Detailed Cost Review",
-                "html": "As grant support ended, Shakti MPC studied exactly where its procurement money was going, for every single litre of milk. Here is what they found."
+                "heading": L("A Detailed Cost Review", "एक विस्तृत लागत समीक्षा"),
+                "html": L("As grant support ended, Shakti MPC studied exactly where its procurement money was going, for every single litre of milk. Here is what they found.", "जैसे ही अनुदान सहयोग समाप्त हुआ, शक्ति MPC ने ठीक-ठीक अध्ययन किया कि दूध के हर एक लीटर के लिए उसका खरीद पैसा कहां जा रहा है। यहां वे जो पाया वह है।")
               },
               {
                 "type": "ledger",
-                "heading": "Shakti MPC — Cost per Litre of Milk Procured",
+                "heading": L("Shakti MPC — Cost per Litre of Milk Procured", "शक्ति MPC — खरीदे गए दूध की प्रति लीटर लागत"),
                 "rows": [
                   {
-                    "label": "Sahayak Commission",
+                    "label": L("Sahayak Commission", "सहायक कमीशन"),
                     "amount": "₹0.90"
                   },
                   {
-                    "label": "Inward Transportation",
+                    "label": L("Inward Transportation", "इनवर्ड ट्रांसपोर्टेशन"),
                     "amount": "₹2.28"
                   },
                   {
-                    "label": "BMC Rent & Infrastructure",
+                    "label": L("BMC Rent & Infrastructure", "BMC किराया और आधारभूत संरचना"),
                     "amount": "₹0.35"
                   },
                   {
-                    "label": "Labour Cost",
+                    "label": L("Labour Cost", "श्रम लागत"),
                     "amount": "₹0.25"
                   },
                   {
-                    "label": "Diesel & Utilities",
+                    "label": L("Diesel & Utilities", "डीजल और उपयोगिताएं"),
                     "amount": "₹0.42"
                   },
                   {
-                    "label": "Cleaning & CIP",
+                    "label": L("Cleaning & CIP", "सफाई और CIP"),
                     "amount": "₹0.12"
                   },
                   {
-                    "label": "Repair & Maintenance",
+                    "label": L("Repair & Maintenance", "मरम्मत और रखरखाव"),
                     "amount": "₹0.18"
                   }
                 ],
                 "total": {
-                  "label": "Total Cost per Litre",
+                  "label": L("Total Cost per Litre", "प्रति लीटर कुल लागत"),
                   "amount": "₹4.50"
                 }
               },
               {
                 "type": "example",
-                "heading": "Which Cost Is the Biggest?",
-                "text": "Inward Transportation alone is ₹2.28 out of the ₹4.50 total cost per litre — more than half of everything spent to handle each litre of milk. This is exactly why the company is focused on solving its transportation cost problem."
+                "heading": L("Which Cost Is the Biggest?", "सबसे बड़ी लागत कौन-सी है?"),
+                "text": L("Inward Transportation alone is ₹2.28 out of the ₹4.50 total cost per litre — more than half of everything spent to handle each litre of milk. This is exactly why the company is focused on solving its transportation cost problem.", "अकेले इनवर्ड ट्रांसपोर्टेशन ₹4.50 की कुल प्रति लीटर लागत में से ₹2.28 है — दूध के हर लीटर को संभालने में खर्च की गई हर चीज़ का आधे से ज़्यादा। यही कारण है कि कंपनी अपनी परिवहन लागत समस्या को सुलझाने पर केंद्रित है।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "A Rising Trend",
-                "text": "Inward transportation cost per litre has been climbing every year — from ₹1.68 in FY 2021-22 to ₹2.28 in FY 2025-26 — even as the company's daily milk volumes grew. More milk did not automatically mean a lower cost per litre."
+                "heading": L("A Rising Trend", "एक बढ़ता हुआ रुझान"),
+                "text": L("Inward transportation cost per litre has been climbing every year — from ₹1.68 in FY 2021-22 to ₹2.28 in FY 2025-26 — even as the company's daily milk volumes grew. More milk did not automatically mean a lower cost per litre.", "प्रति लीटर इनवर्ड ट्रांसपोर्टेशन लागत हर साल बढ़ रही है — FY 2021-22 में ₹1.68 से FY 2025-26 में ₹2.28 तक — भले ही कंपनी की दैनिक दूध मात्रा बढ़ी। ज़्यादा दूध का मतलब अपने आप कम प्रति लीटर लागत नहीं था।")
               },
               {
                 "type": "barchart",
-                "heading": "Inward Transportation Cost Trend",
-                "source": "Shakti MPC internal records",
-                "unit": "₹ per litre",
+                "heading": L("Inward Transportation Cost Trend", "इनवर्ड ट्रांसपोर्टेशन लागत का रुझान"),
+                "source": L("Shakti MPC internal records", "शक्ति MPC आंतरिक रिकॉर्ड"),
+                "unit": L("₹ per litre", "₹ प्रति लीटर"),
                 "data": [
                   {
                     "label": "FY 2021-22",
@@ -9034,205 +9033,205 @@ export const MODULES = [
             "check": [
               {
                 "type": "mcq",
-                "q": "In Shakti MPC's cost structure, what is the single biggest cost per litre?",
+                "q": L("In Shakti MPC's cost structure, what is the single biggest cost per litre?", "शक्ति MPC की लागत संरचना में, प्रति लीटर सबसे बड़ी अकेली लागत क्या है?"),
                 "options": [
-                  "Inward Transportation",
-                  "Cleaning & CIP",
-                  "Repair & Maintenance",
-                  "Labour Cost"
+                  L("Inward Transportation", "इनवर्ड ट्रांसपोर्टेशन"),
+                  L("Cleaning & CIP", "सफाई और CIP"),
+                  L("Repair & Maintenance", "मरम्मत और रखरखाव"),
+                  L("Labour Cost", "श्रम लागत")
                 ],
                 "answer": 0,
-                "explain": "At ₹2.28 per litre, Inward Transportation is the largest single cost, more than half of the ₹4.50 total."
+                "explain": L("At ₹2.28 per litre, Inward Transportation is the largest single cost, more than half of the ₹4.50 total.", "₹2.28 प्रति लीटर पर, इनवर्ड ट्रांसपोर्टेशन सबसे बड़ी अकेली लागत है, जो ₹4.50 के कुल का आधे से ज़्यादा है।")
               },
               {
                 "type": "mcq",
-                "q": "What happened to inward transportation cost per litre over five years, even as milk volumes grew?",
+                "q": L("What happened to inward transportation cost per litre over five years, even as milk volumes grew?", "दूध की मात्रा बढ़ने के बावजूद, पांच वर्षों में प्रति लीटर इनवर्ड ट्रांसपोर्टेशन लागत का क्या हुआ?"),
                 "options": [
-                  "It kept rising, from ₹1.68 to ₹2.28 per litre",
-                  "It fell steadily every year",
-                  "It stayed exactly the same",
-                  "It dropped to zero"
+                  L("It kept rising, from ₹1.68 to ₹2.28 per litre", "यह लगातार बढ़ती रही, ₹1.68 से ₹2.28 प्रति लीटर तक"),
+                  L("It fell steadily every year", "यह हर साल लगातार घटती रही"),
+                  L("It stayed exactly the same", "यह बिल्कुल समान रही"),
+                  L("It dropped to zero", "यह शून्य पर गिर गई")
                 ],
                 "answer": 0,
-                "explain": "Despite volume growth, inward transportation cost per litre rose every year, from ₹1.68 to ₹2.28."
+                "explain": L("Despite volume growth, inward transportation cost per litre rose every year, from ₹1.68 to ₹2.28.", "मात्रा बढ़ने के बावजूद, प्रति लीटर इनवर्ड ट्रांसपोर्टेशन लागत हर साल बढ़ी, ₹1.68 से ₹2.28 तक।")
               }
             ]
           },
           {
             "id": "t-route-timing-puzzle",
-            "title": "The Route Timing Puzzle",
+            "title": L("The Route Timing Puzzle", "रूट टाइमिंग की पहेली"),
             "teach": [
               {
                 "type": "text",
-                "heading": "The Three-Hour Rule",
-                "html": "To protect milk quality, Shakti MPC follows a strict rule: milk collected at the first MPP on a route must reach the chilling centre within three hours. Waiting longer lets acidity and bacteria increase, which spoils milk quality."
+                "heading": L("The Three-Hour Rule", "तीन घंटे का नियम"),
+                "html": L("To protect milk quality, Shakti MPC follows a strict rule: milk collected at the first MPP on a route must reach the chilling centre within three hours. Waiting longer lets acidity and bacteria increase, which spoils milk quality.", "दूध की गुणवत्ता की रक्षा के लिए, शक्ति MPC एक सख्त नियम का पालन करती है: एक रूट पर पहले MPP पर इकट्ठा किया गया दूध तीन घंटे के भीतर चिलिंग सेंटर तक पहुंचना चाहिए। ज़्यादा इंतज़ार करने से अम्लता और बैक्टीरिया बढ़ जाते हैं, जिससे दूध की गुणवत्ता खराब होती है।")
               },
               {
                 "type": "text",
-                "heading": "Working Backwards From the Deadline",
-                "html": "Because chilled milk must reach the plant by 9:30 AM (morning) or 9:30 PM (evening), routes are planned backwards from that deadline. This means the first and second MPPs on many routes must finish pouring milk by about 6:30 AM or 6:30 PM — quite early for farmers who finish milking and housework a bit later."
+                "heading": L("Working Backwards From the Deadline", "समय सीमा से पीछे की ओर काम करना"),
+                "html": L("Because chilled milk must reach the plant by 9:30 AM (morning) or 9:30 PM (evening), routes are planned backwards from that deadline. This means the first and second MPPs on many routes must finish pouring milk by about 6:30 AM or 6:30 PM — quite early for farmers who finish milking and housework a bit later.", "क्योंकि ठंडा किया गया दूध सुबह 9:30 बजे (सुबह) या रात 9:30 बजे (शाम) तक प्लांट पहुंचना चाहिए, रूट उस समय सीमा से पीछे की ओर योजनाबद्ध किए जाते हैं। इसका मतलब है कि कई रूटों पर पहले और दूसरे MPP को लगभग सुबह 6:30 बजे या शाम 6:30 बजे तक दूध डालना खत्म करना चाहिए — उन किसानों के लिए काफी जल्दी जो दूध निकालना और घर का काम थोड़ी देर बाद खत्म करते हैं।")
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "A Paradox",
-                "text": "Competing dairies often visit these same villages as the sixth or seventh stop on their route — giving farmers 30 to 45 extra minutes. Farmers find this more convenient, so Shakti MPC's first and second MPPs on many routes collect less milk than similar villages served by competitors. Careful route discipline protects quality, but may also be holding back procurement volume."
+                "heading": L("A Paradox", "एक विरोधाभास"),
+                "text": L("Competing dairies often visit these same villages as the sixth or seventh stop on their route — giving farmers 30 to 45 extra minutes. Farmers find this more convenient, so Shakti MPC's first and second MPPs on many routes collect less milk than similar villages served by competitors. Careful route discipline protects quality, but may also be holding back procurement volume.", "प्रतिस्पर्धी डेयरियां अक्सर इन्हीं गांवों में अपने रूट के छठे या सातवें पड़ाव के रूप में जाती हैं — जिससे किसानों को 30 से 45 अतिरिक्त मिनट मिलते हैं। किसानों को यह ज़्यादा सुविधाजनक लगता है, इसलिए शक्ति MPC के कई रूटों पर पहले और दूसरे MPP प्रतिस्पर्धियों द्वारा सेवा प्राप्त समान गांवों की तुलना में कम दूध इकट्ठा करते हैं। सावधानीपूर्ण रूट अनुशासन गुणवत्ता की रक्षा करता है, लेकिन यह खरीद की मात्रा को भी रोक सकता है।")
               },
               {
                 "type": "text",
-                "heading": "Small MPPs, Big Inefficiency",
-                "html": "A review of all 800 MPPs found the average was about 105 litres per MPP per day — but this hid a big problem underneath."
+                "heading": L("Small MPPs, Big Inefficiency", "छोटे MPP, बड़ी अकुशलता"),
+                "html": L("A review of all 800 MPPs found the average was about 105 litres per MPP per day — but this hid a big problem underneath.", "सभी 800 MPP की समीक्षा में औसत लगभग 105 लीटर प्रति MPP प्रतिदिन पाया गया — लेकिन इसके नीचे एक बड़ी समस्या छिपी थी।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Less than 50 litres/day",
-                    "text": "About 30% of MPPs collect less than 50 litres a day — a very small amount for a vehicle to travel out for."
+                    "label": L("Less than 50 litres/day", "50 लीटर/दिन से कम"),
+                    "text": L("About 30% of MPPs collect less than 50 litres a day — a very small amount for a vehicle to travel out for.", "लगभग 30% MPP प्रतिदिन 50 लीटर से कम इकट्ठा करते हैं — एक वाहन के जाने के लिए बहुत छोटी मात्रा।")
                   },
                   {
-                    "label": "50 to 100 litres/day",
-                    "text": "About 50% of MPPs collect between 50 and 100 litres a day."
+                    "label": L("50 to 100 litres/day", "50 से 100 लीटर/दिन"),
+                    "text": L("About 50% of MPPs collect between 50 and 100 litres a day.", "लगभग 50% MPP प्रतिदिन 50 से 100 लीटर के बीच इकट्ठा करते हैं।")
                   },
                   {
-                    "label": "100 to 200 litres/day",
-                    "text": "About 15% of MPPs collect between 100 and 200 litres a day."
+                    "label": L("100 to 200 litres/day", "100 से 200 लीटर/दिन"),
+                    "text": L("About 15% of MPPs collect between 100 and 200 litres a day.", "लगभग 15% MPP प्रतिदिन 100 से 200 लीटर के बीच इकट्ठा करते हैं।")
                   },
                   {
-                    "label": "More than 200 litres/day",
-                    "text": "Only about 5% of MPPs collect more than 200 litres a day."
+                    "label": L("More than 200 litres/day", "200 लीटर/दिन से ज़्यादा"),
+                    "text": L("Only about 5% of MPPs collect more than 200 litres a day.", "केवल लगभग 5% MPP प्रतिदिन 200 लीटर से ज़्यादा इकट्ठा करते हैं।")
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "A Costly Trip",
-                "text": "In many cases, a vehicle visits all ten MPPs allowed on a route but collects less than 1,000 litres in total for the whole trip. That means the vehicle, the fuel, and the driver's time are being used for a very small amount of milk — pushing the transport cost per litre higher."
+                "heading": L("A Costly Trip", "एक महंगी यात्रा"),
+                "text": L("In many cases, a vehicle visits all ten MPPs allowed on a route but collects less than 1,000 litres in total for the whole trip. That means the vehicle, the fuel, and the driver's time are being used for a very small amount of milk — pushing the transport cost per litre higher.", "कई मामलों में, एक वाहन एक रूट पर अनुमत सभी दस MPP जाता है लेकिन पूरी यात्रा के लिए कुल मिलाकर 1,000 लीटर से कम इकट्ठा करता है। इसका मतलब है कि वाहन, ईंधन, और ड्राइवर का समय बहुत छोटी मात्रा में दूध के लिए इस्तेमाल हो रहे हैं — जिससे प्रति लीटर परिवहन लागत बढ़ जाती है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why must milk from the first MPP on a route reach the chilling centre within three hours?",
+                "q": L("Why must milk from the first MPP on a route reach the chilling centre within three hours?", "एक रूट पर पहले MPP से दूध को तीन घंटे के भीतर चिलिंग सेंटर तक क्यों पहुंचना चाहिए?"),
                 "options": [
-                  "To prevent rising acidity, bacterial growth and quality loss",
-                  "Because the plant closes at that time",
-                  "Because Sahayaks are only paid for three hours of work",
-                  "Because vehicles cannot carry milk for longer"
+                  L("To prevent rising acidity, bacterial growth and quality loss", "बढ़ती अम्लता, बैक्टीरिया वृद्धि और गुणवत्ता हानि को रोकने के लिए"),
+                  L("Because the plant closes at that time", "क्योंकि प्लांट उस समय बंद हो जाता है"),
+                  L("Because Sahayaks are only paid for three hours of work", "क्योंकि सहायकों को केवल तीन घंटे के काम के लिए भुगतान किया जाता है"),
+                  L("Because vehicles cannot carry milk for longer", "क्योंकि वाहन इससे ज़्यादा समय तक दूध नहीं ले जा सकते")
                 ],
                 "answer": 0,
-                "explain": "Delays beyond three hours let acidity and bacteria increase, which deteriorates milk quality."
+                "explain": L("Delays beyond three hours let acidity and bacteria increase, which deteriorates milk quality.", "तीन घंटे से ज़्यादा देरी अम्लता और बैक्टीरिया को बढ़ने देती है, जिससे दूध की गुणवत्ता बिगड़ती है।")
               },
               {
                 "type": "mcq",
-                "q": "According to the MPP review, what share of MPPs collect less than 50 litres a day?",
+                "q": L("According to the MPP review, what share of MPPs collect less than 50 litres a day?", "MPP समीक्षा के अनुसार, कितने प्रतिशत MPP प्रतिदिन 50 लीटर से कम इकट्ठा करते हैं?"),
                 "options": [
-                  "About 30%",
-                  "About 5%",
-                  "About 50%",
-                  "About 100%"
+                  L("About 30%", "लगभग 30%"),
+                  L("About 5%", "लगभग 5%"),
+                  L("About 50%", "लगभग 50%"),
+                  L("About 100%", "लगभग 100%")
                 ],
                 "answer": 0,
-                "explain": "Nearly 30 percent of MPPs were found to collect less than 50 litres per day."
+                "explain": L("Nearly 30 percent of MPPs were found to collect less than 50 litres per day.", "लगभग 30 प्रतिशत MPP प्रतिदिन 50 लीटर से कम इकट्ठा करते पाए गए।")
               }
             ]
           },
           {
             "id": "t-what-would-you-do",
-            "title": "What Would You Do? — A Decision for the Sahayak",
+            "title": L("What Would You Do? — A Decision for the Sahayak", "आप क्या करेंगे? — सहायक के लिए एक निर्णय"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Doing the Maths on a Low-Volume Route",
-                "html": "Let's calculate what a low-volume route really costs. A vehicle visits all 10 MPPs allowed on a route and collects a total of 900 litres for the trip. If Shakti MPC's average inward transportation cost is ₹2.28 per litre, what should this trip cost to run?"
+                "heading": L("Doing the Maths on a Low-Volume Route", "कम मात्रा वाले रूट पर गणित करना"),
+                "html": L("Let's calculate what a low-volume route really costs. A vehicle visits all 10 MPPs allowed on a route and collects a total of 900 litres for the trip. If Shakti MPC's average inward transportation cost is ₹2.28 per litre, what should this trip cost to run?", "आइए गणना करें कि एक कम मात्रा वाले रूट की असली लागत क्या है। एक वाहन एक रूट पर अनुमत सभी 10 MPP जाता है और यात्रा के लिए कुल 900 लीटर इकट्ठा करता है। अगर शक्ति MPC की औसत इनवर्ड ट्रांसपोर्टेशन लागत ₹2.28 प्रति लीटर है, तो इस यात्रा को चलाने में कितना खर्च होना चाहिए?")
               },
               {
                 "type": "example",
-                "heading": "Step 1: What the Trip Should Cost",
-                "text": "At the company's average rate: 900 litres × ₹2.28 = ₹2,052. This is the transportation cost we would expect to be 'fair' for 900 litres on this route."
+                "heading": L("Step 1: What the Trip Should Cost", "चरण 1: यात्रा की लागत क्या होनी चाहिए"),
+                "text": L("At the company's average rate: 900 litres × ₹2.28 = ₹2,052. This is the transportation cost we would expect to be 'fair' for 900 litres on this route.", "कंपनी की औसत दर पर: 900 लीटर × ₹2.28 = ₹2,052। यह वह परिवहन लागत है जिसे हम इस रूट पर 900 लीटर के लिए 'उचित' मानेंगे।")
               },
               {
                 "type": "text",
-                "heading": "But What If the Actual Trip Cost More?",
-                "html": "Suppose the actual diesel, driver time and vehicle cost for this specific ten-MPP trip was ₹3,150 — because the vehicle travelled a long distance for a small amount of milk."
+                "heading": L("But What If the Actual Trip Cost More?", "लेकिन क्या हो अगर असली यात्रा की लागत ज़्यादा हो?"),
+                "html": L("Suppose the actual diesel, driver time and vehicle cost for this specific ten-MPP trip was ₹3,150 — because the vehicle travelled a long distance for a small amount of milk.", "मान लीजिए इस खास दस-MPP यात्रा के लिए असली डीजल, ड्राइवर समय और वाहन लागत ₹3,150 थी — क्योंकि वाहन ने थोड़ी मात्रा में दूध के लिए लंबी दूरी तय की।")
               },
               {
                 "type": "ledger",
-                "heading": "This Route: Expected vs Actual Cost",
+                "heading": L("This Route: Expected vs Actual Cost", "यह रूट: अपेक्षित बनाम असली लागत"),
                 "rows": [
                   {
-                    "label": "Expected cost (900 litres × ₹2.28)",
+                    "label": L("Expected cost (900 litres × ₹2.28)", "अपेक्षित लागत (900 लीटर × ₹2.28)"),
                     "amount": "₹2,052"
                   },
                   {
-                    "label": "Actual cost of this trip",
+                    "label": L("Actual cost of this trip", "इस यात्रा की असली लागत"),
                     "amount": "₹3,150"
                   }
                 ],
                 "total": {
-                  "label": "Extra cost above expected",
+                  "label": L("Extra cost above expected", "अपेक्षित से अतिरिक्त लागत"),
                   "amount": "₹1,098"
                 }
               },
               {
                 "type": "example",
-                "heading": "What This Means Per Litre",
-                "text": "₹3,150 ÷ 900 litres = ₹3.50 per litre — much higher than the company's average of ₹2.28 per litre. This single low-volume route is quietly pulling up the average cost for the whole company."
+                "heading": L("What This Means Per Litre", "प्रति लीटर इसका क्या मतलब है"),
+                "text": L("₹3,150 ÷ 900 litres = ₹3.50 per litre — much higher than the company's average of ₹2.28 per litre. This single low-volume route is quietly pulling up the average cost for the whole company.", "₹3,150 ÷ 900 लीटर = ₹3.50 प्रति लीटर — कंपनी की औसत ₹2.28 प्रति लीटर से कहीं ज़्यादा। यह एक अकेला कम मात्रा वाला रूट चुपचाप पूरी कंपनी की औसत लागत बढ़ा रहा है।")
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Options on the Table",
-                "text": "Shakti MPC's committee is weighing several options: restructuring routes, encouraging more milk at existing MPPs, trying electric or CNG vehicles, using smaller three-wheelers on low-volume routes, and possibly resequencing which villages are visited first."
+                "heading": L("Options on the Table", "मेज़ पर विकल्प"),
+                "text": L("Shakti MPC's committee is weighing several options: restructuring routes, encouraging more milk at existing MPPs, trying electric or CNG vehicles, using smaller three-wheelers on low-volume routes, and possibly resequencing which villages are visited first.", "शक्ति MPC की समिति कई विकल्पों पर विचार कर रही है: रूटों का पुनर्गठन, मौजूदा MPP में ज़्यादा दूध को बढ़ावा देना, इलेक्ट्रिक या CNG वाहन आज़माना, कम मात्रा वाले रूटों पर छोटे तिपहिया वाहनों का उपयोग करना, और संभवतः यह फिर से तय करना कि कौन से गांव पहले जाए जाएं।")
               },
               {
                 "type": "poll",
-                "heading": "What Would You Recommend First?",
+                "heading": L("What Would You Recommend First?", "आप पहले क्या सुझाएंगे?"),
                 "questions": [
                   {
-                    "q": "If you were advising Shakti MPC's committee, which step would you try FIRST to reduce this route's cost per litre?",
+                    "q": L("If you were advising Shakti MPC's committee, which step would you try FIRST to reduce this route's cost per litre?", "अगर आप शक्ति MPC की समिति को सलाह दे रहे होते, तो इस रूट की प्रति लीटर लागत घटाने के लिए आप सबसे पहले कौन-सा कदम आज़माते?"),
                     "options": [
-                      "Use a smaller vehicle sized for this route's actual volume",
-                      "Buy the most expensive new tanker available",
-                      "Stop collecting milk from small MPPs completely",
-                      "Ignore the cost and keep the same vehicle"
+                      L("Use a smaller vehicle sized for this route's actual volume", "इस रूट की असली मात्रा के अनुसार छोटे आकार का वाहन इस्तेमाल करें"),
+                      L("Buy the most expensive new tanker available", "उपलब्ध सबसे महंगा नया टैंकर खरीदें"),
+                      L("Stop collecting milk from small MPPs completely", "छोटे MPP से दूध इकट्ठा करना पूरी तरह बंद कर दें"),
+                      L("Ignore the cost and keep the same vehicle", "लागत को नज़रअंदाज़ करें और वही वाहन रखें")
                     ],
                     "answer": 0,
-                    "reveal": "Many producer companies have found that matching vehicle size to actual route volume — smaller vehicles for smaller routes — is often the fastest and cheapest way to bring cost per litre down, without changing route timing or losing farmer trust."
+                    "reveal": L("Many producer companies have found that matching vehicle size to actual route volume — smaller vehicles for smaller routes — is often the fastest and cheapest way to bring cost per litre down, without changing route timing or losing farmer trust.", "कई प्रोड्यूसर कंपनियों ने पाया है कि वाहन के आकार को असली रूट मात्रा से मिलाना — छोटे रूटों के लिए छोटे वाहन — अक्सर प्रति लीटर लागत घटाने का सबसे तेज़ और सस्ता तरीका है, बिना रूट का समय बदले या किसान का भरोसा खोए।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Not a Simple Fix",
-                "text": "Every option has trade-offs. Smaller vehicles may struggle on poor roads or during peak season. EVs need charging infrastructure that is still limited in rural areas. Changing route timing could raise procurement but risks milk quality. Good decisions balance cost, quality, and what is fair and convenient for farmers."
+                "heading": L("Not a Simple Fix", "कोई सरल समाधान नहीं"),
+                "text": L("Every option has trade-offs. Smaller vehicles may struggle on poor roads or during peak season. EVs need charging infrastructure that is still limited in rural areas. Changing route timing could raise procurement but risks milk quality. Good decisions balance cost, quality, and what is fair and convenient for farmers.", "हर विकल्प के साथ समझौते जुड़े हैं। छोटे वाहनों को खराब सड़कों पर या शिखर मौसम में परेशानी हो सकती है। EV को चार्जिंग आधारभूत संरचना चाहिए जो ग्रामीण क्षेत्रों में अभी भी सीमित है। रूट का समय बदलने से खरीद बढ़ सकती है लेकिन दूध की गुणवत्ता को खतरा हो सकता है। अच्छे निर्णय लागत, गुणवत्ता, और किसानों के लिए जो उचित और सुविधाजनक है, उसे संतुलित करते हैं।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "In this example, what was the extra cost above the expected amount for the 900-litre trip?",
+                "q": L("In this example, what was the extra cost above the expected amount for the 900-litre trip?", "इस उदाहरण में, 900-लीटर यात्रा के लिए अपेक्षित राशि से अतिरिक्त लागत क्या थी?"),
                 "options": [
-                  "₹1,098",
-                  "₹2,052",
-                  "₹3,150",
-                  "₹900"
+                  L("₹1,098", "₹1,098"),
+                  L("₹2,052", "₹2,052"),
+                  L("₹3,150", "₹3,150"),
+                  L("₹900", "₹900")
                 ],
                 "answer": 0,
-                "explain": "Extra cost = ₹3,150 actual − ₹2,052 expected = ₹1,098."
+                "explain": L("Extra cost = ₹3,150 actual − ₹2,052 expected = ₹1,098.", "अतिरिक्त लागत = ₹3,150 असली − ₹2,052 अपेक्षित = ₹1,098।")
               },
               {
                 "type": "mcq",
-                "q": "What is one practical way to lower the cost per litre on a low-volume route?",
+                "q": L("What is one practical way to lower the cost per litre on a low-volume route?", "कम मात्रा वाले रूट पर प्रति लीटर लागत घटाने का एक व्यावहारिक तरीका क्या है?"),
                 "options": [
-                  "Use a smaller vehicle that better matches the route's actual milk volume",
-                  "Always use the biggest tanker available, regardless of volume",
-                  "Stop testing milk quality to save time",
-                  "Remove the three-hour quality rule everywhere"
+                  L("Use a smaller vehicle that better matches the route's actual milk volume", "एक छोटा वाहन इस्तेमाल करें जो रूट की असली दूध मात्रा से बेहतर मेल खाता हो"),
+                  L("Always use the biggest tanker available, regardless of volume", "मात्रा की परवाह किए बिना हमेशा सबसे बड़ा उपलब्ध टैंकर इस्तेमाल करें"),
+                  L("Stop testing milk quality to save time", "समय बचाने के लिए दूध गुणवत्ता की जांच बंद कर दें"),
+                  L("Remove the three-hour quality rule everywhere", "हर जगह तीन घंटे के गुणवत्ता नियम को हटा दें")
                 ],
                 "answer": 0,
-                "explain": "Right-sizing the vehicle to the route's actual volume is a practical way to bring transport cost per litre down."
+                "explain": L("Right-sizing the vehicle to the route's actual volume is a practical way to bring transport cost per litre down.", "वाहन को रूट की असली मात्रा के अनुसार सही आकार देना प्रति लीटर परिवहन लागत घटाने का एक व्यावहारिक तरीका है।")
               }
             ]
           }
@@ -9244,54 +9243,54 @@ export const MODULES = [
             {
               "topicId": "t-meet-shakti",
               "type": "mcq",
-              "q": "About how many producer members does Shakti MPC serve?",
+              "q": L("About how many producer members does Shakti MPC serve?", "शक्ति MPC लगभग कितने उत्पादक सदस्यों की सेवा करती है?"),
               "options": [
-                "Nearly 85,000",
-                "Nearly 8,500",
-                "Nearly 850",
-                "Nearly 8,50,000"
+                L("Nearly 85,000", "लगभग 85,000"),
+                L("Nearly 8,500", "लगभग 8,500"),
+                L("Nearly 850", "लगभग 850"),
+                L("Nearly 8,50,000", "लगभग 8,50,000")
               ],
               "answer": 0,
-              "explain": "Shakti MPC serves nearly 85,000 producer members."
+              "explain": L("Shakti MPC serves nearly 85,000 producer members.", "शक्ति MPC लगभग 85,000 उत्पादक सदस्यों की सेवा करती है।")
             },
             {
               "topicId": "t-where-money-goes",
               "type": "mcq",
-              "q": "What share of Shakti MPC's total cost per litre (₹4.50) comes from inward transportation (₹2.28)?",
+              "q": L("What share of Shakti MPC's total cost per litre (₹4.50) comes from inward transportation (₹2.28)?", "शक्ति MPC की कुल प्रति लीटर लागत (₹4.50) का कितना हिस्सा इनवर्ड ट्रांसपोर्टेशन (₹2.28) से आता है?"),
               "options": [
-                "More than half of the total cost",
-                "Less than 5% of the total cost",
-                "None of the total cost",
-                "Exactly equal to the Sahayak commission"
+                L("More than half of the total cost", "कुल लागत का आधे से ज़्यादा"),
+                L("Less than 5% of the total cost", "कुल लागत का 5% से कम"),
+                L("None of the total cost", "कुल लागत का कोई हिस्सा नहीं"),
+                L("Exactly equal to the Sahayak commission", "सहायक कमीशन के बिल्कुल बराबर")
               ],
               "answer": 0,
-              "explain": "₹2.28 out of ₹4.50 is more than half of the total cost per litre."
+              "explain": L("₹2.28 out of ₹4.50 is more than half of the total cost per litre.", "₹4.50 में से ₹2.28 प्रति लीटर कुल लागत का आधे से ज़्यादा है।")
             },
             {
               "topicId": "t-route-timing-puzzle",
               "type": "mcq",
-              "q": "Why do Shakti MPC's first and second MPPs on many routes often collect less milk than nearby villages served by competitors?",
+              "q": L("Why do Shakti MPC's first and second MPPs on many routes often collect less milk than nearby villages served by competitors?", "शक्ति MPC के कई रूटों पर पहले और दूसरे MPP अक्सर प्रतिस्पर्धियों द्वारा सेवा प्राप्त पास के गांवों की तुलना में कम दूध क्यों इकट्ठा करते हैं?"),
               "options": [
-                "Competitors visit later in the route, giving farmers more time before the vehicle arrives",
-                "Those villages have no farmers",
-                "Shakti MPC pays a lower price there",
-                "Those MPPs are closed on some days"
+                L("Competitors visit later in the route, giving farmers more time before the vehicle arrives", "प्रतिस्पर्धी रूट में बाद में जाते हैं, जिससे वाहन पहुंचने से पहले किसानों को ज़्यादा समय मिलता है"),
+                L("Those villages have no farmers", "उन गांवों में कोई किसान नहीं है"),
+                L("Shakti MPC pays a lower price there", "शक्ति MPC वहां कम कीमत देती है"),
+                L("Those MPPs are closed on some days", "वे MPP कुछ दिनों में बंद रहते हैं")
               ],
               "answer": 0,
-              "explain": "Competitors visiting as the sixth or seventh stop give farmers 30-45 extra minutes, which farmers find more convenient."
+              "explain": L("Competitors visiting as the sixth or seventh stop give farmers 30-45 extra minutes, which farmers find more convenient.", "छठे या सातवें पड़ाव के रूप में जाने वाले प्रतिस्पर्धी किसानों को 30-45 अतिरिक्त मिनट देते हैं, जो किसानों को ज़्यादा सुविधाजनक लगता है।")
             },
             {
               "topicId": "t-what-would-you-do",
               "type": "mcq",
-              "q": "What is the biggest lesson from the 900-litre route example?",
+              "q": L("What is the biggest lesson from the 900-litre route example?", "900-लीटर रूट के उदाहरण से सबसे बड़ा सबक क्या है?"),
               "options": [
-                "A vehicle that is too big for a route's actual volume can push the cost per litre well above average",
-                "Bigger vehicles are always cheaper to run",
-                "Route cost has nothing to do with vehicle size",
-                "Only Sahayak commission affects route cost"
+                L("A vehicle that is too big for a route's actual volume can push the cost per litre well above average", "एक ऐसा वाहन जो रूट की असली मात्रा के लिए बहुत बड़ा है, प्रति लीटर लागत को औसत से काफी ऊपर धकेल सकता है"),
+                L("Bigger vehicles are always cheaper to run", "बड़े वाहन चलाने में हमेशा सस्ते होते हैं"),
+                L("Route cost has nothing to do with vehicle size", "रूट लागत का वाहन के आकार से कोई लेना-देना नहीं है"),
+                L("Only Sahayak commission affects route cost", "केवल सहायक कमीशन रूट लागत को प्रभावित करता है")
               ],
               "answer": 0,
-              "explain": "The 900-litre route's actual cost per litre (₹3.50) was well above the company average (₹2.28), showing how vehicle-to-volume mismatch drives up cost."
+              "explain": L("The 900-litre route's actual cost per litre (₹3.50) was well above the company average (₹2.28), showing how vehicle-to-volume mismatch drives up cost.", "900-लीटर रूट की असली प्रति लीटर लागत (₹3.50) कंपनी की औसत (₹2.28) से काफी ऊपर थी, जो दिखाती है कि वाहन-से-मात्रा का बेमेल कैसे लागत बढ़ाता है।")
             }
           ]
         }
