@@ -65,6 +65,13 @@ function friendlyAuthError(e) {
   }
 }
 
+// Emails allowed to self-provision as admin the first time they sign in —
+// solves the chicken-and-egg problem of creating the very first admin
+// account without needing direct Firestore console access. Security rules
+// already allow a signed-in user to create their OWN users/{uid} doc
+// (request.auth.uid == uid), so this needs no rules change.
+const BOOTSTRAP_ADMIN_EMAILS = ["nishanth.m@shreejamilk.com"];
+
 function mapUserDoc(uid, data) {
   return {
     id: uid,
@@ -89,9 +96,22 @@ function waitForAuthInit() {
   return authReadyPromise;
 }
 
-async function requireActiveUserDoc(uid) {
-  const snap = await getDoc(doc(db, "users", uid));
+async function requireActiveUserDoc(uid, email) {
+  const ref = doc(db, "users", uid);
+  const snap = await getDoc(ref);
   if (!snap.exists()) {
+    if (email && BOOTSTRAP_ADMIN_EMAILS.includes(email.toLowerCase())) {
+      const data = {
+        email,
+        displayName: "Admin",
+        role: "admin",
+        active: true,
+        mustChangePassword: false,
+        createdAt: new Date().toISOString(),
+      };
+      await setDoc(ref, data);
+      return mapUserDoc(uid, data);
+    }
     await signOut(auth);
     throw new Error("No account found for this login. Contact your administrator.");
   }
@@ -113,7 +133,7 @@ async function login(loginId, password) {
   } catch (e) {
     throw friendlyAuthError(e);
   }
-  const user = await requireActiveUserDoc(cred.user.uid);
+  const user = await requireActiveUserDoc(cred.user.uid, cred.user.email);
   return { user };
 }
 
@@ -124,7 +144,7 @@ async function logout() {
 async function session() {
   const fbUser = await waitForAuthInit();
   if (!fbUser) throw new Error("No session");
-  const user = await requireActiveUserDoc(fbUser.uid);
+  const user = await requireActiveUserDoc(fbUser.uid, fbUser.email);
   return { user };
 }
 
