@@ -6079,164 +6079,242 @@ export const MODULES = [
     "id": "m8",
     "number": 8,
     "title": L("Formation of MPP & Milk Routes", "MPP और दूध मार्गों का निर्माण"),
-    "subtitle": "Learn how a new Milk Pooling Point is chosen and set up, and how milk collection routes are planned so milk reaches the chilling centre fresh and on time.",
+    "subtitle": L(
+      "Learn how a new Milk Pooling Point is chosen and set up, and how milk collection routes are planned so milk reaches the chilling centre fresh and on time.",
+      "जानिए कि एक नया मिल्क पूलिंग पॉइंट कैसे चुना और स्थापित किया जाता है, और दूध संग्रह मार्गों की योजना कैसे बनाई जाती है ताकि दूध ताज़ा और समय पर चिलिंग सेंटर पहुँचे।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m8-l1",
-        "title": "Where Should a New MPP Go?",
+        "title": L("Where Should a New MPP Go?", "एक नया MPP कहाँ होना चाहिए?"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Where Should a New MPP Go?",
-            "text": "Before an MPP ever opens its doors, someone has to work out exactly where it should be. In this lesson, you'll learn how that decision gets made."
+            "heading": L("Where Should a New MPP Go?", "एक नया MPP कहाँ होना चाहिए?"),
+            "text": L(
+              "Before an MPP ever opens its doors, someone has to work out exactly where it should be. In this lesson, you'll learn how that decision gets made.",
+              "किसी MPP के दरवाज़े खुलने से पहले, किसी को ठीक-ठीक तय करना होता है कि यह कहाँ होना चाहिए। इस पाठ में, आप सीखेंगे कि यह फैसला कैसे लिया जाता है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-village-survey",
-            "title": "The Village Survey",
+            "title": L("The Village Survey", "गाँव सर्वेक्षण"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Why Survey a Village First?",
-                "html": "Before setting up a new <b>MPP</b> or chilling facility in an area, the organisation needs real facts about that area — not guesses. This is done through a <b>village survey</b>."
+                "heading": L("Why Survey a Village First?", "पहले गाँव का सर्वेक्षण क्यों करें?"),
+                "html": L(
+                  "Before setting up a new <b>MPP</b> or chilling facility in an area, the organisation needs real facts about that area — not guesses. This is done through a <b>village survey</b>.",
+                  "किसी क्षेत्र में नया <b>MPP</b> या चिलिंग सुविधा स्थापित करने से पहले, संगठन को उस क्षेत्र के बारे में असली तथ्य चाहिए — अंदाज़े नहीं। यह एक <b>गाँव सर्वेक्षण</b> के ज़रिए किया जाता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MPP (Milk Pooling Point)",
-                "meaning": "A place where farmers bring their milk daily and get paid fairly and on time — the same MPP you help form and run as a Sahayak."
+                "term": L("MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                "meaning": L(
+                  "A place where farmers bring their milk daily and get paid fairly and on time — the same MPP you help form and run as a Sahayak.",
+                  "एक जगह जहाँ किसान रोज़ दूध लाते हैं और समय पर न्यायपूर्ण भुगतान पाते हैं — वही MPP जिसे बनाने और चलाने में आप एक सहायक के तौर पर मदद करते हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How Far Does the Survey Go?",
-                "html": "Villages located <b>4 to 5 km</b> on either side of the main road are surveyed. Villages this close to a road are within reasonable reach for a daily milk collection route."
+                "heading": L("How Far Does the Survey Go?", "सर्वेक्षण कितनी दूर तक जाता है?"),
+                "html": L(
+                  "Villages located <b>4 to 5 km</b> on either side of the main road are surveyed. Villages this close to a road are within reasonable reach for a daily milk collection route.",
+                  "मुख्य सड़क के दोनों ओर <b>4 से 5 किमी</b> पर स्थित गाँवों का सर्वेक्षण किया जाता है। सड़क के इतने करीब गाँव रोज़ के दूध संग्रह मार्ग के लिए उचित पहुँच में होते हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MAH (Milk Animal Household)",
-                "meaning": "A household in the village that keeps cows or buffaloes for milk. During a survey, the team visits each MAH and asks a set of questions, using a fixed format."
+                "term": L("MAH (Milk Animal Household)", "MAH (दुधारू पशु परिवार)"),
+                "meaning": L(
+                  "A household in the village that keeps cows or buffaloes for milk. During a survey, the team visits each MAH and asks a set of questions, using a fixed format.",
+                  "गाँव का एक परिवार जो दूध के लिए गाय या भैंस पालता है। सर्वेक्षण के दौरान, टीम हर MAH का दौरा करती है और एक तय प्रारूप में सवाल पूछती है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "How Many Animals",
-                    "text": "The total number of milk animals in each household, and in the whole village."
+                    "label": L("How Many Animals", "कितने पशु"),
+                    "text": L(
+                      "The total number of milk animals in each household, and in the whole village.",
+                      "हर परिवार में, और पूरे गाँव में दुधारू पशुओं की कुल संख्या।"
+                    )
                   },
                   {
-                    "label": "How Much Milk",
-                    "text": "How much milk is produced, how much the family keeps for itself, and how much surplus is left over to sell."
+                    "label": L("How Much Milk", "कितना दूध"),
+                    "text": L(
+                      "How much milk is produced, how much the family keeps for itself, and how much surplus is left over to sell.",
+                      "कितना दूध उत्पादन होता है, परिवार खुद के लिए कितना रखता है, और बेचने के लिए कितना अतिरिक्त बचता है।"
+                    )
                   },
                   {
-                    "label": "Where Milk Goes Now",
-                    "text": "Which traders or dairies farmers currently sell to, at what price, and how (and when) they get paid."
+                    "label": L("Where Milk Goes Now", "अभी दूध कहाँ जाता है"),
+                    "text": L(
+                      "Which traders or dairies farmers currently sell to, at what price, and how (and when) they get paid.",
+                      "किसान अभी किन व्यापारियों या डेयरियों को बेचते हैं, किस कीमत पर, और उन्हें कैसे (और कब) भुगतान मिलता है।"
+                    )
                   },
                   {
-                    "label": "Village Facilities",
-                    "text": "Roads, electricity, water, schools — these affect how easy it will be to run a collection point in this village."
+                    "label": L("Village Facilities", "गाँव की सुविधाएँ"),
+                    "text": L(
+                      "Roads, electricity, water, schools — these affect how easy it will be to run a collection point in this village.",
+                      "सड़कें, बिजली, पानी, स्कूल — ये प्रभावित करते हैं कि इस गाँव में संग्रह केंद्र चलाना कितना आसान होगा।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Did You Know?",
-                "text": "The survey doesn't stop at milk numbers. It also looks at the different communities living in the village and how they relate to each other — because a collection point works best when it serves the whole village fairly."
+                "heading": L("Did You Know?", "क्या आप जानते हैं?"),
+                "text": L(
+                  "The survey doesn't stop at milk numbers. It also looks at the different communities living in the village and how they relate to each other — because a collection point works best when it serves the whole village fairly.",
+                  "सर्वेक्षण सिर्फ दूध की संख्या तक सीमित नहीं है। यह गाँव में रहने वाले अलग-अलग समुदायों और उनके आपसी संबंधों को भी देखता है — क्योंकि एक संग्रह केंद्र तभी सबसे अच्छा काम करता है जब वह पूरे गाँव की न्यायपूर्ण सेवा करे।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "How far from the main road are villages typically surveyed?",
+                "q": L("How far from the main road are villages typically surveyed?", "मुख्य सड़क से कितनी दूर तक गाँवों का सर्वेक्षण आमतौर पर होता है?"),
                 "options": [
-                  "Only right next to the road",
-                  "4 to 5 km on either side",
-                  "50 km on either side",
-                  "Only villages with no road access"
+                  L("Only right next to the road", "सिर्फ सड़क के बिल्कुल बगल में"),
+                  L("4 to 5 km on either side", "दोनों ओर 4 से 5 किमी"),
+                  L("50 km on either side", "दोनों ओर 50 किमी"),
+                  L("Only villages with no road access", "सिर्फ वे गाँव जहाँ सड़क नहीं पहुँचती")
                 ],
                 "answer": 1,
-                "explain": "Villages within about 4 to 5 km of the main road are surveyed, since they are within reasonable reach of a daily collection route."
+                "explain": L(
+                  "Villages within about 4 to 5 km of the main road are surveyed, since they are within reasonable reach of a daily collection route.",
+                  "मुख्य सड़क से लगभग 4 से 5 किमी के भीतर के गाँवों का सर्वेक्षण किया जाता है, क्योंकि वे रोज़ के संग्रह मार्ग की उचित पहुँच में होते हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "The village survey only counts milk animals and ignores things like roads, water, and schools.",
+                "q": L(
+                  "The village survey only counts milk animals and ignores things like roads, water, and schools.",
+                  "गाँव सर्वेक्षण सिर्फ दुधारू पशु गिनता है और सड़कों, पानी, और स्कूलों जैसी चीज़ों को नज़रअंदाज़ करता है।"
+                ),
                 "answer": false,
-                "explain": "The survey also looks at village facilities like roads, electricity, water, and schools, because these affect how easy it will be to run a collection point there."
+                "explain": L(
+                  "The survey also looks at village facilities like roads, electricity, water, and schools, because these affect how easy it will be to run a collection point there.",
+                  "सर्वेक्षण सड़कों, बिजली, पानी, और स्कूलों जैसी गाँव की सुविधाओं को भी देखता है, क्योंकि ये प्रभावित करते हैं कि वहाँ संग्रह केंद्र चलाना कितना आसान होगा।"
+                )
               }
             ]
           },
           {
             "id": "t-siting-criteria",
-            "title": "Deciding Where to Place the MPP",
+            "title": L("Deciding Where to Place the MPP", "MPP कहाँ रखना है यह तय करना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "From Survey to Decision",
-                "html": "Once several villages have been surveyed, the numbers are compared to work out how much milk could realistically be collected from the whole area. This decides both the location and the size of the facility needed."
+                "heading": L("From Survey to Decision", "सर्वेक्षण से फैसले तक"),
+                "html": L(
+                  "Once several villages have been surveyed, the numbers are compared to work out how much milk could realistically be collected from the whole area. This decides both the location and the size of the facility needed.",
+                  "कई गाँवों का सर्वेक्षण हो जाने के बाद, यह पता लगाने के लिए आँकड़ों की तुलना की जाती है कि पूरे क्षेत्र से वास्तव में कितना दूध इकट्ठा हो सकता है। यह जगह और ज़रूरी सुविधा का आकार दोनों तय करता है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Enough Farmers",
-                    "text": "The area should have enough milk-animal households to make setting up a collection point worthwhile."
+                    "label": L("Enough Farmers", "पर्याप्त किसान"),
+                    "text": L(
+                      "The area should have enough milk-animal households to make setting up a collection point worthwhile.",
+                      "क्षेत्र में संग्रह केंद्र बनाना सार्थक करने के लिए पर्याप्त दुधारू-पशु परिवार होने चाहिए।"
+                    )
                   },
                   {
-                    "label": "Enough Milk Volume",
-                    "text": "The expected surplus milk (after each household's own use) must be large enough to justify running a chilling facility."
+                    "label": L("Enough Milk Volume", "पर्याप्त दूध मात्रा"),
+                    "text": L(
+                      "The expected surplus milk (after each household's own use) must be large enough to justify running a chilling facility.",
+                      "अपेक्षित अतिरिक्त दूध (हर परिवार के अपने उपयोग के बाद) इतना बड़ा होना चाहिए कि चिलिंग सुविधा चलाना उचित लगे।"
+                    )
                   },
                   {
-                    "label": "Distance Between Villages",
-                    "text": "Village-to-village distance is measured so a realistic collection route can connect them to the MPP."
+                    "label": L("Distance Between Villages", "गाँवों के बीच की दूरी"),
+                    "text": L(
+                      "Village-to-village distance is measured so a realistic collection route can connect them to the MPP.",
+                      "गाँव-से-गाँव की दूरी मापी जाती है ताकि एक व्यावहारिक संग्रह मार्ग उन्हें MPP से जोड़ सके।"
+                    )
                   },
                   {
-                    "label": "Easy Access",
-                    "text": "The site must be reachable by vehicle, so milk cans can be collected and moved out quickly, every day."
+                    "label": L("Easy Access", "आसान पहुँच"),
+                    "text": L(
+                      "The site must be reachable by vehicle, so milk cans can be collected and moved out quickly, every day.",
+                      "जगह तक वाहन से पहुँचना ज़रूरी है, ताकि दूध के कैन हर दिन जल्दी इकट्ठा और बाहर भेजे जा सकें।"
+                    )
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Choosing a Cluster BMC or an MCC",
-                "html": "Based on how much milk is available, the organisation decides what kind of chilling setup fits best — a smaller Cluster BMC, or a bigger MCC."
+                "heading": L("Choosing a Cluster BMC or an MCC", "क्लस्टर BMC या MCC चुनना"),
+                "html": L(
+                  "Based on how much milk is available, the organisation decides what kind of chilling setup fits best — a smaller Cluster BMC, or a bigger MCC.",
+                  "कितना दूध उपलब्ध है, इसके आधार पर संगठन तय करता है कि कौन-सी चिलिंग व्यवस्था सबसे उपयुक्त है — एक छोटा क्लस्टर BMC, या एक बड़ा MCC।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "BMC (Bulk Milk Cooler)",
-                "meaning": "A machine that cools milk quickly and keeps it fresh until it is picked up. A Cluster BMC serves a group of nearby villages together."
+                "term": L("BMC (Bulk Milk Cooler)", "BMC (बल्क मिल्क कूलर)"),
+                "meaning": L(
+                  "A machine that cools milk quickly and keeps it fresh until it is picked up. A Cluster BMC serves a group of nearby villages together.",
+                  "एक मशीन जो दूध को जल्दी ठंडा करती है और उठाए जाने तक ताज़ा रखती है। एक क्लस्टर BMC पास के गाँवों के एक समूह की एक साथ सेवा करता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MCC (Milk Chilling Centre)",
-                "meaning": "A bigger centre that chills milk coming in from many villages, before it is sent onward to the dairy plant."
+                "term": L("MCC (Milk Chilling Centre)", "MCC (मिल्क चिलिंग सेंटर)"),
+                "meaning": L(
+                  "A bigger centre that chills milk coming in from many villages, before it is sent onward to the dairy plant.",
+                  "एक बड़ा केंद्र जो कई गाँवों से आने वाले दूध को ठंडा करता है, इससे पहले कि यह डेयरी प्लांट की ओर आगे भेजा जाए।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Think About It",
-                "text": "If government census data shows an area has thousands of milk animals but very few organised dairy buyers already working there, that is a good sign for opening a new MPP nearby."
+                "heading": L("Think About It", "इस पर सोचिए"),
+                "text": L(
+                  "If government census data shows an area has thousands of milk animals but very few organised dairy buyers already working there, that is a good sign for opening a new MPP nearby.",
+                  "अगर सरकारी जनगणना डेटा दिखाता है कि एक क्षेत्र में हज़ारों दुधारू पशु हैं लेकिन वहाँ पहले से बहुत कम संगठित डेयरी खरीदार काम कर रहे हैं, तो यह पास में एक नया MPP खोलने का अच्छा संकेत है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What mainly decides whether an area gets a smaller Cluster BMC or a bigger MCC?",
+                "q": L("What mainly decides whether an area gets a smaller Cluster BMC or a bigger MCC?", "मुख्य रूप से क्या तय करता है कि किसी क्षेत्र को छोटा क्लस्टर BMC मिले या बड़ा MCC?"),
                 "options": [
-                  "The colour of the milk cans used",
-                  "How much milk is available in that area",
-                  "The number of Sahayaks already trained",
-                  "The distance to the nearest city"
+                  L("The colour of the milk cans used", "उपयोग किए गए दूध के कैन का रंग"),
+                  L("How much milk is available in that area", "उस क्षेत्र में कितना दूध उपलब्ध है"),
+                  L("The number of Sahayaks already trained", "पहले से प्रशिक्षित सहायकों की संख्या"),
+                  L("The distance to the nearest city", "निकटतम शहर की दूरी")
                 ],
                 "answer": 1,
-                "explain": "The amount of milk available in the area decides whether a smaller Cluster BMC or a bigger MCC is the right fit."
+                "explain": L(
+                  "The amount of milk available in the area decides whether a smaller Cluster BMC or a bigger MCC is the right fit.",
+                  "क्षेत्र में उपलब्ध दूध की मात्रा तय करती है कि छोटा क्लस्टर BMC सही है या बड़ा MCC।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Village-to-village distance is measured mainly so a realistic milk collection route can be planned.",
+                "q": L(
+                  "Village-to-village distance is measured mainly so a realistic milk collection route can be planned.",
+                  "गाँव-से-गाँव की दूरी मुख्य रूप से इसलिए मापी जाती है ताकि एक व्यावहारिक दूध संग्रह मार्ग की योजना बनाई जा सके।"
+                ),
                 "answer": true,
-                "explain": "Distance between villages helps decide how they can be linked together into one practical collection route."
+                "explain": L(
+                  "Distance between villages helps decide how they can be linked together into one practical collection route.",
+                  "गाँवों के बीच की दूरी यह तय करने में मदद करती है कि उन्हें एक व्यावहारिक संग्रह मार्ग में कैसे जोड़ा जाए।"
+                )
               }
             ]
           }
@@ -6247,166 +6325,241 @@ export const MODULES = [
             {
               "topicId": "t-village-survey",
               "type": "mcq",
-              "q": "What does an MAH survey mainly try to find out?",
+              "q": L("What does an MAH survey mainly try to find out?", "एक MAH सर्वेक्षण मुख्य रूप से क्या पता लगाने की कोशिश करता है?"),
               "options": [
-                "How many schools are in the village",
-                "How many milk animals, how much milk, and where it is currently sold",
-                "The names of every child in the household",
-                "The colour of each family's roof"
+                L("How many schools are in the village", "गाँव में कितने स्कूल हैं"),
+                L(
+                  "How many milk animals, how much milk, and where it is currently sold",
+                  "कितने दुधारू पशु हैं, कितना दूध है, और यह अभी कहाँ बेचा जाता है"
+                ),
+                L("The names of every child in the household", "परिवार के हर बच्चे का नाम"),
+                L("The colour of each family's roof", "हर परिवार की छत का रंग")
               ],
               "answer": 1,
-              "explain": "The MAH survey collects facts about milk animals, milk production and surplus, and where the milk is currently sold."
+              "explain": L(
+                "The MAH survey collects facts about milk animals, milk production and surplus, and where the milk is currently sold.",
+                "MAH सर्वेक्षण दुधारू पशुओं, दूध उत्पादन और अतिरिक्त, और दूध अभी कहाँ बेचा जाता है, इसके बारे में तथ्य इकट्ठा करता है।"
+              )
             },
             {
               "topicId": "t-siting-criteria",
               "type": "truefalse",
-              "q": "The expected surplus milk in an area is one of the things considered before setting up a chilling facility there.",
+              "q": L(
+                "The expected surplus milk in an area is one of the things considered before setting up a chilling facility there.",
+                "किसी क्षेत्र में अपेक्षित अतिरिक्त दूध वहाँ चिलिंग सुविधा स्थापित करने से पहले विचार की जाने वाली बातों में से एक है।"
+              ),
               "answer": true,
-              "explain": "Enough surplus milk is needed to justify the cost of running a chilling facility in that area."
+              "explain": L(
+                "Enough surplus milk is needed to justify the cost of running a chilling facility in that area.",
+                "उस क्षेत्र में चिलिंग सुविधा चलाने की लागत को उचित ठहराने के लिए पर्याप्त अतिरिक्त दूध चाहिए।"
+              )
             }
           ]
         }
       },
       {
         "id": "m8-l2",
-        "title": "Setting Up the MPP, Step by Step",
+        "title": L("Setting Up the MPP, Step by Step", "MPP स्थापित करना, चरण दर चरण"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Setting Up the MPP, Step by Step",
-            "text": "Once a location looks promising, there is still a clear sequence of steps to follow — and a village and a Sahayak to choose — before the MPP can actually open."
+            "heading": L("Setting Up the MPP, Step by Step", "MPP स्थापित करना, चरण दर चरण"),
+            "text": L(
+              "Once a location looks promising, there is still a clear sequence of steps to follow — and a village and a Sahayak to choose — before the MPP can actually open.",
+              "एक जगह अच्छी लगने के बाद भी, MPP असल में खुलने से पहले अभी भी अनुसरण करने के लिए स्पष्ट चरणों का क्रम है — और एक गाँव व एक सहायक चुनना बाकी है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-setup-steps",
-            "title": "The Steps to Set Up an MPP",
+            "title": L("The Steps to Set Up an MPP", "MPP स्थापित करने के चरण"),
             "teach": [
               {
                 "type": "text",
-                "heading": "From Data to a Working MPP",
-                "html": "Setting up a new MPP or chilling facility follows a clear order: gather background information, check it on the ground, decide the setup needed, find someone to build it, and then follow up until it is running."
+                "heading": L("From Data to a Working MPP", "डेटा से एक काम करने वाले MPP तक"),
+                "html": L(
+                  "Setting up a new MPP or chilling facility follows a clear order: gather background information, check it on the ground, decide the setup needed, find someone to build it, and then follow up until it is running.",
+                  "एक नया MPP या चिलिंग सुविधा स्थापित करना एक स्पष्ट क्रम का पालन करता है: पृष्ठभूमि जानकारी इकट्ठा करें, इसे ज़मीन पर जाँचें, ज़रूरी व्यवस्था तय करें, इसे बनाने वाला कोई ढूँढें, फिर चलने तक अनुवर्तन करें।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "1. Gather Data",
-                    "text": "Collect secondary data — government census, survey reports, and information on any organised buyers already working in the area."
+                    "label": L("1. Gather Data", "1. डेटा इकट्ठा करें"),
+                    "text": L(
+                      "Collect secondary data — government census, survey reports, and information on any organised buyers already working in the area.",
+                      "द्वितीयक डेटा इकट्ठा करें — सरकारी जनगणना, सर्वेक्षण रिपोर्ट, और क्षेत्र में पहले से काम कर रहे किसी भी संगठित खरीदार की जानकारी।"
+                    )
                   },
                   {
-                    "label": "2. Visit and Validate",
-                    "text": "Visit the villages in person to check that the data matches what is really happening on the ground."
+                    "label": L("2. Visit and Validate", "2. दौरा करें और सत्यापित करें"),
+                    "text": L(
+                      "Visit the villages in person to check that the data matches what is really happening on the ground.",
+                      "यह जाँचने के लिए गाँवों का खुद दौरा करें कि डेटा उससे मेल खाता है जो असल में ज़मीन पर हो रहा है।"
+                    )
                   },
                   {
-                    "label": "3. Decide the Setup",
-                    "text": "Based on milk availability, decide the chilling mode (Cluster BMC or MCC) and its capacity."
+                    "label": L("3. Decide the Setup", "3. व्यवस्था तय करें"),
+                    "text": L(
+                      "Based on milk availability, decide the chilling mode (Cluster BMC or MCC) and its capacity.",
+                      "दूध की उपलब्धता के आधार पर, चिलिंग मोड (क्लस्टर BMC या MCC) और उसकी क्षमता तय करें।"
+                    )
                   },
                   {
-                    "label": "4. Appoint and Follow Up",
-                    "text": "Identify a party to build the facility, issue a Letter of Intent with a timeline, then follow up regularly until it opens."
+                    "label": L("4. Appoint and Follow Up", "4. नियुक्त करें और अनुवर्तन करें"),
+                    "text": L(
+                      "Identify a party to build the facility, issue a Letter of Intent with a timeline, then follow up regularly until it opens.",
+                      "सुविधा बनाने के लिए एक पक्ष की पहचान करें, समय-सीमा के साथ एक इरादा पत्र जारी करें, फिर खुलने तक नियमित रूप से अनुवर्तन करें।"
+                    )
                   }
                 ]
               },
               {
                 "type": "glossary",
-                "term": "Secondary Data",
-                "meaning": "Information that is already collected by someone else — like a government survey — that gives you a starting point before you visit a village yourself."
+                "term": L("Secondary Data", "द्वितीयक डेटा (Secondary Data)"),
+                "meaning": L(
+                  "Information that is already collected by someone else — like a government survey — that gives you a starting point before you visit a village yourself.",
+                  "वह जानकारी जो किसी और ने पहले से इकट्ठा की है — जैसे एक सरकारी सर्वेक्षण — जो आपको खुद गाँव जाने से पहले एक शुरुआती बिंदु देती है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "LOI (Letter of Intent)",
-                "meaning": "A written letter stating that the organisation intends to work with a certain party — a person or a company — to build or run the facility, along with an agreed timeline."
+                "term": L("LOI (Letter of Intent)", "LOI (इरादा पत्र)"),
+                "meaning": L(
+                  "A written letter stating that the organisation intends to work with a certain party — a person or a company — to build or run the facility, along with an agreed timeline.",
+                  "एक लिखित पत्र जिसमें बताया जाता है कि संगठन एक तय समय-सीमा के साथ सुविधा बनाने या चलाने के लिए किसी खास पक्ष — व्यक्ति या कंपनी — के साथ काम करने का इरादा रखता है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Don't Skip the Follow-Up",
-                "text": "Issuing the LOI is not the end of the job. Someone must regularly check progress, so the chilling facility opens on time — not months late."
+                "heading": L("Don't Skip the Follow-Up", "अनुवर्तन न छोड़ें"),
+                "text": L(
+                  "Issuing the LOI is not the end of the job. Someone must regularly check progress, so the chilling facility opens on time — not months late.",
+                  "LOI जारी करना काम का अंत नहीं है। किसी को नियमित रूप से प्रगति जाँचनी चाहिए, ताकि चिलिंग सुविधा समय पर खुले — महीनों देरी से नहीं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What usually happens right after secondary data is gathered?",
+                "q": L("What usually happens right after secondary data is gathered?", "द्वितीयक डेटा इकट्ठा करने के तुरंत बाद आमतौर पर क्या होता है?"),
                 "options": [
-                  "The MPP opens immediately",
-                  "Villages are visited in person to check the data on the ground",
-                  "Milk rates are announced",
-                  "A health camp is held"
+                  L("The MPP opens immediately", "MPP तुरंत खुल जाता है"),
+                  L("Villages are visited in person to check the data on the ground", "ज़मीन पर डेटा जाँचने के लिए गाँवों का खुद दौरा किया जाता है"),
+                  L("Milk rates are announced", "दूध की दरें घोषित की जाती हैं"),
+                  L("A health camp is held", "एक स्वास्थ्य शिविर आयोजित किया जाता है")
                 ],
                 "answer": 1,
-                "explain": "After gathering secondary data, the next step is visiting villages in person to validate that the information is accurate."
+                "explain": L(
+                  "After gathering secondary data, the next step is visiting villages in person to validate that the information is accurate.",
+                  "द्वितीयक डेटा इकट्ठा करने के बाद, अगला चरण है गाँवों का खुद दौरा करके यह सत्यापित करना कि जानकारी सही है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Once the LOI is issued, no more follow-up is needed.",
+                "q": L("Once the LOI is issued, no more follow-up is needed.", "LOI जारी होने के बाद, आगे किसी अनुवर्तन की ज़रूरत नहीं है।"),
                 "answer": false,
-                "explain": "Regular follow-up after the LOI is issued is essential, so the facility actually opens on time."
+                "explain": L(
+                  "Regular follow-up after the LOI is issued is essential, so the facility actually opens on time.",
+                  "LOI जारी होने के बाद नियमित अनुवर्तन ज़रूरी है, ताकि सुविधा असल में समय पर खुले।"
+                )
               }
             ]
           },
           {
             "id": "t-choosing-sahayak",
-            "title": "Choosing the Village and the Sahayak",
+            "title": L("Choosing the Village and the Sahayak", "गाँव और सहायक चुनना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "The Right Village",
-                "html": "Before finalising anything, a village-level meeting is held with farmers to explain the plan and see how much interest there really is."
+                "heading": L("The Right Village", "सही गाँव"),
+                "html": L(
+                  "Before finalising anything, a village-level meeting is held with farmers to explain the plan and see how much interest there really is.",
+                  "कुछ भी अंतिम रूप देने से पहले, योजना समझाने और यह देखने के लिए कि असल में कितनी दिलचस्पी है, किसानों के साथ एक गाँव-स्तरीय बैठक की जाती है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Choosing the MPP's Exact Location Within the Village",
-                "html": "Even after a village is chosen, the exact spot for the MPP matters. It should be <b>convenient</b> for the most members, easy for the milk-collection vehicle to reach, and already <b>clean and tidy</b>."
+                "heading": L("Choosing the MPP's Exact Location Within the Village", "गाँव के भीतर MPP की सही जगह चुनना"),
+                "html": L(
+                  "Even after a village is chosen, the exact spot for the MPP matters. It should be <b>convenient</b> for the most members, easy for the milk-collection vehicle to reach, and already <b>clean and tidy</b>.",
+                  "एक गाँव चुनने के बाद भी, MPP की सही जगह मायने रखती है। यह ज़्यादातर सदस्यों के लिए <b>सुविधाजनक</b>, दूध-संग्रह वाहन के लिए आसान पहुँच वाली, और पहले से <b>साफ़-सुथरी</b> होनी चाहिए।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Convenient Location",
-                    "text": "Easy to reach for the largest possible number of member farmers, not just a few living nearby."
+                    "label": L("Convenient Location", "सुविधाजनक जगह"),
+                    "text": L(
+                      "Easy to reach for the largest possible number of member farmers, not just a few living nearby.",
+                      "सिर्फ पास रहने वाले कुछ किसानों के लिए नहीं, बल्कि ज़्यादा से ज़्यादा सदस्य किसानों के लिए आसान पहुँच।"
+                    )
                   },
                   {
-                    "label": "Vehicle Access",
-                    "text": "The inward vehicle that collects milk must be able to reach and turn around easily, even early in the morning."
+                    "label": L("Vehicle Access", "वाहन पहुँच"),
+                    "text": L(
+                      "The inward vehicle that collects milk must be able to reach and turn around easily, even early in the morning.",
+                      "दूध इकट्ठा करने वाला वाहन आसानी से पहुँच और घूम सके, सुबह जल्दी भी।"
+                    )
                   },
                   {
-                    "label": "Clean & Tidy",
-                    "text": "The site should already be clean, because milk is a food product and hygiene starts with the location itself."
+                    "label": L("Clean & Tidy", "साफ़ और सुव्यवस्थित"),
+                    "text": L(
+                      "The site should already be clean, because milk is a food product and hygiene starts with the location itself.",
+                      "जगह पहले से साफ़ होनी चाहिए, क्योंकि दूध एक खाद्य उत्पाद है और स्वच्छता जगह से ही शुरू होती है।"
+                    )
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Finding the Right Sahayak",
-                "html": "Along with choosing the location, the organisation looks for a good <b>Sahayak candidate</b> from the village — someone locally trusted, available both morning and evening, honest, and comfortable talking with people."
+                "heading": L("Finding the Right Sahayak", "सही सहायक ढूँढना"),
+                "html": L(
+                  "Along with choosing the location, the organisation looks for a good <b>Sahayak candidate</b> from the village — someone locally trusted, available both morning and evening, honest, and comfortable talking with people.",
+                  "जगह चुनने के साथ-साथ, संगठन गाँव से एक अच्छे <b>सहायक उम्मीदवार</b> की तलाश करता है — कोई स्थानीय रूप से भरोसेमंद, सुबह-शाम दोनों समय उपलब्ध, ईमानदार, और लोगों से बात करने में सहज।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Structure of a Good MPP",
-                "text": "A well-built MPP has accessible, well-designed infrastructure; a clean and hygienic environment; and clear communication — for example, a notice board showing that day's milk rate, so every farmer can see it for themselves."
+                "heading": L("Structure of a Good MPP", "एक अच्छे MPP की संरचना"),
+                "text": L(
+                  "A well-built MPP has accessible, well-designed infrastructure; a clean and hygienic environment; and clear communication — for example, a notice board showing that day's milk rate, so every farmer can see it for themselves.",
+                  "एक अच्छी तरह बना MPP में सुलभ, अच्छी तरह डिज़ाइन किया गया ढाँचा; एक साफ़ और स्वच्छ माहौल; और स्पष्ट संचार होता है — जैसे, उस दिन की दूध दर दिखाने वाला एक नोटिस बोर्ड, ताकि हर किसान इसे खुद देख सके।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which of these is NOT one of the location criteria mentioned for placing an MPP?",
+                "q": L("Which of these is NOT one of the location criteria mentioned for placing an MPP?", "MPP रखने के लिए बताए गए स्थान मानदंडों में से इनमें से कौन-सा नहीं है?"),
                 "options": [
-                  "Convenient for the maximum number of members",
-                  "Easy access for the inward vehicle",
-                  "Clean and tidy locality",
-                  "Located exactly at the centre of the district"
+                  L("Convenient for the maximum number of members", "अधिकतम सदस्यों के लिए सुविधाजनक"),
+                  L("Easy access for the inward vehicle", "आने वाले वाहन के लिए आसान पहुँच"),
+                  L("Clean and tidy locality", "साफ़ और सुव्यवस्थित इलाका"),
+                  L("Located exactly at the centre of the district", "ठीक ज़िले के केंद्र में स्थित")
                 ],
                 "answer": 3,
-                "explain": "The criteria mentioned are convenience for members, vehicle access, and cleanliness — not distance to the district centre."
+                "explain": L(
+                  "The criteria mentioned are convenience for members, vehicle access, and cleanliness — not distance to the district centre.",
+                  "बताए गए मानदंड हैं सदस्यों के लिए सुविधा, वाहन पहुँच, और स्वच्छता — ज़िला केंद्र की दूरी नहीं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A village-level meeting with farmers is held to explain the plan before finalising an MPP in that village.",
+                "q": L(
+                  "A village-level meeting with farmers is held to explain the plan before finalising an MPP in that village.",
+                  "उस गाँव में MPP को अंतिम रूप देने से पहले योजना समझाने के लिए किसानों के साथ एक गाँव-स्तरीय बैठक की जाती है।"
+                ),
                 "answer": true,
-                "explain": "A village-level meeting helps explain the plan to farmers and gauge their interest before the MPP is finalised."
+                "explain": L(
+                  "A village-level meeting helps explain the plan to farmers and gauge their interest before the MPP is finalised.",
+                  "एक गाँव-स्तरीय बैठक MPP को अंतिम रूप देने से पहले किसानों को योजना समझाने और उनकी दिलचस्पी नापने में मदद करती है।"
+                )
               }
             ]
           }
@@ -6417,146 +6570,206 @@ export const MODULES = [
             {
               "topicId": "t-setup-steps",
               "type": "mcq",
-              "q": "What is an LOI?",
+              "q": L("What is an LOI?", "LOI क्या है?"),
               "options": [
-                "A type of milk can",
-                "A written letter stating intent to work with a party, with a timeline",
-                "A government census report",
-                "A type of chilling machine"
+                L("A type of milk can", "दूध के कैन का एक प्रकार"),
+                L("A written letter stating intent to work with a party, with a timeline", "एक तय समय-सीमा के साथ किसी पक्ष के साथ काम करने का इरादा बताने वाला लिखित पत्र"),
+                L("A government census report", "एक सरकारी जनगणना रिपोर्ट"),
+                L("A type of chilling machine", "चिलिंग मशीन का एक प्रकार")
               ],
               "answer": 1,
-              "explain": "An LOI (Letter of Intent) is a written statement of intent to work with a chosen party, along with an agreed timeline."
+              "explain": L(
+                "An LOI (Letter of Intent) is a written statement of intent to work with a chosen party, along with an agreed timeline.",
+                "एक LOI (इरादा पत्र) एक तय समय-सीमा के साथ चुने गए पक्ष के साथ काम करने के इरादे का लिखित बयान है।"
+              )
             },
             {
               "topicId": "t-choosing-sahayak",
               "type": "mcq",
-              "q": "Besides being locally trusted, what else matters when choosing a Sahayak candidate?",
+              "q": L("Besides being locally trusted, what else matters when choosing a Sahayak candidate?", "स्थानीय रूप से भरोसेमंद होने के अलावा, सहायक उम्मीदवार चुनते समय और क्या मायने रखता है?"),
               "options": [
-                "Being available both morning and evening, and comfortable with people",
-                "Owning the most animals in the village",
-                "Being related to the Management Committee",
-                "Living farthest from the MPP site"
+                L("Being available both morning and evening, and comfortable with people", "सुबह-शाम दोनों समय उपलब्ध होना, और लोगों के साथ सहज होना"),
+                L("Owning the most animals in the village", "गाँव में सबसे ज़्यादा पशु रखना"),
+                L("Being related to the Management Committee", "प्रबंधन समिति से रिश्तेदार होना"),
+                L("Living farthest from the MPP site", "MPP जगह से सबसे दूर रहना")
               ],
               "answer": 0,
-              "explain": "A good Sahayak candidate should be locally trusted, available at both collection times, honest, and good with people."
+              "explain": L(
+                "A good Sahayak candidate should be locally trusted, available at both collection times, honest, and good with people.",
+                "एक अच्छा सहायक उम्मीदवार स्थानीय रूप से भरोसेमंद, दोनों संग्रह समय पर उपलब्ध, ईमानदार, और लोगों के साथ अच्छा होना चाहिए।"
+              )
             }
           ]
         }
       },
       {
         "id": "m8-l3",
-        "title": "Planning Milk Collection Routes",
+        "title": L("Planning Milk Collection Routes", "दूध संग्रह मार्गों की योजना बनाना"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Planning Milk Collection Routes",
-            "text": "Once MPPs are set up, milk still has to travel from each village to the chilling centre — fresh, and on time. That is route planning."
+            "heading": L("Planning Milk Collection Routes", "दूध संग्रह मार्गों की योजना बनाना"),
+            "text": L(
+              "Once MPPs are set up, milk still has to travel from each village to the chilling centre — fresh, and on time. That is route planning.",
+              "MPP स्थापित होने के बाद भी, दूध को हर गाँव से चिलिंग सेंटर तक जाना होता है — ताज़ा, और समय पर। यही मार्ग योजना है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-route-goals",
-            "title": "What Good Route Planning Achieves",
+            "title": L("What Good Route Planning Achieves", "अच्छी मार्ग योजना क्या हासिल करती है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Four Things a Good Route Must Do",
-                "html": "A milk collection route is not just about connecting villages by road. A good route is planned to achieve four things together."
+                "heading": L("Four Things a Good Route Must Do", "चार चीज़ें जो एक अच्छे मार्ग को करनी चाहिए"),
+                "html": L(
+                  "A milk collection route is not just about connecting villages by road. A good route is planned to achieve four things together.",
+                  "एक दूध संग्रह मार्ग सिर्फ सड़क से गाँवों को जोड़ने की बात नहीं है। एक अच्छा मार्ग साथ में चार चीज़ें हासिल करने के लिए योजनाबद्ध होता है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Maintain Milk Quality",
-                    "text": "The shorter and better-planned the journey, the fresher the milk stays by the time it reaches the chilling centre."
+                    "label": L("Maintain Milk Quality", "दूध की गुणवत्ता बनाए रखना"),
+                    "text": L(
+                      "The shorter and better-planned the journey, the fresher the milk stays by the time it reaches the chilling centre.",
+                      "यात्रा जितनी छोटी और बेहतर योजनाबद्ध होगी, चिलिंग सेंटर पहुँचने तक दूध उतना ही ताज़ा रहेगा।"
+                    )
                   },
                   {
-                    "label": "Timely Collection",
-                    "text": "Milk must be picked up at a fixed, predictable time every day, so farmers know exactly when to be ready."
+                    "label": L("Timely Collection", "समय पर संग्रह"),
+                    "text": L(
+                      "Milk must be picked up at a fixed, predictable time every day, so farmers know exactly when to be ready.",
+                      "दूध को हर दिन एक तय, अनुमानित समय पर उठाया जाना चाहिए, ताकि किसान ठीक-ठीक जानें कि कब तैयार रहना है।"
+                    )
                   },
                   {
-                    "label": "Minimise Transport Cost",
-                    "text": "The route should avoid unnecessary distance or repeated trips, saving fuel and vehicle cost."
+                    "label": L("Minimise Transport Cost", "परिवहन लागत कम करना"),
+                    "text": L(
+                      "The route should avoid unnecessary distance or repeated trips, saving fuel and vehicle cost.",
+                      "मार्ग को अनावश्यक दूरी या बार-बार यात्राओं से बचना चाहिए, जिससे ईंधन और वाहन लागत बचे।"
+                    )
                   },
                   {
-                    "label": "Optimal Time at MPP",
-                    "text": "The vehicle should not sit too long at any one MPP, so it can complete the whole route without milk waiting around and losing freshness."
+                    "label": L("Optimal Time at MPP", "MPP पर उचित समय"),
+                    "text": L(
+                      "The vehicle should not sit too long at any one MPP, so it can complete the whole route without milk waiting around and losing freshness.",
+                      "वाहन को किसी एक MPP पर ज़्यादा देर नहीं रुकना चाहिए, ताकि वह पूरा मार्ग बिना दूध को इंतज़ार कराए और ताज़गी खोए बिना पूरा कर सके।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Why This Matters",
-                "text": "Milk starts losing quality soon after it leaves the animal, especially in the heat. A poorly planned route — one that is too long or wastes time — can spoil milk before it even reaches the chilling centre."
+                "heading": L("Why This Matters", "यह क्यों मायने रखता है"),
+                "text": L(
+                  "Milk starts losing quality soon after it leaves the animal, especially in the heat. A poorly planned route — one that is too long or wastes time — can spoil milk before it even reaches the chilling centre.",
+                  "पशु से निकलने के तुरंत बाद दूध की गुणवत्ता कम होने लगती है, खासकर गर्मी में। एक खराब योजनाबद्ध मार्ग — जो बहुत लंबा हो या समय बर्बाद करे — दूध को चिलिंग सेंटर पहुँचने से पहले ही खराब कर सकता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does a route need timely, predictable collection?",
+                "q": L("Why does a route need timely, predictable collection?", "एक मार्ग को समय पर, अनुमानित संग्रह की ज़रूरत क्यों है?"),
                 "options": [
-                  "So the vehicle can visit more villages than planned",
-                  "So farmers know exactly when to be ready with their milk",
-                  "So drivers can take longer breaks",
-                  "It does not really matter"
+                  L("So the vehicle can visit more villages than planned", "ताकि वाहन योजना से ज़्यादा गाँवों का दौरा कर सके"),
+                  L("So farmers know exactly when to be ready with their milk", "ताकि किसान ठीक-ठीक जानें कि अपने दूध के साथ कब तैयार रहना है"),
+                  L("So drivers can take longer breaks", "ताकि ड्राइवर लंबे ब्रेक ले सकें"),
+                  L("It does not really matter", "इससे असल में कोई फ़र्क नहीं पड़ता")
                 ],
                 "answer": 1,
-                "explain": "A fixed, predictable collection time lets farmers plan around it and have their milk ready when the vehicle arrives."
+                "explain": L(
+                  "A fixed, predictable collection time lets farmers plan around it and have their milk ready when the vehicle arrives.",
+                  "एक तय, अनुमानित संग्रह समय किसानों को उसके अनुसार योजना बनाने और वाहन आने पर दूध तैयार रखने देता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A vehicle spending too long at one MPP can cause milk collected earlier on the route to lose freshness.",
+                "q": L(
+                  "A vehicle spending too long at one MPP can cause milk collected earlier on the route to lose freshness.",
+                  "एक वाहन का किसी एक MPP पर ज़्यादा देर रुकना मार्ग में पहले इकट्ठा किए गए दूध की ताज़गी खोने का कारण बन सकता है।"
+                ),
                 "answer": true,
-                "explain": "Time adds up along the whole route. Delays at any one stop can affect how fresh the milk collected earlier still is by the end."
+                "explain": L(
+                  "Time adds up along the whole route. Delays at any one stop can affect how fresh the milk collected earlier still is by the end.",
+                  "पूरे मार्ग में समय जुड़ता जाता है। किसी एक पड़ाव पर देरी असर डाल सकती है कि पहले इकट्ठा दूध अंत तक कितना ताज़ा रहता है।"
+                )
               }
             ]
           },
           {
             "id": "t-route-practice",
-            "title": "Planning a Route in Practice",
+            "title": L("Planning a Route in Practice", "व्यवहार में एक मार्ग की योजना बनाना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Using the Village Survey",
-                "html": "Once village-to-village distances are collected during the survey, the route can actually be planned. A road map of the whole area, showing villages and the BMC/MCC positions, is prepared so the sequence of stops is clear."
+                "heading": L("Using the Village Survey", "गाँव सर्वेक्षण का उपयोग करना"),
+                "html": L(
+                  "Once village-to-village distances are collected during the survey, the route can actually be planned. A road map of the whole area, showing villages and the BMC/MCC positions, is prepared so the sequence of stops is clear.",
+                  "सर्वेक्षण के दौरान गाँव-से-गाँव की दूरियाँ इकट्ठा होने के बाद, असल में मार्ग की योजना बनाई जा सकती है। पूरे क्षेत्र का एक सड़क मानचित्र, जिसमें गाँव और BMC/MCC की स्थिति दिखाई गई हो, तैयार किया जाता है ताकि पड़ावों का क्रम स्पष्ट हो।"
+                )
               },
               {
                 "type": "example",
-                "heading": "A Simple Route Example",
-                "text": "Villages A, B and C sit on the same road, about 3 km apart from each other. Village D is 6 km off the main road, with far fewer farmers. Instead of driving out to D first and doubling back, the route runs A, then B, then C in a straight line — and D is only added if there is enough milk there to be worth the extra time, or it gets a separate, smaller route."
+                "heading": L("A Simple Route Example", "एक सरल मार्ग उदाहरण"),
+                "text": L(
+                  "Villages A, B and C sit on the same road, about 3 km apart from each other. Village D is 6 km off the main road, with far fewer farmers. Instead of driving out to D first and doubling back, the route runs A, then B, then C in a straight line — and D is only added if there is enough milk there to be worth the extra time, or it gets a separate, smaller route.",
+                  "गाँव A, B और C एक ही सड़क पर हैं, एक-दूसरे से लगभग 3 किमी दूर। गाँव D मुख्य सड़क से 6 किमी हटकर है, जहाँ किसान कहीं कम हैं। पहले D तक जाकर वापस लौटने के बजाय, मार्ग A, फिर B, फिर C में सीधी रेखा में चलता है — और D को तभी जोड़ा जाता है जब वहाँ इतना दूध हो कि अतिरिक्त समय उचित लगे, या उसे एक अलग, छोटा मार्ग दिया जाता है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Balancing Speed and Coverage",
-                "html": "Whoever plans the route has to balance two things: covering as many villages as possible, without making the total trip so long that milk collected first spoils before the vehicle even reaches the chilling centre."
+                "heading": L("Balancing Speed and Coverage", "गति और कवरेज में संतुलन"),
+                "html": L(
+                  "Whoever plans the route has to balance two things: covering as many villages as possible, without making the total trip so long that milk collected first spoils before the vehicle even reaches the chilling centre.",
+                  "जो कोई भी मार्ग की योजना बनाता है उसे दो चीज़ों में संतुलन बनाना होता है: ज़्यादा से ज़्यादा गाँवों को कवर करना, बिना कुल यात्रा को इतना लंबा बनाए कि पहले इकट्ठा दूध वाहन के चिलिंग सेंटर पहुँचने से पहले ही खराब हो जाए।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Review Routes Regularly",
-                "text": "As farmers join or leave, or milk volume in a village grows, routes should be reviewed and adjusted. A route planned once does not have to stay fixed forever."
+                "heading": L("Review Routes Regularly", "मार्गों की नियमित समीक्षा करें"),
+                "text": L(
+                  "As farmers join or leave, or milk volume in a village grows, routes should be reviewed and adjusted. A route planned once does not have to stay fixed forever.",
+                  "जैसे-जैसे किसान जुड़ते या छोड़ते हैं, या गाँव में दूध की मात्रा बढ़ती है, मार्गों की समीक्षा और समायोजन होना चाहिए। एक बार बनाया गया मार्ग हमेशा के लिए तय नहीं रहना चाहिए।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "In the route example, why is village D only added if it has enough milk, or given a separate route?",
+                "q": L(
+                  "In the route example, why is village D only added if it has enough milk, or given a separate route?",
+                  "मार्ग उदाहरण में, गाँव D को तभी क्यों जोड़ा जाता है जब उसके पास पर्याप्त दूध हो, या उसे अलग मार्ग क्यों दिया जाता है?"
+                ),
                 "options": [
-                  "Because D has no farmers at all",
-                  "Because visiting D first would mean doubling back, adding time to the whole route",
-                  "Because D does not want an MPP",
-                  "Because D is closer than A, B and C"
+                  L("Because D has no farmers at all", "क्योंकि D में बिल्कुल कोई किसान नहीं है"),
+                  L(
+                    "Because visiting D first would mean doubling back, adding time to the whole route",
+                    "क्योंकि पहले D जाने का मतलब होगा वापस लौटना, जिससे पूरे मार्ग में समय बढ़ेगा"
+                  ),
+                  L("Because D does not want an MPP", "क्योंकि D को MPP नहीं चाहिए"),
+                  L("Because D is closer than A, B and C", "क्योंकि D, A, B और C से ज़्यादा करीब है")
                 ],
                 "answer": 1,
-                "explain": "Village D is off the main road, so reaching it means extra distance and doubling back — worth doing only if there is enough milk to justify the added time."
+                "explain": L(
+                  "Village D is off the main road, so reaching it means extra distance and doubling back — worth doing only if there is enough milk to justify the added time.",
+                  "गाँव D मुख्य सड़क से हटकर है, इसलिए वहाँ पहुँचने का मतलब है अतिरिक्त दूरी और वापस लौटना — यह तभी उचित है जब अतिरिक्त समय को उचित ठहराने लायक पर्याप्त दूध हो।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Once a milk route is planned, it should never be changed again.",
+                "q": L("Once a milk route is planned, it should never be changed again.", "एक बार दूध मार्ग की योजना बन जाने के बाद, इसे फिर कभी नहीं बदलना चाहिए।"),
                 "answer": false,
-                "explain": "Routes should be reviewed and adjusted over time, as the number of farmers or the amount of milk in a village changes."
+                "explain": L(
+                  "Routes should be reviewed and adjusted over time, as the number of farmers or the amount of milk in a village changes.",
+                  "समय के साथ मार्गों की समीक्षा और समायोजन होना चाहिए, जैसे-जैसे किसानों की संख्या या गाँव में दूध की मात्रा बदलती है।"
+                )
               }
             ]
           }
@@ -6568,22 +6781,31 @@ export const MODULES = [
             {
               "topicId": "t-route-goals",
               "type": "mcq",
-              "q": "Which of these is one of the four goals of good route planning?",
+              "q": L("Which of these is one of the four goals of good route planning?", "इनमें से कौन-सा अच्छी मार्ग योजना के चार लक्ष्यों में से एक है?"),
               "options": [
-                "Maximising transport cost",
-                "Minimising transportation cost",
-                "Making the vehicle wait as long as possible at each stop",
-                "Avoiding timely collection"
+                L("Maximising transport cost", "परिवहन लागत को अधिकतम करना"),
+                L("Minimising transportation cost", "परिवहन लागत को कम करना"),
+                L("Making the vehicle wait as long as possible at each stop", "वाहन को हर पड़ाव पर जितना हो सके ज़्यादा देर रोकना"),
+                L("Avoiding timely collection", "समय पर संग्रह से बचना")
               ],
               "answer": 1,
-              "explain": "Minimising transportation cost is one of the four goals, along with milk quality, timely collection, and optimal time at the MPP."
+              "explain": L(
+                "Minimising transportation cost is one of the four goals, along with milk quality, timely collection, and optimal time at the MPP.",
+                "दूध गुणवत्ता, समय पर संग्रह, और MPP पर उचित समय के साथ, परिवहन लागत कम करना चार लक्ष्यों में से एक है।"
+              )
             },
             {
               "topicId": "t-route-practice",
               "type": "truefalse",
-              "q": "A road map showing villages and BMC/MCC positions helps make the sequence of route stops clear.",
+              "q": L(
+                "A road map showing villages and BMC/MCC positions helps make the sequence of route stops clear.",
+                "गाँवों और BMC/MCC की स्थिति दिखाने वाला एक सड़क मानचित्र मार्ग के पड़ावों के क्रम को स्पष्ट बनाने में मदद करता है।"
+              ),
               "answer": true,
-              "explain": "Preparing a road map of the area, with villages and chilling-point positions marked, helps plan a clear and practical route."
+              "explain": L(
+                "Preparing a road map of the area, with villages and chilling-point positions marked, helps plan a clear and practical route.",
+                "क्षेत्र का एक सड़क मानचित्र तैयार करना, जिसमें गाँव और चिलिंग-पॉइंट की स्थिति चिह्नित हो, एक स्पष्ट और व्यावहारिक मार्ग की योजना बनाने में मदद करता है।"
+              )
             }
           ]
         }
