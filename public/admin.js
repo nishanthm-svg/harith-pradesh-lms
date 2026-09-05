@@ -41,7 +41,7 @@ export function renderAdminDashboard(ctx) {
       <div class="admin-toolbar">
         <input type="text" class="admin-search" id="admin-search" placeholder="${escapeHtml(u("adminSearchPlaceholder"))}" />
         <button type="button" class="btn btn-primary" id="admin-add-btn">${escapeHtml(u("adminAddEmployeeButton"))}</button>
-        <a class="btn btn-outline" href="/api/admin/export.csv">${escapeHtml(u("adminExportCsvButton"))}</a>
+        <button type="button" class="btn btn-outline" id="admin-export-btn">${escapeHtml(u("adminExportCsvButton"))}</button>
       </div>
       <div class="admin-table-wrap" id="admin-table-wrap">
         <div class="admin-empty">…</div>
@@ -91,16 +91,44 @@ function renderRosterTable(employees, ctx) {
   `;
 }
 
+function downloadCsv(employees) {
+  const header = ["Name", "Login ID", "Overall %", "Modules Completed", "Total Modules", "Last Active", "Status"];
+  const rows = employees.map((emp) => [
+    emp.displayName,
+    emp.loginId,
+    emp.overallPercent,
+    emp.modulesCompleted,
+    emp.totalModules,
+    emp.lastActivityAt || "",
+    emp.active ? "Active" : "Inactive",
+  ]);
+  const csv = [header, ...rows]
+    .map((row) => row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(","))
+    .join("\r\n");
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "harith-pradesh-lms-employees.csv";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
 export function wireAdminDashboard(ctx) {
   const { u, navigate } = ctx;
   const wrap = document.getElementById("admin-table-wrap");
   const searchInput = document.getElementById("admin-search");
   const addBtn = document.getElementById("admin-add-btn");
+  const exportBtn = document.getElementById("admin-export-btn");
+  let lastLoaded = [];
 
   async function loadEmployees(search) {
     wrap.innerHTML = `<div class="admin-empty">…</div>`;
     try {
       const res = await api.adminListEmployees(search);
+      lastLoaded = res.employees;
       wrap.innerHTML = renderRosterTable(res.employees, ctx);
       wrap.querySelectorAll("tr[data-employee-id]").forEach((row) => {
         row.addEventListener("click", () => {
@@ -118,6 +146,7 @@ export function wireAdminDashboard(ctx) {
     debounceTimer = setTimeout(() => loadEmployees(searchInput.value.trim()), 250);
   });
   addBtn.addEventListener("click", () => navigate("#/admin/new-employee"));
+  exportBtn.addEventListener("click", () => downloadCsv(lastLoaded));
 
   loadEmployees("");
 }
@@ -180,12 +209,8 @@ function renderDetailContent(data, ctx) {
         <h2>${escapeHtml(u("adminResetPasswordPromptTitle"))}</h2>
         <p class="sub">${escapeHtml(u("adminResetPasswordPromptSub"))}</p>
         <div id="admin-reset-error"></div>
-        <div class="field">
-          <label>${escapeHtml(u("adminTempPasswordLabel"))}</label>
-          <input type="text" id="admin-reset-temp-password" minlength="6" />
-        </div>
         <div class="btn-row">
-          <button type="button" class="btn btn-primary" id="admin-reset-save-btn">${escapeHtml(u("adminResetPasswordButton"))}</button>
+          <button type="button" class="btn btn-primary" id="admin-reset-save-btn">${escapeHtml(u("adminSendResetEmailButton"))}</button>
           <button type="button" class="btn btn-outline" id="admin-reset-cancel-btn">${escapeHtml(u("adminCancelButton"))}</button>
         </div>
       </div>
@@ -222,14 +247,11 @@ export function wireEmployeeDetail(employeeId, ctx) {
       resetForm.style.display = "none";
     });
     resetSave.addEventListener("click", async () => {
-      const pwInput = document.getElementById("admin-reset-temp-password");
       const errorEl = document.getElementById("admin-reset-error");
       errorEl.innerHTML = "";
       try {
-        await api.adminResetPassword(employeeId, pwInput.value);
-        resetForm.style.display = "none";
-        pwInput.value = "";
-        errorEl.innerHTML = `<div class="auth-note">${u("adminSavedNote")}</div>`;
+        const res = await api.adminResetPassword(employeeId);
+        errorEl.innerHTML = `<div class="auth-note">${u("adminResetEmailSentNote", { email: res.email })}</div>`;
       } catch (e) {
         errorEl.innerHTML = `<div class="auth-error">${e.message}</div>`;
       }
@@ -265,7 +287,7 @@ export function renderNewEmployeeForm(ctx) {
           </div>
           <div class="field">
             <label for="new-emp-login">${escapeHtml(u("loginIdLabel"))}</label>
-            <input type="text" id="new-emp-login" required />
+            <input type="email" id="new-emp-login" required />
             <div class="hint">${escapeHtml(u("adminLoginIdHint"))}</div>
           </div>
           <div class="field">
