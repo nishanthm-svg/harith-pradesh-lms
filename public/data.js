@@ -1567,104 +1567,5962 @@ export const MODULES = [
     ],
   },
   {
-    id: "m2",
-    number: 2,
-    title: L("Rationale of MPO", "MPO का औचित्य"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m2",
+    "number": 2,
+    "title": L("Rationale of MPO", "MPO का औचित्य"),
+    "subtitle": "Understand why the MPO model exists, how it is different from the old cooperative system, and how it is organised — from the farmer with a milk can all the way to the Board of Directors.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m2-l1",
+        "title": "Why the MPO Model Was Born",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Why the MPO Model Was Born",
+            "text": "You already know about Amul and cooperatives. Now let's learn about a newer idea — the MPO — and why it came about."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-what-is-mpo",
+            "title": "What Is an MPO?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "A New Word: MPO",
+                "html": "<b>MPO</b> stands for <b>Milk Producer Organisation</b>. It is a company that is formed and owned by dairy farmers themselves — built to collect their milk, pay them fairly, and grow their business together."
+              },
+              {
+                "type": "glossary",
+                "term": "MPO (Milk Producer Organisation)",
+                "meaning": "A company formed and owned by dairy farmers themselves, to collect, test and sell their milk together."
+              },
+              {
+                "type": "glossary",
+                "term": "Producer Company",
+                "meaning": "The legal type of company under Indian law that lets farmers own and run a business together, with special rules that protect them."
+              },
+              {
+                "type": "text",
+                "heading": "Built on What Already Worked",
+                "html": "In Module 1, you learned about the Anand Pattern cooperative — Village Society, District Union, State Federation. An MPO uses the same core idea, farmers owning the business together, but is organised as a newer, more flexible kind of company."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "MPO or MPC?",
+                "text": "You may also hear the word MPC (Milk Producer Company). In dairy work, MPO and MPC usually mean the same thing — a Producer Company that deals in milk."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does MPO stand for?",
+                "options": [
+                  "Milk Producer Organisation",
+                  "Milk Purchase Office",
+                  "Milk Processing Outlet",
+                  "Ministry of Public Operations"
+                ],
+                "answer": 0,
+                "explain": "MPO stands for Milk Producer Organisation — a company owned by the milk farmers themselves."
+              },
+              {
+                "type": "truefalse",
+                "q": "An MPO is a company owned and run by the milk farmers themselves.",
+                "answer": true,
+                "explain": "Yes — an MPO is a farmer-owned company, just like a cooperative, but organised differently."
+              }
+            ]
+          },
+          {
+            "id": "t-why-change",
+            "title": "Why Farmers Needed Something New",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "The World Was Changing",
+                "html": "From the 1990s, India opened its markets to the world. This is called <b>globalisation</b> — when countries trade and do business freely with each other. Big companies, including foreign ones, started selling milk products in India too."
+              },
+              {
+                "type": "glossary",
+                "term": "Globalisation",
+                "meaning": "When countries trade and do business freely with each other, so companies from other countries can also sell in India."
+              },
+              {
+                "type": "text",
+                "heading": "The Old Cooperative Structure Had Limits",
+                "html": "The Village Society → District Union → State Federation model worked very well for decades. But it was built under an old law meant mainly for village societies. It could not always move fast, raise money easily, or make quick business decisions, because many steps needed government approval."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "A Real Problem",
+                "text": "In many states, the government had a strong say in how cooperatives were run — sometimes even in choosing board members or delaying elections. This made it harder for farmer-members to feel it was truly \"their own\" business."
+              },
+              {
+                "type": "text",
+                "heading": "Connecting Farmers to Bigger Markets",
+                "html": "Milk producers needed a way to reach not just their district, but national and even global markets, and to compete with private and multi-national dairy companies — while still keeping farmers as the owners."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is 'globalisation'?",
+                "options": [
+                  "When one village trades only with itself",
+                  "When countries trade and do business freely with each other",
+                  "A new kind of cow breed",
+                  "A government rule against private companies"
+                ],
+                "answer": 1,
+                "explain": "Globalisation means countries trade and do business freely with each other, opening up bigger markets and more competition."
+              },
+              {
+                "type": "truefalse",
+                "q": "The old cooperative structure had no limits and never needed any reform.",
+                "answer": false,
+                "explain": "The old cooperative structure worked well for years, but it moved slowly and needed too much government approval — so a reform was needed."
+              }
+            ]
+          },
+          {
+            "id": "t-alagh-act",
+            "title": "The Law That Made It Possible",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "A Committee Looks for a Solution",
+                "html": "The Government of India set up a committee led by economist <b>Dr. Y. K. Alagh</b> to study the problem, and to recommend a new legal way for farmers to form modern, farmer-owned businesses."
+              },
+              {
+                "type": "glossary",
+                "term": "Committee",
+                "meaning": "A small group of experts asked by the government to study a problem and suggest solutions."
+              },
+              {
+                "type": "timeline",
+                "heading": "From Idea to Law",
+                "items": [
+                  {
+                    "year": "1990s",
+                    "text": "Government sees the need for a new farmer-owned business model."
+                  },
+                  {
+                    "year": "Y. K. Alagh Committee",
+                    "text": "Studies the problem and recommends a new legal framework for producer-owned companies."
+                  },
+                  {
+                    "year": "2002",
+                    "text": "Companies (Amendment) Act, 2002 is passed — it creates the legal idea of a 'Producer Company' for the first time."
+                  },
+                  {
+                    "year": "Today",
+                    "text": "Thousands of Producer Companies, including many MPOs, now operate across India using this law."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "What the Act Achieved",
+                "html": "The new law combined the best of both worlds: the fairness and shared-ownership values of a cooperative, with the flexibility and professional efficiency of a modern company. This is exactly what MPOs use today."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which law first created the legal idea of a 'Producer Company' in India?",
+                "options": [
+                  "Companies (Amendment) Act, 2002",
+                  "Right to Information Act",
+                  "Panchayati Raj Act",
+                  "Cooperative Societies Act"
+                ],
+                "answer": 0,
+                "explain": "The Companies (Amendment) Act, 2002 introduced the concept of Producer Companies in Indian law."
+              },
+              {
+                "type": "mcq",
+                "q": "Who led the committee that recommended this new legal framework?",
+                "options": [
+                  "Dr. Y. K. Alagh",
+                  "Dr. Verghese Kurien",
+                  "Dr. Anil Sharma",
+                  "M. S. Swaminathan"
+                ],
+                "answer": 0,
+                "explain": "Dr. Y. K. Alagh led the committee. (Dr. Verghese Kurien, from Module 1, led NDDB and Amul — a different, earlier chapter of the story.)"
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-what-is-mpo",
+              "type": "mcq",
+              "q": "An MPO is best described as:",
+              "options": [
+                "A government department",
+                "A company formed and owned by dairy farmers themselves",
+                "A private trader who buys milk cheaply",
+                "A bank that only lends to farmers"
+              ],
+              "answer": 1,
+              "explain": "An MPO (Milk Producer Organisation) is a company that dairy farmers form and own together."
+            },
+            {
+              "topicId": "t-why-change",
+              "type": "truefalse",
+              "q": "One reason MPOs were needed was that old cooperatives needed a lot of government approval to make decisions.",
+              "answer": true,
+              "explain": "Yes — old cooperatives often needed government approval, which slowed things down and reduced farmers' sense of ownership."
+            },
+            {
+              "topicId": "t-alagh-act",
+              "type": "mcq",
+              "q": "In what year was the law passed that created 'Producer Companies'?",
+              "options": [
+                "1965",
+                "1991",
+                "2002",
+                "2020"
+              ],
+              "answer": 2,
+              "explain": "The Companies (Amendment) Act was passed in 2002."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m2-l2",
+        "title": "How an MPO Is Different — and Better",
+        "estMinutes": 9,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "How an MPO Is Different — and Better",
+            "text": "Now that you know why MPOs began, let's see exactly what makes them different from the old system — and what that means for the farmers you'll work with."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-old-vs-new",
+            "title": "Cooperative vs Producer Company: What Changed?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Same Goal, Different Tools",
+                "html": "Both the old cooperative and the new MPO (Producer Company) want the same thing: farmers owning their own dairy business together. But they are built differently."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Government's role",
+                    "text": "Old cooperatives needed government approval for many decisions. An MPO is registered under the Companies Act and is run independently by its farmer-members."
+                  },
+                  {
+                    "label": "Raising money",
+                    "text": "It was harder for old cooperatives to raise extra capital. An MPO, like any company, can raise funds more easily while keeping farmers as the owners."
+                  },
+                  {
+                    "label": "Running the business",
+                    "text": "Old cooperatives sometimes mixed daily business decisions with village politics. An MPO separates ownership (farmers) from day-to-day management (trained staff)."
+                  },
+                  {
+                    "label": "Protection from takeover",
+                    "text": "An MPO's shares cannot be bought or sold on the stock market, so outside companies cannot buy control of it — farmers stay in charge."
+                  }
+                ]
+              },
+              {
+                "type": "glossary",
+                "term": "Stock Exchange",
+                "meaning": "A marketplace where shares of big companies are bought and sold by anyone. MPO shares can never be sold there."
+              },
+              {
+                "type": "example",
+                "heading": "Think of It This Way",
+                "text": "Old cooperative: a village committee that needed the government's permission for many things. MPO: an independent company that farmers themselves fully own and control, using modern business rules."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is one key difference between an old cooperative and an MPO?",
+                "options": [
+                  "MPOs are owned by the government",
+                  "MPO shares cannot be traded on the stock exchange, which keeps farmer control safe",
+                  "MPOs are not allowed to sell milk",
+                  "Old cooperatives had no members at all"
+                ],
+                "answer": 1,
+                "explain": "Because MPO shares can't be traded on the stock exchange, outside companies can't buy their way into control — farmers stay the owners."
+              },
+              {
+                "type": "truefalse",
+                "q": "In an MPO, outside investors can easily buy shares on the stock market and take control.",
+                "answer": false,
+                "explain": "MPO (Producer Company) shares cannot be traded on the stock exchange, so this kind of takeover cannot happen."
+              }
+            ]
+          },
+          {
+            "id": "t-legal-features",
+            "title": "The Rules That Protect Farmers",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Who Can Start an MPO?",
+                "html": "The law says an MPO (Producer Company) can be formed by: at least <b>10 individual farmers</b>, OR at least <b>2 farmer institutions</b> (like existing societies), OR a mix of both."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "10 or more farmers",
+                    "text": "Any 10 or more individual milk producers can come together to form a Producer Company."
+                  },
+                  {
+                    "label": "2 or more institutions",
+                    "text": "Two or more existing farmer institutions can also join together to form one."
+                  },
+                  {
+                    "label": "One member, one vote",
+                    "text": "No matter how much milk a member supplies or how many shares they hold, every member gets exactly one vote. This keeps the company fair and democratic."
+                  }
+                ]
+              },
+              {
+                "type": "glossary",
+                "term": "One Member, One Vote",
+                "meaning": "A rule where every member has equal voting power, whether they are a big supplier or a small one."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why This Matters to You",
+                "text": "As a Sahayak, this is important to explain to farmers: joining an MPO means they get a real, equal voice — not just a service they buy."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "How many individual producers are needed, at minimum, to form a Producer Company?",
+                "options": [
+                  "2",
+                  "5",
+                  "10",
+                  "50"
+                ],
+                "answer": 2,
+                "explain": "At least 10 individual producers (or 2 or more producer institutions) can form a Producer Company."
+              },
+              {
+                "type": "mcq",
+                "q": "Under 'one member, one vote', a farmer who supplies more milk gets:",
+                "options": [
+                  "More votes than others",
+                  "Exactly one vote, the same as everyone else",
+                  "No vote at all",
+                  "Extra free shares automatically"
+                ],
+                "answer": 1,
+                "explain": "Every member gets exactly one vote, no matter how much milk they supply — this keeps the MPO democratic."
+              }
+            ]
+          },
+          {
+            "id": "t-farmer-benefits",
+            "title": "What's In It For the Farmer?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Five Reasons Farmers Join an MPO",
+                "html": "An MPO is built around five simple ideas. Together, they explain why farmers choose to join and stay."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Empowering Milk Producers",
+                    "text": "Farmers get training, support and a real say in decisions — not just a place to sell milk."
+                  },
+                  {
+                    "label": "Democratic & Producer Owned",
+                    "text": "The company belongs to its farmer-members, who elect their own representatives."
+                  },
+                  {
+                    "label": "Better Returns & Sustainability",
+                    "text": "Profits go back to farmer-members, and fair pricing means a more reliable, lasting income."
+                  },
+                  {
+                    "label": "Professional Governance",
+                    "text": "Trained managers run daily operations, so the business runs efficiently — while farmers still own and guide it."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Stronger Together",
+                "text": "When many MPOs and cooperatives work well, the whole dairy sector gets stronger — better prices, better quality, and better lives for farming families across India."
+              },
+              {
+                "type": "example",
+                "heading": "Remember Ramesh and Sita?",
+                "text": "Their village's Milk Pooling Point, run by an MPO, tested milk fairly and paid on time, every time. That is these benefits working in real life."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which of these is a real benefit of joining an MPO?",
+                "options": [
+                  "Fair pricing, with profits shared with farmer-members",
+                  "Only the biggest farmers get paid",
+                  "No say in how the business is run",
+                  "Milk is tested in secret with no farmer present"
+                ],
+                "answer": 0,
+                "explain": "MPOs are built to share profits fairly with member-farmers and to test milk openly and honestly."
+              },
+              {
+                "type": "truefalse",
+                "q": "In an MPO, trained professional staff manage daily business while farmers remain the owners.",
+                "answer": true,
+                "explain": "That's the idea of 'Professional Governance' — professionals run daily work, but farmers own and guide the company."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-old-vs-new",
+              "type": "mcq",
+              "q": "Why can't an outside company easily take control of an MPO?",
+              "options": [
+                "MPO shares cannot be traded on the stock exchange",
+                "MPOs are too small to be interesting",
+                "The government owns all MPOs",
+                "MPOs are not allowed to have a Board"
+              ],
+              "answer": 0,
+              "explain": "MPO shares can't be bought and sold on the stock exchange, which protects farmer ownership from outside takeover."
+            },
+            {
+              "topicId": "t-legal-features",
+              "type": "truefalse",
+              "q": "In an MPO, a member with more shares gets more votes than a member with fewer shares.",
+              "answer": false,
+              "explain": "Every member gets exactly one vote under the 'one member, one vote' rule, regardless of shares held."
+            },
+            {
+              "topicId": "t-farmer-benefits",
+              "type": "mcq",
+              "q": "Which pillar of an MPO means daily operations are run by trained managers, not just elected farmers?",
+              "options": [
+                "Professional Governance",
+                "Stronger Cooperatives",
+                "Democratic & Producer Owned",
+                "Empowering Milk Producers"
+              ],
+              "answer": 0,
+              "explain": "Professional Governance means trained staff handle daily operations, while farmer-members still own and guide the company."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m2-l3",
+        "title": "The Structure of an MPO",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "The Structure of an MPO",
+            "text": "How is an MPO actually organised, from a single farmer's milk can all the way up to the company's board? Let's map it out."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-operational-governance",
+            "title": "From Farmer to Board",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Two Layers Where Farmers Have a Voice",
+                "html": "An MPO's structure starts with the farmer and builds upward through two layers: the <b>Operational</b> layer (local village groups) and the <b>Governance</b> layer (company-wide decisions)."
+              },
+              {
+                "type": "text",
+                "heading": "Operational: MPP and MPC",
+                "html": "Every producer member pours milk at their local <b>MPP</b> (Milk Pooling Point). Members at each MPP elect a small committee, sometimes called the <b>MPC</b> (Milk Producer Committee), to represent them. Several MPCs join together into bigger village-cluster groups, so that even a farmer in the smallest village has a representative all the way up."
+              },
+              {
+                "type": "glossary",
+                "term": "MPP (Milk Pooling Point)",
+                "meaning": "The village-level place where farmers bring their milk to be measured, tested and collected by the MPO."
+              },
+              {
+                "type": "text",
+                "heading": "Governance: General Body and Board",
+                "html": "All members of the MPO together form the <b>General Body</b> — its highest decision-making group. The General Body elects a <b>Board of Directors</b>, who set policy and watch over the company on behalf of every member."
+              },
+              {
+                "type": "glossary",
+                "term": "Board of Directors",
+                "meaning": "A group of members elected to guide and watch over the company's business on behalf of all members."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is an MPP?",
+                "options": [
+                  "The village-level place where farmers bring milk to be measured, tested and collected",
+                  "A bank that lends money to farmers",
+                  "The head office of the state government",
+                  "A type of milk animal"
+                ],
+                "answer": 0,
+                "explain": "MPP stands for Milk Pooling Point — the village-level milk collection place."
+              },
+              {
+                "type": "mcq",
+                "q": "Who elects the Board of Directors of an MPO?",
+                "options": [
+                  "The state government",
+                  "The General Body of all members",
+                  "Only the Sahayaks",
+                  "The largest dairy company nearby"
+                ],
+                "answer": 1,
+                "explain": "The General Body — made up of all the MPO's members — elects the Board of Directors."
+              }
+            ]
+          },
+          {
+            "id": "t-management-structure",
+            "title": "Who Runs the Business Every Day",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Professionals Run the Daily Work",
+                "html": "The Board appoints a <b>Chief Executive (CEO)</b> to manage daily operations. Below the CEO are functional heads — for example, staff in charge of procurement, quality testing, or finance — and field staff, like the Sahayaks, who work directly with farmers every single day."
+              },
+              {
+                "type": "glossary",
+                "term": "Chief Executive (CEO)",
+                "meaning": "The senior professional manager appointed by the Board to run the company's day-to-day business."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why Separate Governance from Management?",
+                "text": "Farmers, through the General Body and Board, decide WHAT the company should do. Trained professional staff decide HOW to do it well, every day. This separation is a big reason MPOs run more smoothly than some older cooperatives, where daily business and village politics sometimes got mixed up."
+              },
+              {
+                "type": "example",
+                "heading": "Where You Fit In",
+                "text": "As a Sahayak, you are part of the Management Structure — the field staff who connect the company's decisions to real farmers, every single day."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Who does the Board appoint to run the MPO's daily operations?",
+                "options": [
+                  "The Chief Executive (CEO)",
+                  "The state Registrar",
+                  "Any random member",
+                  "A private trader"
+                ],
+                "answer": 0,
+                "explain": "The Board appoints a Chief Executive (CEO) to manage day-to-day business."
+              },
+              {
+                "type": "truefalse",
+                "q": "Sahayaks are members of the Board of Directors.",
+                "answer": false,
+                "explain": "Sahayaks are field staff in the Management Structure. The Board is made up of members elected by the General Body."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-operational-governance",
+              "type": "mcq",
+              "q": "Which of these is part of the Operational structure of an MPO, closest to the farmer?",
+              "options": [
+                "The MPP (Milk Pooling Point)",
+                "The Chief Executive",
+                "The state government",
+                "A private bank"
+              ],
+              "answer": 0,
+              "explain": "The MPP is the village-level collection point where every farmer's journey with the MPO begins."
+            },
+            {
+              "topicId": "t-operational-governance",
+              "type": "truefalse",
+              "q": "The General Body is made up of all the members of the MPO together.",
+              "answer": true,
+              "explain": "Yes — the General Body is the full membership meeting together, the highest decision-making group."
+            },
+            {
+              "topicId": "t-management-structure",
+              "type": "mcq",
+              "q": "What is the main reason an MPO separates governance (farmers/Board) from management (CEO, staff)?",
+              "options": [
+                "So daily business runs efficiently while farmers still own and guide the company",
+                "So farmers never get to make any decisions",
+                "So the government can control the company",
+                "So Sahayaks can become Directors automatically"
+              ],
+              "answer": 0,
+              "explain": "This separation keeps daily operations professional and efficient, while member-farmers retain ownership and direction through the Board."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m3",
-    number: 3,
-    title: L("Core Design Principle", "मूल डिज़ाइन सिद्धांत"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m3",
+    "number": 3,
+    "title": L("Core Design Principle", "मूल डिज़ाइन सिद्धांत"),
+    "subtitle": "Learn the core design principles that make an MPO work as a true farmer-owned business — from active membership to technology — and see them tested in a real case study.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m3-l1",
+        "title": "Farmer, Milk Producer, or Member?",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Farmer, Milk Producer, or Member?",
+            "text": "Three words that sound almost the same — but mean very different things in an MPO. Getting this right is the first design principle."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-three-words",
+            "title": "Three Words That Sound the Same, But Aren't",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Why This Matters",
+                "html": "You will hear three similar words a lot in your work: <b>Farmer</b>, <b>Milk Producer</b>, and <b>Member</b>. They are not the same thing. Let's tell them apart."
+              },
+              {
+                "type": "glossary",
+                "term": "Farmer",
+                "meaning": "Someone who works on land or keeps animals, growing crops or producing milk, for a living."
+              },
+              {
+                "type": "glossary",
+                "term": "Milk Producer",
+                "meaning": "Any farmer who actually keeps milk animals and produces milk to sell — a more specific kind of farmer."
+              },
+              {
+                "type": "glossary",
+                "term": "Member",
+                "meaning": "A milk producer who has formally joined the MPO, holds shares in it, and has ownership rights and duties."
+              },
+              {
+                "type": "example",
+                "heading": "Not Every Milk Producer Is a Member",
+                "text": "A farmer down the road may produce milk every day, but if they have not joined the MPO — bought shares, filled the membership form — they are not a Member. Only Members truly own the company."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What makes someone a 'Member' of an MPO, and not just a milk producer?",
+                "options": [
+                  "Owning the most cows in the village",
+                  "Formally joining the MPO, holding shares, and taking on membership duties",
+                  "Living closest to the MPP",
+                  "Being the oldest farmer in the village"
+                ],
+                "answer": 1,
+                "explain": "A Member has formally joined, holds shares, and has both rights and duties — not just anyone who produces milk."
+              },
+              {
+                "type": "truefalse",
+                "q": "Every milk producer in a village is automatically a Member of the local MPO.",
+                "answer": false,
+                "explain": "A milk producer only becomes a Member after formally joining the MPO and taking up shares."
+              }
+            ]
+          },
+          {
+            "id": "t-members-only",
+            "title": "Business Only With Members",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 1: Business Only With Members",
+                "html": "An MPO's most basic rule is: it does business only with its own <b>Members</b>. Why? Because an MPO is a user-owned enterprise — it belongs to the very people who use its services. Non-members should not get the same benefits without sharing the same responsibilities."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "What Goes Wrong Otherwise",
+                "text": "If an MPO accepts milk from non-members too, it can hurt the very members who invested their own share capital and time — because outsiders get the same payment and services for free, without any ownership stake or duty."
+              },
+              {
+                "type": "text",
+                "heading": "How MPOs Make This Work",
+                "html": "To keep this rule strong, MPOs keep membership enrolment simple and easy, get Board approval for new members, and give each member a special code so only members' milk is accepted for payment."
+              },
+              {
+                "type": "glossary",
+                "term": "Share Capital",
+                "meaning": "Money that a member pays into the company to become a part-owner, in return for shares."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does an MPO do business only with its Members?",
+                "options": [
+                  "Because it is a user-owned enterprise, and benefits should go to those who share the responsibilities",
+                  "Because the government forbids selling to non-members",
+                  "Because non-members produce worse milk",
+                  "Because Members pay higher prices"
+                ],
+                "answer": 0,
+                "explain": "An MPO belongs to its Members. Business only with Members keeps ownership and benefit fairly linked."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is good practice for an MPO to buy milk from non-members regularly, alongside members.",
+                "answer": false,
+                "explain": "This weakens the MPO's ownership model and is unfair to Members who invested share capital and took on duties."
+              }
+            ]
+          },
+          {
+            "id": "t-active-membership",
+            "title": "Active Members, Not Free Riders",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 2: No Free Riders",
+                "html": "Being a Member is not just a one-time sign-up. Members are expected to stay active — regularly supplying milk and taking part in meetings. Someone who joined once, took the benefits, but never supplies milk or shows up, is a <b>free rider</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "Free Rider",
+                "meaning": "Someone who enjoys the benefits of membership without actively contributing to or participating in the business."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Why This Matters",
+                "text": "Active participation makes the business predictable and efficient. If too many members are inactive, it becomes harder to plan operations, and it wastes the company's resources."
+              },
+              {
+                "type": "text",
+                "heading": "How MPOs Encourage Active Membership",
+                "html": "MPOs follow up regularly with new members to make sure they start supplying milk. They hold special meetings with members who are not supplying milk regularly. And anyone who wants to stand for election as a Director must meet stricter conditions, like being a regular, active supplier."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a 'free rider' in an MPO?",
+                "options": [
+                  "A farmer who delivers milk on a bicycle",
+                  "Someone who enjoys membership benefits without actively contributing or participating",
+                  "A member who wins a Board election",
+                  "A Sahayak who visits every MPP"
+                ],
+                "answer": 1,
+                "explain": "A free rider takes the benefits of membership without regularly supplying milk or taking part."
+              },
+              {
+                "type": "mcq",
+                "q": "What is expected of a member who wants to stand for election as a Director?",
+                "options": [
+                  "Nothing extra is expected",
+                  "They must meet stricter conditions, like being a regular, active milk supplier",
+                  "They must own the most land in the village",
+                  "They must be related to a current Director"
+                ],
+                "answer": 1,
+                "explain": "MPOs apply stricter conditions for Director candidates, to make sure leaders are genuinely active members."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-three-words",
+              "type": "mcq",
+              "q": "Which word describes a person who has formally joined the MPO and holds shares in it?",
+              "options": [
+                "Farmer",
+                "Milk Producer",
+                "Member",
+                "Trader"
+              ],
+              "answer": 2,
+              "explain": "A Member is a milk producer who has formally joined the MPO and holds shares, with ownership rights and duties."
+            },
+            {
+              "topicId": "t-members-only",
+              "type": "truefalse",
+              "q": "An MPO's basic rule is to do business only with its Members.",
+              "answer": true,
+              "explain": "Yes — this is Design Principle 1, and it protects the value of being a Member."
+            },
+            {
+              "topicId": "t-active-membership",
+              "type": "mcq",
+              "q": "Why do MPOs discourage 'free riders'?",
+              "options": [
+                "Because too many inactive members make business planning harder and waste resources",
+                "Because free riders produce more milk than everyone else",
+                "Because the law bans inactive members entirely",
+                "Because free riders are always dishonest"
+              ],
+              "answer": 0,
+              "explain": "Inactive membership makes operations unpredictable and wastes company resources — so MPOs encourage active participation."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m3-l2",
+        "title": "Owning a Real Stake",
+        "estMinutes": 9,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Owning a Real Stake",
+            "text": "Real ownership means more than a membership card. Let's see how MPOs link ownership to real contribution — and how members get heard."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-skin-in-game",
+            "title": "Equity in Proportion to Patronage",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 3: Skin in the Game",
+                "html": "In an MPO, the more milk a member supplies, the more shares (<b>equity</b>) they are expected to hold. This is sometimes called having <b>'skin in the game'</b> — members have their own money invested, so they care about protecting the company."
+              },
+              {
+                "type": "glossary",
+                "term": "Patronage",
+                "meaning": "How much business — in this case, how much milk — a member actually gives to the company."
+              },
+              {
+                "type": "glossary",
+                "term": "Equity",
+                "meaning": "The share of ownership a member holds in the company, based on the shares they bought."
+              },
+              {
+                "type": "example",
+                "heading": "In Numbers",
+                "text": "If a member supplies twice as much milk as another member, the company expects them to hold roughly twice as much equity too — keeping ownership fair and linked to real contribution."
+              },
+              {
+                "type": "text",
+                "heading": "How MPOs Make This Work",
+                "html": "MPOs display each member's patronage details at the MPP, hand out share certificates on time, and share information about profits — so members can see and trust the link between what they give and what they own."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does 'skin in the game' mean for a member of an MPO?",
+                "options": [
+                  "They have their own money invested, so they care about protecting the company",
+                  "They must physically work at the MPP every day",
+                  "They get free milk for their family",
+                  "They are exempt from all rules"
+                ],
+                "answer": 0,
+                "explain": "Skin in the game means a member has real money (equity) invested, giving them a genuine stake in the company's success."
+              },
+              {
+                "type": "truefalse",
+                "q": "A member's equity (shares) should be linked to how much milk they actually supply.",
+                "answer": true,
+                "explain": "Yes — equity in proportion to patronage keeps ownership fair and tied to real contribution."
+              }
+            ]
+          },
+          {
+            "id": "t-member-classes",
+            "title": "Fair Representation on the Board",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 4: Member Classes",
+                "html": "Not all members supply the same amount of milk. So an MPO can group members into different <b>classes</b> based on how much milk (patronage) they supply, and give each class fair representation on the Board."
+              },
+              {
+                "type": "glossary",
+                "term": "Member Class",
+                "meaning": "A group of members categorised by how much milk they supply, used to make sure the Board fairly represents everyone."
+              },
+              {
+                "type": "text",
+                "heading": "Why This Is Fair",
+                "html": "Board seats for each member class are decided in proportion to the milk that class supplies. This way, both big and small suppliers get a genuine voice in decisions — not just the loudest or the largest."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Decided Together",
+                "text": "How members are grouped into classes is approved at the company's AGM — a yearly meeting where all members can take part in big decisions."
+              },
+              {
+                "type": "glossary",
+                "term": "AGM (Annual General Meeting)",
+                "meaning": "A meeting held once a year where all members of the company gather to review performance and make key decisions."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does an MPO create 'member classes' based on patronage?",
+                "options": [
+                  "To make sure the Board fairly represents both big and small milk suppliers",
+                  "To stop small farmers from joining at all",
+                  "To give free shares to the largest supplier",
+                  "To reduce the number of members"
+                ],
+                "answer": 0,
+                "explain": "Member classes ensure Board representation is fair and proportional to how much each group contributes."
+              },
+              {
+                "type": "mcq",
+                "q": "Where is the grouping of members into classes approved?",
+                "options": [
+                  "At a private meeting of the CEO alone",
+                  "At the AGM (Annual General Meeting)",
+                  "By the state government",
+                  "By a private trader"
+                ],
+                "answer": 1,
+                "explain": "Member class categorisation is approved at the AGM, where all members can take part."
+              }
+            ]
+          },
+          {
+            "id": "t-grievance",
+            "title": "Being Heard: Communication and Grievance Redressal",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 5: A Way to Be Heard",
+                "html": "Members need an easy way to talk to their company — and to complain when something goes wrong. This is called <b>grievance redressal</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "Grievance Redressal",
+                "meaning": "A proper system for members to raise complaints and get them resolved."
+              },
+              {
+                "type": "text",
+                "heading": "Tools MPOs Use",
+                "html": "Many MPOs provide a toll-free phone number for members to register complaints, and appoint a <b>Grievance Redressal Officer (GRO)</b> whose job is to solve them. Village and member representative groups hold regular meetings and share notes with senior company officials."
+              },
+              {
+                "type": "glossary",
+                "term": "GRO (Grievance Redressal Officer)",
+                "meaning": "The staff member responsible for handling and resolving member complaints."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why It Builds Trust",
+                "text": "When members know exactly who to call, and see their problems actually get solved, they trust the company more — and stay active, engaged members."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is the job of a GRO (Grievance Redressal Officer)?",
+                "options": [
+                  "To handle and resolve member complaints",
+                  "To sell milk to non-members",
+                  "To run the Board elections only",
+                  "To manage the milk tankers"
+                ],
+                "answer": 0,
+                "explain": "The GRO is specifically responsible for handling and resolving members' complaints."
+              },
+              {
+                "type": "truefalse",
+                "q": "A toll-free number and a GRO are examples of tools that help with grievance redressal.",
+                "answer": true,
+                "explain": "Yes — these are practical tools MPOs use to make sure members can be heard and helped."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-skin-in-game",
+              "type": "mcq",
+              "q": "A member's equity (shares) in an MPO should ideally be linked to:",
+              "options": [
+                "Their age",
+                "How much milk (patronage) they supply",
+                "How far they live from the MPP",
+                "Their family size"
+              ],
+              "answer": 1,
+              "explain": "Equity in proportion to patronage keeps ownership fair and tied to real contribution — 'skin in the game'."
+            },
+            {
+              "topicId": "t-member-classes",
+              "type": "truefalse",
+              "q": "Member class categorisation must be approved at the AGM.",
+              "answer": true,
+              "explain": "Yes — this decision is made together with all members at the Annual General Meeting."
+            },
+            {
+              "topicId": "t-grievance",
+              "type": "mcq",
+              "q": "Why do MPOs set up a formal grievance redressal system?",
+              "options": [
+                "So members have a clear way to raise and resolve complaints, which builds trust",
+                "So complaints can be ignored more easily",
+                "Because the law requires no communication with members",
+                "To reduce the number of members"
+              ],
+              "answer": 0,
+              "explain": "A formal system for hearing and resolving complaints keeps members engaged and builds their trust in the company."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m3-l3",
+        "title": "Running It Like a Real Business",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Running It Like a Real Business",
+            "text": "An MPO is not just a village committee — it is a real company competing in the market. Let's see what that takes."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-professional-mgmt",
+            "title": "Run by Trained Professionals",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 6: Professional Management",
+                "html": "An MPO is a real business enterprise, competing with private and multi-national dairy companies. To succeed, it needs properly trained, capable people running it."
+              },
+              {
+                "type": "text",
+                "heading": "How MPOs Build This",
+                "html": "MPOs recruit capable staff, train and groom them for their roles, and adopt the best practices used across the dairy business — not just old habits."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Big Enough to Matter",
+                "text": "A design goal for every MPO is to reach a scale of business that is big enough to sustain itself — enough milk, enough members, enough income — so it does not depend forever on outside support."
+              },
+              {
+                "type": "glossary",
+                "term": "Economy of Scale",
+                "meaning": "When a business becomes more efficient and cost-effective as it grows bigger."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does an MPO need professionally trained management?",
+                "options": [
+                  "Because it competes with private and multi-national dairy companies, and needs to run efficiently",
+                  "Because the law requires it to hire only outsiders",
+                  "Because farmers are not capable of any decisions",
+                  "Because it has no real business to run"
+                ],
+                "answer": 0,
+                "explain": "As a real business competing in the market, an MPO needs skilled, trained people to run it well."
+              },
+              {
+                "type": "truefalse",
+                "q": "'Economy of scale' means a business becomes more efficient and cost-effective as it grows bigger.",
+                "answer": true,
+                "explain": "Correct — bigger, well-run scale usually brings down costs per unit and improves efficiency."
+              }
+            ]
+          },
+          {
+            "id": "t-value-chain",
+            "title": "Getting the Most Value for Members",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 7: Managing the Whole Value Chain",
+                "html": "From the moment milk leaves a farmer's animal to the moment it reaches a customer as milk, curd, or ghee, every step is called the <b>value chain</b>. An MPO tries to manage this whole chain efficiently, so more value — and more money — reaches the farmer-members."
+              },
+              {
+                "type": "glossary",
+                "term": "Value Chain",
+                "meaning": "Every step a product passes through, from raw milk at the farm to the finished product reaching a customer."
+              },
+              {
+                "type": "text",
+                "heading": "How MPOs Do This",
+                "html": "They standardise how every part of the business works using <b>SOPs</b> (Standard Operating Procedures), hire quality auditors to check accounting practices, and have the Board regularly review how the business is performing — market by market, product by product."
+              },
+              {
+                "type": "glossary",
+                "term": "SOP (Standard Operating Procedure)",
+                "meaning": "A written, step-by-step way of doing a task, so it is done correctly and the same way every time."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is the 'value chain' of milk?",
+                "options": [
+                  "Every step from raw milk at the farm to the finished product reaching a customer",
+                  "Only the moment milk is collected at the MPP",
+                  "The price printed on a milk packet",
+                  "The list of Board members"
+                ],
+                "answer": 0,
+                "explain": "The value chain covers every step milk passes through, from the farm to the final product a customer buys."
+              },
+              {
+                "type": "mcq",
+                "q": "What does SOP stand for?",
+                "options": [
+                  "Standard Operating Procedure",
+                  "State Office Policy",
+                  "Special Ownership Plan",
+                  "Simple Order Process"
+                ],
+                "answer": 0,
+                "explain": "SOP means Standard Operating Procedure — a consistent, written way of doing a task correctly."
+              }
+            ]
+          },
+          {
+            "id": "t-technology",
+            "title": "Using Technology for Transparency",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Design Principle 8: Technology for Trust",
+                "html": "Good governance needs good information. MPOs use technology to track data accurately, keep members updated, and stay ready for new tools in the future."
+              },
+              {
+                "type": "text",
+                "heading": "What This Looks Like",
+                "html": "MPOs share each member's equity and patronage details regularly, automate as much of the process as they can (like the DPMCU machines you may use at an MPP), and adopt new digital tools to stay future-ready."
+              },
+              {
+                "type": "glossary",
+                "term": "DPMCU (Dairy Producer Milk Collection Unit)",
+                "meaning": "A machine at the MPP that automatically measures milk quantity and quality, and prints a receipt."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "What Happens Without It",
+                "text": "Without reliable technology and data, it becomes hard to know which members are active, resolve payment disputes fairly, or build member trust. You'll see exactly what this looks like in the next lesson's real case study."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a DPMCU used for?",
+                "options": [
+                  "Automatically measuring milk quantity and quality at the MPP, and printing a receipt",
+                  "Paying member salaries",
+                  "Running Board elections",
+                  "Transporting milk to the city"
+                ],
+                "answer": 0,
+                "explain": "A DPMCU is the machine at the MPP that measures milk and prints a collection receipt."
+              },
+              {
+                "type": "truefalse",
+                "q": "Reliable technology and data help build trust and resolve disputes fairly in an MPO.",
+                "answer": true,
+                "explain": "Yes — good data and technology support transparency, fairness, and member trust."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-professional-mgmt",
+              "type": "mcq",
+              "q": "Why do MPOs need to run like professionally managed businesses?",
+              "options": [
+                "Because they compete with private and multi-national dairy companies",
+                "Because farmers are not allowed to be involved",
+                "Because the government manages them directly",
+                "Because there is no real competition in dairy"
+              ],
+              "answer": 0,
+              "explain": "MPOs compete in a real market, so they need trained, professional management to succeed and grow."
+            },
+            {
+              "topicId": "t-value-chain",
+              "type": "truefalse",
+              "q": "Managing the value chain well helps more money reach the farmer-members.",
+              "answer": true,
+              "explain": "Efficient value chain management increases the value captured at each step, benefiting member-farmers."
+            },
+            {
+              "topicId": "t-technology",
+              "type": "mcq",
+              "q": "What is one benefit of using technology like DPMCUs at the MPP?",
+              "options": [
+                "Accurate, automatic measurement that builds transparency and trust",
+                "It removes the need for any farmers to supply milk",
+                "It replaces the Board of Directors",
+                "It stops members from asking questions"
+              ],
+              "answer": 0,
+              "explain": "Technology like DPMCUs makes measurement accurate and consistent, supporting transparency and trust."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m3-l4",
+        "title": "Case Study: What Went Wrong at Pragati MPC",
+        "estMinutes": 13,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Case Study: Pragati Milk Producer Company",
+            "text": "Every design principle you just learned exists for a reason. Let's see what happens to a real MPO when some of them start slipping."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-pmpc-growth",
+            "title": "A Company That Grew Fast",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Meet Pragati MPC",
+                "html": "Pragati Milk Producer Company Limited (PMPC) was set up in 2018 to give milk producers across 42 villages an organised, fair market for their milk. The dream: farmers would not just sell milk, but truly own the business."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "18 MPPs",
+                    "text": "PMPC grew its milk collection network to 18 Milk Pooling Points across its area."
+                  },
+                  {
+                    "label": "1 Bulk Chilling Centre",
+                    "text": "One Bulk Milk Chilling Centre (BMC) can chill up to 10,000 litres of milk a day."
+                  },
+                  {
+                    "label": "Village Sahayaks",
+                    "text": "Village-level Sahayaks handle milk collection, member engagement and record-keeping."
+                  }
+                ]
+              },
+              {
+                "type": "ledger",
+                "heading": "A Sahayak's Average Monthly Income at PMPC",
+                "rows": [
+                  {
+                    "label": "Milk collection commission",
+                    "amount": "₹8,750"
+                  },
+                  {
+                    "label": "Input sales commission",
+                    "amount": "₹2,100"
+                  },
+                  {
+                    "label": "Incentives",
+                    "amount": "₹1,650"
+                  },
+                  {
+                    "label": "Other income",
+                    "amount": "₹3,500"
+                  }
+                ],
+                "total": {
+                  "label": "Total average income",
+                  "amount": "₹16,000"
+                }
+              },
+              {
+                "type": "text",
+                "heading": "Five Years Later, Cracks Appear",
+                "html": "After five years, the Board of Directors began to worry. Membership numbers looked great on paper — but something felt wrong underneath."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In which year was Pragati Milk Producer Company (PMPC) established?",
+                "options": [
+                  "2002",
+                  "2018",
+                  "2020",
+                  "2026"
+                ],
+                "answer": 1,
+                "explain": "PMPC was established in 2018, to give milk producers across 42 villages an organised market."
+              },
+              {
+                "type": "mcq",
+                "q": "How many Milk Pooling Points (MPPs) did PMPC operate?",
+                "options": [
+                  "8",
+                  "12",
+                  "18",
+                  "42"
+                ],
+                "answer": 2,
+                "explain": "PMPC expanded its network to 18 MPPs, plus one Bulk Milk Chilling Centre."
+              }
+            ]
+          },
+          {
+            "id": "t-warning-signs",
+            "title": "The Warning Signs",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Members On Paper vs Members in Practice",
+                "html": "PMPC had enrolled thousands of members. But how many were actually active — regularly bringing milk and taking part?"
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "4,850 registered members",
+                    "text": "The total number of members enrolled in the company."
+                  },
+                  {
+                    "label": "3,210 supplied milk at least once",
+                    "text": "Only about two-thirds of registered members even brought milk in the past month."
+                  },
+                  {
+                    "label": "1,985 regular suppliers",
+                    "text": "Fewer than half of all members supplied milk on more than 25 days that month — the truly active core."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "The Free Rider Problem, in Real Life",
+                "text": "Worse, 638 non-members were also selling milk to PMPC's MPPs — receiving almost the same payment and service as real members, without buying shares or taking on any membership duties. This is exactly the 'free rider' problem you learned about, and it made active members feel cheated."
+              },
+              {
+                "type": "text",
+                "heading": "Weak Skin in the Game",
+                "html": "Many members who now supplied a lot more milk than before still held only the smallest, minimum required shares — breaking the link between patronage and equity that Design Principle 3 calls for."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Out of 4,850 registered members, how many were regular suppliers (more than 25 days a month)?",
+                "options": [
+                  "638",
+                  "1,985",
+                  "3,210",
+                  "4,850"
+                ],
+                "answer": 1,
+                "explain": "Only 1,985 members were regular suppliers — a much smaller number than total registered membership."
+              },
+              {
+                "type": "truefalse",
+                "q": "PMPC's non-member milk suppliers were a healthy sign of a well-run MPO.",
+                "answer": false,
+                "explain": "Non-members getting near-identical benefits without ownership duties is the 'free rider' problem — it weakens the MPO model and upsets real members."
+              }
+            ]
+          },
+          {
+            "id": "t-fixing-it",
+            "title": "Fixing the System",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Technology Troubles Too",
+                "html": "PMPC had installed DPMCU machines at all 18 MPPs, but breakdowns were common. In one year alone, there were 126 total days of downtime, caused by printer failures, testing-machine failures, and other issues."
+              },
+              {
+                "type": "barchart",
+                "heading": "DPMCU Breakdown Incidents (One Year)",
+                "source": "PMPC internal case study data",
+                "unit": "incidents",
+                "data": [
+                  {
+                    "label": "Printer failure",
+                    "value": 41
+                  },
+                  {
+                    "label": "Software sync problems",
+                    "value": 37
+                  },
+                  {
+                    "label": "Analyzer failure",
+                    "value": 29
+                  },
+                  {
+                    "label": "Power backup failure",
+                    "value": 24
+                  },
+                  {
+                    "label": "Weigh scale issues",
+                    "value": 18
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "No Way to Complain Properly",
+                "html": "Members had complaints — about payments, milk testing, membership and share capital — 522 complaints in total during the year. But there was no formal system to register or track them. Most were just told to the Sahayak by word of mouth, and many were forgotten."
+              },
+              {
+                "type": "text",
+                "heading": "The Board's Response",
+                "html": "The Board considered spending about ₹42 lakh over three years on a digital system (a CRM platform and mobile app) to fix record-keeping, communication and grievance redressal. Some directors worried technology alone would not fix deeper problems, like weak active-membership rules and low participation."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Back to the Design Principles",
+                "text": "PMPC's real fix is not just new software — it is going back to basics: enforcing 'business only with members', encouraging active participation, linking equity to patronage, and building a proper grievance system. Technology can help, but only alongside strong design principles."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "About how many member complaints did PMPC receive in one year, with no formal tracking system?",
+                "options": [
+                  "126",
+                  "42",
+                  "522",
+                  "638"
+                ],
+                "answer": 2,
+                "explain": "PMPC received 522 complaints in the year, but had no formal system to register or track them."
+              },
+              {
+                "type": "truefalse",
+                "q": "Buying new technology alone is enough to fix all of PMPC's governance problems.",
+                "answer": false,
+                "explain": "Technology helps, but PMPC also needs to strengthen its core design principles — active membership, equity linked to patronage, and grievance redressal."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-pmpc-growth",
+              "type": "mcq",
+              "q": "PMPC was set up to give milk producers across how many villages an organised market?",
+              "options": [
+                "18",
+                "42",
+                "126",
+                "522"
+              ],
+              "answer": 1,
+              "explain": "PMPC served a semi-rural cluster of 42 villages."
+            },
+            {
+              "topicId": "t-warning-signs",
+              "type": "mcq",
+              "q": "What did the gap between 4,850 registered members and 1,985 regular suppliers reveal?",
+              "options": [
+                "That most members were highly active and engaged",
+                "That a large share of 'members' were inactive or barely participating",
+                "That PMPC had too few registered members",
+                "That non-members were the most loyal suppliers"
+              ],
+              "answer": 1,
+              "explain": "The big gap between registered and regularly active members showed weak active-membership enforcement — a warning sign for any MPO."
+            },
+            {
+              "topicId": "t-warning-signs",
+              "type": "truefalse",
+              "q": "Accepting milk from 638 non-members alongside members is a good long-term practice for an MPO.",
+              "answer": false,
+              "explain": "This is the 'free rider' problem — it weakens the value of membership and can create dissatisfaction among genuine member-owners."
+            },
+            {
+              "topicId": "t-fixing-it",
+              "type": "mcq",
+              "q": "What is the biggest lesson from PMPC's story?",
+              "options": [
+                "Technology alone can fix any governance problem",
+                "Strong design principles — active membership, fair equity, grievance redressal — matter as much as technology",
+                "MPOs should stop accepting new members",
+                "Case studies are not useful for real MPOs"
+              ],
+              "answer": 1,
+              "explain": "PMPC's troubles show that design principles and technology must work together — neither one alone is enough to keep an MPO healthy."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m4",
-    number: 4,
-    title: L("Interaction with Farmers (One to One)", "किसानों के साथ बातचीत (एक-से-एक)"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m4",
+    "number": 4,
+    "title": L("Interaction with Farmers (One to One)", "किसानों के साथ बातचीत (एक-से-एक)"),
+    "subtitle": "Learn how to talk to farmers one-on-one — with patience, respect and honesty. See real example conversations of what to say, and what to avoid.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m4-l1",
+        "title": "Listening First, Talking Second",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Listening First, Talking Second",
+            "text": "Every farmer you meet has their own worries, questions and experience. Before you say anything, learn how to truly listen. This lesson shows you how, with real example conversations."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-why-listening",
+            "title": "Why Listening Comes First",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Your Most Important Tool Is Your Ears",
+                "html": "As a Sahayak, you meet farmers almost every day — at the MPP, on their farm, or on the road. The most important skill you bring to any conversation is not talking. It is <b>listening</b>."
+              },
+              {
+                "type": "text",
+                "heading": "What Good Listening Looks Like",
+                "html": "Good listening means giving the farmer your full attention, letting them finish speaking, and trying to understand their problem before you reply. It does not mean quietly waiting for your turn to talk."
+              },
+              {
+                "type": "glossary",
+                "term": "MPP (Milk Pooling Point)",
+                "meaning": "A place in the village where farmers bring their milk every day. It is checked for quality and farmers get paid a fair price, on time."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Do",
+                "text": "Listen patiently. Let the farmer finish speaking. Try to understand their concern or experience before you reply — even if you think you already know the answer."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Don't",
+                "text": "Do not interrupt or dismiss what a farmer is saying, even if you are in a hurry or think their concern is small. Cutting a farmer off tells them their opinion doesn't matter."
+              },
+              {
+                "type": "example",
+                "heading": "A Good Conversation",
+                "text": "Farmer: Sahayak, my cow's milk has dropped since last week. I don't understand why. Sahayak: That must be worrying for you. Tell me — has anything changed in her feed or her routine recently? Notice the Sahayak did not jump to an answer. They listened, and then asked a question."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "A farmer is explaining a problem with their cow. What should you do first?",
+                "options": [
+                  "Interrupt with the first solution that comes to mind",
+                  "Let them finish, and try to understand the problem fully",
+                  "Change the subject to something easier",
+                  "Tell them their traditional practices are wrong"
+                ],
+                "answer": 1,
+                "explain": "Good listening means letting the farmer finish and understanding their concern before you respond."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is fine to cut off a farmer mid-sentence if you already think you know the answer.",
+                "answer": false,
+                "explain": "Interrupting a farmer tells them their opinion doesn't matter, even if you think you know the answer already."
+              }
+            ]
+          },
+          {
+            "id": "t-simple-language",
+            "title": "Speak Simply, Speak Local",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Use Words Farmers Already Know",
+                "html": "Use simple, everyday words and the local language farmers are comfortable with. Avoid technical jargon — words like 'SNF' or 'compliance threshold' mean nothing to a farmer who has never studied these terms."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Do",
+                "text": "Use simple and local language for better communication. Respect the farmer's own knowledge and practices — they have often been raising animals for many years, longer than you may have worked in dairy."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Don't",
+                "text": "Avoid technical jargon that may confuse farmers. Avoid criticising traditional practices directly — even when a practice needs to change, criticising it bluntly makes a farmer defensive instead of open to change."
+              },
+              {
+                "type": "example",
+                "heading": "Same Message, Two Ways",
+                "text": "Confusing: Your SNF is below the compliance threshold, so payment is adjusted. Simple: Today your milk had a little less of the solid content we test for, so the price is a bit lower. Let's check together why that may have happened."
+              },
+              {
+                "type": "poll",
+                "heading": "What Would You Say?",
+                "questions": [
+                  {
+                    "q": "A farmer asks why his milk payment was lower today. Which reply is better?",
+                    "options": [
+                      "Your SNF value fell below the compliance threshold.",
+                      "Today your milk had a little less of the good solids we test for, so the rate was a bit lower. Let's look at why, together."
+                    ],
+                    "answer": 1,
+                    "reveal": "The second reply uses simple words and invites the farmer to solve the problem with you — that builds trust."
+                  }
+                ]
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why should you avoid technical jargon when talking to farmers?",
+                "options": [
+                  "Jargon makes you sound less experienced",
+                  "It may confuse farmers who have never studied those terms",
+                  "Farmers already know all the technical terms",
+                  "It is against the rules to use any English words"
+                ],
+                "answer": 1,
+                "explain": "Jargon can confuse farmers and get in the way of clear communication — plain, local language works better."
+              },
+              {
+                "type": "truefalse",
+                "q": "If a farmer's traditional practice needs to change, the best approach is to criticise it directly and bluntly.",
+                "answer": false,
+                "explain": "Bluntly criticising a traditional practice makes a farmer defensive. It is better to discuss it respectfully and explain reasons."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-why-listening",
+              "type": "mcq",
+              "q": "What does good listening mean in a conversation with a farmer?",
+              "options": [
+                "Nodding without really paying attention",
+                "Giving full attention, letting them finish, and understanding before replying",
+                "Waiting silently just so you can speak next",
+                "Writing down only the parts you find interesting"
+              ],
+              "answer": 1,
+              "explain": "Good listening means real attention and understanding, not just waiting for your turn to talk."
+            },
+            {
+              "topicId": "t-why-listening",
+              "type": "truefalse",
+              "q": "You should never interrupt a farmer, even if you are busy.",
+              "answer": true,
+              "explain": "Even when busy, interrupting or dismissing a farmer's concern damages trust."
+            },
+            {
+              "topicId": "t-simple-language",
+              "type": "mcq",
+              "q": "Which of these is the best way to explain a lower milk payment to a farmer?",
+              "options": [
+                "Use only technical terms so it sounds official",
+                "Say nothing and hope they don't ask",
+                "Explain simply, in local language, and offer to check the reason together",
+                "Tell them it's none of their business"
+              ],
+              "answer": 2,
+              "explain": "Simple, honest, local-language explanations that involve the farmer build trust."
+            },
+            {
+              "topicId": "t-simple-language",
+              "type": "truefalse",
+              "q": "Respecting a farmer's traditional knowledge and practices is part of good communication.",
+              "answer": true,
+              "explain": "Farmers often have years of experience. Respecting that experience is part of building trust."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m4-l2",
+        "title": "Honest Conversations and Follow-Up",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Honest Conversations and Follow-Up",
+            "text": "Some conversations are harder — a new MPP starting in the village, a question about milk price, or a complaint. Let's learn how to handle these with honesty and care."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-new-mpp-concerns",
+            "title": "Talking About a New MPP and Milk Price",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Why Farmers Worry About Something New",
+                "html": "When a new MPP or MPO starts in a village, farmers may worry: Will I get paid on time? Will the testing be fair? Is this better or worse than where I sell now? These worries are natural — change is always a little scary, especially with something as important as daily income."
+              },
+              {
+                "type": "glossary",
+                "term": "MPO (Milk Producer Organisation)",
+                "meaning": "A farmer-owned group that runs the MPP in a village, tests milk fairly, and pays farmers a fair price on time."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Be Honest About Milk Pricing",
+                "text": "If a farmer asks how the price is decided, explain it simply and honestly — for example, that the price depends on the fat and SNF (solid content) tested in their milk that day. Never guess or make up a number. If you don't know, say so and find out."
+              },
+              {
+                "type": "example",
+                "heading": "Handling a Price Question Honestly",
+                "text": "Farmer: Why does my neighbour get a higher rate than me for the same amount of milk? Sahayak: It's not the amount that decides the rate — it's the fat and SNF content. Let's check both your test slips together so you can see the difference. The Sahayak did not get defensive. They showed the farmer real proof."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Don't Make Promises You Can't Keep",
+                "text": "Do not make unrealistic promises, like guaranteeing a certain price or payment date you are not sure about. A broken promise damages trust far more than an honest 'I'm not sure, let me find out.'"
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "A farmer asks why a new MPP pays differently from the old buyer. What should you do?",
+                "options": [
+                  "Avoid the question so you don't have to explain",
+                  "Explain honestly how the price is decided, using simple language",
+                  "Make up a reassuring answer even if you're not fully sure",
+                  "Tell them to stop asking questions"
+                ],
+                "answer": 1,
+                "explain": "Honesty, even about a topic like pricing, is the best way to build a farmer's trust in a new MPP."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is fine to promise a farmer a specific payment date, even if you are not sure it will happen.",
+                "answer": false,
+                "explain": "Unrealistic promises that later break damage trust much more than being honest about uncertainty."
+              }
+            ]
+          },
+          {
+            "id": "t-followup",
+            "title": "Ending Well and Following Up",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Don't Rush the Conversation",
+                "html": "Do not rush an interaction or appear disinterested, even when you are busy. A farmer can tell when you are only half-listening, and it makes them trust you less the next time."
+              },
+              {
+                "type": "text",
+                "heading": "Involve the Farmer in the Solution",
+                "html": "Avoid imposing a solution without discussion. Instead, encourage participation — ask the farmer what they think, and use open-ended questions like 'What do you think is causing this?' rather than only yes-or-no questions."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Always Follow Up",
+                "text": "If you promise to check something or come back with an answer, do it — and tell the farmer that you did. A simple follow-up, like 'I checked, and here's what I found,' shows the farmer you kept your word."
+              },
+              {
+                "type": "example",
+                "heading": "A Good Follow-Up",
+                "text": "Sahayak, a week later: Bhai, you asked me last week why your fat percentage looked low. I checked with the lab — your feed batch that week had less protein. Try switching back and let's test again next week. This builds trust because the Sahayak remembered and followed through."
+              },
+              {
+                "type": "poll",
+                "heading": "What Should the Sahayak Say Here?",
+                "questions": [
+                  {
+                    "q": "A farmer's concern from last week hasn't been fully resolved. You still don't have a complete answer. What should you say?",
+                    "options": [
+                      "Avoid the farmer until you have a full answer",
+                      "Tell the farmer you're still checking, and give a realistic idea of when you'll know more"
+                    ],
+                    "answer": 1,
+                    "reveal": "Being honest about not having the full answer yet — while showing you haven't forgotten — keeps trust intact."
+                  }
+                ]
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is the best way to make a farmer feel involved in solving their own problem?",
+                "options": [
+                  "Give them a solution without asking anything",
+                  "Ask open-ended questions like 'What do you think is causing this?'",
+                  "Tell them the answer is too technical for them to understand",
+                  "Ask only yes-or-no questions"
+                ],
+                "answer": 1,
+                "explain": "Open-ended questions invite the farmer to think and participate, instead of just receiving an order."
+              },
+              {
+                "type": "truefalse",
+                "q": "If you promised to check something for a farmer, it's fine to forget about it once you're busy with other work.",
+                "answer": false,
+                "explain": "Following up on a promise, even a small one, shows the farmer you keep your word and builds long-term trust."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-new-mpp-concerns",
+              "type": "mcq",
+              "q": "What is the best response when a farmer questions how milk pricing works at a new MPP?",
+              "options": [
+                "Change the topic to avoid confrontation",
+                "Explain simply and honestly, and show proof like test slips if needed",
+                "Say it's decided randomly",
+                "Tell them to ask someone else"
+              ],
+              "answer": 1,
+              "explain": "Honest, simple explanations — backed by real proof — build a farmer's confidence in a new MPP."
+            },
+            {
+              "topicId": "t-new-mpp-concerns",
+              "type": "truefalse",
+              "q": "Farmers naturally feel some worry when a new MPP or MPO starts in their village.",
+              "answer": true,
+              "explain": "Change is naturally a little unsettling, especially for something as important as daily income — this worry is normal."
+            },
+            {
+              "topicId": "t-followup",
+              "type": "mcq",
+              "q": "Why is following up on a promise to a farmer important?",
+              "options": [
+                "It is not important — farmers forget quickly",
+                "It shows the farmer you kept your word and builds trust",
+                "It is only needed for big problems",
+                "It wastes time better spent elsewhere"
+              ],
+              "answer": 1,
+              "explain": "Following up, even on small promises, builds long-term trust between the Sahayak and the farmer."
+            },
+            {
+              "topicId": "t-followup",
+              "type": "truefalse",
+              "q": "Rushing through a conversation because you are busy has no effect on how much a farmer trusts you.",
+              "answer": false,
+              "explain": "Farmers can tell when you are rushing or only half-listening, which reduces their trust in you."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m5",
-    number: 5,
-    title: L("Designing a Need-Based Communication Content", "ज़रूरत-आधारित संचार सामग्री तैयार करना"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m5",
+    "number": 5,
+    "title": L("Designing a Need-Based Communication Content", "ज़रूरत-आधारित संचार सामग्री तैयार करना"),
+    "subtitle": "Learn the CRI method for building training content that answers real problems in the field — not generic lessons nobody asked for.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m5-l1",
+        "title": "What Is CRI, and Why 'Need-Based' Matters",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Why Generic Training Doesn't Work",
+            "text": "Imagine sitting through a training on animal vaccination when your real problem is farmers leaving your MPP. That training would feel like a waste of time. This lesson shows you a better way — CRI."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-generic-vs-needbased",
+            "title": "The Problem With Generic Content",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "One Size Does Not Fit All Villages",
+                "html": "Every village and every MPP has different problems. One village may be losing members. Another may have farmers whose milk fat is dropping. A third may need help with animal nutrition. If you teach the same generic content everywhere, it may not solve anyone's real problem."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Did You Know?",
+                "text": "Training designed around a clear, planned approach and teaching-learning psychology is far more effective for adult learners than a generic lecture. Adults learn best when the content answers a real problem they are facing right now."
+              },
+              {
+                "type": "glossary",
+                "term": "CRI",
+                "meaning": "Short for Criterion-Referenced Instruction — a method for designing training content that is built around exactly what learners need to be able to do, instead of around generic topics."
+              },
+              {
+                "type": "text",
+                "heading": "What CRI Helps You Do",
+                "html": "CRI helps trainers design need-based, field-relevant programs. It also helps build the capability to actually change behaviour — not just deliver information, but check that people really do things differently afterward."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why might the same generic training content fail in different villages?",
+                "options": [
+                  "Because every village has the exact same problems",
+                  "Because different villages have different real problems, so one-size-fits-all content may not help",
+                  "Because generic content is always more effective",
+                  "Because farmers dislike all training equally"
+                ],
+                "answer": 1,
+                "explain": "Villages face different problems, so content built for one specific problem often does not solve another."
+              },
+              {
+                "type": "truefalse",
+                "q": "CRI stands for a method that designs training around what learners actually need to be able to do.",
+                "answer": true,
+                "explain": "CRI (Criterion-Referenced Instruction) is built around real learner needs, not generic topics."
+              }
+            ]
+          },
+          {
+            "id": "t-cri-four-steps",
+            "title": "The Four Steps of CRI",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Four Steps, Always in Order",
+                "html": "CRI has four steps, always followed in the same order. Each step checks that the training really matches what learners need — not just what a trainer assumes they need."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "1. Behavioural Objectives",
+                    "text": "Decide exactly what learners should be able to DO after the training — an action you can see and measure, not just 'understand' something."
+                  },
+                  {
+                    "label": "2. Pre-Evaluation",
+                    "text": "Check what learners already know and can do, before you teach anything. This stops you from teaching things they already know."
+                  },
+                  {
+                    "label": "3. Teaching",
+                    "text": "Deliver the content itself, using teaching-learning principles that help adults learn faster — covered in the next lesson."
+                  },
+                  {
+                    "label": "4. Post-Evaluation",
+                    "text": "Check what learners actually learned after the training, to see if it worked and to find any gaps that still need attention."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "CRI in Action",
+                "text": "Suppose many farmers in a village are leaving the MPP. Behavioural Objective: Sahayak should be able to explain 3 reasons farmers stay with an MPP. Pre-Evaluation: ask Sahayaks what they currently tell farmers. Teaching: run a short session filling the gaps. Post-Evaluation: check a week later if fewer farmers are leaving."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Remember",
+                "text": "Behavioural Objectives and Evaluation are like bookends — they make sure training is not just delivered, but actually works."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a 'Behavioural Objective' in CRI?",
+                "options": [
+                  "A vague hope that learners feel inspired",
+                  "A clear, measurable action learners should be able to DO after training",
+                  "The name of the trainer's manager",
+                  "A test given only at the very end of the year"
+                ],
+                "answer": 1,
+                "explain": "A Behavioural Objective is a specific, observable action — something you can actually see the learner do."
+              },
+              {
+                "type": "truefalse",
+                "q": "Pre-Evaluation happens after the teaching is complete.",
+                "answer": false,
+                "explain": "Pre-Evaluation happens BEFORE teaching — it checks what learners already know so training doesn't repeat it."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-generic-vs-needbased",
+              "type": "mcq",
+              "q": "What makes CRI different from a generic training lecture?",
+              "options": [
+                "CRI is always longer than a lecture",
+                "CRI is built around what learners actually need, checked before and after",
+                "CRI uses only videos, never live teaching",
+                "CRI is only for new employees"
+              ],
+              "answer": 1,
+              "explain": "CRI matches content to real, checked learner needs — unlike a one-size-fits-all lecture."
+            },
+            {
+              "topicId": "t-generic-vs-needbased",
+              "type": "truefalse",
+              "q": "Adults generally learn best from content that connects to a real problem they are facing right now.",
+              "answer": true,
+              "explain": "Adult learners respond best to training that clearly answers a problem relevant to their own situation."
+            },
+            {
+              "topicId": "t-cri-four-steps",
+              "type": "mcq",
+              "q": "Put these CRI steps in the correct order: Teaching, Post-Evaluation, Behavioural Objectives, Pre-Evaluation.",
+              "options": [
+                "Behavioural Objectives, Pre-Evaluation, Teaching, Post-Evaluation",
+                "Post-Evaluation, Teaching, Pre-Evaluation, Behavioural Objectives",
+                "Teaching, Behavioural Objectives, Post-Evaluation, Pre-Evaluation",
+                "Pre-Evaluation, Post-Evaluation, Teaching, Behavioural Objectives"
+              ],
+              "answer": 0,
+              "explain": "CRI always follows this order: decide the objective, check existing knowledge, teach, then check what was learned."
+            },
+            {
+              "topicId": "t-cri-four-steps",
+              "type": "truefalse",
+              "q": "Post-Evaluation helps find gaps that still need attention after training.",
+              "answer": true,
+              "explain": "Post-Evaluation checks whether the training actually worked, and reveals any remaining gaps."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m5-l2",
+        "title": "Designing and Delivering a Real Session",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "From Village Problem to Training Content",
+            "text": "Now let's turn what you've learned into practice — picking a real topic and building a short session that Sahayaks or farmers actually need."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-teaching-principles",
+            "title": "Five Principles That Help Adults Learn",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Teaching the CRI Way",
+                "html": "Inside the 'Teaching' step of CRI, five principles make learning stick — especially for adult learners who are busy and practical-minded."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Perceived Purpose",
+                    "text": "Learners must know WHY this matters to them before you begin — make the goal clear upfront."
+                  },
+                  {
+                    "label": "Individual Differentiation",
+                    "text": "Different learners already know different things. Address their different needs, instead of teaching everyone the exact same way."
+                  },
+                  {
+                    "label": "Graduated Sequence",
+                    "text": "Teach simple ideas first, moving to more complex ideas only after the basics are clear."
+                  }
+                ]
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Appropriate Practice",
+                    "text": "Let learners actually try the skill themselves — hands-on practice, not just listening."
+                  },
+                  {
+                    "label": "Knowledge of Results",
+                    "text": "Tell learners quickly whether they got it right or wrong, so they can correct themselves while it's fresh."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "Putting It Together",
+                "text": "Teaching Sahayaks how to explain milk pricing: start with why it matters (a common farmer complaint), teach the simple fat/SNF idea before the payment formula, let them practice explaining it to each other, then correct any mistakes on the spot."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does 'Graduated Sequence' mean in teaching?",
+                "options": [
+                  "Teaching only to learners who have graduated school",
+                  "Teaching simple ideas first, then moving to more complex ones",
+                  "Giving a certificate at the end",
+                  "Repeating the same idea many times without changing it"
+                ],
+                "answer": 1,
+                "explain": "Graduated Sequence means building understanding step by step, from simple to complex."
+              },
+              {
+                "type": "truefalse",
+                "q": "'Knowledge of Results' means telling learners quickly whether they got something right or wrong.",
+                "answer": true,
+                "explain": "Fast feedback helps learners correct mistakes while the lesson is still fresh in their minds."
+              }
+            ]
+          },
+          {
+            "id": "t-picking-topics",
+            "title": "Choosing the Right Topic From Real Data",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Let the Problem Choose the Topic",
+                "html": "The best training topics come from real problems happening in the field — not guesses. Look at what MPPs are actually struggling with."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Falling membership",
+                    "text": "Fewer farmers are staying members of the MPP — training could cover how to listen to farmers' concerns and rebuild trust."
+                  },
+                  {
+                    "label": "Low milk production",
+                    "text": "Farmers' animals are giving less milk than expected — training could cover animal feeding and care basics."
+                  },
+                  {
+                    "label": "Animal nutrition problems",
+                    "text": "Farmers may be feeding animals incorrectly — training could cover simple, low-cost nutrition improvements."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Group Activity",
+                "text": "In your training group, you may be asked to pick a real topic like these, prepare a short 15-minute session on it, and then deliver it to the group. This practice is exactly how CRI content gets built in real life."
+              },
+              {
+                "type": "poll",
+                "heading": "What Would You Choose?",
+                "questions": [
+                  {
+                    "q": "Your MPP has seen 6 farmers stop supplying milk this month. Which is the better first training topic?",
+                    "options": [
+                      "A generic session on the history of dairy in India",
+                      "A short session on why farmers leave, and how to listen and respond to their concerns"
+                    ],
+                    "answer": 1,
+                    "reveal": "Training should follow the real problem on the ground — here, it's farmers leaving, so the content should target that directly."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "A Simple Session Outline",
+                "text": "Behavioural Objective: Sahayak can list 3 reasons for farmer drop-off and respond to each. Pre-Evaluation: ask Sahayaks what they think the reasons are. Teaching: share real reasons from farmer conversations. Practice: role-play a talk with a farmer thinking of leaving. Post-Evaluation: ask Sahayaks to explain the 3 reasons back."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Where should a good training topic come from?",
+                "options": [
+                  "Whatever topic the trainer personally finds most interesting",
+                  "Real problems actually happening in the field, like falling membership or low milk production",
+                  "A random topic chosen without any data",
+                  "The longest topic available"
+                ],
+                "answer": 1,
+                "explain": "CRI-based training topics come from real field problems, not guesses or personal preference."
+              },
+              {
+                "type": "truefalse",
+                "q": "A 15-minute group activity to design and deliver a short session is a realistic way to practice the CRI method.",
+                "answer": true,
+                "explain": "Practicing on a small, real topic is exactly how the CRI method is used to build effective training in the field."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-teaching-principles",
+              "type": "mcq",
+              "q": "Why is 'Perceived Purpose' important at the start of a teaching session?",
+              "options": [
+                "It is not important, learners will pay attention anyway",
+                "Learners need to know why the content matters to them before they will engage",
+                "It replaces the need for any practice",
+                "It is only useful for children, not adults"
+              ],
+              "answer": 1,
+              "explain": "Adult learners engage better when they understand upfront why the content matters to them."
+            },
+            {
+              "topicId": "t-teaching-principles",
+              "type": "truefalse",
+              "q": "Appropriate Practice means learners only listen and never try the skill themselves.",
+              "answer": false,
+              "explain": "Appropriate Practice means letting learners actually try the skill hands-on, not just listen."
+            },
+            {
+              "topicId": "t-picking-topics",
+              "type": "mcq",
+              "q": "A village is struggling with low milk production. What kind of training content fits this problem best?",
+              "options": [
+                "A session on village meeting etiquette",
+                "A session on animal feeding and care basics",
+                "A session on the history of milk cooperatives",
+                "No training is needed for this problem"
+              ],
+              "answer": 1,
+              "explain": "Content should match the real problem — here, low milk production points to feeding and animal care training."
+            },
+            {
+              "topicId": "t-picking-topics",
+              "type": "truefalse",
+              "q": "Real field data, like membership numbers or milk production trends, can help decide what training content to design.",
+              "answer": true,
+              "explain": "Real field data points trainers toward the actual problems that need solving, making content more relevant."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m6",
-    number: 6,
-    title: L("Interaction with Sahayak (One to One)", "सहायक के साथ बातचीत (एक-से-एक)"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m6",
+    "number": 6,
+    "title": L("Interaction with Sahayak (One to One)", "सहायक के साथ बातचीत (एक-से-एक)"),
+    "subtitle": "Learn how to mentor and support a fellow Sahayak one-on-one — through listening, honest feedback and encouragement.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m6-l1",
+        "title": "Understanding Before Advising",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Understanding Before Advising",
+            "text": "Sometimes you may be the one guiding another Sahayak — maybe someone new, or someone struggling at their MPP. This lesson shows you how to start that conversation the right way."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-sahayak-challenges",
+            "title": "Walking in Another Sahayak's Shoes",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Every Sahayak's Day Is Different",
+                "html": "A Sahayak's daily work is not easy — testing milk, weighing it correctly, recording data, handling cash, and managing farmers who are sometimes upset. Before you offer advice to another Sahayak, take time to understand what their day actually looks like."
+              },
+              {
+                "type": "text",
+                "heading": "Why This Conversation Matters",
+                "html": "When you sit down with a Sahayak one-on-one — maybe a new Sahayak still learning the job, or one who is struggling — your goal is not to judge them. It is to understand their challenges and help them do better."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Start by Asking, Not Telling",
+                "text": "Before giving any advice, ask the Sahayak to describe their day, their difficulties, and what they think is going wrong. You will often learn things you did not expect."
+              },
+              {
+                "type": "example",
+                "heading": "Starting the Right Way",
+                "text": "Senior Sahayak: Before we talk about the low collection numbers, tell me — how has this month been for you at the MPP? New Sahayak: Honestly, it's been hard. Two farmers stopped coming and I don't fully understand why. Notice the senior Sahayak asked an open question first, instead of starting with the problem."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Before giving advice to a struggling Sahayak, what should you do first?",
+                "options": [
+                  "Tell them everything they are doing wrong",
+                  "Ask them to describe their day and difficulties, and listen",
+                  "Compare them unfavourably to other Sahayaks",
+                  "Wait for someone else to talk to them instead"
+                ],
+                "answer": 1,
+                "explain": "Understanding a Sahayak's real challenges first helps you give advice that actually fits their situation."
+              },
+              {
+                "type": "truefalse",
+                "q": "The goal of a one-on-one conversation with a struggling Sahayak is to judge their performance, not to understand them.",
+                "answer": false,
+                "explain": "The goal is to understand their challenges and help them improve — not to judge them."
+              }
+            ]
+          },
+          {
+            "id": "t-active-listening-sahayak",
+            "title": "Listening Without Jumping to Solutions",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Resist the Urge to Fix It Immediately",
+                "html": "When someone tells you a problem, it's tempting to jump straight to a solution. But if you do this too fast, the Sahayak may feel unheard — and you might end up solving the wrong problem."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "A Common Mistake",
+                "text": "Cutting off a Sahayak mid-sentence to give advice, or assuming you already know their problem before they finish explaining, can make them stop being honest with you in future conversations."
+              },
+              {
+                "type": "text",
+                "heading": "Ask Open-Ended Questions",
+                "html": "Instead of yes-or-no questions, ask things like 'What do you think caused this?' or 'What have you already tried?' These questions help the Sahayak think it through — and often they find their own answer."
+              },
+              {
+                "type": "example",
+                "heading": "Good vs. Rushed Listening",
+                "text": "Rushed: You probably didn't test the milk properly, that's why farmers complained. Better: Walk me through what happened when the farmer complained. What did you do first?"
+              },
+              {
+                "type": "poll",
+                "heading": "What Should You Say Here?",
+                "questions": [
+                  {
+                    "q": "A Sahayak tells you collections have dropped this month. What's the better first response?",
+                    "options": [
+                      "You must be doing something wrong at collection time.",
+                      "Tell me more — when did you first notice the drop, and have you spoken to any farmers about it?"
+                    ],
+                    "answer": 1,
+                    "reveal": "Asking first, before assuming, gets you the real reason and keeps the Sahayak comfortable being honest with you."
+                  }
+                ]
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a risk of jumping straight to a solution before fully listening?",
+                "options": [
+                  "There is no risk, faster is always better",
+                  "You might end up solving the wrong problem",
+                  "The Sahayak will always agree with you anyway",
+                  "It saves so much time that it is always worth it"
+                ],
+                "answer": 1,
+                "explain": "Without fully understanding the real problem, you risk offering a solution that doesn't actually fix it."
+              },
+              {
+                "type": "truefalse",
+                "q": "Open-ended questions like 'What do you think caused this?' can help a Sahayak think through their own problem.",
+                "answer": true,
+                "explain": "Open-ended questions encourage the Sahayak to reflect and often arrive at their own useful answer."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-sahayak-challenges",
+              "type": "mcq",
+              "q": "Why is it important to understand a Sahayak's day-to-day challenges before advising them?",
+              "options": [
+                "It isn't important — advice works the same regardless",
+                "It helps you give advice that actually fits their real situation",
+                "It is only a formality with no real value",
+                "It wastes time that could be spent giving instructions"
+              ],
+              "answer": 1,
+              "explain": "Understanding the real, on-ground challenges helps you offer advice that is actually useful and relevant."
+            },
+            {
+              "topicId": "t-sahayak-challenges",
+              "type": "truefalse",
+              "q": "Starting a mentoring conversation with an open question, like asking how their month has been, is a good approach.",
+              "answer": true,
+              "explain": "Open questions invite honesty and help you understand the real situation before discussing problems."
+            },
+            {
+              "topicId": "t-active-listening-sahayak",
+              "type": "mcq",
+              "q": "A Sahayak is explaining a problem, but you think you already know the cause. What should you do?",
+              "options": [
+                "Interrupt and explain the cause immediately",
+                "Let them finish and ask follow-up questions before concluding anything",
+                "Change the subject",
+                "Assume you're right and move on without checking"
+              ],
+              "answer": 1,
+              "explain": "Letting the Sahayak finish and asking follow-up questions helps you confirm the real cause instead of guessing."
+            },
+            {
+              "topicId": "t-active-listening-sahayak",
+              "type": "truefalse",
+              "q": "Assuming you already know a Sahayak's problem before they finish explaining can damage their trust in you.",
+              "answer": true,
+              "explain": "Jumping to conclusions can make a Sahayak feel unheard, and less likely to be open with you in future."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m6-l2",
+        "title": "Feedback That Builds Confidence",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Feedback That Builds Confidence",
+            "text": "Good feedback helps a Sahayak grow. Bad feedback makes them defensive or discouraged. Let's learn how to give feedback that actually helps."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-constructive-feedback",
+            "title": "Giving Feedback the Right Way",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Be Specific, Not General",
+                "html": "Instead of saying 'Your record-keeping is bad,' point to something specific: 'I noticed three days last week where the evening collection wasn't logged. Let's look at why.' Specific feedback is much easier to act on."
+              },
+              {
+                "type": "text",
+                "heading": "Give Feedback in Private",
+                "html": "Always give corrective feedback one-on-one, in private — never in front of farmers or other Sahayaks. Public criticism embarrasses people and makes them defensive instead of open to improving."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Balance Praise With Improvement",
+                "text": "Mention what the Sahayak is doing well, not only what needs to change. This is not about softening bad news — it is about giving an honest, complete picture so the Sahayak knows what to keep doing too."
+              },
+              {
+                "type": "example",
+                "heading": "Two Ways to Give the Same Feedback",
+                "text": "Harsh: You keep making mistakes with the fat testing, this needs to stop. Constructive: Your farmer relationships are strong — I can see that from how they talk to you. I did notice a couple of fat-testing readings that looked off last week. Can we go over the testing steps together?"
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which is an example of specific, useful feedback?",
+                "options": [
+                  "'Your work is bad.'",
+                  "'I noticed three days last week where the evening collection wasn't logged. Let's look at why.'",
+                  "'You never do anything right.'",
+                  "'Just try harder next time.'"
+                ],
+                "answer": 1,
+                "explain": "Specific feedback points to an exact situation, which makes it much easier for the Sahayak to act on."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is fine to correct a Sahayak's mistake in front of farmers if it saves time.",
+                "answer": false,
+                "explain": "Corrective feedback should always be given in private — public criticism embarrasses and discourages people."
+              }
+            ]
+          },
+          {
+            "id": "t-building-confidence",
+            "title": "Encouraging Growth and Following Up",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Small Wins Build Confidence",
+                "html": "When a Sahayak improves, even a little, notice it and say so. A new Sahayak who used to make mistakes but is now testing milk correctly deserves to hear that you noticed the improvement."
+              },
+              {
+                "type": "text",
+                "heading": "Set Small, Achievable Goals",
+                "html": "Instead of asking a struggling Sahayak to fix everything at once, agree on one or two small, clear goals to work on before your next conversation. This feels achievable, not overwhelming."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Don't Disappear After the Conversation",
+                "text": "A one-time conversation is not enough. If you don't follow up, the Sahayak may feel like the conversation didn't matter, or that you have already given up on them."
+              },
+              {
+                "type": "example",
+                "heading": "A Good Follow-Up Conversation",
+                "text": "Senior Sahayak, at the next visit: Last time we talked about logging every collection. I checked — you've logged every single one this week. That's a real improvement. New Sahayak: Thank you, that means a lot. It's easier now that I have a system for it. This follow-up shows the senior Sahayak kept track and recognised the effort."
+              },
+              {
+                "type": "poll",
+                "heading": "What Should You Say Here?",
+                "questions": [
+                  {
+                    "q": "A Sahayak you're mentoring has improved on one goal but is still struggling with another. What's the better approach?",
+                    "options": [
+                      "Only point out what's still going wrong",
+                      "Recognise the improvement first, then gently work on the next goal together"
+                    ],
+                    "answer": 1,
+                    "reveal": "Recognising progress keeps the Sahayak motivated and open to continuing to improve."
+                  }
+                ]
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is the benefit of setting one or two small, achievable goals instead of asking a Sahayak to fix everything at once?",
+                "options": [
+                  "It makes the goals easier to ignore",
+                  "It feels achievable rather than overwhelming, so the Sahayak is more likely to succeed",
+                  "It has no real benefit",
+                  "It slows down all improvement permanently"
+                ],
+                "answer": 1,
+                "explain": "Small, clear goals feel achievable, which helps a struggling Sahayak build momentum and confidence."
+              },
+              {
+                "type": "truefalse",
+                "q": "Once you've had one feedback conversation with a Sahayak, there is no need to follow up later.",
+                "answer": false,
+                "explain": "Following up shows the Sahayak that the conversation mattered and that you are still invested in their progress."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-constructive-feedback",
+              "type": "mcq",
+              "q": "Why should corrective feedback be given in private, one-on-one?",
+              "options": [
+                "Because it takes too long to do in public",
+                "Because public criticism embarrasses people and makes them defensive",
+                "Because private conversations don't need to be honest",
+                "Because it is required only by written rules, not for any real reason"
+              ],
+              "answer": 1,
+              "explain": "Private feedback avoids embarrassment and keeps the Sahayak open to hearing and acting on it."
+            },
+            {
+              "topicId": "t-constructive-feedback",
+              "type": "truefalse",
+              "q": "Good feedback should mention what a Sahayak is doing well, not only what needs to change.",
+              "answer": true,
+              "explain": "Balanced feedback gives an honest, complete picture, so the Sahayak knows what to keep doing as well as what to improve."
+            },
+            {
+              "topicId": "t-building-confidence",
+              "type": "mcq",
+              "q": "A Sahayak has shown a small improvement since your last conversation. What should you do?",
+              "options": [
+                "Say nothing since the improvement is small",
+                "Notice and acknowledge the improvement before discussing anything else",
+                "Focus only on what's still wrong",
+                "Wait for a bigger improvement before saying anything"
+              ],
+              "answer": 1,
+              "explain": "Acknowledging even small improvements builds confidence and keeps the Sahayak motivated to keep improving."
+            },
+            {
+              "topicId": "t-building-confidence",
+              "type": "truefalse",
+              "q": "Following up after a mentoring conversation shows the Sahayak that you are still invested in their progress.",
+              "answer": true,
+              "explain": "Following up proves the earlier conversation mattered and that support continues beyond a single talk."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m7",
-    number: 7,
-    title: L("Village Level Meeting for Small Groups", "छोटे समूहों के लिए गाँव स्तरीय बैठक"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m7",
+    "number": 7,
+    "title": L("Village Level Meeting for Small Groups", "छोटे समूहों के लिए गाँव स्तरीय बैठक"),
+    "subtitle": "Learn how to plan and run a good meeting with a small group of farmers — and how that is different from a big village-wide meeting.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m7-l1",
+        "title": "Why We Call a Village Meeting",
+        "estMinutes": 6,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Why We Call a Village Meeting",
+            "text": "Collecting milk is only part of your job. Talking to farmers, together, in one place — that is where trust is built. Let's see why meetings matter."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-why-meetings",
+            "title": "Why Meetings Matter",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "More Than Just Collecting Milk",
+                "html": "As a <b>Sahayak</b>, your job is not only to collect milk every day. You also need to talk with farmers regularly — explain new things, answer questions, and solve problems together. A <b>meeting</b> is the best way to do all of this at once."
+              },
+              {
+                "type": "glossary",
+                "term": "Village Meeting",
+                "meaning": "A meeting is when farmers and the Sahayak come together, at one place and one time, to talk about the dairy business — new information, a problem, or a plan."
+              },
+              {
+                "type": "text",
+                "heading": "When Should You Call a Meeting?",
+                "html": "Call a meeting when: <b>a new rule or scheme</b> needs to be explained, <b>many farmers</b> are facing the same problem, <b>new members</b> need to be welcomed, or something important is about to change — like a change in milk rate."
+              },
+              {
+                "type": "example",
+                "heading": "Think About It",
+                "text": "If 5 farmers each ask you the same question on 5 different days, you answer it 5 times — and each answer may come out a little different. If you call one meeting instead, you answer it once, and everyone hears the same, correct answer together."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Did You Know?",
+                "text": "A good meeting builds trust. When farmers feel heard, they trust the MPP more — and they keep bringing their milk there instead of selling it to someone else."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why is it better to answer a common question in a meeting instead of one farmer at a time?",
+                "options": [
+                  "It takes more of your time",
+                  "Everyone hears the same, correct answer together",
+                  "Farmers do not like meetings",
+                  "It is not better — one at a time is always best"
+                ],
+                "answer": 1,
+                "explain": "A meeting lets you give one clear, correct answer to everyone at the same time, instead of repeating (and possibly changing) the answer many times."
+              },
+              {
+                "type": "truefalse",
+                "q": "You should only call a meeting when milk rates change — never for anything else.",
+                "answer": false,
+                "explain": "Meetings are also useful for explaining new rules, solving a shared problem, or welcoming new members — not only for rate changes."
+              }
+            ]
+          },
+          {
+            "id": "t-meeting-groups",
+            "title": "Who Meets in a Small Group?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Two Kinds of Small Groups",
+                "html": "Not every meeting needs the whole village. Often, a <b>small group</b> of the right people is enough to solve a problem or share information quickly. Two common small groups are the VCG and the MRG."
+              },
+              {
+                "type": "glossary",
+                "term": "VCG (Village Contact Group)",
+                "meaning": "A small group of active, respected farmers in the village who help the Sahayak stay in touch with all the other farmer members and pass on information both ways."
+              },
+              {
+                "type": "glossary",
+                "term": "MRG (Member Relation Group)",
+                "meaning": "A small group that looks after the relationship with members — listening to their problems and helping solve them, so members stay happy with the MPP."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Sahayak",
+                    "text": "Leads the meeting, shares information, and listens to what farmers say."
+                  },
+                  {
+                    "label": "Management Committee",
+                    "text": "Local leaders who help run the MPP and take decisions on behalf of the members."
+                  },
+                  {
+                    "label": "Transporter",
+                    "text": "The person who drives the vehicle that carries milk cans — sometimes called in to discuss collection timing."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Small Meeting Means a Small Number of People",
+                "html": "A small-group meeting usually has only the people who are directly involved in that topic — maybe 5 to 15 people. This makes it easy for everyone to speak, ask questions, and be heard."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does the VCG (Village Contact Group) mainly help with?",
+                "options": [
+                  "Repairing the milk collection vehicle",
+                  "Keeping the Sahayak in touch with all the other farmer members",
+                  "Setting the price of milk for the whole state",
+                  "Printing farmer ID cards"
+                ],
+                "answer": 1,
+                "explain": "The VCG is a small group of active farmers who help the Sahayak pass information to and from all the other members in the village."
+              },
+              {
+                "type": "truefalse",
+                "q": "A small-group meeting usually includes the entire village, sometimes hundreds of people.",
+                "answer": false,
+                "explain": "A small-group meeting is kept small on purpose — often just 5 to 15 people — so everyone can speak and be heard."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-why-meetings",
+              "type": "mcq",
+              "q": "Which of these is a good reason to call a village meeting?",
+              "options": [
+                "To avoid talking to farmers directly",
+                "To explain a new rule to many farmers at the same time",
+                "To collect milk faster",
+                "To replace the Management Committee"
+              ],
+              "answer": 1,
+              "explain": "Meetings are called to explain something important, like a new rule, to many farmers at once, so everyone hears the same correct information."
+            },
+            {
+              "topicId": "t-meeting-groups",
+              "type": "truefalse",
+              "q": "The MRG (Member Relation Group) mainly focuses on listening to members' problems and helping solve them.",
+              "answer": true,
+              "explain": "The MRG's main job is looking after the relationship with members — hearing problems and helping resolve them."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m7-l2",
+        "title": "Planning and Running a Small-Group Meeting",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Planning and Running a Small-Group Meeting",
+            "text": "Calling a meeting is easy. Running one well — where quiet people speak up and problems get solved — takes a little planning. Let's learn how."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-plan-agenda",
+            "title": "Before the Meeting: Planning",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Every Meeting Needs an Agenda",
+                "html": "Before you call people together, decide exactly what you want to talk about, and in what order. Writing this down — even as a short list — is called an <b>agenda</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "Agenda",
+                "meaning": "A short list of the topics you will talk about in a meeting, in order. It keeps the meeting on track and stops it from running too long."
+              },
+              {
+                "type": "text",
+                "heading": "Where and How People Sit",
+                "html": "How people sit changes how they talk. Sitting in a <b>circle</b> or facing each other lets everyone see who is speaking and feel equally included. If people sit in rows facing only the Sahayak, like a classroom, quiet farmers often stay quiet."
+              },
+              {
+                "type": "example",
+                "heading": "A Good Agenda Looks Like This",
+                "text": "1) Welcome the farmers (2 minutes). 2) Share today's topic — for example, a new milk-testing method (5 minutes). 3) Answer questions (10 minutes). 4) Agree on next steps (3 minutes)."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Keep It Short",
+                "text": "A small-group meeting works best when it stays short — around 15 minutes. A focused, on-time meeting keeps farmers willing to come to the next one."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is an agenda?",
+                "options": [
+                  "The place where the meeting is held",
+                  "A short list of topics to discuss, in order",
+                  "The list of farmers who did not attend",
+                  "The bill for the meeting's tea and snacks"
+                ],
+                "answer": 1,
+                "explain": "An agenda is a short, ordered list of what will be discussed. It keeps a meeting focused and on time."
+              },
+              {
+                "type": "truefalse",
+                "q": "Seating everyone in a circle, facing each other, usually helps more people speak up than seating them in rows facing only the Sahayak.",
+                "answer": true,
+                "explain": "A circle lets everyone see each other and feel equally part of the discussion, which encourages quieter people to speak."
+              }
+            ]
+          },
+          {
+            "id": "t-encourage-speak",
+            "title": "Getting Everyone to Speak — and Handling Objections",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Quiet Members Have Good Ideas Too",
+                "html": "In every group, some people speak up easily and some stay quiet — even when they have something important to say. Part of your job as Sahayak is to gently invite the quiet ones into the conversation."
+              },
+              {
+                "type": "example",
+                "heading": "Try This",
+                "text": "Sahayak: \"Lakshmi akka, you have kept animals for many years. What do you think about this new collection time?\" Lakshmi: \"I think it will help — but what about the days when it rains heavily?\" A simple, direct question, asked kindly, brought out a real concern that everyone needed to hear."
+              },
+              {
+                "type": "text",
+                "heading": "When Someone Objects",
+                "html": "When a farmer disagrees or raises a problem, do not argue or brush it aside. First, <b>listen fully</b>. Then <b>repeat the concern back</b> in your own words, so they know you understood. Then answer calmly, using facts. If you do not know the answer, say so honestly, and promise to find out and come back."
+              },
+              {
+                "type": "example",
+                "heading": "Handling an Objection — Do This",
+                "text": "Farmer: \"Why should we trust this new payment schedule? Last time we were told something and it did not happen.\" Sahayak: \"I understand your worry — trust was broken before. Let me explain exactly how this is different, and I will also write down the new dates so you can check them yourself.\""
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Don't Do This",
+                "text": "Don't argue back. Don't say \"just trust me.\" Don't ignore an objection and quickly move to the next topic. Doing this makes farmers feel unheard — and they may stop coming to meetings altogether."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "A farmer raises an objection you don't have an answer for. What should you do?",
+                "options": [
+                  "Ignore it and move to the next topic",
+                  "Argue that the farmer is wrong",
+                  "Admit you don't know, and promise to find out and come back",
+                  "End the meeting early"
+                ],
+                "answer": 2,
+                "explain": "Honesty builds trust. It is far better to admit you don't know and follow up later than to guess or dismiss the concern."
+              },
+              {
+                "type": "truefalse",
+                "q": "Directly and kindly inviting a quiet member to speak, by name, can help bring out concerns the group needs to hear.",
+                "answer": true,
+                "explain": "Asking a quiet member directly, in a respectful way, often draws out useful information that would otherwise go unsaid."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-plan-agenda",
+              "type": "mcq",
+              "q": "About how long should a small-group meeting last?",
+              "options": [
+                "Around 15 minutes",
+                "2 hours",
+                "The whole day",
+                "5 minutes, no more"
+              ],
+              "answer": 0,
+              "explain": "A small-group meeting works best when kept short and focused — around 15 minutes."
+            },
+            {
+              "topicId": "t-encourage-speak",
+              "type": "truefalse",
+              "q": "When handling an objection, you should first listen fully and repeat the concern back before answering.",
+              "answer": true,
+              "explain": "Listening first and repeating the concern shows the farmer you understood, which makes your answer land better."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m7-l3",
+        "title": "Small Group Meeting or Mass Meeting?",
+        "estMinutes": 6,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Small Group Meeting or Mass Meeting?",
+            "text": "From a handful of farmers to a whole village — which meeting do you call, and when? Let's learn the difference."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-mass-meeting",
+            "title": "What Is a Village Mass Meeting?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "When the Whole Village Comes Together",
+                "html": "Sometimes a topic is important enough that most or all farmer families in the village need to hear it directly. For this, a <b>mass meeting</b> is called — much bigger than a small-group meeting."
+              },
+              {
+                "type": "glossary",
+                "term": "Mass Meeting",
+                "meaning": "A large meeting where most or all of the farmer families in a village are invited — not just a small group directly affected by one issue."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Village Meeting",
+                    "text": "A general meeting for the whole village, used to share important news or take a big decision together."
+                  },
+                  {
+                    "label": "Health Camp",
+                    "text": "A camp where trained staff check the health of milk animals, give advice, and sometimes vaccinate them — held for the whole village at once."
+                  },
+                  {
+                    "label": "Milk Testing Camp (DMT)",
+                    "text": "A camp where milk quality is tested openly in front of many farmers together, so they can see for themselves how testing works and trust it."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Did You Know?",
+                "text": "A mass meeting usually needs more planning than a small-group meeting — more space, more chairs, and more helpers to manage a bigger crowd."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a mass meeting?",
+                "options": [
+                  "A meeting with only the Management Committee",
+                  "A large meeting where most or all farmer families in the village are invited",
+                  "A meeting held only once a year",
+                  "A meeting only for new members"
+                ],
+                "answer": 1,
+                "explain": "A mass meeting is a large, village-wide meeting, unlike a small-group meeting which involves only the people directly affected by one topic."
+              },
+              {
+                "type": "truefalse",
+                "q": "A health camp for milk animals is an example of an activity that can be part of a village mass meeting.",
+                "answer": true,
+                "explain": "Health camps, along with village meetings and milk testing camps, are examples of activities held for the whole village at once."
+              }
+            ]
+          },
+          {
+            "id": "t-choosing-right-meeting",
+            "title": "Which One Should You Call?",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Small Group vs Mass Meeting",
+                "html": "The right choice depends on <b>who is affected</b> and <b>what you need from the meeting</b>. A small group works when only a few farmers are involved and you need real discussion. A mass meeting works when everyone needs the same information at once."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Choose a Small Group When...",
+                    "text": "the topic affects only a few farmers, or you need everyone present to discuss in detail and be heard."
+                  },
+                  {
+                    "label": "Choose a Mass Meeting When...",
+                    "text": "the topic affects the whole village — like a new MPP opening or a big rate change — and you mainly need to inform many people at once."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "Think About It",
+                "text": "Ten farmers are unhappy about how their milk's fat percentage is being measured. Should you call a mass meeting of 100 people, or a small group of these 10? A small group is better here — it lets you discuss each farmer's concern in real detail."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Plan Extra Time for Mass Meetings",
+                "text": "A mass meeting for a large group usually needs about 20 minutes or more, often with two or more people helping manage the crowd — much more than a small 15-minute group meeting."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "A new MPP is opening and every farmer in the village needs to know about it. Which type of meeting fits best?",
+                "options": [
+                  "A small-group meeting with 5 farmers",
+                  "A mass meeting for the whole village",
+                  "No meeting is needed",
+                  "A meeting only with the transporter"
+                ],
+                "answer": 1,
+                "explain": "Since this news affects every farmer in the village, a mass meeting is the right choice so everyone hears it directly."
+              },
+              {
+                "type": "truefalse",
+                "q": "A mass meeting usually needs less planning time than a small-group meeting.",
+                "answer": false,
+                "explain": "A mass meeting needs MORE planning — more space, more helpers, and more time — because it involves far more people."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-mass-meeting",
+              "type": "mcq",
+              "q": "Which of these best describes a mass meeting?",
+              "options": [
+                "A meeting with just the VCG",
+                "A large, village-wide meeting for most or all farmer families",
+                "A one-on-one talk with a single farmer",
+                "A meeting held only inside the MPP office"
+              ],
+              "answer": 1,
+              "explain": "A mass meeting is large and village-wide, unlike a small-group meeting."
+            },
+            {
+              "topicId": "t-choosing-right-meeting",
+              "type": "mcq",
+              "q": "A handful of farmers have a detailed complaint about payment delays. What is the better choice?",
+              "options": [
+                "A mass meeting for the whole village",
+                "A small-group meeting with just those farmers",
+                "No meeting, just wait for it to resolve itself",
+                "A health camp"
+              ],
+              "answer": 1,
+              "explain": "Since only a few farmers are affected and the issue needs real discussion, a small-group meeting is the better choice."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m8",
-    number: 8,
-    title: L("Formation of MPP & Milk Routes", "MPP और दूध मार्गों का निर्माण"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m8",
+    "number": 8,
+    "title": L("Formation of MPP & Milk Routes", "MPP और दूध मार्गों का निर्माण"),
+    "subtitle": "Learn how a new Milk Pooling Point is chosen and set up, and how milk collection routes are planned so milk reaches the chilling centre fresh and on time.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m8-l1",
+        "title": "Where Should a New MPP Go?",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Where Should a New MPP Go?",
+            "text": "Before an MPP ever opens its doors, someone has to work out exactly where it should be. In this lesson, you'll learn how that decision gets made."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-village-survey",
+            "title": "The Village Survey",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Why Survey a Village First?",
+                "html": "Before setting up a new <b>MPP</b> or chilling facility in an area, the organisation needs real facts about that area — not guesses. This is done through a <b>village survey</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "MPP (Milk Pooling Point)",
+                "meaning": "A place where farmers bring their milk daily and get paid fairly and on time — the same MPP you help form and run as a Sahayak."
+              },
+              {
+                "type": "text",
+                "heading": "How Far Does the Survey Go?",
+                "html": "Villages located <b>4 to 5 km</b> on either side of the main road are surveyed. Villages this close to a road are within reasonable reach for a daily milk collection route."
+              },
+              {
+                "type": "glossary",
+                "term": "MAH (Milk Animal Household)",
+                "meaning": "A household in the village that keeps cows or buffaloes for milk. During a survey, the team visits each MAH and asks a set of questions, using a fixed format."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "How Many Animals",
+                    "text": "The total number of milk animals in each household, and in the whole village."
+                  },
+                  {
+                    "label": "How Much Milk",
+                    "text": "How much milk is produced, how much the family keeps for itself, and how much surplus is left over to sell."
+                  },
+                  {
+                    "label": "Where Milk Goes Now",
+                    "text": "Which traders or dairies farmers currently sell to, at what price, and how (and when) they get paid."
+                  },
+                  {
+                    "label": "Village Facilities",
+                    "text": "Roads, electricity, water, schools — these affect how easy it will be to run a collection point in this village."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Did You Know?",
+                "text": "The survey doesn't stop at milk numbers. It also looks at the different communities living in the village and how they relate to each other — because a collection point works best when it serves the whole village fairly."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "How far from the main road are villages typically surveyed?",
+                "options": [
+                  "Only right next to the road",
+                  "4 to 5 km on either side",
+                  "50 km on either side",
+                  "Only villages with no road access"
+                ],
+                "answer": 1,
+                "explain": "Villages within about 4 to 5 km of the main road are surveyed, since they are within reasonable reach of a daily collection route."
+              },
+              {
+                "type": "truefalse",
+                "q": "The village survey only counts milk animals and ignores things like roads, water, and schools.",
+                "answer": false,
+                "explain": "The survey also looks at village facilities like roads, electricity, water, and schools, because these affect how easy it will be to run a collection point there."
+              }
+            ]
+          },
+          {
+            "id": "t-siting-criteria",
+            "title": "Deciding Where to Place the MPP",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "From Survey to Decision",
+                "html": "Once several villages have been surveyed, the numbers are compared to work out how much milk could realistically be collected from the whole area. This decides both the location and the size of the facility needed."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Enough Farmers",
+                    "text": "The area should have enough milk-animal households to make setting up a collection point worthwhile."
+                  },
+                  {
+                    "label": "Enough Milk Volume",
+                    "text": "The expected surplus milk (after each household's own use) must be large enough to justify running a chilling facility."
+                  },
+                  {
+                    "label": "Distance Between Villages",
+                    "text": "Village-to-village distance is measured so a realistic collection route can connect them to the MPP."
+                  },
+                  {
+                    "label": "Easy Access",
+                    "text": "The site must be reachable by vehicle, so milk cans can be collected and moved out quickly, every day."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Choosing a Cluster BMC or an MCC",
+                "html": "Based on how much milk is available, the organisation decides what kind of chilling setup fits best — a smaller Cluster BMC, or a bigger MCC."
+              },
+              {
+                "type": "glossary",
+                "term": "BMC (Bulk Milk Cooler)",
+                "meaning": "A machine that cools milk quickly and keeps it fresh until it is picked up. A Cluster BMC serves a group of nearby villages together."
+              },
+              {
+                "type": "glossary",
+                "term": "MCC (Milk Chilling Centre)",
+                "meaning": "A bigger centre that chills milk coming in from many villages, before it is sent onward to the dairy plant."
+              },
+              {
+                "type": "example",
+                "heading": "Think About It",
+                "text": "If government census data shows an area has thousands of milk animals but very few organised dairy buyers already working there, that is a good sign for opening a new MPP nearby."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What mainly decides whether an area gets a smaller Cluster BMC or a bigger MCC?",
+                "options": [
+                  "The colour of the milk cans used",
+                  "How much milk is available in that area",
+                  "The number of Sahayaks already trained",
+                  "The distance to the nearest city"
+                ],
+                "answer": 1,
+                "explain": "The amount of milk available in the area decides whether a smaller Cluster BMC or a bigger MCC is the right fit."
+              },
+              {
+                "type": "truefalse",
+                "q": "Village-to-village distance is measured mainly so a realistic milk collection route can be planned.",
+                "answer": true,
+                "explain": "Distance between villages helps decide how they can be linked together into one practical collection route."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-village-survey",
+              "type": "mcq",
+              "q": "What does an MAH survey mainly try to find out?",
+              "options": [
+                "How many schools are in the village",
+                "How many milk animals, how much milk, and where it is currently sold",
+                "The names of every child in the household",
+                "The colour of each family's roof"
+              ],
+              "answer": 1,
+              "explain": "The MAH survey collects facts about milk animals, milk production and surplus, and where the milk is currently sold."
+            },
+            {
+              "topicId": "t-siting-criteria",
+              "type": "truefalse",
+              "q": "The expected surplus milk in an area is one of the things considered before setting up a chilling facility there.",
+              "answer": true,
+              "explain": "Enough surplus milk is needed to justify the cost of running a chilling facility in that area."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m8-l2",
+        "title": "Setting Up the MPP, Step by Step",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Setting Up the MPP, Step by Step",
+            "text": "Once a location looks promising, there is still a clear sequence of steps to follow — and a village and a Sahayak to choose — before the MPP can actually open."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-setup-steps",
+            "title": "The Steps to Set Up an MPP",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "From Data to a Working MPP",
+                "html": "Setting up a new MPP or chilling facility follows a clear order: gather background information, check it on the ground, decide the setup needed, find someone to build it, and then follow up until it is running."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "1. Gather Data",
+                    "text": "Collect secondary data — government census, survey reports, and information on any organised buyers already working in the area."
+                  },
+                  {
+                    "label": "2. Visit and Validate",
+                    "text": "Visit the villages in person to check that the data matches what is really happening on the ground."
+                  },
+                  {
+                    "label": "3. Decide the Setup",
+                    "text": "Based on milk availability, decide the chilling mode (Cluster BMC or MCC) and its capacity."
+                  },
+                  {
+                    "label": "4. Appoint and Follow Up",
+                    "text": "Identify a party to build the facility, issue a Letter of Intent with a timeline, then follow up regularly until it opens."
+                  }
+                ]
+              },
+              {
+                "type": "glossary",
+                "term": "Secondary Data",
+                "meaning": "Information that is already collected by someone else — like a government survey — that gives you a starting point before you visit a village yourself."
+              },
+              {
+                "type": "glossary",
+                "term": "LOI (Letter of Intent)",
+                "meaning": "A written letter stating that the organisation intends to work with a certain party — a person or a company — to build or run the facility, along with an agreed timeline."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Don't Skip the Follow-Up",
+                "text": "Issuing the LOI is not the end of the job. Someone must regularly check progress, so the chilling facility opens on time — not months late."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What usually happens right after secondary data is gathered?",
+                "options": [
+                  "The MPP opens immediately",
+                  "Villages are visited in person to check the data on the ground",
+                  "Milk rates are announced",
+                  "A health camp is held"
+                ],
+                "answer": 1,
+                "explain": "After gathering secondary data, the next step is visiting villages in person to validate that the information is accurate."
+              },
+              {
+                "type": "truefalse",
+                "q": "Once the LOI is issued, no more follow-up is needed.",
+                "answer": false,
+                "explain": "Regular follow-up after the LOI is issued is essential, so the facility actually opens on time."
+              }
+            ]
+          },
+          {
+            "id": "t-choosing-sahayak",
+            "title": "Choosing the Village and the Sahayak",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "The Right Village",
+                "html": "Before finalising anything, a village-level meeting is held with farmers to explain the plan and see how much interest there really is."
+              },
+              {
+                "type": "text",
+                "heading": "Choosing the MPP's Exact Location Within the Village",
+                "html": "Even after a village is chosen, the exact spot for the MPP matters. It should be <b>convenient</b> for the most members, easy for the milk-collection vehicle to reach, and already <b>clean and tidy</b>."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Convenient Location",
+                    "text": "Easy to reach for the largest possible number of member farmers, not just a few living nearby."
+                  },
+                  {
+                    "label": "Vehicle Access",
+                    "text": "The inward vehicle that collects milk must be able to reach and turn around easily, even early in the morning."
+                  },
+                  {
+                    "label": "Clean & Tidy",
+                    "text": "The site should already be clean, because milk is a food product and hygiene starts with the location itself."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Finding the Right Sahayak",
+                "html": "Along with choosing the location, the organisation looks for a good <b>Sahayak candidate</b> from the village — someone locally trusted, available both morning and evening, honest, and comfortable talking with people."
+              },
+              {
+                "type": "example",
+                "heading": "Structure of a Good MPP",
+                "text": "A well-built MPP has accessible, well-designed infrastructure; a clean and hygienic environment; and clear communication — for example, a notice board showing that day's milk rate, so every farmer can see it for themselves."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which of these is NOT one of the location criteria mentioned for placing an MPP?",
+                "options": [
+                  "Convenient for the maximum number of members",
+                  "Easy access for the inward vehicle",
+                  "Clean and tidy locality",
+                  "Located exactly at the centre of the district"
+                ],
+                "answer": 3,
+                "explain": "The criteria mentioned are convenience for members, vehicle access, and cleanliness — not distance to the district centre."
+              },
+              {
+                "type": "truefalse",
+                "q": "A village-level meeting with farmers is held to explain the plan before finalising an MPP in that village.",
+                "answer": true,
+                "explain": "A village-level meeting helps explain the plan to farmers and gauge their interest before the MPP is finalised."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-setup-steps",
+              "type": "mcq",
+              "q": "What is an LOI?",
+              "options": [
+                "A type of milk can",
+                "A written letter stating intent to work with a party, with a timeline",
+                "A government census report",
+                "A type of chilling machine"
+              ],
+              "answer": 1,
+              "explain": "An LOI (Letter of Intent) is a written statement of intent to work with a chosen party, along with an agreed timeline."
+            },
+            {
+              "topicId": "t-choosing-sahayak",
+              "type": "mcq",
+              "q": "Besides being locally trusted, what else matters when choosing a Sahayak candidate?",
+              "options": [
+                "Being available both morning and evening, and comfortable with people",
+                "Owning the most animals in the village",
+                "Being related to the Management Committee",
+                "Living farthest from the MPP site"
+              ],
+              "answer": 0,
+              "explain": "A good Sahayak candidate should be locally trusted, available at both collection times, honest, and good with people."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m8-l3",
+        "title": "Planning Milk Collection Routes",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Planning Milk Collection Routes",
+            "text": "Once MPPs are set up, milk still has to travel from each village to the chilling centre — fresh, and on time. That is route planning."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-route-goals",
+            "title": "What Good Route Planning Achieves",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Four Things a Good Route Must Do",
+                "html": "A milk collection route is not just about connecting villages by road. A good route is planned to achieve four things together."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Maintain Milk Quality",
+                    "text": "The shorter and better-planned the journey, the fresher the milk stays by the time it reaches the chilling centre."
+                  },
+                  {
+                    "label": "Timely Collection",
+                    "text": "Milk must be picked up at a fixed, predictable time every day, so farmers know exactly when to be ready."
+                  },
+                  {
+                    "label": "Minimise Transport Cost",
+                    "text": "The route should avoid unnecessary distance or repeated trips, saving fuel and vehicle cost."
+                  },
+                  {
+                    "label": "Optimal Time at MPP",
+                    "text": "The vehicle should not sit too long at any one MPP, so it can complete the whole route without milk waiting around and losing freshness."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Why This Matters",
+                "text": "Milk starts losing quality soon after it leaves the animal, especially in the heat. A poorly planned route — one that is too long or wastes time — can spoil milk before it even reaches the chilling centre."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does a route need timely, predictable collection?",
+                "options": [
+                  "So the vehicle can visit more villages than planned",
+                  "So farmers know exactly when to be ready with their milk",
+                  "So drivers can take longer breaks",
+                  "It does not really matter"
+                ],
+                "answer": 1,
+                "explain": "A fixed, predictable collection time lets farmers plan around it and have their milk ready when the vehicle arrives."
+              },
+              {
+                "type": "truefalse",
+                "q": "A vehicle spending too long at one MPP can cause milk collected earlier on the route to lose freshness.",
+                "answer": true,
+                "explain": "Time adds up along the whole route. Delays at any one stop can affect how fresh the milk collected earlier still is by the end."
+              }
+            ]
+          },
+          {
+            "id": "t-route-practice",
+            "title": "Planning a Route in Practice",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Using the Village Survey",
+                "html": "Once village-to-village distances are collected during the survey, the route can actually be planned. A road map of the whole area, showing villages and the BMC/MCC positions, is prepared so the sequence of stops is clear."
+              },
+              {
+                "type": "example",
+                "heading": "A Simple Route Example",
+                "text": "Villages A, B and C sit on the same road, about 3 km apart from each other. Village D is 6 km off the main road, with far fewer farmers. Instead of driving out to D first and doubling back, the route runs A, then B, then C in a straight line — and D is only added if there is enough milk there to be worth the extra time, or it gets a separate, smaller route."
+              },
+              {
+                "type": "text",
+                "heading": "Balancing Speed and Coverage",
+                "html": "Whoever plans the route has to balance two things: covering as many villages as possible, without making the total trip so long that milk collected first spoils before the vehicle even reaches the chilling centre."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Review Routes Regularly",
+                "text": "As farmers join or leave, or milk volume in a village grows, routes should be reviewed and adjusted. A route planned once does not have to stay fixed forever."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In the route example, why is village D only added if it has enough milk, or given a separate route?",
+                "options": [
+                  "Because D has no farmers at all",
+                  "Because visiting D first would mean doubling back, adding time to the whole route",
+                  "Because D does not want an MPP",
+                  "Because D is closer than A, B and C"
+                ],
+                "answer": 1,
+                "explain": "Village D is off the main road, so reaching it means extra distance and doubling back — worth doing only if there is enough milk to justify the added time."
+              },
+              {
+                "type": "truefalse",
+                "q": "Once a milk route is planned, it should never be changed again.",
+                "answer": false,
+                "explain": "Routes should be reviewed and adjusted over time, as the number of farmers or the amount of milk in a village changes."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-route-goals",
+              "type": "mcq",
+              "q": "Which of these is one of the four goals of good route planning?",
+              "options": [
+                "Maximising transport cost",
+                "Minimising transportation cost",
+                "Making the vehicle wait as long as possible at each stop",
+                "Avoiding timely collection"
+              ],
+              "answer": 1,
+              "explain": "Minimising transportation cost is one of the four goals, along with milk quality, timely collection, and optimal time at the MPP."
+            },
+            {
+              "topicId": "t-route-practice",
+              "type": "truefalse",
+              "q": "A road map showing villages and BMC/MCC positions helps make the sequence of route stops clear.",
+              "answer": true,
+              "explain": "Preparing a road map of the area, with villages and chilling-point positions marked, helps plan a clear and practical route."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m9",
-    number: 9,
-    title: L("Member Enrolment and Data Collection", "सदस्य नामांकन और डेटा संग्रह"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m9",
+    "number": 9,
+    "title": L("Member Enrolment and Data Collection", "सदस्य नामांकन और डेटा संग्रह"),
+    "subtitle": "Learn how a farmer becomes a registered MPP member, and how daily milk records are kept accurate and fair for everyone.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m9-l1",
+        "title": "Enrolling a New Farmer Member",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Welcoming a New Member",
+            "text": "Before a farmer can sell even one litre of milk at the MPP, they must first become a registered member. Let's learn how this is done, step by step."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-m9-l1-documents",
+            "title": "What a New Member Must Provide",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Becoming a Member",
+                "html": "Before a farmer can sell milk at the MPP and get paid, they must first join as a <b>member</b>. This is called <b>enrolment</b>. Enrolment is not just paperwork — it protects both the farmer and the MPO (Milk Producer Organisation)."
+              },
+              {
+                "type": "glossary",
+                "term": "Enrolment",
+                "meaning": "The process of officially signing up a farmer as a member of the MPP, so they can supply milk and receive payment for it."
+              },
+              {
+                "type": "text",
+                "heading": "Basic KYC Details",
+                "html": "Every new member must give some basic details about themselves. This is called <b>KYC</b>, which means 'Know Your Customer'. It proves who the farmer really is, before any money changes hands."
+              },
+              {
+                "type": "glossary",
+                "term": "KYC (Know Your Customer)",
+                "meaning": "A simple check of a person's identity using official documents, like Aadhaar. It stops fraud and confirms who is really joining as a member."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Aadhaar Card",
+                    "text": "Proves the farmer's identity and address. A photocopy is kept with the enrolment form."
+                  },
+                  {
+                    "label": "Bank Account Details",
+                    "text": "The farmer's own bank account number and IFSC code, so milk payments go directly to them — no cash, no middleman."
+                  },
+                  {
+                    "label": "Passport-Size Photo",
+                    "text": "A recent photo for the membership file and, where used, the member's ID card."
+                  },
+                  {
+                    "label": "Animal Details",
+                    "text": "How many milk animals the farmer owns (cows or buffaloes), and roughly how much milk each one gives."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why the Bank Account Matters So Much",
+                "text": "When a farmer's own bank account is on file, payment goes straight to them, automatically, every time. No one else can collect the money on their behalf without their knowledge. This is one of the biggest protections that enrolment gives a farmer."
+              },
+              {
+                "type": "example",
+                "heading": "Meet Farmer Lakshmi",
+                "text": "Lakshmi owns two buffaloes and wants to start selling milk at her village MPP. Before she can bring even one litre of milk, the Sahayak asks her for her Aadhaar card, her bank passbook, and details of her animals. Only after this is checked and recorded does she become a registered member."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does the MPP collect a farmer's bank account details during enrolment?",
+                "options": [
+                  "So the MPO can lend the farmer money",
+                  "So milk payment goes directly to the farmer, safely and on time",
+                  "So the farmer can pay a membership fee",
+                  "It is not really necessary"
+                ],
+                "answer": 1,
+                "explain": "A farmer's own bank account means payment goes straight to them every time — safe, direct, and on time, with no middleman."
+              },
+              {
+                "type": "truefalse",
+                "q": "KYC means checking who a person really is, using documents like Aadhaar.",
+                "answer": true,
+                "explain": "Correct. KYC stands for 'Know Your Customer' — it confirms the true identity of the person joining as a member."
+              }
+            ]
+          },
+          {
+            "id": "t-m9-l1-steps",
+            "title": "Steps to Register a Member at the MPP",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "From Visit to Registered Member",
+                "html": "Enrolling a new member follows the same basic steps at most MPPs across India. Let's walk through them one by one."
+              },
+              {
+                "type": "text",
+                "heading": "The Five Steps",
+                "html": "<b>1. Farmer visits the MPP:</b> The farmer, usually with help from the Sahayak, comes to the MPP to ask about joining.<br><b>2. Fill the enrolment form:</b> Basic details — name, address, family details, and animal details — are written into the official enrolment form.<br><b>3. Collect and verify documents:</b> The Sahayak checks the Aadhaar card and bank passbook copies against the form, to make sure everything matches.<br><b>4. Assign a membership number:</b> Once approved, the farmer gets a unique membership number, or ID. This number is used every single day to record their milk.<br><b>5. Issue a passbook or ID card:</b> The farmer gets their own record book or card, showing their membership number and details."
+              },
+              {
+                "type": "glossary",
+                "term": "Membership Number",
+                "meaning": "A unique ID number given to each farmer member. It links every milk record, quality test and payment back to that one farmer."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Never Skip Verification",
+                "text": "A membership must never be created without checking real documents. Enrolling a person who does not exist, or who is not really the animal owner, can lead to wrong payments and fraud that hurts the whole MPO."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Double-Check Before You Submit",
+                "text": "Small mistakes — a wrong Aadhaar number, a misspelled name, a wrong account number — can delay a farmer's very first payment. Always read every detail back to the farmer before finishing enrolment."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a membership number mainly used for?",
+                "options": [
+                  "To decide how much land the farmer owns",
+                  "To link every milk record, test and payment to one farmer",
+                  "To give the farmer a bank loan",
+                  "It has no real use"
+                ],
+                "answer": 1,
+                "explain": "Every day's milk record, quality test and payment is linked back to the farmer through their membership number."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is fine to register a new member without checking their documents, as long as they seem trustworthy.",
+                "answer": false,
+                "explain": "Every new member's documents must always be verified. Skipping this step can lead to fraud and wrong payments later."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-m9-l1-documents",
+              "type": "mcq",
+              "q": "Which of these is NOT something a new member usually needs to provide?",
+              "options": [
+                "Aadhaar card copy",
+                "Bank account details",
+                "A vehicle registration certificate",
+                "Animal details"
+              ],
+              "answer": 2,
+              "explain": "Farmers provide identity proof, bank details and animal details — not a vehicle registration certificate."
+            },
+            {
+              "topicId": "t-m9-l1-steps",
+              "type": "truefalse",
+              "q": "A farmer's membership number is only used once, at the time of joining.",
+              "answer": false,
+              "explain": "The membership number is used every day, for every milk record, test and payment — not just once at joining."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m9-l2",
+        "title": "Recording Milk Data Every Day",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Every Drop Counts",
+            "text": "Once a farmer is enrolled, their real work with the MPP begins — bringing milk, twice a day, every day. Each time, important information must be recorded correctly. Let's see what gets recorded, and why it matters so much."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-m9-l2-what-to-record",
+            "title": "What Gets Recorded at Every Milk Collection",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Two Sessions a Day",
+                "html": "Farmers bring milk to the MPP twice a day — a <b>morning session</b> and an <b>evening session</b>. Each time, the MPP records details about that day's milk."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Membership Number",
+                    "text": "So the milk is credited to the correct farmer, and nobody else."
+                  },
+                  {
+                    "label": "Date and Session",
+                    "text": "Whether it was the morning or evening collection, and on which date."
+                  },
+                  {
+                    "label": "Quantity (in litres)",
+                    "text": "How much milk the farmer brought, measured carefully every time."
+                  },
+                  {
+                    "label": "Quality Test Result",
+                    "text": "The FAT and SNF levels found when the milk is tested — this decides the rate paid per litre."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "One Entry, Step by Step",
+                "text": "Farmer Ramu, membership number 214, brings his milk to the MPP at 7 AM. The Sahayak records: Membership No. 214, today's date, Morning session, Quantity 8 litres, and the test result from the machine. This single entry decides exactly how much Ramu will be paid for that milk."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Why Twice a Day?",
+                "text": "Milking happens twice a day, so records are also made twice a day. This keeps payments accurate and matches what the animal actually produced, session by session."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which of these is recorded every time a farmer brings milk?",
+                "options": [
+                  "The farmer's favourite crop",
+                  "Membership number, quantity and quality test result",
+                  "The farmer's shoe size",
+                  "The weather forecast for next week"
+                ],
+                "answer": 1,
+                "explain": "Every milk collection is recorded with the farmer's membership number, the quantity, and the quality test result."
+              },
+              {
+                "type": "truefalse",
+                "q": "Milk is usually collected and recorded only once a day.",
+                "answer": false,
+                "explain": "Milk is collected and recorded twice a day — morning and evening — because animals are milked twice a day."
+              }
+            ]
+          },
+          {
+            "id": "t-m9-l2-mistakes",
+            "title": "Common Data Mistakes — and Why They Matter",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Why Accuracy Protects Everyone",
+                "html": "Good record-keeping is not just paperwork. It is what makes sure every farmer gets paid exactly what they earned — no more, no less. A single wrong entry can cause a real problem for a real family."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Wrong Membership Number",
+                    "text": "Milk gets credited to the wrong farmer, so one person is underpaid while another is overpaid."
+                  },
+                  {
+                    "label": "Illegible Handwriting",
+                    "text": "If numbers cannot be read clearly later, mistakes creep in when payments are calculated."
+                  },
+                  {
+                    "label": "Delayed or Skipped Entries",
+                    "text": "If an entry is not made right away, details can be forgotten or guessed — and guessing is never accurate."
+                  },
+                  {
+                    "label": "Mixing Up Sessions",
+                    "text": "Recording an evening collection as morning (or the other way around) can confuse the whole day's record."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "A Small Mistake, A Big Problem",
+                "text": "Even one wrong digit in a membership number or quantity can mean a farmer does not get paid correctly. Repeated mistakes can also make farmers lose trust in the MPP."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Good Habits for Accurate Records",
+                "text": "Record every entry immediately, right at the time of collection. Read the membership number and quantity back to the farmer before moving to the next person. Keep the register neat and clear, so anyone can check it later."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What can happen if a farmer's membership number is entered wrong?",
+                "options": [
+                  "Nothing, it does not matter",
+                  "Milk gets credited to the wrong farmer, causing wrong payments",
+                  "The MPP closes for the day",
+                  "The milk quality improves"
+                ],
+                "answer": 1,
+                "explain": "A wrong membership number means the milk — and the payment for it — goes to the wrong person's record."
+              },
+              {
+                "type": "truefalse",
+                "q": "It is fine to record milk details from memory at the end of the day, instead of at the time of collection.",
+                "answer": false,
+                "explain": "Details should be recorded immediately. Waiting and relying on memory leads to guesses and mistakes."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-m9-l2-what-to-record",
+              "type": "mcq",
+              "q": "How many times a day is milk usually collected and recorded at an MPP?",
+              "options": [
+                "Once",
+                "Twice",
+                "Three times",
+                "Only on Sundays"
+              ],
+              "answer": 1,
+              "explain": "Milk is collected and recorded twice a day — morning and evening."
+            },
+            {
+              "topicId": "t-m9-l2-mistakes",
+              "type": "mcq",
+              "q": "Why is it important to record milk details immediately, at the time of collection?",
+              "options": [
+                "Because the register looks nicer",
+                "Because waiting causes mistakes and guessing",
+                "Because farmers prefer to wait",
+                "It is not important"
+              ],
+              "answer": 1,
+              "explain": "Recording immediately avoids guesswork and keeps every farmer's payment accurate."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m10",
-    number: 10,
-    title: L("Milk Rates, Its Parameters and Methodologies", "दूध की दरें, इसके मानदंड और तरीके"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m10",
+    "number": 10,
+    "title": L("Milk Rates, Its Parameters and Methodologies", "दूध की दरें, इसके मानदंड और तरीके"),
+    "subtitle": "Learn why milk is priced on quality, not just quantity — and practice the real maths MPPs use to work out a fair rate.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m10-l1",
+        "title": "Why FAT and SNF Decide the Price",
+        "estMinutes": 7,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Why Isn't Milk Priced Like Water?",
+            "text": "Two farmers each bring 10 litres of milk. Do they always get paid the same amount? Not necessarily — and there's a good reason why. Let's find out."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-m10-l1-not-just-volume",
+            "title": "Why Milk Isn't Priced by Volume Alone",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Same Litres, Different Value",
+                "html": "If milk was priced only by how many litres a farmer brings, there would be no reward for good-quality milk — and no way to stop someone from adding water to increase volume. That is why MPPs price milk mainly on two things found inside it: <b>FAT</b> and <b>SNF</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "FAT",
+                "meaning": "The fat content of milk — it is what gives milk its richness, and is used to make butter, ghee and cream. It is measured as a percentage, like 4% or 6%."
+              },
+              {
+                "type": "glossary",
+                "term": "SNF (Solids-Not-Fat)",
+                "meaning": "Everything solid in milk except fat — mainly protein, milk sugar (lactose) and minerals. It is also measured as a percentage, and matters for products like paneer and milk powder."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "FAT — Richness",
+                    "text": "Higher FAT means richer milk, better for ghee and butter. Cow milk is usually lower in FAT; buffalo milk is usually higher."
+                  },
+                  {
+                    "label": "SNF — Solids",
+                    "text": "Higher SNF means more protein, minerals and milk sugar — important for the milk's real food value and for products like paneer."
+                  },
+                  {
+                    "label": "Testing Before Payment",
+                    "text": "Every farmer's milk is tested for FAT and SNF before the rate is worked out — this is what makes the payment fair."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Fair Pay for Real Quality",
+                "text": "A farmer who feeds their animal well and takes good care of it usually gets milk with higher FAT and SNF — and earns a better rate. This system rewards good care, not just a bigger can of milk."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does FAT in milk mainly affect?",
+                "options": [
+                  "The colour of the milk can",
+                  "The richness of the milk, used for ghee and butter",
+                  "The distance milk travels to the MPP",
+                  "The size of the farmer's herd"
+                ],
+                "answer": 1,
+                "explain": "FAT is what gives milk its richness, and is used to make products like ghee and butter."
+              },
+              {
+                "type": "truefalse",
+                "q": "SNF stands for 'Solids-Not-Fat' and includes things like protein and milk sugar.",
+                "answer": true,
+                "explain": "Correct. SNF covers all the solid parts of milk apart from fat — mainly protein, lactose (milk sugar) and minerals."
+              }
+            ]
+          },
+          {
+            "id": "t-m10-l1-factors",
+            "title": "What Makes FAT and SNF Go Up or Down",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Not Every Litre Is the Same",
+                "html": "FAT and SNF levels are not fixed — they change based on a few real factors. Knowing these helps a Sahayak explain milk rates to farmers clearly."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Species (Cow or Buffalo)",
+                    "text": "Buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%). That is one reason buffalo milk often earns a higher rate per litre."
+                  },
+                  {
+                    "label": "Breed",
+                    "text": "Some breeds, like local indigenous breeds, can naturally give milk with higher FAT than some high-yield crossbred (HF) cows, even if the crossbred cow gives more total litres."
+                  },
+                  {
+                    "label": "Season",
+                    "text": "FAT and SNF can dip a little in hot summer months and rise in cooler winter months, because animals eat and drink differently."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Why Adulteration Is Caught",
+                "text": "Adding water to milk lowers both FAT and SNF, because it dilutes everything in the milk. This is exactly why every sample is tested before payment — it protects honest farmers and the MPO."
+              },
+              {
+                "type": "example",
+                "heading": "Buffalo vs Cow, Same Rate",
+                "text": "At the same fat rate, a buffalo giving 7% FAT milk will earn more per litre than a cow giving 4% FAT milk — because the buffalo's milk has more of what is actually being paid for."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which of these can cause FAT and SNF to be lower than they should be?",
+                "options": [
+                  "The farmer's name",
+                  "Adding water to the milk",
+                  "The colour of the milk can",
+                  "The time the Sahayak wakes up"
+                ],
+                "answer": 1,
+                "explain": "Adding water dilutes the milk, lowering both its FAT and SNF readings."
+              },
+              {
+                "type": "truefalse",
+                "q": "Buffalo milk usually has lower FAT than cow milk.",
+                "answer": false,
+                "explain": "It is the opposite — buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%)."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-m10-l1-not-just-volume",
+              "type": "mcq",
+              "q": "Why do MPPs test milk for FAT and SNF before paying farmers?",
+              "options": [
+                "To decide the colour of the milk can",
+                "To make sure the rate paid matches the real quality of the milk",
+                "Because it is required for the animal's health",
+                "To count how many farmers are members"
+              ],
+              "answer": 1,
+              "explain": "Testing FAT and SNF makes sure farmers are paid fairly, based on the real quality of the milk they brought."
+            },
+            {
+              "topicId": "t-m10-l1-factors",
+              "type": "truefalse",
+              "q": "Season can affect the FAT and SNF levels in milk.",
+              "answer": true,
+              "explain": "Yes — FAT and SNF can shift a little between summer and winter, because of changes in what animals eat and drink."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m10-l2",
+        "title": "Pricing on Fat Basis — Let's Do the Maths",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Method 1: Pro-Rata Fat Pricing",
+            "text": "This is the simplest pricing method — sometimes called Single-Axis pricing because it looks at just ONE thing: FAT. Let's learn the formula and try it with real numbers."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-m10-l2-formula",
+            "title": "The Pro-Rata Fat Formula",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "One Simple Formula",
+                "html": "In <b>Pro-Rata Fat pricing</b> (also called <b>Single-Axis pricing</b>), the price per litre depends only on the milk's FAT percentage and the <b>fat rate</b> the MPO has set. The formula is:<br><b>Price per litre = (FAT% ÷ 100) × Fat Rate</b>"
+              },
+              {
+                "type": "glossary",
+                "term": "Fat Rate",
+                "meaning": "The price the MPO sets for one full kilogram of fat — for example, ₹580 per kg. It is the starting number used to work out what each farmer's milk is worth."
+              },
+              {
+                "type": "text",
+                "heading": "Let's Do the Maths Together",
+                "html": "A farmer's milk has FAT of 5.5%, and the fat rate is ₹580 per kg.<br>Price per litre = (5.5 ÷ 100) × 580 = <b>₹31.90 per litre</b>."
+              },
+              {
+                "type": "example",
+                "heading": "Try It Yourself — Scaling Up",
+                "text": "If the MPP collects 2,000 litres today, all at this same average FAT, the total paid to farmers is: 2,000 litres × ₹31.90 = ₹63,800 in one day, from milk alone."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Same Formula, Every Time",
+                "text": "Whether it's one litre or ten thousand litres, the formula stays exactly the same — only the FAT percentage and the total quantity change."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "A farmer's milk has 7% FAT. The fat rate is ₹500 per kg. What is the price per litre?",
+                "options": [
+                  "₹7",
+                  "₹35",
+                  "₹350",
+                  "₹500"
+                ],
+                "answer": 1,
+                "explain": "Price = (7 ÷ 100) × 500 = ₹35 per litre."
+              },
+              {
+                "type": "mcq",
+                "q": "In the Pro-Rata Fat method, which two numbers decide the price per litre?",
+                "options": [
+                  "The farmer's name and village",
+                  "The FAT percentage and the fat rate",
+                  "The colour of the can and the season",
+                  "The number of members in the MPP"
+                ],
+                "answer": 1,
+                "explain": "Price per litre = (FAT% ÷ 100) × Fat Rate — nothing else is needed for this method."
+              }
+            ]
+          },
+          {
+            "id": "t-m10-l2-deductions-incentives",
+            "title": "Deductions, Incentives and Comparing Milk Types",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Not Always a Flat Formula",
+                "html": "MPOs often adjust the base price up or down, to reward good quality and discourage poor quality. Let's see two real examples."
+              },
+              {
+                "type": "ledger",
+                "heading": "Example: A Deduction for Low SNF",
+                "rows": [
+                  {
+                    "label": "Base price (6% FAT × ₹600/kg fat rate)",
+                    "amount": "₹36.00"
+                  },
+                  {
+                    "label": "Deduction for SNF below standard",
+                    "amount": "−₹1.50"
+                  }
+                ],
+                "total": {
+                  "label": "Final price paid per litre",
+                  "amount": "₹34.50"
+                }
+              },
+              {
+                "type": "ledger",
+                "heading": "Example: An Incentive for High FAT",
+                "rows": [
+                  {
+                    "label": "Base price (6.8% FAT × ₹610/kg fat rate)",
+                    "amount": "₹41.48"
+                  },
+                  {
+                    "label": "Incentive for FAT above 6.5%",
+                    "amount": "+₹2.00"
+                  }
+                ],
+                "total": {
+                  "label": "Final price paid per litre",
+                  "amount": "₹43.48"
+                }
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why Incentives Help Everyone",
+                "text": "Incentives reward farmers who feed and care for their animals well enough to get richer milk. This encourages better care across the whole village, which means better milk for the MPP too."
+              },
+              {
+                "type": "barchart",
+                "heading": "Price per Litre by Milk Type (at ₹620/kg fat rate)",
+                "source": "Worked example, Pro-Rata Fat method",
+                "unit": "₹ per litre",
+                "data": [
+                  {
+                    "label": "Buffalo milk (7.5% FAT)",
+                    "value": 46.5
+                  },
+                  {
+                    "label": "Cow milk (4% FAT)",
+                    "value": 24.8
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Same Rate, Different Result",
+                "html": "Both farmers are paid at the exact same fat rate of ₹620 per kg. The buffalo milk earns more per litre only because it naturally has more FAT — not because it is treated differently."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does buffalo milk usually earn a higher price per litre than cow milk, at the same fat rate?",
+                "options": [
+                  "Buffaloes are bigger animals",
+                  "Buffalo milk usually has a higher FAT percentage",
+                  "Cow milk is tested less often",
+                  "There is no real difference"
+                ],
+                "answer": 1,
+                "explain": "Since the price depends on FAT%, and buffalo milk usually has more FAT, it earns more per litre at the same fat rate."
+              },
+              {
+                "type": "truefalse",
+                "q": "A deduction lowers the base price, and an incentive raises it.",
+                "answer": true,
+                "explain": "Correct — deductions (for issues like low SNF) reduce the price, while incentives (for high FAT) increase it."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-m10-l2-formula",
+              "type": "mcq",
+              "q": "A farmer's milk has FAT 5%. The fat rate is ₹500 per kg. What is the price per litre?",
+              "options": [
+                "₹5",
+                "₹25",
+                "₹50",
+                "₹500"
+              ],
+              "answer": 1,
+              "explain": "Price = (5 ÷ 100) × 500 = ₹25 per litre."
+            },
+            {
+              "topicId": "t-m10-l2-deductions-incentives",
+              "type": "mcq",
+              "q": "What is the effect of an incentive on the price paid to a farmer?",
+              "options": [
+                "It lowers the price",
+                "It raises the price",
+                "It has no effect",
+                "It changes the FAT test result"
+              ],
+              "answer": 1,
+              "explain": "An incentive is an amount added on top of the base price, so it raises what the farmer is paid."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m10-l3",
+        "title": "Pricing on EFU Basis — A Second Method",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Method 2: Equivalent Fat Units (EFU)",
+            "text": "The Pro-Rata Fat method looks at FAT alone. This second method — EFU — combines FAT and SNF into one fair number. Let's learn how it works, with real numbers."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-m10-l3-efu-formula",
+            "title": "What Is EFU and How Do We Calculate It",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Combining FAT and SNF",
+                "html": "<b>EFU</b> stands for <b>Equivalent Fat Units</b>. Instead of looking at FAT alone, it combines FAT and SNF into a single number, so both are rewarded fairly. The formula is:<br><b>EFU = FAT% + (SNF% × 2/3)</b>"
+              },
+              {
+                "type": "glossary",
+                "term": "EFU (Equivalent Fat Units)",
+                "meaning": "A single number that combines a milk sample's FAT and SNF together, so both can be compared fairly against a standard reference point."
+              },
+              {
+                "type": "text",
+                "heading": "Let's Do the Maths Together",
+                "html": "A farmer's milk has FAT 5.5% and SNF 8.6%.<br>EFU = 5.5 + (8.6 × 2/3) = 5.5 + 5.73 = <b>11.23</b>."
+              },
+              {
+                "type": "example",
+                "heading": "Try It Yourself",
+                "text": "Milk with FAT 6.8% and SNF 9.0%: EFU = 6.8 + (9.0 × 2/3) = 6.8 + 6.0 = 12.8. Many MPOs use 12.5 EFU as the standard base level — so this milk, at 12.8, is slightly ABOVE standard."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "What the Base EFU Means",
+                "text": "12.5 EFU is a common standard reference point. Milk above this base is richer than standard and earns more. Milk below this base earns less."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does EFU combine into one number?",
+                "options": [
+                  "FAT and the price of feed",
+                  "FAT and SNF",
+                  "The farmer's age and animal breed",
+                  "Season and distance to the MPP"
+                ],
+                "answer": 1,
+                "explain": "EFU (Equivalent Fat Units) combines a milk sample's FAT and SNF into a single number."
+              },
+              {
+                "type": "mcq",
+                "q": "Milk has FAT 4% and SNF 9%. Using EFU = FAT + (SNF × 2/3), what is its EFU?",
+                "options": [
+                  "4",
+                  "9",
+                  "10",
+                  "13"
+                ],
+                "answer": 2,
+                "explain": "EFU = 4 + (9 × 2/3) = 4 + 6 = 10."
+              }
+            ]
+          },
+          {
+            "id": "t-m10-l3-efu-price",
+            "title": "Using EFU to Work Out the Price",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "From EFU to Rupees",
+                "html": "Once we know a farmer's EFU, we compare it to the base EFU to work out the price. The formula is:<br><b>Price per litre = (Farmer's EFU ÷ Base EFU) × Declared Rate</b>"
+              },
+              {
+                "type": "glossary",
+                "term": "Declared Rate",
+                "meaning": "The price per litre the MPO announces for milk that is exactly at the base EFU (for example, 12.5 EFU). It is the reference price used in the formula."
+              },
+              {
+                "type": "text",
+                "heading": "Let's Do the Maths Together",
+                "html": "A farmer's milk has FAT 4.5% and SNF 8.2%. First, find the EFU: EFU = 4.5 + (8.2 × 2/3) = 4.5 + 5.47 = 9.97.<br>The declared rate (for 12.5 EFU) is ₹60 per litre.<br>Price = (9.97 ÷ 12.5) × 60 = <b>₹47.86 per litre</b>."
+              },
+              {
+                "type": "example",
+                "heading": "Try It Yourself",
+                "text": "Milk with FAT 6.0% and SNF 8.8%, declared rate ₹58 per litre: EFU = 6.0 + (8.8 × 2/3) = 6.0 + 5.87 = 11.87. Price = (11.87 ÷ 12.5) × 58 = ₹55.05 per litre."
+              },
+              {
+                "type": "ledger",
+                "heading": "What Happens When SNF Improves?",
+                "rows": [
+                  {
+                    "label": "Price at old SNF (FAT 5.5%, SNF 8.2%)",
+                    "amount": "₹52.66"
+                  },
+                  {
+                    "label": "Extra earned per litre from better SNF (8.9%)",
+                    "amount": "+₹2.20"
+                  }
+                ],
+                "total": {
+                  "label": "New price per litre (FAT 5.5%, SNF 8.9%)",
+                  "amount": "₹54.86"
+                }
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why Improving SNF Pays Off",
+                "text": "Improving SNF — through better feed and animal care — raises the EFU even if FAT stays exactly the same. That means more income for the farmer, without needing a different animal."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Milk has FAT 6.0% and SNF 8.8%, and the declared rate is ₹58 per litre. What is the approximate price per litre?",
+                "options": [
+                  "₹48",
+                  "₹55",
+                  "₹58",
+                  "₹65"
+                ],
+                "answer": 1,
+                "explain": "EFU = 6.0 + (8.8 × 2/3) = 11.87. Price = (11.87 ÷ 12.5) × 58 ≈ ₹55."
+              },
+              {
+                "type": "truefalse",
+                "q": "Improving SNF, even if FAT stays the same, can increase a farmer's price per litre under the EFU method.",
+                "answer": true,
+                "explain": "Yes — because EFU includes SNF too, a higher SNF raises the EFU, and therefore the price, even without any change in FAT."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-m10-l3-efu-formula",
+              "type": "mcq",
+              "q": "What is the formula for EFU?",
+              "options": [
+                "EFU = FAT × SNF",
+                "EFU = FAT + (SNF × 2/3)",
+                "EFU = FAT − SNF",
+                "EFU = SNF ÷ FAT"
+              ],
+              "answer": 1,
+              "explain": "EFU = FAT% + (SNF% × 2/3)."
+            },
+            {
+              "topicId": "t-m10-l3-efu-price",
+              "type": "mcq",
+              "q": "Under the EFU method, what happens to a farmer's price if their milk's EFU is higher than the base EFU?",
+              "options": [
+                "The price is lower than the declared rate",
+                "The price is exactly the declared rate no matter what",
+                "The price is higher than the declared rate",
+                "EFU has no effect on price"
+              ],
+              "answer": 2,
+              "explain": "When EFU is above the base (for example, above 12.5), the price paid is higher than the declared rate."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m11",
-    number: 11,
-    title: L("CDA — Its Constituents and Calculation", "CDA — इसके घटक और गणना"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
+    "id": "m11",
+    "number": 11,
+    "title": L("CDA — Its Constituents and Calculation", "CDA — इसके घटक और गणना"),
+    "subtitle": "Learn what happens to milk quantity as it travels from farmer to dairy — and how CDA finds and fixes any milk that goes missing along the way.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m11-l1",
+        "title": "What Is CDA, and Why Does It Exist?",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "What Is CDA?",
+            "text": "Every day, milk travels from a farmer's bucket to the dairy plant. Sometimes, a little milk goes missing on the way. In this lesson, you'll learn why that happens — and how CDA helps find and fix it."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-milk-goes-missing",
+            "title": "The Problem: Milk That Goes Missing",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "A Simple Question",
+                "html": "A farmer pours 10 litres of milk into a can at the village Milk Pooling Point, or MPP. That milk then travels — by can, by van, sometimes by tanker — until it reaches the dairy plant. Does the plant always receive exactly 10 litres? Not always. Sometimes a little less arrives. This lesson is about why that happens, and what the dairy does about it."
+              },
+              {
+                "type": "glossary",
+                "term": "MPP (Milk Pooling Point)",
+                "meaning": "The place in the village where farmers bring their milk every day. Here, the milk is weighed, tested for quality, and written down before it is sent onward."
+              },
+              {
+                "type": "text",
+                "heading": "Five Reasons Milk Quantity Can Change",
+                "html": "Milk quantity recorded at the village can end up different from milk quantity received at the dairy. There are five common reasons for this. Let's look at each one."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Measurement Mistakes",
+                    "text": "A weighing scale that is not set correctly, or a person who writes down the wrong number by mistake, can make the recorded quantity wrong — even if no milk was actually lost."
+                  },
+                  {
+                    "label": "Spillage on the Way",
+                    "text": "Milk can spill out of a can or tanker while it is being poured, loaded, or driven over a bumpy road. This is called a handling loss."
+                  },
+                  {
+                    "label": "Milk Taken Without Permission",
+                    "text": "Sometimes, a small amount of milk is deliberately removed during handling or transport. This is called pilferage, and it is not allowed."
+                  },
+                  {
+                    "label": "Changes in Fat and SNF",
+                    "text": "If milk is tested incorrectly, or if water or another substance is mixed into it, the Fat and SNF readings can change — and this affects what the milk is worth, even if the volume looks the same."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "A Fifth Reason: Gaps on Paper",
+                "text": "Sometimes the problem is not the milk at all — it's the paperwork. If the dispatch quantity written down is more than the quantity that was actually tested (the composite quantity), or if entries are delayed or use the wrong units, the numbers will not match — even if every drop of milk arrived safely."
+              },
+              {
+                "type": "example",
+                "heading": "Think About It",
+                "text": "Imagine a Sahayak collects milk in the morning and pours it into a can to send to the chilling centre. If the can's lid is loose, a little milk can spill out on the bumpy village road. Nobody stole it, nobody made a paperwork mistake — but the chilling centre will still receive less milk than was recorded at the village. This is exactly the kind of gap that CDA is designed to catch."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which of these is an example of a handling loss?",
+                "options": [
+                  "Milk spilling out of a can while it is being loaded",
+                  "A farmer selling extra milk to a neighbour",
+                  "A cow giving less milk in summer",
+                  "A Sahayak's phone running out of battery"
+                ],
+                "answer": 0,
+                "explain": "Milk spilling during loading, transfer or transport is called a handling loss — one of the common reasons milk quantity changes between the village and the dairy."
+              },
+              {
+                "type": "truefalse",
+                "q": "Milk quantity can only go missing if someone steals it.",
+                "answer": false,
+                "explain": "Milk quantity can change for many reasons — spillage, measurement mistakes, testing errors and paperwork gaps — not only theft."
+              }
+            ]
+          },
+          {
+            "id": "t-what-cda-does",
+            "title": "What CDA Does About It",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Meet CDA",
+                "html": "CDA stands for <b>Composite, Dispatch and Actual</b> — the names of three points where milk quantity is written down as it moves from the village to the dairy. By comparing the numbers at these three points, the dairy can find out exactly where — and how much — milk went missing."
+              },
+              {
+                "type": "glossary",
+                "term": "CDA (Composite – Dispatch – Actual)",
+                "meaning": "A system that compares three numbers: how much milk was recorded at the MPP (Composite), how much was sent out (Dispatch), and how much actually arrived at the chilling centre (Actual). Comparing these numbers helps the dairy find and recover any shortfall."
+              },
+              {
+                "type": "text",
+                "heading": "Why CDA Matters",
+                "html": "CDA is not about blaming anyone. It exists so that farmers are paid correctly for the milk they actually gave, so the union or company can find exactly where losses are happening — which village, which route, which Sahayak — and fix the problem quickly, and so everyone handling milk is encouraged to be careful and honest, because their numbers are being checked."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Checked at Many Levels",
+                "text": "CDA is not calculated only once for the whole dairy. It can be worked out MPP-wise, route-wise, officer-wise, and BMC or MCC-wise. This helps managers compare performance across units, spot the weakest links, and track whether things are improving over time."
+              },
+              {
+                "type": "example",
+                "heading": "Why This Protects Everyone",
+                "text": "A Sahayak whose route shows very little missing milk is clearly handling milk carefully — checking cans, weighing correctly, and dispatching on time. A low CDA loss is proof of good work, and it protects both the Sahayak's reputation and the farmers' income."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What three points does CDA compare to find missing milk?",
+                "options": [
+                  "Composite, Dispatch and Actual quantities",
+                  "Morning, afternoon and evening prices",
+                  "Fat, SNF and water content only",
+                  "Cow, buffalo and goat milk"
+                ],
+                "answer": 0,
+                "explain": "CDA compares the Composite (recorded at the MPP), Dispatch (sent out) and Actual (received at the chilling centre) quantities to find any gap."
+              },
+              {
+                "type": "truefalse",
+                "q": "CDA can be calculated separately for each route or each Sahayak, not just for the whole dairy.",
+                "answer": true,
+                "explain": "CDA can be worked out at many levels — MPP-wise, route-wise, officer-wise and BMC/MCC-wise — to find exactly where losses happen."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-milk-goes-missing",
+              "type": "mcq",
+              "q": "Which of these can cause milk quantity to change between the MPP and the dairy?",
+              "options": [
+                "A wrongly calibrated weighing scale",
+                "The name written on the milk can",
+                "The colour of the Sahayak's uniform",
+                "The distance from the MPP to the farmer's house"
+              ],
+              "answer": 0,
+              "explain": "A wrongly calibrated weighing scale can record the wrong quantity, even though no milk was actually lost."
+            },
+            {
+              "topicId": "t-what-cda-does",
+              "type": "mcq",
+              "q": "What is the main purpose of CDA?",
+              "options": [
+                "To find and recover milk quantity that goes missing between the village and the dairy",
+                "To decide which cows give the most milk",
+                "To fix the price of cattle feed",
+                "To choose which Sahayak gets promoted"
+              ],
+              "answer": 0,
+              "explain": "CDA compares recorded quantities at the Composite, Dispatch and Actual stages so that any shortfall can be found and recovered."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m11-l2",
+        "title": "The Three Checkpoints of CDA",
+        "estMinutes": 9,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "The Three Checkpoints",
+            "text": "CDA works by checking milk quantity at three different points in its journey. Let's walk through each checkpoint and see what is checked there."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-checkpoint-mpp-dispatch",
+            "title": "Checkpoint 1 and 2: At the MPP and On the Road",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Checkpoint 1: Composite Control (At the MPP)",
+                "html": "The first checkpoint happens right at the village MPP. This is where the <b>Composite</b> quantity is set — the official recorded amount of milk collected that day."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Correct Weighing",
+                    "text": "The weighing scale must be checked and calibrated so every pour is measured correctly."
+                  },
+                  {
+                    "label": "Careful Handling",
+                    "text": "Collection must be supervised so milk is not spilled, leaked, or mixed up between farmers."
+                  },
+                  {
+                    "label": "Proper Testing",
+                    "text": "Milk must be sampled and tested correctly for Fat and SNF, using the right method."
+                  },
+                  {
+                    "label": "Checking for Mixing",
+                    "text": "Random checks — like using a lactometer — help catch water or other substances mixed into the milk."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Checkpoint 2: Dispatch Control (At the Sahayak Stage)",
+                "html": "The second checkpoint happens when the Sahayak sends the milk onward — from the MPP toward the chilling centre. This is the <b>Dispatch</b> stage."
+              },
+              {
+                "type": "glossary",
+                "term": "Dispatch",
+                "meaning": "The act of sending milk out from the MPP toward the chilling centre or dairy. The dispatch quantity is the amount recorded as being sent."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Quantity Matches",
+                    "text": "The quantity being dispatched must match what was recorded at the composite stage — no more, no less."
+                  },
+                  {
+                    "label": "Careful Loading",
+                    "text": "Pouring and loading must be supervised to prevent spillage or leakage."
+                  },
+                  {
+                    "label": "Cans and Vehicle Ready",
+                    "text": "Cans must be clean and leak-proof, and the vehicle must be ready before milk is loaded."
+                  },
+                  {
+                    "label": "Sealed and Documented",
+                    "text": "Cans or tankers must be properly sealed, and dispatch slips filled in correctly, so nothing can be added or removed unnoticed."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Why Sealing Matters",
+                "text": "A sealed can or tanker is like a locked box — if the seal is broken when it reaches the chilling centre, everyone knows something may have happened on the way. This is one of the simplest ways to protect milk quantity during transport."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "At the MPP (Composite stage), what helps make sure milk quantity is recorded correctly?",
+                "options": [
+                  "A correctly calibrated weighing scale",
+                  "A louder radio at the MPP",
+                  "Selling milk at a discount",
+                  "Painting the MPP a bright colour"
+                ],
+                "answer": 0,
+                "explain": "A correctly calibrated weighing scale, checked regularly, ensures every pour of milk is measured accurately."
+              },
+              {
+                "type": "truefalse",
+                "q": "Sealing cans and tankers before dispatch has nothing to do with protecting milk quantity.",
+                "answer": false,
+                "explain": "Sealing helps prevent milk from being added or removed unnoticed during transport, protecting the recorded quantity."
+              }
+            ]
+          },
+          {
+            "id": "t-checkpoint-actual-receipt",
+            "title": "Checkpoint 3: Arrival at the Chilling Centre",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Checkpoint 3: Actual Receipt and Transit Control",
+                "html": "The third and final checkpoint happens when the milk actually arrives at the chilling centre — the MCC or BMC. This is where the <b>Actual</b> quantity is recorded."
+              },
+              {
+                "type": "glossary",
+                "term": "MCC / BMC",
+                "meaning": "MCC (Milk Chilling Centre) and BMC (Bulk Milk Cooler) are places where milk is cooled quickly after it arrives, to keep it fresh before it goes on to the dairy plant."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Re-checking Quantity",
+                    "text": "The actual quantity received is compared with the dispatch quantity, using a properly calibrated scale."
+                  },
+                  {
+                    "label": "Checking Quality on Arrival",
+                    "text": "Fat and SNF are tested again, and the milk is checked for sourness, curdling, smell or contamination before it is accepted."
+                  },
+                  {
+                    "label": "Checking Seals",
+                    "text": "Seals on cans or tankers are checked for any sign of tampering, which could mean milk was removed on the way."
+                  },
+                  {
+                    "label": "Spotting Transit Losses",
+                    "text": "Any leakage, spillage or delay during the journey is noted, since it can affect both quantity and quality."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "heading": "Putting the Three Checkpoints Together",
+                "html": "Now you know all three checkpoints: <b>Composite</b> (at the MPP), <b>Dispatch</b> (when the Sahayak sends it out), and <b>Actual</b> (when it arrives at the chilling centre). CDA compares these three numbers to find exactly where any milk went missing."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "The CDA Loss Formula",
+                "text": "The basic idea is simple: Net Loss = Actual Quantity minus Composite Quantity. If the actual quantity received is lower, that difference is the loss. In the next lesson, you will learn how to turn this into a full worked calculation, including how the value of that loss is measured."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is recorded at the third CDA checkpoint?",
+                "options": [
+                  "The Actual quantity of milk received at the chilling centre",
+                  "The name of the cow that gave the most milk",
+                  "The number of MPPs in the district",
+                  "The price of diesel that week"
+                ],
+                "answer": 0,
+                "explain": "The third checkpoint records the Actual quantity received at the MCC or BMC, so it can be compared against Composite and Dispatch."
+              },
+              {
+                "type": "mcq",
+                "q": "What is checked when milk arrives at the chilling centre?",
+                "options": [
+                  "Quantity, Fat and SNF, seal condition, and any signs of transit loss",
+                  "Only the colour of the milk can",
+                  "Only how fast the driver was going",
+                  "Only the Sahayak's attendance"
+                ],
+                "answer": 0,
+                "explain": "On arrival, the chilling centre checks quantity, quality (Fat and SNF), seal integrity, and any leakage, spillage or delay during transit."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-checkpoint-mpp-dispatch",
+              "type": "mcq",
+              "q": "Why must cans or tankers be sealed before dispatch?",
+              "options": [
+                "So nothing can be added or removed unnoticed during transport",
+                "So the milk looks nicer",
+                "So the vehicle uses less fuel",
+                "So the Sahayak can finish work early"
+              ],
+              "answer": 0,
+              "explain": "A proper seal protects the recorded quantity — if it is broken on arrival, it is a sign something may have happened during transport."
+            },
+            {
+              "topicId": "t-checkpoint-actual-receipt",
+              "type": "mcq",
+              "q": "At the Actual Receipt checkpoint, what does the chilling centre compare the received quantity against?",
+              "options": [
+                "The Dispatch quantity that was sent out",
+                "The price of milk last month",
+                "The number of farmers in the village",
+                "The weather forecast"
+              ],
+              "answer": 0,
+              "explain": "The chilling centre checks the Actual quantity received against the Dispatch quantity to spot any gap during transit."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m11-l3",
+        "title": "Let's Calculate CDA — A Worked Example",
+        "estMinutes": 12,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Let's Calculate CDA",
+            "text": "Now that you know why CDA exists and what its three checkpoints are, let's work through a real calculation step by step — just like a dairy accountant would."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-value-the-milk",
+            "title": "Step 1: Finding the Real Value of the Milk",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Meet the Numbers",
+                "html": "At a BMC, the composite record for one day shows: Composite Amount = ₹44,00,000 and Composite Quantity = 1,00,000 litres. The milk tested at Fat = 4.2% and SNF = 8.6%. Let's use these numbers to find the true value of this milk, step by step."
+              },
+              {
+                "type": "glossary",
+                "term": "Average Rate",
+                "meaning": "The average price paid per litre, found by dividing the total money (composite amount) by the total quantity of milk."
+              },
+              {
+                "type": "example",
+                "heading": "Step 1: Calculate the Average Rate",
+                "text": "Average Rate = Composite Amount ÷ Composite Quantity = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre. This tells us what was paid, on average, for every litre — but it does not yet tell us if that price matches the milk's real quality."
+              },
+              {
+                "type": "glossary",
+                "term": "EFU (Equivalent Fat Unit)",
+                "meaning": "A single number that combines Fat % and SNF % into one score, so milk of different quality can be compared fairly. EFU = Fat % + (2 ÷ 3 × SNF %)."
+              },
+              {
+                "type": "example",
+                "heading": "Step 2: Calculate the EFU",
+                "text": "EFU = Fat + (2/3 × SNF) = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93. This milk's EFU is 9.93 — a little below the standard reference EFU of 12.5, which comes from standard buffalo milk (6.5% Fat, 9% SNF) used as the benchmark for comparison."
+              },
+              {
+                "type": "glossary",
+                "term": "Standard Landing Rate",
+                "meaning": "The fair per-litre value of milk after adjusting the Average Rate for its actual quality (EFU), compared against the standard reference EFU of 12.5."
+              },
+              {
+                "type": "example",
+                "heading": "Step 3: Calculate the Standard Landing Rate",
+                "text": "Standard Landing Rate = Average Rate × (12.5 ÷ EFU) = ₹44 × (12.5 ÷ 9.93) = ₹44 × 1.259 = ₹55.39 per litre. Because this milk's EFU (9.93) is lower than the standard (12.5), the calculation adjusts the rate upward, to show what one litre of this exact quality is really worth."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In this example, what is the Average Rate?",
+                "options": [
+                  "₹44 per litre",
+                  "₹100 per litre",
+                  "₹4,400 per litre",
+                  "₹0.44 per litre"
+                ],
+                "answer": 0,
+                "explain": "Average Rate = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre."
+              },
+              {
+                "type": "mcq",
+                "q": "What does EFU combine into a single number?",
+                "options": [
+                  "Fat % and SNF %",
+                  "Distance and time",
+                  "Price and season",
+                  "Litres and rupees"
+                ],
+                "answer": 0,
+                "explain": "EFU (Equivalent Fat Unit) combines Fat % and SNF % into one quality score, so milk of different quality can be compared fairly."
+              }
+            ]
+          },
+          {
+            "id": "t-pro-rata-and-loss",
+            "title": "Step 2: Pro-Rata Impact and the CDA Loss",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Comparing Declared Rate with Landing Rate",
+                "html": "The union had already declared a rate of ₹52 per litre for this milk — this is called the <b>Declared Rate</b>. We just calculated the Standard Landing Rate as ₹55.39. Let's compare them."
+              },
+              {
+                "type": "glossary",
+                "term": "Declared Rate",
+                "meaning": "The rate per litre that the union or company announces it will pay, before adjusting for the exact quality of milk received that day."
+              },
+              {
+                "type": "glossary",
+                "term": "Pro-Rata Impact",
+                "meaning": "The difference between the Declared Rate and the Standard Landing Rate. It shows whether the declared price was enough to cover the real value of the milk received."
+              },
+              {
+                "type": "example",
+                "heading": "Step 4: Calculate the Pro-Rata Impact",
+                "text": "Pro-Rata Impact = Declared Rate − Standard Landing Rate = ₹52 − ₹55.39 = −₹3.39. Because this number is negative, it is Unfavourable — the milk received was actually worth more than the declared rate paid for it, based on its real Fat and SNF quality."
+              },
+              {
+                "type": "ledger",
+                "heading": "Today's Quality-Value Summary",
+                "rows": [
+                  {
+                    "label": "Average Rate (per litre)",
+                    "amount": "₹44.00"
+                  },
+                  {
+                    "label": "Standard Landing Rate (per litre)",
+                    "amount": "₹55.39"
+                  },
+                  {
+                    "label": "Declared Rate (per litre)",
+                    "amount": "₹52.00"
+                  }
+                ],
+                "total": {
+                  "label": "Pro-Rata Impact (Declared − Landing)",
+                  "amount": "−₹3.39 (Unfavourable)"
+                }
+              },
+              {
+                "type": "text",
+                "heading": "Now Let's Find the CDA Quantity Loss",
+                "html": "Pro-Rata Impact tells us about VALUE. But CDA is also about QUANTITY — how much milk itself went missing. Suppose the chilling centre's records for the same day show: Composite Quantity (recorded at the MPP) = 1,00,000 litres, but Actual Quantity (received at the BMC) = 99,400 litres."
+              },
+              {
+                "type": "example",
+                "heading": "Step 5: Calculate the Net Loss (Quantity)",
+                "text": "Net Loss (Quantity) = Actual Quantity − Composite Quantity = 99,400 − 1,00,000 = −600 litres. So, 600 litres of milk went missing somewhere between the MPP and the BMC."
+              },
+              {
+                "type": "example",
+                "heading": "Step 6: Calculate the CDA Loss %",
+                "text": "First, find the value of the loss: Loss Value = 600 litres × ₹55.39 (Standard Landing Rate) = ₹33,234. Next, find the value of the full composite milk: Composite Milk Value = 1,00,000 litres × ₹55.39 = ₹55,39,000. Finally: CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "A Handy Shortcut",
+                "text": "Notice that the CDA Loss % (0.6%) came out exactly the same as 600 litres out of 1,00,000 litres (0.6%). That's because both the loss and the composite milk were valued at the same rate, so the rate cancels out. This shortcut works whenever quality hasn't changed between dispatch and receipt."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Is 0.6% a Lot?",
+                "text": "A CDA Loss of 0.6% may look small, but across a large dairy handling lakhs of litres every day, even a small percentage adds up to a big amount of money. This is exactly why the dairy tracks CDA Loss % for every route, MPP and officer — small, steady losses are just as important to catch as big, sudden ones."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In this example, is the Pro-Rata Impact favourable or unfavourable?",
+                "options": [
+                  "Unfavourable, because the milk was worth more than the declared rate paid",
+                  "Favourable, because the union saved money",
+                  "Neither, because Pro-Rata does not apply here",
+                  "Unfavourable, because too much milk arrived"
+                ],
+                "answer": 0,
+                "explain": "Declared Rate (₹52) was less than the Standard Landing Rate (₹55.39), giving a Pro-Rata Impact of −₹3.39 — Unfavourable."
+              },
+              {
+                "type": "mcq",
+                "q": "How is CDA Loss % calculated?",
+                "options": [
+                  "(Loss Value ÷ Composite Milk Value) × 100",
+                  "(Composite Quantity ÷ Actual Quantity) × 100",
+                  "(Declared Rate ÷ Average Rate) × 100",
+                  "(Actual Quantity × Declared Rate)"
+                ],
+                "answer": 0,
+                "explain": "CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 — the value of the missing milk as a percentage of the total composite milk value."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-value-the-milk",
+              "type": "mcq",
+              "q": "What is the Standard Landing Rate in this lesson's example?",
+              "options": [
+                "₹44.00",
+                "₹52.00",
+                "₹55.39",
+                "₹9.93"
+              ],
+              "answer": 2,
+              "explain": "Standard Landing Rate = ₹44 × (12.5 ÷ 9.93) = ₹55.39 per litre."
+            },
+            {
+              "topicId": "t-value-the-milk",
+              "type": "mcq",
+              "q": "EFU = Fat % + (2/3 × SNF %). If Fat = 4.2% and SNF = 8.6%, what is the EFU?",
+              "options": [
+                "9.93",
+                "12.5",
+                "4.2",
+                "8.6"
+              ],
+              "answer": 0,
+              "explain": "EFU = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93."
+            },
+            {
+              "topicId": "t-pro-rata-and-loss",
+              "type": "mcq",
+              "q": "In this lesson's example, how many litres of milk went missing between the MPP and the BMC?",
+              "options": [
+                "600 litres",
+                "1,00,000 litres",
+                "99,400 litres",
+                "6,000 litres"
+              ],
+              "answer": 0,
+              "explain": "Net Loss = 99,400 − 1,00,000 = −600 litres, so 600 litres went missing."
+            },
+            {
+              "topicId": "t-pro-rata-and-loss",
+              "type": "mcq",
+              "q": "What was the CDA Loss % in this lesson's example?",
+              "options": [
+                "0.6%",
+                "6%",
+                "60%",
+                "0.06%"
+              ],
+              "answer": 0,
+              "explain": "CDA Loss % = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%."
+            }
+          ]
+        }
+      }
+    ]
   },
   {
-    id: "m12",
-    number: 12,
-    title: L("Cost Associated with Milk Handling", "दूध संभालने से जुड़ी लागत"),
-    subtitle: L("Coming soon.", "जल्द आ रहा है।"),
-    icon: "milk",
-    available: false,
-    lessons: [],
-  },
+    "id": "m12",
+    "number": 12,
+    "title": L("Cost Associated with Milk Handling", "दूध संभालने से जुड़ी लागत"),
+    "subtitle": "See where every rupee goes as milk travels from farmer to dairy — and learn how a real dairy company is working to bring transport costs down.",
+    "icon": "milk",
+    "available": true,
+    "lessons": [
+      {
+        "id": "m12-l1",
+        "title": "What Does It Cost to Get Milk From Farmer to Dairy?",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "Where Does the Money Go?",
+            "text": "Milk does not travel from a farmer's bucket to the dairy plant by magic. Every step — collecting, chilling, and transporting — costs money. Let's find out where that money goes, and why it matters to everyone."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-milk-journey-costs",
+            "title": "The Journey — And What It Costs at Each Step",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "From Bucket to Plant",
+                "html": "Milk travels through several steps before it reaches the dairy plant: the farmer milks the animal, brings it to the MPP, the Sahayak dispatches it, it is chilled at a BMC or MCC, and then it is transported to the plant. Each of these steps costs money to run."
+              },
+              {
+                "type": "glossary",
+                "term": "BMC (Bulk Milk Cooler)",
+                "meaning": "A machine that quickly cools milk after it arrives from the villages, to keep it fresh until it reaches the dairy plant."
+              },
+              {
+                "type": "glossary",
+                "term": "Inward Transportation",
+                "meaning": "The cost of moving milk from the MPPs to the chilling centre, and from there to the dairy plant. This includes fuel, the vehicle, and the driver."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Sahayak Commission",
+                    "text": "The Sahayak is paid a small amount for every litre of milk they help collect and dispatch correctly."
+                  },
+                  {
+                    "label": "Transportation",
+                    "text": "Fuel, vehicle costs and driver wages to move milk from MPPs to the chilling centre and onward to the plant."
+                  },
+                  {
+                    "label": "Chilling & Infrastructure",
+                    "text": "Rent, electricity and equipment costs to keep the chilling centre running and milk cold."
+                  },
+                  {
+                    "label": "Cleaning & Maintenance",
+                    "text": "Regular cleaning (like Cleaning-in-Place, or CIP) and repair of equipment, so milk stays safe and machines keep working."
+                  }
+                ]
+              },
+              {
+                "type": "glossary",
+                "term": "CIP (Cleaning-in-Place)",
+                "meaning": "A standard cleaning process for milk cans, tanks and pipes, done regularly to keep milk safe and free of contamination."
+              },
+              {
+                "type": "text",
+                "heading": "Transportation and Chilling Are the Biggest Costs",
+                "html": "Across most dairies, transportation and chilling together form the largest share of the total cost of handling milk. That is why this module looks closely at these two areas."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Which two costs together usually form the largest share of milk handling cost?",
+                "options": [
+                  "Transportation and chilling",
+                  "Stationery and paint",
+                  "Advertising and printing",
+                  "Office furniture and internet"
+                ],
+                "answer": 0,
+                "explain": "Transportation and chilling together make up the largest share of the cost of handling milk from farmer to dairy."
+              },
+              {
+                "type": "truefalse",
+                "q": "CIP (Cleaning-in-Place) is a one-time activity done only when a chilling centre is first built.",
+                "answer": false,
+                "explain": "CIP is a regular cleaning process, done again and again, to keep milk safe and equipment working well."
+              }
+            ]
+          },
+          {
+            "id": "t-why-it-matters",
+            "title": "Why Controlling These Costs Matters for Everyone",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "One Shared Pot of Money",
+                "html": "Think of all the money that comes in when milk is sold to the dairy plant. Handling costs — Sahayak commission, transport, chilling, cleaning, maintenance — are taken out of that same pot before farmers are paid and before the union or company keeps its margin."
+              },
+              {
+                "type": "example",
+                "heading": "A Simple Way to See It",
+                "text": "If handling costs are high, less money is left over to pay farmers a good price or to invest in growing the business. If handling costs are kept efficient, more money is left over — for better farmer prices, better infrastructure, and a stronger, more sustainable dairy."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Every Litre Counts",
+                "text": "Higher milk volumes reduce the cost per litre, because fixed costs — like rent for a chilling centre — get spread across more litres. That is one reason why increasing how much milk each MPP collects is so valuable."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Hidden Losses Add Up",
+                "text": "Spillage, pilferage and quality problems don't just lose milk — they quietly inflate the real cost of handling every litre that does arrive safely. Careful handling protects both quantity and cost."
+              },
+              {
+                "type": "text",
+                "heading": "Every Sahayak Has a Role",
+                "html": "As a Sahayak, the way you handle milk — careful collection, on-time dispatch, clean cans — directly affects handling costs. Small daily habits, multiplied across thousands of litres, make a real difference to what is left over for everyone."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why does controlling milk handling costs matter for farmers?",
+                "options": [
+                  "Lower handling costs leave more money available to pay farmers a fair price",
+                  "It has no connection to farmer income",
+                  "It only matters for the dairy plant's office staff",
+                  "It only affects the price of animal feed"
+                ],
+                "answer": 0,
+                "explain": "Handling costs come out of the same pot of money earned from milk sales — keeping them low leaves more for farmer payments."
+              },
+              {
+                "type": "mcq",
+                "q": "Why do higher milk volumes usually lower the cost per litre?",
+                "options": [
+                  "Fixed costs like rent get spread across more litres",
+                  "Vehicles use less fuel when carrying more weight",
+                  "Farmers charge less for more milk",
+                  "Chilling machines work faster with more milk"
+                ],
+                "answer": 0,
+                "explain": "Fixed costs stay roughly the same no matter the volume, so more litres means each litre carries a smaller share of that fixed cost."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-milk-journey-costs",
+              "type": "mcq",
+              "q": "What does 'Inward Transportation' cost cover?",
+              "options": [
+                "Moving milk from the MPPs to the chilling centre and onward to the plant",
+                "The price farmers are paid for milk",
+                "The cost of building new farmer houses",
+                "The Sahayak's mobile phone bill"
+              ],
+              "answer": 0,
+              "explain": "Inward transportation covers the fuel, vehicle and driver costs of moving milk from MPPs to the chilling centre and then to the plant."
+            },
+            {
+              "topicId": "t-why-it-matters",
+              "type": "mcq",
+              "q": "What happens to the money left over when handling costs are kept low and efficient?",
+              "options": [
+                "More money is available for farmer prices and business investment",
+                "It disappears completely",
+                "It can only be used for advertising",
+                "It has no effect on anyone"
+              ],
+              "answer": 0,
+              "explain": "Efficient handling costs leave more of the money earned from milk sales available for fair farmer prices and growth."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m12-l2",
+        "title": "What Drives These Costs Up or Down",
+        "estMinutes": 8,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "What Makes Costs Rise or Fall?",
+            "text": "Some milk handling costs change with how much milk you handle. Others stay almost the same no matter what. Understanding the difference helps everyone make better decisions."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-fixed-variable-costs",
+            "title": "Fixed Costs, Variable Costs, and Volume",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Two Kinds of Cost",
+                "html": "Some costs change directly with how much milk is handled — these are called <b>variable costs</b>. Others stay mostly the same, whether you handle a little milk or a lot — these are called <b>fixed costs</b>."
+              },
+              {
+                "type": "glossary",
+                "term": "Variable Cost",
+                "meaning": "A cost that goes up or down depending on how much milk is handled — like fuel for a delivery van, which increases if the van makes more trips."
+              },
+              {
+                "type": "glossary",
+                "term": "Fixed Cost",
+                "meaning": "A cost that stays roughly the same no matter how much milk is handled — like the monthly rent for a chilling centre building."
+              },
+              {
+                "type": "text",
+                "heading": "MCC Costs vs BMC Costs",
+                "html": "At an MCC (Milk Chilling Centre), costs tend to be more variable — they move closely with the quantity of milk handled per litre. At a BMC (Bulk Milk Cooler), costs tend to be largely fixed — the equipment and building cost about the same to run whether it is half full or completely full. This is why volume matters so much for BMC efficiency."
+              },
+              {
+                "type": "example",
+                "heading": "Seeing It With Numbers",
+                "text": "Imagine a BMC costs ₹35,000 a month to run, no matter how much milk passes through it. If it handles 50,000 litres that month, the fixed cost works out to ₹0.70 per litre. If it handles only 25,000 litres, the same ₹35,000 now works out to ₹1.40 per litre — double the cost, just because less milk passed through."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "The Big Idea",
+                "text": "Higher milk volumes at a BMC or MCC mean the same fixed costs get divided among more litres — so the cost per litre drops. This is why growing procurement at each MPP is just as important as opening new MPPs."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What is a fixed cost?",
+                "options": [
+                  "A cost that stays roughly the same, no matter how much milk is handled",
+                  "A cost that only happens once a year",
+                  "A cost that farmers pay directly",
+                  "A cost that only applies to transport"
+                ],
+                "answer": 0,
+                "explain": "A fixed cost — like a chilling centre's rent — stays roughly the same whether milk volumes are high or low."
+              },
+              {
+                "type": "truefalse",
+                "q": "If a BMC handles less milk in a month, its fixed cost per litre usually goes down.",
+                "answer": false,
+                "explain": "If less milk passes through, the same fixed cost is spread over fewer litres, so the cost per litre actually goes UP."
+              }
+            ]
+          },
+          {
+            "id": "t-controlling-costs",
+            "title": "Hidden Costs and How to Control Them",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Routing Matters",
+                "html": "Inefficient routing — like a vehicle travelling a long, winding path to visit MPPs in a poor order — directly increases the cost per litre. Planning routes well is one of the simplest ways to control transport cost."
+              },
+              {
+                "type": "text",
+                "heading": "Right Vehicle, Right Capacity",
+                "html": "Using a vehicle that matches the amount of milk on a route — not too big, not too small — gives the lowest possible cost per litre for inward transportation. A large tanker on a route that only collects a few hundred litres wastes fuel and money."
+              },
+              {
+                "type": "glossary",
+                "term": "Capacity Utilisation",
+                "meaning": "How much of a vehicle's or machine's full capacity is actually being used. A tanker that could carry 3,000 litres but only carries 900 litres has poor capacity utilisation."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Right Vehicle Sizing",
+                    "text": "Matching vehicle capacity to the actual milk volume on a route keeps transport cost per litre as low as possible."
+                  },
+                  {
+                    "label": "Energy Optimisation",
+                    "text": "Using electricity and fuel efficiently at chilling centres is key to keeping chilling costs down."
+                  },
+                  {
+                    "label": "Capacity Utilisation",
+                    "text": "Filling vehicles and equipment closer to their full capacity drives down the overall cost per litre."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "Hidden Losses Inflate Cost",
+                "text": "Spillage, pilferage and quality problems don't show up as a separate 'cost' line — but they quietly increase the real cost of every litre that does arrive safely, because the same fixed costs are now spread over less usable milk."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "What does 'right vehicle + right capacity' achieve?",
+                "options": [
+                  "The lowest possible inward transportation cost per litre",
+                  "The fastest possible speed on the highway",
+                  "The smallest fuel tank size",
+                  "The shortest driver shift"
+                ],
+                "answer": 0,
+                "explain": "Matching vehicle size to the actual milk volume on a route gives the lowest possible transportation cost per litre."
+              },
+              {
+                "type": "mcq",
+                "q": "What is capacity utilisation?",
+                "options": [
+                  "How much of a vehicle's or machine's full capacity is actually being used",
+                  "The number of MPPs on a route",
+                  "The price of diesel per litre",
+                  "The number of Sahayaks on a route"
+                ],
+                "answer": 0,
+                "explain": "Capacity utilisation measures how fully a vehicle or machine's capacity is actually being used."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "questions": [
+            {
+              "topicId": "t-fixed-variable-costs",
+              "type": "mcq",
+              "q": "Why do BMC costs tend to be largely fixed?",
+              "options": [
+                "The equipment and building cost about the same whether it is half full or completely full",
+                "BMCs never cost any money to run",
+                "BMC costs change every single day",
+                "BMCs only cost money in summer"
+              ],
+              "answer": 0,
+              "explain": "BMC running costs stay roughly the same regardless of how much milk passes through, which is why higher volume lowers the cost per litre."
+            },
+            {
+              "topicId": "t-controlling-costs",
+              "type": "mcq",
+              "q": "What is one simple way to control inward transportation cost?",
+              "options": [
+                "Plan efficient routes and match vehicle size to actual milk volume",
+                "Always use the biggest tanker available on every route",
+                "Skip vehicle maintenance to save money",
+                "Remove milk quality checks to save time"
+              ],
+              "answer": 0,
+              "explain": "Efficient routing and right-sized vehicles keep transportation cost per litre as low as possible."
+            }
+          ]
+        }
+      },
+      {
+        "id": "m12-l3",
+        "title": "The Shakti MPC Story: Solving the Transport Cost Puzzle",
+        "estMinutes": 14,
+        "hook": [
+          {
+            "type": "hero",
+            "heading": "A Real Dairy's Cost Puzzle",
+            "text": "This is the story of a real Milk Producer Company working through a real transport cost problem. Everything you've learned in this course comes together here. Let's dig in."
+          }
+        ],
+        "topics": [
+          {
+            "id": "t-meet-shakti",
+            "title": "Meet Shakti MPC",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "A Growing Company",
+                "html": "Shakti Milk Producer Company Limited (Shakti MPC) started in 2021 to give rural milk producers a reliable market and fair prices. It began with support from an outside grant, which paid for MPPs, BMCs, testing equipment and vehicles while the company was still growing."
+              },
+              {
+                "type": "glossary",
+                "term": "Grant Support",
+                "meaning": "Money given to help a company get started, which does not need to be paid back like a loan. Grant support often reduces or ends as the company grows and needs to stand on its own."
+              },
+              {
+                "type": "text",
+                "heading": "Standing on Its Own",
+                "html": "As the grant support ended, Shakti MPC had to cover its own running costs from what it earns handling milk — its procurement margins and its own efficiency. Today, the company runs one of the largest milk procurement networks in its region."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "800 MPPs",
+                    "text": "Shakti MPC collects milk from about 800 village-level Milk Pooling Points."
+                  },
+                  {
+                    "label": "1,200+ Villages",
+                    "text": "These MPPs are spread across more than 1,200 villages."
+                  },
+                  {
+                    "label": "85,000 Members",
+                    "text": "Nearly 85,000 farmer families are members of the company."
+                  },
+                  {
+                    "label": "84,000 to 1.15 Lakh Litres a Day",
+                    "text": "Daily milk collection ranges from about 84,000 litres in the lean season to more than 1,15,000 litres at peak season."
+                  }
+                ]
+              },
+              {
+                "type": "barchart",
+                "heading": "Five Years of Growth (Average Daily Procurement)",
+                "source": "Shakti MPC internal records",
+                "unit": "litres per day",
+                "data": [
+                  {
+                    "label": "FY 2021-22",
+                    "value": 22500
+                  },
+                  {
+                    "label": "FY 2022-23",
+                    "value": 41200
+                  },
+                  {
+                    "label": "FY 2023-24",
+                    "value": 63500
+                  },
+                  {
+                    "label": "FY 2024-25",
+                    "value": 78800
+                  },
+                  {
+                    "label": "FY 2025-26",
+                    "value": 84000
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "Fast Growth, New Problems",
+                "text": "In just five years, Shakti MPC nearly quadrupled its daily milk collection. But fast growth brought a new challenge: rising costs, especially for transportation — even as the amount of milk collected kept growing."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "About how many MPPs does Shakti MPC currently operate?",
+                "options": [
+                  "About 800",
+                  "About 80",
+                  "About 8,000",
+                  "About 8"
+                ],
+                "answer": 0,
+                "explain": "Shakti MPC procures milk from approximately 800 Milk Pooling Points."
+              },
+              {
+                "type": "truefalse",
+                "q": "Shakti MPC's daily milk procurement grew steadily over five years, from about 22,500 litres to about 84,000 litres.",
+                "answer": true,
+                "explain": "Average daily procurement grew from 22,500 litres in FY 2021-22 to 84,000 litres in FY 2025-26."
+              }
+            ]
+          },
+          {
+            "id": "t-where-money-goes",
+            "title": "Where the Money Goes — Real Cost Numbers",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "A Detailed Cost Review",
+                "html": "As grant support ended, Shakti MPC studied exactly where its procurement money was going, for every single litre of milk. Here is what they found."
+              },
+              {
+                "type": "ledger",
+                "heading": "Shakti MPC — Cost per Litre of Milk Procured",
+                "rows": [
+                  {
+                    "label": "Sahayak Commission",
+                    "amount": "₹0.90"
+                  },
+                  {
+                    "label": "Inward Transportation",
+                    "amount": "₹2.28"
+                  },
+                  {
+                    "label": "BMC Rent & Infrastructure",
+                    "amount": "₹0.35"
+                  },
+                  {
+                    "label": "Labour Cost",
+                    "amount": "₹0.25"
+                  },
+                  {
+                    "label": "Diesel & Utilities",
+                    "amount": "₹0.42"
+                  },
+                  {
+                    "label": "Cleaning & CIP",
+                    "amount": "₹0.12"
+                  },
+                  {
+                    "label": "Repair & Maintenance",
+                    "amount": "₹0.18"
+                  }
+                ],
+                "total": {
+                  "label": "Total Cost per Litre",
+                  "amount": "₹4.50"
+                }
+              },
+              {
+                "type": "example",
+                "heading": "Which Cost Is the Biggest?",
+                "text": "Inward Transportation alone is ₹2.28 out of the ₹4.50 total cost per litre — more than half of everything spent to handle each litre of milk. This is exactly why the company is focused on solving its transportation cost problem."
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "A Rising Trend",
+                "text": "Inward transportation cost per litre has been climbing every year — from ₹1.68 in FY 2021-22 to ₹2.28 in FY 2025-26 — even as the company's daily milk volumes grew. More milk did not automatically mean a lower cost per litre."
+              },
+              {
+                "type": "barchart",
+                "heading": "Inward Transportation Cost Trend",
+                "source": "Shakti MPC internal records",
+                "unit": "₹ per litre",
+                "data": [
+                  {
+                    "label": "FY 2021-22",
+                    "value": 1.68
+                  },
+                  {
+                    "label": "FY 2022-23",
+                    "value": 1.82
+                  },
+                  {
+                    "label": "FY 2023-24",
+                    "value": 1.96
+                  },
+                  {
+                    "label": "FY 2024-25",
+                    "value": 2.12
+                  },
+                  {
+                    "label": "FY 2025-26",
+                    "value": 2.28
+                  }
+                ]
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In Shakti MPC's cost structure, what is the single biggest cost per litre?",
+                "options": [
+                  "Inward Transportation",
+                  "Cleaning & CIP",
+                  "Repair & Maintenance",
+                  "Labour Cost"
+                ],
+                "answer": 0,
+                "explain": "At ₹2.28 per litre, Inward Transportation is the largest single cost, more than half of the ₹4.50 total."
+              },
+              {
+                "type": "mcq",
+                "q": "What happened to inward transportation cost per litre over five years, even as milk volumes grew?",
+                "options": [
+                  "It kept rising, from ₹1.68 to ₹2.28 per litre",
+                  "It fell steadily every year",
+                  "It stayed exactly the same",
+                  "It dropped to zero"
+                ],
+                "answer": 0,
+                "explain": "Despite volume growth, inward transportation cost per litre rose every year, from ₹1.68 to ₹2.28."
+              }
+            ]
+          },
+          {
+            "id": "t-route-timing-puzzle",
+            "title": "The Route Timing Puzzle",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "The Three-Hour Rule",
+                "html": "To protect milk quality, Shakti MPC follows a strict rule: milk collected at the first MPP on a route must reach the chilling centre within three hours. Waiting longer lets acidity and bacteria increase, which spoils milk quality."
+              },
+              {
+                "type": "text",
+                "heading": "Working Backwards From the Deadline",
+                "html": "Because chilled milk must reach the plant by 9:30 AM (morning) or 9:30 PM (evening), routes are planned backwards from that deadline. This means the first and second MPPs on many routes must finish pouring milk by about 6:30 AM or 6:30 PM — quite early for farmers who finish milking and housework a bit later."
+              },
+              {
+                "type": "callout",
+                "style": "warning",
+                "heading": "A Paradox",
+                "text": "Competing dairies often visit these same villages as the sixth or seventh stop on their route — giving farmers 30 to 45 extra minutes. Farmers find this more convenient, so Shakti MPC's first and second MPPs on many routes collect less milk than similar villages served by competitors. Careful route discipline protects quality, but may also be holding back procurement volume."
+              },
+              {
+                "type": "text",
+                "heading": "Small MPPs, Big Inefficiency",
+                "html": "A review of all 800 MPPs found the average was about 105 litres per MPP per day — but this hid a big problem underneath."
+              },
+              {
+                "type": "stat-grid",
+                "items": [
+                  {
+                    "label": "Less than 50 litres/day",
+                    "text": "About 30% of MPPs collect less than 50 litres a day — a very small amount for a vehicle to travel out for."
+                  },
+                  {
+                    "label": "50 to 100 litres/day",
+                    "text": "About 50% of MPPs collect between 50 and 100 litres a day."
+                  },
+                  {
+                    "label": "100 to 200 litres/day",
+                    "text": "About 15% of MPPs collect between 100 and 200 litres a day."
+                  },
+                  {
+                    "label": "More than 200 litres/day",
+                    "text": "Only about 5% of MPPs collect more than 200 litres a day."
+                  }
+                ]
+              },
+              {
+                "type": "example",
+                "heading": "A Costly Trip",
+                "text": "In many cases, a vehicle visits all ten MPPs allowed on a route but collects less than 1,000 litres in total for the whole trip. That means the vehicle, the fuel, and the driver's time are being used for a very small amount of milk — pushing the transport cost per litre higher."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "Why must milk from the first MPP on a route reach the chilling centre within three hours?",
+                "options": [
+                  "To prevent rising acidity, bacterial growth and quality loss",
+                  "Because the plant closes at that time",
+                  "Because Sahayaks are only paid for three hours of work",
+                  "Because vehicles cannot carry milk for longer"
+                ],
+                "answer": 0,
+                "explain": "Delays beyond three hours let acidity and bacteria increase, which deteriorates milk quality."
+              },
+              {
+                "type": "mcq",
+                "q": "According to the MPP review, what share of MPPs collect less than 50 litres a day?",
+                "options": [
+                  "About 30%",
+                  "About 5%",
+                  "About 50%",
+                  "About 100%"
+                ],
+                "answer": 0,
+                "explain": "Nearly 30 percent of MPPs were found to collect less than 50 litres per day."
+              }
+            ]
+          },
+          {
+            "id": "t-what-would-you-do",
+            "title": "What Would You Do? — A Decision for the Sahayak",
+            "teach": [
+              {
+                "type": "text",
+                "heading": "Doing the Maths on a Low-Volume Route",
+                "html": "Let's calculate what a low-volume route really costs. A vehicle visits all 10 MPPs allowed on a route and collects a total of 900 litres for the trip. If Shakti MPC's average inward transportation cost is ₹2.28 per litre, what should this trip cost to run?"
+              },
+              {
+                "type": "example",
+                "heading": "Step 1: What the Trip Should Cost",
+                "text": "At the company's average rate: 900 litres × ₹2.28 = ₹2,052. This is the transportation cost we would expect to be 'fair' for 900 litres on this route."
+              },
+              {
+                "type": "text",
+                "heading": "But What If the Actual Trip Cost More?",
+                "html": "Suppose the actual diesel, driver time and vehicle cost for this specific ten-MPP trip was ₹3,150 — because the vehicle travelled a long distance for a small amount of milk."
+              },
+              {
+                "type": "ledger",
+                "heading": "This Route: Expected vs Actual Cost",
+                "rows": [
+                  {
+                    "label": "Expected cost (900 litres × ₹2.28)",
+                    "amount": "₹2,052"
+                  },
+                  {
+                    "label": "Actual cost of this trip",
+                    "amount": "₹3,150"
+                  }
+                ],
+                "total": {
+                  "label": "Extra cost above expected",
+                  "amount": "₹1,098"
+                }
+              },
+              {
+                "type": "example",
+                "heading": "What This Means Per Litre",
+                "text": "₹3,150 ÷ 900 litres = ₹3.50 per litre — much higher than the company's average of ₹2.28 per litre. This single low-volume route is quietly pulling up the average cost for the whole company."
+              },
+              {
+                "type": "callout",
+                "style": "tip",
+                "heading": "Options on the Table",
+                "text": "Shakti MPC's committee is weighing several options: restructuring routes, encouraging more milk at existing MPPs, trying electric or CNG vehicles, using smaller three-wheelers on low-volume routes, and possibly resequencing which villages are visited first."
+              },
+              {
+                "type": "poll",
+                "heading": "What Would You Recommend First?",
+                "questions": [
+                  {
+                    "q": "If you were advising Shakti MPC's committee, which step would you try FIRST to reduce this route's cost per litre?",
+                    "options": [
+                      "Use a smaller vehicle sized for this route's actual volume",
+                      "Buy the most expensive new tanker available",
+                      "Stop collecting milk from small MPPs completely",
+                      "Ignore the cost and keep the same vehicle"
+                    ],
+                    "answer": 0,
+                    "reveal": "Many producer companies have found that matching vehicle size to actual route volume — smaller vehicles for smaller routes — is often the fastest and cheapest way to bring cost per litre down, without changing route timing or losing farmer trust."
+                  }
+                ]
+              },
+              {
+                "type": "callout",
+                "style": "info",
+                "heading": "Not a Simple Fix",
+                "text": "Every option has trade-offs. Smaller vehicles may struggle on poor roads or during peak season. EVs need charging infrastructure that is still limited in rural areas. Changing route timing could raise procurement but risks milk quality. Good decisions balance cost, quality, and what is fair and convenient for farmers."
+              }
+            ],
+            "check": [
+              {
+                "type": "mcq",
+                "q": "In this example, what was the extra cost above the expected amount for the 900-litre trip?",
+                "options": [
+                  "₹1,098",
+                  "₹2,052",
+                  "₹3,150",
+                  "₹900"
+                ],
+                "answer": 0,
+                "explain": "Extra cost = ₹3,150 actual − ₹2,052 expected = ₹1,098."
+              },
+              {
+                "type": "mcq",
+                "q": "What is one practical way to lower the cost per litre on a low-volume route?",
+                "options": [
+                  "Use a smaller vehicle that better matches the route's actual milk volume",
+                  "Always use the biggest tanker available, regardless of volume",
+                  "Stop testing milk quality to save time",
+                  "Remove the three-hour quality rule everywhere"
+                ],
+                "answer": 0,
+                "explain": "Right-sizing the vehicle to the route's actual volume is a practical way to bring transport cost per litre down."
+              }
+            ]
+          }
+        ],
+        "finalQuiz": {
+          "passScore": 70,
+          "isFinal": true,
+          "questions": [
+            {
+              "topicId": "t-meet-shakti",
+              "type": "mcq",
+              "q": "About how many producer members does Shakti MPC serve?",
+              "options": [
+                "Nearly 85,000",
+                "Nearly 8,500",
+                "Nearly 850",
+                "Nearly 8,50,000"
+              ],
+              "answer": 0,
+              "explain": "Shakti MPC serves nearly 85,000 producer members."
+            },
+            {
+              "topicId": "t-where-money-goes",
+              "type": "mcq",
+              "q": "What share of Shakti MPC's total cost per litre (₹4.50) comes from inward transportation (₹2.28)?",
+              "options": [
+                "More than half of the total cost",
+                "Less than 5% of the total cost",
+                "None of the total cost",
+                "Exactly equal to the Sahayak commission"
+              ],
+              "answer": 0,
+              "explain": "₹2.28 out of ₹4.50 is more than half of the total cost per litre."
+            },
+            {
+              "topicId": "t-route-timing-puzzle",
+              "type": "mcq",
+              "q": "Why do Shakti MPC's first and second MPPs on many routes often collect less milk than nearby villages served by competitors?",
+              "options": [
+                "Competitors visit later in the route, giving farmers more time before the vehicle arrives",
+                "Those villages have no farmers",
+                "Shakti MPC pays a lower price there",
+                "Those MPPs are closed on some days"
+              ],
+              "answer": 0,
+              "explain": "Competitors visiting as the sixth or seventh stop give farmers 30-45 extra minutes, which farmers find more convenient."
+            },
+            {
+              "topicId": "t-what-would-you-do",
+              "type": "mcq",
+              "q": "What is the biggest lesson from the 900-litre route example?",
+              "options": [
+                "A vehicle that is too big for a route's actual volume can push the cost per litre well above average",
+                "Bigger vehicles are always cheaper to run",
+                "Route cost has nothing to do with vehicle size",
+                "Only Sahayak commission affects route cost"
+              ],
+              "answer": 0,
+              "explain": "The 900-litre route's actual cost per litre (₹3.50) was well above the company average (₹2.28), showing how vehicle-to-volume mismatch drives up cost."
+            }
+          ]
+        }
+      }
+    ]
+  }
 ];
 
 export function getModule(moduleId) {
