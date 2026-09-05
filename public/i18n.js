@@ -158,6 +158,7 @@ const UI = {
   adminLoginTitle: L("🧑‍💼 Admin Sign In", "🧑‍💼 एडमिन साइन इन"),
   loginSubtitle: L("Enter your email and password to continue.", "जारी रखने के लिए अपना ईमेल और पासवर्ड डालें।"),
   loginIdLabel: L("Email Address", "ईमेल पता"),
+  adminUsernameLabel: L("Username", "यूज़रनेम"),
   passwordLabel: L("Password", "पासवर्ड"),
   loginButton: L("Sign In", "साइन इन करें"),
   loginSigningIn: L("Signing in…", "साइन इन हो रहा है…"),
