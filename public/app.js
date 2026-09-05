@@ -94,7 +94,7 @@ function renderLoginPage() {
         <form id="login-form">
           <div class="field">
             <label for="login-id">${escapeHtml(u("loginIdLabel"))}</label>
-            <input type="text" id="login-id" autocomplete="username" required />
+            <input type="email" id="login-id" autocomplete="username" required />
           </div>
           <div class="field">
             <label for="login-password">${escapeHtml(u("passwordLabel"))}</label>
