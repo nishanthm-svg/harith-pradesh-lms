@@ -7856,144 +7856,144 @@ export const MODULES = [
     "id": "m11",
     "number": 11,
     "title": L("CDA — Its Constituents and Calculation", "CDA — इसके घटक और गणना"),
-    "subtitle": "Learn what happens to milk quantity as it travels from farmer to dairy — and how CDA finds and fixes any milk that goes missing along the way.",
+    "subtitle": L("Learn what happens to milk quantity as it travels from farmer to dairy — and how CDA finds and fixes any milk that goes missing along the way.", "जानें कि दूध जब किसान से डेयरी तक पहुंचता है तो उसकी मात्रा के साथ क्या होता है — और CDA रास्ते में गायब हुए किसी भी दूध को कैसे ढूंढता और ठीक करता है।"),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m11-l1",
-        "title": "What Is CDA, and Why Does It Exist?",
+        "title": L("What Is CDA, and Why Does It Exist?", "CDA क्या है, और यह क्यों मौजूद है?"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "What Is CDA?",
-            "text": "Every day, milk travels from a farmer's bucket to the dairy plant. Sometimes, a little milk goes missing on the way. In this lesson, you'll learn why that happens — and how CDA helps find and fix it."
+            "heading": L("What Is CDA?", "CDA क्या है?"),
+            "text": L("Every day, milk travels from a farmer's bucket to the dairy plant. Sometimes, a little milk goes missing on the way. In this lesson, you'll learn why that happens — and how CDA helps find and fix it.", "हर दिन, दूध किसान की बाल्टी से डेयरी प्लांट तक जाता है। कभी-कभी, रास्ते में थोड़ा दूध गायब हो जाता है। इस पाठ में, आप सीखेंगे कि ऐसा क्यों होता है — और CDA इसे ढूंढने और ठीक करने में कैसे मदद करता है।")
           }
         ],
         "topics": [
           {
             "id": "t-milk-goes-missing",
-            "title": "The Problem: Milk That Goes Missing",
+            "title": L("The Problem: Milk That Goes Missing", "समस्या: दूध का गायब होना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "A Simple Question",
-                "html": "A farmer pours 10 litres of milk into a can at the village Milk Pooling Point, or MPP. That milk then travels — by can, by van, sometimes by tanker — until it reaches the dairy plant. Does the plant always receive exactly 10 litres? Not always. Sometimes a little less arrives. This lesson is about why that happens, and what the dairy does about it."
+                "heading": L("A Simple Question", "एक सरल सवाल"),
+                "html": L("A farmer pours 10 litres of milk into a can at the village Milk Pooling Point, or MPP. That milk then travels — by can, by van, sometimes by tanker — until it reaches the dairy plant. Does the plant always receive exactly 10 litres? Not always. Sometimes a little less arrives. This lesson is about why that happens, and what the dairy does about it.", "एक किसान गांव के मिल्क पूलिंग पॉइंट (MPP) पर एक कैन में 10 लीटर दूध डालता है। वह दूध फिर यात्रा करता है — कैन से, वैन से, कभी-कभी टैंकर से — जब तक कि यह डेयरी प्लांट तक नहीं पहुंचता। क्या प्लांट को हमेशा ठीक 10 लीटर ही मिलता है? हमेशा नहीं। कभी-कभी थोड़ा कम पहुंचता है। यह पाठ इस बारे में है कि ऐसा क्यों होता है, और डेयरी इसके बारे में क्या करती है।")
               },
               {
                 "type": "glossary",
-                "term": "MPP (Milk Pooling Point)",
-                "meaning": "The place in the village where farmers bring their milk every day. Here, the milk is weighed, tested for quality, and written down before it is sent onward."
+                "term": L("MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                "meaning": L("The place in the village where farmers bring their milk every day. Here, the milk is weighed, tested for quality, and written down before it is sent onward.", "गांव में वह जगह जहां किसान हर दिन अपना दूध लाते हैं। यहां, दूध को तौला जाता है, गुणवत्ता के लिए जांचा जाता है, और आगे भेजने से पहले दर्ज किया जाता है।")
               },
               {
                 "type": "text",
-                "heading": "Five Reasons Milk Quantity Can Change",
-                "html": "Milk quantity recorded at the village can end up different from milk quantity received at the dairy. There are five common reasons for this. Let's look at each one."
+                "heading": L("Five Reasons Milk Quantity Can Change", "दूध की मात्रा बदलने के पांच कारण"),
+                "html": L("Milk quantity recorded at the village can end up different from milk quantity received at the dairy. There are five common reasons for this. Let's look at each one.", "गांव में दर्ज दूध की मात्रा डेयरी में प्राप्त दूध की मात्रा से अलग हो सकती है। इसके पांच सामान्य कारण हैं। आइए हर एक को देखें।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Measurement Mistakes",
-                    "text": "A weighing scale that is not set correctly, or a person who writes down the wrong number by mistake, can make the recorded quantity wrong — even if no milk was actually lost."
+                    "label": L("Measurement Mistakes", "माप की गलतियां"),
+                    "text": L("A weighing scale that is not set correctly, or a person who writes down the wrong number by mistake, can make the recorded quantity wrong — even if no milk was actually lost.", "ठीक से सेट न किया गया तौल कांटा, या गलती से गलत संख्या लिख देने वाला व्यक्ति, दर्ज मात्रा को गलत बना सकता है — भले ही असल में कोई दूध नहीं खोया हो।")
                   },
                   {
-                    "label": "Spillage on the Way",
-                    "text": "Milk can spill out of a can or tanker while it is being poured, loaded, or driven over a bumpy road. This is called a handling loss."
+                    "label": L("Spillage on the Way", "रास्ते में गिरना"),
+                    "text": L("Milk can spill out of a can or tanker while it is being poured, loaded, or driven over a bumpy road. This is called a handling loss.", "दूध डालते, लादते, या ऊबड़-खाबड़ सड़क पर गाड़ी चलाते समय कैन या टैंकर से बाहर गिर सकता है। इसे हैंडलिंग लॉस (संभाल में हुई क्षति) कहते हैं।")
                   },
                   {
-                    "label": "Milk Taken Without Permission",
-                    "text": "Sometimes, a small amount of milk is deliberately removed during handling or transport. This is called pilferage, and it is not allowed."
+                    "label": L("Milk Taken Without Permission", "बिना अनुमति के दूध निकालना"),
+                    "text": L("Sometimes, a small amount of milk is deliberately removed during handling or transport. This is called pilferage, and it is not allowed.", "कभी-कभी, संभालते या ले जाते समय जानबूझकर थोड़ी मात्रा में दूध निकाल लिया जाता है। इसे पिल्फरेज (चोरी) कहते हैं, और यह अनुमति योग्य नहीं है।")
                   },
                   {
-                    "label": "Changes in Fat and SNF",
-                    "text": "If milk is tested incorrectly, or if water or another substance is mixed into it, the Fat and SNF readings can change — and this affects what the milk is worth, even if the volume looks the same."
+                    "label": L("Changes in Fat and SNF", "Fat और SNF में बदलाव"),
+                    "text": L("If milk is tested incorrectly, or if water or another substance is mixed into it, the Fat and SNF readings can change — and this affects what the milk is worth, even if the volume looks the same.", "अगर दूध की जांच गलत तरीके से की जाए, या उसमें पानी या कोई और चीज़ मिला दी जाए, तो Fat और SNF की रीडिंग बदल सकती है — और इससे दूध की कीमत प्रभावित होती है, भले ही मात्रा एक जैसी दिखे।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "A Fifth Reason: Gaps on Paper",
-                "text": "Sometimes the problem is not the milk at all — it's the paperwork. If the dispatch quantity written down is more than the quantity that was actually tested (the composite quantity), or if entries are delayed or use the wrong units, the numbers will not match — even if every drop of milk arrived safely."
+                "heading": L("A Fifth Reason: Gaps on Paper", "पांचवां कारण: कागज़ पर अंतर"),
+                "text": L("Sometimes the problem is not the milk at all — it's the paperwork. If the dispatch quantity written down is more than the quantity that was actually tested (the composite quantity), or if entries are delayed or use the wrong units, the numbers will not match — even if every drop of milk arrived safely.", "कभी-कभी समस्या दूध में बिल्कुल नहीं होती — यह कागज़ी कार्रवाई में होती है। अगर लिखी गई डिस्पैच मात्रा असल में जांची गई मात्रा (कंपोज़िट मात्रा) से ज़्यादा है, या अगर एंट्री देर से की जाती है या गलत इकाइयों में की जाती है, तो संख्याएं मेल नहीं खाएंगी — भले ही दूध की हर बूंद सुरक्षित पहुंची हो।")
               },
               {
                 "type": "example",
-                "heading": "Think About It",
-                "text": "Imagine a Sahayak collects milk in the morning and pours it into a can to send to the chilling centre. If the can's lid is loose, a little milk can spill out on the bumpy village road. Nobody stole it, nobody made a paperwork mistake — but the chilling centre will still receive less milk than was recorded at the village. This is exactly the kind of gap that CDA is designed to catch."
+                "heading": L("Think About It", "इस पर सोचें"),
+                "text": L("Imagine a Sahayak collects milk in the morning and pours it into a can to send to the chilling centre. If the can's lid is loose, a little milk can spill out on the bumpy village road. Nobody stole it, nobody made a paperwork mistake — but the chilling centre will still receive less milk than was recorded at the village. This is exactly the kind of gap that CDA is designed to catch.", "कल्पना करें कि एक सहायक सुबह दूध इकट्ठा करता है और उसे चिलिंग सेंटर भेजने के लिए एक कैन में डालता है। अगर कैन का ढक्कन ढीला है, तो ऊबड़-खाबड़ गांव की सड़क पर थोड़ा दूध गिर सकता है। न किसी ने चोरी की, न किसी ने कागज़ी गलती की — लेकिन फिर भी चिलिंग सेंटर को गांव में दर्ज दूध से कम दूध मिलेगा। यही वह अंतर है जिसे पकड़ने के लिए CDA बनाया गया है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which of these is an example of a handling loss?",
+                "q": L("Which of these is an example of a handling loss?", "इनमें से कौन-सा हैंडलिंग लॉस का उदाहरण है?"),
                 "options": [
-                  "Milk spilling out of a can while it is being loaded",
-                  "A farmer selling extra milk to a neighbour",
-                  "A cow giving less milk in summer",
-                  "A Sahayak's phone running out of battery"
+                  L("Milk spilling out of a can while it is being loaded", "लादते समय कैन से दूध का गिरना"),
+                  L("A farmer selling extra milk to a neighbour", "एक किसान द्वारा पड़ोसी को अतिरिक्त दूध बेचना"),
+                  L("A cow giving less milk in summer", "गर्मी में गाय का कम दूध देना"),
+                  L("A Sahayak's phone running out of battery", "सहायक के फोन की बैटरी खत्म होना")
                 ],
                 "answer": 0,
-                "explain": "Milk spilling during loading, transfer or transport is called a handling loss — one of the common reasons milk quantity changes between the village and the dairy."
+                "explain": L("Milk spilling during loading, transfer or transport is called a handling loss — one of the common reasons milk quantity changes between the village and the dairy.", "लादते, स्थानांतरित करते या ले जाते समय दूध का गिरना हैंडलिंग लॉस कहलाता है — गांव और डेयरी के बीच दूध की मात्रा बदलने का एक सामान्य कारण।")
               },
               {
                 "type": "truefalse",
-                "q": "Milk quantity can only go missing if someone steals it.",
+                "q": L("Milk quantity can only go missing if someone steals it.", "दूध की मात्रा तभी गायब हो सकती है जब कोई इसे चुराए।"),
                 "answer": false,
-                "explain": "Milk quantity can change for many reasons — spillage, measurement mistakes, testing errors and paperwork gaps — not only theft."
+                "explain": L("Milk quantity can change for many reasons — spillage, measurement mistakes, testing errors and paperwork gaps — not only theft.", "दूध की मात्रा कई कारणों से बदल सकती है — गिरना, माप की गलतियां, जांच में त्रुटियां और कागज़ी अंतर — केवल चोरी से नहीं।")
               }
             ]
           },
           {
             "id": "t-what-cda-does",
-            "title": "What CDA Does About It",
+            "title": L("What CDA Does About It", "CDA इसके बारे में क्या करता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Meet CDA",
-                "html": "CDA stands for <b>Composite, Dispatch and Actual</b> — the names of three points where milk quantity is written down as it moves from the village to the dairy. By comparing the numbers at these three points, the dairy can find out exactly where — and how much — milk went missing."
+                "heading": L("Meet CDA", "CDA से मिलें"),
+                "html": L("CDA stands for <b>Composite, Dispatch and Actual</b> — the names of three points where milk quantity is written down as it moves from the village to the dairy. By comparing the numbers at these three points, the dairy can find out exactly where — and how much — milk went missing.", "CDA का मतलब है <b>कंपोज़िट, डिस्पैच और एक्चुअल</b> — उन तीन बिंदुओं के नाम जहां दूध की मात्रा दर्ज की जाती है जब यह गांव से डेयरी तक जाता है। इन तीन बिंदुओं की संख्याओं की तुलना करके, डेयरी ठीक-ठीक पता लगा सकती है कि दूध कहां — और कितना — गायब हुआ।")
               },
               {
                 "type": "glossary",
-                "term": "CDA (Composite – Dispatch – Actual)",
-                "meaning": "A system that compares three numbers: how much milk was recorded at the MPP (Composite), how much was sent out (Dispatch), and how much actually arrived at the chilling centre (Actual). Comparing these numbers helps the dairy find and recover any shortfall."
+                "term": L("CDA (Composite – Dispatch – Actual)", "CDA (कंपोज़िट – डिस्पैच – एक्चुअल)"),
+                "meaning": L("A system that compares three numbers: how much milk was recorded at the MPP (Composite), how much was sent out (Dispatch), and how much actually arrived at the chilling centre (Actual). Comparing these numbers helps the dairy find and recover any shortfall.", "एक व्यवस्था जो तीन संख्याओं की तुलना करती है: MPP पर कितना दूध दर्ज हुआ (कंपोज़िट), कितना भेजा गया (डिस्पैच), और चिलिंग सेंटर पर असल में कितना पहुंचा (एक्चुअल)। इन संख्याओं की तुलना करने से डेयरी को किसी भी कमी को ढूंढने और वसूलने में मदद मिलती है।")
               },
               {
                 "type": "text",
-                "heading": "Why CDA Matters",
-                "html": "CDA is not about blaming anyone. It exists so that farmers are paid correctly for the milk they actually gave, so the union or company can find exactly where losses are happening — which village, which route, which Sahayak — and fix the problem quickly, and so everyone handling milk is encouraged to be careful and honest, because their numbers are being checked."
+                "heading": L("Why CDA Matters", "CDA क्यों महत्वपूर्ण है"),
+                "html": L("CDA is not about blaming anyone. It exists so that farmers are paid correctly for the milk they actually gave, so the union or company can find exactly where losses are happening — which village, which route, which Sahayak — and fix the problem quickly, and so everyone handling milk is encouraged to be careful and honest, because their numbers are being checked.", "CDA किसी को दोष देने के बारे में नहीं है। यह इसलिए मौजूद है ताकि किसानों को उनके दिए गए असली दूध के लिए सही भुगतान मिले, ताकि संघ या कंपनी ठीक-ठीक पता लगा सके कि नुकसान कहां हो रहा है — कौन सा गांव, कौन सा रूट, कौन सा सहायक — और समस्या को जल्दी ठीक कर सके, और ताकि दूध संभालने वाला हर व्यक्ति सावधान और ईमानदार रहने के लिए प्रेरित हो, क्योंकि उनकी संख्याओं की जांच हो रही है।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Checked at Many Levels",
-                "text": "CDA is not calculated only once for the whole dairy. It can be worked out MPP-wise, route-wise, officer-wise, and BMC or MCC-wise. This helps managers compare performance across units, spot the weakest links, and track whether things are improving over time."
+                "heading": L("Checked at Many Levels", "कई स्तरों पर जांच"),
+                "text": L("CDA is not calculated only once for the whole dairy. It can be worked out MPP-wise, route-wise, officer-wise, and BMC or MCC-wise. This helps managers compare performance across units, spot the weakest links, and track whether things are improving over time.", "CDA की गणना केवल पूरी डेयरी के लिए एक बार नहीं की जाती। इसे MPP-वार, रूट-वार, अधिकारी-वार, और BMC या MCC-वार निकाला जा सकता है। इससे प्रबंधकों को इकाइयों के बीच प्रदर्शन की तुलना करने, सबसे कमज़ोर कड़ियों को पहचानने, और समय के साथ सुधार को ट्रैक करने में मदद मिलती है।")
               },
               {
                 "type": "example",
-                "heading": "Why This Protects Everyone",
-                "text": "A Sahayak whose route shows very little missing milk is clearly handling milk carefully — checking cans, weighing correctly, and dispatching on time. A low CDA loss is proof of good work, and it protects both the Sahayak's reputation and the farmers' income."
+                "heading": L("Why This Protects Everyone", "यह सबकी सुरक्षा कैसे करता है"),
+                "text": L("A Sahayak whose route shows very little missing milk is clearly handling milk carefully — checking cans, weighing correctly, and dispatching on time. A low CDA loss is proof of good work, and it protects both the Sahayak's reputation and the farmers' income.", "जिस सहायक के रूट में बहुत कम दूध गायब होता है, वह स्पष्ट रूप से दूध को सावधानी से संभाल रहा है — कैन की जांच कर रहा है, सही तरीके से तौल रहा है, और समय पर भेज रहा है। कम CDA लॉस अच्छे काम का सबूत है, और यह सहायक की प्रतिष्ठा और किसानों की आय दोनों की रक्षा करता है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What three points does CDA compare to find missing milk?",
+                "q": L("What three points does CDA compare to find missing milk?", "गायब दूध को ढूंढने के लिए CDA किन तीन बिंदुओं की तुलना करता है?"),
                 "options": [
-                  "Composite, Dispatch and Actual quantities",
-                  "Morning, afternoon and evening prices",
-                  "Fat, SNF and water content only",
-                  "Cow, buffalo and goat milk"
+                  L("Composite, Dispatch and Actual quantities", "कंपोज़िट, डिस्पैच और एक्चुअल मात्राएं"),
+                  L("Morning, afternoon and evening prices", "सुबह, दोपहर और शाम की कीमतें"),
+                  L("Fat, SNF and water content only", "केवल Fat, SNF और पानी की मात्रा"),
+                  L("Cow, buffalo and goat milk", "गाय, भैंस और बकरी का दूध")
                 ],
                 "answer": 0,
-                "explain": "CDA compares the Composite (recorded at the MPP), Dispatch (sent out) and Actual (received at the chilling centre) quantities to find any gap."
+                "explain": L("CDA compares the Composite (recorded at the MPP), Dispatch (sent out) and Actual (received at the chilling centre) quantities to find any gap.", "CDA किसी भी अंतर को ढूंढने के लिए कंपोज़िट (MPP पर दर्ज), डिस्पैच (भेजी गई) और एक्चुअल (चिलिंग सेंटर पर प्राप्त) मात्राओं की तुलना करता है।")
               },
               {
                 "type": "truefalse",
-                "q": "CDA can be calculated separately for each route or each Sahayak, not just for the whole dairy.",
+                "q": L("CDA can be calculated separately for each route or each Sahayak, not just for the whole dairy.", "CDA की गणना केवल पूरी डेयरी के लिए ही नहीं, बल्कि हर रूट या हर सहायक के लिए अलग से भी की जा सकती है।"),
                 "answer": true,
-                "explain": "CDA can be worked out at many levels — MPP-wise, route-wise, officer-wise and BMC/MCC-wise — to find exactly where losses happen."
+                "explain": L("CDA can be worked out at many levels — MPP-wise, route-wise, officer-wise and BMC/MCC-wise — to find exactly where losses happen.", "CDA को कई स्तरों पर निकाला जा सकता है — MPP-वार, रूट-वार, अधिकारी-वार और BMC/MCC-वार — ताकि यह ठीक-ठीक पता चल सके कि नुकसान कहां हो रहा है।")
               }
             ]
           }
@@ -8004,204 +8004,204 @@ export const MODULES = [
             {
               "topicId": "t-milk-goes-missing",
               "type": "mcq",
-              "q": "Which of these can cause milk quantity to change between the MPP and the dairy?",
+              "q": L("Which of these can cause milk quantity to change between the MPP and the dairy?", "इनमें से क्या MPP और डेयरी के बीच दूध की मात्रा बदलने का कारण बन सकता है?"),
               "options": [
-                "A wrongly calibrated weighing scale",
-                "The name written on the milk can",
-                "The colour of the Sahayak's uniform",
-                "The distance from the MPP to the farmer's house"
+                L("A wrongly calibrated weighing scale", "गलत तरीके से कैलिब्रेट किया गया तौल कांटा"),
+                L("The name written on the milk can", "दूध की कैन पर लिखा नाम"),
+                L("The colour of the Sahayak's uniform", "सहायक की वर्दी का रंग"),
+                L("The distance from the MPP to the farmer's house", "MPP से किसान के घर की दूरी")
               ],
               "answer": 0,
-              "explain": "A wrongly calibrated weighing scale can record the wrong quantity, even though no milk was actually lost."
+              "explain": L("A wrongly calibrated weighing scale can record the wrong quantity, even though no milk was actually lost.", "गलत तरीके से कैलिब्रेट किया गया तौल कांटा गलत मात्रा दर्ज कर सकता है, भले ही असल में कोई दूध नहीं खोया हो।")
             },
             {
               "topicId": "t-what-cda-does",
               "type": "mcq",
-              "q": "What is the main purpose of CDA?",
+              "q": L("What is the main purpose of CDA?", "CDA का मुख्य उद्देश्य क्या है?"),
               "options": [
-                "To find and recover milk quantity that goes missing between the village and the dairy",
-                "To decide which cows give the most milk",
-                "To fix the price of cattle feed",
-                "To choose which Sahayak gets promoted"
+                L("To find and recover milk quantity that goes missing between the village and the dairy", "गांव और डेयरी के बीच गायब हुई दूध की मात्रा को ढूंढना और वसूलना"),
+                L("To decide which cows give the most milk", "यह तय करना कि कौन सी गायें सबसे ज़्यादा दूध देती हैं"),
+                L("To fix the price of cattle feed", "पशु चारे की कीमत तय करना"),
+                L("To choose which Sahayak gets promoted", "यह चुनना कि किस सहायक को पदोन्नति मिले")
               ],
               "answer": 0,
-              "explain": "CDA compares recorded quantities at the Composite, Dispatch and Actual stages so that any shortfall can be found and recovered."
+              "explain": L("CDA compares recorded quantities at the Composite, Dispatch and Actual stages so that any shortfall can be found and recovered.", "CDA कंपोज़िट, डिस्पैच और एक्चुअल चरणों में दर्ज मात्राओं की तुलना करता है ताकि किसी भी कमी को ढूंढा और वसूला जा सके।")
             }
           ]
         }
       },
       {
         "id": "m11-l2",
-        "title": "The Three Checkpoints of CDA",
+        "title": L("The Three Checkpoints of CDA", "CDA के तीन चेकपॉइंट"),
         "estMinutes": 9,
         "hook": [
           {
             "type": "hero",
-            "heading": "The Three Checkpoints",
-            "text": "CDA works by checking milk quantity at three different points in its journey. Let's walk through each checkpoint and see what is checked there."
+            "heading": L("The Three Checkpoints", "तीन चेकपॉइंट"),
+            "text": L("CDA works by checking milk quantity at three different points in its journey. Let's walk through each checkpoint and see what is checked there.", "CDA दूध की मात्रा को उसकी यात्रा के तीन अलग-अलग बिंदुओं पर जांच कर काम करता है। आइए हर चेकपॉइंट को समझें और देखें कि वहां क्या जांचा जाता है।")
           }
         ],
         "topics": [
           {
             "id": "t-checkpoint-mpp-dispatch",
-            "title": "Checkpoint 1 and 2: At the MPP and On the Road",
+            "title": L("Checkpoint 1 and 2: At the MPP and On the Road", "चेकपॉइंट 1 और 2: MPP पर और रास्ते में"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Checkpoint 1: Composite Control (At the MPP)",
-                "html": "The first checkpoint happens right at the village MPP. This is where the <b>Composite</b> quantity is set — the official recorded amount of milk collected that day."
+                "heading": L("Checkpoint 1: Composite Control (At the MPP)", "चेकपॉइंट 1: कंपोज़िट नियंत्रण (MPP पर)"),
+                "html": L("The first checkpoint happens right at the village MPP. This is where the <b>Composite</b> quantity is set — the official recorded amount of milk collected that day.", "पहला चेकपॉइंट गांव के MPP पर ही होता है। यहीं <b>कंपोज़िट</b> मात्रा तय होती है — उस दिन इकट्ठा किए गए दूध की आधिकारिक दर्ज मात्रा।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Correct Weighing",
-                    "text": "The weighing scale must be checked and calibrated so every pour is measured correctly."
+                    "label": L("Correct Weighing", "सही तौल"),
+                    "text": L("The weighing scale must be checked and calibrated so every pour is measured correctly.", "तौल कांटे की जांच और कैलिब्रेशन होनी चाहिए ताकि हर बार डाला गया दूध सही से मापा जाए।")
                   },
                   {
-                    "label": "Careful Handling",
-                    "text": "Collection must be supervised so milk is not spilled, leaked, or mixed up between farmers."
+                    "label": L("Careful Handling", "सावधानीपूर्वक संभाल"),
+                    "text": L("Collection must be supervised so milk is not spilled, leaked, or mixed up between farmers.", "संग्रह की निगरानी होनी चाहिए ताकि दूध गिरे नहीं, रिसे नहीं, या किसानों के बीच मिश्रित न हो।")
                   },
                   {
-                    "label": "Proper Testing",
-                    "text": "Milk must be sampled and tested correctly for Fat and SNF, using the right method."
+                    "label": L("Proper Testing", "उचित जांच"),
+                    "text": L("Milk must be sampled and tested correctly for Fat and SNF, using the right method.", "दूध का नमूना लेकर सही तरीके से Fat और SNF की सही विधि से जांच होनी चाहिए।")
                   },
                   {
-                    "label": "Checking for Mixing",
-                    "text": "Random checks — like using a lactometer — help catch water or other substances mixed into the milk."
+                    "label": L("Checking for Mixing", "मिलावट की जांच"),
+                    "text": L("Random checks — like using a lactometer — help catch water or other substances mixed into the milk.", "यादृच्छिक जांच — जैसे लैक्टोमीटर का उपयोग — दूध में मिलाए गए पानी या अन्य पदार्थों को पकड़ने में मदद करती है।")
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Checkpoint 2: Dispatch Control (At the Sahayak Stage)",
-                "html": "The second checkpoint happens when the Sahayak sends the milk onward — from the MPP toward the chilling centre. This is the <b>Dispatch</b> stage."
+                "heading": L("Checkpoint 2: Dispatch Control (At the Sahayak Stage)", "चेकपॉइंट 2: डिस्पैच नियंत्रण (सहायक के चरण पर)"),
+                "html": L("The second checkpoint happens when the Sahayak sends the milk onward — from the MPP toward the chilling centre. This is the <b>Dispatch</b> stage.", "दूसरा चेकपॉइंट तब होता है जब सहायक दूध को आगे भेजता है — MPP से चिलिंग सेंटर की ओर। यह <b>डिस्पैच</b> चरण है।")
               },
               {
                 "type": "glossary",
-                "term": "Dispatch",
-                "meaning": "The act of sending milk out from the MPP toward the chilling centre or dairy. The dispatch quantity is the amount recorded as being sent."
+                "term": L("Dispatch", "डिस्पैच"),
+                "meaning": L("The act of sending milk out from the MPP toward the chilling centre or dairy. The dispatch quantity is the amount recorded as being sent.", "MPP से चिलिंग सेंटर या डेयरी की ओर दूध भेजने की प्रक्रिया। डिस्पैच मात्रा वह राशि है जो भेजी गई दर्ज की जाती है।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Quantity Matches",
-                    "text": "The quantity being dispatched must match what was recorded at the composite stage — no more, no less."
+                    "label": L("Quantity Matches", "मात्रा का मेल"),
+                    "text": L("The quantity being dispatched must match what was recorded at the composite stage — no more, no less.", "भेजी जा रही मात्रा कंपोज़िट चरण में दर्ज मात्रा से मेल खानी चाहिए — न ज़्यादा, न कम।")
                   },
                   {
-                    "label": "Careful Loading",
-                    "text": "Pouring and loading must be supervised to prevent spillage or leakage."
+                    "label": L("Careful Loading", "सावधानीपूर्वक लदान"),
+                    "text": L("Pouring and loading must be supervised to prevent spillage or leakage.", "गिरने या रिसाव को रोकने के लिए डालने और लादने की निगरानी होनी चाहिए।")
                   },
                   {
-                    "label": "Cans and Vehicle Ready",
-                    "text": "Cans must be clean and leak-proof, and the vehicle must be ready before milk is loaded."
+                    "label": L("Cans and Vehicle Ready", "कैन और वाहन तैयार"),
+                    "text": L("Cans must be clean and leak-proof, and the vehicle must be ready before milk is loaded.", "कैन साफ और रिसाव-रोधी होने चाहिए, और दूध लादने से पहले वाहन तैयार होना चाहिए।")
                   },
                   {
-                    "label": "Sealed and Documented",
-                    "text": "Cans or tankers must be properly sealed, and dispatch slips filled in correctly, so nothing can be added or removed unnoticed."
+                    "label": L("Sealed and Documented", "सील और दस्तावेज़ीकृत"),
+                    "text": L("Cans or tankers must be properly sealed, and dispatch slips filled in correctly, so nothing can be added or removed unnoticed.", "कैन या टैंकर ठीक से सील होने चाहिए, और डिस्पैच पर्चियां सही ढंग से भरी होनी चाहिए, ताकि बिना पता चले कुछ भी जोड़ा या निकाला न जा सके।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why Sealing Matters",
-                "text": "A sealed can or tanker is like a locked box — if the seal is broken when it reaches the chilling centre, everyone knows something may have happened on the way. This is one of the simplest ways to protect milk quantity during transport."
+                "heading": L("Why Sealing Matters", "सीलिंग क्यों महत्वपूर्ण है"),
+                "text": L("A sealed can or tanker is like a locked box — if the seal is broken when it reaches the chilling centre, everyone knows something may have happened on the way. This is one of the simplest ways to protect milk quantity during transport.", "सील किया गया कैन या टैंकर एक ताले वाले बक्से जैसा है — अगर चिलिंग सेंटर पहुंचने पर सील टूटी मिले, तो सबको पता चल जाता है कि रास्ते में कुछ हुआ होगा। यह ले जाने के दौरान दूध की मात्रा की रक्षा करने के सबसे सरल तरीकों में से एक है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "At the MPP (Composite stage), what helps make sure milk quantity is recorded correctly?",
+                "q": L("At the MPP (Composite stage), what helps make sure milk quantity is recorded correctly?", "MPP पर (कंपोज़िट चरण में), दूध की मात्रा सही ढंग से दर्ज होना सुनिश्चित करने में क्या मदद करता है?"),
                 "options": [
-                  "A correctly calibrated weighing scale",
-                  "A louder radio at the MPP",
-                  "Selling milk at a discount",
-                  "Painting the MPP a bright colour"
+                  L("A correctly calibrated weighing scale", "सही ढंग से कैलिब्रेट किया गया तौल कांटा"),
+                  L("A louder radio at the MPP", "MPP पर तेज़ आवाज़ वाला रेडियो"),
+                  L("Selling milk at a discount", "दूध को छूट पर बेचना"),
+                  L("Painting the MPP a bright colour", "MPP को चमकीले रंग से रंगना")
                 ],
                 "answer": 0,
-                "explain": "A correctly calibrated weighing scale, checked regularly, ensures every pour of milk is measured accurately."
+                "explain": L("A correctly calibrated weighing scale, checked regularly, ensures every pour of milk is measured accurately.", "नियमित रूप से जांचा गया, सही ढंग से कैलिब्रेट किया गया तौल कांटा सुनिश्चित करता है कि दूध की हर मात्रा सटीक रूप से मापी जाए।")
               },
               {
                 "type": "truefalse",
-                "q": "Sealing cans and tankers before dispatch has nothing to do with protecting milk quantity.",
+                "q": L("Sealing cans and tankers before dispatch has nothing to do with protecting milk quantity.", "डिस्पैच से पहले कैन और टैंकरों को सील करने का दूध की मात्रा की सुरक्षा से कोई लेना-देना नहीं है।"),
                 "answer": false,
-                "explain": "Sealing helps prevent milk from being added or removed unnoticed during transport, protecting the recorded quantity."
+                "explain": L("Sealing helps prevent milk from being added or removed unnoticed during transport, protecting the recorded quantity.", "सीलिंग ले जाने के दौरान बिना पता चले दूध जोड़े या निकाले जाने को रोकने में मदद करती है, जिससे दर्ज मात्रा की रक्षा होती है।")
               }
             ]
           },
           {
             "id": "t-checkpoint-actual-receipt",
-            "title": "Checkpoint 3: Arrival at the Chilling Centre",
+            "title": L("Checkpoint 3: Arrival at the Chilling Centre", "चेकपॉइंट 3: चिलिंग सेंटर पर पहुंच"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Checkpoint 3: Actual Receipt and Transit Control",
-                "html": "The third and final checkpoint happens when the milk actually arrives at the chilling centre — the MCC or BMC. This is where the <b>Actual</b> quantity is recorded."
+                "heading": L("Checkpoint 3: Actual Receipt and Transit Control", "चेकपॉइंट 3: एक्चुअल प्राप्ति और परिवहन नियंत्रण"),
+                "html": L("The third and final checkpoint happens when the milk actually arrives at the chilling centre — the MCC or BMC. This is where the <b>Actual</b> quantity is recorded.", "तीसरा और अंतिम चेकपॉइंट तब होता है जब दूध वास्तव में चिलिंग सेंटर — MCC या BMC — पर पहुंचता है। यहीं <b>एक्चुअल</b> मात्रा दर्ज होती है।")
               },
               {
                 "type": "glossary",
-                "term": "MCC / BMC",
-                "meaning": "MCC (Milk Chilling Centre) and BMC (Bulk Milk Cooler) are places where milk is cooled quickly after it arrives, to keep it fresh before it goes on to the dairy plant."
+                "term": L("MCC / BMC", "MCC / BMC"),
+                "meaning": L("MCC (Milk Chilling Centre) and BMC (Bulk Milk Cooler) are places where milk is cooled quickly after it arrives, to keep it fresh before it goes on to the dairy plant.", "MCC (मिल्क चिलिंग सेंटर) और BMC (बल्क मिल्क कूलर) वे स्थान हैं जहां दूध पहुंचने के बाद जल्दी ठंडा किया जाता है, ताकि डेयरी प्लांट जाने से पहले वह ताज़ा रहे।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Re-checking Quantity",
-                    "text": "The actual quantity received is compared with the dispatch quantity, using a properly calibrated scale."
+                    "label": L("Re-checking Quantity", "मात्रा की पुनः जांच"),
+                    "text": L("The actual quantity received is compared with the dispatch quantity, using a properly calibrated scale.", "प्राप्त एक्चुअल मात्रा की तुलना, ठीक से कैलिब्रेट किए गए तौल कांटे का उपयोग करके, डिस्पैच मात्रा से की जाती है।")
                   },
                   {
-                    "label": "Checking Quality on Arrival",
-                    "text": "Fat and SNF are tested again, and the milk is checked for sourness, curdling, smell or contamination before it is accepted."
+                    "label": L("Checking Quality on Arrival", "पहुंचने पर गुणवत्ता की जांच"),
+                    "text": L("Fat and SNF are tested again, and the milk is checked for sourness, curdling, smell or contamination before it is accepted.", "Fat और SNF की दोबारा जांच होती है, और स्वीकार करने से पहले दूध की खटास, जमाव, गंध या मिलावट की जांच की जाती है।")
                   },
                   {
-                    "label": "Checking Seals",
-                    "text": "Seals on cans or tankers are checked for any sign of tampering, which could mean milk was removed on the way."
+                    "label": L("Checking Seals", "सील की जांच"),
+                    "text": L("Seals on cans or tankers are checked for any sign of tampering, which could mean milk was removed on the way.", "कैन या टैंकरों की सीलों की छेड़छाड़ के किसी भी संकेत के लिए जांच की जाती है, जिसका मतलब हो सकता है कि रास्ते में दूध निकाला गया हो।")
                   },
                   {
-                    "label": "Spotting Transit Losses",
-                    "text": "Any leakage, spillage or delay during the journey is noted, since it can affect both quantity and quality."
+                    "label": L("Spotting Transit Losses", "परिवहन में हुए नुकसान की पहचान"),
+                    "text": L("Any leakage, spillage or delay during the journey is noted, since it can affect both quantity and quality.", "यात्रा के दौरान किसी भी रिसाव, गिरने या देरी को नोट किया जाता है, क्योंकि यह मात्रा और गुणवत्ता दोनों को प्रभावित कर सकता है।")
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Putting the Three Checkpoints Together",
-                "html": "Now you know all three checkpoints: <b>Composite</b> (at the MPP), <b>Dispatch</b> (when the Sahayak sends it out), and <b>Actual</b> (when it arrives at the chilling centre). CDA compares these three numbers to find exactly where any milk went missing."
+                "heading": L("Putting the Three Checkpoints Together", "तीनों चेकपॉइंट को एक साथ जोड़ना"),
+                "html": L("Now you know all three checkpoints: <b>Composite</b> (at the MPP), <b>Dispatch</b> (when the Sahayak sends it out), and <b>Actual</b> (when it arrives at the chilling centre). CDA compares these three numbers to find exactly where any milk went missing.", "अब आप तीनों चेकपॉइंट जानते हैं: <b>कंपोज़िट</b> (MPP पर), <b>डिस्पैच</b> (जब सहायक इसे भेजता है), और <b>एक्चुअल</b> (जब यह चिलिंग सेंटर पहुंचता है)। CDA इन तीन संख्याओं की तुलना करके ठीक-ठीक पता लगाता है कि दूध कहां गायब हुआ।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "The CDA Loss Formula",
-                "text": "The basic idea is simple: Net Loss = Actual Quantity minus Composite Quantity. If the actual quantity received is lower, that difference is the loss. In the next lesson, you will learn how to turn this into a full worked calculation, including how the value of that loss is measured."
+                "heading": L("The CDA Loss Formula", "CDA लॉस का सूत्र"),
+                "text": L("The basic idea is simple: Net Loss = Actual Quantity minus Composite Quantity. If the actual quantity received is lower, that difference is the loss. In the next lesson, you will learn how to turn this into a full worked calculation, including how the value of that loss is measured.", "मूल विचार सरल है: नेट लॉस = एक्चुअल मात्रा माइनस कंपोज़िट मात्रा। अगर प्राप्त एक्चुअल मात्रा कम है, तो वह अंतर ही नुकसान है। अगले पाठ में, आप सीखेंगे कि इसे एक पूरी हल की गई गणना में कैसे बदला जाए, जिसमें यह भी शामिल है कि उस नुकसान का मूल्य कैसे मापा जाता है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is recorded at the third CDA checkpoint?",
+                "q": L("What is recorded at the third CDA checkpoint?", "तीसरे CDA चेकपॉइंट पर क्या दर्ज होता है?"),
                 "options": [
-                  "The Actual quantity of milk received at the chilling centre",
-                  "The name of the cow that gave the most milk",
-                  "The number of MPPs in the district",
-                  "The price of diesel that week"
+                  L("The Actual quantity of milk received at the chilling centre", "चिलिंग सेंटर पर प्राप्त दूध की एक्चुअल मात्रा"),
+                  L("The name of the cow that gave the most milk", "सबसे ज़्यादा दूध देने वाली गाय का नाम"),
+                  L("The number of MPPs in the district", "जिले में MPP की संख्या"),
+                  L("The price of diesel that week", "उस हफ्ते डीजल की कीमत")
                 ],
                 "answer": 0,
-                "explain": "The third checkpoint records the Actual quantity received at the MCC or BMC, so it can be compared against Composite and Dispatch."
+                "explain": L("The third checkpoint records the Actual quantity received at the MCC or BMC, so it can be compared against Composite and Dispatch.", "तीसरा चेकपॉइंट MCC या BMC पर प्राप्त एक्चुअल मात्रा दर्ज करता है, ताकि इसकी तुलना कंपोज़िट और डिस्पैच से की जा सके।")
               },
               {
                 "type": "mcq",
-                "q": "What is checked when milk arrives at the chilling centre?",
+                "q": L("What is checked when milk arrives at the chilling centre?", "जब दूध चिलिंग सेंटर पहुंचता है तो क्या जांचा जाता है?"),
                 "options": [
-                  "Quantity, Fat and SNF, seal condition, and any signs of transit loss",
-                  "Only the colour of the milk can",
-                  "Only how fast the driver was going",
-                  "Only the Sahayak's attendance"
+                  L("Quantity, Fat and SNF, seal condition, and any signs of transit loss", "मात्रा, Fat और SNF, सील की स्थिति, और परिवहन नुकसान के कोई संकेत"),
+                  L("Only the colour of the milk can", "केवल दूध की कैन का रंग"),
+                  L("Only how fast the driver was going", "केवल ड्राइवर कितनी तेज़ी से जा रहा था"),
+                  L("Only the Sahayak's attendance", "केवल सहायक की उपस्थिति")
                 ],
                 "answer": 0,
-                "explain": "On arrival, the chilling centre checks quantity, quality (Fat and SNF), seal integrity, and any leakage, spillage or delay during transit."
+                "explain": L("On arrival, the chilling centre checks quantity, quality (Fat and SNF), seal integrity, and any leakage, spillage or delay during transit.", "पहुंचने पर, चिलिंग सेंटर मात्रा, गुणवत्ता (Fat और SNF), सील की सुरक्षा, और परिवहन के दौरान किसी भी रिसाव, गिरने या देरी की जांच करता है।")
               }
             ]
           }
@@ -8212,209 +8212,209 @@ export const MODULES = [
             {
               "topicId": "t-checkpoint-mpp-dispatch",
               "type": "mcq",
-              "q": "Why must cans or tankers be sealed before dispatch?",
+              "q": L("Why must cans or tankers be sealed before dispatch?", "डिस्पैच से पहले कैन या टैंकरों को सील क्यों किया जाना चाहिए?"),
               "options": [
-                "So nothing can be added or removed unnoticed during transport",
-                "So the milk looks nicer",
-                "So the vehicle uses less fuel",
-                "So the Sahayak can finish work early"
+                L("So nothing can be added or removed unnoticed during transport", "ताकि परिवहन के दौरान बिना पता चले कुछ भी जोड़ा या निकाला न जा सके"),
+                L("So the milk looks nicer", "ताकि दूध अच्छा दिखे"),
+                L("So the vehicle uses less fuel", "ताकि वाहन कम ईंधन इस्तेमाल करे"),
+                L("So the Sahayak can finish work early", "ताकि सहायक जल्दी काम खत्म कर सके")
               ],
               "answer": 0,
-              "explain": "A proper seal protects the recorded quantity — if it is broken on arrival, it is a sign something may have happened during transport."
+              "explain": L("A proper seal protects the recorded quantity — if it is broken on arrival, it is a sign something may have happened during transport.", "एक उचित सील दर्ज मात्रा की रक्षा करती है — अगर यह पहुंचने पर टूटी मिले, तो यह इस बात का संकेत है कि परिवहन के दौरान कुछ हुआ होगा।")
             },
             {
               "topicId": "t-checkpoint-actual-receipt",
               "type": "mcq",
-              "q": "At the Actual Receipt checkpoint, what does the chilling centre compare the received quantity against?",
+              "q": L("At the Actual Receipt checkpoint, what does the chilling centre compare the received quantity against?", "एक्चुअल प्राप्ति चेकपॉइंट पर, चिलिंग सेंटर प्राप्त मात्रा की तुलना किससे करता है?"),
               "options": [
-                "The Dispatch quantity that was sent out",
-                "The price of milk last month",
-                "The number of farmers in the village",
-                "The weather forecast"
+                L("The Dispatch quantity that was sent out", "भेजी गई डिस्पैच मात्रा"),
+                L("The price of milk last month", "पिछले महीने दूध की कीमत"),
+                L("The number of farmers in the village", "गांव में किसानों की संख्या"),
+                L("The weather forecast", "मौसम का पूर्वानुमान")
               ],
               "answer": 0,
-              "explain": "The chilling centre checks the Actual quantity received against the Dispatch quantity to spot any gap during transit."
+              "explain": L("The chilling centre checks the Actual quantity received against the Dispatch quantity to spot any gap during transit.", "चिलिंग सेंटर परिवहन के दौरान किसी भी अंतर को पहचानने के लिए प्राप्त एक्चुअल मात्रा की डिस्पैच मात्रा से जांच करता है।")
             }
           ]
         }
       },
       {
         "id": "m11-l3",
-        "title": "Let's Calculate CDA — A Worked Example",
+        "title": L("Let's Calculate CDA — A Worked Example", "आइए CDA की गणना करें — एक हल किया गया उदाहरण"),
         "estMinutes": 12,
         "hook": [
           {
             "type": "hero",
-            "heading": "Let's Calculate CDA",
-            "text": "Now that you know why CDA exists and what its three checkpoints are, let's work through a real calculation step by step — just like a dairy accountant would."
+            "heading": L("Let's Calculate CDA", "आइए CDA की गणना करें"),
+            "text": L("Now that you know why CDA exists and what its three checkpoints are, let's work through a real calculation step by step — just like a dairy accountant would.", "अब जब आप जानते हैं कि CDA क्यों मौजूद है और इसके तीन चेकपॉइंट क्या हैं, आइए एक डेयरी अकाउंटेंट की तरह चरण-दर-चरण एक असली गणना करें।")
           }
         ],
         "topics": [
           {
             "id": "t-value-the-milk",
-            "title": "Step 1: Finding the Real Value of the Milk",
+            "title": L("Step 1: Finding the Real Value of the Milk", "चरण 1: दूध का असली मूल्य निकालना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Meet the Numbers",
-                "html": "At a BMC, the composite record for one day shows: Composite Amount = ₹44,00,000 and Composite Quantity = 1,00,000 litres. The milk tested at Fat = 4.2% and SNF = 8.6%. Let's use these numbers to find the true value of this milk, step by step."
+                "heading": L("Meet the Numbers", "संख्याओं से मिलें"),
+                "html": L("At a BMC, the composite record for one day shows: Composite Amount = ₹44,00,000 and Composite Quantity = 1,00,000 litres. The milk tested at Fat = 4.2% and SNF = 8.6%. Let's use these numbers to find the true value of this milk, step by step.", "एक BMC में, एक दिन का कंपोज़िट रिकॉर्ड दिखाता है: कंपोज़िट राशि = ₹44,00,000 और कंपोज़िट मात्रा = 1,00,000 लीटर। दूध की जांच में Fat = 4.2% और SNF = 8.6% पाया गया। आइए इन संख्याओं का उपयोग करके इस दूध का असली मूल्य चरण-दर-चरण निकालें।")
               },
               {
                 "type": "glossary",
-                "term": "Average Rate",
-                "meaning": "The average price paid per litre, found by dividing the total money (composite amount) by the total quantity of milk."
+                "term": L("Average Rate", "औसत दर"),
+                "meaning": L("The average price paid per litre, found by dividing the total money (composite amount) by the total quantity of milk.", "प्रति लीटर भुगतान की गई औसत कीमत, जो कुल पैसे (कंपोज़िट राशि) को दूध की कुल मात्रा से विभाजित करके निकाली जाती है।")
               },
               {
                 "type": "example",
-                "heading": "Step 1: Calculate the Average Rate",
-                "text": "Average Rate = Composite Amount ÷ Composite Quantity = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre. This tells us what was paid, on average, for every litre — but it does not yet tell us if that price matches the milk's real quality."
+                "heading": L("Step 1: Calculate the Average Rate", "चरण 1: औसत दर की गणना करें"),
+                "text": L("Average Rate = Composite Amount ÷ Composite Quantity = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre. This tells us what was paid, on average, for every litre — but it does not yet tell us if that price matches the milk's real quality.", "औसत दर = कंपोज़िट राशि ÷ कंपोज़िट मात्रा = ₹44,00,000 ÷ 1,00,000 लीटर = ₹44 प्रति लीटर। यह बताता है कि हर लीटर के लिए औसतन क्या भुगतान किया गया — लेकिन यह अभी नहीं बताता कि वह कीमत दूध की असली गुणवत्ता से मेल खाती है या नहीं।")
               },
               {
                 "type": "glossary",
-                "term": "EFU (Equivalent Fat Unit)",
-                "meaning": "A single number that combines Fat % and SNF % into one score, so milk of different quality can be compared fairly. EFU = Fat % + (2 ÷ 3 × SNF %)."
+                "term": L("EFU (Equivalent Fat Unit)", "EFU (इक्विवेलेंट फैट यूनिट)"),
+                "meaning": L("A single number that combines Fat % and SNF % into one score, so milk of different quality can be compared fairly. EFU = Fat % + (2 ÷ 3 × SNF %).", "एक अकेली संख्या जो Fat % और SNF % को एक स्कोर में मिला देती है, ताकि अलग-अलग गुणवत्ता वाले दूध की उचित तुलना की जा सके। EFU = Fat % + (2 ÷ 3 × SNF %)।")
               },
               {
                 "type": "example",
-                "heading": "Step 2: Calculate the EFU",
-                "text": "EFU = Fat + (2/3 × SNF) = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93. This milk's EFU is 9.93 — a little below the standard reference EFU of 12.5, which comes from standard buffalo milk (6.5% Fat, 9% SNF) used as the benchmark for comparison."
+                "heading": L("Step 2: Calculate the EFU", "चरण 2: EFU की गणना करें"),
+                "text": L("EFU = Fat + (2/3 × SNF) = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93. This milk's EFU is 9.93 — a little below the standard reference EFU of 12.5, which comes from standard buffalo milk (6.5% Fat, 9% SNF) used as the benchmark for comparison.", "EFU = Fat + (2/3 × SNF) = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93। इस दूध का EFU 9.93 है — मानक संदर्भ EFU 12.5 से थोड़ा कम, जो मानक भैंस के दूध (6.5% Fat, 9% SNF) से आता है जिसे तुलना के लिए मानदंड के रूप में उपयोग किया जाता है।")
               },
               {
                 "type": "glossary",
-                "term": "Standard Landing Rate",
-                "meaning": "The fair per-litre value of milk after adjusting the Average Rate for its actual quality (EFU), compared against the standard reference EFU of 12.5."
+                "term": L("Standard Landing Rate", "स्टैंडर्ड लैंडिंग रेट"),
+                "meaning": L("The fair per-litre value of milk after adjusting the Average Rate for its actual quality (EFU), compared against the standard reference EFU of 12.5.", "12.5 के मानक संदर्भ EFU की तुलना में, दूध की असली गुणवत्ता (EFU) के लिए औसत दर को समायोजित करने के बाद उसका उचित प्रति-लीटर मूल्य।")
               },
               {
                 "type": "example",
-                "heading": "Step 3: Calculate the Standard Landing Rate",
-                "text": "Standard Landing Rate = Average Rate × (12.5 ÷ EFU) = ₹44 × (12.5 ÷ 9.93) = ₹44 × 1.259 = ₹55.39 per litre. Because this milk's EFU (9.93) is lower than the standard (12.5), the calculation adjusts the rate upward, to show what one litre of this exact quality is really worth."
+                "heading": L("Step 3: Calculate the Standard Landing Rate", "चरण 3: स्टैंडर्ड लैंडिंग रेट की गणना करें"),
+                "text": L("Standard Landing Rate = Average Rate × (12.5 ÷ EFU) = ₹44 × (12.5 ÷ 9.93) = ₹44 × 1.259 = ₹55.39 per litre. Because this milk's EFU (9.93) is lower than the standard (12.5), the calculation adjusts the rate upward, to show what one litre of this exact quality is really worth.", "स्टैंडर्ड लैंडिंग रेट = औसत दर × (12.5 ÷ EFU) = ₹44 × (12.5 ÷ 9.93) = ₹44 × 1.259 = ₹55.39 प्रति लीटर। क्योंकि इस दूध का EFU (9.93) मानक (12.5) से कम है, गणना दर को ऊपर की ओर समायोजित करती है, ताकि यह दिखाया जा सके कि इसी गुणवत्ता का एक लीटर असल में कितने का है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "In this example, what is the Average Rate?",
+                "q": L("In this example, what is the Average Rate?", "इस उदाहरण में, औसत दर क्या है?"),
                 "options": [
-                  "₹44 per litre",
-                  "₹100 per litre",
-                  "₹4,400 per litre",
-                  "₹0.44 per litre"
+                  L("₹44 per litre", "₹44 प्रति लीटर"),
+                  L("₹100 per litre", "₹100 प्रति लीटर"),
+                  L("₹4,400 per litre", "₹4,400 प्रति लीटर"),
+                  L("₹0.44 per litre", "₹0.44 प्रति लीटर")
                 ],
                 "answer": 0,
-                "explain": "Average Rate = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre."
+                "explain": L("Average Rate = ₹44,00,000 ÷ 1,00,000 litres = ₹44 per litre.", "औसत दर = ₹44,00,000 ÷ 1,00,000 लीटर = ₹44 प्रति लीटर।")
               },
               {
                 "type": "mcq",
-                "q": "What does EFU combine into a single number?",
+                "q": L("What does EFU combine into a single number?", "EFU किन दो चीज़ों को एक संख्या में मिलाता है?"),
                 "options": [
-                  "Fat % and SNF %",
-                  "Distance and time",
-                  "Price and season",
-                  "Litres and rupees"
+                  L("Fat % and SNF %", "Fat % और SNF %"),
+                  L("Distance and time", "दूरी और समय"),
+                  L("Price and season", "कीमत और मौसम"),
+                  L("Litres and rupees", "लीटर और रुपये")
                 ],
                 "answer": 0,
-                "explain": "EFU (Equivalent Fat Unit) combines Fat % and SNF % into one quality score, so milk of different quality can be compared fairly."
+                "explain": L("EFU (Equivalent Fat Unit) combines Fat % and SNF % into one quality score, so milk of different quality can be compared fairly.", "EFU (इक्विवेलेंट फैट यूनिट) Fat % और SNF % को एक गुणवत्ता स्कोर में मिलाता है, ताकि अलग-अलग गुणवत्ता वाले दूध की उचित तुलना की जा सके।")
               }
             ]
           },
           {
             "id": "t-pro-rata-and-loss",
-            "title": "Step 2: Pro-Rata Impact and the CDA Loss",
+            "title": L("Step 2: Pro-Rata Impact and the CDA Loss", "चरण 2: प्रो-रेटा प्रभाव और CDA लॉस"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Comparing Declared Rate with Landing Rate",
-                "html": "The union had already declared a rate of ₹52 per litre for this milk — this is called the <b>Declared Rate</b>. We just calculated the Standard Landing Rate as ₹55.39. Let's compare them."
+                "heading": L("Comparing Declared Rate with Landing Rate", "घोषित दर की लैंडिंग रेट से तुलना"),
+                "html": L("The union had already declared a rate of ₹52 per litre for this milk — this is called the <b>Declared Rate</b>. We just calculated the Standard Landing Rate as ₹55.39. Let's compare them.", "संघ ने पहले ही इस दूध के लिए ₹52 प्रति लीटर की दर घोषित कर दी थी — इसे <b>घोषित दर</b> कहते हैं। हमने अभी स्टैंडर्ड लैंडिंग रेट ₹55.39 निकाली। आइए इनकी तुलना करें।")
               },
               {
                 "type": "glossary",
-                "term": "Declared Rate",
-                "meaning": "The rate per litre that the union or company announces it will pay, before adjusting for the exact quality of milk received that day."
+                "term": L("Declared Rate", "घोषित दर"),
+                "meaning": L("The rate per litre that the union or company announces it will pay, before adjusting for the exact quality of milk received that day.", "वह प्रति लीटर दर जो संघ या कंपनी भुगतान करने की घोषणा करती है, उस दिन प्राप्त दूध की ठीक-ठीक गुणवत्ता के लिए समायोजन करने से पहले।")
               },
               {
                 "type": "glossary",
-                "term": "Pro-Rata Impact",
-                "meaning": "The difference between the Declared Rate and the Standard Landing Rate. It shows whether the declared price was enough to cover the real value of the milk received."
+                "term": L("Pro-Rata Impact", "प्रो-रेटा प्रभाव"),
+                "meaning": L("The difference between the Declared Rate and the Standard Landing Rate. It shows whether the declared price was enough to cover the real value of the milk received.", "घोषित दर और स्टैंडर्ड लैंडिंग रेट के बीच का अंतर। यह दिखाता है कि क्या घोषित कीमत प्राप्त दूध के असली मूल्य को कवर करने के लिए पर्याप्त थी।")
               },
               {
                 "type": "example",
-                "heading": "Step 4: Calculate the Pro-Rata Impact",
-                "text": "Pro-Rata Impact = Declared Rate − Standard Landing Rate = ₹52 − ₹55.39 = −₹3.39. Because this number is negative, it is Unfavourable — the milk received was actually worth more than the declared rate paid for it, based on its real Fat and SNF quality."
+                "heading": L("Step 4: Calculate the Pro-Rata Impact", "चरण 4: प्रो-रेटा प्रभाव की गणना करें"),
+                "text": L("Pro-Rata Impact = Declared Rate − Standard Landing Rate = ₹52 − ₹55.39 = −₹3.39. Because this number is negative, it is Unfavourable — the milk received was actually worth more than the declared rate paid for it, based on its real Fat and SNF quality.", "प्रो-रेटा प्रभाव = घोषित दर − स्टैंडर्ड लैंडिंग रेट = ₹52 − ₹55.39 = −₹3.39। क्योंकि यह संख्या ऋणात्मक है, यह प्रतिकूल (Unfavourable) है — प्राप्त दूध असल में उसके लिए दिए गए घोषित दर से ज़्यादा मूल्य का था, उसकी असली Fat और SNF गुणवत्ता के आधार पर।")
               },
               {
                 "type": "ledger",
-                "heading": "Today's Quality-Value Summary",
+                "heading": L("Today's Quality-Value Summary", "आज का गुणवत्ता-मूल्य सारांश"),
                 "rows": [
                   {
-                    "label": "Average Rate (per litre)",
+                    "label": L("Average Rate (per litre)", "औसत दर (प्रति लीटर)"),
                     "amount": "₹44.00"
                   },
                   {
-                    "label": "Standard Landing Rate (per litre)",
+                    "label": L("Standard Landing Rate (per litre)", "स्टैंडर्ड लैंडिंग रेट (प्रति लीटर)"),
                     "amount": "₹55.39"
                   },
                   {
-                    "label": "Declared Rate (per litre)",
+                    "label": L("Declared Rate (per litre)", "घोषित दर (प्रति लीटर)"),
                     "amount": "₹52.00"
                   }
                 ],
                 "total": {
-                  "label": "Pro-Rata Impact (Declared − Landing)",
-                  "amount": "−₹3.39 (Unfavourable)"
+                  "label": L("Pro-Rata Impact (Declared − Landing)", "प्रो-रेटा प्रभाव (घोषित − लैंडिंग)"),
+                  "amount": L("−₹3.39 (Unfavourable)", "−₹3.39 (प्रतिकूल)")
                 }
               },
               {
                 "type": "text",
-                "heading": "Now Let's Find the CDA Quantity Loss",
-                "html": "Pro-Rata Impact tells us about VALUE. But CDA is also about QUANTITY — how much milk itself went missing. Suppose the chilling centre's records for the same day show: Composite Quantity (recorded at the MPP) = 1,00,000 litres, but Actual Quantity (received at the BMC) = 99,400 litres."
+                "heading": L("Now Let's Find the CDA Quantity Loss", "अब आइए CDA मात्रा नुकसान निकालें"),
+                "html": L("Pro-Rata Impact tells us about VALUE. But CDA is also about QUANTITY — how much milk itself went missing. Suppose the chilling centre's records for the same day show: Composite Quantity (recorded at the MPP) = 1,00,000 litres, but Actual Quantity (received at the BMC) = 99,400 litres.", "प्रो-रेटा प्रभाव हमें मूल्य के बारे में बताता है। लेकिन CDA मात्रा के बारे में भी है — कि दूध की कितनी मात्रा असल में गायब हुई। मान लीजिए उसी दिन के लिए चिलिंग सेंटर के रिकॉर्ड दिखाते हैं: कंपोज़िट मात्रा (MPP पर दर्ज) = 1,00,000 लीटर, लेकिन एक्चुअल मात्रा (BMC पर प्राप्त) = 99,400 लीटर।")
               },
               {
                 "type": "example",
-                "heading": "Step 5: Calculate the Net Loss (Quantity)",
-                "text": "Net Loss (Quantity) = Actual Quantity − Composite Quantity = 99,400 − 1,00,000 = −600 litres. So, 600 litres of milk went missing somewhere between the MPP and the BMC."
+                "heading": L("Step 5: Calculate the Net Loss (Quantity)", "चरण 5: नेट लॉस (मात्रा) की गणना करें"),
+                "text": L("Net Loss (Quantity) = Actual Quantity − Composite Quantity = 99,400 − 1,00,000 = −600 litres. So, 600 litres of milk went missing somewhere between the MPP and the BMC.", "नेट लॉस (मात्रा) = एक्चुअल मात्रा − कंपोज़िट मात्रा = 99,400 − 1,00,000 = −600 लीटर। तो, MPP और BMC के बीच कहीं 600 लीटर दूध गायब हो गया।")
               },
               {
                 "type": "example",
-                "heading": "Step 6: Calculate the CDA Loss %",
-                "text": "First, find the value of the loss: Loss Value = 600 litres × ₹55.39 (Standard Landing Rate) = ₹33,234. Next, find the value of the full composite milk: Composite Milk Value = 1,00,000 litres × ₹55.39 = ₹55,39,000. Finally: CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%."
+                "heading": L("Step 6: Calculate the CDA Loss %", "चरण 6: CDA लॉस % की गणना करें"),
+                "text": L("First, find the value of the loss: Loss Value = 600 litres × ₹55.39 (Standard Landing Rate) = ₹33,234. Next, find the value of the full composite milk: Composite Milk Value = 1,00,000 litres × ₹55.39 = ₹55,39,000. Finally: CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%.", "पहले, नुकसान का मूल्य निकालें: लॉस वैल्यू = 600 लीटर × ₹55.39 (स्टैंडर्ड लैंडिंग रेट) = ₹33,234। इसके बाद, पूरे कंपोज़िट दूध का मूल्य निकालें: कंपोज़िट मिल्क वैल्यू = 1,00,000 लीटर × ₹55.39 = ₹55,39,000। अंत में: CDA लॉस % = (लॉस वैल्यू ÷ कंपोज़िट मिल्क वैल्यू) × 100 = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%।")
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "A Handy Shortcut",
-                "text": "Notice that the CDA Loss % (0.6%) came out exactly the same as 600 litres out of 1,00,000 litres (0.6%). That's because both the loss and the composite milk were valued at the same rate, so the rate cancels out. This shortcut works whenever quality hasn't changed between dispatch and receipt."
+                "heading": L("A Handy Shortcut", "एक काम का शॉर्टकट"),
+                "text": L("Notice that the CDA Loss % (0.6%) came out exactly the same as 600 litres out of 1,00,000 litres (0.6%). That's because both the loss and the composite milk were valued at the same rate, so the rate cancels out. This shortcut works whenever quality hasn't changed between dispatch and receipt.", "ध्यान दें कि CDA लॉस % (0.6%) ठीक वैसा ही निकला जैसा 1,00,000 लीटर में से 600 लीटर (0.6%) होता है। ऐसा इसलिए है क्योंकि नुकसान और कंपोज़िट दूध दोनों का मूल्यांकन उसी दर पर हुआ, इसलिए दर आपस में कट जाती है। यह शॉर्टकट तभी काम करता है जब डिस्पैच और प्राप्ति के बीच गुणवत्ता न बदली हो।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Is 0.6% a Lot?",
-                "text": "A CDA Loss of 0.6% may look small, but across a large dairy handling lakhs of litres every day, even a small percentage adds up to a big amount of money. This is exactly why the dairy tracks CDA Loss % for every route, MPP and officer — small, steady losses are just as important to catch as big, sudden ones."
+                "heading": L("Is 0.6% a Lot?", "क्या 0.6% ज़्यादा है?"),
+                "text": L("A CDA Loss of 0.6% may look small, but across a large dairy handling lakhs of litres every day, even a small percentage adds up to a big amount of money. This is exactly why the dairy tracks CDA Loss % for every route, MPP and officer — small, steady losses are just as important to catch as big, sudden ones.", "0.6% का CDA लॉस छोटा लग सकता है, लेकिन हर दिन लाखों लीटर संभालने वाली एक बड़ी डेयरी में, एक छोटा प्रतिशत भी बड़ी राशि में बदल जाता है। इसीलिए डेयरी हर रूट, MPP और अधिकारी के लिए CDA लॉस % ट्रैक करती है — छोटे, लगातार होने वाले नुकसान को पकड़ना बड़े, अचानक होने वाले नुकसान जितना ही महत्वपूर्ण है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "In this example, is the Pro-Rata Impact favourable or unfavourable?",
+                "q": L("In this example, is the Pro-Rata Impact favourable or unfavourable?", "इस उदाहरण में, प्रो-रेटा प्रभाव अनुकूल है या प्रतिकूल?"),
                 "options": [
-                  "Unfavourable, because the milk was worth more than the declared rate paid",
-                  "Favourable, because the union saved money",
-                  "Neither, because Pro-Rata does not apply here",
-                  "Unfavourable, because too much milk arrived"
+                  L("Unfavourable, because the milk was worth more than the declared rate paid", "प्रतिकूल, क्योंकि दूध की कीमत भुगतान की गई घोषित दर से ज़्यादा थी"),
+                  L("Favourable, because the union saved money", "अनुकूल, क्योंकि संघ ने पैसे बचाए"),
+                  L("Neither, because Pro-Rata does not apply here", "न तो, क्योंकि प्रो-रेटा यहां लागू नहीं होता"),
+                  L("Unfavourable, because too much milk arrived", "प्रतिकूल, क्योंकि बहुत ज़्यादा दूध पहुंचा")
                 ],
                 "answer": 0,
-                "explain": "Declared Rate (₹52) was less than the Standard Landing Rate (₹55.39), giving a Pro-Rata Impact of −₹3.39 — Unfavourable."
+                "explain": L("Declared Rate (₹52) was less than the Standard Landing Rate (₹55.39), giving a Pro-Rata Impact of −₹3.39 — Unfavourable.", "घोषित दर (₹52) स्टैंडर्ड लैंडिंग रेट (₹55.39) से कम थी, जिससे प्रो-रेटा प्रभाव −₹3.39 आया — प्रतिकूल।")
               },
               {
                 "type": "mcq",
-                "q": "How is CDA Loss % calculated?",
+                "q": L("How is CDA Loss % calculated?", "CDA लॉस % की गणना कैसे की जाती है?"),
                 "options": [
-                  "(Loss Value ÷ Composite Milk Value) × 100",
-                  "(Composite Quantity ÷ Actual Quantity) × 100",
-                  "(Declared Rate ÷ Average Rate) × 100",
-                  "(Actual Quantity × Declared Rate)"
+                  L("(Loss Value ÷ Composite Milk Value) × 100", "(लॉस वैल्यू ÷ कंपोज़िट मिल्क वैल्यू) × 100"),
+                  L("(Composite Quantity ÷ Actual Quantity) × 100", "(कंपोज़िट मात्रा ÷ एक्चुअल मात्रा) × 100"),
+                  L("(Declared Rate ÷ Average Rate) × 100", "(घोषित दर ÷ औसत दर) × 100"),
+                  L("(Actual Quantity × Declared Rate)", "(एक्चुअल मात्रा × घोषित दर)")
                 ],
                 "answer": 0,
-                "explain": "CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 — the value of the missing milk as a percentage of the total composite milk value."
+                "explain": L("CDA Loss % = (Loss Value ÷ Composite Milk Value) × 100 — the value of the missing milk as a percentage of the total composite milk value.", "CDA लॉस % = (लॉस वैल्यू ÷ कंपोज़िट मिल्क वैल्यू) × 100 — कुल कंपोज़िट दूध मूल्य के प्रतिशत के रूप में गायब दूध का मूल्य।")
               }
             ]
           }
@@ -8426,54 +8426,54 @@ export const MODULES = [
             {
               "topicId": "t-value-the-milk",
               "type": "mcq",
-              "q": "What is the Standard Landing Rate in this lesson's example?",
+              "q": L("What is the Standard Landing Rate in this lesson's example?", "इस पाठ के उदाहरण में स्टैंडर्ड लैंडिंग रेट क्या है?"),
               "options": [
-                "₹44.00",
-                "₹52.00",
-                "₹55.39",
-                "₹9.93"
+                L("₹44.00", "₹44.00"),
+                L("₹52.00", "₹52.00"),
+                L("₹55.39", "₹55.39"),
+                L("₹9.93", "₹9.93")
               ],
               "answer": 2,
-              "explain": "Standard Landing Rate = ₹44 × (12.5 ÷ 9.93) = ₹55.39 per litre."
+              "explain": L("Standard Landing Rate = ₹44 × (12.5 ÷ 9.93) = ₹55.39 per litre.", "स्टैंडर्ड लैंडिंग रेट = ₹44 × (12.5 ÷ 9.93) = ₹55.39 प्रति लीटर।")
             },
             {
               "topicId": "t-value-the-milk",
               "type": "mcq",
-              "q": "EFU = Fat % + (2/3 × SNF %). If Fat = 4.2% and SNF = 8.6%, what is the EFU?",
+              "q": L("EFU = Fat % + (2/3 × SNF %). If Fat = 4.2% and SNF = 8.6%, what is the EFU?", "EFU = Fat % + (2/3 × SNF %)। अगर Fat = 4.2% और SNF = 8.6% है, तो EFU क्या है?"),
               "options": [
-                "9.93",
-                "12.5",
-                "4.2",
-                "8.6"
+                L("9.93", "9.93"),
+                L("12.5", "12.5"),
+                L("4.2", "4.2"),
+                L("8.6", "8.6")
               ],
               "answer": 0,
-              "explain": "EFU = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93."
+              "explain": L("EFU = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93.", "EFU = 4.2 + (2/3 × 8.6) = 4.2 + 5.73 = 9.93।")
             },
             {
               "topicId": "t-pro-rata-and-loss",
               "type": "mcq",
-              "q": "In this lesson's example, how many litres of milk went missing between the MPP and the BMC?",
+              "q": L("In this lesson's example, how many litres of milk went missing between the MPP and the BMC?", "इस पाठ के उदाहरण में, MPP और BMC के बीच कितने लीटर दूध गायब हुआ?"),
               "options": [
-                "600 litres",
-                "1,00,000 litres",
-                "99,400 litres",
-                "6,000 litres"
+                L("600 litres", "600 लीटर"),
+                L("1,00,000 litres", "1,00,000 लीटर"),
+                L("99,400 litres", "99,400 लीटर"),
+                L("6,000 litres", "6,000 लीटर")
               ],
               "answer": 0,
-              "explain": "Net Loss = 99,400 − 1,00,000 = −600 litres, so 600 litres went missing."
+              "explain": L("Net Loss = 99,400 − 1,00,000 = −600 litres, so 600 litres went missing.", "नेट लॉस = 99,400 − 1,00,000 = −600 लीटर, तो 600 लीटर गायब हुआ।")
             },
             {
               "topicId": "t-pro-rata-and-loss",
               "type": "mcq",
-              "q": "What was the CDA Loss % in this lesson's example?",
+              "q": L("What was the CDA Loss % in this lesson's example?", "इस पाठ के उदाहरण में CDA लॉस % क्या था?"),
               "options": [
-                "0.6%",
-                "6%",
-                "60%",
-                "0.06%"
+                L("0.6%", "0.6%"),
+                L("6%", "6%"),
+                L("60%", "60%"),
+                L("0.06%", "0.06%")
               ],
               "answer": 0,
-              "explain": "CDA Loss % = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%."
+              "explain": L("CDA Loss % = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%.", "CDA लॉस % = (₹33,234 ÷ ₹55,39,000) × 100 = 0.6%।")
             }
           ]
         }
@@ -8481,6 +8481,7 @@ export const MODULES = [
     ]
   },
   {
+
     "id": "m12",
     "number": 12,
     "title": L("Cost Associated with Milk Handling", "दूध संभालने से जुड़ी लागत"),
