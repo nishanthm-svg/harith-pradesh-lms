@@ -1,52 +1,325 @@
 // ============================================================================
-// Thin fetch() wrapper for every /api/* call. Cookies are sent automatically
-// (same-origin); this just centralizes JSON parsing and error shaping so
-// callers get a plain object back or a thrown Error with a useful message.
+// Firebase-backed replacement for the original REST /api/* wrapper. Same
+// exported shape (api.login, api.myProgress, api.adminListEmployees, etc.)
+// so app.js, admin.js and progress-client.js don't need to change — only
+// the implementation moved from a Node server to Firebase Auth + Firestore,
+// since this app now runs as a static site (GitHub Pages) with no server.
+//
+// Firestore data model:
+//   users/{uid}    -> { email, displayName, role: "employee"|"admin",
+//                        active, mustChangePassword, createdAt }
+//   progress/{uid} -> { [moduleId]: { [lessonId]: {completed, bestScore,
+//                        attempts, lastAttemptAt} } }
+//
+// Admin can't set another user's exact password from client-side code (that
+// needs the Admin SDK / Cloud Functions, which requires the paid Blaze
+// plan). So: admin-created accounts get an initial temp password via a
+// secondary Firebase App instance (so the admin's own session isn't
+// replaced), and later "reset password" sends the employee a real
+// Firebase password-reset email instead of admin typing an exact value.
 // ============================================================================
+import { firebaseConfig, auth, db } from "./firebase-config.js";
+import { MODULES } from "./data.js";
+import { initializeApp, deleteApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import {
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+  createUserWithEmailAndPassword,
+  sendPasswordResetEmail,
+  reauthenticateWithCredential,
+  updatePassword,
+  EmailAuthProvider,
+  getAuth,
+} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import {
+  doc,
+  getDoc,
+  setDoc,
+  updateDoc,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-async function request(method, path, body) {
-  const opts = {
-    method,
-    headers: {},
-    credentials: "same-origin",
+function friendlyAuthError(e) {
+  const code = e && e.code;
+  switch (code) {
+    case "auth/invalid-credential":
+    case "auth/wrong-password":
+    case "auth/user-not-found":
+      return new Error("Incorrect email or password.");
+    case "auth/too-many-requests":
+      return new Error("Too many attempts. Please wait a moment and try again.");
+    case "auth/email-already-in-use":
+      return new Error("That email is already registered.");
+    case "auth/weak-password":
+      return new Error("Password must be at least 6 characters.");
+    case "auth/invalid-email":
+      return new Error("That doesn't look like a valid email address.");
+    case "auth/requires-recent-login":
+      return new Error("Please enter your current password correctly and try again.");
+    default:
+      return e instanceof Error ? e : new Error(String(e));
+  }
+}
+
+function mapUserDoc(uid, data) {
+  return {
+    id: uid,
+    loginId: data.email,
+    displayName: data.displayName,
+    role: data.role,
+    mustChangePassword: !!data.mustChangePassword,
+    active: data.active !== false,
   };
-  if (body !== undefined) {
-    opts.headers["Content-Type"] = "application/json";
-    opts.body = JSON.stringify(body);
+}
+
+let authReadyPromise = null;
+function waitForAuthInit() {
+  if (!authReadyPromise) {
+    authReadyPromise = new Promise((resolve) => {
+      const unsub = onAuthStateChanged(auth, (user) => {
+        unsub();
+        resolve(user);
+      });
+    });
   }
-  const res = await fetch(path, opts);
-  let data = null;
-  const text = await res.text();
-  if (text) {
-    try {
-      data = JSON.parse(text);
-    } catch (e) {
-      data = null;
+  return authReadyPromise;
+}
+
+async function requireActiveUserDoc(uid) {
+  const snap = await getDoc(doc(db, "users", uid));
+  if (!snap.exists()) {
+    await signOut(auth);
+    throw new Error("No account found for this login. Contact your administrator.");
+  }
+  const data = snap.data();
+  if (data.active === false) {
+    await signOut(auth);
+    throw new Error("Your account has been deactivated. Contact your administrator.");
+  }
+  return mapUserDoc(uid, data);
+}
+
+// ============================================================================
+// Session / auth
+// ============================================================================
+async function login(loginId, password) {
+  let cred;
+  try {
+    cred = await signInWithEmailAndPassword(auth, loginId, password);
+  } catch (e) {
+    throw friendlyAuthError(e);
+  }
+  const user = await requireActiveUserDoc(cred.user.uid);
+  return { user };
+}
+
+async function logout() {
+  await signOut(auth);
+}
+
+async function session() {
+  const fbUser = await waitForAuthInit();
+  if (!fbUser) throw new Error("No session");
+  const user = await requireActiveUserDoc(fbUser.uid);
+  return { user };
+}
+
+async function changePassword(oldPassword, newPassword) {
+  const fbUser = auth.currentUser;
+  if (!fbUser) throw new Error("Not signed in.");
+  try {
+    if (oldPassword) {
+      const cred = EmailAuthProvider.credential(fbUser.email, oldPassword);
+      await reauthenticateWithCredential(fbUser, cred);
     }
+    await updatePassword(fbUser, newPassword);
+  } catch (e) {
+    throw friendlyAuthError(e);
   }
-  if (!res.ok) {
-    const err = new Error((data && data.error) || `Request failed (${res.status})`);
-    err.status = res.status;
-    err.data = data;
-    throw err;
+  await updateDoc(doc(db, "users", fbUser.uid), { mustChangePassword: false });
+}
+
+// ============================================================================
+// Employee progress
+// ============================================================================
+async function myProgress() {
+  const fbUser = auth.currentUser;
+  if (!fbUser) throw new Error("Not signed in.");
+  const snap = await getDoc(doc(db, "progress", fbUser.uid));
+  return { progress: snap.exists() ? snap.data() : {} };
+}
+
+async function quizAttempt(moduleId, lessonId, scorePercent, passed) {
+  const fbUser = auth.currentUser;
+  if (!fbUser) throw new Error("Not signed in.");
+  const ref = doc(db, "progress", fbUser.uid);
+  const snap = await getDoc(ref);
+  const data = snap.exists() ? snap.data() : {};
+  const existing = (data[moduleId] && data[moduleId][lessonId]) || { completed: false, bestScore: 0, attempts: 0 };
+  const newState = {
+    completed: existing.completed || !!passed,
+    bestScore: Math.max(existing.bestScore || 0, scorePercent),
+    attempts: (existing.attempts || 0) + 1,
+    lastAttemptAt: new Date().toISOString(),
+  };
+  if (snap.exists()) {
+    await updateDoc(ref, { [`${moduleId}.${lessonId}`]: newState });
+  } else {
+    await setDoc(ref, { [moduleId]: { [lessonId]: newState } });
   }
-  return data;
+  return { lessonState: newState };
+}
+
+// ============================================================================
+// Admin rollup helper — shared by list + detail views.
+// ============================================================================
+function computeRollup(progress) {
+  const activeModules = MODULES.filter((m) => m.available);
+  const totalLessons = activeModules.reduce((sum, m) => sum + (m.lessons?.length || 0), 0);
+  let completedLessons = 0;
+  let modulesCompleted = 0;
+  let lastActivityAt = null;
+  activeModules.forEach((m) => {
+    const modProgress = progress[m.id] || {};
+    let moduleDone = 0;
+    (m.lessons || []).forEach((l) => {
+      const st = modProgress[l.id];
+      if (st) {
+        if (st.completed) {
+          completedLessons++;
+          moduleDone++;
+        }
+        if (st.lastAttemptAt && (!lastActivityAt || st.lastAttemptAt > lastActivityAt)) {
+          lastActivityAt = st.lastAttemptAt;
+        }
+      }
+    });
+    if (m.lessons && m.lessons.length && moduleDone === m.lessons.length) modulesCompleted++;
+  });
+  return {
+    overallPercent: totalLessons ? Math.round((completedLessons / totalLessons) * 100) : 0,
+    completedLessons,
+    totalLessons,
+    modulesCompleted,
+    totalModules: activeModules.length,
+    lastActivityAt,
+  };
+}
+
+// ============================================================================
+// Admin: roster
+// ============================================================================
+async function adminListEmployees(search) {
+  const snap = await getDocs(query(collection(db, "users"), where("role", "==", "employee")));
+  const needle = (search || "").trim().toLowerCase();
+  const employees = [];
+  for (const d of snap.docs) {
+    const u = d.data();
+    if (needle && !`${u.displayName || ""} ${u.email || ""}`.toLowerCase().includes(needle)) continue;
+    const progSnap = await getDoc(doc(db, "progress", d.id));
+    const rollup = computeRollup(progSnap.exists() ? progSnap.data() : {});
+    employees.push({
+      id: d.id,
+      loginId: u.email,
+      displayName: u.displayName,
+      active: u.active !== false,
+      overallPercent: rollup.overallPercent,
+      modulesCompleted: rollup.modulesCompleted,
+      totalModules: rollup.totalModules,
+      lastActivityAt: rollup.lastActivityAt,
+    });
+  }
+  employees.sort((a, b) => (a.displayName || "").localeCompare(b.displayName || ""));
+  return { employees };
+}
+
+async function adminGetEmployee(id) {
+  const userSnap = await getDoc(doc(db, "users", id));
+  if (!userSnap.exists()) throw new Error("Employee not found.");
+  const u = userSnap.data();
+  const progSnap = await getDoc(doc(db, "progress", id));
+  const progress = progSnap.exists() ? progSnap.data() : {};
+  const rollup = computeRollup(progress);
+  return {
+    employee: {
+      id,
+      loginId: u.email,
+      displayName: u.displayName,
+      active: u.active !== false,
+      ...rollup,
+    },
+    progress,
+  };
+}
+
+// ============================================================================
+// Admin: create employee — uses a throwaway secondary Firebase App instance
+// so creating the new Auth account doesn't sign out the admin's own session
+// (createUserWithEmailAndPassword signs in as the new user on whatever auth
+// instance it's called against).
+// ============================================================================
+async function adminCreateEmployee(loginId, displayName, tempPassword) {
+  const secondaryApp = initializeApp(firebaseConfig, "Secondary-" + Date.now());
+  try {
+    const secondaryAuth = getAuth(secondaryApp);
+    let cred;
+    try {
+      cred = await createUserWithEmailAndPassword(secondaryAuth, loginId, tempPassword);
+    } catch (e) {
+      throw friendlyAuthError(e);
+    }
+    const newUid = cred.user.uid;
+    await signOut(secondaryAuth);
+    await setDoc(doc(db, "users", newUid), {
+      email: loginId,
+      displayName,
+      role: "employee",
+      active: true,
+      mustChangePassword: true,
+      createdAt: new Date().toISOString(),
+    });
+    return { id: newUid };
+  } finally {
+    await deleteApp(secondaryApp);
+  }
+}
+
+async function adminResetPassword(id) {
+  const snap = await getDoc(doc(db, "users", id));
+  if (!snap.exists()) throw new Error("Employee not found.");
+  const email = snap.data().email;
+  try {
+    await sendPasswordResetEmail(auth, email);
+  } catch (e) {
+    throw friendlyAuthError(e);
+  }
+  return { email };
+}
+
+async function adminDeactivate(id) {
+  const ref = doc(db, "users", id);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) throw new Error("Employee not found.");
+  const active = snap.data().active !== false;
+  await updateDoc(ref, { active: !active });
 }
 
 export const api = {
-  login: (loginId, password) => request("POST", "/api/login", { loginId, password }),
-  logout: () => request("POST", "/api/logout"),
-  session: () => request("GET", "/api/session"),
-  changePassword: (oldPassword, newPassword) => request("POST", "/api/change-password", { oldPassword, newPassword }),
+  login,
+  logout,
+  session,
+  changePassword,
 
-  myProgress: () => request("GET", "/api/my-progress"),
-  quizAttempt: (moduleId, lessonId, scorePercent, passed) =>
-    request("POST", "/api/quiz-attempt", { moduleId, lessonId, scorePercent, passed }),
+  myProgress,
+  quizAttempt,
 
-  adminListEmployees: (search) => request("GET", "/api/admin/employees" + (search ? "?search=" + encodeURIComponent(search) : "")),
-  adminGetEmployee: (id) => request("GET", "/api/admin/employees/" + encodeURIComponent(id)),
-  adminCreateEmployee: (loginId, displayName, tempPassword) =>
-    request("POST", "/api/admin/employees", { loginId, displayName, tempPassword }),
-  adminResetPassword: (id, tempPassword) => request("POST", "/api/admin/employees/" + encodeURIComponent(id) + "/reset-password", { tempPassword }),
-  adminDeactivate: (id) => request("POST", "/api/admin/employees/" + encodeURIComponent(id) + "/deactivate"),
+  adminListEmployees,
+  adminGetEmployee,
+  adminCreateEmployee,
+  adminResetPassword,
+  adminDeactivate,
 };
