@@ -134,7 +134,8 @@ const UI = {
     "A training course for Harith Pradesh employees. Learn step by step, in the language you're most comfortable with.",
     "हरित प्रदेश के कर्मचारियों के लिए एक प्रशिक्षण पाठ्यक्रम। अपनी सुविधा की भाषा में, चरण दर चरण सीखें।"
   ),
-  landingLoginButton: L("Employee / Admin Login →", "कर्मचारी / एडमिन लॉगिन →"),
+  employeeLoginButton: L("👤 Employee Login →", "👤 कर्मचारी लॉगिन →"),
+  adminLoginButtonLabel: L("🧑‍💼 Admin Login →", "🧑‍💼 एडमिन लॉगिन →"),
   landingFeature1Title: L("12 Modules", "12 मॉड्यूल"),
   landingFeature1Text: L(
     "From dairy basics to milk pricing, MPP routes, and cost management.",
@@ -153,12 +154,22 @@ const UI = {
 
   // Login / auth
   loginTitle: L("Sign In", "साइन इन करें"),
+  employeeLoginTitle: L("👤 Employee Sign In", "👤 कर्मचारी साइन इन"),
+  adminLoginTitle: L("🧑‍💼 Admin Sign In", "🧑‍💼 एडमिन साइन इन"),
   loginSubtitle: L("Enter your email and password to continue.", "जारी रखने के लिए अपना ईमेल और पासवर्ड डालें।"),
   loginIdLabel: L("Email Address", "ईमेल पता"),
   passwordLabel: L("Password", "पासवर्ड"),
   loginButton: L("Sign In", "साइन इन करें"),
   loginSigningIn: L("Signing in…", "साइन इन हो रहा है…"),
   loginErrorGeneric: L("Something went wrong. Please try again.", "कुछ गलत हो गया। कृपया फिर से कोशिश करें।"),
+  loginWrongPortalEmployee: L(
+    "This is an employee account. Please use Employee Login instead.",
+    "यह एक कर्मचारी खाता है। कृपया कर्मचारी लॉगिन का उपयोग करें।"
+  ),
+  loginWrongPortalAdmin: L(
+    "This is an admin account. Please use Admin Login instead.",
+    "यह एक एडमिन खाता है। कृपया एडमिन लॉगिन का उपयोग करें।"
+  ),
   logoutButton: L("Log out", "लॉग आउट"),
   adminNavLink: L("Admin", "एडमिन"),
 
