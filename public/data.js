@@ -6816,150 +6816,219 @@ export const MODULES = [
     "id": "m9",
     "number": 9,
     "title": L("Member Enrolment and Data Collection", "सदस्य नामांकन और डेटा संग्रह"),
-    "subtitle": "Learn how a farmer becomes a registered MPP member, and how daily milk records are kept accurate and fair for everyone.",
+    "subtitle": L(
+      "Learn how a farmer becomes a registered MPP member, and how daily milk records are kept accurate and fair for everyone.",
+      "जानिए कि एक किसान MPP का पंजीकृत सदस्य कैसे बनता है, और रोज़ के दूध रिकॉर्ड को सबके लिए सटीक और न्यायपूर्ण कैसे रखा जाता है।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m9-l1",
-        "title": "Enrolling a New Farmer Member",
+        "title": L("Enrolling a New Farmer Member", "एक नए किसान सदस्य का नामांकन"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Welcoming a New Member",
-            "text": "Before a farmer can sell even one litre of milk at the MPP, they must first become a registered member. Let's learn how this is done, step by step."
+            "heading": L("Welcoming a New Member", "एक नए सदस्य का स्वागत"),
+            "text": L(
+              "Before a farmer can sell even one litre of milk at the MPP, they must first become a registered member. Let's learn how this is done, step by step.",
+              "MPP पर एक लीटर दूध भी बेचने से पहले, किसान को पहले एक पंजीकृत सदस्य बनना होता है। आइए सीखें कि यह चरण दर चरण कैसे किया जाता है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-m9-l1-documents",
-            "title": "What a New Member Must Provide",
+            "title": L("What a New Member Must Provide", "एक नए सदस्य को क्या देना होगा"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Becoming a Member",
-                "html": "Before a farmer can sell milk at the MPP and get paid, they must first join as a <b>member</b>. This is called <b>enrolment</b>. Enrolment is not just paperwork — it protects both the farmer and the MPO (Milk Producer Organisation)."
+                "heading": L("Becoming a Member", "सदस्य बनना"),
+                "html": L(
+                  "Before a farmer can sell milk at the MPP and get paid, they must first join as a <b>member</b>. This is called <b>enrolment</b>. Enrolment is not just paperwork — it protects both the farmer and the MPO (Milk Producer Organisation).",
+                  "MPP पर दूध बेचने और भुगतान पाने से पहले, किसान को पहले <b>सदस्य</b> के रूप में जुड़ना होता है। इसे <b>नामांकन (enrolment)</b> कहते हैं। नामांकन सिर्फ कागज़ी काम नहीं है — यह किसान और MPO (मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन) दोनों की रक्षा करता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Enrolment",
-                "meaning": "The process of officially signing up a farmer as a member of the MPP, so they can supply milk and receive payment for it."
+                "term": L("Enrolment", "नामांकन (Enrolment)"),
+                "meaning": L(
+                  "The process of officially signing up a farmer as a member of the MPP, so they can supply milk and receive payment for it.",
+                  "एक किसान को MPP के सदस्य के रूप में आधिकारिक रूप से जोड़ने की प्रक्रिया, ताकि वे दूध दे सकें और उसका भुगतान पा सकें।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Basic KYC Details",
-                "html": "Every new member must give some basic details about themselves. This is called <b>KYC</b>, which means 'Know Your Customer'. It proves who the farmer really is, before any money changes hands."
+                "heading": L("Basic KYC Details", "बुनियादी KYC विवरण"),
+                "html": L(
+                  "Every new member must give some basic details about themselves. This is called <b>KYC</b>, which means 'Know Your Customer'. It proves who the farmer really is, before any money changes hands.",
+                  "हर नए सदस्य को अपने बारे में कुछ बुनियादी जानकारी देनी होती है। इसे <b>KYC</b> कहते हैं, जिसका मतलब है 'अपने ग्राहक को जानें'। यह साबित करता है कि किसान असल में कौन है, इससे पहले कि कोई पैसा हाथ बदले।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "KYC (Know Your Customer)",
-                "meaning": "A simple check of a person's identity using official documents, like Aadhaar. It stops fraud and confirms who is really joining as a member."
+                "term": L("KYC (Know Your Customer)", "KYC (अपने ग्राहक को जानें)"),
+                "meaning": L(
+                  "A simple check of a person's identity using official documents, like Aadhaar. It stops fraud and confirms who is really joining as a member.",
+                  "आधार जैसे आधिकारिक दस्तावेज़ों का उपयोग करके किसी व्यक्ति की पहचान की एक सरल जाँच। यह धोखाधड़ी रोकता है और पुष्टि करता है कि सदस्य के रूप में असल में कौन जुड़ रहा है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Aadhaar Card",
-                    "text": "Proves the farmer's identity and address. A photocopy is kept with the enrolment form."
+                    "label": L("Aadhaar Card", "आधार कार्ड"),
+                    "text": L(
+                      "Proves the farmer's identity and address. A photocopy is kept with the enrolment form.",
+                      "किसान की पहचान और पता साबित करता है। इसकी एक फोटोकॉपी नामांकन फॉर्म के साथ रखी जाती है।"
+                    )
                   },
                   {
-                    "label": "Bank Account Details",
-                    "text": "The farmer's own bank account number and IFSC code, so milk payments go directly to them — no cash, no middleman."
+                    "label": L("Bank Account Details", "बैंक खाता विवरण"),
+                    "text": L(
+                      "The farmer's own bank account number and IFSC code, so milk payments go directly to them — no cash, no middleman.",
+                      "किसान का अपना बैंक खाता नंबर और IFSC कोड, ताकि दूध भुगतान सीधे उन्हें मिले — कोई नकदी नहीं, कोई बिचौलिया नहीं।"
+                    )
                   },
                   {
-                    "label": "Passport-Size Photo",
-                    "text": "A recent photo for the membership file and, where used, the member's ID card."
+                    "label": L("Passport-Size Photo", "पासपोर्ट-साइज़ फोटो"),
+                    "text": L(
+                      "A recent photo for the membership file and, where used, the member's ID card.",
+                      "सदस्यता फ़ाइल के लिए एक हालिया फोटो, और जहाँ उपयोग हो, सदस्य के पहचान पत्र के लिए भी।"
+                    )
                   },
                   {
-                    "label": "Animal Details",
-                    "text": "How many milk animals the farmer owns (cows or buffaloes), and roughly how much milk each one gives."
+                    "label": L("Animal Details", "पशु विवरण"),
+                    "text": L(
+                      "How many milk animals the farmer owns (cows or buffaloes), and roughly how much milk each one gives.",
+                      "किसान के पास कितने दुधारू पशु हैं (गाय या भैंस), और हर एक लगभग कितना दूध देता है।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why the Bank Account Matters So Much",
-                "text": "When a farmer's own bank account is on file, payment goes straight to them, automatically, every time. No one else can collect the money on their behalf without their knowledge. This is one of the biggest protections that enrolment gives a farmer."
+                "heading": L("Why the Bank Account Matters So Much", "बैंक खाता इतना मायने क्यों रखता है"),
+                "text": L(
+                  "When a farmer's own bank account is on file, payment goes straight to them, automatically, every time. No one else can collect the money on their behalf without their knowledge. This is one of the biggest protections that enrolment gives a farmer.",
+                  "जब किसान का अपना बैंक खाता फ़ाइल में हो, तो भुगतान हर बार सीधे, अपने आप उन्हें मिलता है। उनकी जानकारी के बिना कोई और उनकी ओर से पैसा नहीं ले सकता। यह नामांकन द्वारा किसान को दी जाने वाली सबसे बड़ी सुरक्षाओं में से एक है।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Meet Farmer Lakshmi",
-                "text": "Lakshmi owns two buffaloes and wants to start selling milk at her village MPP. Before she can bring even one litre of milk, the Sahayak asks her for her Aadhaar card, her bank passbook, and details of her animals. Only after this is checked and recorded does she become a registered member."
+                "heading": L("Meet Farmer Lakshmi", "किसान लक्ष्मी से मिलिए"),
+                "text": L(
+                  "Lakshmi owns two buffaloes and wants to start selling milk at her village MPP. Before she can bring even one litre of milk, the Sahayak asks her for her Aadhaar card, her bank passbook, and details of her animals. Only after this is checked and recorded does she become a registered member.",
+                  "लक्ष्मी के पास दो भैंसें हैं और वह अपने गाँव के MPP पर दूध बेचना शुरू करना चाहती है। वह एक लीटर दूध भी लाने से पहले, सहायक उससे उसका आधार कार्ड, बैंक पासबुक, और उसके पशुओं का विवरण माँगता है। इसे जाँचने और दर्ज करने के बाद ही वह एक पंजीकृत सदस्य बनती है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does the MPP collect a farmer's bank account details during enrolment?",
+                "q": L(
+                  "Why does the MPP collect a farmer's bank account details during enrolment?",
+                  "नामांकन के दौरान MPP किसान का बैंक खाता विवरण क्यों इकट्ठा करता है?"
+                ),
                 "options": [
-                  "So the MPO can lend the farmer money",
-                  "So milk payment goes directly to the farmer, safely and on time",
-                  "So the farmer can pay a membership fee",
-                  "It is not really necessary"
+                  L("So the MPO can lend the farmer money", "ताकि MPO किसान को पैसे उधार दे सके"),
+                  L("So milk payment goes directly to the farmer, safely and on time", "ताकि दूध भुगतान सीधे, सुरक्षित रूप से और समय पर किसान को मिले"),
+                  L("So the farmer can pay a membership fee", "ताकि किसान सदस्यता शुल्क दे सके"),
+                  L("It is not really necessary", "यह असल में ज़रूरी नहीं है")
                 ],
                 "answer": 1,
-                "explain": "A farmer's own bank account means payment goes straight to them every time — safe, direct, and on time, with no middleman."
+                "explain": L(
+                  "A farmer's own bank account means payment goes straight to them every time — safe, direct, and on time, with no middleman.",
+                  "किसान का अपना बैंक खाता होने का मतलब है भुगतान हर बार सीधे उन्हें मिलता है — सुरक्षित, प्रत्यक्ष, और समय पर, बिना किसी बिचौलिये के।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "KYC means checking who a person really is, using documents like Aadhaar.",
+                "q": L("KYC means checking who a person really is, using documents like Aadhaar.", "KYC का मतलब है आधार जैसे दस्तावेज़ों का उपयोग करके यह जाँचना कि व्यक्ति असल में कौन है।"),
                 "answer": true,
-                "explain": "Correct. KYC stands for 'Know Your Customer' — it confirms the true identity of the person joining as a member."
+                "explain": L(
+                  "Correct. KYC stands for 'Know Your Customer' — it confirms the true identity of the person joining as a member.",
+                  "सही। KYC का मतलब है 'अपने ग्राहक को जानें' — यह सदस्य के रूप में जुड़ने वाले व्यक्ति की असली पहचान की पुष्टि करता है।"
+                )
               }
             ]
           },
           {
             "id": "t-m9-l1-steps",
-            "title": "Steps to Register a Member at the MPP",
+            "title": L("Steps to Register a Member at the MPP", "MPP पर एक सदस्य को पंजीकृत करने के चरण"),
             "teach": [
               {
                 "type": "text",
-                "heading": "From Visit to Registered Member",
-                "html": "Enrolling a new member follows the same basic steps at most MPPs across India. Let's walk through them one by one."
+                "heading": L("From Visit to Registered Member", "मुलाकात से लेकर पंजीकृत सदस्य तक"),
+                "html": L(
+                  "Enrolling a new member follows the same basic steps at most MPPs across India. Let's walk through them one by one.",
+                  "एक नए सदस्य का नामांकन पूरे भारत में ज़्यादातर MPP पर एक जैसे बुनियादी चरणों का पालन करता है। आइए इन्हें एक-एक करके देखें।"
+                )
               },
               {
                 "type": "text",
-                "heading": "The Five Steps",
-                "html": "<b>1. Farmer visits the MPP:</b> The farmer, usually with help from the Sahayak, comes to the MPP to ask about joining.<br><b>2. Fill the enrolment form:</b> Basic details — name, address, family details, and animal details — are written into the official enrolment form.<br><b>3. Collect and verify documents:</b> The Sahayak checks the Aadhaar card and bank passbook copies against the form, to make sure everything matches.<br><b>4. Assign a membership number:</b> Once approved, the farmer gets a unique membership number, or ID. This number is used every single day to record their milk.<br><b>5. Issue a passbook or ID card:</b> The farmer gets their own record book or card, showing their membership number and details."
+                "heading": L("The Five Steps", "पाँच चरण"),
+                "html": L(
+                  "<b>1. Farmer visits the MPP:</b> The farmer, usually with help from the Sahayak, comes to the MPP to ask about joining.<br><b>2. Fill the enrolment form:</b> Basic details — name, address, family details, and animal details — are written into the official enrolment form.<br><b>3. Collect and verify documents:</b> The Sahayak checks the Aadhaar card and bank passbook copies against the form, to make sure everything matches.<br><b>4. Assign a membership number:</b> Once approved, the farmer gets a unique membership number, or ID. This number is used every single day to record their milk.<br><b>5. Issue a passbook or ID card:</b> The farmer gets their own record book or card, showing their membership number and details.",
+                  "<b>1. किसान MPP जाता है:</b> किसान, आमतौर पर सहायक की मदद से, जुड़ने के बारे में पूछने के लिए MPP आता है।<br><b>2. नामांकन फॉर्म भरें:</b> बुनियादी विवरण — नाम, पता, परिवार का विवरण, और पशु विवरण — आधिकारिक नामांकन फॉर्म में लिखे जाते हैं।<br><b>3. दस्तावेज़ इकट्ठा करें और सत्यापित करें:</b> सहायक फॉर्म के मुकाबले आधार कार्ड और बैंक पासबुक की प्रतियाँ जाँचता है, यह सुनिश्चित करने के लिए कि सब कुछ मेल खाता है।<br><b>4. सदस्यता संख्या दें:</b> मंज़ूरी मिलने के बाद, किसान को एक अनोखी सदस्यता संख्या या ID मिलती है। इस संख्या का उपयोग हर दिन उनके दूध को दर्ज करने के लिए होता है।<br><b>5. पासबुक या ID कार्ड जारी करें:</b> किसान को अपनी रिकॉर्ड बुक या कार्ड मिलता है, जिसमें उनकी सदस्यता संख्या और विवरण दिखता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Membership Number",
-                "meaning": "A unique ID number given to each farmer member. It links every milk record, quality test and payment back to that one farmer."
+                "term": L("Membership Number", "सदस्यता संख्या (Membership Number)"),
+                "meaning": L(
+                  "A unique ID number given to each farmer member. It links every milk record, quality test and payment back to that one farmer.",
+                  "हर किसान सदस्य को दी गई एक अनोखी ID संख्या। यह हर दूध रिकॉर्ड, गुणवत्ता जाँच और भुगतान को उसी एक किसान से जोड़ती है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Never Skip Verification",
-                "text": "A membership must never be created without checking real documents. Enrolling a person who does not exist, or who is not really the animal owner, can lead to wrong payments and fraud that hurts the whole MPO."
+                "heading": L("Never Skip Verification", "सत्यापन कभी न छोड़ें"),
+                "text": L(
+                  "A membership must never be created without checking real documents. Enrolling a person who does not exist, or who is not really the animal owner, can lead to wrong payments and fraud that hurts the whole MPO.",
+                  "असली दस्तावेज़ जाँचे बिना कभी सदस्यता नहीं बनानी चाहिए। ऐसे व्यक्ति का नामांकन करना जो असल में मौजूद नहीं है, या जो असल में पशु का मालिक नहीं है, गलत भुगतान और धोखाधड़ी की ओर ले जा सकता है जो पूरी MPO को नुकसान पहुँचाती है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Double-Check Before You Submit",
-                "text": "Small mistakes — a wrong Aadhaar number, a misspelled name, a wrong account number — can delay a farmer's very first payment. Always read every detail back to the farmer before finishing enrolment."
+                "heading": L("Double-Check Before You Submit", "जमा करने से पहले दोबारा जाँचें"),
+                "text": L(
+                  "Small mistakes — a wrong Aadhaar number, a misspelled name, a wrong account number — can delay a farmer's very first payment. Always read every detail back to the farmer before finishing enrolment.",
+                  "छोटी गलतियाँ — गलत आधार नंबर, ग़लत लिखा नाम, गलत खाता नंबर — किसान के पहले भुगतान में देरी कर सकती हैं। नामांकन पूरा करने से पहले हमेशा हर विवरण किसान को पढ़कर सुनाएँ।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a membership number mainly used for?",
+                "q": L("What is a membership number mainly used for?", "सदस्यता संख्या मुख्य रूप से किसके लिए उपयोग होती है?"),
                 "options": [
-                  "To decide how much land the farmer owns",
-                  "To link every milk record, test and payment to one farmer",
-                  "To give the farmer a bank loan",
-                  "It has no real use"
+                  L("To decide how much land the farmer owns", "यह तय करने के लिए कि किसान के पास कितनी ज़मीन है"),
+                  L("To link every milk record, test and payment to one farmer", "हर दूध रिकॉर्ड, जाँच और भुगतान को एक किसान से जोड़ने के लिए"),
+                  L("To give the farmer a bank loan", "किसान को बैंक ऋण देने के लिए"),
+                  L("It has no real use", "इसका कोई असली उपयोग नहीं है")
                 ],
                 "answer": 1,
-                "explain": "Every day's milk record, quality test and payment is linked back to the farmer through their membership number."
+                "explain": L(
+                  "Every day's milk record, quality test and payment is linked back to the farmer through their membership number.",
+                  "हर दिन का दूध रिकॉर्ड, गुणवत्ता जाँच और भुगतान उनकी सदस्यता संख्या के ज़रिए किसान से जुड़ता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is fine to register a new member without checking their documents, as long as they seem trustworthy.",
+                "q": L(
+                  "It is fine to register a new member without checking their documents, as long as they seem trustworthy.",
+                  "एक नए सदस्य को बिना उनके दस्तावेज़ जाँचे पंजीकृत करना ठीक है, जब तक वे भरोसेमंद लगें।"
+                ),
                 "answer": false,
-                "explain": "Every new member's documents must always be verified. Skipping this step can lead to fraud and wrong payments later."
+                "explain": L(
+                  "Every new member's documents must always be verified. Skipping this step can lead to fraud and wrong payments later.",
+                  "हर नए सदस्य के दस्तावेज़ों को हमेशा सत्यापित करना चाहिए। इस चरण को छोड़ना बाद में धोखाधड़ी और गलत भुगतान की ओर ले जा सकता है।"
+                )
               }
             ]
           }
@@ -6970,162 +7039,231 @@ export const MODULES = [
             {
               "topicId": "t-m9-l1-documents",
               "type": "mcq",
-              "q": "Which of these is NOT something a new member usually needs to provide?",
+              "q": L("Which of these is NOT something a new member usually needs to provide?", "इनमें से क्या एक नए सदस्य को आमतौर पर देने की ज़रूरत नहीं है?"),
               "options": [
-                "Aadhaar card copy",
-                "Bank account details",
-                "A vehicle registration certificate",
-                "Animal details"
+                L("Aadhaar card copy", "आधार कार्ड की प्रति"),
+                L("Bank account details", "बैंक खाता विवरण"),
+                L("A vehicle registration certificate", "एक वाहन पंजीकरण प्रमाणपत्र"),
+                L("Animal details", "पशु विवरण")
               ],
               "answer": 2,
-              "explain": "Farmers provide identity proof, bank details and animal details — not a vehicle registration certificate."
+              "explain": L(
+                "Farmers provide identity proof, bank details and animal details — not a vehicle registration certificate.",
+                "किसान पहचान प्रमाण, बैंक विवरण और पशु विवरण देते हैं — वाहन पंजीकरण प्रमाणपत्र नहीं।"
+              )
             },
             {
               "topicId": "t-m9-l1-steps",
               "type": "truefalse",
-              "q": "A farmer's membership number is only used once, at the time of joining.",
+              "q": L(
+                "A farmer's membership number is only used once, at the time of joining.",
+                "एक किसान की सदस्यता संख्या का उपयोग सिर्फ एक बार, जुड़ने के समय होता है।"
+              ),
               "answer": false,
-              "explain": "The membership number is used every day, for every milk record, test and payment — not just once at joining."
+              "explain": L(
+                "The membership number is used every day, for every milk record, test and payment — not just once at joining.",
+                "सदस्यता संख्या का उपयोग हर दिन, हर दूध रिकॉर्ड, जाँच और भुगतान के लिए होता है — सिर्फ जुड़ने के समय एक बार नहीं।"
+              )
             }
           ]
         }
       },
       {
         "id": "m9-l2",
-        "title": "Recording Milk Data Every Day",
+        "title": L("Recording Milk Data Every Day", "हर दिन दूध डेटा दर्ज करना"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Every Drop Counts",
-            "text": "Once a farmer is enrolled, their real work with the MPP begins — bringing milk, twice a day, every day. Each time, important information must be recorded correctly. Let's see what gets recorded, and why it matters so much."
+            "heading": L("Every Drop Counts", "हर बूँद मायने रखती है"),
+            "text": L(
+              "Once a farmer is enrolled, their real work with the MPP begins — bringing milk, twice a day, every day. Each time, important information must be recorded correctly. Let's see what gets recorded, and why it matters so much.",
+              "एक बार किसान नामांकित हो जाए, तो MPP के साथ उनका असली काम शुरू होता है — हर दिन, दिन में दो बार दूध लाना। हर बार, ज़रूरी जानकारी सही तरीके से दर्ज होनी चाहिए। आइए देखें क्या दर्ज होता है, और यह इतना मायने क्यों रखता है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-m9-l2-what-to-record",
-            "title": "What Gets Recorded at Every Milk Collection",
+            "title": L("What Gets Recorded at Every Milk Collection", "हर दूध संग्रह में क्या दर्ज होता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Two Sessions a Day",
-                "html": "Farmers bring milk to the MPP twice a day — a <b>morning session</b> and an <b>evening session</b>. Each time, the MPP records details about that day's milk."
+                "heading": L("Two Sessions a Day", "दिन में दो सत्र"),
+                "html": L(
+                  "Farmers bring milk to the MPP twice a day — a <b>morning session</b> and an <b>evening session</b>. Each time, the MPP records details about that day's milk.",
+                  "किसान MPP पर दिन में दो बार दूध लाते हैं — एक <b>सुबह का सत्र</b> और एक <b>शाम का सत्र</b>। हर बार, MPP उस दिन के दूध का विवरण दर्ज करता है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Membership Number",
-                    "text": "So the milk is credited to the correct farmer, and nobody else."
+                    "label": L("Membership Number", "सदस्यता संख्या"),
+                    "text": L(
+                      "So the milk is credited to the correct farmer, and nobody else.",
+                      "ताकि दूध का श्रेय सही किसान को मिले, किसी और को नहीं।"
+                    )
                   },
                   {
-                    "label": "Date and Session",
-                    "text": "Whether it was the morning or evening collection, and on which date."
+                    "label": L("Date and Session", "तारीख और सत्र"),
+                    "text": L(
+                      "Whether it was the morning or evening collection, and on which date.",
+                      "यह सुबह का था या शाम का संग्रह, और किस तारीख को।"
+                    )
                   },
                   {
-                    "label": "Quantity (in litres)",
-                    "text": "How much milk the farmer brought, measured carefully every time."
+                    "label": L("Quantity (in litres)", "मात्रा (लीटर में)"),
+                    "text": L(
+                      "How much milk the farmer brought, measured carefully every time.",
+                      "किसान कितना दूध लाया, हर बार सावधानी से मापा गया।"
+                    )
                   },
                   {
-                    "label": "Quality Test Result",
-                    "text": "The FAT and SNF levels found when the milk is tested — this decides the rate paid per litre."
+                    "label": L("Quality Test Result", "गुणवत्ता जाँच परिणाम"),
+                    "text": L(
+                      "The FAT and SNF levels found when the milk is tested — this decides the rate paid per litre.",
+                      "दूध जाँचे जाने पर मिले FAT और SNF स्तर — यही प्रति लीटर दी जाने वाली दर तय करते हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "One Entry, Step by Step",
-                "text": "Farmer Ramu, membership number 214, brings his milk to the MPP at 7 AM. The Sahayak records: Membership No. 214, today's date, Morning session, Quantity 8 litres, and the test result from the machine. This single entry decides exactly how much Ramu will be paid for that milk."
+                "heading": L("One Entry, Step by Step", "एक प्रविष्टि, चरण दर चरण"),
+                "text": L(
+                  "Farmer Ramu, membership number 214, brings his milk to the MPP at 7 AM. The Sahayak records: Membership No. 214, today's date, Morning session, Quantity 8 litres, and the test result from the machine. This single entry decides exactly how much Ramu will be paid for that milk.",
+                  "किसान रामू, सदस्यता संख्या 214, सुबह 7 बजे अपना दूध MPP पर लाता है। सहायक दर्ज करता है: सदस्यता संख्या 214, आज की तारीख, सुबह का सत्र, मात्रा 8 लीटर, और मशीन से जाँच परिणाम। यह एक प्रविष्टि ठीक-ठीक तय करती है कि उस दूध के लिए रामू को कितना भुगतान मिलेगा।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Why Twice a Day?",
-                "text": "Milking happens twice a day, so records are also made twice a day. This keeps payments accurate and matches what the animal actually produced, session by session."
+                "heading": L("Why Twice a Day?", "दिन में दो बार क्यों?"),
+                "text": L(
+                  "Milking happens twice a day, so records are also made twice a day. This keeps payments accurate and matches what the animal actually produced, session by session.",
+                  "दूध दुहना दिन में दो बार होता है, इसलिए रिकॉर्ड भी दिन में दो बार बनते हैं। इससे भुगतान सटीक रहता है और सत्र-दर-सत्र वास्तविक उत्पादन से मेल खाता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which of these is recorded every time a farmer brings milk?",
+                "q": L("Which of these is recorded every time a farmer brings milk?", "जब भी किसान दूध लाता है, इनमें से क्या दर्ज होता है?"),
                 "options": [
-                  "The farmer's favourite crop",
-                  "Membership number, quantity and quality test result",
-                  "The farmer's shoe size",
-                  "The weather forecast for next week"
+                  L("The farmer's favourite crop", "किसान की पसंदीदा फसल"),
+                  L("Membership number, quantity and quality test result", "सदस्यता संख्या, मात्रा और गुणवत्ता जाँच परिणाम"),
+                  L("The farmer's shoe size", "किसान के जूते का साइज़"),
+                  L("The weather forecast for next week", "अगले हफ्ते का मौसम पूर्वानुमान")
                 ],
                 "answer": 1,
-                "explain": "Every milk collection is recorded with the farmer's membership number, the quantity, and the quality test result."
+                "explain": L(
+                  "Every milk collection is recorded with the farmer's membership number, the quantity, and the quality test result.",
+                  "हर दूध संग्रह किसान की सदस्यता संख्या, मात्रा, और गुणवत्ता जाँच परिणाम के साथ दर्ज होता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Milk is usually collected and recorded only once a day.",
+                "q": L("Milk is usually collected and recorded only once a day.", "दूध आमतौर पर दिन में सिर्फ एक बार इकट्ठा और दर्ज होता है।"),
                 "answer": false,
-                "explain": "Milk is collected and recorded twice a day — morning and evening — because animals are milked twice a day."
+                "explain": L(
+                  "Milk is collected and recorded twice a day — morning and evening — because animals are milked twice a day.",
+                  "दूध दिन में दो बार इकट्ठा और दर्ज होता है — सुबह और शाम — क्योंकि पशुओं का दूध दिन में दो बार दुहा जाता है।"
+                )
               }
             ]
           },
           {
             "id": "t-m9-l2-mistakes",
-            "title": "Common Data Mistakes — and Why They Matter",
+            "title": L("Common Data Mistakes — and Why They Matter", "आम डेटा गलतियाँ — और वे क्यों मायने रखती हैं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Why Accuracy Protects Everyone",
-                "html": "Good record-keeping is not just paperwork. It is what makes sure every farmer gets paid exactly what they earned — no more, no less. A single wrong entry can cause a real problem for a real family."
+                "heading": L("Why Accuracy Protects Everyone", "सटीकता सबकी रक्षा क्यों करती है"),
+                "html": L(
+                  "Good record-keeping is not just paperwork. It is what makes sure every farmer gets paid exactly what they earned — no more, no less. A single wrong entry can cause a real problem for a real family.",
+                  "अच्छी रिकॉर्ड-कीपिंग सिर्फ कागज़ी काम नहीं है। यह सुनिश्चित करती है कि हर किसान को ठीक उतना भुगतान मिले जितना उसने कमाया — न ज़्यादा, न कम। एक गलत प्रविष्टि एक असली परिवार के लिए असली समस्या बन सकती है।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Wrong Membership Number",
-                    "text": "Milk gets credited to the wrong farmer, so one person is underpaid while another is overpaid."
+                    "label": L("Wrong Membership Number", "गलत सदस्यता संख्या"),
+                    "text": L(
+                      "Milk gets credited to the wrong farmer, so one person is underpaid while another is overpaid.",
+                      "दूध का श्रेय गलत किसान को मिलता है, इसलिए एक को कम और दूसरे को ज़्यादा भुगतान होता है।"
+                    )
                   },
                   {
-                    "label": "Illegible Handwriting",
-                    "text": "If numbers cannot be read clearly later, mistakes creep in when payments are calculated."
+                    "label": L("Illegible Handwriting", "अस्पष्ट लिखावट"),
+                    "text": L(
+                      "If numbers cannot be read clearly later, mistakes creep in when payments are calculated.",
+                      "अगर बाद में संख्याएँ स्पष्ट रूप से नहीं पढ़ी जा सकतीं, तो भुगतान की गणना करते समय गलतियाँ हो जाती हैं।"
+                    )
                   },
                   {
-                    "label": "Delayed or Skipped Entries",
-                    "text": "If an entry is not made right away, details can be forgotten or guessed — and guessing is never accurate."
+                    "label": L("Delayed or Skipped Entries", "देरी से या छूटी हुई प्रविष्टियाँ"),
+                    "text": L(
+                      "If an entry is not made right away, details can be forgotten or guessed — and guessing is never accurate.",
+                      "अगर प्रविष्टि तुरंत नहीं की जाती, तो विवरण भूले जा सकते हैं या अंदाज़े से लिखे जा सकते हैं — और अंदाज़ा कभी सटीक नहीं होता।"
+                    )
                   },
                   {
-                    "label": "Mixing Up Sessions",
-                    "text": "Recording an evening collection as morning (or the other way around) can confuse the whole day's record."
+                    "label": L("Mixing Up Sessions", "सत्रों को गड़बड़ा देना"),
+                    "text": L(
+                      "Recording an evening collection as morning (or the other way around) can confuse the whole day's record.",
+                      "शाम के संग्रह को सुबह के रूप में दर्ज करना (या इसका उल्टा) पूरे दिन के रिकॉर्ड को उलझा सकता है।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "A Small Mistake, A Big Problem",
-                "text": "Even one wrong digit in a membership number or quantity can mean a farmer does not get paid correctly. Repeated mistakes can also make farmers lose trust in the MPP."
+                "heading": L("A Small Mistake, A Big Problem", "एक छोटी गलती, एक बड़ी समस्या"),
+                "text": L(
+                  "Even one wrong digit in a membership number or quantity can mean a farmer does not get paid correctly. Repeated mistakes can also make farmers lose trust in the MPP.",
+                  "सदस्यता संख्या या मात्रा में एक भी गलत अंक का मतलब हो सकता है कि किसान को सही भुगतान न मिले। बार-बार होने वाली गलतियाँ किसानों का MPP पर भरोसा भी खत्म कर सकती हैं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Good Habits for Accurate Records",
-                "text": "Record every entry immediately, right at the time of collection. Read the membership number and quantity back to the farmer before moving to the next person. Keep the register neat and clear, so anyone can check it later."
+                "heading": L("Good Habits for Accurate Records", "सटीक रिकॉर्ड के लिए अच्छी आदतें"),
+                "text": L(
+                  "Record every entry immediately, right at the time of collection. Read the membership number and quantity back to the farmer before moving to the next person. Keep the register neat and clear, so anyone can check it later.",
+                  "संग्रह के समय ही तुरंत हर प्रविष्टि दर्ज करें। अगले व्यक्ति की ओर बढ़ने से पहले सदस्यता संख्या और मात्रा किसान को पढ़कर सुनाएँ। रजिस्टर को साफ़-सुथरा और स्पष्ट रखें, ताकि कोई भी इसे बाद में जाँच सके।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What can happen if a farmer's membership number is entered wrong?",
+                "q": L("What can happen if a farmer's membership number is entered wrong?", "अगर किसान की सदस्यता संख्या गलत दर्ज हो जाए तो क्या हो सकता है?"),
                 "options": [
-                  "Nothing, it does not matter",
-                  "Milk gets credited to the wrong farmer, causing wrong payments",
-                  "The MPP closes for the day",
-                  "The milk quality improves"
+                  L("Nothing, it does not matter", "कुछ नहीं, इससे कोई फ़र्क नहीं पड़ता"),
+                  L("Milk gets credited to the wrong farmer, causing wrong payments", "दूध का श्रेय गलत किसान को मिलता है, जिससे गलत भुगतान होता है"),
+                  L("The MPP closes for the day", "MPP उस दिन बंद हो जाता है"),
+                  L("The milk quality improves", "दूध की गुणवत्ता सुधर जाती है")
                 ],
                 "answer": 1,
-                "explain": "A wrong membership number means the milk — and the payment for it — goes to the wrong person's record."
+                "explain": L(
+                  "A wrong membership number means the milk — and the payment for it — goes to the wrong person's record.",
+                  "गलत सदस्यता संख्या का मतलब है दूध — और उसका भुगतान — गलत व्यक्ति के रिकॉर्ड में जाता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is fine to record milk details from memory at the end of the day, instead of at the time of collection.",
+                "q": L(
+                  "It is fine to record milk details from memory at the end of the day, instead of at the time of collection.",
+                  "संग्रह के समय के बजाय दिन के अंत में याददाश्त से दूध का विवरण दर्ज करना ठीक है।"
+                ),
                 "answer": false,
-                "explain": "Details should be recorded immediately. Waiting and relying on memory leads to guesses and mistakes."
+                "explain": L(
+                  "Details should be recorded immediately. Waiting and relying on memory leads to guesses and mistakes.",
+                  "विवरण तुरंत दर्ज होने चाहिए। इंतज़ार करना और याददाश्त पर निर्भर रहना अंदाज़ों और गलतियों की ओर ले जाता है।"
+                )
               }
             ]
           }
@@ -7137,28 +7275,34 @@ export const MODULES = [
             {
               "topicId": "t-m9-l2-what-to-record",
               "type": "mcq",
-              "q": "How many times a day is milk usually collected and recorded at an MPP?",
+              "q": L("How many times a day is milk usually collected and recorded at an MPP?", "MPP पर दूध आमतौर पर दिन में कितनी बार इकट्ठा और दर्ज होता है?"),
               "options": [
-                "Once",
-                "Twice",
-                "Three times",
-                "Only on Sundays"
+                L("Once", "एक बार"),
+                L("Twice", "दो बार"),
+                L("Three times", "तीन बार"),
+                L("Only on Sundays", "सिर्फ रविवार को")
               ],
               "answer": 1,
-              "explain": "Milk is collected and recorded twice a day — morning and evening."
+              "explain": L("Milk is collected and recorded twice a day — morning and evening.", "दूध दिन में दो बार इकट्ठा और दर्ज होता है — सुबह और शाम।")
             },
             {
               "topicId": "t-m9-l2-mistakes",
               "type": "mcq",
-              "q": "Why is it important to record milk details immediately, at the time of collection?",
+              "q": L(
+                "Why is it important to record milk details immediately, at the time of collection?",
+                "संग्रह के समय ही दूध का विवरण तुरंत दर्ज करना क्यों ज़रूरी है?"
+              ),
               "options": [
-                "Because the register looks nicer",
-                "Because waiting causes mistakes and guessing",
-                "Because farmers prefer to wait",
-                "It is not important"
+                L("Because the register looks nicer", "क्योंकि रजिस्टर बेहतर दिखता है"),
+                L("Because waiting causes mistakes and guessing", "क्योंकि इंतज़ार करने से गलतियाँ और अंदाज़े होते हैं"),
+                L("Because farmers prefer to wait", "क्योंकि किसान इंतज़ार करना पसंद करते हैं"),
+                L("It is not important", "यह ज़रूरी नहीं है")
               ],
               "answer": 1,
-              "explain": "Recording immediately avoids guesswork and keeps every farmer's payment accurate."
+              "explain": L(
+                "Recording immediately avoids guesswork and keeps every farmer's payment accurate.",
+                "तुरंत दर्ज करना अंदाज़े से बचाता है और हर किसान का भुगतान सटीक रखता है।"
+              )
             }
           ]
         }
