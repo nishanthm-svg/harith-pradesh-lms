@@ -2482,170 +2482,257 @@ export const MODULES = [
     "id": "m3",
     "number": 3,
     "title": L("Core Design Principle", "मूल डिज़ाइन सिद्धांत"),
-    "subtitle": "Learn the core design principles that make an MPO work as a true farmer-owned business — from active membership to technology — and see them tested in a real case study.",
+    "subtitle": L(
+      "Learn the core design principles that make an MPO work as a true farmer-owned business — from active membership to technology — and see them tested in a real case study.",
+      "उन मूल डिज़ाइन सिद्धांतों को जानिए जो MPO को एक असली किसान-स्वामित्व वाला व्यापार बनाते हैं — सक्रिय सदस्यता से लेकर तकनीक तक — और देखिए कि इन्हें एक असली केस स्टडी में कैसे परखा गया।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m3-l1",
-        "title": "Farmer, Milk Producer, or Member?",
+        "title": L("Farmer, Milk Producer, or Member?", "किसान, दूध उत्पादक, या सदस्य?"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Farmer, Milk Producer, or Member?",
-            "text": "Three words that sound almost the same — but mean very different things in an MPO. Getting this right is the first design principle."
+            "heading": L("Farmer, Milk Producer, or Member?", "किसान, दूध उत्पादक, या सदस्य?"),
+            "text": L(
+              "Three words that sound almost the same — but mean very different things in an MPO. Getting this right is the first design principle.",
+              "तीन शब्द जो लगभग एक जैसे लगते हैं — लेकिन एक MPO में इनका मतलब बहुत अलग होता है। इसे सही समझना पहला डिज़ाइन सिद्धांत है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-three-words",
-            "title": "Three Words That Sound the Same, But Aren't",
+            "title": L("Three Words That Sound the Same, But Aren't", "तीन शब्द जो सुनने में एक जैसे लगते हैं, पर हैं नहीं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Why This Matters",
-                "html": "You will hear three similar words a lot in your work: <b>Farmer</b>, <b>Milk Producer</b>, and <b>Member</b>. They are not the same thing. Let's tell them apart."
+                "heading": L("Why This Matters", "यह क्यों ज़रूरी है"),
+                "html": L(
+                  "You will hear three similar words a lot in your work: <b>Farmer</b>, <b>Milk Producer</b>, and <b>Member</b>. They are not the same thing. Let's tell them apart.",
+                  "आप अपने काम में तीन मिलते-जुलते शब्द बार-बार सुनेंगे: <b>किसान</b>, <b>दूध उत्पादक</b>, और <b>सदस्य</b>। ये एक जैसे नहीं हैं। आइए इन्हें अलग-अलग समझें।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Farmer",
-                "meaning": "Someone who works on land or keeps animals, growing crops or producing milk, for a living."
+                "term": L("Farmer", "किसान (Farmer)"),
+                "meaning": L(
+                  "Someone who works on land or keeps animals, growing crops or producing milk, for a living.",
+                  "वह व्यक्ति जो जीविका के लिए ज़मीन पर काम करता है या पशु पालता है, फसल उगाता है या दूध उत्पादन करता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Milk Producer",
-                "meaning": "Any farmer who actually keeps milk animals and produces milk to sell — a more specific kind of farmer."
+                "term": L("Milk Producer", "दूध उत्पादक (Milk Producer)"),
+                "meaning": L(
+                  "Any farmer who actually keeps milk animals and produces milk to sell — a more specific kind of farmer.",
+                  "वह किसान जो असल में दुधारू पशु पालता है और बेचने के लिए दूध उत्पादन करता है — किसान का एक ज़्यादा विशेष प्रकार।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Member",
-                "meaning": "A milk producer who has formally joined the MPO, holds shares in it, and has ownership rights and duties."
+                "term": L("Member", "सदस्य (Member)"),
+                "meaning": L(
+                  "A milk producer who has formally joined the MPO, holds shares in it, and has ownership rights and duties.",
+                  "एक दूध उत्पादक जिसने विधिवत रूप से MPO ज्वाइन किया है, उसमें शेयर रखता है, और जिसके पास स्वामित्व के अधिकार व कर्तव्य हैं।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Not Every Milk Producer Is a Member",
-                "text": "A farmer down the road may produce milk every day, but if they have not joined the MPO — bought shares, filled the membership form — they are not a Member. Only Members truly own the company."
+                "heading": L("Not Every Milk Producer Is a Member", "हर दूध उत्पादक सदस्य नहीं होता"),
+                "text": L(
+                  "A farmer down the road may produce milk every day, but if they have not joined the MPO — bought shares, filled the membership form — they are not a Member. Only Members truly own the company.",
+                  "सड़क के उस पार रहने वाला एक किसान हर दिन दूध उत्पादन कर सकता है, लेकिन अगर उसने MPO ज्वाइन नहीं किया — शेयर नहीं खरीदे, सदस्यता फॉर्म नहीं भरा — तो वह सदस्य नहीं है। सिर्फ सदस्य ही असल में कंपनी के मालिक होते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What makes someone a 'Member' of an MPO, and not just a milk producer?",
+                "q": L(
+                  "What makes someone a 'Member' of an MPO, and not just a milk producer?",
+                  "किसी को MPO का 'सदस्य' क्या बनाता है, सिर्फ दूध उत्पादक नहीं?"
+                ),
                 "options": [
-                  "Owning the most cows in the village",
-                  "Formally joining the MPO, holding shares, and taking on membership duties",
-                  "Living closest to the MPP",
-                  "Being the oldest farmer in the village"
+                  L("Owning the most cows in the village", "गाँव में सबसे ज़्यादा गायें रखना"),
+                  L(
+                    "Formally joining the MPO, holding shares, and taking on membership duties",
+                    "विधिवत रूप से MPO ज्वाइन करना, शेयर रखना, और सदस्यता के कर्तव्य निभाना"
+                  ),
+                  L("Living closest to the MPP", "MPP के सबसे करीब रहना"),
+                  L("Being the oldest farmer in the village", "गाँव का सबसे बुज़ुर्ग किसान होना")
                 ],
                 "answer": 1,
-                "explain": "A Member has formally joined, holds shares, and has both rights and duties — not just anyone who produces milk."
+                "explain": L(
+                  "A Member has formally joined, holds shares, and has both rights and duties — not just anyone who produces milk.",
+                  "एक सदस्य ने विधिवत रूप से ज्वाइन किया है, शेयर रखता है, और उसके पास अधिकार व कर्तव्य दोनों हैं — सिर्फ दूध उत्पादन करने वाला कोई भी नहीं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Every milk producer in a village is automatically a Member of the local MPO.",
+                "q": L(
+                  "Every milk producer in a village is automatically a Member of the local MPO.",
+                  "गाँव का हर दूध उत्पादक अपने आप स्थानीय MPO का सदस्य बन जाता है।"
+                ),
                 "answer": false,
-                "explain": "A milk producer only becomes a Member after formally joining the MPO and taking up shares."
+                "explain": L(
+                  "A milk producer only becomes a Member after formally joining the MPO and taking up shares.",
+                  "एक दूध उत्पादक तभी सदस्य बनता है जब वह विधिवत रूप से MPO ज्वाइन करे और शेयर ले।"
+                )
               }
             ]
           },
           {
             "id": "t-members-only",
-            "title": "Business Only With Members",
+            "title": L("Business Only With Members", "सिर्फ सदस्यों के साथ व्यापार"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 1: Business Only With Members",
-                "html": "An MPO's most basic rule is: it does business only with its own <b>Members</b>. Why? Because an MPO is a user-owned enterprise — it belongs to the very people who use its services. Non-members should not get the same benefits without sharing the same responsibilities."
+                "heading": L("Design Principle 1: Business Only With Members", "डिज़ाइन सिद्धांत 1: सिर्फ सदस्यों के साथ व्यापार"),
+                "html": L(
+                  "An MPO's most basic rule is: it does business only with its own <b>Members</b>. Why? Because an MPO is a user-owned enterprise — it belongs to the very people who use its services. Non-members should not get the same benefits without sharing the same responsibilities.",
+                  "एक MPO का सबसे बुनियादी नियम है: यह सिर्फ अपने <b>सदस्यों</b> के साथ व्यापार करती है। क्यों? क्योंकि एक MPO उपयोगकर्ता-स्वामित्व वाला उद्यम है — यह उन्हीं लोगों की है जो इसकी सेवाओं का उपयोग करते हैं। गैर-सदस्यों को समान ज़िम्मेदारियाँ साझा किए बिना समान फ़ायदे नहीं मिलने चाहिए।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "What Goes Wrong Otherwise",
-                "text": "If an MPO accepts milk from non-members too, it can hurt the very members who invested their own share capital and time — because outsiders get the same payment and services for free, without any ownership stake or duty."
+                "heading": L("What Goes Wrong Otherwise", "वरना क्या गलत होता है"),
+                "text": L(
+                  "If an MPO accepts milk from non-members too, it can hurt the very members who invested their own share capital and time — because outsiders get the same payment and services for free, without any ownership stake or duty.",
+                  "अगर एक MPO गैर-सदस्यों से भी दूध लेती है, तो इससे उन्हीं सदस्यों को नुकसान हो सकता है जिन्होंने अपनी शेयर पूंजी और समय लगाया है — क्योंकि बाहरी लोगों को बिना किसी स्वामित्व हिस्से या कर्तव्य के मुफ्त में वही भुगतान और सेवाएँ मिल जाती हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How MPOs Make This Work",
-                "html": "To keep this rule strong, MPOs keep membership enrolment simple and easy, get Board approval for new members, and give each member a special code so only members' milk is accepted for payment."
+                "heading": L("How MPOs Make This Work", "MPO इसे कैसे संभव बनाती हैं"),
+                "html": L(
+                  "To keep this rule strong, MPOs keep membership enrolment simple and easy, get Board approval for new members, and give each member a special code so only members' milk is accepted for payment.",
+                  "इस नियम को मज़बूत बनाए रखने के लिए, MPO सदस्यता नामांकन को सरल और आसान रखती हैं, नए सदस्यों के लिए बोर्ड की मंज़ूरी लेती हैं, और हर सदस्य को एक विशेष कोड देती हैं ताकि भुगतान के लिए सिर्फ सदस्यों का दूध ही स्वीकार किया जाए।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Share Capital",
-                "meaning": "Money that a member pays into the company to become a part-owner, in return for shares."
+                "term": L("Share Capital", "शेयर पूंजी (Share Capital)"),
+                "meaning": L(
+                  "Money that a member pays into the company to become a part-owner, in return for shares.",
+                  "वह पैसा जो एक सदस्य शेयरों के बदले आंशिक-मालिक बनने के लिए कंपनी में जमा करता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does an MPO do business only with its Members?",
+                "q": L("Why does an MPO do business only with its Members?", "एक MPO सिर्फ अपने सदस्यों के साथ व्यापार क्यों करती है?"),
                 "options": [
-                  "Because it is a user-owned enterprise, and benefits should go to those who share the responsibilities",
-                  "Because the government forbids selling to non-members",
-                  "Because non-members produce worse milk",
-                  "Because Members pay higher prices"
+                  L(
+                    "Because it is a user-owned enterprise, and benefits should go to those who share the responsibilities",
+                    "क्योंकि यह उपयोगकर्ता-स्वामित्व वाला उद्यम है, और फ़ायदे उन्हें मिलने चाहिए जो ज़िम्मेदारियाँ साझा करते हैं"
+                  ),
+                  L("Because the government forbids selling to non-members", "क्योंकि सरकार गैर-सदस्यों को बेचने से मना करती है"),
+                  L("Because non-members produce worse milk", "क्योंकि गैर-सदस्य खराब दूध उत्पादन करते हैं"),
+                  L("Because Members pay higher prices", "क्योंकि सदस्य ज़्यादा कीमत चुकाते हैं")
                 ],
                 "answer": 0,
-                "explain": "An MPO belongs to its Members. Business only with Members keeps ownership and benefit fairly linked."
+                "explain": L(
+                  "An MPO belongs to its Members. Business only with Members keeps ownership and benefit fairly linked.",
+                  "एक MPO अपने सदस्यों की होती है। सिर्फ सदस्यों के साथ व्यापार स्वामित्व और फ़ायदे को न्यायपूर्ण तरीके से जोड़े रखता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "It is good practice for an MPO to buy milk from non-members regularly, alongside members.",
+                "q": L(
+                  "It is good practice for an MPO to buy milk from non-members regularly, alongside members.",
+                  "एक MPO के लिए सदस्यों के साथ-साथ नियमित रूप से गैर-सदस्यों से भी दूध खरीदना अच्छी प्रथा है।"
+                ),
                 "answer": false,
-                "explain": "This weakens the MPO's ownership model and is unfair to Members who invested share capital and took on duties."
+                "explain": L(
+                  "This weakens the MPO's ownership model and is unfair to Members who invested share capital and took on duties.",
+                  "यह MPO के स्वामित्व मॉडल को कमज़ोर करता है और उन सदस्यों के लिए अन्यायपूर्ण है जिन्होंने शेयर पूंजी लगाई और कर्तव्य निभाए।"
+                )
               }
             ]
           },
           {
             "id": "t-active-membership",
-            "title": "Active Members, Not Free Riders",
+            "title": L("Active Members, Not Free Riders", "सक्रिय सदस्य, मुफ्तखोर नहीं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 2: No Free Riders",
-                "html": "Being a Member is not just a one-time sign-up. Members are expected to stay active — regularly supplying milk and taking part in meetings. Someone who joined once, took the benefits, but never supplies milk or shows up, is a <b>free rider</b>."
+                "heading": L("Design Principle 2: No Free Riders", "डिज़ाइन सिद्धांत 2: कोई मुफ्तखोर नहीं"),
+                "html": L(
+                  "Being a Member is not just a one-time sign-up. Members are expected to stay active — regularly supplying milk and taking part in meetings. Someone who joined once, took the benefits, but never supplies milk or shows up, is a <b>free rider</b>.",
+                  "सदस्य होना सिर्फ एक बार का नामांकन नहीं है। सदस्यों से उम्मीद की जाती है कि वे सक्रिय रहें — नियमित रूप से दूध दें और बैठकों में हिस्सा लें। जो व्यक्ति एक बार जुड़ा, फ़ायदे लिए, लेकिन कभी दूध नहीं देता या नहीं आता, वह <b>मुफ्तखोर (free rider)</b> है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Free Rider",
-                "meaning": "Someone who enjoys the benefits of membership without actively contributing to or participating in the business."
+                "term": L("Free Rider", "मुफ्तखोर (Free Rider)"),
+                "meaning": L(
+                  "Someone who enjoys the benefits of membership without actively contributing to or participating in the business.",
+                  "वह व्यक्ति जो व्यापार में सक्रिय रूप से योगदान या भागीदारी किए बिना सदस्यता के फ़ायदे उठाता है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Why This Matters",
-                "text": "Active participation makes the business predictable and efficient. If too many members are inactive, it becomes harder to plan operations, and it wastes the company's resources."
+                "heading": L("Why This Matters", "यह क्यों ज़रूरी है"),
+                "text": L(
+                  "Active participation makes the business predictable and efficient. If too many members are inactive, it becomes harder to plan operations, and it wastes the company's resources.",
+                  "सक्रिय भागीदारी व्यापार को अनुमानित और कुशल बनाती है। अगर बहुत सारे सदस्य निष्क्रिय हों, तो काम की योजना बनाना मुश्किल हो जाता है, और कंपनी के संसाधन बर्बाद होते हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How MPOs Encourage Active Membership",
-                "html": "MPOs follow up regularly with new members to make sure they start supplying milk. They hold special meetings with members who are not supplying milk regularly. And anyone who wants to stand for election as a Director must meet stricter conditions, like being a regular, active supplier."
+                "heading": L("How MPOs Encourage Active Membership", "MPO सक्रिय सदस्यता को कैसे प्रोत्साहित करती हैं"),
+                "html": L(
+                  "MPOs follow up regularly with new members to make sure they start supplying milk. They hold special meetings with members who are not supplying milk regularly. And anyone who wants to stand for election as a Director must meet stricter conditions, like being a regular, active supplier.",
+                  "MPO नए सदस्यों के साथ नियमित रूप से संपर्क बनाए रखती हैं ताकि वे दूध देना शुरू करें। वे उन सदस्यों के साथ विशेष बैठकें करती हैं जो नियमित रूप से दूध नहीं दे रहे। और जो कोई निदेशक पद के लिए चुनाव लड़ना चाहता है, उसे सख्त शर्तें पूरी करनी होती हैं, जैसे नियमित, सक्रिय आपूर्तिकर्ता होना।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a 'free rider' in an MPO?",
+                "q": L("What is a 'free rider' in an MPO?", "एक MPO में 'मुफ्तखोर' क्या है?"),
                 "options": [
-                  "A farmer who delivers milk on a bicycle",
-                  "Someone who enjoys membership benefits without actively contributing or participating",
-                  "A member who wins a Board election",
-                  "A Sahayak who visits every MPP"
+                  L("A farmer who delivers milk on a bicycle", "एक किसान जो साइकिल पर दूध पहुँचाता है"),
+                  L(
+                    "Someone who enjoys membership benefits without actively contributing or participating",
+                    "वह जो योगदान या भागीदारी किए बिना सदस्यता के फ़ायदे उठाता है"
+                  ),
+                  L("A member who wins a Board election", "एक सदस्य जो बोर्ड चुनाव जीतता है"),
+                  L("A Sahayak who visits every MPP", "एक सहायक जो हर MPP का दौरा करता है")
                 ],
                 "answer": 1,
-                "explain": "A free rider takes the benefits of membership without regularly supplying milk or taking part."
+                "explain": L(
+                  "A free rider takes the benefits of membership without regularly supplying milk or taking part.",
+                  "एक मुफ्तखोर नियमित रूप से दूध दिए या भाग लिए बिना सदस्यता के फ़ायदे लेता है।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "What is expected of a member who wants to stand for election as a Director?",
+                "q": L(
+                  "What is expected of a member who wants to stand for election as a Director?",
+                  "जो सदस्य निदेशक पद के लिए चुनाव लड़ना चाहता है, उससे क्या उम्मीद की जाती है?"
+                ),
                 "options": [
-                  "Nothing extra is expected",
-                  "They must meet stricter conditions, like being a regular, active milk supplier",
-                  "They must own the most land in the village",
-                  "They must be related to a current Director"
+                  L("Nothing extra is expected", "कुछ अतिरिक्त उम्मीद नहीं की जाती"),
+                  L(
+                    "They must meet stricter conditions, like being a regular, active milk supplier",
+                    "उन्हें सख्त शर्तें पूरी करनी होती हैं, जैसे नियमित, सक्रिय दूध आपूर्तिकर्ता होना"
+                  ),
+                  L("They must own the most land in the village", "उनके पास गाँव की सबसे ज़्यादा ज़मीन होनी चाहिए"),
+                  L("They must be related to a current Director", "उन्हें किसी मौजूदा निदेशक का रिश्तेदार होना चाहिए")
                 ],
                 "answer": 1,
-                "explain": "MPOs apply stricter conditions for Director candidates, to make sure leaders are genuinely active members."
+                "explain": L(
+                  "MPOs apply stricter conditions for Director candidates, to make sure leaders are genuinely active members.",
+                  "MPO निदेशक उम्मीदवारों के लिए सख्त शर्तें लागू करती हैं, ताकि यह सुनिश्चित हो सके कि नेता सच में सक्रिय सदस्य हैं।"
+                )
               }
             ]
           }
@@ -2656,209 +2743,311 @@ export const MODULES = [
             {
               "topicId": "t-three-words",
               "type": "mcq",
-              "q": "Which word describes a person who has formally joined the MPO and holds shares in it?",
+              "q": L(
+                "Which word describes a person who has formally joined the MPO and holds shares in it?",
+                "कौन-सा शब्द उस व्यक्ति को बताता है जिसने विधिवत रूप से MPO ज्वाइन किया है और उसमें शेयर रखता है?"
+              ),
               "options": [
-                "Farmer",
-                "Milk Producer",
-                "Member",
-                "Trader"
+                L("Farmer", "किसान"),
+                L("Milk Producer", "दूध उत्पादक"),
+                L("Member", "सदस्य"),
+                L("Trader", "व्यापारी")
               ],
               "answer": 2,
-              "explain": "A Member is a milk producer who has formally joined the MPO and holds shares, with ownership rights and duties."
+              "explain": L(
+                "A Member is a milk producer who has formally joined the MPO and holds shares, with ownership rights and duties.",
+                "एक सदस्य वह दूध उत्पादक है जिसने विधिवत रूप से MPO ज्वाइन किया है और शेयर रखता है, स्वामित्व अधिकार व कर्तव्यों के साथ।"
+              )
             },
             {
               "topicId": "t-members-only",
               "type": "truefalse",
-              "q": "An MPO's basic rule is to do business only with its Members.",
+              "q": L(
+                "An MPO's basic rule is to do business only with its Members.",
+                "एक MPO का बुनियादी नियम है सिर्फ अपने सदस्यों के साथ व्यापार करना।"
+              ),
               "answer": true,
-              "explain": "Yes — this is Design Principle 1, and it protects the value of being a Member."
+              "explain": L(
+                "Yes — this is Design Principle 1, and it protects the value of being a Member.",
+                "हाँ — यह डिज़ाइन सिद्धांत 1 है, और यह सदस्य होने के मूल्य की रक्षा करता है।"
+              )
             },
             {
               "topicId": "t-active-membership",
               "type": "mcq",
-              "q": "Why do MPOs discourage 'free riders'?",
+              "q": L("Why do MPOs discourage 'free riders'?", "MPO 'मुफ्तखोरों' को हतोत्साहित क्यों करती हैं?"),
               "options": [
-                "Because too many inactive members make business planning harder and waste resources",
-                "Because free riders produce more milk than everyone else",
-                "Because the law bans inactive members entirely",
-                "Because free riders are always dishonest"
+                L(
+                  "Because too many inactive members make business planning harder and waste resources",
+                  "क्योंकि बहुत सारे निष्क्रिय सदस्य व्यापार की योजना बनाना मुश्किल बनाते हैं और संसाधन बर्बाद करते हैं"
+                ),
+                L("Because free riders produce more milk than everyone else", "क्योंकि मुफ्तखोर सबसे ज़्यादा दूध उत्पादन करते हैं"),
+                L("Because the law bans inactive members entirely", "क्योंकि कानून निष्क्रिय सदस्यों पर पूरी तरह प्रतिबंध लगाता है"),
+                L("Because free riders are always dishonest", "क्योंकि मुफ्तखोर हमेशा बेईमान होते हैं")
               ],
               "answer": 0,
-              "explain": "Inactive membership makes operations unpredictable and wastes company resources — so MPOs encourage active participation."
+              "explain": L(
+                "Inactive membership makes operations unpredictable and wastes company resources — so MPOs encourage active participation.",
+                "निष्क्रिय सदस्यता काम को अनिश्चित बनाती है और कंपनी के संसाधन बर्बाद करती है — इसलिए MPO सक्रिय भागीदारी को प्रोत्साहित करती हैं।"
+              )
             }
           ]
         }
       },
       {
         "id": "m3-l2",
-        "title": "Owning a Real Stake",
+        "title": L("Owning a Real Stake", "एक असली हिस्सेदारी का मालिक होना"),
         "estMinutes": 9,
         "hook": [
           {
             "type": "hero",
-            "heading": "Owning a Real Stake",
-            "text": "Real ownership means more than a membership card. Let's see how MPOs link ownership to real contribution — and how members get heard."
+            "heading": L("Owning a Real Stake", "एक असली हिस्सेदारी का मालिक होना"),
+            "text": L(
+              "Real ownership means more than a membership card. Let's see how MPOs link ownership to real contribution — and how members get heard.",
+              "असली स्वामित्व का मतलब सिर्फ सदस्यता कार्ड से कहीं ज़्यादा है। आइए देखें कि MPO स्वामित्व को असली योगदान से कैसे जोड़ती हैं — और सदस्यों की बात कैसे सुनी जाती है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-skin-in-game",
-            "title": "Equity in Proportion to Patronage",
+            "title": L("Equity in Proportion to Patronage", "योगदान के अनुपात में इक्विटी"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 3: Skin in the Game",
-                "html": "In an MPO, the more milk a member supplies, the more shares (<b>equity</b>) they are expected to hold. This is sometimes called having <b>'skin in the game'</b> — members have their own money invested, so they care about protecting the company."
+                "heading": L("Design Principle 3: Skin in the Game", "डिज़ाइन सिद्धांत 3: निजी दाँव (Skin in the Game)"),
+                "html": L(
+                  "In an MPO, the more milk a member supplies, the more shares (<b>equity</b>) they are expected to hold. This is sometimes called having <b>'skin in the game'</b> — members have their own money invested, so they care about protecting the company.",
+                  "एक MPO में, सदस्य जितना ज़्यादा दूध देता है, उससे उतने ही ज़्यादा शेयर (<b>इक्विटी</b>) रखने की उम्मीद की जाती है। इसे कभी-कभी <b>'स्किन इन द गेम'</b> कहा जाता है — सदस्यों का अपना पैसा लगा होता है, इसलिए वे कंपनी की रक्षा की परवाह करते हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Patronage",
-                "meaning": "How much business — in this case, how much milk — a member actually gives to the company."
+                "term": L("Patronage", "योगदान (Patronage)"),
+                "meaning": L(
+                  "How much business — in this case, how much milk — a member actually gives to the company.",
+                  "एक सदस्य कंपनी को असल में कितना व्यापार — इस मामले में, कितना दूध — देता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Equity",
-                "meaning": "The share of ownership a member holds in the company, based on the shares they bought."
+                "term": L("Equity", "इक्विटी (Equity)"),
+                "meaning": L(
+                  "The share of ownership a member holds in the company, based on the shares they bought.",
+                  "एक सदस्य के पास कंपनी में स्वामित्व का वह हिस्सा, जो उसके खरीदे गए शेयरों पर आधारित है।"
+                )
               },
               {
                 "type": "example",
-                "heading": "In Numbers",
-                "text": "If a member supplies twice as much milk as another member, the company expects them to hold roughly twice as much equity too — keeping ownership fair and linked to real contribution."
+                "heading": L("In Numbers", "संख्याओं में"),
+                "text": L(
+                  "If a member supplies twice as much milk as another member, the company expects them to hold roughly twice as much equity too — keeping ownership fair and linked to real contribution.",
+                  "अगर एक सदस्य दूसरे सदस्य से दोगुना दूध देता है, तो कंपनी उम्मीद करती है कि उसके पास लगभग दोगुनी इक्विटी भी हो — जिससे स्वामित्व न्यायपूर्ण रहे और असली योगदान से जुड़ा रहे।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How MPOs Make This Work",
-                "html": "MPOs display each member's patronage details at the MPP, hand out share certificates on time, and share information about profits — so members can see and trust the link between what they give and what they own."
+                "heading": L("How MPOs Make This Work", "MPO इसे कैसे संभव बनाती हैं"),
+                "html": L(
+                  "MPOs display each member's patronage details at the MPP, hand out share certificates on time, and share information about profits — so members can see and trust the link between what they give and what they own.",
+                  "MPO हर सदस्य के योगदान का ब्यौरा MPP पर दिखाती हैं, समय पर शेयर प्रमाणपत्र देती हैं, और मुनाफ़े की जानकारी साझा करती हैं — ताकि सदस्य यह देख और भरोसा कर सकें कि वे क्या देते हैं और क्या रखते हैं, इसमें क्या संबंध है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does 'skin in the game' mean for a member of an MPO?",
+                "q": L(
+                  "What does 'skin in the game' mean for a member of an MPO?",
+                  "एक MPO के सदस्य के लिए 'स्किन इन द गेम' का क्या मतलब है?"
+                ),
                 "options": [
-                  "They have their own money invested, so they care about protecting the company",
-                  "They must physically work at the MPP every day",
-                  "They get free milk for their family",
-                  "They are exempt from all rules"
+                  L(
+                    "They have their own money invested, so they care about protecting the company",
+                    "उनका अपना पैसा लगा है, इसलिए वे कंपनी की रक्षा की परवाह करते हैं"
+                  ),
+                  L("They must physically work at the MPP every day", "उन्हें हर दिन MPP पर शारीरिक रूप से काम करना ज़रूरी है"),
+                  L("They get free milk for their family", "उन्हें अपने परिवार के लिए मुफ्त दूध मिलता है"),
+                  L("They are exempt from all rules", "वे सभी नियमों से मुक्त हैं")
                 ],
                 "answer": 0,
-                "explain": "Skin in the game means a member has real money (equity) invested, giving them a genuine stake in the company's success."
+                "explain": L(
+                  "Skin in the game means a member has real money (equity) invested, giving them a genuine stake in the company's success.",
+                  "स्किन इन द गेम का मतलब है कि एक सदस्य का असली पैसा (इक्विटी) लगा है, जिससे कंपनी की सफलता में उसकी असली हिस्सेदारी बनती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A member's equity (shares) should be linked to how much milk they actually supply.",
+                "q": L(
+                  "A member's equity (shares) should be linked to how much milk they actually supply.",
+                  "एक सदस्य की इक्विटी (शेयर) उसके असल में दिए गए दूध की मात्रा से जुड़ी होनी चाहिए।"
+                ),
                 "answer": true,
-                "explain": "Yes — equity in proportion to patronage keeps ownership fair and tied to real contribution."
+                "explain": L(
+                  "Yes — equity in proportion to patronage keeps ownership fair and tied to real contribution.",
+                  "हाँ — योगदान के अनुपात में इक्विटी स्वामित्व को न्यायपूर्ण रखती है और असली योगदान से जोड़े रखती है।"
+                )
               }
             ]
           },
           {
             "id": "t-member-classes",
-            "title": "Fair Representation on the Board",
+            "title": L("Fair Representation on the Board", "बोर्ड में न्यायपूर्ण प्रतिनिधित्व"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 4: Member Classes",
-                "html": "Not all members supply the same amount of milk. So an MPO can group members into different <b>classes</b> based on how much milk (patronage) they supply, and give each class fair representation on the Board."
+                "heading": L("Design Principle 4: Member Classes", "डिज़ाइन सिद्धांत 4: सदस्य वर्ग"),
+                "html": L(
+                  "Not all members supply the same amount of milk. So an MPO can group members into different <b>classes</b> based on how much milk (patronage) they supply, and give each class fair representation on the Board.",
+                  "सभी सदस्य समान मात्रा में दूध नहीं देते। इसलिए एक MPO सदस्यों को उनके दूध (योगदान) के आधार पर अलग-अलग <b>वर्गों</b> में बाँट सकती है, और हर वर्ग को बोर्ड में न्यायपूर्ण प्रतिनिधित्व दे सकती है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Member Class",
-                "meaning": "A group of members categorised by how much milk they supply, used to make sure the Board fairly represents everyone."
+                "term": L("Member Class", "सदस्य वर्ग (Member Class)"),
+                "meaning": L(
+                  "A group of members categorised by how much milk they supply, used to make sure the Board fairly represents everyone.",
+                  "सदस्यों का एक समूह जो उनके दूध की मात्रा के आधार पर वर्गीकृत होता है, ताकि यह सुनिश्चित हो सके कि बोर्ड सभी का न्यायपूर्ण प्रतिनिधित्व करे।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Why This Is Fair",
-                "html": "Board seats for each member class are decided in proportion to the milk that class supplies. This way, both big and small suppliers get a genuine voice in decisions — not just the loudest or the largest."
+                "heading": L("Why This Is Fair", "यह न्यायपूर्ण क्यों है"),
+                "html": L(
+                  "Board seats for each member class are decided in proportion to the milk that class supplies. This way, both big and small suppliers get a genuine voice in decisions — not just the loudest or the largest.",
+                  "हर सदस्य वर्ग की बोर्ड सीटें उस वर्ग द्वारा दिए गए दूध के अनुपात में तय की जाती हैं। इस तरह, बड़े और छोटे दोनों तरह के आपूर्तिकर्ताओं को फैसलों में असली आवाज़ मिलती है — सिर्फ सबसे ज़ोरदार या सबसे बड़े को नहीं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Decided Together",
-                "text": "How members are grouped into classes is approved at the company's AGM — a yearly meeting where all members can take part in big decisions."
+                "heading": L("Decided Together", "मिलकर तय किया गया"),
+                "text": L(
+                  "How members are grouped into classes is approved at the company's AGM — a yearly meeting where all members can take part in big decisions.",
+                  "सदस्यों को वर्गों में कैसे बाँटा जाए, यह कंपनी की AGM में मंज़ूर किया जाता है — एक सालाना बैठक जहाँ सभी सदस्य बड़े फैसलों में हिस्सा ले सकते हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "AGM (Annual General Meeting)",
-                "meaning": "A meeting held once a year where all members of the company gather to review performance and make key decisions."
+                "term": L("AGM (Annual General Meeting)", "AGM (वार्षिक सामान्य बैठक)"),
+                "meaning": L(
+                  "A meeting held once a year where all members of the company gather to review performance and make key decisions.",
+                  "साल में एक बार होने वाली बैठक, जहाँ कंपनी के सभी सदस्य प्रदर्शन की समीक्षा करने और मुख्य फैसले लेने के लिए इकट्ठा होते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does an MPO create 'member classes' based on patronage?",
+                "q": L(
+                  "Why does an MPO create 'member classes' based on patronage?",
+                  "एक MPO योगदान के आधार पर 'सदस्य वर्ग' क्यों बनाती है?"
+                ),
                 "options": [
-                  "To make sure the Board fairly represents both big and small milk suppliers",
-                  "To stop small farmers from joining at all",
-                  "To give free shares to the largest supplier",
-                  "To reduce the number of members"
+                  L(
+                    "To make sure the Board fairly represents both big and small milk suppliers",
+                    "ताकि यह सुनिश्चित हो कि बोर्ड बड़े और छोटे दोनों तरह के दूध आपूर्तिकर्ताओं का न्यायपूर्ण प्रतिनिधित्व करे"
+                  ),
+                  L("To stop small farmers from joining at all", "ताकि छोटे किसानों को बिल्कुल जुड़ने से रोका जा सके"),
+                  L("To give free shares to the largest supplier", "सबसे बड़े आपूर्तिकर्ता को मुफ्त शेयर देने के लिए"),
+                  L("To reduce the number of members", "सदस्यों की संख्या कम करने के लिए")
                 ],
                 "answer": 0,
-                "explain": "Member classes ensure Board representation is fair and proportional to how much each group contributes."
+                "explain": L(
+                  "Member classes ensure Board representation is fair and proportional to how much each group contributes.",
+                  "सदस्य वर्ग यह सुनिश्चित करते हैं कि बोर्ड में प्रतिनिधित्व न्यायपूर्ण हो और हर समूह के योगदान के अनुपात में हो।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "Where is the grouping of members into classes approved?",
+                "q": L("Where is the grouping of members into classes approved?", "सदस्यों को वर्गों में बाँटना कहाँ मंज़ूर किया जाता है?"),
                 "options": [
-                  "At a private meeting of the CEO alone",
-                  "At the AGM (Annual General Meeting)",
-                  "By the state government",
-                  "By a private trader"
+                  L("At a private meeting of the CEO alone", "अकेले CEO की एक निजी बैठक में"),
+                  L("At the AGM (Annual General Meeting)", "AGM (वार्षिक सामान्य बैठक) में"),
+                  L("By the state government", "राज्य सरकार द्वारा"),
+                  L("By a private trader", "एक निजी व्यापारी द्वारा")
                 ],
                 "answer": 1,
-                "explain": "Member class categorisation is approved at the AGM, where all members can take part."
+                "explain": L(
+                  "Member class categorisation is approved at the AGM, where all members can take part.",
+                  "सदस्य वर्ग का वर्गीकरण AGM में मंज़ूर किया जाता है, जहाँ सभी सदस्य हिस्सा ले सकते हैं।"
+                )
               }
             ]
           },
           {
             "id": "t-grievance",
-            "title": "Being Heard: Communication and Grievance Redressal",
+            "title": L("Being Heard: Communication and Grievance Redressal", "सुने जाना: संचार और शिकायत निवारण"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 5: A Way to Be Heard",
-                "html": "Members need an easy way to talk to their company — and to complain when something goes wrong. This is called <b>grievance redressal</b>."
+                "heading": L("Design Principle 5: A Way to Be Heard", "डिज़ाइन सिद्धांत 5: सुने जाने का एक तरीका"),
+                "html": L(
+                  "Members need an easy way to talk to their company — and to complain when something goes wrong. This is called <b>grievance redressal</b>.",
+                  "सदस्यों को अपनी कंपनी से बात करने का एक आसान तरीका चाहिए होता है — और कुछ गलत होने पर शिकायत करने का भी। इसे <b>शिकायत निवारण (grievance redressal)</b> कहा जाता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Grievance Redressal",
-                "meaning": "A proper system for members to raise complaints and get them resolved."
+                "term": L("Grievance Redressal", "शिकायत निवारण (Grievance Redressal)"),
+                "meaning": L(
+                  "A proper system for members to raise complaints and get them resolved.",
+                  "सदस्यों के लिए शिकायत दर्ज कराने और उसका समाधान पाने की एक उचित व्यवस्था।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Tools MPOs Use",
-                "html": "Many MPOs provide a toll-free phone number for members to register complaints, and appoint a <b>Grievance Redressal Officer (GRO)</b> whose job is to solve them. Village and member representative groups hold regular meetings and share notes with senior company officials."
+                "heading": L("Tools MPOs Use", "MPO जो साधन उपयोग करती हैं"),
+                "html": L(
+                  "Many MPOs provide a toll-free phone number for members to register complaints, and appoint a <b>Grievance Redressal Officer (GRO)</b> whose job is to solve them. Village and member representative groups hold regular meetings and share notes with senior company officials.",
+                  "कई MPO सदस्यों के लिए शिकायत दर्ज कराने के लिए एक टोल-फ्री नंबर देती हैं, और एक <b>शिकायत निवारण अधिकारी (GRO)</b> नियुक्त करती हैं जिसका काम उन्हें हल करना है। गाँव और सदस्य प्रतिनिधि समूह नियमित बैठकें करते हैं और वरिष्ठ कंपनी अधिकारियों के साथ बातें साझा करते हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "GRO (Grievance Redressal Officer)",
-                "meaning": "The staff member responsible for handling and resolving member complaints."
+                "term": L("GRO (Grievance Redressal Officer)", "GRO (शिकायत निवारण अधिकारी)"),
+                "meaning": L(
+                  "The staff member responsible for handling and resolving member complaints.",
+                  "वह कर्मचारी जो सदस्यों की शिकायतों को संभालने और हल करने के लिए ज़िम्मेदार है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why It Builds Trust",
-                "text": "When members know exactly who to call, and see their problems actually get solved, they trust the company more — and stay active, engaged members."
+                "heading": L("Why It Builds Trust", "यह भरोसा क्यों बनाता है"),
+                "text": L(
+                  "When members know exactly who to call, and see their problems actually get solved, they trust the company more — and stay active, engaged members.",
+                  "जब सदस्यों को ठीक-ठीक पता होता है कि किसे बुलाना है, और वे देखते हैं कि उनकी समस्याएँ वाकई हल होती हैं, तो वे कंपनी पर ज़्यादा भरोसा करते हैं — और सक्रिय, जुड़े हुए सदस्य बने रहते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is the job of a GRO (Grievance Redressal Officer)?",
+                "q": L("What is the job of a GRO (Grievance Redressal Officer)?", "GRO (शिकायत निवारण अधिकारी) का काम क्या है?"),
                 "options": [
-                  "To handle and resolve member complaints",
-                  "To sell milk to non-members",
-                  "To run the Board elections only",
-                  "To manage the milk tankers"
+                  L("To handle and resolve member complaints", "सदस्यों की शिकायतों को संभालना और हल करना"),
+                  L("To sell milk to non-members", "गैर-सदस्यों को दूध बेचना"),
+                  L("To run the Board elections only", "सिर्फ बोर्ड चुनाव चलाना"),
+                  L("To manage the milk tankers", "दूध के टैंकरों को संभालना")
                 ],
                 "answer": 0,
-                "explain": "The GRO is specifically responsible for handling and resolving members' complaints."
+                "explain": L(
+                  "The GRO is specifically responsible for handling and resolving members' complaints.",
+                  "GRO खासतौर पर सदस्यों की शिकायतों को संभालने और हल करने के लिए ज़िम्मेदार होता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A toll-free number and a GRO are examples of tools that help with grievance redressal.",
+                "q": L(
+                  "A toll-free number and a GRO are examples of tools that help with grievance redressal.",
+                  "टोल-फ्री नंबर और एक GRO शिकायत निवारण में मदद करने वाले साधनों के उदाहरण हैं।"
+                ),
                 "answer": true,
-                "explain": "Yes — these are practical tools MPOs use to make sure members can be heard and helped."
+                "explain": L(
+                  "Yes — these are practical tools MPOs use to make sure members can be heard and helped.",
+                  "हाँ — ये व्यावहारिक साधन हैं जिनका उपयोग MPO यह सुनिश्चित करने के लिए करती हैं कि सदस्यों की बात सुनी जाए और उनकी मदद हो।"
+                )
               }
             ]
           }
@@ -2869,194 +3058,287 @@ export const MODULES = [
             {
               "topicId": "t-skin-in-game",
               "type": "mcq",
-              "q": "A member's equity (shares) in an MPO should ideally be linked to:",
+              "q": L(
+                "A member's equity (shares) in an MPO should ideally be linked to:",
+                "एक MPO में सदस्य की इक्विटी (शेयर) आदर्श रूप से किससे जुड़ी होनी चाहिए:"
+              ),
               "options": [
-                "Their age",
-                "How much milk (patronage) they supply",
-                "How far they live from the MPP",
-                "Their family size"
+                L("Their age", "उनकी उम्र"),
+                L("How much milk (patronage) they supply", "वे कितना दूध (योगदान) देते हैं"),
+                L("How far they live from the MPP", "वे MPP से कितनी दूर रहते हैं"),
+                L("Their family size", "उनके परिवार का आकार")
               ],
               "answer": 1,
-              "explain": "Equity in proportion to patronage keeps ownership fair and tied to real contribution — 'skin in the game'."
+              "explain": L(
+                "Equity in proportion to patronage keeps ownership fair and tied to real contribution — 'skin in the game'.",
+                "योगदान के अनुपात में इक्विटी स्वामित्व को न्यायपूर्ण रखती है और असली योगदान से जोड़े रखती है — 'स्किन इन द गेम'।"
+              )
             },
             {
               "topicId": "t-member-classes",
               "type": "truefalse",
-              "q": "Member class categorisation must be approved at the AGM.",
+              "q": L("Member class categorisation must be approved at the AGM.", "सदस्य वर्ग का वर्गीकरण AGM में मंज़ूर होना ज़रूरी है।"),
               "answer": true,
-              "explain": "Yes — this decision is made together with all members at the Annual General Meeting."
+              "explain": L(
+                "Yes — this decision is made together with all members at the Annual General Meeting.",
+                "हाँ — यह फैसला वार्षिक सामान्य बैठक में सभी सदस्यों के साथ मिलकर लिया जाता है।"
+              )
             },
             {
               "topicId": "t-grievance",
               "type": "mcq",
-              "q": "Why do MPOs set up a formal grievance redressal system?",
+              "q": L(
+                "Why do MPOs set up a formal grievance redressal system?",
+                "MPO एक औपचारिक शिकायत निवारण व्यवस्था क्यों बनाती हैं?"
+              ),
               "options": [
-                "So members have a clear way to raise and resolve complaints, which builds trust",
-                "So complaints can be ignored more easily",
-                "Because the law requires no communication with members",
-                "To reduce the number of members"
+                L(
+                  "So members have a clear way to raise and resolve complaints, which builds trust",
+                  "ताकि सदस्यों के पास शिकायत दर्ज कराने और हल कराने का स्पष्ट तरीका हो, जिससे भरोसा बनता है"
+                ),
+                L("So complaints can be ignored more easily", "ताकि शिकायतों को आसानी से अनदेखा किया जा सके"),
+                L("Because the law requires no communication with members", "क्योंकि कानून सदस्यों के साथ कोई संचार न करने की माँग करता है"),
+                L("To reduce the number of members", "सदस्यों की संख्या कम करने के लिए")
               ],
               "answer": 0,
-              "explain": "A formal system for hearing and resolving complaints keeps members engaged and builds their trust in the company."
+              "explain": L(
+                "A formal system for hearing and resolving complaints keeps members engaged and builds their trust in the company.",
+                "शिकायतें सुनने और हल करने की एक औपचारिक व्यवस्था सदस्यों को जुड़ा रखती है और कंपनी में उनका भरोसा बनाती है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m3-l3",
-        "title": "Running It Like a Real Business",
+        "title": L("Running It Like a Real Business", "इसे एक असली व्यापार की तरह चलाना"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Running It Like a Real Business",
-            "text": "An MPO is not just a village committee — it is a real company competing in the market. Let's see what that takes."
+            "heading": L("Running It Like a Real Business", "इसे एक असली व्यापार की तरह चलाना"),
+            "text": L(
+              "An MPO is not just a village committee — it is a real company competing in the market. Let's see what that takes.",
+              "एक MPO सिर्फ एक गाँव समिति नहीं है — यह बाज़ार में मुकाबला करने वाली एक असली कंपनी है। आइए देखें इसके लिए क्या चाहिए।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-professional-mgmt",
-            "title": "Run by Trained Professionals",
+            "title": L("Run by Trained Professionals", "प्रशिक्षित पेशेवरों द्वारा संचालित"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 6: Professional Management",
-                "html": "An MPO is a real business enterprise, competing with private and multi-national dairy companies. To succeed, it needs properly trained, capable people running it."
+                "heading": L("Design Principle 6: Professional Management", "डिज़ाइन सिद्धांत 6: पेशेवर प्रबंधन"),
+                "html": L(
+                  "An MPO is a real business enterprise, competing with private and multi-national dairy companies. To succeed, it needs properly trained, capable people running it.",
+                  "एक MPO एक असली व्यापारिक उद्यम है, जो निजी और बहुराष्ट्रीय डेयरी कंपनियों से मुकाबला करती है। सफल होने के लिए, इसे ठीक से प्रशिक्षित, सक्षम लोगों की ज़रूरत है जो इसे चलाएँ।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How MPOs Build This",
-                "html": "MPOs recruit capable staff, train and groom them for their roles, and adopt the best practices used across the dairy business — not just old habits."
+                "heading": L("How MPOs Build This", "MPO इसे कैसे बनाती हैं"),
+                "html": L(
+                  "MPOs recruit capable staff, train and groom them for their roles, and adopt the best practices used across the dairy business — not just old habits.",
+                  "MPO सक्षम कर्मचारियों की भर्ती करती हैं, उन्हें उनकी भूमिकाओं के लिए प्रशिक्षित और तैयार करती हैं, और पूरे डेयरी व्यापार में इस्तेमाल होने वाली सबसे अच्छी प्रथाएँ अपनाती हैं — सिर्फ पुरानी आदतें नहीं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Big Enough to Matter",
-                "text": "A design goal for every MPO is to reach a scale of business that is big enough to sustain itself — enough milk, enough members, enough income — so it does not depend forever on outside support."
+                "heading": L("Big Enough to Matter", "मायने रखने लायक बड़ा"),
+                "text": L(
+                  "A design goal for every MPO is to reach a scale of business that is big enough to sustain itself — enough milk, enough members, enough income — so it does not depend forever on outside support.",
+                  "हर MPO के लिए एक डिज़ाइन लक्ष्य है इतना बड़ा व्यापार पैमाना हासिल करना जो खुद को टिकाए रख सके — पर्याप्त दूध, पर्याप्त सदस्य, पर्याप्त आय — ताकि यह हमेशा के लिए बाहरी सहायता पर निर्भर न रहे।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Economy of Scale",
-                "meaning": "When a business becomes more efficient and cost-effective as it grows bigger."
+                "term": L("Economy of Scale", "स्केल की मितव्ययिता (Economy of Scale)"),
+                "meaning": L(
+                  "When a business becomes more efficient and cost-effective as it grows bigger.",
+                  "जब एक व्यापार बड़ा होने के साथ ज़्यादा कुशल और किफ़ायती बनता जाता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does an MPO need professionally trained management?",
+                "q": L(
+                  "Why does an MPO need professionally trained management?",
+                  "एक MPO को पेशेवर रूप से प्रशिक्षित प्रबंधन की ज़रूरत क्यों है?"
+                ),
                 "options": [
-                  "Because it competes with private and multi-national dairy companies, and needs to run efficiently",
-                  "Because the law requires it to hire only outsiders",
-                  "Because farmers are not capable of any decisions",
-                  "Because it has no real business to run"
+                  L(
+                    "Because it competes with private and multi-national dairy companies, and needs to run efficiently",
+                    "क्योंकि यह निजी और बहुराष्ट्रीय डेयरी कंपनियों से मुकाबला करती है, और इसे कुशलता से चलना ज़रूरी है"
+                  ),
+                  L("Because the law requires it to hire only outsiders", "क्योंकि कानून के अनुसार सिर्फ बाहरी लोगों को रखना ज़रूरी है"),
+                  L("Because farmers are not capable of any decisions", "क्योंकि किसान कोई भी फैसला लेने में सक्षम नहीं हैं"),
+                  L("Because it has no real business to run", "क्योंकि इसके पास चलाने के लिए कोई असली व्यापार नहीं है")
                 ],
                 "answer": 0,
-                "explain": "As a real business competing in the market, an MPO needs skilled, trained people to run it well."
+                "explain": L(
+                  "As a real business competing in the market, an MPO needs skilled, trained people to run it well.",
+                  "बाज़ार में मुकाबला करने वाले एक असली व्यापार के तौर पर, एक MPO को अच्छी तरह चलाने के लिए कुशल, प्रशिक्षित लोग चाहिए।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "'Economy of scale' means a business becomes more efficient and cost-effective as it grows bigger.",
+                "q": L(
+                  "'Economy of scale' means a business becomes more efficient and cost-effective as it grows bigger.",
+                  "'स्केल की मितव्ययिता' का मतलब है कि एक व्यापार बड़ा होने के साथ ज़्यादा कुशल और किफ़ायती बनता है।"
+                ),
                 "answer": true,
-                "explain": "Correct — bigger, well-run scale usually brings down costs per unit and improves efficiency."
+                "explain": L(
+                  "Correct — bigger, well-run scale usually brings down costs per unit and improves efficiency.",
+                  "सही — बड़ा, अच्छी तरह चलाया गया पैमाना आमतौर पर प्रति इकाई लागत कम करता है और कुशलता बढ़ाता है।"
+                )
               }
             ]
           },
           {
             "id": "t-value-chain",
-            "title": "Getting the Most Value for Members",
+            "title": L("Getting the Most Value for Members", "सदस्यों के लिए सबसे ज़्यादा मूल्य पाना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 7: Managing the Whole Value Chain",
-                "html": "From the moment milk leaves a farmer's animal to the moment it reaches a customer as milk, curd, or ghee, every step is called the <b>value chain</b>. An MPO tries to manage this whole chain efficiently, so more value — and more money — reaches the farmer-members."
+                "heading": L("Design Principle 7: Managing the Whole Value Chain", "डिज़ाइन सिद्धांत 7: पूरी वैल्यू चेन का प्रबंधन"),
+                "html": L(
+                  "From the moment milk leaves a farmer's animal to the moment it reaches a customer as milk, curd, or ghee, every step is called the <b>value chain</b>. An MPO tries to manage this whole chain efficiently, so more value — and more money — reaches the farmer-members.",
+                  "जिस पल दूध किसान के पशु से निकलता है, उस पल से लेकर जब वह दूध, दही, या घी के रूप में ग्राहक तक पहुँचता है, हर कदम को <b>वैल्यू चेन (value chain)</b> कहा जाता है। एक MPO इस पूरी चेन को कुशलता से संभालने की कोशिश करती है, ताकि ज़्यादा मूल्य — और ज़्यादा पैसा — किसान-सदस्यों तक पहुँचे।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Value Chain",
-                "meaning": "Every step a product passes through, from raw milk at the farm to the finished product reaching a customer."
+                "term": L("Value Chain", "वैल्यू चेन (Value Chain)"),
+                "meaning": L(
+                  "Every step a product passes through, from raw milk at the farm to the finished product reaching a customer.",
+                  "एक उत्पाद जिन सभी चरणों से गुज़रता है, फार्म के कच्चे दूध से लेकर ग्राहक तक पहुँचने वाले तैयार उत्पाद तक।"
+                )
               },
               {
                 "type": "text",
-                "heading": "How MPOs Do This",
-                "html": "They standardise how every part of the business works using <b>SOPs</b> (Standard Operating Procedures), hire quality auditors to check accounting practices, and have the Board regularly review how the business is performing — market by market, product by product."
+                "heading": L("How MPOs Do This", "MPO यह कैसे करती हैं"),
+                "html": L(
+                  "They standardise how every part of the business works using <b>SOPs</b> (Standard Operating Procedures), hire quality auditors to check accounting practices, and have the Board regularly review how the business is performing — market by market, product by product.",
+                  "वे <b>SOP</b> (मानक संचालन प्रक्रिया) का उपयोग करके व्यापार के हर हिस्से को मानकीकृत करती हैं, लेखा-जोखा जाँचने के लिए गुणवत्ता ऑडिटर रखती हैं, और बोर्ड नियमित रूप से यह समीक्षा करता है कि व्यापार कैसा प्रदर्शन कर रहा है — बाज़ार दर बाज़ार, उत्पाद दर उत्पाद।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "SOP (Standard Operating Procedure)",
-                "meaning": "A written, step-by-step way of doing a task, so it is done correctly and the same way every time."
+                "term": L("SOP (Standard Operating Procedure)", "SOP (मानक संचालन प्रक्रिया)"),
+                "meaning": L(
+                  "A written, step-by-step way of doing a task, so it is done correctly and the same way every time.",
+                  "किसी काम को करने का एक लिखित, चरण-दर-चरण तरीका, ताकि वह हर बार सही और एक जैसे तरीके से हो।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is the 'value chain' of milk?",
+                "q": L("What is the 'value chain' of milk?", "दूध की 'वैल्यू चेन' क्या है?"),
                 "options": [
-                  "Every step from raw milk at the farm to the finished product reaching a customer",
-                  "Only the moment milk is collected at the MPP",
-                  "The price printed on a milk packet",
-                  "The list of Board members"
+                  L(
+                    "Every step from raw milk at the farm to the finished product reaching a customer",
+                    "फार्म के कच्चे दूध से लेकर ग्राहक तक पहुँचने वाले तैयार उत्पाद तक के सभी चरण"
+                  ),
+                  L("Only the moment milk is collected at the MPP", "सिर्फ वह पल जब दूध MPP पर इकट्ठा होता है"),
+                  L("The price printed on a milk packet", "दूध के पैकेट पर छपी कीमत"),
+                  L("The list of Board members", "बोर्ड सदस्यों की सूची")
                 ],
                 "answer": 0,
-                "explain": "The value chain covers every step milk passes through, from the farm to the final product a customer buys."
+                "explain": L(
+                  "The value chain covers every step milk passes through, from the farm to the final product a customer buys.",
+                  "वैल्यू चेन उन सभी चरणों को शामिल करती है जिनसे दूध गुज़रता है, फार्म से लेकर ग्राहक द्वारा खरीदे गए अंतिम उत्पाद तक।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "What does SOP stand for?",
+                "q": L("What does SOP stand for?", "SOP का पूरा नाम क्या है?"),
                 "options": [
-                  "Standard Operating Procedure",
-                  "State Office Policy",
-                  "Special Ownership Plan",
-                  "Simple Order Process"
+                  L("Standard Operating Procedure", "मानक संचालन प्रक्रिया"),
+                  L("State Office Policy", "स्टेट ऑफिस पॉलिसी"),
+                  L("Special Ownership Plan", "स्पेशल ओनरशिप प्लान"),
+                  L("Simple Order Process", "सिंपल ऑर्डर प्रोसेस")
                 ],
                 "answer": 0,
-                "explain": "SOP means Standard Operating Procedure — a consistent, written way of doing a task correctly."
+                "explain": L(
+                  "SOP means Standard Operating Procedure — a consistent, written way of doing a task correctly.",
+                  "SOP का मतलब है मानक संचालन प्रक्रिया — किसी काम को सही तरीके से करने का एक स्थिर, लिखित तरीका।"
+                )
               }
             ]
           },
           {
             "id": "t-technology",
-            "title": "Using Technology for Transparency",
+            "title": L("Using Technology for Transparency", "पारदर्शिता के लिए तकनीक का उपयोग"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Design Principle 8: Technology for Trust",
-                "html": "Good governance needs good information. MPOs use technology to track data accurately, keep members updated, and stay ready for new tools in the future."
+                "heading": L("Design Principle 8: Technology for Trust", "डिज़ाइन सिद्धांत 8: भरोसे के लिए तकनीक"),
+                "html": L(
+                  "Good governance needs good information. MPOs use technology to track data accurately, keep members updated, and stay ready for new tools in the future.",
+                  "अच्छे प्रशासन के लिए अच्छी जानकारी चाहिए। MPO डेटा को सही ढंग से ट्रैक करने, सदस्यों को अपडेट रखने, और भविष्य के नए साधनों के लिए तैयार रहने के लिए तकनीक का उपयोग करती हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "What This Looks Like",
-                "html": "MPOs share each member's equity and patronage details regularly, automate as much of the process as they can (like the DPMCU machines you may use at an MPP), and adopt new digital tools to stay future-ready."
+                "heading": L("What This Looks Like", "यह कैसा दिखता है"),
+                "html": L(
+                  "MPOs share each member's equity and patronage details regularly, automate as much of the process as they can (like the DPMCU machines you may use at an MPP), and adopt new digital tools to stay future-ready.",
+                  "MPO हर सदस्य की इक्विटी और योगदान का ब्यौरा नियमित रूप से साझा करती हैं, जितना हो सके प्रक्रिया को स्वचालित बनाती हैं (जैसे DPMCU मशीनें जो आप MPP पर उपयोग कर सकते हैं), और भविष्य के लिए तैयार रहने के लिए नए डिजिटल साधन अपनाती हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "DPMCU (Dairy Producer Milk Collection Unit)",
-                "meaning": "A machine at the MPP that automatically measures milk quantity and quality, and prints a receipt."
+                "term": L("DPMCU (Dairy Producer Milk Collection Unit)", "DPMCU (डेयरी प्रोड्यूसर मिल्क कलेक्शन यूनिट)"),
+                "meaning": L(
+                  "A machine at the MPP that automatically measures milk quantity and quality, and prints a receipt.",
+                  "MPP पर लगी एक मशीन जो अपने आप दूध की मात्रा और गुणवत्ता मापती है, और रसीद छापती है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "What Happens Without It",
-                "text": "Without reliable technology and data, it becomes hard to know which members are active, resolve payment disputes fairly, or build member trust. You'll see exactly what this looks like in the next lesson's real case study."
+                "heading": L("What Happens Without It", "इसके बिना क्या होता है"),
+                "text": L(
+                  "Without reliable technology and data, it becomes hard to know which members are active, resolve payment disputes fairly, or build member trust. You'll see exactly what this looks like in the next lesson's real case study.",
+                  "भरोसेमंद तकनीक और डेटा के बिना, यह जानना मुश्किल हो जाता है कि कौन-से सदस्य सक्रिय हैं, भुगतान विवादों को न्यायपूर्ण तरीके से हल करना, या सदस्यों का भरोसा बनाना। अगली पाठ की असली केस स्टडी में आप ठीक-ठीक देखेंगे कि यह कैसा दिखता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a DPMCU used for?",
+                "q": L("What is a DPMCU used for?", "DPMCU किसलिए उपयोग होता है?"),
                 "options": [
-                  "Automatically measuring milk quantity and quality at the MPP, and printing a receipt",
-                  "Paying member salaries",
-                  "Running Board elections",
-                  "Transporting milk to the city"
+                  L(
+                    "Automatically measuring milk quantity and quality at the MPP, and printing a receipt",
+                    "MPP पर अपने आप दूध की मात्रा और गुणवत्ता मापना, और रसीद छापना"
+                  ),
+                  L("Paying member salaries", "सदस्यों की तनख्वाह देना"),
+                  L("Running Board elections", "बोर्ड चुनाव चलाना"),
+                  L("Transporting milk to the city", "दूध को शहर तक पहुँचाना")
                 ],
                 "answer": 0,
-                "explain": "A DPMCU is the machine at the MPP that measures milk and prints a collection receipt."
+                "explain": L(
+                  "A DPMCU is the machine at the MPP that measures milk and prints a collection receipt.",
+                  "DPMCU MPP पर लगी वह मशीन है जो दूध मापती है और संग्रह रसीद छापती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Reliable technology and data help build trust and resolve disputes fairly in an MPO.",
+                "q": L(
+                  "Reliable technology and data help build trust and resolve disputes fairly in an MPO.",
+                  "भरोसेमंद तकनीक और डेटा एक MPO में भरोसा बनाने और विवादों को न्यायपूर्ण तरीके से हल करने में मदद करते हैं।"
+                ),
                 "answer": true,
-                "explain": "Yes — good data and technology support transparency, fairness, and member trust."
+                "explain": L(
+                  "Yes — good data and technology support transparency, fairness, and member trust.",
+                  "हाँ — अच्छा डेटा और तकनीक पारदर्शिता, न्यायपूर्णता और सदस्यों के भरोसे में मदद करते हैं।"
+                )
               }
             ]
           }
@@ -3067,267 +3349,322 @@ export const MODULES = [
             {
               "topicId": "t-professional-mgmt",
               "type": "mcq",
-              "q": "Why do MPOs need to run like professionally managed businesses?",
+              "q": L(
+                "Why do MPOs need to run like professionally managed businesses?",
+                "MPO को पेशेवर रूप से प्रबंधित व्यापार की तरह क्यों चलना चाहिए?"
+              ),
               "options": [
-                "Because they compete with private and multi-national dairy companies",
-                "Because farmers are not allowed to be involved",
-                "Because the government manages them directly",
-                "Because there is no real competition in dairy"
+                L(
+                  "Because they compete with private and multi-national dairy companies",
+                  "क्योंकि वे निजी और बहुराष्ट्रीय डेयरी कंपनियों से मुकाबला करती हैं"
+                ),
+                L("Because farmers are not allowed to be involved", "क्योंकि किसानों को शामिल होने की अनुमति नहीं है"),
+                L("Because the government manages them directly", "क्योंकि सरकार सीधे इन्हें प्रबंधित करती है"),
+                L("Because there is no real competition in dairy", "क्योंकि डेयरी में कोई असली प्रतिस्पर्धा नहीं है")
               ],
               "answer": 0,
-              "explain": "MPOs compete in a real market, so they need trained, professional management to succeed and grow."
+              "explain": L(
+                "MPOs compete in a real market, so they need trained, professional management to succeed and grow.",
+                "MPO एक असली बाज़ार में मुकाबला करती हैं, इसलिए सफल होने और बढ़ने के लिए उन्हें प्रशिक्षित, पेशेवर प्रबंधन चाहिए।"
+              )
             },
             {
               "topicId": "t-value-chain",
               "type": "truefalse",
-              "q": "Managing the value chain well helps more money reach the farmer-members.",
+              "q": L(
+                "Managing the value chain well helps more money reach the farmer-members.",
+                "वैल्यू चेन को अच्छी तरह संभालना ज़्यादा पैसा किसान-सदस्यों तक पहुँचाने में मदद करता है।"
+              ),
               "answer": true,
-              "explain": "Efficient value chain management increases the value captured at each step, benefiting member-farmers."
+              "explain": L(
+                "Efficient value chain management increases the value captured at each step, benefiting member-farmers.",
+                "कुशल वैल्यू चेन प्रबंधन हर चरण में पकड़े गए मूल्य को बढ़ाता है, जिससे सदस्य-किसानों को फ़ायदा होता है।"
+              )
             },
             {
               "topicId": "t-technology",
               "type": "mcq",
-              "q": "What is one benefit of using technology like DPMCUs at the MPP?",
+              "q": L(
+                "What is one benefit of using technology like DPMCUs at the MPP?",
+                "MPP पर DPMCU जैसी तकनीक का उपयोग करने का एक फ़ायदा क्या है?"
+              ),
               "options": [
-                "Accurate, automatic measurement that builds transparency and trust",
-                "It removes the need for any farmers to supply milk",
-                "It replaces the Board of Directors",
-                "It stops members from asking questions"
+                L(
+                  "Accurate, automatic measurement that builds transparency and trust",
+                  "सटीक, स्वचालित माप जो पारदर्शिता और भरोसा बनाती है"
+                ),
+                L("It removes the need for any farmers to supply milk", "यह किसानों के दूध देने की ज़रूरत को खत्म कर देती है"),
+                L("It replaces the Board of Directors", "यह निदेशक मंडल की जगह ले लेती है"),
+                L("It stops members from asking questions", "यह सदस्यों को सवाल पूछने से रोकती है")
               ],
               "answer": 0,
-              "explain": "Technology like DPMCUs makes measurement accurate and consistent, supporting transparency and trust."
+              "explain": L(
+                "Technology like DPMCUs makes measurement accurate and consistent, supporting transparency and trust.",
+                "DPMCU जैसी तकनीक माप को सटीक और स्थिर बनाती है, जो पारदर्शिता और भरोसे में मदद करती है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m3-l4",
-        "title": "Case Study: What Went Wrong at Pragati MPC",
+        "title": L("Case Study: What Went Wrong at Pragati MPC", "केस स्टडी: प्रगति MPC में क्या गलत हुआ"),
         "estMinutes": 13,
         "hook": [
           {
             "type": "hero",
-            "heading": "Case Study: Pragati Milk Producer Company",
-            "text": "Every design principle you just learned exists for a reason. Let's see what happens to a real MPO when some of them start slipping."
+            "heading": L("Case Study: Pragati Milk Producer Company", "केस स्टडी: प्रगति मिल्क प्रोड्यूसर कंपनी"),
+            "text": L(
+              "Every design principle you just learned exists for a reason. Let's see what happens to a real MPO when some of them start slipping.",
+              "आपने अभी जो हर डिज़ाइन सिद्धांत सीखा, वह किसी वजह से बना है। आइए देखें कि जब उनमें से कुछ फिसलने लगें तो एक असली MPO का क्या होता है।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-pmpc-growth",
-            "title": "A Company That Grew Fast",
+            "title": L("A Company That Grew Fast", "एक कंपनी जो तेज़ी से बढ़ी"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Meet Pragati MPC",
-                "html": "Pragati Milk Producer Company Limited (PMPC) was set up in 2018 to give milk producers across 42 villages an organised, fair market for their milk. The dream: farmers would not just sell milk, but truly own the business."
+                "heading": L("Meet Pragati MPC", "प्रगति MPC से मिलिए"),
+                "html": L(
+                  "Pragati Milk Producer Company Limited (PMPC) was set up in 2018 to give milk producers across 42 villages an organised, fair market for their milk. The dream: farmers would not just sell milk, but truly own the business.",
+                  "प्रगति मिल्क प्रोड्यूसर कंपनी लिमिटेड (PMPC) की स्थापना 2018 में 42 गाँवों के दूध उत्पादकों को उनके दूध के लिए एक संगठित, न्यायपूर्ण बाज़ार देने के लिए हुई थी। सपना था: किसान सिर्फ दूध न बेचें, बल्कि सच में व्यापार के मालिक बनें।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "18 MPPs",
-                    "text": "PMPC grew its milk collection network to 18 Milk Pooling Points across its area."
+                    "label": L("18 MPPs", "18 MPP"),
+                    "text": L(
+                      "PMPC grew its milk collection network to 18 Milk Pooling Points across its area.",
+                      "PMPC ने अपने क्षेत्र में दूध संग्रह नेटवर्क को 18 मिल्क पूलिंग पॉइंट तक बढ़ाया।"
+                    )
                   },
                   {
-                    "label": "1 Bulk Chilling Centre",
-                    "text": "One Bulk Milk Chilling Centre (BMC) can chill up to 10,000 litres of milk a day."
+                    "label": L("1 Bulk Chilling Centre", "1 बल्क चिलिंग सेंटर"),
+                    "text": L(
+                      "One Bulk Milk Chilling Centre (BMC) can chill up to 10,000 litres of milk a day.",
+                      "एक बल्क मिल्क चिलिंग सेंटर (BMC) रोज़ 10,000 लीटर तक दूध ठंडा कर सकता है।"
+                    )
                   },
                   {
-                    "label": "Village Sahayaks",
-                    "text": "Village-level Sahayaks handle milk collection, member engagement and record-keeping."
+                    "label": L("Village Sahayaks", "गाँव के सहायक"),
+                    "text": L(
+                      "Village-level Sahayaks handle milk collection, member engagement and record-keeping.",
+                      "गाँव स्तर के सहायक दूध संग्रह, सदस्य जुड़ाव और रिकॉर्ड-कीपिंग संभालते हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "ledger",
-                "heading": "A Sahayak's Average Monthly Income at PMPC",
+                "heading": L("A Sahayak's Average Monthly Income at PMPC", "PMPC में एक सहायक की औसत मासिक आय"),
                 "rows": [
-                  {
-                    "label": "Milk collection commission",
-                    "amount": "₹8,750"
-                  },
-                  {
-                    "label": "Input sales commission",
-                    "amount": "₹2,100"
-                  },
-                  {
-                    "label": "Incentives",
-                    "amount": "₹1,650"
-                  },
-                  {
-                    "label": "Other income",
-                    "amount": "₹3,500"
-                  }
+                  { "label": L("Milk collection commission", "दूध संग्रह कमीशन"), "amount": "₹8,750" },
+                  { "label": L("Input sales commission", "इनपुट बिक्री कमीशन"), "amount": "₹2,100" },
+                  { "label": L("Incentives", "प्रोत्साहन"), "amount": "₹1,650" },
+                  { "label": L("Other income", "अन्य आय"), "amount": "₹3,500" }
                 ],
-                "total": {
-                  "label": "Total average income",
-                  "amount": "₹16,000"
-                }
+                "total": { "label": L("Total average income", "कुल औसत आय"), "amount": "₹16,000" }
               },
               {
                 "type": "text",
-                "heading": "Five Years Later, Cracks Appear",
-                "html": "After five years, the Board of Directors began to worry. Membership numbers looked great on paper — but something felt wrong underneath."
+                "heading": L("Five Years Later, Cracks Appear", "पाँच साल बाद, दरारें दिखने लगीं"),
+                "html": L(
+                  "After five years, the Board of Directors began to worry. Membership numbers looked great on paper — but something felt wrong underneath.",
+                  "पाँच साल बाद, निदेशक मंडल को चिंता होने लगी। कागज़ पर सदस्यता के आँकड़े बहुत अच्छे लग रहे थे — लेकिन अंदर ही अंदर कुछ गड़बड़ महसूस हो रही थी।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "In which year was Pragati Milk Producer Company (PMPC) established?",
-                "options": [
-                  "2002",
-                  "2018",
-                  "2020",
-                  "2026"
-                ],
+                "q": L(
+                  "In which year was Pragati Milk Producer Company (PMPC) established?",
+                  "प्रगति मिल्क प्रोड्यूसर कंपनी (PMPC) की स्थापना किस साल हुई थी?"
+                ),
+                "options": ["2002", "2018", "2020", "2026"].map((s) => L(s, s)),
                 "answer": 1,
-                "explain": "PMPC was established in 2018, to give milk producers across 42 villages an organised market."
+                "explain": L(
+                  "PMPC was established in 2018, to give milk producers across 42 villages an organised market.",
+                  "PMPC की स्थापना 2018 में हुई थी, ताकि 42 गाँवों के दूध उत्पादकों को एक संगठित बाज़ार मिल सके।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "How many Milk Pooling Points (MPPs) did PMPC operate?",
-                "options": [
-                  "8",
-                  "12",
-                  "18",
-                  "42"
-                ],
+                "q": L("How many Milk Pooling Points (MPPs) did PMPC operate?", "PMPC कितने मिल्क पूलिंग पॉइंट (MPP) चलाती थी?"),
+                "options": ["8", "12", "18", "42"].map((s) => L(s, s)),
                 "answer": 2,
-                "explain": "PMPC expanded its network to 18 MPPs, plus one Bulk Milk Chilling Centre."
+                "explain": L(
+                  "PMPC expanded its network to 18 MPPs, plus one Bulk Milk Chilling Centre.",
+                  "PMPC ने अपना नेटवर्क 18 MPP तक बढ़ाया, साथ ही एक बल्क मिल्क चिलिंग सेंटर भी।"
+                )
               }
             ]
           },
           {
             "id": "t-warning-signs",
-            "title": "The Warning Signs",
+            "title": L("The Warning Signs", "चेतावनी के संकेत"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Members On Paper vs Members in Practice",
-                "html": "PMPC had enrolled thousands of members. But how many were actually active — regularly bringing milk and taking part?"
+                "heading": L("Members On Paper vs Members in Practice", "कागज़ पर सदस्य बनाम असल में सदस्य"),
+                "html": L(
+                  "PMPC had enrolled thousands of members. But how many were actually active — regularly bringing milk and taking part?",
+                  "PMPC ने हज़ारों सदस्यों का नामांकन किया था। लेकिन असल में कितने सक्रिय थे — नियमित रूप से दूध लाते और भाग लेते हुए?"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "4,850 registered members",
-                    "text": "The total number of members enrolled in the company."
+                    "label": L("4,850 registered members", "4,850 पंजीकृत सदस्य"),
+                    "text": L(
+                      "The total number of members enrolled in the company.",
+                      "कंपनी में नामांकित सदस्यों की कुल संख्या।"
+                    )
                   },
                   {
-                    "label": "3,210 supplied milk at least once",
-                    "text": "Only about two-thirds of registered members even brought milk in the past month."
+                    "label": L("3,210 supplied milk at least once", "3,210 ने कम से कम एक बार दूध दिया"),
+                    "text": L(
+                      "Only about two-thirds of registered members even brought milk in the past month.",
+                      "पिछले महीने में पंजीकृत सदस्यों में से लगभग दो-तिहाई ने ही दूध लाया था।"
+                    )
                   },
                   {
-                    "label": "1,985 regular suppliers",
-                    "text": "Fewer than half of all members supplied milk on more than 25 days that month — the truly active core."
+                    "label": L("1,985 regular suppliers", "1,985 नियमित आपूर्तिकर्ता"),
+                    "text": L(
+                      "Fewer than half of all members supplied milk on more than 25 days that month — the truly active core.",
+                      "सभी सदस्यों में से आधे से भी कम ने उस महीने 25 दिनों से ज़्यादा दूध दिया — यही असली सक्रिय आधार था।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "The Free Rider Problem, in Real Life",
-                "text": "Worse, 638 non-members were also selling milk to PMPC's MPPs — receiving almost the same payment and service as real members, without buying shares or taking on any membership duties. This is exactly the 'free rider' problem you learned about, and it made active members feel cheated."
+                "heading": L("The Free Rider Problem, in Real Life", "मुफ्तखोर की समस्या, असल ज़िंदगी में"),
+                "text": L(
+                  "Worse, 638 non-members were also selling milk to PMPC's MPPs — receiving almost the same payment and service as real members, without buying shares or taking on any membership duties. This is exactly the 'free rider' problem you learned about, and it made active members feel cheated.",
+                  "और भी बुरा, 638 गैर-सदस्य भी PMPC के MPP को दूध बेच रहे थे — बिना शेयर खरीदे या कोई सदस्यता कर्तव्य निभाए, असली सदस्यों जैसा ही भुगतान और सेवा पा रहे थे। यही ठीक वह 'मुफ्तखोर' समस्या है जो आपने सीखी, और इसने सक्रिय सदस्यों को ठगा हुआ महसूस कराया।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Weak Skin in the Game",
-                "html": "Many members who now supplied a lot more milk than before still held only the smallest, minimum required shares — breaking the link between patronage and equity that Design Principle 3 calls for."
+                "heading": L("Weak Skin in the Game", "कमज़ोर निजी दाँव"),
+                "html": L(
+                  "Many members who now supplied a lot more milk than before still held only the smallest, minimum required shares — breaking the link between patronage and equity that Design Principle 3 calls for.",
+                  "कई सदस्य जो अब पहले से बहुत ज़्यादा दूध दे रहे थे, फिर भी सिर्फ सबसे छोटे, न्यूनतम ज़रूरी शेयर ही रखते थे — जिससे योगदान और इक्विटी के बीच वह संबंध टूट रहा था जो डिज़ाइन सिद्धांत 3 माँगता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Out of 4,850 registered members, how many were regular suppliers (more than 25 days a month)?",
-                "options": [
-                  "638",
-                  "1,985",
-                  "3,210",
-                  "4,850"
-                ],
+                "q": L(
+                  "Out of 4,850 registered members, how many were regular suppliers (more than 25 days a month)?",
+                  "4,850 पंजीकृत सदस्यों में से, कितने नियमित आपूर्तिकर्ता थे (महीने में 25 दिनों से ज़्यादा)?"
+                ),
+                "options": ["638", "1,985", "3,210", "4,850"].map((s) => L(s, s)),
                 "answer": 1,
-                "explain": "Only 1,985 members were regular suppliers — a much smaller number than total registered membership."
+                "explain": L(
+                  "Only 1,985 members were regular suppliers — a much smaller number than total registered membership.",
+                  "सिर्फ 1,985 सदस्य नियमित आपूर्तिकर्ता थे — कुल पंजीकृत सदस्यता से कहीं कम संख्या।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "PMPC's non-member milk suppliers were a healthy sign of a well-run MPO.",
+                "q": L(
+                  "PMPC's non-member milk suppliers were a healthy sign of a well-run MPO.",
+                  "PMPC के गैर-सदस्य दूध आपूर्तिकर्ता एक अच्छी तरह चलने वाली MPO का स्वस्थ संकेत थे।"
+                ),
                 "answer": false,
-                "explain": "Non-members getting near-identical benefits without ownership duties is the 'free rider' problem — it weakens the MPO model and upsets real members."
+                "explain": L(
+                  "Non-members getting near-identical benefits without ownership duties is the 'free rider' problem — it weakens the MPO model and upsets real members.",
+                  "बिना स्वामित्व कर्तव्यों के लगभग समान फ़ायदे पाने वाले गैर-सदस्य 'मुफ्तखोर' समस्या हैं — यह MPO मॉडल को कमज़ोर करता है और असली सदस्यों को नाराज़ करता है।"
+                )
               }
             ]
           },
           {
             "id": "t-fixing-it",
-            "title": "Fixing the System",
+            "title": L("Fixing the System", "व्यवस्था को ठीक करना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Technology Troubles Too",
-                "html": "PMPC had installed DPMCU machines at all 18 MPPs, but breakdowns were common. In one year alone, there were 126 total days of downtime, caused by printer failures, testing-machine failures, and other issues."
+                "heading": L("Technology Troubles Too", "तकनीक की परेशानियाँ भी"),
+                "html": L(
+                  "PMPC had installed DPMCU machines at all 18 MPPs, but breakdowns were common. In one year alone, there were 126 total days of downtime, caused by printer failures, testing-machine failures, and other issues.",
+                  "PMPC ने सभी 18 MPP पर DPMCU मशीनें लगाई थीं, लेकिन खराबी आम बात थी। सिर्फ एक साल में, प्रिंटर खराबी, टेस्टिंग-मशीन खराबी और अन्य समस्याओं की वजह से कुल 126 दिन काम बंद रहा।"
+                )
               },
               {
                 "type": "barchart",
-                "heading": "DPMCU Breakdown Incidents (One Year)",
-                "source": "PMPC internal case study data",
-                "unit": "incidents",
+                "heading": L("DPMCU Breakdown Incidents (One Year)", "DPMCU खराबी की घटनाएँ (एक साल)"),
+                "source": L("PMPC internal case study data", "PMPC आंतरिक केस स्टडी डेटा"),
+                "unit": L("incidents", "घटनाएँ"),
                 "data": [
-                  {
-                    "label": "Printer failure",
-                    "value": 41
-                  },
-                  {
-                    "label": "Software sync problems",
-                    "value": 37
-                  },
-                  {
-                    "label": "Analyzer failure",
-                    "value": 29
-                  },
-                  {
-                    "label": "Power backup failure",
-                    "value": 24
-                  },
-                  {
-                    "label": "Weigh scale issues",
-                    "value": 18
-                  }
+                  { "label": L("Printer failure", "प्रिंटर खराबी"), "value": 41 },
+                  { "label": L("Software sync problems", "सॉफ्टवेयर सिंक समस्याएँ"), "value": 37 },
+                  { "label": L("Analyzer failure", "एनालाइज़र खराबी"), "value": 29 },
+                  { "label": L("Power backup failure", "पावर बैकअप खराबी"), "value": 24 },
+                  { "label": L("Weigh scale issues", "वज़न तराज़ू समस्याएँ"), "value": 18 }
                 ]
               },
               {
                 "type": "text",
-                "heading": "No Way to Complain Properly",
-                "html": "Members had complaints — about payments, milk testing, membership and share capital — 522 complaints in total during the year. But there was no formal system to register or track them. Most were just told to the Sahayak by word of mouth, and many were forgotten."
+                "heading": L("No Way to Complain Properly", "ठीक से शिकायत करने का कोई तरीका नहीं"),
+                "html": L(
+                  "Members had complaints — about payments, milk testing, membership and share capital — 522 complaints in total during the year. But there was no formal system to register or track them. Most were just told to the Sahayak by word of mouth, and many were forgotten.",
+                  "सदस्यों की शिकायतें थीं — भुगतान, दूध जाँच, सदस्यता और शेयर पूंजी के बारे में — साल भर में कुल 522 शिकायतें। लेकिन उन्हें दर्ज करने या ट्रैक करने की कोई औपचारिक व्यवस्था नहीं थी। ज़्यादातर सिर्फ मुँह-ज़बानी सहायक को बताई जाती थीं, और कई भुला दी जाती थीं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "The Board's Response",
-                "html": "The Board considered spending about ₹42 lakh over three years on a digital system (a CRM platform and mobile app) to fix record-keeping, communication and grievance redressal. Some directors worried technology alone would not fix deeper problems, like weak active-membership rules and low participation."
+                "heading": L("The Board's Response", "बोर्ड की प्रतिक्रिया"),
+                "html": L(
+                  "The Board considered spending about ₹42 lakh over three years on a digital system (a CRM platform and mobile app) to fix record-keeping, communication and grievance redressal. Some directors worried technology alone would not fix deeper problems, like weak active-membership rules and low participation.",
+                  "बोर्ड ने रिकॉर्ड-कीपिंग, संचार और शिकायत निवारण को ठीक करने के लिए तीन सालों में एक डिजिटल व्यवस्था (एक CRM प्लेटफ़ॉर्म और मोबाइल ऐप) पर लगभग ₹42 लाख खर्च करने पर विचार किया। कुछ निदेशकों को चिंता थी कि सिर्फ तकनीक कमज़ोर सक्रिय-सदस्यता नियमों और कम भागीदारी जैसी गहरी समस्याओं को नहीं सुधारेगी।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Back to the Design Principles",
-                "text": "PMPC's real fix is not just new software — it is going back to basics: enforcing 'business only with members', encouraging active participation, linking equity to patronage, and building a proper grievance system. Technology can help, but only alongside strong design principles."
+                "heading": L("Back to the Design Principles", "डिज़ाइन सिद्धांतों की ओर वापसी"),
+                "text": L(
+                  "PMPC's real fix is not just new software — it is going back to basics: enforcing 'business only with members', encouraging active participation, linking equity to patronage, and building a proper grievance system. Technology can help, but only alongside strong design principles.",
+                  "PMPC का असली समाधान सिर्फ नया सॉफ्टवेयर नहीं है — यह बुनियादी बातों पर वापस जाना है: 'सिर्फ सदस्यों के साथ व्यापार' लागू करना, सक्रिय भागीदारी को प्रोत्साहित करना, इक्विटी को योगदान से जोड़ना, और एक उचित शिकायत व्यवस्था बनाना। तकनीक मदद कर सकती है, लेकिन सिर्फ मज़बूत डिज़ाइन सिद्धांतों के साथ।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "About how many member complaints did PMPC receive in one year, with no formal tracking system?",
-                "options": [
-                  "126",
-                  "42",
-                  "522",
-                  "638"
-                ],
+                "q": L(
+                  "About how many member complaints did PMPC receive in one year, with no formal tracking system?",
+                  "PMPC को बिना किसी औपचारिक ट्रैकिंग व्यवस्था के एक साल में लगभग कितनी सदस्य शिकायतें मिलीं?"
+                ),
+                "options": ["126", "42", "522", "638"].map((s) => L(s, s)),
                 "answer": 2,
-                "explain": "PMPC received 522 complaints in the year, but had no formal system to register or track them."
+                "explain": L(
+                  "PMPC received 522 complaints in the year, but had no formal system to register or track them.",
+                  "PMPC को साल भर में 522 शिकायतें मिलीं, लेकिन उन्हें दर्ज या ट्रैक करने की कोई औपचारिक व्यवस्था नहीं थी।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Buying new technology alone is enough to fix all of PMPC's governance problems.",
+                "q": L(
+                  "Buying new technology alone is enough to fix all of PMPC's governance problems.",
+                  "सिर्फ नई तकनीक खरीदना PMPC की सभी प्रशासनिक समस्याओं को ठीक करने के लिए काफ़ी है।"
+                ),
                 "answer": false,
-                "explain": "Technology helps, but PMPC also needs to strengthen its core design principles — active membership, equity linked to patronage, and grievance redressal."
+                "explain": L(
+                  "Technology helps, but PMPC also needs to strengthen its core design principles — active membership, equity linked to patronage, and grievance redressal.",
+                  "तकनीक मदद करती है, लेकिन PMPC को अपने मूल डिज़ाइन सिद्धांतों को भी मज़बूत करना होगा — सक्रिय सदस्यता, योगदान से जुड़ी इक्विटी, और शिकायत निवारण।"
+                )
               }
             ]
           }
@@ -3339,48 +3676,67 @@ export const MODULES = [
             {
               "topicId": "t-pmpc-growth",
               "type": "mcq",
-              "q": "PMPC was set up to give milk producers across how many villages an organised market?",
-              "options": [
-                "18",
-                "42",
-                "126",
-                "522"
-              ],
+              "q": L(
+                "PMPC was set up to give milk producers across how many villages an organised market?",
+                "PMPC कितने गाँवों के दूध उत्पादकों को एक संगठित बाज़ार देने के लिए बनाई गई थी?"
+              ),
+              "options": ["18", "42", "126", "522"].map((s) => L(s, s)),
               "answer": 1,
-              "explain": "PMPC served a semi-rural cluster of 42 villages."
+              "explain": L("PMPC served a semi-rural cluster of 42 villages.", "PMPC 42 गाँवों के एक अर्ध-ग्रामीण समूह की सेवा करती थी।")
             },
             {
               "topicId": "t-warning-signs",
               "type": "mcq",
-              "q": "What did the gap between 4,850 registered members and 1,985 regular suppliers reveal?",
+              "q": L(
+                "What did the gap between 4,850 registered members and 1,985 regular suppliers reveal?",
+                "4,850 पंजीकृत सदस्यों और 1,985 नियमित आपूर्तिकर्ताओं के बीच के अंतर ने क्या उजागर किया?"
+              ),
               "options": [
-                "That most members were highly active and engaged",
-                "That a large share of 'members' were inactive or barely participating",
-                "That PMPC had too few registered members",
-                "That non-members were the most loyal suppliers"
+                L("That most members were highly active and engaged", "कि ज़्यादातर सदस्य बहुत सक्रिय और जुड़े हुए थे"),
+                L(
+                  "That a large share of 'members' were inactive or barely participating",
+                  "कि 'सदस्यों' का एक बड़ा हिस्सा निष्क्रिय था या मुश्किल से भाग ले रहा था"
+                ),
+                L("That PMPC had too few registered members", "कि PMPC के पास बहुत कम पंजीकृत सदस्य थे"),
+                L("That non-members were the most loyal suppliers", "कि गैर-सदस्य सबसे वफ़ादार आपूर्तिकर्ता थे")
               ],
               "answer": 1,
-              "explain": "The big gap between registered and regularly active members showed weak active-membership enforcement — a warning sign for any MPO."
+              "explain": L(
+                "The big gap between registered and regularly active members showed weak active-membership enforcement — a warning sign for any MPO.",
+                "पंजीकृत और नियमित सक्रिय सदस्यों के बीच बड़ा अंतर कमज़ोर सक्रिय-सदस्यता प्रवर्तन दिखाता है — किसी भी MPO के लिए एक चेतावनी संकेत।"
+              )
             },
             {
               "topicId": "t-warning-signs",
               "type": "truefalse",
-              "q": "Accepting milk from 638 non-members alongside members is a good long-term practice for an MPO.",
+              "q": L(
+                "Accepting milk from 638 non-members alongside members is a good long-term practice for an MPO.",
+                "सदस्यों के साथ-साथ 638 गैर-सदस्यों से दूध लेना एक MPO के लिए अच्छी दीर्घकालिक प्रथा है।"
+              ),
               "answer": false,
-              "explain": "This is the 'free rider' problem — it weakens the value of membership and can create dissatisfaction among genuine member-owners."
+              "explain": L(
+                "This is the 'free rider' problem — it weakens the value of membership and can create dissatisfaction among genuine member-owners.",
+                "यह 'मुफ्तखोर' समस्या है — यह सदस्यता के मूल्य को कमज़ोर करती है और असली सदस्य-मालिकों में असंतोष पैदा कर सकती है।"
+              )
             },
             {
               "topicId": "t-fixing-it",
               "type": "mcq",
-              "q": "What is the biggest lesson from PMPC's story?",
+              "q": L("What is the biggest lesson from PMPC's story?", "PMPC की कहानी से सबसे बड़ा सबक क्या है?"),
               "options": [
-                "Technology alone can fix any governance problem",
-                "Strong design principles — active membership, fair equity, grievance redressal — matter as much as technology",
-                "MPOs should stop accepting new members",
-                "Case studies are not useful for real MPOs"
+                L("Technology alone can fix any governance problem", "सिर्फ तकनीक किसी भी प्रशासनिक समस्या को ठीक कर सकती है"),
+                L(
+                  "Strong design principles — active membership, fair equity, grievance redressal — matter as much as technology",
+                  "मज़बूत डिज़ाइन सिद्धांत — सक्रिय सदस्यता, न्यायपूर्ण इक्विटी, शिकायत निवारण — तकनीक जितने ही मायने रखते हैं"
+                ),
+                L("MPOs should stop accepting new members", "MPO को नए सदस्य लेना बंद कर देना चाहिए"),
+                L("Case studies are not useful for real MPOs", "केस स्टडी असली MPO के लिए उपयोगी नहीं हैं")
               ],
               "answer": 1,
-              "explain": "PMPC's troubles show that design principles and technology must work together — neither one alone is enough to keep an MPO healthy."
+              "explain": L(
+                "PMPC's troubles show that design principles and technology must work together — neither one alone is enough to keep an MPO healthy.",
+                "PMPC की परेशानियाँ दिखाती हैं कि डिज़ाइन सिद्धांत और तकनीक को साथ काम करना चाहिए — एक MPO को स्वस्थ रखने के लिए अकेला कोई भी काफ़ी नहीं है।"
+              )
             }
           ]
         }
