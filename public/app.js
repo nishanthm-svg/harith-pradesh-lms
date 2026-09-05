@@ -6,6 +6,13 @@ import * as admin from "./admin.js";
 
 const root = document.getElementById("app");
 
+// Lets the admin portal's login screen accept a short username instead of
+// a full email address — resolved client-side before calling Firebase Auth,
+// which itself only ever sees the real, registered email.
+const ADMIN_USERNAME_ALIASES = {
+  admin: "nishanth.m@shreejamilk.com",
+};
+
 const ICONS = {
   check: "✓",
   lock: "🔒",
@@ -99,8 +106,8 @@ function renderLoginPage(loginAs) {
         <div id="login-error"></div>
         <form id="login-form">
           <div class="field">
-            <label for="login-id">${escapeHtml(u("loginIdLabel"))}</label>
-            <input type="email" id="login-id" autocomplete="username" required />
+            <label for="login-id">${escapeHtml(loginAs === "admin" ? u("adminUsernameLabel") : u("loginIdLabel"))}</label>
+            <input type="${loginAs === "admin" ? "text" : "email"}" id="login-id" autocomplete="username" required />
           </div>
           <div class="field">
             <label for="login-password">${escapeHtml(u("passwordLabel"))}</label>
@@ -120,7 +127,9 @@ function wireLoginPage(loginAs) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     errorEl.innerHTML = "";
-    const loginId = document.getElementById("login-id").value.trim();
+    const rawLoginId = document.getElementById("login-id").value.trim();
+    const loginId =
+      loginAs === "admin" ? ADMIN_USERNAME_ALIASES[rawLoginId.toLowerCase()] || rawLoginId : rawLoginId;
     const password = document.getElementById("login-password").value;
     submitBtn.disabled = true;
     submitBtn.textContent = u("loginSigningIn");
