@@ -7313,142 +7313,142 @@ export const MODULES = [
     "id": "m10",
     "number": 10,
     "title": L("Milk Rates, Its Parameters and Methodologies", "दूध की दरें, इसके मानदंड और तरीके"),
-    "subtitle": "Learn why milk is priced on quality, not just quantity — and practice the real maths MPPs use to work out a fair rate.",
+    "subtitle": L("Learn why milk is priced on quality, not just quantity — and practice the real maths MPPs use to work out a fair rate.", "जानें कि दूध की कीमत केवल मात्रा नहीं, बल्कि गुणवत्ता के आधार पर क्यों तय होती है — और वह असली गणित सीखें जो MPP उचित दर तय करने के लिए इस्तेमाल करते हैं।"),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m10-l1",
-        "title": "Why FAT and SNF Decide the Price",
+        "title": L("Why FAT and SNF Decide the Price", "FAT और SNF कीमत कैसे तय करते हैं"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Why Isn't Milk Priced Like Water?",
-            "text": "Two farmers each bring 10 litres of milk. Do they always get paid the same amount? Not necessarily — and there's a good reason why. Let's find out."
+            "heading": L("Why Isn't Milk Priced Like Water?", "दूध की कीमत पानी जैसी क्यों नहीं होती?"),
+            "text": L("Two farmers each bring 10 litres of milk. Do they always get paid the same amount? Not necessarily — and there's a good reason why. Let's find out.", "दो किसान हर एक 10 लीटर दूध लाते हैं। क्या उन्हें हमेशा बराबर पैसा मिलता है? जरूरी नहीं — और इसकी एक अच्छी वजह है। आइए जानते हैं।")
           }
         ],
         "topics": [
           {
             "id": "t-m10-l1-not-just-volume",
-            "title": "Why Milk Isn't Priced by Volume Alone",
+            "title": L("Why Milk Isn't Priced by Volume Alone", "केवल मात्रा से दूध की कीमत क्यों तय नहीं होती"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Same Litres, Different Value",
-                "html": "If milk was priced only by how many litres a farmer brings, there would be no reward for good-quality milk — and no way to stop someone from adding water to increase volume. That is why MPPs price milk mainly on two things found inside it: <b>FAT</b> and <b>SNF</b>."
+                "heading": L("Same Litres, Different Value", "बराबर लीटर, अलग मूल्य"),
+                "html": L("If milk was priced only by how many litres a farmer brings, there would be no reward for good-quality milk — and no way to stop someone from adding water to increase volume. That is why MPPs price milk mainly on two things found inside it: <b>FAT</b> and <b>SNF</b>.", "अगर दूध की कीमत केवल इस बात पर तय होती कि किसान कितने लीटर लाया है, तो अच्छी गुणवत्ता वाले दूध के लिए कोई इनाम नहीं मिलता — और किसी को मात्रा बढ़ाने के लिए पानी मिलाने से रोकने का कोई तरीका नहीं होता। इसीलिए MPP दूध की कीमत मुख्य रूप से उसमें मौजूद दो चीज़ों पर तय करते हैं: <b>FAT</b> और <b>SNF</b>।")
               },
               {
                 "type": "glossary",
-                "term": "FAT",
-                "meaning": "The fat content of milk — it is what gives milk its richness, and is used to make butter, ghee and cream. It is measured as a percentage, like 4% or 6%."
+                "term": L("FAT", "FAT (वसा)"),
+                "meaning": L("The fat content of milk — it is what gives milk its richness, and is used to make butter, ghee and cream. It is measured as a percentage, like 4% or 6%.", "दूध में मौजूद वसा (चिकनाई) की मात्रा — यही दूध को गाढ़ापन देती है, और इसका उपयोग मक्खन, घी और क्रीम बनाने में होता है। इसे प्रतिशत में मापा जाता है, जैसे 4% या 6%।")
               },
               {
                 "type": "glossary",
-                "term": "SNF (Solids-Not-Fat)",
-                "meaning": "Everything solid in milk except fat — mainly protein, milk sugar (lactose) and minerals. It is also measured as a percentage, and matters for products like paneer and milk powder."
+                "term": L("SNF (Solids-Not-Fat)", "SNF (वसा-रहित ठोस पदार्थ)"),
+                "meaning": L("Everything solid in milk except fat — mainly protein, milk sugar (lactose) and minerals. It is also measured as a percentage, and matters for products like paneer and milk powder.", "वसा के अलावा दूध में मौजूद हर ठोस पदार्थ — मुख्य रूप से प्रोटीन, दूध की शर्करा (लैक्टोज़) और खनिज। इसे भी प्रतिशत में मापा जाता है, और यह पनीर व मिल्क पाउडर जैसे उत्पादों के लिए महत्वपूर्ण होता है।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "FAT — Richness",
-                    "text": "Higher FAT means richer milk, better for ghee and butter. Cow milk is usually lower in FAT; buffalo milk is usually higher."
+                    "label": L("FAT — Richness", "FAT — गाढ़ापन"),
+                    "text": L("Higher FAT means richer milk, better for ghee and butter. Cow milk is usually lower in FAT; buffalo milk is usually higher.", "अधिक FAT का मतलब है गाढ़ा दूध, जो घी और मक्खन के लिए बेहतर होता है। गाय के दूध में आमतौर पर FAT कम होता है; भैंस के दूध में आमतौर पर ज़्यादा होता है।")
                   },
                   {
-                    "label": "SNF — Solids",
-                    "text": "Higher SNF means more protein, minerals and milk sugar — important for the milk's real food value and for products like paneer."
+                    "label": L("SNF — Solids", "SNF — ठोस पदार्थ"),
+                    "text": L("Higher SNF means more protein, minerals and milk sugar — important for the milk's real food value and for products like paneer.", "अधिक SNF का मतलब है ज़्यादा प्रोटीन, खनिज और दूध की शर्करा — जो दूध के असली पोषण मूल्य और पनीर जैसे उत्पादों के लिए महत्वपूर्ण है।")
                   },
                   {
-                    "label": "Testing Before Payment",
-                    "text": "Every farmer's milk is tested for FAT and SNF before the rate is worked out — this is what makes the payment fair."
+                    "label": L("Testing Before Payment", "भुगतान से पहले जांच"),
+                    "text": L("Every farmer's milk is tested for FAT and SNF before the rate is worked out — this is what makes the payment fair.", "दर तय करने से पहले हर किसान के दूध की FAT और SNF के लिए जांच की जाती है — यही भुगतान को उचित बनाता है।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Fair Pay for Real Quality",
-                "text": "A farmer who feeds their animal well and takes good care of it usually gets milk with higher FAT and SNF — and earns a better rate. This system rewards good care, not just a bigger can of milk."
+                "heading": L("Fair Pay for Real Quality", "असली गुणवत्ता के लिए उचित भुगतान"),
+                "text": L("A farmer who feeds their animal well and takes good care of it usually gets milk with higher FAT and SNF — and earns a better rate. This system rewards good care, not just a bigger can of milk.", "जो किसान अपने पशु को अच्छी तरह खिलाता है और उसकी अच्छी देखभाल करता है, उसे आमतौर पर ज़्यादा FAT और SNF वाला दूध मिलता है — और उसे बेहतर दर मिलती है। यह व्यवस्था अच्छी देखभाल को इनाम देती है, न कि केवल बड़ी कैन भर दूध को।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does FAT in milk mainly affect?",
+                "q": L("What does FAT in milk mainly affect?", "दूध में FAT मुख्य रूप से किस चीज़ को प्रभावित करता है?"),
                 "options": [
-                  "The colour of the milk can",
-                  "The richness of the milk, used for ghee and butter",
-                  "The distance milk travels to the MPP",
-                  "The size of the farmer's herd"
+                  L("The colour of the milk can", "दूध की कैन का रंग"),
+                  L("The richness of the milk, used for ghee and butter", "दूध का गाढ़ापन, जो घी और मक्खन के लिए उपयोग होता है"),
+                  L("The distance milk travels to the MPP", "दूध MPP तक कितनी दूरी तय करता है"),
+                  L("The size of the farmer's herd", "किसान के पशुधन का आकार")
                 ],
                 "answer": 1,
-                "explain": "FAT is what gives milk its richness, and is used to make products like ghee and butter."
+                "explain": L("FAT is what gives milk its richness, and is used to make products like ghee and butter.", "FAT ही दूध को गाढ़ापन देता है, और इसका उपयोग घी व मक्खन जैसे उत्पाद बनाने में होता है।")
               },
               {
                 "type": "truefalse",
-                "q": "SNF stands for 'Solids-Not-Fat' and includes things like protein and milk sugar.",
+                "q": L("SNF stands for 'Solids-Not-Fat' and includes things like protein and milk sugar.", "SNF का मतलब है 'वसा-रहित ठोस पदार्थ' और इसमें प्रोटीन व दूध की शर्करा जैसी चीज़ें शामिल हैं।"),
                 "answer": true,
-                "explain": "Correct. SNF covers all the solid parts of milk apart from fat — mainly protein, lactose (milk sugar) and minerals."
+                "explain": L("Correct. SNF covers all the solid parts of milk apart from fat — mainly protein, lactose (milk sugar) and minerals.", "सही। SNF में वसा के अलावा दूध के सभी ठोस हिस्से शामिल हैं — मुख्य रूप से प्रोटीन, लैक्टोज़ (दूध की शर्करा) और खनिज।")
               }
             ]
           },
           {
             "id": "t-m10-l1-factors",
-            "title": "What Makes FAT and SNF Go Up or Down",
+            "title": L("What Makes FAT and SNF Go Up or Down", "FAT और SNF का घटना-बढ़ना किस पर निर्भर करता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Not Every Litre Is the Same",
-                "html": "FAT and SNF levels are not fixed — they change based on a few real factors. Knowing these helps a Sahayak explain milk rates to farmers clearly."
+                "heading": L("Not Every Litre Is the Same", "हर लीटर एक जैसा नहीं होता"),
+                "html": L("FAT and SNF levels are not fixed — they change based on a few real factors. Knowing these helps a Sahayak explain milk rates to farmers clearly.", "FAT और SNF का स्तर स्थिर नहीं होता — यह कुछ वास्तविक कारकों के आधार पर बदलता है। इन्हें जानने से सहायक को किसानों को दूध की दरें स्पष्ट रूप से समझाने में मदद मिलती है।")
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Species (Cow or Buffalo)",
-                    "text": "Buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%). That is one reason buffalo milk often earns a higher rate per litre."
+                    "label": L("Species (Cow or Buffalo)", "प्रजाति (गाय या भैंस)"),
+                    "text": L("Buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%). That is one reason buffalo milk often earns a higher rate per litre.", "भैंस के दूध में आमतौर पर गाय के दूध (लगभग 3-4.5%) की तुलना में ज़्यादा FAT (लगभग 6-8%) होता है। यही एक कारण है कि भैंस के दूध की प्रति लीटर दर अक्सर ज़्यादा होती है।")
                   },
                   {
-                    "label": "Breed",
-                    "text": "Some breeds, like local indigenous breeds, can naturally give milk with higher FAT than some high-yield crossbred (HF) cows, even if the crossbred cow gives more total litres."
+                    "label": L("Breed", "नस्ल"),
+                    "text": L("Some breeds, like local indigenous breeds, can naturally give milk with higher FAT than some high-yield crossbred (HF) cows, even if the crossbred cow gives more total litres.", "कुछ नस्लें, जैसे स्थानीय देसी नस्लें, स्वाभाविक रूप से उच्च उत्पादन वाली संकर (HF) गायों की तुलना में ज़्यादा FAT वाला दूध दे सकती हैं, भले ही संकर गाय कुल मिलाकर ज़्यादा लीटर दूध देती हो।")
                   },
                   {
-                    "label": "Season",
-                    "text": "FAT and SNF can dip a little in hot summer months and rise in cooler winter months, because animals eat and drink differently."
+                    "label": L("Season", "मौसम"),
+                    "text": L("FAT and SNF can dip a little in hot summer months and rise in cooler winter months, because animals eat and drink differently.", "गर्मी के महीनों में FAT और SNF थोड़ा कम हो सकता है और ठंड के महीनों में बढ़ सकता है, क्योंकि पशु अलग-अलग तरीके से खाते-पीते हैं।")
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Why Adulteration Is Caught",
-                "text": "Adding water to milk lowers both FAT and SNF, because it dilutes everything in the milk. This is exactly why every sample is tested before payment — it protects honest farmers and the MPO."
+                "heading": L("Why Adulteration Is Caught", "मिलावट कैसे पकड़ी जाती है"),
+                "text": L("Adding water to milk lowers both FAT and SNF, because it dilutes everything in the milk. This is exactly why every sample is tested before payment — it protects honest farmers and the MPO.", "दूध में पानी मिलाने से FAT और SNF दोनों कम हो जाते हैं, क्योंकि इससे दूध की हर चीज़ पतली हो जाती है। इसीलिए भुगतान से पहले हर नमूने की जांच की जाती है — यह ईमानदार किसानों और MPO दोनों की रक्षा करता है।")
               },
               {
                 "type": "example",
-                "heading": "Buffalo vs Cow, Same Rate",
-                "text": "At the same fat rate, a buffalo giving 7% FAT milk will earn more per litre than a cow giving 4% FAT milk — because the buffalo's milk has more of what is actually being paid for."
+                "heading": L("Buffalo vs Cow, Same Rate", "भैंस बनाम गाय, समान दर पर"),
+                "text": L("At the same fat rate, a buffalo giving 7% FAT milk will earn more per litre than a cow giving 4% FAT milk — because the buffalo's milk has more of what is actually being paid for.", "समान फैट दर पर, 7% FAT वाला दूध देने वाली भैंस, 4% FAT वाला दूध देने वाली गाय की तुलना में प्रति लीटर ज़्यादा कमाएगी — क्योंकि भैंस के दूध में वह चीज़ ज़्यादा है जिसके लिए असल में भुगतान किया जा रहा है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which of these can cause FAT and SNF to be lower than they should be?",
+                "q": L("Which of these can cause FAT and SNF to be lower than they should be?", "इनमें से क्या FAT और SNF को उनके सामान्य स्तर से कम कर सकता है?"),
                 "options": [
-                  "The farmer's name",
-                  "Adding water to the milk",
-                  "The colour of the milk can",
-                  "The time the Sahayak wakes up"
+                  L("The farmer's name", "किसान का नाम"),
+                  L("Adding water to the milk", "दूध में पानी मिलाना"),
+                  L("The colour of the milk can", "दूध की कैन का रंग"),
+                  L("The time the Sahayak wakes up", "सहायक के जागने का समय")
                 ],
                 "answer": 1,
-                "explain": "Adding water dilutes the milk, lowering both its FAT and SNF readings."
+                "explain": L("Adding water dilutes the milk, lowering both its FAT and SNF readings.", "पानी मिलाने से दूध पतला हो जाता है, जिससे उसका FAT और SNF रीडिंग दोनों कम हो जाते हैं।")
               },
               {
                 "type": "truefalse",
-                "q": "Buffalo milk usually has lower FAT than cow milk.",
+                "q": L("Buffalo milk usually has lower FAT than cow milk.", "भैंस के दूध में आमतौर पर गाय के दूध से कम FAT होता है।"),
                 "answer": false,
-                "explain": "It is the opposite — buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%)."
+                "explain": L("It is the opposite — buffalo milk usually has more FAT (around 6-8%) than cow milk (around 3-4.5%).", "इसका उल्टा सच है — भैंस के दूध में आमतौर पर गाय के दूध (लगभग 3-4.5%) की तुलना में ज़्यादा FAT (लगभग 6-8%) होता है।")
               }
             ]
           }
@@ -7459,187 +7459,187 @@ export const MODULES = [
             {
               "topicId": "t-m10-l1-not-just-volume",
               "type": "mcq",
-              "q": "Why do MPPs test milk for FAT and SNF before paying farmers?",
+              "q": L("Why do MPPs test milk for FAT and SNF before paying farmers?", "MPP किसानों को भुगतान करने से पहले दूध की FAT और SNF जांच क्यों करते हैं?"),
               "options": [
-                "To decide the colour of the milk can",
-                "To make sure the rate paid matches the real quality of the milk",
-                "Because it is required for the animal's health",
-                "To count how many farmers are members"
+                L("To decide the colour of the milk can", "दूध की कैन का रंग तय करने के लिए"),
+                L("To make sure the rate paid matches the real quality of the milk", "यह सुनिश्चित करने के लिए कि भुगतान की गई दर दूध की असली गुणवत्ता से मेल खाती है"),
+                L("Because it is required for the animal's health", "क्योंकि यह पशु के स्वास्थ्य के लिए आवश्यक है"),
+                L("To count how many farmers are members", "यह गिनने के लिए कि कितने किसान सदस्य हैं")
               ],
               "answer": 1,
-              "explain": "Testing FAT and SNF makes sure farmers are paid fairly, based on the real quality of the milk they brought."
+              "explain": L("Testing FAT and SNF makes sure farmers are paid fairly, based on the real quality of the milk they brought.", "FAT और SNF की जांच यह सुनिश्चित करती है कि किसानों को उनके लाए दूध की असली गुणवत्ता के आधार पर उचित भुगतान मिले।")
             },
             {
               "topicId": "t-m10-l1-factors",
               "type": "truefalse",
-              "q": "Season can affect the FAT and SNF levels in milk.",
+              "q": L("Season can affect the FAT and SNF levels in milk.", "मौसम दूध में FAT और SNF के स्तर को प्रभावित कर सकता है।"),
               "answer": true,
-              "explain": "Yes — FAT and SNF can shift a little between summer and winter, because of changes in what animals eat and drink."
+              "explain": L("Yes — FAT and SNF can shift a little between summer and winter, because of changes in what animals eat and drink.", "हां — गर्मी और सर्दी के बीच FAT और SNF थोड़ा बदल सकता है, क्योंकि पशुओं के खाने-पीने में बदलाव आता है।")
             }
           ]
         }
       },
       {
         "id": "m10-l2",
-        "title": "Pricing on Fat Basis — Let's Do the Maths",
+        "title": L("Pricing on Fat Basis — Let's Do the Maths", "फैट आधार पर मूल्य निर्धारण — आइए गणित करें"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Method 1: Pro-Rata Fat Pricing",
-            "text": "This is the simplest pricing method — sometimes called Single-Axis pricing because it looks at just ONE thing: FAT. Let's learn the formula and try it with real numbers."
+            "heading": L("Method 1: Pro-Rata Fat Pricing", "तरीका 1: प्रो-रेटा फैट प्राइसिंग"),
+            "text": L("This is the simplest pricing method — sometimes called Single-Axis pricing because it looks at just ONE thing: FAT. Let's learn the formula and try it with real numbers.", "यह सबसे सरल मूल्य निर्धारण तरीका है — इसे कभी-कभी सिंगल-एक्सिस प्राइसिंग भी कहा जाता है क्योंकि यह केवल एक चीज़ पर ध्यान देता है: FAT। आइए इसका सूत्र सीखें और असली आंकड़ों से इसे आज़माएं।")
           }
         ],
         "topics": [
           {
             "id": "t-m10-l2-formula",
-            "title": "The Pro-Rata Fat Formula",
+            "title": L("The Pro-Rata Fat Formula", "प्रो-रेटा फैट का सूत्र"),
             "teach": [
               {
                 "type": "text",
-                "heading": "One Simple Formula",
-                "html": "In <b>Pro-Rata Fat pricing</b> (also called <b>Single-Axis pricing</b>), the price per litre depends only on the milk's FAT percentage and the <b>fat rate</b> the MPO has set. The formula is:<br><b>Price per litre = (FAT% ÷ 100) × Fat Rate</b>"
+                "heading": L("One Simple Formula", "एक सरल सूत्र"),
+                "html": L("In <b>Pro-Rata Fat pricing</b> (also called <b>Single-Axis pricing</b>), the price per litre depends only on the milk's FAT percentage and the <b>fat rate</b> the MPO has set. The formula is:<br><b>Price per litre = (FAT% ÷ 100) × Fat Rate</b>", "<b>प्रो-रेटा फैट प्राइसिंग</b> (जिसे <b>सिंगल-एक्सिस प्राइसिंग</b> भी कहते हैं) में, प्रति लीटर कीमत केवल दूध के FAT प्रतिशत और MPO द्वारा तय की गई <b>फैट दर</b> पर निर्भर करती है। सूत्र है:<br><b>प्रति लीटर कीमत = (FAT% ÷ 100) × फैट दर</b>")
               },
               {
                 "type": "glossary",
-                "term": "Fat Rate",
-                "meaning": "The price the MPO sets for one full kilogram of fat — for example, ₹580 per kg. It is the starting number used to work out what each farmer's milk is worth."
+                "term": L("Fat Rate", "फैट दर"),
+                "meaning": L("The price the MPO sets for one full kilogram of fat — for example, ₹580 per kg. It is the starting number used to work out what each farmer's milk is worth.", "MPO द्वारा एक पूरे किलोग्राम फैट के लिए तय की गई कीमत — उदाहरण के लिए, ₹580 प्रति किलो। यह वह शुरुआती संख्या है जिससे हर किसान के दूध की कीमत निकाली जाती है।")
               },
               {
                 "type": "text",
-                "heading": "Let's Do the Maths Together",
-                "html": "A farmer's milk has FAT of 5.5%, and the fat rate is ₹580 per kg.<br>Price per litre = (5.5 ÷ 100) × 580 = <b>₹31.90 per litre</b>."
+                "heading": L("Let's Do the Maths Together", "आइए साथ में गणित करें"),
+                "html": L("A farmer's milk has FAT of 5.5%, and the fat rate is ₹580 per kg.<br>Price per litre = (5.5 ÷ 100) × 580 = <b>₹31.90 per litre</b>.", "एक किसान के दूध में FAT 5.5% है, और फैट दर ₹580 प्रति किलो है।<br>प्रति लीटर कीमत = (5.5 ÷ 100) × 580 = <b>₹31.90 प्रति लीटर</b>।")
               },
               {
                 "type": "example",
-                "heading": "Try It Yourself — Scaling Up",
-                "text": "If the MPP collects 2,000 litres today, all at this same average FAT, the total paid to farmers is: 2,000 litres × ₹31.90 = ₹63,800 in one day, from milk alone."
+                "heading": L("Try It Yourself — Scaling Up", "खुद आज़माएं — बड़े पैमाने पर"),
+                "text": L("If the MPP collects 2,000 litres today, all at this same average FAT, the total paid to farmers is: 2,000 litres × ₹31.90 = ₹63,800 in one day, from milk alone.", "अगर MPP आज 2,000 लीटर दूध इकट्ठा करता है, और सभी का औसत FAT यही है, तो किसानों को कुल भुगतान होगा: 2,000 लीटर × ₹31.90 = ₹63,800 केवल एक दिन में, सिर्फ दूध से।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Same Formula, Every Time",
-                "text": "Whether it's one litre or ten thousand litres, the formula stays exactly the same — only the FAT percentage and the total quantity change."
+                "heading": L("Same Formula, Every Time", "हर बार वही सूत्र"),
+                "text": L("Whether it's one litre or ten thousand litres, the formula stays exactly the same — only the FAT percentage and the total quantity change.", "चाहे एक लीटर हो या दस हज़ार लीटर, सूत्र बिल्कुल वही रहता है — केवल FAT प्रतिशत और कुल मात्रा बदलती है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "A farmer's milk has 7% FAT. The fat rate is ₹500 per kg. What is the price per litre?",
+                "q": L("A farmer's milk has 7% FAT. The fat rate is ₹500 per kg. What is the price per litre?", "एक किसान के दूध में 7% FAT है। फैट दर ₹500 प्रति किलो है। प्रति लीटर कीमत क्या है?"),
                 "options": [
-                  "₹7",
-                  "₹35",
-                  "₹350",
-                  "₹500"
+                  L("₹7", "₹7"),
+                  L("₹35", "₹35"),
+                  L("₹350", "₹350"),
+                  L("₹500", "₹500")
                 ],
                 "answer": 1,
-                "explain": "Price = (7 ÷ 100) × 500 = ₹35 per litre."
+                "explain": L("Price = (7 ÷ 100) × 500 = ₹35 per litre.", "कीमत = (7 ÷ 100) × 500 = ₹35 प्रति लीटर।")
               },
               {
                 "type": "mcq",
-                "q": "In the Pro-Rata Fat method, which two numbers decide the price per litre?",
+                "q": L("In the Pro-Rata Fat method, which two numbers decide the price per litre?", "प्रो-रेटा फैट तरीके में, कौन-सी दो संख्याएं प्रति लीटर कीमत तय करती हैं?"),
                 "options": [
-                  "The farmer's name and village",
-                  "The FAT percentage and the fat rate",
-                  "The colour of the can and the season",
-                  "The number of members in the MPP"
+                  L("The farmer's name and village", "किसान का नाम और गांव"),
+                  L("The FAT percentage and the fat rate", "FAT प्रतिशत और फैट दर"),
+                  L("The colour of the can and the season", "कैन का रंग और मौसम"),
+                  L("The number of members in the MPP", "MPP में सदस्यों की संख्या")
                 ],
                 "answer": 1,
-                "explain": "Price per litre = (FAT% ÷ 100) × Fat Rate — nothing else is needed for this method."
+                "explain": L("Price per litre = (FAT% ÷ 100) × Fat Rate — nothing else is needed for this method.", "प्रति लीटर कीमत = (FAT% ÷ 100) × फैट दर — इस तरीके के लिए और कुछ नहीं चाहिए।")
               }
             ]
           },
           {
             "id": "t-m10-l2-deductions-incentives",
-            "title": "Deductions, Incentives and Comparing Milk Types",
+            "title": L("Deductions, Incentives and Comparing Milk Types", "कटौती, प्रोत्साहन और दूध के प्रकारों की तुलना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Not Always a Flat Formula",
-                "html": "MPOs often adjust the base price up or down, to reward good quality and discourage poor quality. Let's see two real examples."
+                "heading": L("Not Always a Flat Formula", "हमेशा एक सीधा सूत्र नहीं"),
+                "html": L("MPOs often adjust the base price up or down, to reward good quality and discourage poor quality. Let's see two real examples.", "MPO अक्सर आधार कीमत को ऊपर या नीचे समायोजित करते हैं, ताकि अच्छी गुणवत्ता को इनाम दिया जा सके और खराब गुणवत्ता को हतोत्साहित किया जा सके। आइए दो असली उदाहरण देखें।")
               },
               {
                 "type": "ledger",
-                "heading": "Example: A Deduction for Low SNF",
+                "heading": L("Example: A Deduction for Low SNF", "उदाहरण: कम SNF के लिए कटौती"),
                 "rows": [
                   {
-                    "label": "Base price (6% FAT × ₹600/kg fat rate)",
+                    "label": L("Base price (6% FAT × ₹600/kg fat rate)", "आधार कीमत (6% FAT × ₹600/किलो फैट दर)"),
                     "amount": "₹36.00"
                   },
                   {
-                    "label": "Deduction for SNF below standard",
+                    "label": L("Deduction for SNF below standard", "मानक से कम SNF के लिए कटौती"),
                     "amount": "−₹1.50"
                   }
                 ],
                 "total": {
-                  "label": "Final price paid per litre",
+                  "label": L("Final price paid per litre", "प्रति लीटर अंतिम भुगतान की गई कीमत"),
                   "amount": "₹34.50"
                 }
               },
               {
                 "type": "ledger",
-                "heading": "Example: An Incentive for High FAT",
+                "heading": L("Example: An Incentive for High FAT", "उदाहरण: उच्च FAT के लिए प्रोत्साहन"),
                 "rows": [
                   {
-                    "label": "Base price (6.8% FAT × ₹610/kg fat rate)",
+                    "label": L("Base price (6.8% FAT × ₹610/kg fat rate)", "आधार कीमत (6.8% FAT × ₹610/किलो फैट दर)"),
                     "amount": "₹41.48"
                   },
                   {
-                    "label": "Incentive for FAT above 6.5%",
+                    "label": L("Incentive for FAT above 6.5%", "6.5% से अधिक FAT के लिए प्रोत्साहन"),
                     "amount": "+₹2.00"
                   }
                 ],
                 "total": {
-                  "label": "Final price paid per litre",
+                  "label": L("Final price paid per litre", "प्रति लीटर अंतिम भुगतान की गई कीमत"),
                   "amount": "₹43.48"
                 }
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why Incentives Help Everyone",
-                "text": "Incentives reward farmers who feed and care for their animals well enough to get richer milk. This encourages better care across the whole village, which means better milk for the MPP too."
+                "heading": L("Why Incentives Help Everyone", "प्रोत्साहन सबकी मदद कैसे करते हैं"),
+                "text": L("Incentives reward farmers who feed and care for their animals well enough to get richer milk. This encourages better care across the whole village, which means better milk for the MPP too.", "प्रोत्साहन उन किसानों को इनाम देते हैं जो अपने पशुओं को इतनी अच्छी तरह खिलाते और उनकी देखभाल करते हैं कि गाढ़ा दूध मिले। इससे पूरे गांव में बेहतर देखभाल को बढ़ावा मिलता है, जिससे MPP के लिए भी बेहतर दूध मिलता है।")
               },
               {
                 "type": "barchart",
-                "heading": "Price per Litre by Milk Type (at ₹620/kg fat rate)",
-                "source": "Worked example, Pro-Rata Fat method",
-                "unit": "₹ per litre",
+                "heading": L("Price per Litre by Milk Type (at ₹620/kg fat rate)", "दूध के प्रकार के अनुसार प्रति लीटर कीमत (₹620/किलो फैट दर पर)"),
+                "source": L("Worked example, Pro-Rata Fat method", "हल किया गया उदाहरण, प्रो-रेटा फैट तरीका"),
+                "unit": L("₹ per litre", "₹ प्रति लीटर"),
                 "data": [
                   {
-                    "label": "Buffalo milk (7.5% FAT)",
+                    "label": L("Buffalo milk (7.5% FAT)", "भैंस का दूध (7.5% FAT)"),
                     "value": 46.5
                   },
                   {
-                    "label": "Cow milk (4% FAT)",
+                    "label": L("Cow milk (4% FAT)", "गाय का दूध (4% FAT)"),
                     "value": 24.8
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Same Rate, Different Result",
-                "html": "Both farmers are paid at the exact same fat rate of ₹620 per kg. The buffalo milk earns more per litre only because it naturally has more FAT — not because it is treated differently."
+                "heading": L("Same Rate, Different Result", "समान दर, अलग परिणाम"),
+                "html": L("Both farmers are paid at the exact same fat rate of ₹620 per kg. The buffalo milk earns more per litre only because it naturally has more FAT — not because it is treated differently.", "दोनों किसानों को ठीक उसी ₹620 प्रति किलो फैट दर पर भुगतान किया जाता है। भैंस का दूध केवल इसलिए प्रति लीटर ज़्यादा कमाता है क्योंकि उसमें स्वाभाविक रूप से ज़्यादा FAT है — न कि इसलिए कि उसके साथ अलग व्यवहार किया जाता है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why does buffalo milk usually earn a higher price per litre than cow milk, at the same fat rate?",
+                "q": L("Why does buffalo milk usually earn a higher price per litre than cow milk, at the same fat rate?", "समान फैट दर पर, भैंस के दूध की कीमत आमतौर पर गाय के दूध से ज़्यादा क्यों होती है?"),
                 "options": [
-                  "Buffaloes are bigger animals",
-                  "Buffalo milk usually has a higher FAT percentage",
-                  "Cow milk is tested less often",
-                  "There is no real difference"
+                  L("Buffaloes are bigger animals", "भैंसें बड़े पशु होती हैं"),
+                  L("Buffalo milk usually has a higher FAT percentage", "भैंस के दूध में आमतौर पर ज़्यादा FAT प्रतिशत होता है"),
+                  L("Cow milk is tested less often", "गाय के दूध की जांच कम बार होती है"),
+                  L("There is no real difference", "वास्तव में कोई अंतर नहीं है")
                 ],
                 "answer": 1,
-                "explain": "Since the price depends on FAT%, and buffalo milk usually has more FAT, it earns more per litre at the same fat rate."
+                "explain": L("Since the price depends on FAT%, and buffalo milk usually has more FAT, it earns more per litre at the same fat rate.", "चूंकि कीमत FAT% पर निर्भर करती है, और भैंस के दूध में आमतौर पर ज़्यादा FAT होता है, इसलिए वह समान फैट दर पर प्रति लीटर ज़्यादा कमाता है।")
               },
               {
                 "type": "truefalse",
-                "q": "A deduction lowers the base price, and an incentive raises it.",
+                "q": L("A deduction lowers the base price, and an incentive raises it.", "कटौती आधार कीमत को घटाती है, और प्रोत्साहन उसे बढ़ाता है।"),
                 "answer": true,
-                "explain": "Correct — deductions (for issues like low SNF) reduce the price, while incentives (for high FAT) increase it."
+                "explain": L("Correct — deductions (for issues like low SNF) reduce the price, while incentives (for high FAT) increase it.", "सही — कटौती (जैसे कम SNF के लिए) कीमत घटाती है, जबकि प्रोत्साहन (उच्च FAT के लिए) उसे बढ़ाता है।")
               }
             ]
           }
@@ -7650,169 +7650,169 @@ export const MODULES = [
             {
               "topicId": "t-m10-l2-formula",
               "type": "mcq",
-              "q": "A farmer's milk has FAT 5%. The fat rate is ₹500 per kg. What is the price per litre?",
+              "q": L("A farmer's milk has FAT 5%. The fat rate is ₹500 per kg. What is the price per litre?", "एक किसान के दूध में FAT 5% है। फैट दर ₹500 प्रति किलो है। प्रति लीटर कीमत क्या है?"),
               "options": [
-                "₹5",
-                "₹25",
-                "₹50",
-                "₹500"
+                L("₹5", "₹5"),
+                L("₹25", "₹25"),
+                L("₹50", "₹50"),
+                L("₹500", "₹500")
               ],
               "answer": 1,
-              "explain": "Price = (5 ÷ 100) × 500 = ₹25 per litre."
+              "explain": L("Price = (5 ÷ 100) × 500 = ₹25 per litre.", "कीमत = (5 ÷ 100) × 500 = ₹25 प्रति लीटर।")
             },
             {
               "topicId": "t-m10-l2-deductions-incentives",
               "type": "mcq",
-              "q": "What is the effect of an incentive on the price paid to a farmer?",
+              "q": L("What is the effect of an incentive on the price paid to a farmer?", "किसान को दिए जाने वाले भुगतान पर प्रोत्साहन का क्या प्रभाव पड़ता है?"),
               "options": [
-                "It lowers the price",
-                "It raises the price",
-                "It has no effect",
-                "It changes the FAT test result"
+                L("It lowers the price", "यह कीमत को घटाता है"),
+                L("It raises the price", "यह कीमत को बढ़ाता है"),
+                L("It has no effect", "इसका कोई प्रभाव नहीं पड़ता"),
+                L("It changes the FAT test result", "यह FAT जांच के परिणाम को बदलता है")
               ],
               "answer": 1,
-              "explain": "An incentive is an amount added on top of the base price, so it raises what the farmer is paid."
+              "explain": L("An incentive is an amount added on top of the base price, so it raises what the farmer is paid.", "प्रोत्साहन आधार कीमत के ऊपर जोड़ी जाने वाली राशि है, इसलिए यह किसान को मिलने वाले भुगतान को बढ़ाता है।")
             }
           ]
         }
       },
       {
         "id": "m10-l3",
-        "title": "Pricing on EFU Basis — A Second Method",
+        "title": L("Pricing on EFU Basis — A Second Method", "EFU आधार पर मूल्य निर्धारण — एक दूसरा तरीका"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Method 2: Equivalent Fat Units (EFU)",
-            "text": "The Pro-Rata Fat method looks at FAT alone. This second method — EFU — combines FAT and SNF into one fair number. Let's learn how it works, with real numbers."
+            "heading": L("Method 2: Equivalent Fat Units (EFU)", "तरीका 2: इक्विवेलेंट फैट यूनिट्स (EFU)"),
+            "text": L("The Pro-Rata Fat method looks at FAT alone. This second method — EFU — combines FAT and SNF into one fair number. Let's learn how it works, with real numbers.", "प्रो-रेटा फैट तरीका केवल FAT देखता है। यह दूसरा तरीका — EFU — FAT और SNF को मिलाकर एक उचित संख्या बनाता है। आइए असली आंकड़ों के साथ जानें कि यह कैसे काम करता है।")
           }
         ],
         "topics": [
           {
             "id": "t-m10-l3-efu-formula",
-            "title": "What Is EFU and How Do We Calculate It",
+            "title": L("What Is EFU and How Do We Calculate It", "EFU क्या है और इसकी गणना कैसे करें"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Combining FAT and SNF",
-                "html": "<b>EFU</b> stands for <b>Equivalent Fat Units</b>. Instead of looking at FAT alone, it combines FAT and SNF into a single number, so both are rewarded fairly. The formula is:<br><b>EFU = FAT% + (SNF% × 2/3)</b>"
+                "heading": L("Combining FAT and SNF", "FAT और SNF को मिलाना"),
+                "html": L("<b>EFU</b> stands for <b>Equivalent Fat Units</b>. Instead of looking at FAT alone, it combines FAT and SNF into a single number, so both are rewarded fairly. The formula is:<br><b>EFU = FAT% + (SNF% × 2/3)</b>", "<b>EFU</b> का मतलब है <b>इक्विवेलेंट फैट यूनिट्स</b>। केवल FAT देखने के बजाय, यह FAT और SNF को एक ही संख्या में मिला देता है, ताकि दोनों को उचित रूप से इनाम मिले। सूत्र है:<br><b>EFU = FAT% + (SNF% × 2/3)</b>")
               },
               {
                 "type": "glossary",
-                "term": "EFU (Equivalent Fat Units)",
-                "meaning": "A single number that combines a milk sample's FAT and SNF together, so both can be compared fairly against a standard reference point."
+                "term": L("EFU (Equivalent Fat Units)", "EFU (इक्विवेलेंट फैट यूनिट्स)"),
+                "meaning": L("A single number that combines a milk sample's FAT and SNF together, so both can be compared fairly against a standard reference point.", "एक ऐसी संख्या जो दूध के नमूने के FAT और SNF को एक साथ मिला देती है, ताकि दोनों की तुलना एक मानक संदर्भ बिंदु के विरुद्ध उचित रूप से की जा सके।")
               },
               {
                 "type": "text",
-                "heading": "Let's Do the Maths Together",
-                "html": "A farmer's milk has FAT 5.5% and SNF 8.6%.<br>EFU = 5.5 + (8.6 × 2/3) = 5.5 + 5.73 = <b>11.23</b>."
+                "heading": L("Let's Do the Maths Together", "आइए साथ में गणित करें"),
+                "html": L("A farmer's milk has FAT 5.5% and SNF 8.6%.<br>EFU = 5.5 + (8.6 × 2/3) = 5.5 + 5.73 = <b>11.23</b>.", "एक किसान के दूध में FAT 5.5% और SNF 8.6% है।<br>EFU = 5.5 + (8.6 × 2/3) = 5.5 + 5.73 = <b>11.23</b>।")
               },
               {
                 "type": "example",
-                "heading": "Try It Yourself",
-                "text": "Milk with FAT 6.8% and SNF 9.0%: EFU = 6.8 + (9.0 × 2/3) = 6.8 + 6.0 = 12.8. Many MPOs use 12.5 EFU as the standard base level — so this milk, at 12.8, is slightly ABOVE standard."
+                "heading": L("Try It Yourself", "खुद आज़माएं"),
+                "text": L("Milk with FAT 6.8% and SNF 9.0%: EFU = 6.8 + (9.0 × 2/3) = 6.8 + 6.0 = 12.8. Many MPOs use 12.5 EFU as the standard base level — so this milk, at 12.8, is slightly ABOVE standard.", "FAT 6.8% और SNF 9.0% वाला दूध: EFU = 6.8 + (9.0 × 2/3) = 6.8 + 6.0 = 12.8। कई MPO 12.5 EFU को मानक आधार स्तर मानते हैं — इसलिए यह दूध, 12.8 पर, मानक से थोड़ा ऊपर है।")
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "What the Base EFU Means",
-                "text": "12.5 EFU is a common standard reference point. Milk above this base is richer than standard and earns more. Milk below this base earns less."
+                "heading": L("What the Base EFU Means", "आधार EFU का मतलब क्या है"),
+                "text": L("12.5 EFU is a common standard reference point. Milk above this base is richer than standard and earns more. Milk below this base earns less.", "12.5 EFU एक सामान्य मानक संदर्भ बिंदु है। इस आधार से ऊपर का दूध मानक से ज़्यादा गाढ़ा होता है और ज़्यादा कमाता है। इस आधार से नीचे का दूध कम कमाता है।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does EFU combine into one number?",
+                "q": L("What does EFU combine into one number?", "EFU किन दो चीज़ों को एक संख्या में मिलाता है?"),
                 "options": [
-                  "FAT and the price of feed",
-                  "FAT and SNF",
-                  "The farmer's age and animal breed",
-                  "Season and distance to the MPP"
+                  L("FAT and the price of feed", "FAT और चारे की कीमत"),
+                  L("FAT and SNF", "FAT और SNF"),
+                  L("The farmer's age and animal breed", "किसान की उम्र और पशु की नस्ल"),
+                  L("Season and distance to the MPP", "मौसम और MPP की दूरी")
                 ],
                 "answer": 1,
-                "explain": "EFU (Equivalent Fat Units) combines a milk sample's FAT and SNF into a single number."
+                "explain": L("EFU (Equivalent Fat Units) combines a milk sample's FAT and SNF into a single number.", "EFU (इक्विवेलेंट फैट यूनिट्स) दूध के नमूने के FAT और SNF को एक ही संख्या में मिलाता है।")
               },
               {
                 "type": "mcq",
-                "q": "Milk has FAT 4% and SNF 9%. Using EFU = FAT + (SNF × 2/3), what is its EFU?",
+                "q": L("Milk has FAT 4% and SNF 9%. Using EFU = FAT + (SNF × 2/3), what is its EFU?", "दूध में FAT 4% और SNF 9% है। EFU = FAT + (SNF × 2/3) का उपयोग करके, इसका EFU क्या है?"),
                 "options": [
-                  "4",
-                  "9",
-                  "10",
-                  "13"
+                  L("4", "4"),
+                  L("9", "9"),
+                  L("10", "10"),
+                  L("13", "13")
                 ],
                 "answer": 2,
-                "explain": "EFU = 4 + (9 × 2/3) = 4 + 6 = 10."
+                "explain": L("EFU = 4 + (9 × 2/3) = 4 + 6 = 10.", "EFU = 4 + (9 × 2/3) = 4 + 6 = 10।")
               }
             ]
           },
           {
             "id": "t-m10-l3-efu-price",
-            "title": "Using EFU to Work Out the Price",
+            "title": L("Using EFU to Work Out the Price", "कीमत निकालने के लिए EFU का उपयोग"),
             "teach": [
               {
                 "type": "text",
-                "heading": "From EFU to Rupees",
-                "html": "Once we know a farmer's EFU, we compare it to the base EFU to work out the price. The formula is:<br><b>Price per litre = (Farmer's EFU ÷ Base EFU) × Declared Rate</b>"
+                "heading": L("From EFU to Rupees", "EFU से रुपयों तक"),
+                "html": L("Once we know a farmer's EFU, we compare it to the base EFU to work out the price. The formula is:<br><b>Price per litre = (Farmer's EFU ÷ Base EFU) × Declared Rate</b>", "एक बार जब हमें किसान का EFU पता चल जाता है, तो हम कीमत निकालने के लिए इसकी तुलना आधार EFU से करते हैं। सूत्र है:<br><b>प्रति लीटर कीमत = (किसान का EFU ÷ आधार EFU) × घोषित दर</b>")
               },
               {
                 "type": "glossary",
-                "term": "Declared Rate",
-                "meaning": "The price per litre the MPO announces for milk that is exactly at the base EFU (for example, 12.5 EFU). It is the reference price used in the formula."
+                "term": L("Declared Rate", "घोषित दर"),
+                "meaning": L("The price per litre the MPO announces for milk that is exactly at the base EFU (for example, 12.5 EFU). It is the reference price used in the formula.", "वह प्रति लीटर कीमत जो MPO उस दूध के लिए घोषित करता है जो ठीक आधार EFU (उदाहरण के लिए, 12.5 EFU) पर है। यह सूत्र में उपयोग की जाने वाली संदर्भ कीमत है।")
               },
               {
                 "type": "text",
-                "heading": "Let's Do the Maths Together",
-                "html": "A farmer's milk has FAT 4.5% and SNF 8.2%. First, find the EFU: EFU = 4.5 + (8.2 × 2/3) = 4.5 + 5.47 = 9.97.<br>The declared rate (for 12.5 EFU) is ₹60 per litre.<br>Price = (9.97 ÷ 12.5) × 60 = <b>₹47.86 per litre</b>."
+                "heading": L("Let's Do the Maths Together", "आइए साथ में गणित करें"),
+                "html": L("A farmer's milk has FAT 4.5% and SNF 8.2%. First, find the EFU: EFU = 4.5 + (8.2 × 2/3) = 4.5 + 5.47 = 9.97.<br>The declared rate (for 12.5 EFU) is ₹60 per litre.<br>Price = (9.97 ÷ 12.5) × 60 = <b>₹47.86 per litre</b>.", "एक किसान के दूध में FAT 4.5% और SNF 8.2% है। पहले, EFU निकालें: EFU = 4.5 + (8.2 × 2/3) = 4.5 + 5.47 = 9.97।<br>घोषित दर (12.5 EFU के लिए) ₹60 प्रति लीटर है।<br>कीमत = (9.97 ÷ 12.5) × 60 = <b>₹47.86 प्रति लीटर</b>।")
               },
               {
                 "type": "example",
-                "heading": "Try It Yourself",
-                "text": "Milk with FAT 6.0% and SNF 8.8%, declared rate ₹58 per litre: EFU = 6.0 + (8.8 × 2/3) = 6.0 + 5.87 = 11.87. Price = (11.87 ÷ 12.5) × 58 = ₹55.05 per litre."
+                "heading": L("Try It Yourself", "खुद आज़माएं"),
+                "text": L("Milk with FAT 6.0% and SNF 8.8%, declared rate ₹58 per litre: EFU = 6.0 + (8.8 × 2/3) = 6.0 + 5.87 = 11.87. Price = (11.87 ÷ 12.5) × 58 = ₹55.05 per litre.", "FAT 6.0% और SNF 8.8% वाला दूध, घोषित दर ₹58 प्रति लीटर: EFU = 6.0 + (8.8 × 2/3) = 6.0 + 5.87 = 11.87। कीमत = (11.87 ÷ 12.5) × 58 = ₹55.05 प्रति लीटर।")
               },
               {
                 "type": "ledger",
-                "heading": "What Happens When SNF Improves?",
+                "heading": L("What Happens When SNF Improves?", "SNF सुधरने पर क्या होता है?"),
                 "rows": [
                   {
-                    "label": "Price at old SNF (FAT 5.5%, SNF 8.2%)",
+                    "label": L("Price at old SNF (FAT 5.5%, SNF 8.2%)", "पुराने SNF पर कीमत (FAT 5.5%, SNF 8.2%)"),
                     "amount": "₹52.66"
                   },
                   {
-                    "label": "Extra earned per litre from better SNF (8.9%)",
+                    "label": L("Extra earned per litre from better SNF (8.9%)", "बेहतर SNF (8.9%) से प्रति लीटर अतिरिक्त कमाई"),
                     "amount": "+₹2.20"
                   }
                 ],
                 "total": {
-                  "label": "New price per litre (FAT 5.5%, SNF 8.9%)",
+                  "label": L("New price per litre (FAT 5.5%, SNF 8.9%)", "नई प्रति लीटर कीमत (FAT 5.5%, SNF 8.9%)"),
                   "amount": "₹54.86"
                 }
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why Improving SNF Pays Off",
-                "text": "Improving SNF — through better feed and animal care — raises the EFU even if FAT stays exactly the same. That means more income for the farmer, without needing a different animal."
+                "heading": L("Why Improving SNF Pays Off", "SNF सुधारने का फायदा क्यों मिलता है"),
+                "text": L("Improving SNF — through better feed and animal care — raises the EFU even if FAT stays exactly the same. That means more income for the farmer, without needing a different animal.", "बेहतर चारे और पशु देखभाल के ज़रिए SNF सुधारने से EFU बढ़ता है, भले ही FAT बिल्कुल वही रहे। इसका मतलब है किसान के लिए ज़्यादा आय, बिना किसी दूसरे पशु की ज़रूरत के।")
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Milk has FAT 6.0% and SNF 8.8%, and the declared rate is ₹58 per litre. What is the approximate price per litre?",
+                "q": L("Milk has FAT 6.0% and SNF 8.8%, and the declared rate is ₹58 per litre. What is the approximate price per litre?", "दूध में FAT 6.0% और SNF 8.8% है, और घोषित दर ₹58 प्रति लीटर है। लगभग प्रति लीटर कीमत क्या है?"),
                 "options": [
-                  "₹48",
-                  "₹55",
-                  "₹58",
-                  "₹65"
+                  L("₹48", "₹48"),
+                  L("₹55", "₹55"),
+                  L("₹58", "₹58"),
+                  L("₹65", "₹65")
                 ],
                 "answer": 1,
-                "explain": "EFU = 6.0 + (8.8 × 2/3) = 11.87. Price = (11.87 ÷ 12.5) × 58 ≈ ₹55."
+                "explain": L("EFU = 6.0 + (8.8 × 2/3) = 11.87. Price = (11.87 ÷ 12.5) × 58 ≈ ₹55.", "EFU = 6.0 + (8.8 × 2/3) = 11.87। कीमत = (11.87 ÷ 12.5) × 58 ≈ ₹55।")
               },
               {
                 "type": "truefalse",
-                "q": "Improving SNF, even if FAT stays the same, can increase a farmer's price per litre under the EFU method.",
+                "q": L("Improving SNF, even if FAT stays the same, can increase a farmer's price per litre under the EFU method.", "EFU तरीके के तहत, FAT वही रहने पर भी SNF सुधारने से किसान की प्रति लीटर कीमत बढ़ सकती है।"),
                 "answer": true,
-                "explain": "Yes — because EFU includes SNF too, a higher SNF raises the EFU, and therefore the price, even without any change in FAT."
+                "explain": L("Yes — because EFU includes SNF too, a higher SNF raises the EFU, and therefore the price, even without any change in FAT.", "हां — क्योंकि EFU में SNF भी शामिल है, ज़्यादा SNF से EFU बढ़ता है, और इसलिए कीमत भी बढ़ती है, भले ही FAT में कोई बदलाव न हो।")
               }
             ]
           }
@@ -7824,28 +7824,28 @@ export const MODULES = [
             {
               "topicId": "t-m10-l3-efu-formula",
               "type": "mcq",
-              "q": "What is the formula for EFU?",
+              "q": L("What is the formula for EFU?", "EFU का सूत्र क्या है?"),
               "options": [
-                "EFU = FAT × SNF",
-                "EFU = FAT + (SNF × 2/3)",
-                "EFU = FAT − SNF",
-                "EFU = SNF ÷ FAT"
+                L("EFU = FAT × SNF", "EFU = FAT × SNF"),
+                L("EFU = FAT + (SNF × 2/3)", "EFU = FAT + (SNF × 2/3)"),
+                L("EFU = FAT − SNF", "EFU = FAT − SNF"),
+                L("EFU = SNF ÷ FAT", "EFU = SNF ÷ FAT")
               ],
               "answer": 1,
-              "explain": "EFU = FAT% + (SNF% × 2/3)."
+              "explain": L("EFU = FAT% + (SNF% × 2/3).", "EFU = FAT% + (SNF% × 2/3)।")
             },
             {
               "topicId": "t-m10-l3-efu-price",
               "type": "mcq",
-              "q": "Under the EFU method, what happens to a farmer's price if their milk's EFU is higher than the base EFU?",
+              "q": L("Under the EFU method, what happens to a farmer's price if their milk's EFU is higher than the base EFU?", "EFU तरीके के तहत, अगर किसान के दूध का EFU आधार EFU से ज़्यादा है, तो उसकी कीमत का क्या होता है?"),
               "options": [
-                "The price is lower than the declared rate",
-                "The price is exactly the declared rate no matter what",
-                "The price is higher than the declared rate",
-                "EFU has no effect on price"
+                L("The price is lower than the declared rate", "कीमत घोषित दर से कम होती है"),
+                L("The price is exactly the declared rate no matter what", "कीमत हमेशा ठीक घोषित दर के बराबर होती है"),
+                L("The price is higher than the declared rate", "कीमत घोषित दर से ज़्यादा होती है"),
+                L("EFU has no effect on price", "EFU का कीमत पर कोई प्रभाव नहीं पड़ता")
               ],
               "answer": 2,
-              "explain": "When EFU is above the base (for example, above 12.5), the price paid is higher than the declared rate."
+              "explain": L("When EFU is above the base (for example, above 12.5), the price paid is higher than the declared rate.", "जब EFU आधार से ऊपर होता है (उदाहरण के लिए, 12.5 से ऊपर), तो भुगतान की गई कीमत घोषित दर से ज़्यादा होती है।")
             }
           ]
         }
