@@ -104,6 +104,7 @@ const UI = {
     "आपने कुछ चीज़ें फिर से देखीं और अब यह पाठ अच्छी तरह समझते हैं।"
   ),
   viewCertificate: L("View Certificate", "प्रमाण पत्र देखें"),
+  moduleCompleteButton: L("View Module Summary →", "मॉड्यूल सारांश देखें →"),
   continueNextLesson: L("Continue to Next Lesson →", "अगले पाठ पर जाएँ →"),
   backToModule: L("Back to Module", "मॉड्यूल पर वापस जाएँ"),
   moduleCompleteTitle: L("Module {n} Complete!", "मॉड्यूल {n} पूरा हुआ!"),
@@ -233,6 +234,51 @@ const UI = {
   adminLessonsCompleteLabel: L("{completed}/{total} lessons", "{completed}/{total} पाठ"),
   adminOverallLabel: L("Overall completion", "कुल पूर्णता"),
   adminSavedNote: L("Saved.", "सहेजा गया।"),
+  adminLessonStatusComplete: L("✓ Completed", "✓ पूर्ण"),
+  adminLessonStatusNotStarted: L("Not started", "शुरू नहीं हुआ"),
+  adminLessonStatusLocked: L("🔒 Locked", "🔒 बंद"),
+  adminLessonScoreLabel: L("Best score {score}%", "सर्वश्रेष्ठ स्कोर {score}%"),
+  adminLessonCompletedOnLabel: L("Completed {date}", "{date} को पूर्ण"),
+  adminExpandModuleHint: L("Click a module to see lesson-by-lesson progress", "पाठ-दर-पाठ प्रगति देखने के लिए किसी मॉड्यूल पर क्लिक करें"),
+
+  // Certificates
+  myCertificatesNav: L("🎓 Certificates", "🎓 प्रमाण पत्र"),
+  certificatesPageTitle: L("🎓 My Certificates", "🎓 मेरे प्रमाण पत्र"),
+  certificatesPageTagline: L(
+    "Every lesson you complete earns its own certificate. Finish all 12 modules to earn the full course certificate.",
+    "आप जो भी पाठ पूरा करते हैं उसका अपना प्रमाण पत्र मिलता है। पूरे पाठ्यक्रम का प्रमाण पत्र पाने के लिए सभी 12 मॉड्यूल पूरे करें।"
+  ),
+  certCourseCardTitle: L("Course Completion Certificate", "पाठ्यक्रम पूर्णता प्रमाण पत्र"),
+  certCourseCardEarnedText: L("You've completed every lesson in every module. Congratulations! 🎉", "आपने हर मॉड्यूल का हर पाठ पूरा कर लिया है। बधाई हो! 🎉"),
+  certCourseCardLockedText: L("{done}/{total} lessons completed — finish them all to earn this certificate.", "{done}/{total} पाठ पूरे — यह प्रमाण पत्र पाने के लिए सभी पूरे करें।"),
+  certLessonEarnedBadge: L("🎓 Earned", "🎓 अर्जित"),
+  certLessonLockedBadge: L("Not yet earned", "अभी अर्जित नहीं"),
+  certViewButton: L("View Certificate", "प्रमाण पत्र देखें"),
+  certNotEarnedTitle: L("Certificate Not Yet Earned", "प्रमाण पत्र अभी अर्जित नहीं हुआ"),
+  certNotEarnedLessonText: L("Complete this lesson's quiz to earn its certificate.", "इस पाठ का प्रमाण पत्र पाने के लिए इसका क्विज़ पूरा करें।"),
+  certNotEarnedCourseText: L(
+    "Complete every lesson in every module to earn the full course completion certificate.",
+    "पूरे पाठ्यक्रम का प्रमाण पत्र पाने के लिए हर मॉड्यूल का हर पाठ पूरा करें।"
+  ),
+  certPrintButton: L("🖨 Print / Save as PDF", "🖨 प्रिंट करें / PDF सहेजें"),
+  certIssuerName: L("Harith Pradesh Learning Academy", "हरित प्रदेश लर्निंग अकादमी"),
+  certTitleLesson: L("Certificate of Completion", "पूर्णता प्रमाण पत्र"),
+  certTitleCourse: L("Certificate of Completion", "पूर्णता प्रमाण पत्र"),
+  certPresentedTo: L("This certificate is proudly presented to", "यह प्रमाण पत्र गर्व के साथ प्रदान किया जाता है"),
+  certLessonBody: L("for successfully completing the lesson", "पाठ को सफलतापूर्वक पूरा करने के लिए"),
+  certModuleOfBody: L("in Module {n}: {title}", "मॉड्यूल {n}: {title} में"),
+  certCourseBody: L(
+    "for successfully completing the full 12-module employee training program",
+    "पूरे 12-मॉड्यूल कर्मचारी प्रशिक्षण कार्यक्रम को सफलतापूर्वक पूरा करने के लिए"
+  ),
+  certCourseProgram: L(
+    "Harith Pradesh Milk Producer Organisation — Employee Training Program",
+    "हरित प्रदेश मिल्क प्रोड्यूसर ऑर्गनाइज़ेशन — कर्मचारी प्रशिक्षण कार्यक्रम"
+  ),
+  certScoreLabel: L("Score: {score}%", "स्कोर: {score}%"),
+  certDateLabel: L("Date: {date}", "दिनांक: {date}"),
+  certIdLabel: L("Certificate ID: {id}", "प्रमाण पत्र आईडी: {id}"),
+  certModulesLabel: L("Modules completed: {n}/{total}", "पूर्ण मॉड्यूल: {n}/{total}"),
 };
 
 export function ui(key, lang, vars) {

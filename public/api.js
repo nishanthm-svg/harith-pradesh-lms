@@ -179,12 +179,14 @@ async function quizAttempt(moduleId, lessonId, scorePercent, passed) {
   const ref = doc(db, "progress", fbUser.uid);
   const snap = await getDoc(ref);
   const data = snap.exists() ? snap.data() : {};
-  const existing = (data[moduleId] && data[moduleId][lessonId]) || { completed: false, bestScore: 0, attempts: 0 };
+  const existing = (data[moduleId] && data[moduleId][lessonId]) || { completed: false, bestScore: 0, attempts: 0, completedAt: null };
+  const justCompleted = !existing.completed && !!passed;
   const newState = {
     completed: existing.completed || !!passed,
     bestScore: Math.max(existing.bestScore || 0, scorePercent),
     attempts: (existing.attempts || 0) + 1,
     lastAttemptAt: new Date().toISOString(),
+    completedAt: existing.completedAt || (justCompleted ? new Date().toISOString() : null),
   };
   if (snap.exists()) {
     await updateDoc(ref, { [`${moduleId}.${lessonId}`]: newState });

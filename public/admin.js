@@ -176,12 +176,43 @@ function renderDetailContent(data, ctx) {
       const lessonStates = mod.lessons.map((lesson) => (progress[mod.id] && progress[mod.id][lesson.id]) || null);
       const completed = lessonStates.filter((s) => s && s.completed).length;
       const pct = mod.lessons.length ? Math.round((completed / mod.lessons.length) * 100) : 0;
+
+      const lessonRows = mod.lessons
+        .map((lesson, idx) => {
+          const state = (progress[mod.id] && progress[mod.id][lesson.id]) || null;
+          const prevState = idx > 0 ? (progress[mod.id] && progress[mod.id][mod.lessons[idx - 1].id]) || null : null;
+          const locked = idx > 0 && !(prevState && prevState.completed);
+          let statusHtml;
+          if (state && state.completed) {
+            const completedOn = formatDate(state.completedAt || state.lastAttemptAt, lang);
+            statusHtml = `
+              <span class="status-pill active">${escapeHtml(u("adminLessonStatusComplete"))}</span>
+              <span class="admin-lesson-extra">${escapeHtml(u("adminLessonScoreLabel", { score: state.bestScore }))}${
+              completedOn ? " · " + escapeHtml(u("adminLessonCompletedOnLabel", { date: completedOn })) : ""
+            }</span>`;
+          } else if (locked) {
+            statusHtml = `<span class="status-pill inactive">${escapeHtml(u("adminLessonStatusLocked"))}</span>`;
+          } else {
+            statusHtml = `<span class="status-pill inactive">${escapeHtml(u("adminLessonStatusNotStarted"))}</span>`;
+          }
+          return `
+            <div class="admin-lesson-row">
+              <div class="admin-lesson-title">${escapeHtml(t(lesson.title))}</div>
+              <div class="admin-lesson-status">${statusHtml}</div>
+            </div>`;
+        })
+        .join("");
+
       return `
-        <div class="admin-module-progress-row">
-          <div class="label">${escapeHtml(u("adminModuleLabel", { n: mod.number }))}</div>
-          <div class="mini-bar"><div style="width:${pct}%"></div></div>
-          <div class="count">${escapeHtml(u("adminLessonsCompleteLabel", { completed, total: mod.lessons.length }))}</div>
-        </div>`;
+        <details class="admin-module-details">
+          <summary class="admin-module-progress-row">
+            <span class="admin-chevron">›</span>
+            <div class="label">${escapeHtml(u("adminModuleLabel", { n: mod.number }))}: ${escapeHtml(t(mod.title))}</div>
+            <div class="mini-bar"><div style="width:${pct}%"></div></div>
+            <div class="count">${escapeHtml(u("adminLessonsCompleteLabel", { completed, total: mod.lessons.length }))}</div>
+          </summary>
+          <div class="admin-lesson-list">${lessonRows}</div>
+        </details>`;
     })
     .join("");
 
@@ -196,6 +227,7 @@ function renderDetailContent(data, ctx) {
         <div class="ring" style="--pct:${employee.overallPercent}" data-label="${employee.overallPercent}%"></div>
         <div style="font-weight:700;">${escapeHtml(u("adminOverallLabel"))}: ${employee.completedLessons}/${employee.totalLessons}</div>
       </div>
+      <div class="admin-expand-hint">${escapeHtml(u("adminExpandModuleHint"))}</div>
       ${moduleRows}
     </div>
     <div class="btn-row">

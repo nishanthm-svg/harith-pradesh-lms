@@ -1,21 +1,22 @@
 import { MODULES, getModule, getLesson, getLessonIndex } from "./data.js";
-import { getLessonState, recordQuizAttempt, isLessonUnlocked, getModuleProgress, setProgressCache } from "./progress-client.js";
+import { getLessonState, recordQuizAttempt, isLessonUnlocked, getModuleProgress, getOverallProgress, setProgressCache } from "./progress-client.js";
 import { LANGUAGES, getLang, setLang, tr, ui } from "./i18n.js";
 import { api } from "./api.js";
 import * as admin from "./admin.js";
+import * as certificates from "./certificates.js";
 
 const root = document.getElementById("app");
+
+const ICONS = {
+  check: "✓",
+  lock: "🔒",
+};
 
 // Lets the admin portal's login screen accept a short username instead of
 // a full email address — resolved client-side before calling Firebase Auth,
 // which itself only ever sees the real, registered email.
 const ADMIN_USERNAME_ALIASES = {
   admin: "nishanth.m@shreejamilk.com",
-};
-
-const ICONS = {
-  check: "✓",
-  lock: "🔒",
 };
 
 const TOPIC_EMOJIS = ["🥛", "🐄", "🌍", "📈", "🤝", "🏆", "🌾", "💡"];
@@ -269,8 +270,12 @@ export function renderTopbar(context) {
     currentUser && currentUser.role === "admin"
       ? `<button class="admin-nav-btn" data-nav="#/admin">🧑‍💼 ${escapeHtml(u("adminNavLink"))}</button>`
       : "";
+  const certLink =
+    currentUser && currentUser.role !== "admin"
+      ? `<button class="admin-nav-btn" data-nav="#/certificates">${escapeHtml(u("myCertificatesNav"))}</button>`
+      : "";
   return `
-    <div class="topbar">
+    <div class="topbar no-print">
       ${
         showBack
           ? `<button class="back-btn" data-nav="${backHash}">${u("backButton")}</button>`
@@ -278,6 +283,7 @@ export function renderTopbar(context) {
       }
       ${showBack ? `<div class="brand" data-nav="#/dashboard" style="margin-left:4px;"><span class="brand-icon"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" class="brand-logo-img" /></span> ${escapeHtml(title || u("brandName"))}</div>` : ""}
       <div class="spacer"></div>
+      ${certLink}
       ${adminLink}
       <button class="lang-switch-btn" data-nav="#/language">🌐 ${escapeHtml((LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0]).native)}</button>
       <button class="logout-btn" id="logout-btn">↪ ${escapeHtml(u("logoutButton"))}</button>
@@ -337,10 +343,19 @@ function renderDashboard() {
     `;
   }).join("");
 
-  const activeModules = MODULES.filter((m) => m.available);
-  const totalLessons = activeModules.reduce((sum, m) => sum + (m.lessons?.length || 0), 0);
-  const totalDone = activeModules.reduce((sum, m) => sum + getModuleProgress(m).completed, 0);
-  const overallPct = totalLessons ? Math.round((totalDone / totalLessons) * 100) : 0;
+  const overall = getOverallProgress(MODULES);
+
+  const courseCertBanner = overall.isComplete
+    ? `
+    <div class="course-cert-banner" data-nav="#/certificate/course">
+      <div class="icon">🏆</div>
+      <div class="text">
+        <h3>${u("certCourseCardTitle")}</h3>
+        <p>${u("certCourseCardEarnedText")}</p>
+      </div>
+      <button type="button" class="btn btn-success" data-nav="#/certificate/course">${u("certViewButton")}</button>
+    </div>`
+    : "";
 
   return `
     ${renderTopbar({ showBack: false })}
@@ -350,12 +365,15 @@ function renderDashboard() {
         <p>${u("dashboardTagline")}</p>
       </div>
       <div class="overall-progress">
-        <div class="ring" style="--pct:${overallPct}" data-label="${overallPct}%"></div>
+        <div class="ring" style="--pct:${overall.percent}" data-label="${overall.percent}%"></div>
         <div>
-          <div style="font-weight:700; font-size:15px;">${u("lessonsCompletedCount", { done: totalDone, total: totalLessons })}</div>
+          <div style="font-weight:700; font-size:15px;">${u("lessonsCompletedCount", { done: overall.done, total: overall.total })}</div>
           <div style="font-size:13px; color:var(--gray-500);">${u("progressHint")}</div>
         </div>
+        <div class="spacer"></div>
+        <button type="button" class="btn btn-outline" data-nav="#/certificates">${u("myCertificatesNav")}</button>
       </div>
+      ${courseCertBanner}
       <div class="module-grid">${cards}</div>
       <div class="progress-note">${u("progressNote")}</div>
     </div>
@@ -787,14 +805,16 @@ function runLessonFlow(moduleId, lesson) {
     const nextLesson = mod.lessons[lessonIdx + 1];
     setDots(topics.length);
 
-    let actionsHtml;
+    let primaryHtml;
     if (lesson.finalQuiz.isFinal) {
-      actionsHtml = `<button class="btn btn-success" data-nav="#/module/${moduleId}/complete">${u("viewCertificate")}</button>`;
+      primaryHtml = `<button class="btn btn-primary" data-nav="#/module/${moduleId}/complete">${u("moduleCompleteButton")}</button>`;
     } else if (nextLesson) {
-      actionsHtml = `<button class="btn btn-primary" data-nav="#/module/${moduleId}/lesson/${nextLesson.id}">${u("continueNextLesson")}</button>`;
+      primaryHtml = `<button class="btn btn-primary" data-nav="#/module/${moduleId}/lesson/${nextLesson.id}">${u("continueNextLesson")}</button>`;
     } else {
-      actionsHtml = `<button class="btn btn-primary" data-nav="#/module/${moduleId}">${u("backToModule")}</button>`;
+      primaryHtml = `<button class="btn btn-primary" data-nav="#/module/${moduleId}">${u("backToModule")}</button>`;
     }
+    const certHtml = `<button class="btn btn-success" data-nav="#/certificate/${moduleId}/${lesson.id}">🎓 ${u("viewCertificate")}</button>`;
+    const actionsHtml = `${certHtml}${primaryHtml}`;
 
     flowEl.innerHTML = `
       <div class="quiz-section">
@@ -859,7 +879,8 @@ function renderCompletionPage(moduleId) {
     navigate("#/dashboard");
     return "";
   }
-  const nextMod = MODULES.find((m) => m.number === mod.number + 1);
+  const finalLesson = mod.lessons[mod.lessons.length - 1];
+  const overall = getOverallProgress(MODULES);
   return `
     ${renderTopbar({ showBack: true, backHash: `#/module/${moduleId}`, title: t(mod.title) })}
     <div class="page page-narrow">
@@ -869,11 +890,24 @@ function renderCompletionPage(moduleId) {
         <h2>${u("moduleCompleteTitle", { n: mod.number })}</h2>
         <p>${u("moduleCompleteText", { title: t(mod.title) })}</p>
         <div class="btn-row" style="justify-content:center;">
+          <button class="btn btn-success" data-nav="#/certificate/${moduleId}/${finalLesson.id}">🎓 ${u("viewCertificate")}</button>
           <button class="btn btn-outline" style="background:white;" data-nav="#/dashboard">${u("backToDashboard")}</button>
-          <button class="btn btn-success" data-nav="#/module/${moduleId}">${u("reviewModule")}</button>
+          <button class="btn btn-outline" style="background:white;" data-nav="#/module/${moduleId}">${u("reviewModule")}</button>
         </div>
       </div>
-      ${nextMod ? `<p style="text-align:center; color:var(--gray-500); margin-top:18px; font-size:14px;">${u("nextModuleComingSoon", { n: nextMod.number, title: t(nextMod.title) })}</p>` : ""}
+      ${
+        overall.isComplete
+          ? `
+      <div class="course-cert-banner" data-nav="#/certificate/course" style="margin-top:18px;">
+        <div class="icon">🏆</div>
+        <div class="text">
+          <h3>${u("certCourseCardTitle")}</h3>
+          <p>${u("certCourseCardEarnedText")}</p>
+        </div>
+        <button type="button" class="btn btn-success" data-nav="#/certificate/course">${u("certViewButton")}</button>
+      </div>`
+          : ""
+      }
     </div>
   `;
 }
@@ -894,6 +928,12 @@ function parseHash() {
   if (parts[0] === "change-password") return { route: "change-password" };
   if (parts[0] === "dashboard") return { route: "dashboard" };
   if (parts[0] === "language") return { route: "language" };
+  if (parts[0] === "certificates") return { route: "certificates" };
+  if (parts[0] === "certificate") {
+    if (parts[1] === "course") return { route: "certificate-course" };
+    if (parts[1] && parts[2]) return { route: "certificate-lesson", moduleId: parts[1], lessonId: parts[2] };
+    return { route: "certificates" };
+  }
   if (parts[0] === "admin") {
     if (parts[1] === "employee" && parts[2]) return { route: "admin-employee", employeeId: parts[2] };
     if (parts[1] === "new-employee") return { route: "admin-new-employee" };
@@ -953,6 +993,12 @@ function render() {
     return;
   }
 
+  // Certificate routes are employee-only (admins have no lesson progress of their own).
+  if ((parsed.route === "certificates" || parsed.route === "certificate-lesson" || parsed.route === "certificate-course") && currentUser.role === "admin") {
+    navigate("#/admin");
+    return;
+  }
+
   // Force the language picker until a language is chosen.
   if (!lang && parsed.route !== "language") {
     root.innerHTML = renderLanguagePicker(false);
@@ -985,6 +1031,18 @@ function render() {
     }
     case "complete":
       html = renderCompletionPage(parsed.moduleId);
+      break;
+    case "certificates":
+      html = certificates.renderCertificatesList({ t, u, lang, escapeHtml, renderTopbar, navigate, currentUser });
+      afterRender = () => certificates.wireCertificatesList();
+      break;
+    case "certificate-lesson":
+      html = certificates.renderCertificateLesson(parsed.moduleId, parsed.lessonId, { t, u, lang, escapeHtml, renderTopbar, navigate, currentUser });
+      afterRender = () => certificates.wireCertificateLesson();
+      break;
+    case "certificate-course":
+      html = certificates.renderCertificateCourse({ t, u, lang, escapeHtml, renderTopbar, navigate, currentUser });
+      afterRender = () => certificates.wireCertificateCourse();
       break;
     case "admin":
       html = admin.renderAdminDashboard({ t, u, lang, escapeHtml, renderTopbar });

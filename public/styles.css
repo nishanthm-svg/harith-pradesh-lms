@@ -179,7 +179,7 @@ button {
   object-fit: contain;
 }
 
-.topbar .spacer {
+.spacer {
   flex: 1;
 }
 
@@ -402,6 +402,39 @@ button {
   display: flex;
   align-items: center;
   gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Course-completion certificate banner (dashboard) ---------- */
+.course-cert-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, var(--blue-900), var(--blue-600));
+  color: white;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.course-cert-banner .icon {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+.course-cert-banner .text {
+  flex: 1;
+}
+.course-cert-banner h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.course-cert-banner p {
+  margin: 0;
+  font-size: 13.5px;
+  opacity: 0.92;
+}
+.course-cert-banner .btn {
+  flex-shrink: 0;
 }
 
 .ring {
@@ -1683,6 +1716,67 @@ button {
   color: var(--gray-500);
 }
 
+/* ---------- Admin: expandable per-lesson checklist ---------- */
+.admin-expand-hint {
+  font-size: 12.5px;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+.admin-module-details {
+  border-bottom: 1px solid var(--gray-100);
+}
+.admin-module-details:last-child {
+  border-bottom: none;
+}
+.admin-module-details summary {
+  cursor: pointer;
+  list-style: none;
+  border-bottom: none;
+}
+.admin-module-details summary::-webkit-details-marker {
+  display: none;
+}
+.admin-chevron {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 14px;
+  color: var(--gray-500);
+  transition: transform 0.15s ease;
+}
+.admin-module-details[open] .admin-chevron {
+  transform: rotate(90deg);
+}
+.admin-lesson-list {
+  padding: 2px 0 14px 28px;
+}
+.admin-lesson-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--gray-100);
+}
+.admin-lesson-row:last-child {
+  border-bottom: none;
+}
+.admin-lesson-title {
+  font-size: 13.5px;
+  color: var(--gray-700);
+}
+.admin-lesson-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.admin-lesson-extra {
+  font-size: 12px;
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
 .admin-form-box {
   background: white;
   border-radius: var(--radius);
@@ -1718,6 +1812,228 @@ button {
   color: var(--gray-500);
 }
 
+/* ---------- Certificates list page ---------- */
+.cert-list-course {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.cert-list-course.earned {
+  background: linear-gradient(135deg, var(--blue-900), var(--blue-600));
+  color: white;
+}
+.cert-list-course.locked {
+  background: white;
+  box-shadow: var(--shadow);
+  color: var(--gray-700);
+}
+.cert-list-course-icon {
+  font-size: 34px;
+  flex-shrink: 0;
+}
+.cert-list-course-info {
+  flex: 1;
+  min-width: 200px;
+}
+.cert-list-course-info h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.cert-list-course.earned .cert-list-course-info p {
+  margin: 0;
+  font-size: 13.5px;
+  opacity: 0.92;
+}
+.cert-list-course.locked .cert-list-course-info p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--gray-500);
+}
+.cert-list-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cert-list-module {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 4px 18px;
+}
+.cert-list-module summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.cert-list-module summary::-webkit-details-marker {
+  display: none;
+}
+.cert-list-module summary .label {
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--blue-900);
+}
+.cert-list-module summary .count {
+  font-size: 12.5px;
+  color: var(--gray-500);
+  flex-shrink: 0;
+}
+.cert-list-lessons {
+  padding: 0 0 12px;
+}
+.cert-list-lesson-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  border-top: 1px dashed var(--gray-100);
+}
+.cert-list-lesson-title {
+  font-size: 13.5px;
+  color: var(--gray-700);
+}
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12.5px;
+}
+
+/* ---------- Certificate (view + print) ---------- */
+.cert-toolbar {
+  display: flex;
+  justify-content: center;
+  margin: 18px auto;
+  max-width: 800px;
+}
+.cert-page {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0 18px;
+}
+.cert-card {
+  position: relative;
+  background: #fffdf7;
+  border: 2px solid var(--blue-600);
+  border-radius: 10px;
+  padding: 52px 40px 38px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+.cert-corner {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-color: var(--blue-600);
+  border-style: solid;
+  border-width: 0;
+}
+.cert-corner-tl {
+  top: 10px;
+  left: 10px;
+  border-top-width: 3px;
+  border-left-width: 3px;
+}
+.cert-corner-tr {
+  top: 10px;
+  right: 10px;
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+.cert-corner-bl {
+  bottom: 10px;
+  left: 10px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+.cert-corner-br {
+  bottom: 10px;
+  right: 10px;
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+}
+.cert-logo {
+  margin-bottom: 8px;
+}
+.cert-logo img {
+  height: 44px;
+  width: auto;
+}
+.cert-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--blue-700);
+  margin-bottom: 6px;
+}
+.cert-seal {
+  font-size: 34px;
+  margin-bottom: 4px;
+}
+.cert-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  color: var(--blue-900);
+  margin: 0 0 18px;
+  letter-spacing: 0.02em;
+}
+.cert-presented {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+.cert-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--blue-800);
+  border-bottom: 2px solid var(--blue-100);
+  display: inline-block;
+  padding: 0 12px 10px;
+  margin-bottom: 18px;
+}
+.cert-body {
+  font-size: 15px;
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.cert-program {
+  font-size: 12.5px;
+  color: var(--gray-500);
+  font-style: italic;
+  margin-bottom: 22px;
+}
+.cert-meta-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  border-top: 1px dashed var(--gray-300);
+  padding-top: 14px;
+  margin-bottom: 10px;
+}
+.cert-meta-item {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue-700);
+}
+.cert-id {
+  font-size: 11px;
+  color: var(--gray-500);
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.03em;
+}
+
 @media (max-width: 520px) {
   .bar-row .bar-label {
     width: 84px;
@@ -1726,4 +2042,26 @@ button {
   .page {
     padding: 18px 12px 50px;
   }
+}
+
+/* ---------- Print (certificates) ---------- */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .cert-page {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .cert-card {
+    box-shadow: none;
+    border: 2px solid var(--blue-900);
+  }
+}
+@page {
+  margin: 1.2cm;
 }
