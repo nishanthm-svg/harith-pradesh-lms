@@ -1570,192 +1570,279 @@ export const MODULES = [
     "id": "m2",
     "number": 2,
     "title": L("Rationale of MPO", "MPO का औचित्य"),
-    "subtitle": "Understand why the MPO model exists, how it is different from the old cooperative system, and how it is organised — from the farmer with a milk can all the way to the Board of Directors.",
+    "subtitle": L(
+      "Understand why the MPO model exists, how it is different from the old cooperative system, and how it is organised — from the farmer with a milk can all the way to the Board of Directors.",
+      "जानिए MPO मॉडल क्यों बना है, यह पुरानी सहकारी व्यवस्था से कैसे अलग है, और यह कैसे संगठित है — दूध के कैन वाले किसान से लेकर निदेशक मंडल तक।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m2-l1",
-        "title": "Why the MPO Model Was Born",
+        "title": L("Why the MPO Model Was Born", "MPO मॉडल क्यों बना"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "Why the MPO Model Was Born",
-            "text": "You already know about Amul and cooperatives. Now let's learn about a newer idea — the MPO — and why it came about."
+            "heading": L("Why the MPO Model Was Born", "MPO मॉडल क्यों बना"),
+            "text": L(
+              "You already know about Amul and cooperatives. Now let's learn about a newer idea — the MPO — and why it came about.",
+              "आप अमूल और सहकारी समितियों के बारे में जानते ही हैं। अब आइए एक नए विचार — MPO — के बारे में सीखें और जानें कि यह क्यों बना।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-what-is-mpo",
-            "title": "What Is an MPO?",
+            "title": L("What Is an MPO?", "MPO क्या है?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "A New Word: MPO",
-                "html": "<b>MPO</b> stands for <b>Milk Producer Organisation</b>. It is a company that is formed and owned by dairy farmers themselves — built to collect their milk, pay them fairly, and grow their business together."
+                "heading": L("A New Word: MPO", "एक नया शब्द: MPO"),
+                "html": L(
+                  "<b>MPO</b> stands for <b>Milk Producer Organisation</b>. It is a company that is formed and owned by dairy farmers themselves — built to collect their milk, pay them fairly, and grow their business together.",
+                  "<b>MPO</b> का मतलब है <b>मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन</b>। यह एक ऐसी कंपनी है जिसे डेयरी किसान खुद बनाते और उसके मालिक होते हैं — जो उनका दूध इकट्ठा करने, उन्हें न्यायपूर्ण भुगतान देने और मिलकर अपना व्यापार बढ़ाने के लिए बनी है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MPO (Milk Producer Organisation)",
-                "meaning": "A company formed and owned by dairy farmers themselves, to collect, test and sell their milk together."
+                "term": L("MPO (Milk Producer Organisation)", "MPO (मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन)"),
+                "meaning": L(
+                  "A company formed and owned by dairy farmers themselves, to collect, test and sell their milk together.",
+                  "डेयरी किसानों द्वारा खुद बनाई और उनके स्वामित्व वाली एक कंपनी, जो उनके दूध को मिलकर इकट्ठा करने, जाँचने और बेचने के लिए होती है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Producer Company",
-                "meaning": "The legal type of company under Indian law that lets farmers own and run a business together, with special rules that protect them."
+                "term": L("Producer Company", "उत्पादक कंपनी (Producer Company)"),
+                "meaning": L(
+                  "The legal type of company under Indian law that lets farmers own and run a business together, with special rules that protect them.",
+                  "भारतीय कानून के तहत कंपनी का वह कानूनी प्रकार, जो किसानों को मिलकर एक व्यापार का मालिक बनने और उसे चलाने देता है, साथ ही उनकी रक्षा करने वाले विशेष नियमों के साथ।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Built on What Already Worked",
-                "html": "In Module 1, you learned about the Anand Pattern cooperative — Village Society, District Union, State Federation. An MPO uses the same core idea, farmers owning the business together, but is organised as a newer, more flexible kind of company."
+                "heading": L("Built on What Already Worked", "जो पहले से काम कर रहा था उस पर आधारित"),
+                "html": L(
+                  "In Module 1, you learned about the Anand Pattern cooperative — Village Society, District Union, State Federation. An MPO uses the same core idea, farmers owning the business together, but is organised as a newer, more flexible kind of company.",
+                  "मॉड्यूल 1 में, आपने आणंद पैटर्न सहकारी समिति के बारे में सीखा — ग्राम समिति, ज़िला संघ, राज्य महासंघ। MPO भी उसी मूल विचार का उपयोग करता है, यानी किसान मिलकर व्यापार के मालिक हों, लेकिन यह एक नए, ज़्यादा लचीले प्रकार की कंपनी के रूप में संगठित है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "MPO or MPC?",
-                "text": "You may also hear the word MPC (Milk Producer Company). In dairy work, MPO and MPC usually mean the same thing — a Producer Company that deals in milk."
+                "heading": L("MPO or MPC?", "MPO या MPC?"),
+                "text": L(
+                  "You may also hear the word MPC (Milk Producer Company). In dairy work, MPO and MPC usually mean the same thing — a Producer Company that deals in milk.",
+                  "आप MPC (मिल्क प्रोड्यूसर कंपनी) शब्द भी सुन सकते हैं। डेयरी के काम में, MPO और MPC का आमतौर पर एक ही मतलब होता है — एक उत्पादक कंपनी जो दूध का काम करती है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does MPO stand for?",
+                "q": L("What does MPO stand for?", "MPO का पूरा नाम क्या है?"),
                 "options": [
-                  "Milk Producer Organisation",
-                  "Milk Purchase Office",
-                  "Milk Processing Outlet",
-                  "Ministry of Public Operations"
+                  L("Milk Producer Organisation", "मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन"),
+                  L("Milk Purchase Office", "मिल्क परचेज़ ऑफिस"),
+                  L("Milk Processing Outlet", "मिल्क प्रोसेसिंग आउटलेट"),
+                  L("Ministry of Public Operations", "मिनिस्ट्री ऑफ पब्लिक ऑपरेशंस")
                 ],
                 "answer": 0,
-                "explain": "MPO stands for Milk Producer Organisation — a company owned by the milk farmers themselves."
+                "explain": L(
+                  "MPO stands for Milk Producer Organisation — a company owned by the milk farmers themselves.",
+                  "MPO का मतलब है मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन — एक ऐसी कंपनी जिसके मालिक दूध किसान खुद होते हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "An MPO is a company owned and run by the milk farmers themselves.",
+                "q": L(
+                  "An MPO is a company owned and run by the milk farmers themselves.",
+                  "एक MPO वह कंपनी है जिसके मालिक और संचालक दूध किसान खुद होते हैं।"
+                ),
                 "answer": true,
-                "explain": "Yes — an MPO is a farmer-owned company, just like a cooperative, but organised differently."
+                "explain": L(
+                  "Yes — an MPO is a farmer-owned company, just like a cooperative, but organised differently.",
+                  "हाँ — एक MPO किसानों के स्वामित्व वाली कंपनी है, बिल्कुल सहकारी समिति की तरह, लेकिन अलग तरीके से संगठित।"
+                )
               }
             ]
           },
           {
             "id": "t-why-change",
-            "title": "Why Farmers Needed Something New",
+            "title": L("Why Farmers Needed Something New", "किसानों को कुछ नया क्यों चाहिए था"),
             "teach": [
               {
                 "type": "text",
-                "heading": "The World Was Changing",
-                "html": "From the 1990s, India opened its markets to the world. This is called <b>globalisation</b> — when countries trade and do business freely with each other. Big companies, including foreign ones, started selling milk products in India too."
+                "heading": L("The World Was Changing", "दुनिया बदल रही थी"),
+                "html": L(
+                  "From the 1990s, India opened its markets to the world. This is called <b>globalisation</b> — when countries trade and do business freely with each other. Big companies, including foreign ones, started selling milk products in India too.",
+                  "1990 के दशक से, भारत ने अपने बाज़ार दुनिया के लिए खोल दिए। इसे <b>वैश्वीकरण (globalisation)</b> कहते हैं — जब देश आपस में स्वतंत्र रूप से व्यापार करते हैं। बड़ी कंपनियाँ, जिनमें विदेशी कंपनियाँ भी शामिल थीं, भारत में भी दूध उत्पाद बेचने लगीं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Globalisation",
-                "meaning": "When countries trade and do business freely with each other, so companies from other countries can also sell in India."
+                "term": L("Globalisation", "वैश्वीकरण (Globalisation)"),
+                "meaning": L(
+                  "When countries trade and do business freely with each other, so companies from other countries can also sell in India.",
+                  "जब देश आपस में स्वतंत्र रूप से व्यापार करते हैं, जिससे दूसरे देशों की कंपनियाँ भी भारत में बेच सकती हैं।"
+                )
               },
               {
                 "type": "text",
-                "heading": "The Old Cooperative Structure Had Limits",
-                "html": "The Village Society → District Union → State Federation model worked very well for decades. But it was built under an old law meant mainly for village societies. It could not always move fast, raise money easily, or make quick business decisions, because many steps needed government approval."
+                "heading": L("The Old Cooperative Structure Had Limits", "पुरानी सहकारी संरचना की सीमाएँ थीं"),
+                "html": L(
+                  "The Village Society → District Union → State Federation model worked very well for decades. But it was built under an old law meant mainly for village societies. It could not always move fast, raise money easily, or make quick business decisions, because many steps needed government approval.",
+                  "ग्राम समिति → ज़िला संघ → राज्य महासंघ मॉडल दशकों तक बहुत अच्छी तरह काम करता रहा। लेकिन यह एक पुराने कानून के तहत बना था, जो मुख्य रूप से ग्राम समितियों के लिए था। यह हमेशा तेज़ी से नहीं चल पाता था, आसानी से पैसा नहीं जुटा पाता था, या जल्दी व्यापारिक फैसले नहीं ले पाता था, क्योंकि कई चरणों के लिए सरकारी मंज़ूरी चाहिए होती थी।"
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "A Real Problem",
-                "text": "In many states, the government had a strong say in how cooperatives were run — sometimes even in choosing board members or delaying elections. This made it harder for farmer-members to feel it was truly \"their own\" business."
+                "heading": L("A Real Problem", "एक असली समस्या"),
+                "text": L(
+                  "In many states, the government had a strong say in how cooperatives were run — sometimes even in choosing board members or delaying elections. This made it harder for farmer-members to feel it was truly \"their own\" business.",
+                  "कई राज्यों में, सरकार का सहकारी समितियों के संचालन में बड़ा दखल था — कभी-कभी तो बोर्ड सदस्यों को चुनने या चुनाव टालने में भी। इससे किसान-सदस्यों को यह महसूस करना मुश्किल हो जाता था कि यह सचमुच \"उनका अपना\" व्यापार है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Connecting Farmers to Bigger Markets",
-                "html": "Milk producers needed a way to reach not just their district, but national and even global markets, and to compete with private and multi-national dairy companies — while still keeping farmers as the owners."
+                "heading": L("Connecting Farmers to Bigger Markets", "किसानों को बड़े बाज़ारों से जोड़ना"),
+                "html": L(
+                  "Milk producers needed a way to reach not just their district, but national and even global markets, and to compete with private and multi-national dairy companies — while still keeping farmers as the owners.",
+                  "दूध उत्पादकों को सिर्फ अपने ज़िले तक ही नहीं, बल्कि राष्ट्रीय और यहाँ तक कि वैश्विक बाज़ारों तक पहुँचने का एक तरीका चाहिए था, और निजी व बहुराष्ट्रीय डेयरी कंपनियों से मुकाबला करने का भी — जबकि किसान ही मालिक बने रहें।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is 'globalisation'?",
+                "q": L("What is 'globalisation'?", "'वैश्वीकरण' क्या है?"),
                 "options": [
-                  "When one village trades only with itself",
-                  "When countries trade and do business freely with each other",
-                  "A new kind of cow breed",
-                  "A government rule against private companies"
+                  L("When one village trades only with itself", "जब एक गाँव सिर्फ खुद से व्यापार करता है"),
+                  L("When countries trade and do business freely with each other", "जब देश आपस में स्वतंत्र रूप से व्यापार करते हैं"),
+                  L("A new kind of cow breed", "गाय की एक नई नस्ल"),
+                  L("A government rule against private companies", "निजी कंपनियों के खिलाफ एक सरकारी नियम")
                 ],
                 "answer": 1,
-                "explain": "Globalisation means countries trade and do business freely with each other, opening up bigger markets and more competition."
+                "explain": L(
+                  "Globalisation means countries trade and do business freely with each other, opening up bigger markets and more competition.",
+                  "वैश्वीकरण का मतलब है देशों का आपस में स्वतंत्र रूप से व्यापार करना, जिससे बड़े बाज़ार और ज़्यादा प्रतिस्पर्धा खुलती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "The old cooperative structure had no limits and never needed any reform.",
+                "q": L(
+                  "The old cooperative structure had no limits and never needed any reform.",
+                  "पुरानी सहकारी संरचना में कोई सीमा नहीं थी और उसे कभी सुधार की ज़रूरत नहीं पड़ी।"
+                ),
                 "answer": false,
-                "explain": "The old cooperative structure worked well for years, but it moved slowly and needed too much government approval — so a reform was needed."
+                "explain": L(
+                  "The old cooperative structure worked well for years, but it moved slowly and needed too much government approval — so a reform was needed.",
+                  "पुरानी सहकारी संरचना सालों तक अच्छी तरह काम करती रही, लेकिन यह धीमी थी और इसे बहुत ज़्यादा सरकारी मंज़ूरी चाहिए होती थी — इसलिए सुधार की ज़रूरत थी।"
+                )
               }
             ]
           },
           {
             "id": "t-alagh-act",
-            "title": "The Law That Made It Possible",
+            "title": L("The Law That Made It Possible", "वह कानून जिसने इसे संभव बनाया"),
             "teach": [
               {
                 "type": "text",
-                "heading": "A Committee Looks for a Solution",
-                "html": "The Government of India set up a committee led by economist <b>Dr. Y. K. Alagh</b> to study the problem, and to recommend a new legal way for farmers to form modern, farmer-owned businesses."
+                "heading": L("A Committee Looks for a Solution", "एक समिति ने समाधान की तलाश की"),
+                "html": L(
+                  "The Government of India set up a committee led by economist <b>Dr. Y. K. Alagh</b> to study the problem, and to recommend a new legal way for farmers to form modern, farmer-owned businesses.",
+                  "भारत सरकार ने अर्थशास्त्री <b>डॉ. वाई.के. अलघ</b> के नेतृत्व में एक समिति बनाई, ताकि समस्या का अध्ययन किया जा सके और किसानों के लिए आधुनिक, किसान-स्वामित्व वाले व्यापार बनाने का एक नया कानूनी तरीका सुझाया जा सके।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Committee",
-                "meaning": "A small group of experts asked by the government to study a problem and suggest solutions."
+                "term": L("Committee", "समिति (Committee)"),
+                "meaning": L(
+                  "A small group of experts asked by the government to study a problem and suggest solutions.",
+                  "विशेषज्ञों का एक छोटा समूह, जिसे सरकार किसी समस्या का अध्ययन करने और समाधान सुझाने के लिए कहती है।"
+                )
               },
               {
                 "type": "timeline",
-                "heading": "From Idea to Law",
+                "heading": L("From Idea to Law", "विचार से कानून तक"),
                 "items": [
                   {
                     "year": "1990s",
-                    "text": "Government sees the need for a new farmer-owned business model."
+                    "text": L(
+                      "Government sees the need for a new farmer-owned business model.",
+                      "सरकार को किसान-स्वामित्व वाले नए व्यापार मॉडल की ज़रूरत महसूस होती है।"
+                    )
                   },
                   {
-                    "year": "Y. K. Alagh Committee",
-                    "text": "Studies the problem and recommends a new legal framework for producer-owned companies."
+                    "year": L("Y. K. Alagh Committee", "वाई.के. अलघ समिति"),
+                    "text": L(
+                      "Studies the problem and recommends a new legal framework for producer-owned companies.",
+                      "समस्या का अध्ययन करती है और उत्पादक-स्वामित्व वाली कंपनियों के लिए एक नया कानूनी ढाँचा सुझाती है।"
+                    )
                   },
                   {
                     "year": "2002",
-                    "text": "Companies (Amendment) Act, 2002 is passed — it creates the legal idea of a 'Producer Company' for the first time."
+                    "text": L(
+                      "Companies (Amendment) Act, 2002 is passed — it creates the legal idea of a 'Producer Company' for the first time.",
+                      "कंपनी (संशोधन) अधिनियम, 2002 पारित होता है — यह पहली बार 'उत्पादक कंपनी' का कानूनी विचार बनाता है।"
+                    )
                   },
                   {
-                    "year": "Today",
-                    "text": "Thousands of Producer Companies, including many MPOs, now operate across India using this law."
+                    "year": L("Today", "आज"),
+                    "text": L(
+                      "Thousands of Producer Companies, including many MPOs, now operate across India using this law.",
+                      "हज़ारों उत्पादक कंपनियाँ, जिनमें कई MPO शामिल हैं, अब इसी कानून के तहत पूरे भारत में काम कर रही हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "What the Act Achieved",
-                "html": "The new law combined the best of both worlds: the fairness and shared-ownership values of a cooperative, with the flexibility and professional efficiency of a modern company. This is exactly what MPOs use today."
+                "heading": L("What the Act Achieved", "इस अधिनियम ने क्या हासिल किया"),
+                "html": L(
+                  "The new law combined the best of both worlds: the fairness and shared-ownership values of a cooperative, with the flexibility and professional efficiency of a modern company. This is exactly what MPOs use today.",
+                  "नए कानून ने दोनों दुनियाओं की सबसे अच्छी बातें जोड़ दीं: एक सहकारी समिति की निष्पक्षता और साझा-स्वामित्व की भावना, और एक आधुनिक कंपनी की लचीलापन व पेशेवर दक्षता। आज MPO ठीक यही उपयोग करते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which law first created the legal idea of a 'Producer Company' in India?",
+                "q": L(
+                  "Which law first created the legal idea of a 'Producer Company' in India?",
+                  "किस कानून ने भारत में पहली बार 'उत्पादक कंपनी' का कानूनी विचार बनाया?"
+                ),
                 "options": [
-                  "Companies (Amendment) Act, 2002",
-                  "Right to Information Act",
-                  "Panchayati Raj Act",
-                  "Cooperative Societies Act"
+                  L("Companies (Amendment) Act, 2002", "कंपनी (संशोधन) अधिनियम, 2002"),
+                  L("Right to Information Act", "सूचना का अधिकार अधिनियम"),
+                  L("Panchayati Raj Act", "पंचायती राज अधिनियम"),
+                  L("Cooperative Societies Act", "सहकारी समिति अधिनियम")
                 ],
                 "answer": 0,
-                "explain": "The Companies (Amendment) Act, 2002 introduced the concept of Producer Companies in Indian law."
+                "explain": L(
+                  "The Companies (Amendment) Act, 2002 introduced the concept of Producer Companies in Indian law.",
+                  "कंपनी (संशोधन) अधिनियम, 2002 ने भारतीय कानून में उत्पादक कंपनियों की अवधारणा शुरू की।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "Who led the committee that recommended this new legal framework?",
+                "q": L(
+                  "Who led the committee that recommended this new legal framework?",
+                  "इस नए कानूनी ढाँचे की सिफारिश करने वाली समिति का नेतृत्व किसने किया?"
+                ),
                 "options": [
-                  "Dr. Y. K. Alagh",
-                  "Dr. Verghese Kurien",
-                  "Dr. Anil Sharma",
-                  "M. S. Swaminathan"
+                  L("Dr. Y. K. Alagh", "डॉ. वाई.के. अलघ"),
+                  L("Dr. Verghese Kurien", "डॉ. वर्गीस कुरियन"),
+                  L("Dr. Anil Sharma", "डॉ. अनिल शर्मा"),
+                  L("M. S. Swaminathan", "एम.एस. स्वामीनाथन")
                 ],
                 "answer": 0,
-                "explain": "Dr. Y. K. Alagh led the committee. (Dr. Verghese Kurien, from Module 1, led NDDB and Amul — a different, earlier chapter of the story.)"
+                "explain": L(
+                  "Dr. Y. K. Alagh led the committee. (Dr. Verghese Kurien, from Module 1, led NDDB and Amul — a different, earlier chapter of the story.)",
+                  "डॉ. वाई.के. अलघ ने समिति का नेतृत्व किया। (मॉड्यूल 1 वाले डॉ. वर्गीस कुरियन ने NDDB और अमूल का नेतृत्व किया था — यह कहानी का एक अलग, पहले का अध्याय है।)"
+                )
               }
             ]
           }
@@ -1766,238 +1853,342 @@ export const MODULES = [
             {
               "topicId": "t-what-is-mpo",
               "type": "mcq",
-              "q": "An MPO is best described as:",
+              "q": L("An MPO is best described as:", "एक MPO को सबसे अच्छे तरीके से इस तरह बताया जा सकता है:"),
               "options": [
-                "A government department",
-                "A company formed and owned by dairy farmers themselves",
-                "A private trader who buys milk cheaply",
-                "A bank that only lends to farmers"
+                L("A government department", "एक सरकारी विभाग"),
+                L("A company formed and owned by dairy farmers themselves", "डेयरी किसानों द्वारा बनाई और उनके स्वामित्व वाली एक कंपनी"),
+                L("A private trader who buys milk cheaply", "एक निजी व्यापारी जो सस्ते में दूध खरीदता है"),
+                L("A bank that only lends to farmers", "एक बैंक जो सिर्फ किसानों को ऋण देता है")
               ],
               "answer": 1,
-              "explain": "An MPO (Milk Producer Organisation) is a company that dairy farmers form and own together."
+              "explain": L(
+                "An MPO (Milk Producer Organisation) is a company that dairy farmers form and own together.",
+                "एक MPO (मिल्क प्रोड्यूसर ऑर्गेनाइज़ेशन) एक ऐसी कंपनी है जिसे डेयरी किसान मिलकर बनाते और उसके मालिक होते हैं।"
+              )
             },
             {
               "topicId": "t-why-change",
               "type": "truefalse",
-              "q": "One reason MPOs were needed was that old cooperatives needed a lot of government approval to make decisions.",
+              "q": L(
+                "One reason MPOs were needed was that old cooperatives needed a lot of government approval to make decisions.",
+                "MPO की ज़रूरत का एक कारण यह था कि पुरानी सहकारी समितियों को फैसले लेने के लिए बहुत सारी सरकारी मंज़ूरी चाहिए होती थी।"
+              ),
               "answer": true,
-              "explain": "Yes — old cooperatives often needed government approval, which slowed things down and reduced farmers' sense of ownership."
+              "explain": L(
+                "Yes — old cooperatives often needed government approval, which slowed things down and reduced farmers' sense of ownership.",
+                "हाँ — पुरानी सहकारी समितियों को अक्सर सरकारी मंज़ूरी चाहिए होती थी, जिससे काम धीमा होता था और किसानों में स्वामित्व की भावना कम होती थी।"
+              )
             },
             {
               "topicId": "t-alagh-act",
               "type": "mcq",
-              "q": "In what year was the law passed that created 'Producer Companies'?",
-              "options": [
-                "1965",
-                "1991",
-                "2002",
-                "2020"
-              ],
+              "q": L(
+                "In what year was the law passed that created 'Producer Companies'?",
+                "'उत्पादक कंपनियाँ' बनाने वाला कानून किस साल पारित हुआ था?"
+              ),
+              "options": ["1965", "1991", "2002", "2020"].map((s) => L(s, s)),
               "answer": 2,
-              "explain": "The Companies (Amendment) Act was passed in 2002."
+              "explain": L(
+                "The Companies (Amendment) Act was passed in 2002.",
+                "कंपनी (संशोधन) अधिनियम 2002 में पारित हुआ था।"
+              )
             }
           ]
         }
       },
       {
         "id": "m2-l2",
-        "title": "How an MPO Is Different — and Better",
+        "title": L("How an MPO Is Different — and Better", "MPO कैसे अलग है — और बेहतर"),
         "estMinutes": 9,
         "hook": [
           {
             "type": "hero",
-            "heading": "How an MPO Is Different — and Better",
-            "text": "Now that you know why MPOs began, let's see exactly what makes them different from the old system — and what that means for the farmers you'll work with."
+            "heading": L("How an MPO Is Different — and Better", "MPO कैसे अलग है — और बेहतर"),
+            "text": L(
+              "Now that you know why MPOs began, let's see exactly what makes them different from the old system — and what that means for the farmers you'll work with.",
+              "अब जब आप जानते हैं कि MPO क्यों शुरू हुए, आइए ठीक-ठीक देखें कि वे पुरानी व्यवस्था से कैसे अलग हैं — और इसका उन किसानों के लिए क्या मतलब है जिनके साथ आप काम करेंगे।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-old-vs-new",
-            "title": "Cooperative vs Producer Company: What Changed?",
+            "title": L("Cooperative vs Producer Company: What Changed?", "सहकारी समिति बनाम उत्पादक कंपनी: क्या बदला?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Same Goal, Different Tools",
-                "html": "Both the old cooperative and the new MPO (Producer Company) want the same thing: farmers owning their own dairy business together. But they are built differently."
+                "heading": L("Same Goal, Different Tools", "एक ही लक्ष्य, अलग-अलग औज़ार"),
+                "html": L(
+                  "Both the old cooperative and the new MPO (Producer Company) want the same thing: farmers owning their own dairy business together. But they are built differently.",
+                  "पुरानी सहकारी समिति और नई MPO (उत्पादक कंपनी) दोनों एक ही चीज़ चाहते हैं: किसानों का मिलकर अपने डेयरी व्यापार का मालिक होना। लेकिन दोनों अलग तरीके से बनी हैं।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Government's role",
-                    "text": "Old cooperatives needed government approval for many decisions. An MPO is registered under the Companies Act and is run independently by its farmer-members."
+                    "label": L("Government's role", "सरकार की भूमिका"),
+                    "text": L(
+                      "Old cooperatives needed government approval for many decisions. An MPO is registered under the Companies Act and is run independently by its farmer-members.",
+                      "पुरानी सहकारी समितियों को कई फैसलों के लिए सरकारी मंज़ूरी चाहिए होती थी। एक MPO कंपनी अधिनियम के तहत पंजीकृत होती है और इसे इसके किसान-सदस्य स्वतंत्र रूप से चलाते हैं।"
+                    )
                   },
                   {
-                    "label": "Raising money",
-                    "text": "It was harder for old cooperatives to raise extra capital. An MPO, like any company, can raise funds more easily while keeping farmers as the owners."
+                    "label": L("Raising money", "पैसा जुटाना"),
+                    "text": L(
+                      "It was harder for old cooperatives to raise extra capital. An MPO, like any company, can raise funds more easily while keeping farmers as the owners.",
+                      "पुरानी सहकारी समितियों के लिए अतिरिक्त पूंजी जुटाना मुश्किल था। एक MPO, किसी भी कंपनी की तरह, किसानों को मालिक बनाए रखते हुए ज़्यादा आसानी से पैसा जुटा सकती है।"
+                    )
                   },
                   {
-                    "label": "Running the business",
-                    "text": "Old cooperatives sometimes mixed daily business decisions with village politics. An MPO separates ownership (farmers) from day-to-day management (trained staff)."
+                    "label": L("Running the business", "व्यापार चलाना"),
+                    "text": L(
+                      "Old cooperatives sometimes mixed daily business decisions with village politics. An MPO separates ownership (farmers) from day-to-day management (trained staff).",
+                      "पुरानी सहकारी समितियों में कभी-कभी रोज़ के व्यापारिक फैसले गाँव की राजनीति से मिल जाते थे। एक MPO स्वामित्व (किसान) को रोज़मर्रा के प्रबंधन (प्रशिक्षित कर्मचारी) से अलग रखती है।"
+                    )
                   },
                   {
-                    "label": "Protection from takeover",
-                    "text": "An MPO's shares cannot be bought or sold on the stock market, so outside companies cannot buy control of it — farmers stay in charge."
+                    "label": L("Protection from takeover", "अधिग्रहण से सुरक्षा"),
+                    "text": L(
+                      "An MPO's shares cannot be bought or sold on the stock market, so outside companies cannot buy control of it — farmers stay in charge.",
+                      "एक MPO के शेयर शेयर बाज़ार में खरीदे या बेचे नहीं जा सकते, इसलिए बाहरी कंपनियाँ इसका नियंत्रण नहीं खरीद सकतीं — किसान ही इसके प्रभारी बने रहते हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "glossary",
-                "term": "Stock Exchange",
-                "meaning": "A marketplace where shares of big companies are bought and sold by anyone. MPO shares can never be sold there."
+                "term": L("Stock Exchange", "शेयर बाज़ार (Stock Exchange)"),
+                "meaning": L(
+                  "A marketplace where shares of big companies are bought and sold by anyone. MPO shares can never be sold there.",
+                  "एक बाज़ार जहाँ बड़ी कंपनियों के शेयर कोई भी खरीद-बेच सकता है। MPO के शेयर वहाँ कभी नहीं बेचे जा सकते।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Think of It This Way",
-                "text": "Old cooperative: a village committee that needed the government's permission for many things. MPO: an independent company that farmers themselves fully own and control, using modern business rules."
+                "heading": L("Think of It This Way", "इस तरह से सोचिए"),
+                "text": L(
+                  "Old cooperative: a village committee that needed the government's permission for many things. MPO: an independent company that farmers themselves fully own and control, using modern business rules.",
+                  "पुरानी सहकारी समिति: एक गाँव समिति जिसे कई चीज़ों के लिए सरकार की अनुमति चाहिए होती थी। MPO: एक स्वतंत्र कंपनी जिसके किसान खुद पूरी तरह मालिक और नियंत्रक हैं, जो आधुनिक व्यापारिक नियमों का उपयोग करती है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is one key difference between an old cooperative and an MPO?",
+                "q": L(
+                  "What is one key difference between an old cooperative and an MPO?",
+                  "पुरानी सहकारी समिति और MPO के बीच एक मुख्य अंतर क्या है?"
+                ),
                 "options": [
-                  "MPOs are owned by the government",
-                  "MPO shares cannot be traded on the stock exchange, which keeps farmer control safe",
-                  "MPOs are not allowed to sell milk",
-                  "Old cooperatives had no members at all"
+                  L("MPOs are owned by the government", "MPO सरकार के स्वामित्व में होते हैं"),
+                  L(
+                    "MPO shares cannot be traded on the stock exchange, which keeps farmer control safe",
+                    "MPO के शेयर शेयर बाज़ार में नहीं बेचे जा सकते, जिससे किसानों का नियंत्रण सुरक्षित रहता है"
+                  ),
+                  L("MPOs are not allowed to sell milk", "MPO को दूध बेचने की अनुमति नहीं है"),
+                  L("Old cooperatives had no members at all", "पुरानी सहकारी समितियों में बिल्कुल कोई सदस्य नहीं थे")
                 ],
                 "answer": 1,
-                "explain": "Because MPO shares can't be traded on the stock exchange, outside companies can't buy their way into control — farmers stay the owners."
+                "explain": L(
+                  "Because MPO shares can't be traded on the stock exchange, outside companies can't buy their way into control — farmers stay the owners.",
+                  "क्योंकि MPO के शेयर शेयर बाज़ार में नहीं बेचे जा सकते, बाहरी कंपनियाँ पैसे देकर नियंत्रण नहीं खरीद सकतीं — किसान ही मालिक बने रहते हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "In an MPO, outside investors can easily buy shares on the stock market and take control.",
+                "q": L(
+                  "In an MPO, outside investors can easily buy shares on the stock market and take control.",
+                  "एक MPO में, बाहरी निवेशक आसानी से शेयर बाज़ार में शेयर खरीदकर नियंत्रण ले सकते हैं।"
+                ),
                 "answer": false,
-                "explain": "MPO (Producer Company) shares cannot be traded on the stock exchange, so this kind of takeover cannot happen."
+                "explain": L(
+                  "MPO (Producer Company) shares cannot be traded on the stock exchange, so this kind of takeover cannot happen.",
+                  "MPO (उत्पादक कंपनी) के शेयर शेयर बाज़ार में नहीं बेचे जा सकते, इसलिए इस तरह का अधिग्रहण नहीं हो सकता।"
+                )
               }
             ]
           },
           {
             "id": "t-legal-features",
-            "title": "The Rules That Protect Farmers",
+            "title": L("The Rules That Protect Farmers", "किसानों की रक्षा करने वाले नियम"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Who Can Start an MPO?",
-                "html": "The law says an MPO (Producer Company) can be formed by: at least <b>10 individual farmers</b>, OR at least <b>2 farmer institutions</b> (like existing societies), OR a mix of both."
+                "heading": L("Who Can Start an MPO?", "MPO कौन शुरू कर सकता है?"),
+                "html": L(
+                  "The law says an MPO (Producer Company) can be formed by: at least <b>10 individual farmers</b>, OR at least <b>2 farmer institutions</b> (like existing societies), OR a mix of both.",
+                  "कानून कहता है कि एक MPO (उत्पादक कंपनी) इनके द्वारा बनाई जा सकती है: कम से कम <b>10 व्यक्तिगत किसान</b>, या कम से कम <b>2 किसान संस्थान</b> (जैसे मौजूदा समितियाँ), या दोनों का मिश्रण।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "10 or more farmers",
-                    "text": "Any 10 or more individual milk producers can come together to form a Producer Company."
+                    "label": L("10 or more farmers", "10 या ज़्यादा किसान"),
+                    "text": L(
+                      "Any 10 or more individual milk producers can come together to form a Producer Company.",
+                      "कोई भी 10 या ज़्यादा व्यक्तिगत दूध उत्पादक मिलकर एक उत्पादक कंपनी बना सकते हैं।"
+                    )
                   },
                   {
-                    "label": "2 or more institutions",
-                    "text": "Two or more existing farmer institutions can also join together to form one."
+                    "label": L("2 or more institutions", "2 या ज़्यादा संस्थान"),
+                    "text": L(
+                      "Two or more existing farmer institutions can also join together to form one.",
+                      "दो या ज़्यादा मौजूदा किसान संस्थान भी मिलकर एक कंपनी बना सकते हैं।"
+                    )
                   },
                   {
-                    "label": "One member, one vote",
-                    "text": "No matter how much milk a member supplies or how many shares they hold, every member gets exactly one vote. This keeps the company fair and democratic."
+                    "label": L("One member, one vote", "एक सदस्य, एक वोट"),
+                    "text": L(
+                      "No matter how much milk a member supplies or how many shares they hold, every member gets exactly one vote. This keeps the company fair and democratic.",
+                      "एक सदस्य चाहे कितना भी दूध दे या कितने भी शेयर रखे, हर सदस्य को ठीक एक वोट मिलता है। इससे कंपनी न्यायपूर्ण और लोकतांत्रिक बनी रहती है।"
+                    )
                   }
                 ]
               },
               {
                 "type": "glossary",
-                "term": "One Member, One Vote",
-                "meaning": "A rule where every member has equal voting power, whether they are a big supplier or a small one."
+                "term": L("One Member, One Vote", "एक सदस्य, एक वोट"),
+                "meaning": L(
+                  "A rule where every member has equal voting power, whether they are a big supplier or a small one.",
+                  "एक नियम जिसमें हर सदस्य को बराबर वोटिंग शक्ति मिलती है, चाहे वह बड़ा आपूर्तिकर्ता हो या छोटा।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why This Matters to You",
-                "text": "As a Sahayak, this is important to explain to farmers: joining an MPO means they get a real, equal voice — not just a service they buy."
+                "heading": L("Why This Matters to You", "यह आपके लिए क्यों ज़रूरी है"),
+                "text": L(
+                  "As a Sahayak, this is important to explain to farmers: joining an MPO means they get a real, equal voice — not just a service they buy.",
+                  "एक सहायक के तौर पर, यह किसानों को समझाना ज़रूरी है: MPO से जुड़ने का मतलब है कि उन्हें एक असली, बराबर आवाज़ मिलती है — सिर्फ खरीदी जाने वाली सेवा नहीं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "How many individual producers are needed, at minimum, to form a Producer Company?",
-                "options": [
-                  "2",
-                  "5",
-                  "10",
-                  "50"
-                ],
+                "q": L(
+                  "How many individual producers are needed, at minimum, to form a Producer Company?",
+                  "एक उत्पादक कंपनी बनाने के लिए, कम से कम कितने व्यक्तिगत उत्पादक चाहिए?"
+                ),
+                "options": ["2", "5", "10", "50"].map((s) => L(s, s)),
                 "answer": 2,
-                "explain": "At least 10 individual producers (or 2 or more producer institutions) can form a Producer Company."
+                "explain": L(
+                  "At least 10 individual producers (or 2 or more producer institutions) can form a Producer Company.",
+                  "कम से कम 10 व्यक्तिगत उत्पादक (या 2 या ज़्यादा उत्पादक संस्थान) एक उत्पादक कंपनी बना सकते हैं।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "Under 'one member, one vote', a farmer who supplies more milk gets:",
+                "q": L(
+                  "Under 'one member, one vote', a farmer who supplies more milk gets:",
+                  "'एक सदस्य, एक वोट' के तहत, ज़्यादा दूध देने वाले किसान को क्या मिलता है:"
+                ),
                 "options": [
-                  "More votes than others",
-                  "Exactly one vote, the same as everyone else",
-                  "No vote at all",
-                  "Extra free shares automatically"
+                  L("More votes than others", "दूसरों से ज़्यादा वोट"),
+                  L("Exactly one vote, the same as everyone else", "बाकी सभी की तरह ठीक एक वोट"),
+                  L("No vote at all", "कोई वोट नहीं"),
+                  L("Extra free shares automatically", "अपने आप अतिरिक्त मुफ्त शेयर")
                 ],
                 "answer": 1,
-                "explain": "Every member gets exactly one vote, no matter how much milk they supply — this keeps the MPO democratic."
+                "explain": L(
+                  "Every member gets exactly one vote, no matter how much milk they supply — this keeps the MPO democratic.",
+                  "हर सदस्य को ठीक एक वोट मिलता है, चाहे वह कितना भी दूध दे — इससे MPO लोकतांत्रिक बनी रहती है।"
+                )
               }
             ]
           },
           {
             "id": "t-farmer-benefits",
-            "title": "What's In It For the Farmer?",
+            "title": L("What's In It For the Farmer?", "किसान के लिए इसमें क्या है?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Five Reasons Farmers Join an MPO",
-                "html": "An MPO is built around five simple ideas. Together, they explain why farmers choose to join and stay."
+                "heading": L("Five Reasons Farmers Join an MPO", "किसानों के MPO से जुड़ने के पाँच कारण"),
+                "html": L(
+                  "An MPO is built around five simple ideas. Together, they explain why farmers choose to join and stay.",
+                  "एक MPO पाँच सरल विचारों पर बनी होती है। मिलकर, ये बताते हैं कि किसान क्यों जुड़ना और बने रहना चुनते हैं।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Empowering Milk Producers",
-                    "text": "Farmers get training, support and a real say in decisions — not just a place to sell milk."
+                    "label": L("Empowering Milk Producers", "दूध उत्पादकों को सशक्त बनाना"),
+                    "text": L(
+                      "Farmers get training, support and a real say in decisions — not just a place to sell milk.",
+                      "किसानों को प्रशिक्षण, सहयोग और फैसलों में असली आवाज़ मिलती है — सिर्फ दूध बेचने की जगह नहीं।"
+                    )
                   },
                   {
-                    "label": "Democratic & Producer Owned",
-                    "text": "The company belongs to its farmer-members, who elect their own representatives."
+                    "label": L("Democratic & Producer Owned", "लोकतांत्रिक और उत्पादक-स्वामित्व वाली"),
+                    "text": L(
+                      "The company belongs to its farmer-members, who elect their own representatives.",
+                      "कंपनी उसके किसान-सदस्यों की होती है, जो अपने प्रतिनिधि खुद चुनते हैं।"
+                    )
                   },
                   {
-                    "label": "Better Returns & Sustainability",
-                    "text": "Profits go back to farmer-members, and fair pricing means a more reliable, lasting income."
+                    "label": L("Better Returns & Sustainability", "बेहतर लाभ और स्थिरता"),
+                    "text": L(
+                      "Profits go back to farmer-members, and fair pricing means a more reliable, lasting income.",
+                      "मुनाफ़ा किसान-सदस्यों को वापस मिलता है, और न्यायपूर्ण मूल्य निर्धारण का मतलब है ज़्यादा भरोसेमंद, टिकाऊ आय।"
+                    )
                   },
                   {
-                    "label": "Professional Governance",
-                    "text": "Trained managers run daily operations, so the business runs efficiently — while farmers still own and guide it."
+                    "label": L("Professional Governance", "पेशेवर प्रशासन"),
+                    "text": L(
+                      "Trained managers run daily operations, so the business runs efficiently — while farmers still own and guide it.",
+                      "प्रशिक्षित प्रबंधक रोज़ का काम चलाते हैं, जिससे व्यापार कुशलता से चलता है — जबकि किसान ही इसके मालिक और मार्गदर्शक बने रहते हैं।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Stronger Together",
-                "text": "When many MPOs and cooperatives work well, the whole dairy sector gets stronger — better prices, better quality, and better lives for farming families across India."
+                "heading": L("Stronger Together", "साथ मिलकर मज़बूत"),
+                "text": L(
+                  "When many MPOs and cooperatives work well, the whole dairy sector gets stronger — better prices, better quality, and better lives for farming families across India.",
+                  "जब कई MPO और सहकारी समितियाँ अच्छी तरह काम करती हैं, तो पूरा डेयरी क्षेत्र मज़बूत होता है — बेहतर कीमतें, बेहतर गुणवत्ता, और पूरे भारत में किसान परिवारों के लिए बेहतर जीवन।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Remember Ramesh and Sita?",
-                "text": "Their village's Milk Pooling Point, run by an MPO, tested milk fairly and paid on time, every time. That is these benefits working in real life."
+                "heading": L("Remember Ramesh and Sita?", "रमेश और सीता याद हैं?"),
+                "text": L(
+                  "Their village's Milk Pooling Point, run by an MPO, tested milk fairly and paid on time, every time. That is these benefits working in real life.",
+                  "उनके गाँव का मिल्क पूलिंग पॉइंट, जो एक MPO द्वारा चलाया जाता था, निष्पक्ष रूप से दूध जाँचता था और हर बार समय पर भुगतान करता था। यही हैं ये फ़ायदे असल ज़िंदगी में काम करते हुए।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Which of these is a real benefit of joining an MPO?",
+                "q": L("Which of these is a real benefit of joining an MPO?", "MPO से जुड़ने का एक असली फ़ायदा इनमें से कौन-सा है?"),
                 "options": [
-                  "Fair pricing, with profits shared with farmer-members",
-                  "Only the biggest farmers get paid",
-                  "No say in how the business is run",
-                  "Milk is tested in secret with no farmer present"
+                  L("Fair pricing, with profits shared with farmer-members", "न्यायपूर्ण मूल्य, किसान-सदस्यों के साथ बँटा हुआ मुनाफ़ा"),
+                  L("Only the biggest farmers get paid", "सिर्फ सबसे बड़े किसानों को भुगतान मिलता है"),
+                  L("No say in how the business is run", "व्यापार कैसे चले, इसमें कोई आवाज़ नहीं"),
+                  L("Milk is tested in secret with no farmer present", "किसान की मौजूदगी के बिना गुप्त रूप से दूध जाँचा जाता है")
                 ],
                 "answer": 0,
-                "explain": "MPOs are built to share profits fairly with member-farmers and to test milk openly and honestly."
+                "explain": L(
+                  "MPOs are built to share profits fairly with member-farmers and to test milk openly and honestly.",
+                  "MPO सदस्य-किसानों के साथ न्यायपूर्ण ढंग से मुनाफ़ा बाँटने और खुले, ईमानदार तरीके से दूध जाँचने के लिए बनी होती हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "In an MPO, trained professional staff manage daily business while farmers remain the owners.",
+                "q": L(
+                  "In an MPO, trained professional staff manage daily business while farmers remain the owners.",
+                  "एक MPO में, प्रशिक्षित पेशेवर कर्मचारी रोज़ का व्यापार संभालते हैं जबकि किसान ही मालिक बने रहते हैं।"
+                ),
                 "answer": true,
-                "explain": "That's the idea of 'Professional Governance' — professionals run daily work, but farmers own and guide the company."
+                "explain": L(
+                  "That's the idea of 'Professional Governance' — professionals run daily work, but farmers own and guide the company.",
+                  "यही 'पेशेवर प्रशासन' का विचार है — पेशेवर लोग रोज़ का काम चलाते हैं, लेकिन किसान ही कंपनी के मालिक और मार्गदर्शक होते हैं।"
+                )
               }
             ]
           }
@@ -2008,152 +2199,218 @@ export const MODULES = [
             {
               "topicId": "t-old-vs-new",
               "type": "mcq",
-              "q": "Why can't an outside company easily take control of an MPO?",
+              "q": L(
+                "Why can't an outside company easily take control of an MPO?",
+                "एक बाहरी कंपनी आसानी से MPO का नियंत्रण क्यों नहीं ले सकती?"
+              ),
               "options": [
-                "MPO shares cannot be traded on the stock exchange",
-                "MPOs are too small to be interesting",
-                "The government owns all MPOs",
-                "MPOs are not allowed to have a Board"
+                L("MPO shares cannot be traded on the stock exchange", "MPO के शेयर शेयर बाज़ार में नहीं बेचे जा सकते"),
+                L("MPOs are too small to be interesting", "MPO इतनी छोटी हैं कि दिलचस्प नहीं लगतीं"),
+                L("The government owns all MPOs", "सरकार सभी MPO की मालिक है"),
+                L("MPOs are not allowed to have a Board", "MPO को बोर्ड रखने की अनुमति नहीं है")
               ],
               "answer": 0,
-              "explain": "MPO shares can't be bought and sold on the stock exchange, which protects farmer ownership from outside takeover."
+              "explain": L(
+                "MPO shares can't be bought and sold on the stock exchange, which protects farmer ownership from outside takeover.",
+                "MPO के शेयर शेयर बाज़ार में खरीदे-बेचे नहीं जा सकते, जो किसान स्वामित्व को बाहरी अधिग्रहण से बचाता है।"
+              )
             },
             {
               "topicId": "t-legal-features",
               "type": "truefalse",
-              "q": "In an MPO, a member with more shares gets more votes than a member with fewer shares.",
+              "q": L(
+                "In an MPO, a member with more shares gets more votes than a member with fewer shares.",
+                "एक MPO में, ज़्यादा शेयर रखने वाले सदस्य को कम शेयर वाले सदस्य से ज़्यादा वोट मिलते हैं।"
+              ),
               "answer": false,
-              "explain": "Every member gets exactly one vote under the 'one member, one vote' rule, regardless of shares held."
+              "explain": L(
+                "Every member gets exactly one vote under the 'one member, one vote' rule, regardless of shares held.",
+                "'एक सदस्य, एक वोट' नियम के तहत हर सदस्य को ठीक एक वोट मिलता है, चाहे उसके पास कितने भी शेयर हों।"
+              )
             },
             {
               "topicId": "t-farmer-benefits",
               "type": "mcq",
-              "q": "Which pillar of an MPO means daily operations are run by trained managers, not just elected farmers?",
+              "q": L(
+                "Which pillar of an MPO means daily operations are run by trained managers, not just elected farmers?",
+                "MPO का कौन-सा स्तंभ इसका मतलब है कि रोज़ का काम सिर्फ चुने गए किसानों से नहीं, बल्कि प्रशिक्षित प्रबंधकों से चलता है?"
+              ),
               "options": [
-                "Professional Governance",
-                "Stronger Cooperatives",
-                "Democratic & Producer Owned",
-                "Empowering Milk Producers"
+                L("Professional Governance", "पेशेवर प्रशासन"),
+                L("Stronger Cooperatives", "मज़बूत सहकारी समितियाँ"),
+                L("Democratic & Producer Owned", "लोकतांत्रिक और उत्पादक-स्वामित्व वाली"),
+                L("Empowering Milk Producers", "दूध उत्पादकों को सशक्त बनाना")
               ],
               "answer": 0,
-              "explain": "Professional Governance means trained staff handle daily operations, while farmer-members still own and guide the company."
+              "explain": L(
+                "Professional Governance means trained staff handle daily operations, while farmer-members still own and guide the company.",
+                "पेशेवर प्रशासन का मतलब है प्रशिक्षित कर्मचारी रोज़ का काम संभालते हैं, जबकि किसान-सदस्य ही कंपनी के मालिक और मार्गदर्शक बने रहते हैं।"
+              )
             }
           ]
         }
       },
       {
         "id": "m2-l3",
-        "title": "The Structure of an MPO",
+        "title": L("The Structure of an MPO", "MPO की संरचना"),
         "estMinutes": 8,
         "hook": [
           {
             "type": "hero",
-            "heading": "The Structure of an MPO",
-            "text": "How is an MPO actually organised, from a single farmer's milk can all the way up to the company's board? Let's map it out."
+            "heading": L("The Structure of an MPO", "MPO की संरचना"),
+            "text": L(
+              "How is an MPO actually organised, from a single farmer's milk can all the way up to the company's board? Let's map it out.",
+              "एक MPO असल में कैसे संगठित होती है, एक किसान के दूध के कैन से लेकर कंपनी के बोर्ड तक? आइए इसे समझें।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-operational-governance",
-            "title": "From Farmer to Board",
+            "title": L("From Farmer to Board", "किसान से बोर्ड तक"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Two Layers Where Farmers Have a Voice",
-                "html": "An MPO's structure starts with the farmer and builds upward through two layers: the <b>Operational</b> layer (local village groups) and the <b>Governance</b> layer (company-wide decisions)."
+                "heading": L("Two Layers Where Farmers Have a Voice", "दो स्तर जहाँ किसानों की आवाज़ होती है"),
+                "html": L(
+                  "An MPO's structure starts with the farmer and builds upward through two layers: the <b>Operational</b> layer (local village groups) and the <b>Governance</b> layer (company-wide decisions).",
+                  "एक MPO की संरचना किसान से शुरू होती है और दो स्तरों से होते हुए ऊपर बनती है: <b>परिचालन (Operational)</b> स्तर (स्थानीय गाँव समूह) और <b>प्रशासन (Governance)</b> स्तर (पूरी कंपनी के फैसले)।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Operational: MPP and MPC",
-                "html": "Every producer member pours milk at their local <b>MPP</b> (Milk Pooling Point). Members at each MPP elect a small committee, sometimes called the <b>MPC</b> (Milk Producer Committee), to represent them. Several MPCs join together into bigger village-cluster groups, so that even a farmer in the smallest village has a representative all the way up."
+                "heading": L("Operational: MPP and MPC", "परिचालन: MPP और MPC"),
+                "html": L(
+                  "Every producer member pours milk at their local <b>MPP</b> (Milk Pooling Point). Members at each MPP elect a small committee, sometimes called the <b>MPC</b> (Milk Producer Committee), to represent them. Several MPCs join together into bigger village-cluster groups, so that even a farmer in the smallest village has a representative all the way up.",
+                  "हर उत्पादक सदस्य अपने स्थानीय <b>MPP</b> (मिल्क पूलिंग पॉइंट) पर दूध डालता है। हर MPP के सदस्य एक छोटी समिति चुनते हैं, जिसे कभी-कभी <b>MPC</b> (मिल्क प्रोड्यूसर कमेटी) कहा जाता है, जो उनका प्रतिनिधित्व करती है। कई MPC मिलकर बड़े गाँव-समूह बनाते हैं, ताकि सबसे छोटे गाँव के किसान का भी ऊपर तक एक प्रतिनिधि हो।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MPP (Milk Pooling Point)",
-                "meaning": "The village-level place where farmers bring their milk to be measured, tested and collected by the MPO."
+                "term": L("MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                "meaning": L(
+                  "The village-level place where farmers bring their milk to be measured, tested and collected by the MPO.",
+                  "गाँव स्तर की वह जगह जहाँ किसान अपना दूध लाते हैं, जिसे MPO मापता, जाँचता और इकट्ठा करता है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Governance: General Body and Board",
-                "html": "All members of the MPO together form the <b>General Body</b> — its highest decision-making group. The General Body elects a <b>Board of Directors</b>, who set policy and watch over the company on behalf of every member."
+                "heading": L("Governance: General Body and Board", "प्रशासन: साधारण सभा और बोर्ड"),
+                "html": L(
+                  "All members of the MPO together form the <b>General Body</b> — its highest decision-making group. The General Body elects a <b>Board of Directors</b>, who set policy and watch over the company on behalf of every member.",
+                  "MPO के सभी सदस्य मिलकर <b>साधारण सभा (General Body)</b> बनाते हैं — इसका सबसे बड़ा फैसला लेने वाला समूह। साधारण सभा एक <b>निदेशक मंडल (Board of Directors)</b> चुनती है, जो नीति तय करता है और हर सदस्य की ओर से कंपनी की निगरानी करता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Board of Directors",
-                "meaning": "A group of members elected to guide and watch over the company's business on behalf of all members."
+                "term": L("Board of Directors", "निदेशक मंडल (Board of Directors)"),
+                "meaning": L(
+                  "A group of members elected to guide and watch over the company's business on behalf of all members.",
+                  "सभी सदस्यों की ओर से कंपनी के व्यापार का मार्गदर्शन और निगरानी करने के लिए चुने गए सदस्यों का एक समूह।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is an MPP?",
+                "q": L("What is an MPP?", "MPP क्या है?"),
                 "options": [
-                  "The village-level place where farmers bring milk to be measured, tested and collected",
-                  "A bank that lends money to farmers",
-                  "The head office of the state government",
-                  "A type of milk animal"
+                  L(
+                    "The village-level place where farmers bring milk to be measured, tested and collected",
+                    "गाँव स्तर की वह जगह जहाँ किसान दूध मापने, जाँचने और इकट्ठा करने के लिए लाते हैं"
+                  ),
+                  L("A bank that lends money to farmers", "एक बैंक जो किसानों को पैसे उधार देता है"),
+                  L("The head office of the state government", "राज्य सरकार का मुख्य कार्यालय"),
+                  L("A type of milk animal", "एक प्रकार का दुधारू पशु")
                 ],
                 "answer": 0,
-                "explain": "MPP stands for Milk Pooling Point — the village-level milk collection place."
+                "explain": L(
+                  "MPP stands for Milk Pooling Point — the village-level milk collection place.",
+                  "MPP का मतलब है मिल्क पूलिंग पॉइंट — गाँव स्तर की दूध संग्रह की जगह।"
+                )
               },
               {
                 "type": "mcq",
-                "q": "Who elects the Board of Directors of an MPO?",
+                "q": L("Who elects the Board of Directors of an MPO?", "MPO के निदेशक मंडल को कौन चुनता है?"),
                 "options": [
-                  "The state government",
-                  "The General Body of all members",
-                  "Only the Sahayaks",
-                  "The largest dairy company nearby"
+                  L("The state government", "राज्य सरकार"),
+                  L("The General Body of all members", "सभी सदस्यों की साधारण सभा"),
+                  L("Only the Sahayaks", "सिर्फ सहायक"),
+                  L("The largest dairy company nearby", "पास की सबसे बड़ी डेयरी कंपनी")
                 ],
                 "answer": 1,
-                "explain": "The General Body — made up of all the MPO's members — elects the Board of Directors."
+                "explain": L(
+                  "The General Body — made up of all the MPO's members — elects the Board of Directors.",
+                  "साधारण सभा — जो MPO के सभी सदस्यों से बनी होती है — निदेशक मंडल चुनती है।"
+                )
               }
             ]
           },
           {
             "id": "t-management-structure",
-            "title": "Who Runs the Business Every Day",
+            "title": L("Who Runs the Business Every Day", "व्यापार को हर दिन कौन चलाता है"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Professionals Run the Daily Work",
-                "html": "The Board appoints a <b>Chief Executive (CEO)</b> to manage daily operations. Below the CEO are functional heads — for example, staff in charge of procurement, quality testing, or finance — and field staff, like the Sahayaks, who work directly with farmers every single day."
+                "heading": L("Professionals Run the Daily Work", "पेशेवर लोग रोज़ का काम चलाते हैं"),
+                "html": L(
+                  "The Board appoints a <b>Chief Executive (CEO)</b> to manage daily operations. Below the CEO are functional heads — for example, staff in charge of procurement, quality testing, or finance — and field staff, like the Sahayaks, who work directly with farmers every single day.",
+                  "बोर्ड रोज़ का काम संभालने के लिए एक <b>मुख्य कार्यकारी (CEO)</b> नियुक्त करता है। CEO के नीचे कार्यात्मक प्रमुख होते हैं — जैसे खरीद, गुणवत्ता जाँच या वित्त संभालने वाले कर्मचारी — और फील्ड स्टाफ, जैसे सहायक, जो हर दिन सीधे किसानों के साथ काम करते हैं।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Chief Executive (CEO)",
-                "meaning": "The senior professional manager appointed by the Board to run the company's day-to-day business."
+                "term": L("Chief Executive (CEO)", "मुख्य कार्यकारी (CEO)"),
+                "meaning": L(
+                  "The senior professional manager appointed by the Board to run the company's day-to-day business.",
+                  "बोर्ड द्वारा नियुक्त वरिष्ठ पेशेवर प्रबंधक, जो कंपनी का रोज़मर्रा का व्यापार चलाता है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Why Separate Governance from Management?",
-                "text": "Farmers, through the General Body and Board, decide WHAT the company should do. Trained professional staff decide HOW to do it well, every day. This separation is a big reason MPOs run more smoothly than some older cooperatives, where daily business and village politics sometimes got mixed up."
+                "heading": L("Why Separate Governance from Management?", "प्रशासन को प्रबंधन से अलग क्यों रखें?"),
+                "text": L(
+                  "Farmers, through the General Body and Board, decide WHAT the company should do. Trained professional staff decide HOW to do it well, every day. This separation is a big reason MPOs run more smoothly than some older cooperatives, where daily business and village politics sometimes got mixed up.",
+                  "किसान, साधारण सभा और बोर्ड के ज़रिए, तय करते हैं कि कंपनी को क्या करना चाहिए। प्रशिक्षित पेशेवर कर्मचारी तय करते हैं कि इसे हर दिन अच्छी तरह कैसे किया जाए। यही अलगाव एक बड़ा कारण है कि MPO कुछ पुरानी सहकारी समितियों से ज़्यादा सुचारू रूप से चलती हैं, जहाँ रोज़ का काम और गाँव की राजनीति कभी-कभी आपस में मिल जाते थे।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Where You Fit In",
-                "text": "As a Sahayak, you are part of the Management Structure — the field staff who connect the company's decisions to real farmers, every single day."
+                "heading": L("Where You Fit In", "आप कहाँ फिट होते हैं"),
+                "text": L(
+                  "As a Sahayak, you are part of the Management Structure — the field staff who connect the company's decisions to real farmers, every single day.",
+                  "एक सहायक के तौर पर, आप प्रबंधन संरचना का हिस्सा हैं — वह फील्ड स्टाफ जो कंपनी के फैसलों को हर दिन असली किसानों से जोड़ता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Who does the Board appoint to run the MPO's daily operations?",
+                "q": L(
+                  "Who does the Board appoint to run the MPO's daily operations?",
+                  "बोर्ड MPO का रोज़ का काम चलाने के लिए किसे नियुक्त करता है?"
+                ),
                 "options": [
-                  "The Chief Executive (CEO)",
-                  "The state Registrar",
-                  "Any random member",
-                  "A private trader"
+                  L("The Chief Executive (CEO)", "मुख्य कार्यकारी (CEO)"),
+                  L("The state Registrar", "राज्य रजिस्ट्रार"),
+                  L("Any random member", "कोई भी बेतरतीब सदस्य"),
+                  L("A private trader", "एक निजी व्यापारी")
                 ],
                 "answer": 0,
-                "explain": "The Board appoints a Chief Executive (CEO) to manage day-to-day business."
+                "explain": L(
+                  "The Board appoints a Chief Executive (CEO) to manage day-to-day business.",
+                  "बोर्ड रोज़मर्रा का व्यापार संभालने के लिए एक मुख्य कार्यकारी (CEO) नियुक्त करता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Sahayaks are members of the Board of Directors.",
+                "q": L("Sahayaks are members of the Board of Directors.", "सहायक निदेशक मंडल के सदस्य होते हैं।"),
                 "answer": false,
-                "explain": "Sahayaks are field staff in the Management Structure. The Board is made up of members elected by the General Body."
+                "explain": L(
+                  "Sahayaks are field staff in the Management Structure. The Board is made up of members elected by the General Body.",
+                  "सहायक प्रबंधन संरचना में फील्ड स्टाफ होते हैं। बोर्ड साधारण सभा द्वारा चुने गए सदस्यों से बनता है।"
+                )
               }
             ]
           }
@@ -2165,35 +2422,56 @@ export const MODULES = [
             {
               "topicId": "t-operational-governance",
               "type": "mcq",
-              "q": "Which of these is part of the Operational structure of an MPO, closest to the farmer?",
+              "q": L(
+                "Which of these is part of the Operational structure of an MPO, closest to the farmer?",
+                "इनमें से कौन-सा MPO की परिचालन संरचना का हिस्सा है, जो किसान के सबसे करीब है?"
+              ),
               "options": [
-                "The MPP (Milk Pooling Point)",
-                "The Chief Executive",
-                "The state government",
-                "A private bank"
+                L("The MPP (Milk Pooling Point)", "MPP (मिल्क पूलिंग पॉइंट)"),
+                L("The Chief Executive", "मुख्य कार्यकारी"),
+                L("The state government", "राज्य सरकार"),
+                L("A private bank", "एक निजी बैंक")
               ],
               "answer": 0,
-              "explain": "The MPP is the village-level collection point where every farmer's journey with the MPO begins."
+              "explain": L(
+                "The MPP is the village-level collection point where every farmer's journey with the MPO begins.",
+                "MPP गाँव स्तर का संग्रह बिंदु है जहाँ से हर किसान की MPO के साथ यात्रा शुरू होती है।"
+              )
             },
             {
               "topicId": "t-operational-governance",
               "type": "truefalse",
-              "q": "The General Body is made up of all the members of the MPO together.",
+              "q": L(
+                "The General Body is made up of all the members of the MPO together.",
+                "साधारण सभा MPO के सभी सदस्यों को मिलाकर बनती है।"
+              ),
               "answer": true,
-              "explain": "Yes — the General Body is the full membership meeting together, the highest decision-making group."
+              "explain": L(
+                "Yes — the General Body is the full membership meeting together, the highest decision-making group.",
+                "हाँ — साधारण सभा पूरी सदस्यता की एक साथ बैठक है, जो सबसे बड़ा फैसला लेने वाला समूह है।"
+              )
             },
             {
               "topicId": "t-management-structure",
               "type": "mcq",
-              "q": "What is the main reason an MPO separates governance (farmers/Board) from management (CEO, staff)?",
+              "q": L(
+                "What is the main reason an MPO separates governance (farmers/Board) from management (CEO, staff)?",
+                "MPO प्रशासन (किसान/बोर्ड) को प्रबंधन (CEO, कर्मचारी) से अलग क्यों रखती है, इसका मुख्य कारण क्या है?"
+              ),
               "options": [
-                "So daily business runs efficiently while farmers still own and guide the company",
-                "So farmers never get to make any decisions",
-                "So the government can control the company",
-                "So Sahayaks can become Directors automatically"
+                L(
+                  "So daily business runs efficiently while farmers still own and guide the company",
+                  "ताकि रोज़ का व्यापार कुशलता से चले जबकि किसान ही कंपनी के मालिक और मार्गदर्शक बने रहें"
+                ),
+                L("So farmers never get to make any decisions", "ताकि किसान कभी कोई फैसला न ले सकें"),
+                L("So the government can control the company", "ताकि सरकार कंपनी को नियंत्रित कर सके"),
+                L("So Sahayaks can become Directors automatically", "ताकि सहायक अपने आप निदेशक बन जाएँ")
               ],
               "answer": 0,
-              "explain": "This separation keeps daily operations professional and efficient, while member-farmers retain ownership and direction through the Board."
+              "explain": L(
+                "This separation keeps daily operations professional and efficient, while member-farmers retain ownership and direction through the Board.",
+                "यह अलगाव रोज़ के काम को पेशेवर और कुशल बनाए रखता है, जबकि सदस्य-किसान बोर्ड के ज़रिए स्वामित्व और दिशा बनाए रखते हैं।"
+              )
             }
           ]
         }
