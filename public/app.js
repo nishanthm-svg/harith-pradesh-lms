@@ -63,7 +63,7 @@ function renderLandingPage() {
   return `
     <div class="landing-page">
       <div class="landing-hero">
-        <div class="landing-logo"><img src="assets/harith-logo.png" alt="Harith Pradesh Milk Producer Organisation" /></div>
+        <div class="landing-logo"><img src="public/assets/harith-logo.png" alt="Harith Pradesh Milk Producer Organisation" /></div>
         <h1>${escapeHtml(u("landingHeroTitle"))}</h1>
         <p>${escapeHtml(u("landingHeroSubtitle"))}</p>
         <button type="button" class="btn btn-primary landing-cta" id="landing-login-btn">${escapeHtml(u("landingLoginButton"))}</button>
@@ -87,7 +87,7 @@ function renderLoginPage() {
   return `
     <div class="auth-page">
       <div class="auth-box">
-        <div class="auth-logo"><img src="assets/harith-logo.png" alt="Harith Pradesh" /></div>
+        <div class="auth-logo"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" /></div>
         <h1>${escapeHtml(u("loginTitle"))}</h1>
         <p class="sub">${escapeHtml(u("loginSubtitle"))}</p>
         <div id="login-error"></div>
@@ -143,7 +143,7 @@ function renderChangePasswordPage() {
   return `
     <div class="auth-page">
       <div class="auth-box">
-        <div class="auth-logo"><img src="assets/harith-logo.png" alt="Harith Pradesh" /></div>
+        <div class="auth-logo"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" /></div>
         <h1>${escapeHtml(u("changePasswordTitle"))}</h1>
         <p class="sub">${escapeHtml(u("changePasswordSubtitle"))}</p>
         <div id="cp-error"></div>
@@ -207,7 +207,7 @@ function renderLanguagePicker(isSwitcher) {
   return `
     <div class="lang-picker-page">
       <div class="lang-picker-box">
-        <div class="lang-picker-icon"><img src="assets/harith-logo.png" alt="Harith Pradesh" class="lang-picker-logo-img" /></div>
+        <div class="lang-picker-icon"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" class="lang-picker-logo-img" /></div>
         <h1>${u("langPickerTitle")}</h1>
         <p>${u("langPickerSub")}</p>
         <div class="lang-grid">${cards}</div>
@@ -249,9 +249,9 @@ export function renderTopbar(context) {
       ${
         showBack
           ? `<button class="back-btn" data-nav="${backHash}">${u("backButton")}</button>`
-          : `<div class="brand" data-nav="#/dashboard"><span class="brand-icon"><img src="assets/harith-logo.png" alt="Harith Pradesh" class="brand-logo-img" /></span> ${escapeHtml(u("brandName"))}</div>`
+          : `<div class="brand" data-nav="#/dashboard"><span class="brand-icon"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" class="brand-logo-img" /></span> ${escapeHtml(u("brandName"))}</div>`
       }
-      ${showBack ? `<div class="brand" data-nav="#/dashboard" style="margin-left:4px;"><span class="brand-icon"><img src="assets/harith-logo.png" alt="Harith Pradesh" class="brand-logo-img" /></span> ${escapeHtml(title || u("brandName"))}</div>` : ""}
+      ${showBack ? `<div class="brand" data-nav="#/dashboard" style="margin-left:4px;"><span class="brand-icon"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" class="brand-logo-img" /></span> ${escapeHtml(title || u("brandName"))}</div>` : ""}
       <div class="spacer"></div>
       ${adminLink}
       <button class="lang-switch-btn" data-nav="#/language">🌐 ${escapeHtml((LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0]).native)}</button>
