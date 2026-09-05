@@ -5411,134 +5411,200 @@ export const MODULES = [
     "id": "m7",
     "number": 7,
     "title": L("Village Level Meeting for Small Groups", "छोटे समूहों के लिए गाँव स्तरीय बैठक"),
-    "subtitle": "Learn how to plan and run a good meeting with a small group of farmers — and how that is different from a big village-wide meeting.",
+    "subtitle": L(
+      "Learn how to plan and run a good meeting with a small group of farmers — and how that is different from a big village-wide meeting.",
+      "किसानों के एक छोटे समूह के साथ एक अच्छी बैठक की योजना बनाना और चलाना सीखिए — और यह एक बड़ी गाँव-स्तरीय बैठक से कैसे अलग है।"
+    ),
     "icon": "milk",
     "available": true,
     "lessons": [
       {
         "id": "m7-l1",
-        "title": "Why We Call a Village Meeting",
+        "title": L("Why We Call a Village Meeting", "हम गाँव बैठक क्यों बुलाते हैं"),
         "estMinutes": 6,
         "hook": [
           {
             "type": "hero",
-            "heading": "Why We Call a Village Meeting",
-            "text": "Collecting milk is only part of your job. Talking to farmers, together, in one place — that is where trust is built. Let's see why meetings matter."
+            "heading": L("Why We Call a Village Meeting", "हम गाँव बैठक क्यों बुलाते हैं"),
+            "text": L(
+              "Collecting milk is only part of your job. Talking to farmers, together, in one place — that is where trust is built. Let's see why meetings matter.",
+              "दूध इकट्ठा करना आपके काम का सिर्फ एक हिस्सा है। किसानों से एक साथ, एक जगह पर बात करना — वहीं भरोसा बनता है। आइए देखें बैठकें क्यों मायने रखती हैं।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-why-meetings",
-            "title": "Why Meetings Matter",
+            "title": L("Why Meetings Matter", "बैठकें क्यों मायने रखती हैं"),
             "teach": [
               {
                 "type": "text",
-                "heading": "More Than Just Collecting Milk",
-                "html": "As a <b>Sahayak</b>, your job is not only to collect milk every day. You also need to talk with farmers regularly — explain new things, answer questions, and solve problems together. A <b>meeting</b> is the best way to do all of this at once."
+                "heading": L("More Than Just Collecting Milk", "सिर्फ दूध इकट्ठा करने से कहीं ज़्यादा"),
+                "html": L(
+                  "As a <b>Sahayak</b>, your job is not only to collect milk every day. You also need to talk with farmers regularly — explain new things, answer questions, and solve problems together. A <b>meeting</b> is the best way to do all of this at once.",
+                  "एक <b>सहायक</b> के तौर पर, आपका काम सिर्फ हर दिन दूध इकट्ठा करना नहीं है। आपको किसानों से नियमित रूप से बात भी करनी है — नई बातें समझाना, सवालों के जवाब देना, और साथ मिलकर समस्याएँ हल करना। एक <b>बैठक</b> यह सब एक साथ करने का सबसे अच्छा तरीका है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Village Meeting",
-                "meaning": "A meeting is when farmers and the Sahayak come together, at one place and one time, to talk about the dairy business — new information, a problem, or a plan."
+                "term": L("Village Meeting", "गाँव बैठक (Village Meeting)"),
+                "meaning": L(
+                  "A meeting is when farmers and the Sahayak come together, at one place and one time, to talk about the dairy business — new information, a problem, or a plan.",
+                  "एक बैठक तब होती है जब किसान और सहायक एक जगह, एक समय पर इकट्ठा होते हैं, डेयरी व्यापार के बारे में बात करने के लिए — नई जानकारी, कोई समस्या, या कोई योजना।"
+                )
               },
               {
                 "type": "text",
-                "heading": "When Should You Call a Meeting?",
-                "html": "Call a meeting when: <b>a new rule or scheme</b> needs to be explained, <b>many farmers</b> are facing the same problem, <b>new members</b> need to be welcomed, or something important is about to change — like a change in milk rate."
+                "heading": L("When Should You Call a Meeting?", "आपको बैठक कब बुलानी चाहिए?"),
+                "html": L(
+                  "Call a meeting when: <b>a new rule or scheme</b> needs to be explained, <b>many farmers</b> are facing the same problem, <b>new members</b> need to be welcomed, or something important is about to change — like a change in milk rate.",
+                  "बैठक तब बुलाएँ जब: <b>किसी नए नियम या योजना</b> को समझाना हो, <b>कई किसान</b> एक ही समस्या का सामना कर रहे हों, <b>नए सदस्यों</b> का स्वागत करना हो, या कुछ ज़रूरी बदलने वाला हो — जैसे दूध की दर में बदलाव।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Think About It",
-                "text": "If 5 farmers each ask you the same question on 5 different days, you answer it 5 times — and each answer may come out a little different. If you call one meeting instead, you answer it once, and everyone hears the same, correct answer together."
+                "heading": L("Think About It", "इस पर सोचिए"),
+                "text": L(
+                  "If 5 farmers each ask you the same question on 5 different days, you answer it 5 times — and each answer may come out a little different. If you call one meeting instead, you answer it once, and everyone hears the same, correct answer together.",
+                  "अगर 5 किसान 5 अलग-अलग दिनों में आपसे एक ही सवाल पूछें, तो आप इसका जवाब 5 बार देते हैं — और हर जवाब थोड़ा अलग निकल सकता है। अगर इसके बजाय आप एक बैठक बुलाएँ, तो आप इसका जवाब एक बार देते हैं, और सभी एक साथ एक ही सही जवाब सुनते हैं।"
+                )
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Did You Know?",
-                "text": "A good meeting builds trust. When farmers feel heard, they trust the MPP more — and they keep bringing their milk there instead of selling it to someone else."
+                "heading": L("Did You Know?", "क्या आप जानते हैं?"),
+                "text": L(
+                  "A good meeting builds trust. When farmers feel heard, they trust the MPP more — and they keep bringing their milk there instead of selling it to someone else.",
+                  "एक अच्छी बैठक भरोसा बनाती है। जब किसानों को लगता है कि उनकी बात सुनी जा रही है, तो वे MPP पर ज़्यादा भरोसा करते हैं — और अपना दूध कहीं और बेचने के बजाय वहीं लाते रहते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "Why is it better to answer a common question in a meeting instead of one farmer at a time?",
+                "q": L(
+                  "Why is it better to answer a common question in a meeting instead of one farmer at a time?",
+                  "एक-एक किसान को अलग-अलग जवाब देने के बजाय एक बैठक में आम सवाल का जवाब देना बेहतर क्यों है?"
+                ),
                 "options": [
-                  "It takes more of your time",
-                  "Everyone hears the same, correct answer together",
-                  "Farmers do not like meetings",
-                  "It is not better — one at a time is always best"
+                  L("It takes more of your time", "इसमें आपका ज़्यादा समय लगता है"),
+                  L("Everyone hears the same, correct answer together", "सभी एक साथ एक ही सही जवाब सुनते हैं"),
+                  L("Farmers do not like meetings", "किसानों को बैठकें पसंद नहीं हैं"),
+                  L("It is not better — one at a time is always best", "यह बेहतर नहीं है — एक-एक करना हमेशा सबसे अच्छा है")
                 ],
                 "answer": 1,
-                "explain": "A meeting lets you give one clear, correct answer to everyone at the same time, instead of repeating (and possibly changing) the answer many times."
+                "explain": L(
+                  "A meeting lets you give one clear, correct answer to everyone at the same time, instead of repeating (and possibly changing) the answer many times.",
+                  "एक बैठक आपको जवाब को कई बार दोहराने (और शायद बदलने) के बजाय, सभी को एक साथ एक स्पष्ट, सही जवाब देने देती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "You should only call a meeting when milk rates change — never for anything else.",
+                "q": L(
+                  "You should only call a meeting when milk rates change — never for anything else.",
+                  "आपको बैठक सिर्फ तब बुलानी चाहिए जब दूध की दरें बदलें — कभी किसी और वजह से नहीं।"
+                ),
                 "answer": false,
-                "explain": "Meetings are also useful for explaining new rules, solving a shared problem, or welcoming new members — not only for rate changes."
+                "explain": L(
+                  "Meetings are also useful for explaining new rules, solving a shared problem, or welcoming new members — not only for rate changes.",
+                  "बैठकें नए नियम समझाने, साझा समस्या हल करने, या नए सदस्यों का स्वागत करने के लिए भी उपयोगी हैं — सिर्फ दर बदलाव के लिए नहीं।"
+                )
               }
             ]
           },
           {
             "id": "t-meeting-groups",
-            "title": "Who Meets in a Small Group?",
+            "title": L("Who Meets in a Small Group?", "छोटे समूह में कौन मिलता है?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Two Kinds of Small Groups",
-                "html": "Not every meeting needs the whole village. Often, a <b>small group</b> of the right people is enough to solve a problem or share information quickly. Two common small groups are the VCG and the MRG."
+                "heading": L("Two Kinds of Small Groups", "दो तरह के छोटे समूह"),
+                "html": L(
+                  "Not every meeting needs the whole village. Often, a <b>small group</b> of the right people is enough to solve a problem or share information quickly. Two common small groups are the VCG and the MRG.",
+                  "हर बैठक के लिए पूरे गाँव की ज़रूरत नहीं होती। अक्सर, सही लोगों का एक <b>छोटा समूह</b> किसी समस्या को हल करने या जल्दी जानकारी साझा करने के लिए काफ़ी होता है। दो आम छोटे समूह हैं VCG और MRG।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "VCG (Village Contact Group)",
-                "meaning": "A small group of active, respected farmers in the village who help the Sahayak stay in touch with all the other farmer members and pass on information both ways."
+                "term": L("VCG (Village Contact Group)", "VCG (गाँव संपर्क समूह)"),
+                "meaning": L(
+                  "A small group of active, respected farmers in the village who help the Sahayak stay in touch with all the other farmer members and pass on information both ways.",
+                  "गाँव के सक्रिय, सम्मानित किसानों का एक छोटा समूह जो सहायक को बाकी सभी किसान सदस्यों के संपर्क में रहने में मदद करता है और दोनों तरफ जानकारी पहुँचाता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "MRG (Member Relation Group)",
-                "meaning": "A small group that looks after the relationship with members — listening to their problems and helping solve them, so members stay happy with the MPP."
+                "term": L("MRG (Member Relation Group)", "MRG (सदस्य संबंध समूह)"),
+                "meaning": L(
+                  "A small group that looks after the relationship with members — listening to their problems and helping solve them, so members stay happy with the MPP.",
+                  "एक छोटा समूह जो सदस्यों के साथ संबंध का ध्यान रखता है — उनकी समस्याएँ सुनता है और उन्हें हल करने में मदद करता है, ताकि सदस्य MPP से खुश रहें।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Sahayak",
-                    "text": "Leads the meeting, shares information, and listens to what farmers say."
+                    "label": L("Sahayak", "सहायक"),
+                    "text": L(
+                      "Leads the meeting, shares information, and listens to what farmers say.",
+                      "बैठक का नेतृत्व करता है, जानकारी साझा करता है, और किसानों की बात सुनता है।"
+                    )
                   },
                   {
-                    "label": "Management Committee",
-                    "text": "Local leaders who help run the MPP and take decisions on behalf of the members."
+                    "label": L("Management Committee", "प्रबंधन समिति"),
+                    "text": L(
+                      "Local leaders who help run the MPP and take decisions on behalf of the members.",
+                      "स्थानीय नेता जो MPP चलाने में मदद करते हैं और सदस्यों की ओर से फैसले लेते हैं।"
+                    )
                   },
                   {
-                    "label": "Transporter",
-                    "text": "The person who drives the vehicle that carries milk cans — sometimes called in to discuss collection timing."
+                    "label": L("Transporter", "परिवहनकर्ता"),
+                    "text": L(
+                      "The person who drives the vehicle that carries milk cans — sometimes called in to discuss collection timing.",
+                      "वह व्यक्ति जो दूध के कैन ले जाने वाला वाहन चलाता है — कभी-कभी संग्रह के समय पर चर्चा के लिए बुलाया जाता है।"
+                    )
                   }
                 ]
               },
               {
                 "type": "text",
-                "heading": "Small Meeting Means a Small Number of People",
-                "html": "A small-group meeting usually has only the people who are directly involved in that topic — maybe 5 to 15 people. This makes it easy for everyone to speak, ask questions, and be heard."
+                "heading": L("Small Meeting Means a Small Number of People", "छोटी बैठक का मतलब है कम लोग"),
+                "html": L(
+                  "A small-group meeting usually has only the people who are directly involved in that topic — maybe 5 to 15 people. This makes it easy for everyone to speak, ask questions, and be heard.",
+                  "एक छोटे-समूह की बैठक में आमतौर पर सिर्फ वे लोग होते हैं जो उस विषय से सीधे जुड़े हों — शायद 5 से 15 लोग। इससे सबके लिए बोलना, सवाल पूछना, और सुना जाना आसान हो जाता है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What does the VCG (Village Contact Group) mainly help with?",
+                "q": L("What does the VCG (Village Contact Group) mainly help with?", "VCG (गाँव संपर्क समूह) मुख्य रूप से किसमें मदद करता है?"),
                 "options": [
-                  "Repairing the milk collection vehicle",
-                  "Keeping the Sahayak in touch with all the other farmer members",
-                  "Setting the price of milk for the whole state",
-                  "Printing farmer ID cards"
+                  L("Repairing the milk collection vehicle", "दूध संग्रह वाहन की मरम्मत करना"),
+                  L(
+                    "Keeping the Sahayak in touch with all the other farmer members",
+                    "सहायक को बाकी सभी किसान सदस्यों के संपर्क में रखना"
+                  ),
+                  L("Setting the price of milk for the whole state", "पूरे राज्य के लिए दूध की कीमत तय करना"),
+                  L("Printing farmer ID cards", "किसान पहचान पत्र छापना")
                 ],
                 "answer": 1,
-                "explain": "The VCG is a small group of active farmers who help the Sahayak pass information to and from all the other members in the village."
+                "explain": L(
+                  "The VCG is a small group of active farmers who help the Sahayak pass information to and from all the other members in the village.",
+                  "VCG सक्रिय किसानों का एक छोटा समूह है जो सहायक को गाँव के बाकी सभी सदस्यों तक और उनसे जानकारी पहुँचाने में मदद करता है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A small-group meeting usually includes the entire village, sometimes hundreds of people.",
+                "q": L(
+                  "A small-group meeting usually includes the entire village, sometimes hundreds of people.",
+                  "एक छोटे-समूह की बैठक में आमतौर पर पूरा गाँव शामिल होता है, कभी-कभी सैकड़ों लोग।"
+                ),
                 "answer": false,
-                "explain": "A small-group meeting is kept small on purpose — often just 5 to 15 people — so everyone can speak and be heard."
+                "explain": L(
+                  "A small-group meeting is kept small on purpose — often just 5 to 15 people — so everyone can speak and be heard.",
+                  "एक छोटे-समूह की बैठक जानबूझकर छोटी रखी जाती है — अक्सर सिर्फ 5 से 15 लोग — ताकि सभी बोल सकें और सुने जा सकें।"
+                )
               }
             ]
           }
@@ -5549,139 +5615,199 @@ export const MODULES = [
             {
               "topicId": "t-why-meetings",
               "type": "mcq",
-              "q": "Which of these is a good reason to call a village meeting?",
+              "q": L("Which of these is a good reason to call a village meeting?", "गाँव बैठक बुलाने का एक अच्छा कारण इनमें से कौन-सा है?"),
               "options": [
-                "To avoid talking to farmers directly",
-                "To explain a new rule to many farmers at the same time",
-                "To collect milk faster",
-                "To replace the Management Committee"
+                L("To avoid talking to farmers directly", "किसानों से सीधे बात करने से बचने के लिए"),
+                L("To explain a new rule to many farmers at the same time", "एक ही समय पर कई किसानों को एक नया नियम समझाने के लिए"),
+                L("To collect milk faster", "दूध जल्दी इकट्ठा करने के लिए"),
+                L("To replace the Management Committee", "प्रबंधन समिति की जगह लेने के लिए")
               ],
               "answer": 1,
-              "explain": "Meetings are called to explain something important, like a new rule, to many farmers at once, so everyone hears the same correct information."
+              "explain": L(
+                "Meetings are called to explain something important, like a new rule, to many farmers at once, so everyone hears the same correct information.",
+                "बैठकें कुछ ज़रूरी समझाने के लिए बुलाई जाती हैं, जैसे एक नया नियम, कई किसानों को एक साथ, ताकि सभी एक ही सही जानकारी सुनें।"
+              )
             },
             {
               "topicId": "t-meeting-groups",
               "type": "truefalse",
-              "q": "The MRG (Member Relation Group) mainly focuses on listening to members' problems and helping solve them.",
+              "q": L(
+                "The MRG (Member Relation Group) mainly focuses on listening to members' problems and helping solve them.",
+                "MRG (सदस्य संबंध समूह) मुख्य रूप से सदस्यों की समस्याएँ सुनने और उन्हें हल करने में मदद करने पर केंद्रित है।"
+              ),
               "answer": true,
-              "explain": "The MRG's main job is looking after the relationship with members — hearing problems and helping resolve them."
+              "explain": L(
+                "The MRG's main job is looking after the relationship with members — hearing problems and helping resolve them.",
+                "MRG का मुख्य काम सदस्यों के साथ संबंध का ध्यान रखना है — समस्याएँ सुनना और उन्हें हल करने में मदद करना।"
+              )
             }
           ]
         }
       },
       {
         "id": "m7-l2",
-        "title": "Planning and Running a Small-Group Meeting",
+        "title": L("Planning and Running a Small-Group Meeting", "एक छोटे-समूह की बैठक की योजना बनाना और चलाना"),
         "estMinutes": 7,
         "hook": [
           {
             "type": "hero",
-            "heading": "Planning and Running a Small-Group Meeting",
-            "text": "Calling a meeting is easy. Running one well — where quiet people speak up and problems get solved — takes a little planning. Let's learn how."
+            "heading": L("Planning and Running a Small-Group Meeting", "एक छोटे-समूह की बैठक की योजना बनाना और चलाना"),
+            "text": L(
+              "Calling a meeting is easy. Running one well — where quiet people speak up and problems get solved — takes a little planning. Let's learn how.",
+              "बैठक बुलाना आसान है। इसे अच्छी तरह चलाना — जहाँ शांत लोग बोलें और समस्याएँ हल हों — थोड़ी योजना चाहिए। आइए सीखें कैसे।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-plan-agenda",
-            "title": "Before the Meeting: Planning",
+            "title": L("Before the Meeting: Planning", "बैठक से पहले: योजना बनाना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Every Meeting Needs an Agenda",
-                "html": "Before you call people together, decide exactly what you want to talk about, and in what order. Writing this down — even as a short list — is called an <b>agenda</b>."
+                "heading": L("Every Meeting Needs an Agenda", "हर बैठक को एक कार्यसूची चाहिए"),
+                "html": L(
+                  "Before you call people together, decide exactly what you want to talk about, and in what order. Writing this down — even as a short list — is called an <b>agenda</b>.",
+                  "लोगों को इकट्ठा करने से पहले, तय करें कि आप ठीक-ठीक किस बारे में और किस क्रम में बात करना चाहते हैं। इसे लिखना — एक छोटी सूची के रूप में भी — <b>कार्यसूची (agenda)</b> कहलाता है।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Agenda",
-                "meaning": "A short list of the topics you will talk about in a meeting, in order. It keeps the meeting on track and stops it from running too long."
+                "term": L("Agenda", "कार्यसूची (Agenda)"),
+                "meaning": L(
+                  "A short list of the topics you will talk about in a meeting, in order. It keeps the meeting on track and stops it from running too long.",
+                  "बैठक में आप जिन विषयों पर बात करेंगे, उनकी एक छोटी, क्रमबद्ध सूची। यह बैठक को दिशा में रखती है और इसे बहुत लंबा चलने से रोकती है।"
+                )
               },
               {
                 "type": "text",
-                "heading": "Where and How People Sit",
-                "html": "How people sit changes how they talk. Sitting in a <b>circle</b> or facing each other lets everyone see who is speaking and feel equally included. If people sit in rows facing only the Sahayak, like a classroom, quiet farmers often stay quiet."
+                "heading": L("Where and How People Sit", "लोग कहाँ और कैसे बैठते हैं"),
+                "html": L(
+                  "How people sit changes how they talk. Sitting in a <b>circle</b> or facing each other lets everyone see who is speaking and feel equally included. If people sit in rows facing only the Sahayak, like a classroom, quiet farmers often stay quiet.",
+                  "लोग कैसे बैठते हैं, इससे उनके बोलने का तरीका बदलता है। एक <b>घेरे</b> में या एक-दूसरे के सामने बैठने से सभी देख पाते हैं कि कौन बोल रहा है और बराबर शामिल महसूस करते हैं। अगर लोग सिर्फ सहायक के सामने पंक्तियों में बैठें, कक्षा की तरह, तो शांत किसान अक्सर शांत ही रहते हैं।"
+                )
               },
               {
                 "type": "example",
-                "heading": "A Good Agenda Looks Like This",
-                "text": "1) Welcome the farmers (2 minutes). 2) Share today's topic — for example, a new milk-testing method (5 minutes). 3) Answer questions (10 minutes). 4) Agree on next steps (3 minutes)."
+                "heading": L("A Good Agenda Looks Like This", "एक अच्छी कार्यसूची ऐसी दिखती है"),
+                "text": L(
+                  "1) Welcome the farmers (2 minutes). 2) Share today's topic — for example, a new milk-testing method (5 minutes). 3) Answer questions (10 minutes). 4) Agree on next steps (3 minutes).",
+                  "1) किसानों का स्वागत (2 मिनट)। 2) आज का विषय साझा करें — जैसे, एक नया दूध-जाँच तरीका (5 मिनट)। 3) सवालों के जवाब दें (10 मिनट)। 4) अगले कदमों पर सहमति (3 मिनट)।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Keep It Short",
-                "text": "A small-group meeting works best when it stays short — around 15 minutes. A focused, on-time meeting keeps farmers willing to come to the next one."
+                "heading": L("Keep It Short", "इसे छोटा रखें"),
+                "text": L(
+                  "A small-group meeting works best when it stays short — around 15 minutes. A focused, on-time meeting keeps farmers willing to come to the next one.",
+                  "एक छोटे-समूह की बैठक सबसे अच्छा तब काम करती है जब वह छोटी रहे — लगभग 15 मिनट। एक केंद्रित, समय पर होने वाली बैठक किसानों को अगली बैठक में आने के लिए तैयार रखती है।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is an agenda?",
+                "q": L("What is an agenda?", "कार्यसूची क्या है?"),
                 "options": [
-                  "The place where the meeting is held",
-                  "A short list of topics to discuss, in order",
-                  "The list of farmers who did not attend",
-                  "The bill for the meeting's tea and snacks"
+                  L("The place where the meeting is held", "वह जगह जहाँ बैठक होती है"),
+                  L("A short list of topics to discuss, in order", "चर्चा किए जाने वाले विषयों की एक छोटी, क्रमबद्ध सूची"),
+                  L("The list of farmers who did not attend", "उन किसानों की सूची जो नहीं आए"),
+                  L("The bill for the meeting's tea and snacks", "बैठक की चाय-नाश्ते का बिल")
                 ],
                 "answer": 1,
-                "explain": "An agenda is a short, ordered list of what will be discussed. It keeps a meeting focused and on time."
+                "explain": L(
+                  "An agenda is a short, ordered list of what will be discussed. It keeps a meeting focused and on time.",
+                  "कार्यसूची चर्चा किए जाने वाली चीज़ों की एक छोटी, क्रमबद्ध सूची है। यह बैठक को केंद्रित और समय पर रखती है।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Seating everyone in a circle, facing each other, usually helps more people speak up than seating them in rows facing only the Sahayak.",
+                "q": L(
+                  "Seating everyone in a circle, facing each other, usually helps more people speak up than seating them in rows facing only the Sahayak.",
+                  "सभी को एक घेरे में, एक-दूसरे के सामने बैठाना, आमतौर पर सिर्फ सहायक के सामने पंक्तियों में बैठाने से ज़्यादा लोगों को बोलने में मदद करता है।"
+                ),
                 "answer": true,
-                "explain": "A circle lets everyone see each other and feel equally part of the discussion, which encourages quieter people to speak."
+                "explain": L(
+                  "A circle lets everyone see each other and feel equally part of the discussion, which encourages quieter people to speak.",
+                  "एक घेरा सभी को एक-दूसरे को देखने देता है और चर्चा का बराबर हिस्सा महसूस कराता है, जो शांत लोगों को बोलने के लिए प्रोत्साहित करता है।"
+                )
               }
             ]
           },
           {
             "id": "t-encourage-speak",
-            "title": "Getting Everyone to Speak — and Handling Objections",
+            "title": L("Getting Everyone to Speak — and Handling Objections", "सबको बोलने के लिए तैयार करना — और आपत्तियों को संभालना"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Quiet Members Have Good Ideas Too",
-                "html": "In every group, some people speak up easily and some stay quiet — even when they have something important to say. Part of your job as Sahayak is to gently invite the quiet ones into the conversation."
+                "heading": L("Quiet Members Have Good Ideas Too", "शांत सदस्यों के पास भी अच्छे विचार होते हैं"),
+                "html": L(
+                  "In every group, some people speak up easily and some stay quiet — even when they have something important to say. Part of your job as Sahayak is to gently invite the quiet ones into the conversation.",
+                  "हर समूह में, कुछ लोग आसानी से बोलते हैं और कुछ शांत रहते हैं — भले ही उनके पास कहने के लिए कुछ ज़रूरी हो। सहायक के तौर पर आपका काम है शांत लोगों को धीरे से बातचीत में शामिल करना।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Try This",
-                "text": "Sahayak: \"Lakshmi akka, you have kept animals for many years. What do you think about this new collection time?\" Lakshmi: \"I think it will help — but what about the days when it rains heavily?\" A simple, direct question, asked kindly, brought out a real concern that everyone needed to hear."
+                "heading": L("Try This", "यह आज़माएँ"),
+                "text": L(
+                  "Sahayak: \"Lakshmi akka, you have kept animals for many years. What do you think about this new collection time?\" Lakshmi: \"I think it will help — but what about the days when it rains heavily?\" A simple, direct question, asked kindly, brought out a real concern that everyone needed to hear.",
+                  "सहायक: \"लक्ष्मी अक्का, आपने सालों से पशु पाले हैं। इस नए संग्रह समय के बारे में आपको क्या लगता है?\" लक्ष्मी: \"मुझे लगता है यह मदद करेगा — लेकिन तेज़ बारिश वाले दिनों का क्या?\" एक सरल, सीधा सवाल, दयालुता से पूछा गया, एक असली चिंता सामने लाया जिसे सबको सुनना ज़रूरी था।"
+                )
               },
               {
                 "type": "text",
-                "heading": "When Someone Objects",
-                "html": "When a farmer disagrees or raises a problem, do not argue or brush it aside. First, <b>listen fully</b>. Then <b>repeat the concern back</b> in your own words, so they know you understood. Then answer calmly, using facts. If you do not know the answer, say so honestly, and promise to find out and come back."
+                "heading": L("When Someone Objects", "जब कोई आपत्ति करे"),
+                "html": L(
+                  "When a farmer disagrees or raises a problem, do not argue or brush it aside. First, <b>listen fully</b>. Then <b>repeat the concern back</b> in your own words, so they know you understood. Then answer calmly, using facts. If you do not know the answer, say so honestly, and promise to find out and come back.",
+                  "जब कोई किसान असहमत हो या समस्या उठाए, तो बहस न करें या उसे नज़रअंदाज़ न करें। पहले, <b>पूरी तरह सुनें</b>। फिर अपने शब्दों में <b>चिंता को दोहराएँ</b>, ताकि उन्हें पता चले कि आपने समझा। फिर तथ्यों का उपयोग करते हुए शांति से जवाब दें। अगर आपको जवाब नहीं पता, तो ईमानदारी से यह कहें, और पता लगाकर वापस आने का वादा करें।"
+                )
               },
               {
                 "type": "example",
-                "heading": "Handling an Objection — Do This",
-                "text": "Farmer: \"Why should we trust this new payment schedule? Last time we were told something and it did not happen.\" Sahayak: \"I understand your worry — trust was broken before. Let me explain exactly how this is different, and I will also write down the new dates so you can check them yourself.\""
+                "heading": L("Handling an Objection — Do This", "आपत्ति संभालना — यह करें"),
+                "text": L(
+                  "Farmer: \"Why should we trust this new payment schedule? Last time we were told something and it did not happen.\" Sahayak: \"I understand your worry — trust was broken before. Let me explain exactly how this is different, and I will also write down the new dates so you can check them yourself.\"",
+                  "किसान: \"हम इस नए भुगतान समय-सारणी पर भरोसा क्यों करें? पिछली बार हमें कुछ बताया गया और वह नहीं हुआ।\" सहायक: \"मैं आपकी चिंता समझता हूँ — पहले भरोसा टूटा था। मैं ठीक-ठीक समझाता हूँ कि यह कैसे अलग है, और मैं नई तारीखें भी लिख दूँगा ताकि आप खुद जाँच सकें।\""
+                )
               },
               {
                 "type": "callout",
                 "style": "warning",
-                "heading": "Don't Do This",
-                "text": "Don't argue back. Don't say \"just trust me.\" Don't ignore an objection and quickly move to the next topic. Doing this makes farmers feel unheard — and they may stop coming to meetings altogether."
+                "heading": L("Don't Do This", "यह न करें"),
+                "text": L(
+                  "Don't argue back. Don't say \"just trust me.\" Don't ignore an objection and quickly move to the next topic. Doing this makes farmers feel unheard — and they may stop coming to meetings altogether.",
+                  "बहस न करें। \"बस मुझ पर भरोसा करो\" न कहें। किसी आपत्ति को नज़रअंदाज़ करके जल्दी अगले विषय पर न बढ़ें। ऐसा करने से किसानों को लगता है कि उनकी बात नहीं सुनी गई — और वे बैठकों में आना पूरी तरह बंद कर सकते हैं।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "A farmer raises an objection you don't have an answer for. What should you do?",
+                "q": L("A farmer raises an objection you don't have an answer for. What should you do?", "एक किसान ऐसी आपत्ति उठाता है जिसका आपके पास जवाब नहीं है। आपको क्या करना चाहिए?"),
                 "options": [
-                  "Ignore it and move to the next topic",
-                  "Argue that the farmer is wrong",
-                  "Admit you don't know, and promise to find out and come back",
-                  "End the meeting early"
+                  L("Ignore it and move to the next topic", "इसे नज़रअंदाज़ करें और अगले विषय पर बढ़ें"),
+                  L("Argue that the farmer is wrong", "तर्क दें कि किसान गलत है"),
+                  L("Admit you don't know, and promise to find out and come back", "स्वीकार करें कि आपको नहीं पता, और पता लगाकर वापस आने का वादा करें"),
+                  L("End the meeting early", "बैठक जल्दी खत्म कर दें")
                 ],
                 "answer": 2,
-                "explain": "Honesty builds trust. It is far better to admit you don't know and follow up later than to guess or dismiss the concern."
+                "explain": L(
+                  "Honesty builds trust. It is far better to admit you don't know and follow up later than to guess or dismiss the concern.",
+                  "ईमानदारी भरोसा बनाती है। यह अंदाज़ा लगाने या चिंता को नज़रअंदाज़ करने से कहीं बेहतर है कि आप स्वीकार करें कि आपको नहीं पता और बाद में अनुवर्तन करें।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "Directly and kindly inviting a quiet member to speak, by name, can help bring out concerns the group needs to hear.",
+                "q": L(
+                  "Directly and kindly inviting a quiet member to speak, by name, can help bring out concerns the group needs to hear.",
+                  "एक शांत सदस्य को नाम लेकर सीधे और दयालुता से बोलने के लिए बुलाना, समूह को सुनने लायक चिंताओं को सामने ला सकता है।"
+                ),
                 "answer": true,
-                "explain": "Asking a quiet member directly, in a respectful way, often draws out useful information that would otherwise go unsaid."
+                "explain": L(
+                  "Asking a quiet member directly, in a respectful way, often draws out useful information that would otherwise go unsaid.",
+                  "एक शांत सदस्य से सम्मानपूर्वक सीधे पूछना अक्सर ऐसी उपयोगी जानकारी सामने लाता है जो वरना अनकही रह जाती।"
+                )
               }
             ]
           }
@@ -5692,149 +5818,218 @@ export const MODULES = [
             {
               "topicId": "t-plan-agenda",
               "type": "mcq",
-              "q": "About how long should a small-group meeting last?",
+              "q": L("About how long should a small-group meeting last?", "एक छोटे-समूह की बैठक लगभग कितनी देर चलनी चाहिए?"),
               "options": [
-                "Around 15 minutes",
-                "2 hours",
-                "The whole day",
-                "5 minutes, no more"
+                L("Around 15 minutes", "लगभग 15 मिनट"),
+                L("2 hours", "2 घंटे"),
+                L("The whole day", "पूरा दिन"),
+                L("5 minutes, no more", "5 मिनट, इससे ज़्यादा नहीं")
               ],
               "answer": 0,
-              "explain": "A small-group meeting works best when kept short and focused — around 15 minutes."
+              "explain": L(
+                "A small-group meeting works best when kept short and focused — around 15 minutes.",
+                "एक छोटे-समूह की बैठक सबसे अच्छा तब काम करती है जब वह छोटी और केंद्रित रहे — लगभग 15 मिनट।"
+              )
             },
             {
               "topicId": "t-encourage-speak",
               "type": "truefalse",
-              "q": "When handling an objection, you should first listen fully and repeat the concern back before answering.",
+              "q": L(
+                "When handling an objection, you should first listen fully and repeat the concern back before answering.",
+                "आपत्ति संभालते समय, आपको जवाब देने से पहले पूरी तरह सुनना चाहिए और चिंता को दोहराना चाहिए।"
+              ),
               "answer": true,
-              "explain": "Listening first and repeating the concern shows the farmer you understood, which makes your answer land better."
+              "explain": L(
+                "Listening first and repeating the concern shows the farmer you understood, which makes your answer land better.",
+                "पहले सुनना और चिंता को दोहराना किसान को दिखाता है कि आपने समझा, जिससे आपका जवाब बेहतर असर करता है।"
+              )
             }
           ]
         }
       },
       {
         "id": "m7-l3",
-        "title": "Small Group Meeting or Mass Meeting?",
+        "title": L("Small Group Meeting or Mass Meeting?", "छोटे-समूह की बैठक या सामूहिक बैठक?"),
         "estMinutes": 6,
         "hook": [
           {
             "type": "hero",
-            "heading": "Small Group Meeting or Mass Meeting?",
-            "text": "From a handful of farmers to a whole village — which meeting do you call, and when? Let's learn the difference."
+            "heading": L("Small Group Meeting or Mass Meeting?", "छोटे-समूह की बैठक या सामूहिक बैठक?"),
+            "text": L(
+              "From a handful of farmers to a whole village — which meeting do you call, and when? Let's learn the difference.",
+              "मुट्ठी भर किसानों से लेकर पूरे गाँव तक — कौन-सी बैठक बुलाएँ, और कब? आइए अंतर सीखें।"
+            )
           }
         ],
         "topics": [
           {
             "id": "t-mass-meeting",
-            "title": "What Is a Village Mass Meeting?",
+            "title": L("What Is a Village Mass Meeting?", "गाँव सामूहिक बैठक क्या है?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "When the Whole Village Comes Together",
-                "html": "Sometimes a topic is important enough that most or all farmer families in the village need to hear it directly. For this, a <b>mass meeting</b> is called — much bigger than a small-group meeting."
+                "heading": L("When the Whole Village Comes Together", "जब पूरा गाँव एक साथ आता है"),
+                "html": L(
+                  "Sometimes a topic is important enough that most or all farmer families in the village need to hear it directly. For this, a <b>mass meeting</b> is called — much bigger than a small-group meeting.",
+                  "कभी-कभी एक विषय इतना ज़रूरी होता है कि गाँव के ज़्यादातर या सभी किसान परिवारों को इसे सीधे सुनना चाहिए। इसके लिए, एक <b>सामूहिक बैठक</b> बुलाई जाती है — छोटे-समूह की बैठक से कहीं बड़ी।"
+                )
               },
               {
                 "type": "glossary",
-                "term": "Mass Meeting",
-                "meaning": "A large meeting where most or all of the farmer families in a village are invited — not just a small group directly affected by one issue."
+                "term": L("Mass Meeting", "सामूहिक बैठक (Mass Meeting)"),
+                "meaning": L(
+                  "A large meeting where most or all of the farmer families in a village are invited — not just a small group directly affected by one issue.",
+                  "एक बड़ी बैठक जिसमें गाँव के ज़्यादातर या सभी किसान परिवारों को बुलाया जाता है — सिर्फ एक मुद्दे से सीधे प्रभावित छोटे समूह को नहीं।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Village Meeting",
-                    "text": "A general meeting for the whole village, used to share important news or take a big decision together."
+                    "label": L("Village Meeting", "गाँव बैठक"),
+                    "text": L(
+                      "A general meeting for the whole village, used to share important news or take a big decision together.",
+                      "पूरे गाँव के लिए एक सामान्य बैठक, ज़रूरी खबर साझा करने या साथ मिलकर एक बड़ा फैसला लेने के लिए।"
+                    )
                   },
                   {
-                    "label": "Health Camp",
-                    "text": "A camp where trained staff check the health of milk animals, give advice, and sometimes vaccinate them — held for the whole village at once."
+                    "label": L("Health Camp", "स्वास्थ्य शिविर"),
+                    "text": L(
+                      "A camp where trained staff check the health of milk animals, give advice, and sometimes vaccinate them — held for the whole village at once.",
+                      "एक शिविर जहाँ प्रशिक्षित कर्मचारी दुधारू पशुओं का स्वास्थ्य जाँचते हैं, सलाह देते हैं, और कभी-कभी टीका लगाते हैं — पूरे गाँव के लिए एक साथ आयोजित।"
+                    )
                   },
                   {
-                    "label": "Milk Testing Camp (DMT)",
-                    "text": "A camp where milk quality is tested openly in front of many farmers together, so they can see for themselves how testing works and trust it."
+                    "label": L("Milk Testing Camp (DMT)", "दूध जाँच शिविर (DMT)"),
+                    "text": L(
+                      "A camp where milk quality is tested openly in front of many farmers together, so they can see for themselves how testing works and trust it.",
+                      "एक शिविर जहाँ कई किसानों के सामने खुले तौर पर दूध की गुणवत्ता जाँची जाती है, ताकि वे खुद देख सकें कि जाँच कैसे होती है और उस पर भरोसा करें।"
+                    )
                   }
                 ]
               },
               {
                 "type": "callout",
                 "style": "info",
-                "heading": "Did You Know?",
-                "text": "A mass meeting usually needs more planning than a small-group meeting — more space, more chairs, and more helpers to manage a bigger crowd."
+                "heading": L("Did You Know?", "क्या आप जानते हैं?"),
+                "text": L(
+                  "A mass meeting usually needs more planning than a small-group meeting — more space, more chairs, and more helpers to manage a bigger crowd.",
+                  "एक सामूहिक बैठक को आमतौर पर छोटे-समूह की बैठक से ज़्यादा योजना चाहिए — ज़्यादा जगह, ज़्यादा कुर्सियाँ, और बड़ी भीड़ संभालने के लिए ज़्यादा मददगार।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "What is a mass meeting?",
+                "q": L("What is a mass meeting?", "सामूहिक बैठक क्या है?"),
                 "options": [
-                  "A meeting with only the Management Committee",
-                  "A large meeting where most or all farmer families in the village are invited",
-                  "A meeting held only once a year",
-                  "A meeting only for new members"
+                  L("A meeting with only the Management Committee", "सिर्फ प्रबंधन समिति के साथ एक बैठक"),
+                  L(
+                    "A large meeting where most or all farmer families in the village are invited",
+                    "एक बड़ी बैठक जिसमें गाँव के ज़्यादातर या सभी किसान परिवारों को बुलाया जाता है"
+                  ),
+                  L("A meeting held only once a year", "साल में सिर्फ एक बार होने वाली बैठक"),
+                  L("A meeting only for new members", "सिर्फ नए सदस्यों के लिए एक बैठक")
                 ],
                 "answer": 1,
-                "explain": "A mass meeting is a large, village-wide meeting, unlike a small-group meeting which involves only the people directly affected by one topic."
+                "explain": L(
+                  "A mass meeting is a large, village-wide meeting, unlike a small-group meeting which involves only the people directly affected by one topic.",
+                  "एक सामूहिक बैठक एक बड़ी, पूरे गाँव की बैठक है, जबकि छोटे-समूह की बैठक में सिर्फ एक विषय से सीधे प्रभावित लोग शामिल होते हैं।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A health camp for milk animals is an example of an activity that can be part of a village mass meeting.",
+                "q": L(
+                  "A health camp for milk animals is an example of an activity that can be part of a village mass meeting.",
+                  "दुधारू पशुओं के लिए एक स्वास्थ्य शिविर एक गतिविधि का उदाहरण है जो गाँव सामूहिक बैठक का हिस्सा हो सकती है।"
+                ),
                 "answer": true,
-                "explain": "Health camps, along with village meetings and milk testing camps, are examples of activities held for the whole village at once."
+                "explain": L(
+                  "Health camps, along with village meetings and milk testing camps, are examples of activities held for the whole village at once.",
+                  "स्वास्थ्य शिविर, गाँव बैठकों और दूध जाँच शिविरों के साथ, पूरे गाँव के लिए एक साथ आयोजित गतिविधियों के उदाहरण हैं।"
+                )
               }
             ]
           },
           {
             "id": "t-choosing-right-meeting",
-            "title": "Which One Should You Call?",
+            "title": L("Which One Should You Call?", "आपको कौन-सी बुलानी चाहिए?"),
             "teach": [
               {
                 "type": "text",
-                "heading": "Small Group vs Mass Meeting",
-                "html": "The right choice depends on <b>who is affected</b> and <b>what you need from the meeting</b>. A small group works when only a few farmers are involved and you need real discussion. A mass meeting works when everyone needs the same information at once."
+                "heading": L("Small Group vs Mass Meeting", "छोटा समूह बनाम सामूहिक बैठक"),
+                "html": L(
+                  "The right choice depends on <b>who is affected</b> and <b>what you need from the meeting</b>. A small group works when only a few farmers are involved and you need real discussion. A mass meeting works when everyone needs the same information at once.",
+                  "सही चुनाव इस पर निर्भर करता है कि <b>कौन प्रभावित है</b> और <b>बैठक से आपको क्या चाहिए</b>। एक छोटा समूह तब काम करता है जब सिर्फ कुछ किसान शामिल हों और आपको असली चर्चा चाहिए। एक सामूहिक बैठक तब काम करती है जब सभी को एक साथ एक ही जानकारी चाहिए।"
+                )
               },
               {
                 "type": "stat-grid",
                 "items": [
                   {
-                    "label": "Choose a Small Group When...",
-                    "text": "the topic affects only a few farmers, or you need everyone present to discuss in detail and be heard."
+                    "label": L("Choose a Small Group When...", "छोटा समूह चुनें जब..."),
+                    "text": L(
+                      "the topic affects only a few farmers, or you need everyone present to discuss in detail and be heard.",
+                      "विषय सिर्फ कुछ किसानों को प्रभावित करता हो, या आपको विस्तार से चर्चा करने और सुने जाने के लिए सभी की मौजूदगी चाहिए।"
+                    )
                   },
                   {
-                    "label": "Choose a Mass Meeting When...",
-                    "text": "the topic affects the whole village — like a new MPP opening or a big rate change — and you mainly need to inform many people at once."
+                    "label": L("Choose a Mass Meeting When...", "सामूहिक बैठक चुनें जब..."),
+                    "text": L(
+                      "the topic affects the whole village — like a new MPP opening or a big rate change — and you mainly need to inform many people at once.",
+                      "विषय पूरे गाँव को प्रभावित करता हो — जैसे एक नया MPP खुलना या बड़ा दर बदलाव — और आपको मुख्य रूप से एक साथ कई लोगों को सूचित करना हो।"
+                    )
                   }
                 ]
               },
               {
                 "type": "example",
-                "heading": "Think About It",
-                "text": "Ten farmers are unhappy about how their milk's fat percentage is being measured. Should you call a mass meeting of 100 people, or a small group of these 10? A small group is better here — it lets you discuss each farmer's concern in real detail."
+                "heading": L("Think About It", "इस पर सोचिए"),
+                "text": L(
+                  "Ten farmers are unhappy about how their milk's fat percentage is being measured. Should you call a mass meeting of 100 people, or a small group of these 10? A small group is better here — it lets you discuss each farmer's concern in real detail.",
+                  "दस किसान इस बात से नाखुश हैं कि उनके दूध का फैट प्रतिशत कैसे मापा जा रहा है। क्या आपको 100 लोगों की सामूहिक बैठक बुलानी चाहिए, या इन 10 का एक छोटा समूह? यहाँ छोटा समूह बेहतर है — यह आपको हर किसान की चिंता को असल विस्तार से चर्चा करने देता है।"
+                )
               },
               {
                 "type": "callout",
                 "style": "tip",
-                "heading": "Plan Extra Time for Mass Meetings",
-                "text": "A mass meeting for a large group usually needs about 20 minutes or more, often with two or more people helping manage the crowd — much more than a small 15-minute group meeting."
+                "heading": L("Plan Extra Time for Mass Meetings", "सामूहिक बैठकों के लिए अतिरिक्त समय की योजना बनाएँ"),
+                "text": L(
+                  "A mass meeting for a large group usually needs about 20 minutes or more, often with two or more people helping manage the crowd — much more than a small 15-minute group meeting.",
+                  "एक बड़े समूह के लिए सामूहिक बैठक को आमतौर पर लगभग 20 मिनट या ज़्यादा चाहिए, अक्सर भीड़ संभालने में मदद करने वाले दो या ज़्यादा लोगों के साथ — एक छोटी 15-मिनट की समूह बैठक से कहीं ज़्यादा।"
+                )
               }
             ],
             "check": [
               {
                 "type": "mcq",
-                "q": "A new MPP is opening and every farmer in the village needs to know about it. Which type of meeting fits best?",
+                "q": L(
+                  "A new MPP is opening and every farmer in the village needs to know about it. Which type of meeting fits best?",
+                  "एक नया MPP खुल रहा है और गाँव के हर किसान को इसके बारे में जानना ज़रूरी है। कौन-सी बैठक सबसे उपयुक्त है?"
+                ),
                 "options": [
-                  "A small-group meeting with 5 farmers",
-                  "A mass meeting for the whole village",
-                  "No meeting is needed",
-                  "A meeting only with the transporter"
+                  L("A small-group meeting with 5 farmers", "5 किसानों की एक छोटे-समूह की बैठक"),
+                  L("A mass meeting for the whole village", "पूरे गाँव के लिए एक सामूहिक बैठक"),
+                  L("No meeting is needed", "किसी बैठक की ज़रूरत नहीं है"),
+                  L("A meeting only with the transporter", "सिर्फ परिवहनकर्ता के साथ एक बैठक")
                 ],
                 "answer": 1,
-                "explain": "Since this news affects every farmer in the village, a mass meeting is the right choice so everyone hears it directly."
+                "explain": L(
+                  "Since this news affects every farmer in the village, a mass meeting is the right choice so everyone hears it directly.",
+                  "चूँकि यह खबर गाँव के हर किसान को प्रभावित करती है, एक सामूहिक बैठक सही चुनाव है ताकि सभी इसे सीधे सुनें।"
+                )
               },
               {
                 "type": "truefalse",
-                "q": "A mass meeting usually needs less planning time than a small-group meeting.",
+                "q": L(
+                  "A mass meeting usually needs less planning time than a small-group meeting.",
+                  "एक सामूहिक बैठक को आमतौर पर छोटे-समूह की बैठक से कम योजना समय चाहिए।"
+                ),
                 "answer": false,
-                "explain": "A mass meeting needs MORE planning — more space, more helpers, and more time — because it involves far more people."
+                "explain": L(
+                  "A mass meeting needs MORE planning — more space, more helpers, and more time — because it involves far more people.",
+                  "एक सामूहिक बैठक को ज़्यादा योजना चाहिए — ज़्यादा जगह, ज़्यादा मददगार, और ज़्यादा समय — क्योंकि इसमें कहीं ज़्यादा लोग शामिल होते हैं।"
+                )
               }
             ]
           }
@@ -5846,28 +6041,34 @@ export const MODULES = [
             {
               "topicId": "t-mass-meeting",
               "type": "mcq",
-              "q": "Which of these best describes a mass meeting?",
+              "q": L("Which of these best describes a mass meeting?", "इनमें से कौन-सा सामूहिक बैठक का सबसे अच्छा वर्णन करता है?"),
               "options": [
-                "A meeting with just the VCG",
-                "A large, village-wide meeting for most or all farmer families",
-                "A one-on-one talk with a single farmer",
-                "A meeting held only inside the MPP office"
+                L("A meeting with just the VCG", "सिर्फ VCG के साथ एक बैठक"),
+                L("A large, village-wide meeting for most or all farmer families", "ज़्यादातर या सभी किसान परिवारों के लिए एक बड़ी, पूरे गाँव की बैठक"),
+                L("A one-on-one talk with a single farmer", "एक किसान के साथ एक-से-एक बातचीत"),
+                L("A meeting held only inside the MPP office", "सिर्फ MPP कार्यालय के अंदर होने वाली बैठक")
               ],
               "answer": 1,
-              "explain": "A mass meeting is large and village-wide, unlike a small-group meeting."
+              "explain": L("A mass meeting is large and village-wide, unlike a small-group meeting.", "एक सामूहिक बैठक बड़ी और पूरे गाँव की होती है, छोटे-समूह की बैठक के विपरीत।")
             },
             {
               "topicId": "t-choosing-right-meeting",
               "type": "mcq",
-              "q": "A handful of farmers have a detailed complaint about payment delays. What is the better choice?",
+              "q": L(
+                "A handful of farmers have a detailed complaint about payment delays. What is the better choice?",
+                "मुट्ठी भर किसानों की भुगतान में देरी को लेकर एक विस्तृत शिकायत है। बेहतर चुनाव क्या है?"
+              ),
               "options": [
-                "A mass meeting for the whole village",
-                "A small-group meeting with just those farmers",
-                "No meeting, just wait for it to resolve itself",
-                "A health camp"
+                L("A mass meeting for the whole village", "पूरे गाँव के लिए एक सामूहिक बैठक"),
+                L("A small-group meeting with just those farmers", "सिर्फ उन किसानों के साथ एक छोटे-समूह की बैठक"),
+                L("No meeting, just wait for it to resolve itself", "कोई बैठक नहीं, बस इसके खुद हल होने का इंतज़ार करें"),
+                L("A health camp", "एक स्वास्थ्य शिविर")
               ],
               "answer": 1,
-              "explain": "Since only a few farmers are affected and the issue needs real discussion, a small-group meeting is the better choice."
+              "explain": L(
+                "Since only a few farmers are affected and the issue needs real discussion, a small-group meeting is the better choice.",
+                "चूँकि सिर्फ कुछ किसान प्रभावित हैं और मुद्दे को असली चर्चा चाहिए, एक छोटे-समूह की बैठक बेहतर चुनाव है।"
+              )
             }
           ]
         }
