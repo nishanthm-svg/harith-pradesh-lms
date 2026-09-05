@@ -66,7 +66,10 @@ function renderLandingPage() {
         <div class="landing-logo"><img src="public/assets/harith-logo.png" alt="Harith Pradesh Milk Producer Organisation" /></div>
         <h1>${escapeHtml(u("landingHeroTitle"))}</h1>
         <p>${escapeHtml(u("landingHeroSubtitle"))}</p>
-        <button type="button" class="btn btn-primary landing-cta" id="landing-login-btn">${escapeHtml(u("landingLoginButton"))}</button>
+        <div class="landing-cta-row">
+          <button type="button" class="btn btn-primary landing-cta" id="landing-employee-login-btn">${escapeHtml(u("employeeLoginButton"))}</button>
+          <button type="button" class="btn btn-outline landing-cta" id="landing-admin-login-btn">${escapeHtml(u("adminLoginButtonLabel"))}</button>
+        </div>
       </div>
       <div class="page landing-body">
         <div class="landing-features">${features}</div>
@@ -76,19 +79,22 @@ function renderLandingPage() {
 }
 
 function wireLandingPage() {
-  const btn = document.getElementById("landing-login-btn");
-  if (btn) btn.addEventListener("click", () => navigate("#/login"));
+  const empBtn = document.getElementById("landing-employee-login-btn");
+  const adminBtn = document.getElementById("landing-admin-login-btn");
+  if (empBtn) empBtn.addEventListener("click", () => navigate("#/login/employee"));
+  if (adminBtn) adminBtn.addEventListener("click", () => navigate("#/login/admin"));
 }
 
 // ============================================================================
 // Login / auth pages
 // ============================================================================
-function renderLoginPage() {
+function renderLoginPage(loginAs) {
+  const title = loginAs === "admin" ? u("adminLoginTitle") : loginAs === "employee" ? u("employeeLoginTitle") : u("loginTitle");
   return `
     <div class="auth-page">
       <div class="auth-box">
         <div class="auth-logo"><img src="public/assets/harith-logo.png" alt="Harith Pradesh" /></div>
-        <h1>${escapeHtml(u("loginTitle"))}</h1>
+        <h1>${escapeHtml(title)}</h1>
         <p class="sub">${escapeHtml(u("loginSubtitle"))}</p>
         <div id="login-error"></div>
         <form id="login-form">
@@ -107,7 +113,7 @@ function renderLoginPage() {
   `;
 }
 
-function wireLoginPage() {
+function wireLoginPage(loginAs) {
   const form = document.getElementById("login-form");
   const errorEl = document.getElementById("login-error");
   const submitBtn = document.getElementById("login-submit");
@@ -120,7 +126,17 @@ function wireLoginPage() {
     submitBtn.textContent = u("loginSigningIn");
     try {
       const res = await api.login(loginId, password);
-      currentUser = res.user;
+      const user = res.user;
+      if (loginAs && user.role !== loginAs) {
+        await api.logout();
+        errorEl.innerHTML = `<div class="auth-error">${escapeHtml(
+          user.role === "admin" ? u("loginWrongPortalAdmin") : u("loginWrongPortalEmployee")
+        )}</div>`;
+        submitBtn.disabled = false;
+        submitBtn.textContent = u("loginButton");
+        return;
+      }
+      currentUser = user;
       if (currentUser.role !== "admin") {
         try {
           const p = await api.myProgress();
@@ -861,7 +877,11 @@ function parseHash() {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   if (parts.length === 0) return { route: "welcome" };
   if (parts[0] === "welcome") return { route: "welcome" };
-  if (parts[0] === "login") return { route: "login" };
+  if (parts[0] === "login") {
+    if (parts[1] === "employee") return { route: "login", loginAs: "employee" };
+    if (parts[1] === "admin") return { route: "login", loginAs: "admin" };
+    return { route: "login", loginAs: null };
+  }
   if (parts[0] === "change-password") return { route: "change-password" };
   if (parts[0] === "dashboard") return { route: "dashboard" };
   if (parts[0] === "language") return { route: "language" };
@@ -900,8 +920,8 @@ function render() {
       navigate(currentUser.role === "admin" ? "#/admin" : "#/dashboard");
       return;
     }
-    root.innerHTML = renderLoginPage();
-    wireLoginPage();
+    root.innerHTML = renderLoginPage(parsed.loginAs);
+    wireLoginPage(parsed.loginAs);
     return;
   }
 
